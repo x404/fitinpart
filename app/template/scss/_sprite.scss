@@ -9,6 +9,17 @@
 //
 // At the bottom of this section, we provide information about the spritesheet itself
 // $spritesheet: width height image $spritesheet-sprites;
+$icon-caret-name: 'icon-caret';
+$icon-caret-x: 0px;
+$icon-caret-y: 26px;
+$icon-caret-offset-x: 0px;
+$icon-caret-offset-y: -26px;
+$icon-caret-width: 10px;
+$icon-caret-height: 7px;
+$icon-caret-total-width: 42px;
+$icon-caret-total-height: 33px;
+$icon-caret-image: '../images/sprite.png';
+$icon-caret: (0px, 26px, 0px, -26px, 10px, 7px, 42px, 33px, '../images/sprite.png', 'icon-caret', );
 $icon-tel-name: 'icon-tel';
 $icon-tel-x: 26px;
 $icon-tel-y: 0px;
@@ -17,9 +28,9 @@ $icon-tel-offset-y: 0px;
 $icon-tel-width: 16px;
 $icon-tel-height: 25px;
 $icon-tel-total-width: 42px;
-$icon-tel-total-height: 26px;
+$icon-tel-total-height: 33px;
 $icon-tel-image: '../images/sprite.png';
-$icon-tel: (26px, 0px, -26px, 0px, 16px, 25px, 42px, 26px, '../images/sprite.png', 'icon-tel', );
+$icon-tel: (26px, 0px, -26px, 0px, 16px, 25px, 42px, 33px, '../images/sprite.png', 'icon-tel', );
 $icon-user-name: 'icon-user';
 $icon-user-x: 0px;
 $icon-user-y: 0px;
@@ -28,14 +39,14 @@ $icon-user-offset-y: 0px;
 $icon-user-width: 26px;
 $icon-user-height: 26px;
 $icon-user-total-width: 42px;
-$icon-user-total-height: 26px;
+$icon-user-total-height: 33px;
 $icon-user-image: '../images/sprite.png';
-$icon-user: (0px, 0px, 0px, 0px, 26px, 26px, 42px, 26px, '../images/sprite.png', 'icon-user', );
+$icon-user: (0px, 0px, 0px, 0px, 26px, 26px, 42px, 33px, '../images/sprite.png', 'icon-user', );
 $spritesheet-width: 42px;
-$spritesheet-height: 26px;
+$spritesheet-height: 33px;
 $spritesheet-image: '../images/sprite.png';
-$spritesheet-sprites: ($icon-tel, $icon-user, );
-$spritesheet: (42px, 26px, '../images/sprite.png', $spritesheet-sprites, );
+$spritesheet-sprites: ($icon-caret, $icon-tel, $icon-user, );
+$spritesheet: (42px, 33px, '../images/sprite.png', $spritesheet-sprites, );
 
 // The provided mixins are intended to be used with the array-like variables
 //
