@@ -3977,6 +3977,47 @@ h3 {
     flex-grow: 1; }
     .top__menu li {
       margin-left: 3.5rem; }
+  .top .lang {
+    margin-left: 3.2rem; }
+  .top .country .title {
+    font-size: 2.2rem;
+    padding-left: 2rem;
+    padding-top: 0.5rem; }
+  .top .country .dropdown-menu {
+    border-radius: 10px;
+    max-height: 30rem;
+    padding-bottom: 1.2rem;
+    width: 32rem; }
+    .top .country .dropdown-menu .dropdown-item {
+      color: #000000;
+      margin: 0 0 0 0;
+      padding-bottom: .4rem;
+      padding-left: 2.4rem;
+      padding-top: .4rem; }
+      .top .country .dropdown-menu .dropdown-item.current {
+        font-weight: 700; }
+  .top .country .form-control {
+    background: url(../images/icons/search-icon.png) no-repeat right 12px center #f3f3f3;
+    border-radius: 4rem;
+    border: none;
+    font-size: 1.5rem;
+    height: 4rem;
+    margin-left: 2rem;
+    padding: 0 35px 0 15px;
+    width: 25.8rem; }
+  .top .country .countries-wrapper {
+    height: 235px;
+    overflow: hidden;
+    margin-top: 1.2rem;
+    position: relative;
+    width: 320px; }
+  .top .country .countries-list {
+    width: calc(100% - 32px);
+    overflow: hidden; }
+  .top .valute {
+    margin-right: 3.2rem; }
+  .top select {
+    width: 500px; }
   .top__tel {
     font-size: 1.5rem;
     font-weight: 700; }
@@ -4013,27 +4054,26 @@ h3 {
       .top .login__link:hover {
         color: #97feff;
         text-decoration: none; }
-  .top .lang {
-    margin-left: 3.2rem; }
-    .top .lang .dropdown-menu {
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
-      border-radius: .5rem;
-      font-size: 1.4rem;
-      padding: .7rem 0;
-      margin-top: .9rem; }
-      .top .lang .dropdown-menu .dropdown-item {
-        align-items: center;
-        color: #4b4f53;
-        display: block;
-        display: flex;
-        margin: .8rem 0;
-        padding: 0.6rem 2rem; }
-        .top .lang .dropdown-menu .dropdown-item:hover {
-          background-color: #0672ba;
-          color: #ffffff; }
-      .top .lang .dropdown-menu img {
-        margin-right: .8rem;
-        vertical-align: top; }
+  .top .dropdown-menu {
+    transform: translate3d(0px, 20px, 0px) !important;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    border-radius: .5rem;
+    font-size: 1.4rem;
+    padding: .7rem 0;
+    margin-top: .9rem; }
+    .top .dropdown-menu .dropdown-item {
+      align-items: center;
+      color: #4b4f53;
+      display: block;
+      display: flex;
+      margin: .8rem 0;
+      padding: 0.6rem 2rem; }
+      .top .dropdown-menu .dropdown-item:hover {
+        background-color: #0672ba;
+        color: #ffffff; }
+    .top .dropdown-menu img {
+      margin-right: .8rem;
+      vertical-align: top; }
 
 .dropdown-toggle:after {
   background-image: url(../images/sprite.png);

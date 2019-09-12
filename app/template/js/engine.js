@@ -1,5 +1,51 @@
 $(document).ready(function(){
 
+	// $('.j-search-select').selectize({
+
+	// });
+
+
+   // $('select').multipleSelect({
+   //    single: true,
+   //    filter: true
+   //  })
+
+
+	$('.country .dropdown').on('shown.bs.dropdown', function () {
+		ps.update();
+	})
+
+
+
+	$('#search-country').keyup(function(){
+		let $this = this;
+		
+		$.each($('.country .dropdown-item'), function() {
+			if($(this).text().toLowerCase().indexOf($($this).val().toLowerCase()) === -1) {
+				$(this).hide();
+			} else {
+				$(this).show();
+			}
+		});
+		ps.update();
+	});
+
+
+	const ps = new PerfectScrollbar('.countries-wrapper', {
+		wheelPropagation: true,
+		minScrollbarLength: 48,
+		maxScrollbarLength: 48,
+	});
+
+	ps.update();
+
+
+
+
+	$('.country').on('click', '.dropdown-menu *', function(e) {
+		e.stopPropagation();
+	});
+
 
 	// mobile-menu
 	$('#navbar').each(function(){
