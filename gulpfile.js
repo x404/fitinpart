@@ -66,7 +66,7 @@ gulp.task('css-libs', ['scss'],  function(){
 // автоперезагрузка страницы браузера
 gulp.task('browser-sync', function(){
 	browserSync({
-		proxy: "subdomain.ibmt.local",
+		proxy: "fitinparts.local",
 		notify: false
 	})
 });
