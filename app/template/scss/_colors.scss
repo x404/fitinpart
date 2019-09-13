@@ -6,3 +6,24 @@ $color5:#0198ff;
 $color6:#97feff;
 $color7:#4b4f53;
 $color8:#f3f3f3;
+$color9:#0099ff;
+$color10:#c91537;
+
+
+
+
+.pink-color{
+	background-color: $color10;
+} 
+
+
+.primary-color{
+	background-color: $color9;
+} 
+
+.primary-color-hover{
+	transition: background-color .3s;
+	&:hover{
+		background-color: $color9;
+	}
+}

@@ -297,6 +297,17 @@ template {
 [hidden] {
   display: none; }
 
+.pink-color {
+  background-color: #c91537; }
+
+.primary-color {
+  background-color: #0099ff; }
+
+.primary-color-hover {
+  transition: background-color .3s; }
+  .primary-color-hover:hover {
+    background-color: #0099ff; }
+
 @font-face {
   font-family: 'Avanti';
   src: local("Avanti"), url("../fonts/Avanti/Avanti.woff2") format("woff2"), url("../fonts/Avanti/Avanti.woff") format("woff");
@@ -3933,7 +3944,7 @@ h3 {
     padding-left: 27px; }
     .icon-tel:before {
       background-image: url(../images/sprite.png);
-      background-position: -26px 0px;
+      background-position: 0px -26px;
       width: 16px;
       height: 25px; }
   .icon-user {
@@ -3949,12 +3960,24 @@ h3 {
       will-change: filter; }
     .icon-user:hover:before {
       filter: none; }
+  .icon-9dotted {
+    padding-left: 64px; }
+    .icon-9dotted:before {
+      background-image: url(../images/sprite.png);
+      background-position: -16px -26px;
+      width: 18px;
+      height: 18px; }
 
 .a-rotate90 svg {
   transition: transform .3s; }
 
 .a-rotate90:hover svg {
   transform: rotate(90deg); }
+
+button {
+  cursor: pointer;
+  border: none;
+  background: transparent; }
 
 /* =top
 ---------------------------*/
@@ -4100,7 +4123,7 @@ h3 {
 
 .dropdown-toggle:after {
   background-image: url(../images/sprite.png);
-  background-position: 0px -26px;
+  background-position: -34px -26px;
   width: 10px;
   height: 7px;
   border: none;
@@ -4116,6 +4139,25 @@ h3 {
 ---------------------------*/
 /* =header
 ---------------------------*/
+.header {
+  padding: 2.1rem 0 1.8rem; }
+  .header .logo {
+    margin-right: 3.4rem; }
+  .header .catalog-btn {
+    align-items: center;
+    border-radius: 5rem;
+    color: #ffffff;
+    display: flex;
+    font-size: 1.8rem;
+    height: 5rem;
+    position: relative;
+    text-transform: uppercase;
+    width: 185px; }
+    .header .catalog-btn.icon:before {
+      left: 35px;
+      top: 50%;
+      margin-top: -9px; }
+
 /* =/header
 ---------------------------*/
 /* =navigation

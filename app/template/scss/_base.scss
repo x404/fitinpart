@@ -185,6 +185,13 @@ em strong
 			}
 		}
 	}
+
+	&-9dotted{
+		padding-left: 64px;
+		&:before{
+			@include sprite($icon-9dotted);
+		}		
+	}
 }
 
 
@@ -197,6 +204,13 @@ em strong
 			transform: rotate(90deg)
 		}
 	}
+}
+
+
+button{
+	cursor: pointer;
+	border: none;
+	background: transparent;
 }
 /* =top
 ---------------------------*/
@@ -430,7 +444,31 @@ select {
 
 /* =header
 ---------------------------*/
-header{
+.header{
+	padding: 2.1rem 0 1.8rem;
+
+	.logo{
+		margin-right: 3.4rem;
+	}
+	.catalog-btn{
+		$h: 5rem;
+		align-items: center;
+		border-radius: $h;
+		color: $color2;
+		display: flex;
+		font-size: 1.8rem;
+		height: $h;
+		position: relative;
+		text-transform: uppercase;
+		width: 185px;
+		&.icon{
+			&:before{
+				left: 35px;
+				top: 50%;
+				margin-top: -9px;
+			}
+		}
+	}
 }
 
 /* =/header
