@@ -11,12 +11,22 @@ $(document).ready(function(){
    //  })
 
 
+	$('.country').on('click', '.dropdown-menu', function(e) {
+		e.stopPropagation();
+	});
+
+	// close dropdown of Country
+	$('.country .close').click(function() {
+	  $(this).parents('.dropdown').find('.dropdown-toggle').dropdown('toggle');
+	});
+
+	// reinit scroll area after dropdown of Country
 	$('.country .dropdown').on('shown.bs.dropdown', function () {
 		ps.update();
-	})
+	});
 
 
-
+	// filter country in list
 	$('#search-country').keyup(function(){
 		let $this = this;
 		
@@ -30,7 +40,7 @@ $(document).ready(function(){
 		ps.update();
 	});
 
-
+	// init scrollbar of countries
 	const ps = new PerfectScrollbar('.countries-wrapper', {
 		wheelPropagation: true,
 		minScrollbarLength: 48,
@@ -42,9 +52,7 @@ $(document).ready(function(){
 
 
 
-	$('.country').on('click', '.dropdown-menu *', function(e) {
-		e.stopPropagation();
-	});
+
 
 
 	// mobile-menu

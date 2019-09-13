@@ -3950,6 +3950,12 @@ h3 {
     .icon-user:hover:before {
       filter: none; }
 
+.a-rotate90 svg {
+  transition: transform .3s; }
+
+.a-rotate90:hover svg {
+  transform: rotate(90deg); }
+
 /* =top
 ---------------------------*/
 .top {
@@ -3982,20 +3988,21 @@ h3 {
   .top .country .title {
     font-size: 2.2rem;
     padding-left: 2rem;
-    padding-top: 0.5rem; }
+    padding-top: 1.4rem; }
   .top .country .dropdown-menu {
     border-radius: 10px;
     max-height: 30rem;
-    padding-bottom: 1.2rem;
+    padding-top: 0;
+    padding-bottom: 0;
     width: 32rem; }
     .top .country .dropdown-menu .dropdown-item {
       color: #000000;
       margin: 0 0 0 0;
-      padding-bottom: .4rem;
-      padding-left: 2.4rem;
-      padding-top: .4rem; }
+      padding: .5rem 0 .5rem 2.4rem; }
       .top .country .dropdown-menu .dropdown-item.current {
         font-weight: 700; }
+  .top .country .dropdown-wrapper {
+    overflow: hidden; }
   .top .country .form-control {
     background: url(../images/icons/search-icon.png) no-repeat right 12px center #f3f3f3;
     border-radius: 4rem;
@@ -4006,14 +4013,30 @@ h3 {
     padding: 0 35px 0 15px;
     width: 25.8rem; }
   .top .country .countries-wrapper {
-    height: 235px;
-    overflow: hidden;
+    height: 225px;
+    margin-bottom: 1.2rem;
     margin-top: 1.2rem;
+    overflow: hidden;
     position: relative;
     width: 320px; }
   .top .country .countries-list {
-    width: calc(100% - 32px);
-    overflow: hidden; }
+    margin-top: .3rem;
+    overflow: hidden;
+    width: calc(100% - 32px); }
+  .top .country .close {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: block;
+    padding: 0;
+    position: absolute;
+    right: 9px;
+    top: 13px; }
+    .top .country .close line {
+      stroke: #8f8f8f;
+      stroke-width: 3px; }
+    .top .country .close svg {
+      display: block; }
   .top .valute {
     margin-right: 3.2rem; }
   .top select {
