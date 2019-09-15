@@ -3892,7 +3892,7 @@ h3 {
     padding-left: 27px; }
     .icon-tel:before {
       background-image: url(../images/sprite.png);
-      background-position: 0px -26px;
+      background-position: 0px -32px;
       width: 16px;
       height: 25px;
       top: -3px; }
@@ -3901,7 +3901,7 @@ h3 {
     padding-left: 35px; }
     .icon-user:before {
       background-image: url(../images/sprite.png);
-      background-position: 0px 0px;
+      background-position: -24px 0px;
       width: 26px;
       height: 26px;
       filter: brightness(5);
@@ -3913,12 +3913,12 @@ h3 {
     padding-left: 64px; }
     .icon-9dotted:before {
       background-image: url(../images/sprite.png);
-      background-position: -16px -26px;
+      background-position: -16px -32px;
       width: 18px;
       height: 18px; }
   .icon-littlecart:before {
     background-image: url(../images/sprite.png);
-    background-position: -26px 0px;
+    background-position: -50px 0px;
     width: 27px;
     height: 24px;
     left: 30px;
@@ -3927,7 +3927,7 @@ h3 {
     transition: filter .3s; }
   .icon-arrowright:before {
     background-image: url(../images/sprite.png);
-    background-position: -34px -26px;
+    background-position: -34px -32px;
     width: 18px;
     height: 13px;
     left: 20px;
@@ -3935,13 +3935,24 @@ h3 {
     top: 50%; }
   .icon-slider-arrow:before {
     background-image: url(../images/sprite.png);
-    background-position: -53px 0px;
+    background-position: -77px 0px;
     width: 12px;
     height: 21px;
     left: 50%;
     margin-left: -5px;
     margin-top: -10px;
     top: 50%; }
+  .icon-balloon {
+    padding-left: 30px;
+    min-height: 32px;
+    padding-top: .5rem; }
+    .icon-balloon:before {
+      background-image: url(../images/sprite.png);
+      background-position: 0px 0px;
+      width: 24px;
+      height: 32px;
+      left: 0;
+      top: 0; }
 
 .a-rotate90 svg {
   transition: transform .3s; }
@@ -4123,7 +4134,7 @@ button {
 
 .dropdown-toggle:after {
   background-image: url(../images/sprite.png);
-  background-position: -53px -21px;
+  background-position: -77px -21px;
   width: 10px;
   height: 7px;
   border: none;
@@ -4204,9 +4215,39 @@ button {
 
 /* =/header
 ---------------------------*/
-/* =navigation
+/* =footer
 ---------------------------*/
-/* =/navigation
+.footer {
+  background-color: #28292d;
+  color: #ffffff;
+  padding: 5rem 0; }
+  .footer a {
+    color: #b4bdc4; }
+  .footer .copyright {
+    color: #b4bdc4; }
+    .footer .copyright p {
+      line-height: 1.7; }
+  .footer .logo {
+    margin-bottom: 2rem; }
+  .footer h3 {
+    font-size: 2rem; }
+  .footer .menu {
+    margin-left: 200px; }
+    .footer .menu ul {
+      margin-left: .2rem; }
+    .footer .menu li {
+      margin-top: .9rem; }
+    .footer .menu:first-child {
+      margin-left: 90px; }
+  .footer .address {
+    margin: 1.2rem 0 2.5rem; }
+  .footer .tel {
+    font-size: 1.7rem;
+    margin-bottom: 2.5rem; }
+  .footer .payments {
+    margin-top: 3.5rem; }
+
+/* =/footer
 ---------------------------*/
 /* =main
 ---------------------------*/
