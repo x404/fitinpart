@@ -14,7 +14,15 @@
 
 }
 
+.slick-init{
+	display: flex;
+	&.slick-initialized{
+		display: block;
+	}	
+}
+
 #homeslider{
+	@extend .slick-init;
 	.layout{
 		max-width: 1280px;
 		margin: 0 auto;
@@ -88,5 +96,9 @@
 		&-next{
 			margin-left: 740px;
 		}
+	}
+
+	[data-animation-in] {
+		opacity: 0;
 	}
 }

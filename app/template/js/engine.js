@@ -61,8 +61,13 @@ $(document).ready(function(){
 		slidesToScroll: 1,
 		autoplay: true,
 		autoplaySpeed: 100000,
-		arrows : true
+		arrows : true,
+		fade: true,
+		speed: 1000,
 	});	
+
+
+	$('#homeslider').slickAnimation();
 
 
 
