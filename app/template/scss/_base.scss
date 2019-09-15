@@ -27,8 +27,7 @@ html {
 
 body{
 	@include font-size(1.4);
-	font-display: swap;
-	// height: 100vh;
+	font-family: 'proxima-nova', sans-serif;
 }
 
 html, body{
@@ -157,6 +156,11 @@ em strong
 }
 
 
+.submit{
+	cursor: pointer;
+}
+
+
 .icon{
 	position: relative; 
 	&:before{
@@ -168,6 +172,7 @@ em strong
 		padding-left: 27px;
 		&:before{
 			@include sprite($icon-tel);
+			top: -3px;
 		}		
 	}
 	&-user{
@@ -192,6 +197,15 @@ em strong
 			@include sprite($icon-9dotted);
 		}		
 	}
+
+	&-littlecart{
+		&:before{
+			@include sprite($icon-littlecart);
+			left: 30px;
+			margin-top: -12px;
+			top: 50%;
+		}		
+	}	
 }
 
 
@@ -212,6 +226,13 @@ button{
 	border: none;
 	background: transparent;
 }
+
+.flex-center{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
 /* =top
 ---------------------------*/
 .top{
@@ -249,13 +270,21 @@ button{
 	&__menu{
 		flex-grow: 1;
 		li{
-			margin-left: 3.5rem;
+			margin-right: 3.1rem;
+			&:last-childe{
+				margin-right: 0;
+			}
 		}
 	}
 
 
 	.lang{
-		margin-left: 3.2rem;
+		margin-left: 3.4rem;
+		.btn{
+			img{
+				vertical-align: top;
+			}
+		}
 	}
 	.country{
 		.title{
@@ -333,7 +362,7 @@ button{
 
 	}
 	.valute{
-		margin-right: 3.2rem;
+		margin-right: 2.5rem;
 	}
 
 
@@ -346,6 +375,7 @@ select {
 	&__tel{
 		font-size: 1.5rem;
 		font-weight: 700;
+		font-family: 'Neo Sans Pro';
 		.tel{		
 			&:hover{
 				color: $color2;
@@ -369,7 +399,7 @@ select {
 			bottom: 0;
 			left: 0;
 			top: 0;
-			transform: skewX(-30deg);
+			transform: skewX(-45deg);
 			width: 165px;
 			z-index: 2;
 		}
@@ -379,7 +409,7 @@ select {
 			bottom: 0;
 			height: 40px;
 			left: -12px;
-			transform: skewX(-30deg);
+			transform: skewX(-45deg);
 			width: 165px;
 		}
 		&__link{
@@ -451,6 +481,7 @@ select {
 		margin-right: 3.4rem;
 	}
 	.catalog-btn{
+		font-family: 'Neo Sans Pro';
 		$h: 5rem;
 		align-items: center;
 		border-radius: $h;
@@ -468,6 +499,58 @@ select {
 				margin-top: -9px;
 			}
 		}
+	}
+
+	.shop-cart{
+		$h: 5rem;
+		border-radius: $h;
+		box-shadow: 0 1px 5px rgba(24, 35, 60, 0.2);
+		height: $h;
+		margin-left: 2.1rem;
+		position: relative;
+		width: 11.5rem;
+		.count{
+			@extend .flex-center;
+			background-color: $color10;
+			border-radius: 50%;
+			color: $color2;
+			font-size: 1.1rem;
+			font-style: normal;
+			line-height: 1;
+			padding-top: 1px;
+			height: 2rem;
+			width: 2rem;
+			margin-left: 6rem;
+		}
+	}
+}
+
+.search{
+	flex-grow: 1;
+	padding-left: 2.8rem;
+	&__wrapper{
+		background-color: $color8;
+		border-radius: 5rem;
+		height: 5rem;
+	}
+
+	.form-control{
+		background: none;
+		border: none;
+		flex-grow: 1;
+		font-size: 1.3rem;
+		font-style: italic;
+		height: 5rem;
+		margin-left: 1.2rem;
+		outline: none;
+	}
+
+	.submit{
+		background: url(../images/icons/search-icon2.png) no-repeat center left 45%;
+		border: none;
+		width: 5rem;
+		height: 5rem;
+		padding: 0;
 	}
 }
 
