@@ -161,6 +161,12 @@ em strong
 }
 
 
+.flex-center{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
 .icon{
 	position: relative; 
 	&:before{
@@ -205,7 +211,26 @@ em strong
 			margin-top: -12px;
 			top: 50%;
 		}		
-	}	
+	}
+
+	&-arrowright{
+		&:before{
+			@include sprite($icon-arrow-right);
+			left: 20px;
+			margin-top: -6px;
+			top: 50%;
+		}
+	}
+
+	&-slider-arrow{
+		&:before{
+			@include sprite($icon-slider-arrow);
+			left: 50%;
+			margin-left: -5px;
+			margin-top: -10px;
+			top: 50%;
+		}
+	}
 }
 
 
@@ -221,17 +246,43 @@ em strong
 }
 
 
+.btn{
+	display: inline-flex;
+	align-items: center;
+	border: none;
+	text-align: center;
+	text-decoration: none;
+	&:hover{
+		text-decoration: none;
+	}
+	&-large{
+		$h: 5rem; 
+		border-radius: $h;
+		font-size: 1.8rem;
+		height: $h;
+		min-width: 160px;
+	}
+
+	&-blue{
+		background-color: $color3;
+		color: $color2;
+		&-lighten{
+			&-hover{
+				&:hover{
+					color: $color2;
+					background-color: $color9
+				}
+			}
+		}
+	}
+}
+
 button{
 	cursor: pointer;
 	border: none;
 	background: transparent;
 }
 
-.flex-center{
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
 
 /* =top
 ---------------------------*/
@@ -569,8 +620,7 @@ select {
 ---------------------------*/
 
 .main{
-	aside{
-	}
+	overflow: hidden;
 }
 
 
