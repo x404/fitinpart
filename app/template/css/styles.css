@@ -3923,7 +3923,8 @@ h3 {
     height: 24px;
     left: 30px;
     margin-top: -12px;
-    top: 50%; }
+    top: 50%;
+    transition: filter .3s; }
   .icon-arrowright:before {
     background-image: url(../images/sprite.png);
     background-position: -34px -26px;
@@ -3948,23 +3949,23 @@ h3 {
 .a-rotate90:hover svg {
   transform: rotate(90deg); }
 
-.btn {
+.main .btn {
   display: inline-flex;
   align-items: center;
   border: none;
   text-align: center;
   text-decoration: none; }
-  .btn:hover {
+  .main .btn:hover {
     text-decoration: none; }
-  .btn-large {
+  .main .btn-large {
     border-radius: 5rem;
     font-size: 1.8rem;
     height: 5rem;
     min-width: 160px; }
-  .btn-blue {
+  .main .btn-blue {
     background-color: #0672ba;
     color: #ffffff; }
-    .btn-blue-lighten-hover:hover {
+    .main .btn-blue-lighten-hover:hover {
       color: #ffffff;
       background-color: #0099ff; }
 
@@ -4175,6 +4176,8 @@ button {
       height: 2rem;
       width: 2rem;
       margin-left: 6rem; }
+    .header .shop-cart:hover:before {
+      filter: invert(1); }
 
 .search {
   flex-grow: 1;

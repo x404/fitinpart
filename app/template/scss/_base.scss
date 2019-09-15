@@ -210,6 +210,7 @@ em strong
 			left: 30px;
 			margin-top: -12px;
 			top: 50%;
+			transition: filter .3s;
 		}		
 	}
 
@@ -246,7 +247,7 @@ em strong
 }
 
 
-.btn{
+.main .btn{
 	display: inline-flex;
 	align-items: center;
 	border: none;
@@ -572,6 +573,12 @@ select {
 			height: 2rem;
 			width: 2rem;
 			margin-left: 6rem;
+		}
+
+		&:hover{
+			&:before{
+				filter: invert(1);
+			}
 		}
 	}
 }
