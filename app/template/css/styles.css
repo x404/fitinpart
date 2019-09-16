@@ -3891,7 +3891,7 @@ h3 {
   .tdu:hover {
     text-decoration: none; }
 
-.before, .icon:before, .top__left:before, .top .login:before, .top .login:after, .littlecart .cart-body .cart-products .count .minus:before, .littlecart .cart-body .cart-products .count .plus:before, .littlecart .cart-body .cart-products .count .plus:after, .promo .wrapper:before {
+.before, .icon:before, .top__left:before, .top .login:before, .top .login:after, .littlecart .cart-body .cart-products .count .minus:before, .littlecart .cart-body .cart-products .count .plus:before, .littlecart .cart-body .cart-products .count .plus:after, .promo .wrapper:before, .visual__item:before {
   content: "";
   display: block;
   position: absolute; }
@@ -4632,7 +4632,58 @@ button {
 
 /* =/catalog
 ---------------------------*/
-/* =/advantages
+/* =visual
+---------------------------*/
+.visual {
+  margin-top: 3.5rem; }
+  .visual__item {
+    background-color: #f5f6f8;
+    background-repeat: no-repeat;
+    background-position: right top;
+    column-gap: 2.5rem;
+    flex-grow: 1;
+    font-family: "Neo Sans Pro";
+    font-size: 4rem;
+    font-weight: 700;
+    height: 24rem;
+    padding-left: 3.4rem;
+    position: relative; }
+    .visual__item:before {
+      border-right: 125px solid transparent;
+      border-top: 125px solid #fff;
+      height: 0;
+      left: 0;
+      top: 0;
+      width: 0;
+      z-index: 1; }
+    .visual__item-1 {
+      background-image: url(../images/bg/visual-1-bg.png); }
+    .visual__item-2 {
+      background-image: url(../images/bg/visual-2-bg.png); }
+  .visual__link {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    line-height: 1.2;
+    position: relative;
+    text-decoration-color: #0672ba;
+    text-decoration: underline;
+    z-index: 2; }
+    .visual__link:hover {
+      color: #0099ff;
+      text-decoration: none; }
+      .visual__link:hover img {
+        transform: scale(1.01); }
+    .visual__link img {
+      bottom: 0;
+      position: absolute;
+      right: 0;
+      transform-origin: right bottom;
+      transition: transform .3s; }
+
+/* =/visual
+---------------------------*/
+/* =advantages
 ---------------------------*/
 .advantages {
   background-color: #28292d;
