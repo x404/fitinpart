@@ -3881,6 +3881,10 @@ h3 {
 .regular {
   font-family: "SegoeUIRegular"; }
 
+strong,
+.bold {
+  font-weight: 700; }
+
 .tdn {
   text-decoration: none; }
   .tdn:hover {
@@ -3902,7 +3906,7 @@ h3 {
 .submit {
   cursor: pointer; }
 
-.flex-center, .header .shop-cart .count, .littlecart .cart-body .btn-checkout, .littlecart .cart-body .btn-check, #catalog-carousel a {
+.flex-center, .header .shop-cart .count, .littlecart .cart-body .btn-checkout, .littlecart .cart-body .btn-check, #catalog-carousel a, .reviews .btn-show {
   display: flex;
   align-items: center;
   justify-content: center; }
@@ -4018,6 +4022,12 @@ h3 {
     .btn-blue-lighten-hover:hover {
       background-color: #0099ff;
       color: #ffffff; }
+  .btn-green {
+    background-color: #00b67b;
+    color: #ffffff; }
+    .btn-green-lighten-hover:hover {
+      background-color: #00ffac;
+      color: #000000; }
   .btn-view {
     align-items: center;
     background-color: #dde2e6;
@@ -4621,8 +4631,8 @@ button {
   justify-content: space-between; }
   #catalog-carousel a {
     flex-direction: column;
-    text-align: center;
-    padding-top: 10px; }
+    padding-top: 10px;
+    text-align: center; }
     #catalog-carousel a:hover {
       color: #0099ff;
       text-decoration: none; }
@@ -4754,34 +4764,155 @@ button {
   .lastnews .news__item {
     width: 31.3rem; }
 
-.item-news {
+.item-news__link {
+  overflow: hidden;
   background-color: #fff;
-  overflow: hidden; }
+  display: block; }
   .item-news__link:hover {
     text-decoration: none; }
     .item-news__link:hover .item-news__title {
       color: #0099ff; }
     .item-news__link:hover .item-news__pic img {
       transform: scale(1.05); }
-  .item-news__desc {
-    padding: 2.5rem 2.2rem 2.5rem 2.5rem; }
-  .item-news__title {
-    font-family: "Neo Sans Pro";
-    font-size: 1.8rem;
-    font-weight: 700;
-    transition: color .3s; }
-  .item-news__pic img {
-    transition: transform .3s; }
-  .item-news__text {
-    color: #4b4b4b;
-    font-size: 1.5rem;
-    line-height: 1.6;
-    margin-top: .6rem; }
-  .item-news__date {
-    color: #919191;
-    margin-top: .8rem; }
+
+.item-news__desc {
+  padding: 2.5rem 2.2rem 2.5rem 2.5rem; }
+
+.item-news__title {
+  font-family: "Neo Sans Pro";
+  font-size: 1.8rem;
+  font-weight: 700;
+  transition: color .3s; }
+
+.item-news__pic img {
+  transition: transform .3s;
+  width: 100%; }
+
+.item-news__text {
+  color: #4b4b4b;
+  font-size: 1.5rem;
+  line-height: 1.6;
+  margin-top: .6rem; }
+
+.item-news__date {
+  color: #919191;
+  margin-top: .8rem; }
 
 /* =/lastnews
+---------------------------*/
+/* =reviews
+---------------------------*/
+.reviews {
+  background-color: #133025;
+  padding: 7rem 0 12rem;
+  min-height: 583px; }
+  .reviews .title {
+    display: flex;
+    justify-content: center; }
+    .reviews .title h1 {
+      font-size: 4.8rem; }
+  .reviews header {
+    color: #fff;
+    text-align: center; }
+    .reviews header .title {
+      display: flex;
+      align-items: center; }
+      .reviews header .title img {
+        display: block; }
+      .reviews header .title .stars {
+        margin-left: 4.5rem; }
+    .reviews header h1 {
+      display: flex;
+      align-items: center;
+      line-height: 1.5;
+      font-weight: 700;
+      font-family: "Neo Sans Pro"; }
+      .reviews header h1 img {
+        margin-left: 1.4rem; }
+    .reviews header .rated {
+      font-size: 1.7rem;
+      margin-top: 1rem; }
+      .reviews header .rated a {
+        color: #fff; }
+        .reviews header .rated a:hover {
+          color: #00ffab;
+          text-decoration: none; }
+          .reviews header .rated a:hover u {
+            text-decoration: none; }
+  .reviews__body {
+    margin-top: 3rem; }
+  .reviews .btn-show {
+    border-radius: 5rem;
+    display: flex;
+    font-size: 1.8rem;
+    font-weight: 700;
+    height: 5rem;
+    margin: 3.5rem auto 0;
+    width: 16rem; }
+    .reviews .btn-show:hover {
+      box-shadow: 0 5px 15px rgba(0, 255, 172, 0.5); }
+
+.star-rating--medium {
+  display: block;
+  height: 20px;
+  width: 108px; }
+  .star-rating--medium img {
+    max-width: 100%;
+    width: 100%; }
+
+.review-card {
+  background-color: #fff;
+  border-left: 1px solid #000;
+  position: relative;
+  z-index: 2;
+  transition: z-index .3s;
+  flex-grow: 1; }
+  .review-card:hover {
+    z-index: 1; }
+  .review-card:first-child {
+    border-left: none; }
+  .review-card__title {
+    color: #010101;
+    font-size: 1.6rem;
+    padding-top: 2.5rem;
+    font-weight: 700;
+    font-family: "Neo Sans Pro";
+    transition: color .3s; }
+  .review-card__header {
+    display: flex;
+    align-items: center; }
+  .review-card__info {
+    margin-left: 1.2rem; }
+  .review-card__author {
+    font-weight: 700; }
+  .review-card__date {
+    color: #9a9a9a;
+    font-size: 1.3rem; }
+  .review-card__body {
+    color: #474747;
+    line-height: 1.7;
+    margin-top: .8rem; }
+  .review-card .profile-image {
+    border-radius: 50%;
+    width: 44px;
+    height: 44px; }
+  .review-card .star-rating {
+    position: absolute;
+    right: 16px;
+    top: 16px; }
+  .review-card__link {
+    display: block;
+    min-height: 19rem;
+    padding: 2rem 2.3rem 2rem 2.7rem;
+    position: relative; }
+    .review-card__link:hover {
+      box-shadow: 0 5px 20px rgba(0, 255, 172, 0.75);
+      color: currentColor;
+      text-decoration: none; }
+      .review-card__link:hover .review-card__title {
+        color: #0099ff; }
+
+/* =/reviews
 ---------------------------*/
 /* =mobile-menu
 ---------------------------*/
@@ -5024,6 +5155,9 @@ button {
 .webp .advantages {
   background-image: url(../images/bg/advantage-bg.webp); }
 
+.webp .reviews {
+  background-image: url(../images/bg/reviews-bg.webp); }
+
 .advantages {
   background-repeat: no-repeat;
   background-position: center;
@@ -5031,6 +5165,11 @@ button {
 
 .advantages {
   background-image: url(../images/bg/advantage-bg.jpg); }
+
+.reviews {
+  background-image: url(../images/bg/reviews-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: right bottom; }
 
 /* =mobile-menu
 ---------------------------*/

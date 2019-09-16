@@ -2,6 +2,9 @@
 	.advantages{
 		background-image: url(../images/bg/advantage-bg.webp);
 	}
+	.reviews{
+		background-image: url(../images/bg/reviews-bg.webp);
+	}
 }
 
 
@@ -18,4 +21,10 @@
 
 .advantages{
 	background-image: url(../images/bg/advantage-bg.jpg);
+}
+
+.reviews{
+	background-image: url(../images/bg/reviews-bg.jpg);
+	background-repeat: no-repeat;
+	background-position: right bottom
 }

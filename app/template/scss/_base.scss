@@ -118,7 +118,9 @@ h3{font-size:1.6rem}
 
 strong,
 .bold{
+	font-weight: 700;
 }
+
 em, i, 
 .italic{
 }
@@ -303,6 +305,20 @@ em strong
 			}
 		}
 	}
+
+	&-green{
+		background-color: $color26;
+		color: $color2;
+		&-lighten{
+			&-hover{
+				&:hover{
+					background-color: $color27;
+					color: $color1;
+				}
+			}
+		}
+	}
+
 
 	&-view{
 		align-items: center;

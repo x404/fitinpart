@@ -122,8 +122,8 @@
 	a{
 		@extend .flex-center;
 		flex-direction: column;
-		text-align: center;
 		padding-top: 10px;
+		text-align: center;
 		&:hover{
 			color: $color9;
 			text-decoration: none;
@@ -302,11 +302,14 @@
 
 
 .item-news{
-	background-color: #fff;
-	overflow: hidden;
+	// padding: 20px 0;
 	&__link{
+		overflow: hidden; 
+		background-color: #fff;
+		display: block;
 		&:hover{
 			text-decoration: none;
+				// box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
 			.item-news{
 				&__title{
 					color: $color9	
@@ -334,6 +337,7 @@
 	&__pic{
 		img{
 			transition: transform .3s;
+			width: 100%;
 		}
 	}
 
@@ -350,4 +354,173 @@
 	}
 }
 /* =/lastnews
+---------------------------*/
+
+
+
+/* =reviews
+---------------------------*/
+.reviews{
+	background-color: #133025;
+	padding: 7rem 0 12rem; 
+	min-height: 583px;
+
+	.title{
+		display: flex;
+		justify-content: center;
+		h1{
+			font-size: 4.8rem;
+		}
+	}
+
+	header{
+		color: #fff;
+		text-align: center;
+		.title{
+			display: flex;
+			align-items: center;
+			img{
+				display: block;
+			}
+			.stars{
+				margin-left: 4.5rem;
+			}
+		}
+		h1{
+			display: flex;
+			align-items: center;
+			line-height: 1.5;
+			font-weight: 700;
+			font-family: "Neo Sans Pro";			
+			img{
+				margin-left: 1.4rem;
+			}
+		}
+		.rated{
+			font-size: 1.7rem;
+			margin-top: 1rem;
+			a{
+				color: #fff;
+				&:hover{
+					color: $color23;
+					text-decoration: none;
+					u{
+						text-decoration: none;
+					}
+				}
+			}
+		}
+	}
+
+	&__body{
+		margin-top: 3rem;
+	}
+
+	.btn-show{
+		$h: 5rem;
+		@extend .flex-center;
+		border-radius: $h;
+		display: flex;
+		font-size: 1.8rem;
+		font-weight: 700;
+		height: $h;
+		margin: 3.5rem auto 0;
+		width: 16rem;
+		&:hover{
+			box-shadow: 0 5px 15px rgba(0, 255, 172, 0.5);
+		}
+	}
+}
+
+.star-rating--medium{
+	display: block;
+	height: 20px;
+	width: 108px;
+	img{
+		max-width: 100%;
+		width: 100%;
+	}
+}
+
+.review-card{
+	background-color: #fff;
+	border-left: 1px solid #000;
+	position: relative;
+	z-index: 2;
+	// width: 530px;
+	transition: z-index .3s;
+	flex-grow: 1;
+
+	&:hover{
+		z-index: 1;
+	}
+	&:first-child{
+		border-left: none;
+	}
+
+	&__title{
+		color: $color14;
+		font-size: 1.6rem;
+		padding-top: 2.5rem;
+		font-weight: 700;
+		font-family: "Neo Sans Pro";
+		transition: color .3s;
+	}
+	&__header{
+		display: flex;
+		align-items: center;		
+	}
+
+	&__info{
+		margin-left: 1.2rem;
+	}
+
+	&__author{
+		font-weight: 700;
+		a{
+			// color: $color19;			
+		}
+	}
+
+	&__date{
+		color: $color24;
+		font-size: 1.3rem;
+	}
+
+	&__body{
+		color: $color25;
+		line-height: 1.7;
+		margin-top: .8rem;
+	}
+
+	.profile-image{
+		border-radius: 50%;
+		width: 44px;
+		height: 44px;
+	}
+
+	.star-rating{
+		position: absolute;
+		right: 16px;
+		top: 16px;
+	}
+
+	&__link{
+		display: block;
+		min-height: 19rem;
+		padding: 2rem 2.3rem 2rem 2.7rem;
+		position: relative;
+		&:hover{
+			box-shadow: 0 5px 20px rgba(0, 255, 172, 0.75);
+			color: currentColor;
+			text-decoration: none;
+			.review-card{
+				&__title{
+					color: $color9;
+				}
+			}
+		}
+	}
+}
+/* =/reviews
 ---------------------------*/
