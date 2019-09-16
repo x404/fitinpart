@@ -633,7 +633,7 @@ select {
 			top: 0;
 			padding-top: 70px;
 			width: 48rem;	
-			z-index: 0;	
+			z-index: -1;	
 			opacity: 0;	
 			transition: .3s;
 		}
@@ -656,6 +656,11 @@ select {
 			.ps__rail-y{
 				right: 4px;
 			}
+			.ps__thumb-y{
+				&:hover{
+					background-color: #3b6076;
+				}
+			}
 
 			.cart-products{
 				height: 312px;
@@ -674,6 +679,12 @@ select {
 					font-size: 1.5rem;
 					font-family: "Neo Sans Pro";
 					font-weight: 700;
+					a{
+						&:hover{
+							color: $color9;
+							text-decoration: none;
+						}
+					}
 				}
 
 				.count{
@@ -693,19 +704,41 @@ select {
 						margin: 0 5px;
 						text-align: center;
 						width: 6.2rem;
+						transition: box-shadow .3s;
+						&:hover,
+						&:focus
+						{
+							box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
+
+						}
 					}
 
 					.minus,
 					.plus{
 						padding: 0;
+						height: 15px;
 						width: 15px;
+						&:hover{
+							&:before,
+							&:after{
+								border-color: $color9;
+							}
+						}
 					}
 					.minus{
-						height: 3px;
-						border-top: 3px solid $color3;
+						position: relative;
+						&:before
+						{
+							@extend .before;
+						}
+						&:before{
+							border-top: 3px solid $color3;
+							left: 0;
+							top: 6px;
+							width: 100%;
+						}
 					}
 					.plus{
-						height: 15px;
 						position: relative;
 						&:before,
 						&:after{
@@ -769,6 +802,15 @@ select {
 					font-weight: 700;
 					height: 6.1rem;
 					margin-top: 1.8rem;
+					.icon{
+						transition: transform .3s;
+					}
+					&:hover{
+						.icon{
+							position: relative;
+							transform: translateX(-10px)
+						}
+					}
 				}
 				&-check{
 					@extend .flex-center;
