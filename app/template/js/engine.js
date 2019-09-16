@@ -51,6 +51,17 @@ $(document).ready(function(){
 
 
 
+	// init scrollbar of countries
+	const cartlist = new PerfectScrollbar('.cart-products', {
+		wheelPropagation: true,
+		minScrollbarLength: 100,
+		maxScrollbarLength: 100,
+	});
+
+	cartlist.update();
+
+
+
 
 	// homeslider
 	$('#homeslider').slick({
