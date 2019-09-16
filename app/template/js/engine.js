@@ -60,7 +60,7 @@ $(document).ready(function(){
 		slidesToShow: 1,
 		slidesToScroll: 1,
 		autoplay: true,
-		autoplaySpeed: 100000,
+		autoplaySpeed: 5000,
 		arrows : true,
 		fade: true,
 		speed: 1000,
@@ -68,6 +68,19 @@ $(document).ready(function(){
 
 
 	$('#homeslider').slickAnimation();
+
+
+
+	$('#catalog-carousel').slick({
+		prevArrow:'<button class="slick-arrow slick-prev icon icon-slider-arrow" aria-label="Previous" type="button"></button>',
+		nextArrow:'<button class="slick-arrow slick-next icon icon-slider-arrow" aria-label="Next" type="button"></button>',
+		dots: false,
+		slidesToShow: 8,
+		slidesToScroll: 1,
+		autoplay: true,
+		autoplaySpeed: 100000,
+		arrows : true
+	});	
 
 
 

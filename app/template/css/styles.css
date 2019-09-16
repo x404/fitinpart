@@ -3878,7 +3878,7 @@ h3 {
 .submit {
   cursor: pointer; }
 
-.flex-center, .header .shop-cart .count {
+.flex-center, .header .shop-cart .count, #catalog-carousel a {
   display: flex;
   align-items: center;
   justify-content: center; }
@@ -4295,6 +4295,8 @@ button {
   font-weight: 700;
   font-display: swap; }
 
+/* =promo
+---------------------------*/
 .promo .wrapper {
   background-color: #be3623;
   position: relative; }
@@ -4305,6 +4307,8 @@ button {
     border-right: 150px solid transparent;
     z-index: 100; }
 
+/* =/promo
+---------------------------*/
 .slick-init, #homeslider {
   display: flex; }
   .slick-init.slick-initialized, .slick-initialized#homeslider {
@@ -4375,6 +4379,50 @@ button {
 #homeslider [data-animation-in] {
   opacity: 0; }
 
+/* =catalog
+---------------------------*/
+.catalog {
+  margin: 4rem 0;
+  font-size: 1.8rem; }
+
+#catalog-carousel {
+  justify-content: space-between; }
+  #catalog-carousel a {
+    flex-direction: column;
+    text-align: center; }
+    #catalog-carousel a:hover {
+      color: #0099ff;
+      text-decoration: none; }
+      #catalog-carousel a:hover img {
+        filter: brightness(1.4); }
+  #catalog-carousel .pic {
+    margin-bottom: .7rem;
+    min-height: 65px; }
+  #catalog-carousel img {
+    transition: filter .3s;
+    vertical-align: top; }
+  #catalog-carousel .slick-arrow {
+    height: 21px;
+    left: 50%;
+    top: 23px;
+    position: absolute;
+    width: 12px;
+    z-index: 90; }
+    #catalog-carousel .slick-arrow:hover {
+      opacity: 1; }
+      #catalog-carousel .slick-arrow:hover:before {
+        filter: none; }
+    #catalog-carousel .slick-arrow:before {
+      transition: .3s;
+      filter: grayscale(1) brightness(1.6); }
+  #catalog-carousel .slick-prev {
+    margin-left: -790px;
+    transform: rotate(180deg); }
+  #catalog-carousel .slick-next {
+    margin-left: 778px; }
+
+/* =/catalog
+---------------------------*/
 /* =mobile-menu
 ---------------------------*/
 .show-sm,

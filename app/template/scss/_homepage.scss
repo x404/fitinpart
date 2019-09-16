@@ -1,3 +1,5 @@
+/* =promo
+---------------------------*/
 .promo{
 	.wrapper{
 		background-color: #be3623;
@@ -11,8 +13,10 @@
 			z-index: 100;
 		}
 	}
-
 }
+/* =/promo
+---------------------------*/
+
 
 .slick-init{
 	display: flex;
@@ -102,3 +106,69 @@
 		opacity: 0;
 	}
 }
+
+
+/* =catalog
+---------------------------*/
+.catalog{
+	margin: 4rem 0;
+	font-size: 1.8rem;
+}
+
+#catalog-carousel{
+	justify-content: space-between;
+	a{
+		@extend .flex-center;
+		flex-direction: column;
+		text-align: center;
+		&:hover{
+			color: $color9;
+			text-decoration: none;
+			img{
+				filter: brightness(1.4);
+			}
+		}
+	}
+
+	.pic{
+		margin-bottom: .7rem;
+		min-height: 65px;		
+	}
+
+	img{
+		transition: filter .3s;
+		vertical-align: top;
+	}
+
+
+	.slick{
+		&-arrow{
+			height: 21px;
+			left: 50%;
+			top: 23px;
+			position: absolute;
+			width: 12px;
+			z-index: 90;
+			&:hover{
+				opacity: 1;
+				&:before{
+					filter: none;
+				}
+			}
+			&:before{
+				transition: .3s;
+				filter: grayscale(1) brightness(1.6);
+			}
+		}
+
+		&-prev{
+			margin-left: -790px;
+			transform: rotate(180deg);
+		}
+		&-next{
+			margin-left: 778px;
+		}
+	}
+}
+/* =/catalog
+---------------------------*/
