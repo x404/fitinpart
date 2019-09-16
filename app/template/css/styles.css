@@ -4587,7 +4587,7 @@ button {
 /* =catalog
 ---------------------------*/
 .catalog {
-  padding: 4rem 0;
+  padding: 3rem 0 4rem;
   font-size: 1.8rem;
   position: relative;
   z-index: 50; }
@@ -4596,23 +4596,25 @@ button {
   justify-content: space-between; }
   #catalog-carousel a {
     flex-direction: column;
-    text-align: center; }
+    text-align: center;
+    padding-top: 10px; }
     #catalog-carousel a:hover {
       color: #0099ff;
       text-decoration: none; }
       #catalog-carousel a:hover img {
-        filter: brightness(1.4); }
+        filter: brightness(1.4);
+        transform: translateY(-10px); }
   #catalog-carousel .pic {
-    margin-bottom: .7rem;
+    margin-bottom: .2rem;
     min-height: 65px; }
   #catalog-carousel img {
-    transition: filter .3s;
+    transition: .3s;
     vertical-align: top; }
   #catalog-carousel .slick-arrow {
     height: 21px;
     left: 50%;
-    top: 23px;
     position: absolute;
+    top: 33px;
     width: 12px;
     z-index: 90; }
     #catalog-carousel .slick-arrow:hover {
