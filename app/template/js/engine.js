@@ -93,7 +93,13 @@ $(document).ready(function(){
 		arrows : true
 	});	
 
-
+	$('#lastnews-carousel').slick({
+		dots: false,
+		slidesToShow: 4,
+		slidesToScroll: 1,
+		autoplay: false,
+		arrows : false
+	});
 
 	// mobile-menu
 	$('#navbar').each(function(){
