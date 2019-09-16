@@ -63,7 +63,7 @@ $(document).ready(function(){
 		autoplaySpeed: 5000,
 		arrows : true,
 		fade: true,
-		speed: 1000,
+		speed: 100000,
 	});	
 
 
