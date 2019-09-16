@@ -4632,6 +4632,32 @@ button {
 
 /* =/catalog
 ---------------------------*/
+/* =/advantages
+---------------------------*/
+.advantages {
+  background-color: #28292d;
+  color: #ffffff;
+  font-family: "Neo Sans Pro";
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-top: 6.5rem; }
+  .advantages-layout {
+    min-height: 15rem;
+    width: 100%; }
+
+.advantage__item {
+  display: flex;
+  align-items: center; }
+
+.advantage__pic {
+  background-color: #0672ba;
+  border-radius: 50%;
+  margin-right: 1.7rem;
+  height: 70px;
+  width: 70px; }
+
+/* =/advantages
+---------------------------*/
 /* =mobile-menu
 ---------------------------*/
 .show-sm,
@@ -4869,6 +4895,17 @@ button {
 
 .slick-arrow.slick-hidden {
   display: none; }
+
+.webp .advantages {
+  background-image: url(../images/bg/advantage-bg.webp); }
+
+.advantages {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+
+.advantages {
+  background-image: url(../images/bg/advantage-bg.jpg); }
 
 /* =mobile-menu
 ---------------------------*/
