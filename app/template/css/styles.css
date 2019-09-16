@@ -3891,7 +3891,7 @@ h3 {
   .tdu:hover {
     text-decoration: none; }
 
-.before, .icon:before, .top__left:before, .top .login:before, .top .login:after, .littlecart .cart-body .cart-products .count .minus:before, .littlecart .cart-body .cart-products .count .plus:before, .littlecart .cart-body .cart-products .count .plus:after, .promo .wrapper:before, .visual__item:before {
+.before, .icon:before, .btn-view:before, .top__left:before, .top .login:before, .top .login:after, .littlecart .cart-body .cart-products .count .minus:before, .littlecart .cart-body .cart-products .count .plus:before, .littlecart .cart-body .cart-products .count .plus:after, .promo .wrapper:before, .visual__item:before {
   content: "";
   display: block;
   position: absolute; }
@@ -3942,7 +3942,7 @@ h3 {
       height: 18px; }
   .icon-littlecart:before {
     background-image: url(../images/sprite.png);
-    background-position: 0px -32px;
+    background-position: -50px 0px;
     width: 27px;
     height: 24px;
     left: 30px;
@@ -3951,7 +3951,7 @@ h3 {
     transition: filter .3s; }
   .icon-cartblue {
     background-image: url(../images/sprite.png);
-    background-position: -50px 0px;
+    background-position: 0px -32px;
     width: 27px;
     height: 24px;
     margin-right: 9px;
@@ -4016,8 +4016,33 @@ h3 {
     background-color: #0672ba;
     color: #ffffff; }
     .btn-blue-lighten-hover:hover {
-      color: #ffffff;
-      background-color: #0099ff; }
+      background-color: #0099ff;
+      color: #ffffff; }
+  .btn-view {
+    align-items: center;
+    background-color: #dde2e6;
+    border-radius: 3rem;
+    color: #0672bb;
+    display: flex;
+    font-size: 1.5rem;
+    height: 3rem;
+    margin-top: 1.8rem;
+    padding-left: 30px;
+    padding-right: 12px;
+    position: relative; }
+    .btn-view:before {
+      background-image: url(../images/sprite.png);
+      background-position: -18px -56px;
+      width: 11px;
+      height: 12px;
+      left: 10px;
+      top: 9px;
+      transition: filter .3s; }
+    .btn-view:hover {
+      background-color: #0099ff;
+      color: #ffffff; }
+      .btn-view:hover:before {
+        filter: grayscale(1) brightness(4); }
 
 button {
   cursor: pointer;
@@ -4693,7 +4718,7 @@ button {
   font-weight: 700;
   margin-top: 6.5rem; }
   .advantages-layout {
-    min-height: 15rem;
+    min-height: 14rem;
     width: 100%; }
 
 .advantage__item {
@@ -4708,6 +4733,55 @@ button {
   width: 70px; }
 
 /* =/advantages
+---------------------------*/
+/* =lastnews
+---------------------------*/
+.lastnews {
+  background-color: #f5f6f8;
+  padding: 6.7rem 0 9rem; }
+  .lastnews header {
+    color: #5f5f5f;
+    font-size: 1.5rem; }
+    .lastnews header p:not(.title) {
+      line-height: 1.67; }
+  .lastnews .title {
+    color: #111b29;
+    font-family: "Neo Sans Pro";
+    font-size: 4.8rem;
+    font-weight: 700;
+    line-height: 1.25;
+    margin-bottom: 2.2rem; }
+  .lastnews .news__item {
+    width: 31.3rem; }
+
+.item-news {
+  background-color: #fff;
+  overflow: hidden; }
+  .item-news__link:hover {
+    text-decoration: none; }
+    .item-news__link:hover .item-news__title {
+      color: #0099ff; }
+    .item-news__link:hover .item-news__pic img {
+      transform: scale(1.05); }
+  .item-news__desc {
+    padding: 2.5rem 2.2rem 2.5rem 2.5rem; }
+  .item-news__title {
+    font-family: "Neo Sans Pro";
+    font-size: 1.8rem;
+    font-weight: 700;
+    transition: color .3s; }
+  .item-news__pic img {
+    transition: transform .3s; }
+  .item-news__text {
+    color: #4b4b4b;
+    font-size: 1.5rem;
+    line-height: 1.6;
+    margin-top: .6rem; }
+  .item-news__date {
+    color: #919191;
+    margin-top: .8rem; }
+
+/* =/lastnews
 ---------------------------*/
 /* =mobile-menu
 ---------------------------*/

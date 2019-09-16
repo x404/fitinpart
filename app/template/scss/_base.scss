@@ -297,12 +297,40 @@ em strong
 		&-lighten{
 			&-hover{
 				&:hover{
-					color: $color2;
 					background-color: $color9;
+					color: $color2;
 				}
 			}
 		}
-	}	
+	}
+
+	&-view{
+		align-items: center;
+		background-color: $color22;
+		border-radius: 3rem;
+		color: $color21;
+		display: flex;
+		font-size: 1.5rem;
+		height: 3rem;
+		margin-top: 1.8rem;
+		padding-left: 30px;
+		padding-right: 12px;
+		position: relative;
+		&:before{
+			@extend .before;
+			@include sprite($icon-arrow-right3);
+			left: 10px;
+			top: 9px;
+			transition: filter .3s;
+		}
+		&:hover{
+			background-color: $color9;
+			color: $color2;
+			&:before{
+				filter: grayscale(1) brightness(4);
+			}
+		}
+	}
 }
 
 button{

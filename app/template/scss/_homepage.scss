@@ -251,7 +251,7 @@
 	font-weight: 700;
 	margin-top: 6.5rem;
 	&-layout{
-		min-height: 15rem;
+		min-height: 14rem;
 		width: 100%;
 	}
 }
@@ -270,4 +270,84 @@
 	}
 }
 /* =/advantages
+---------------------------*/
+
+
+/* =lastnews
+---------------------------*/
+.lastnews{
+	background-color: #f5f6f8;
+	padding: 6.7rem 0 9rem;
+	header{
+		color: $color18;
+		font-size: 1.5rem;
+		p:not(.title){
+			line-height: 1.67;
+		}
+	}
+	.title{
+		color: $color17;
+		font-family: "Neo Sans Pro";
+		font-size: 4.8rem;
+		font-weight: 700;
+		line-height: 1.25;
+		margin-bottom: 2.2rem;
+	}
+	
+	.news__item{
+		width: 31.3rem;
+	}
+}
+
+
+
+.item-news{
+	background-color: #fff;
+	overflow: hidden;
+	&__link{
+		&:hover{
+			text-decoration: none;
+			.item-news{
+				&__title{
+					color: $color9	
+				}
+				&__pic{
+					img{
+						transform: scale(1.05)
+					}
+				}
+			}
+		}
+	}
+
+	&__desc{
+		padding: 2.5rem 2.2rem 2.5rem 2.5rem;
+	}
+
+	&__title{
+		font-family: "Neo Sans Pro";
+		font-size: 1.8rem;
+		font-weight: 700;
+		transition: color .3s;
+	}
+
+	&__pic{
+		img{
+			transition: transform .3s;
+		}
+	}
+
+	&__text{
+		color: $color19;
+		font-size: 1.5rem;
+		line-height: 1.6;
+		margin-top: .6rem;
+	}
+
+	&__date{
+		color: $color20;
+		margin-top: .8rem;
+	}
+}
+/* =/lastnews
 ---------------------------*/
