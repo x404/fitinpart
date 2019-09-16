@@ -43,8 +43,8 @@ $(document).ready(function(){
 	// init scrollbar of countries
 	const ps = new PerfectScrollbar('.countries-wrapper', {
 		wheelPropagation: true,
-		minScrollbarLength: 48,
-		maxScrollbarLength: 48,
+		minScrollbarLength: 100,
+		maxScrollbarLength: 100,
 	});
 
 	ps.update();
@@ -74,7 +74,7 @@ $(document).ready(function(){
 		autoplaySpeed: 5000,
 		arrows : true,
 		fade: true,
-		speed: 100000,
+		speed: 1000
 	});	
 
 
@@ -88,8 +88,8 @@ $(document).ready(function(){
 		dots: false,
 		slidesToShow: 8,
 		slidesToScroll: 1,
-		autoplay: true,
-		autoplaySpeed: 100000,
+		autoplay: false,
+		autoplaySpeed: 5000,
 		arrows : true
 	});	
 

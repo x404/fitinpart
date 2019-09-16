@@ -4214,7 +4214,8 @@ button {
     height: 5rem;
     margin-left: 2.1rem;
     position: relative;
-    width: 11.5rem; }
+    width: 11.5rem;
+    z-index: 100; }
     .header .shop-cart .count {
       background-color: #c91537;
       border-radius: 50%;
@@ -4231,16 +4232,28 @@ button {
 
 .littlecart {
   position: relative; }
+  .littlecart:hover .shop-cart {
+    color: #ffffff;
+    background-color: #0099ff; }
+    .littlecart:hover .shop-cart:before {
+      filter: invert(1); }
+  .littlecart:hover .cart-layout {
+    opacity: 1;
+    z-index: 99; }
+  .littlecart .cart-layout {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding-top: 70px;
+    width: 48rem;
+    z-index: 0;
+    opacity: 0;
+    transition: .3s; }
   .littlecart .cart-body {
     background-color: #fff;
     box-shadow: 5px 0 15px rgba(0, 0, 0, 0.25);
     color: #000;
-    padding: 1.7rem 1.5rem 2rem 3rem;
-    position: absolute;
-    right: 0;
-    top: 70px;
-    width: 48rem;
-    z-index: 99; }
+    padding: 1.7rem 1.5rem 2rem 3rem; }
     .littlecart .cart-body .title {
       font-family: 'Neo Sans Pro';
       color: #010101;
@@ -4344,7 +4357,9 @@ button {
   .search__wrapper {
     background-color: #f3f3f3;
     border-radius: 5rem;
-    height: 5rem; }
+    height: 5rem;
+    position: relative;
+    z-index: 101; }
   .search .form-control {
     background: none;
     border: none;
@@ -4551,8 +4566,10 @@ button {
 /* =catalog
 ---------------------------*/
 .catalog {
-  margin: 4rem 0;
-  font-size: 1.8rem; }
+  padding: 4rem 0;
+  font-size: 1.8rem;
+  position: relative;
+  z-index: 50; }
 
 #catalog-carousel {
   justify-content: space-between; }
