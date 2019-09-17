@@ -4639,7 +4639,9 @@ button {
   z-index: 50; }
 
 #catalog-carousel {
-  justify-content: space-between; }
+  justify-content: space-between;
+  padding-left: 60px;
+  padding-right: 60px; }
   #catalog-carousel a {
     flex-direction: column;
     padding-top: 10px;
@@ -4817,6 +4819,8 @@ button {
   .reviews .title {
     display: flex;
     justify-content: center; }
+    .reviews .title h1 {
+      color: #ffffff; }
   .reviews header {
     color: #fff;
     text-align: center; }

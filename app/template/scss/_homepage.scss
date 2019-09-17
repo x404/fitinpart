@@ -119,6 +119,8 @@
 
 #catalog-carousel{
 	justify-content: space-between;
+	padding-left: 60px;
+	padding-right: 60px;
 	a{
 		@extend .flex-center;
 		flex-direction: column;
@@ -366,6 +368,7 @@
 		display: flex;
 		justify-content: center;
 		h1{
+			color: $color2;
 			// font-size: 4.8rem;
 		}
 	}
