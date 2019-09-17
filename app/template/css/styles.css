@@ -3976,13 +3976,19 @@ strong,
     margin-right: 9px; }
   .icon-slider-arrow:before {
     background-image: url(../images/sprite.png);
-    background-position: -77px -25px;
+    background-position: -93px 0px;
     width: 12px;
     height: 21px;
     left: 50%;
     margin-left: -5px;
     margin-top: -10px;
     top: 50%; }
+  .icon-slider-arrow-gray {
+    background-image: url(../images/sprite.png);
+    background-position: -77px -25px;
+    width: 12px;
+    height: 21px;
+    display: block; }
   .icon-balloon {
     padding-left: 30px;
     min-height: 32px;
@@ -4042,7 +4048,7 @@ strong,
     position: relative; }
     .btn-view:before {
       background-image: url(../images/sprite.png);
-      background-position: -18px -56px;
+      background-position: -93px -21px;
       width: 11px;
       height: 12px;
       left: 10px;
@@ -4208,7 +4214,7 @@ button {
 
 .dropdown-toggle:after {
   background-image: url(../images/sprite.png);
-  background-position: -77px -46px;
+  background-position: -93px -33px;
   width: 10px;
   height: 7px;
   border: none;
@@ -4930,6 +4936,60 @@ button {
     margin-top: 1.5rem; }
 
 /* =/about
+---------------------------*/
+/* =brands
+---------------------------*/
+.brands {
+  border-top: 1px solid #d7d7d7;
+  padding: 5rem 0 6rem; }
+  .brands div.slick-slide {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 75px; }
+  .brands a {
+    display: inline-block;
+    padding-top: 10px;
+    text-align: center; }
+    .brands a img {
+      display: inline;
+      vertical-align: top;
+      transition: transform .3s; }
+    .brands a:hover img {
+      transform: translateY(-10px); }
+  .brands img {
+    margin-left: auto;
+    margin-right: auto; }
+  .brands .slick-next {
+    right: 0; }
+  .brands .slick-prev {
+    left: 0;
+    transform: rotate(180deg); }
+  .brands #brands-carousel {
+    padding-left: 60px;
+    padding-right: 60px; }
+
+.slick-arrow-round-gray {
+  border-radius: 50%;
+  border: 2px solid #c2c9d1;
+  height: 4rem;
+  margin-top: -2rem;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  transition: .3s;
+  width: 4rem;
+  z-index: 50;
+  display: flex; }
+  .slick-arrow-round-gray:hover, .slick-arrow-round-gray:focus {
+    background-color: #c2c9d1; }
+    .slick-arrow-round-gray:hover .icon, .slick-arrow-round-gray:focus .icon {
+      filter: brightness(5); }
+  .slick-arrow-round-gray .icon {
+    margin: auto; }
+
+/* =/brands
 ---------------------------*/
 /* =mobile-menu
 ---------------------------*/

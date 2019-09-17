@@ -248,6 +248,13 @@ em strong
 		}
 	}
 
+	&-slider-arrow-gray{
+		@include sprite($icon-slider-arrow-gray);
+		display: block;
+	}
+
+
+
 	&-balloon{
 		padding-left: 30px;
 		min-height: 32px;

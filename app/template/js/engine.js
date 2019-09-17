@@ -101,6 +101,20 @@ $(document).ready(function(){
 		arrows : false
 	});
 
+
+	$('#brands-carousel').slick({
+		prevArrow:'<button class="slick-arrow slick-arrow-round-gray slick-prev" aria-label="Previous" type="button"><i class=" icon icon-slider-arrow-gray"></i></button>',
+		nextArrow:'<button class="slick-arrow slick-arrow-round-gray slick-next" aria-label="Next" type="button"><i class=" icon icon-slider-arrow-gray"></i></button>',
+		dots: false,
+		slidesToShow: 6,
+		slidesToScroll: 1,
+		autoplay: false,
+		autoplaySpeed: 5000,
+		arrows : true
+	});
+
+
+
 	// mobile-menu
 	$('#navbar').each(function(){
 		var $this = $(this),

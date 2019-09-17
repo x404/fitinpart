@@ -544,3 +544,80 @@
 }
 /* =/about
 ---------------------------*/
+
+
+
+/* =brands
+---------------------------*/
+.brands{
+	border-top: 1px solid $color29;
+	padding: 5rem 0 6rem;
+	div.slick-slide{
+		text-align: center;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		min-height: 75px;
+	}
+	a{
+		display: inline-block;
+		padding-top: 10px;
+		text-align: center;
+		img{
+			display: inline;
+			vertical-align: top;
+			transition: transform .3s;
+		}
+		&:hover{
+			img{
+				transform: translateY(-10px)
+			}
+		}
+	}
+	img{
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.slick{
+		&-next{
+			right: 0;
+		}
+		&-prev{
+			left: 0;
+			transform: rotate(180deg);
+		}
+	}
+
+	#brands-carousel{
+		padding-left: 60px;
+		padding-right: 60px;
+	}
+}
+
+.slick-arrow-round-gray{
+	border-radius: 50%;
+	border: 2px solid $color30;
+	height: 4rem;
+	margin-top: -2rem;
+	padding: 0;
+	position: absolute;
+	top: 50%;
+	transition: .3s;
+	width: 4rem;
+	z-index: 50;
+	display: flex;
+	&:hover,
+	&:focus
+	{
+		background-color: $color30;
+		.icon{
+			filter: brightness(5);
+		}
+	}
+	.icon{
+		margin: auto;
+	}
+}
+/* =/brands
+---------------------------*/
