@@ -4472,6 +4472,11 @@ button {
 ---------------------------*/
 .main {
   overflow: hidden; }
+  .main h1, .main .title {
+    color: #000;
+    font-size: 4.8rem;
+    font-family: 'Neo Sans Pro';
+    font-weight: 700; }
 
 .tab-content > .tab-pane {
   display: none; }
@@ -4756,9 +4761,6 @@ button {
       line-height: 1.67; }
   .lastnews .title {
     color: #111b29;
-    font-family: "Neo Sans Pro";
-    font-size: 4.8rem;
-    font-weight: 700;
     line-height: 1.25;
     margin-bottom: 2.2rem; }
   .lastnews .news__item {
@@ -4809,8 +4811,6 @@ button {
   .reviews .title {
     display: flex;
     justify-content: center; }
-    .reviews .title h1 {
-      font-size: 4.8rem; }
   .reviews header {
     color: #fff;
     text-align: center; }
@@ -4913,6 +4913,23 @@ button {
         color: #0099ff; }
 
 /* =/reviews
+---------------------------*/
+/* =about
+---------------------------*/
+.about {
+  padding: 4.5rem 0;
+  font-size: 1.7rem; }
+  .about .subtitle {
+    color: #0571b9;
+    font-size: 2.8rem;
+    font-family: "Neo Sans Pro";
+    font-weight: 700;
+    margin-top: .6rem; }
+  .about .text {
+    line-height: 1.76;
+    margin-top: 1.5rem; }
+
+/* =/about
 ---------------------------*/
 /* =mobile-menu
 ---------------------------*/
@@ -5158,6 +5175,9 @@ button {
 .webp .reviews {
   background-image: url(../images/bg/reviews-bg.webp); }
 
+.webp .about {
+  background-image: url(../images/bg/about-bg.png); }
+
 .advantages {
   background-repeat: no-repeat;
   background-position: center;
@@ -5167,9 +5187,15 @@ button {
   background-image: url(../images/bg/advantage-bg.jpg); }
 
 .reviews {
-  background-image: url(../images/bg/reviews-bg.jpg);
+  background-image: url(../images/bg/reviews-bg.jpg); }
+
+.reviews,
+.about {
   background-repeat: no-repeat;
   background-position: right bottom; }
+
+.about {
+  background-image: url(../images/bg/about-bg.jpg); }
 
 /* =mobile-menu
 ---------------------------*/

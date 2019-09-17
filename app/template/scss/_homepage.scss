@@ -287,9 +287,6 @@
 	}
 	.title{
 		color: $color17;
-		font-family: "Neo Sans Pro";
-		font-size: 4.8rem;
-		font-weight: 700;
 		line-height: 1.25;
 		margin-bottom: 2.2rem;
 	}
@@ -369,7 +366,7 @@
 		display: flex;
 		justify-content: center;
 		h1{
-			font-size: 4.8rem;
+			// font-size: 4.8rem;
 		}
 	}
 
@@ -523,4 +520,27 @@
 	}
 }
 /* =/reviews
+---------------------------*/
+
+
+
+/* =about
+---------------------------*/
+.about{
+	padding: 4.5rem 0;
+	font-size: 1.7rem;
+	.subtitle{
+		color: $color28;
+		font-size: 2.8rem;
+		font-family: "Neo Sans Pro";
+		font-weight: 700;
+		margin-top: .6rem;
+	}
+
+	.text{
+		line-height: 1.76;
+		margin-top: 1.5rem;
+	}
+}
+/* =/about
 ---------------------------*/
