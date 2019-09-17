@@ -4448,6 +4448,9 @@ button {
   padding: 5rem 0; }
   .footer a {
     color: #b4bdc4; }
+    .footer a:hover {
+      color: #90d3ff;
+      text-decoration: none; }
   .footer .copyright {
     color: #b4bdc4; }
     .footer .copyright p {

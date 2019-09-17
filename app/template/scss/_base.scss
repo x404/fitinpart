@@ -925,6 +925,10 @@ select {
 	padding: 5rem 0;
 	a{
 		color: $color13;
+		&:hover{
+			color: $color31;
+			text-decoration: none;
+		}
 	}
 
 
