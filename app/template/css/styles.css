@@ -4014,7 +4014,9 @@ strong,
   text-align: center; }
 
 .btn {
-  text-decoration: none; }
+  cursor: pointer;
+  text-decoration: none;
+  transition: .3s; }
   .btn:hover {
     text-decoration: none; }
   .btn-large {
@@ -4549,6 +4551,91 @@ button {
   font-weight: 700;
   font-display: swap; }
 
+/* =searchbox
+---------------------------*/
+.searchbox .d-grid {
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr); }
+
+.searchbox__layout {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15); }
+
+.searchbox__panel {
+  background-color: #fff;
+  padding: 3rem 2.5rem; }
+  .searchbox__panel-vehicle {
+    min-height: 374px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3; }
+  .searchbox__panel-partnum .btn, .searchbox__panel-vin .btn {
+    margin-left: 1.8rem; }
+  .searchbox__panel-partnum {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2; }
+  .searchbox__panel-vin {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3; }
+
+.searchbox__title {
+  color: #000;
+  font-family: "Neo Sans Pro";
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: .83; }
+
+.searchbox .nav .separator {
+  border-left: 1px solid #d6d6d6;
+  height: 28px;
+  width: 1px;
+  margin: 0 2.2rem; }
+
+.searchbox .nav-link {
+  color: #899299; }
+  .searchbox .nav-link.active {
+    color: #000000; }
+  .searchbox .nav-link:hover {
+    text-decoration: none; }
+    .searchbox .nav-link:hover:not(.active) {
+      color: #0099ff; }
+
+.searchbox .tab-content {
+  margin-top: 2.1rem; }
+
+.searchbox .form-control {
+  background-color: #f3f3f3;
+  border-radius: 4rem;
+  border: none;
+  height: 4rem;
+  padding: 0 15px;
+  width: 41rem; }
+
+.searchbox .btn-search {
+  background-repeat: no-repeat;
+  background-position: 13px center;
+  box-shadow: 0 5px 15px rgba(0, 153, 255, 0.5);
+  display: block;
+  font-weight: 700; }
+
+.searchbox .btn-middle {
+  background-image: url(../images/icons/search-middle.png);
+  border-radius: 4rem;
+  font-size: 1.6rem;
+  height: 4rem;
+  padding: 0 1.9rem 0 3.7rem; }
+
+.searchbox .example {
+  color: #959a9d;
+  font-size: 1.3rem;
+  margin: .4rem 0 0 4px; }
+
+/* =/searchbox
+---------------------------*/
 /* =promo
 ---------------------------*/
 .promo .wrapper {
@@ -4579,6 +4666,8 @@ button {
 
 #homeslider .text-color-white {
   color: #ffffff; }
+  #homeslider .text-color-white .title {
+    color: currentColor; }
 
 #homeslider .left {
   width: 37%; }
@@ -5243,7 +5332,16 @@ button {
   background-image: url(../images/bg/reviews-bg.webp); }
 
 .webp .about {
-  background-image: url(../images/bg/about-bg.png); }
+  background-image: url(../images/bg/about-bg.webp); }
+
+.webp .searchbox__panel-vehicle {
+  background-image: url(../images/bg/vehicle-bg.webp); }
+
+.webp .searchbox__panel-partnum {
+  background-image: url(../images/bg/part-num-bg.webp); }
+
+.webp .searchbox__panel-vin {
+  background-image: url(../images/bg/vin-bg.webp); }
 
 .advantages {
   background-repeat: no-repeat;
@@ -5257,12 +5355,22 @@ button {
   background-image: url(../images/bg/reviews-bg.jpg); }
 
 .reviews,
-.about {
+.about,
+.searchbox__panel {
   background-repeat: no-repeat;
   background-position: right bottom; }
 
 .about {
   background-image: url(../images/bg/about-bg.jpg); }
+
+.searchbox__panel-vehicle {
+  background-image: url(../images/bg/vehicle-bg.jpg); }
+
+.searchbox__panel-partnum {
+  background-image: url(../images/bg/part-num-bg.jpg); }
+
+.searchbox__panel-vin {
+  background-image: url(../images/bg/vin-bg.jpg); }
 
 /* =mobile-menu
 ---------------------------*/

@@ -6,7 +6,19 @@
 		background-image: url(../images/bg/reviews-bg.webp);
 	}
 	.about{
-		background-image: url(../images/bg/about-bg.png);
+		background-image: url(../images/bg/about-bg.webp);
+	}
+
+	.searchbox__panel{
+		&-vehicle{
+			background-image: url(../images/bg/vehicle-bg.webp);
+		}
+		&-partnum{
+			background-image: url(../images/bg/part-num-bg.webp);
+		}
+		&-vin{
+			background-image: url(../images/bg/vin-bg.webp);
+		}
 	}
 }
 
@@ -32,7 +44,8 @@
 
 
 .reviews,
-.about
+.about,
+.searchbox__panel
 {
 	background-repeat: no-repeat;
 	background-position: right bottom
@@ -40,4 +53,17 @@
 
 .about{
 	background-image: url(../images/bg/about-bg.jpg);
+}
+
+
+.searchbox__panel{
+	&-vehicle{
+		background-image: url(../images/bg/vehicle-bg.jpg);
+	}
+	&-partnum{
+		background-image: url(../images/bg/part-num-bg.jpg);
+	}
+	&-vin{
+		background-image: url(../images/bg/vin-bg.jpg);
+	}
 }

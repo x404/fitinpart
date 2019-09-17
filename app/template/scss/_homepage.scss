@@ -1,3 +1,121 @@
+/* =searchbox
+---------------------------*/
+.searchbox{
+	.d-grid{
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(2, 1fr);
+	}
+	&__layout{
+		box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);		
+	}
+	&__panel{
+		background-color: #fff;
+		padding: 3rem 2.5rem;
+		&-vehicle{
+			min-height: 374px;
+
+			grid-column-start: 1;
+			grid-column-end: 2;
+			grid-row-start: 1;
+			grid-row-end: 3;
+
+		}
+		&-partnum,
+		&-vin{
+			.btn{
+				margin-left: 1.8rem;
+			}
+		}
+
+		&-partnum{
+			// min-height: 187px;
+
+			grid-column-start: 2;
+			grid-column-end: 3;
+			grid-row-start: 1;
+			grid-row-end: 2;
+		}
+		&-vin{
+			// min-height: 187px;
+			grid-column-start: 2;
+			grid-column-end: 3;
+			grid-row-start: 2;
+			grid-row-end: 3;
+		}
+	}
+
+	&__title{
+		color: #000;
+		font-family: "Neo Sans Pro";
+		font-size: 3rem;
+		font-weight: 700;
+		line-height: .83;
+	}
+
+	.nav{
+		.separator{
+			border-left: 1px solid $color33;
+			height: 28px;
+			width: 1px;
+			margin: 0 2.2rem;
+		}
+		&-item{
+		}
+		&-link{
+			color: $color32;
+			&.active{
+				color: $color1;
+			}
+			&:hover{
+				text-decoration: none;
+				&:not(.active){
+					color: $color9;
+				}
+			}
+		}
+	}
+
+	.tab-content{
+		margin-top: 2.1rem;
+	}
+
+	.form-control{
+		background-color: $color8;
+		border-radius: 4rem;
+		border: none;
+		height: 4rem;
+		padding: 0 15px;
+		width: 41rem;
+	}
+
+	.btn{
+		&-search{
+			background-repeat: no-repeat;
+			background-position: 13px center;
+			box-shadow: 0 5px 15px rgba(0, 153, 255, 0.5);
+			display: block;
+			font-weight: 700;
+		}
+		&-middle{
+			background-image: url(../images/icons/search-middle.png);
+			border-radius: 4rem;
+			font-size: 1.6rem;
+			height: 4rem;
+			padding: 0 1.9rem 0 3.7rem;
+		}
+	}
+
+	.example{
+		color: $color34;
+		font-size: 1.3rem;
+		margin: .4rem 0 0 4px;
+	}
+}
+/* =/searchbox
+---------------------------*/
+
+
+
 /* =promo
 ---------------------------*/
 .promo{
@@ -40,6 +158,9 @@
 
 	.text-color-white{
 		color: $color2;
+		.title{
+			color: currentColor;
+		}
 	}
 
 	.left{
