@@ -1,6 +1,8 @@
 /* =searchbox
 ---------------------------*/
 .searchbox{
+	margin-top: -8rem;
+	position: relative;
 	.d-grid{
 		grid-template-columns: repeat(2, 1fr);
 		grid-template-rows: repeat(2, 1fr);
@@ -8,52 +10,6 @@
 	&__layout{
 		box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);		
 	}
-	&__panel{
-		background-color: #fff;
-		padding: 3rem 2.5rem;
-		&-vehicle{
-			border-right: 1px solid #e8e8e8;
-			min-height: 374px;
-
-			grid-column-start: 1;
-			grid-column-end: 2;
-			grid-row-start: 1;
-			grid-row-end: 3;
-
-		}
-		&-partnum,
-		&-vin{
-			.btn{
-				margin-left: 1.8rem;
-			}
-		}
-
-		&-partnum{
-			border-bottom: 1px solid #e8e8e8;
-			// min-height: 187px;
-
-			grid-column-start: 2;
-			grid-column-end: 3;
-			grid-row-start: 1;
-			grid-row-end: 2;
-		}
-		&-vin{
-			// min-height: 187px;
-			grid-column-start: 2;
-			grid-column-end: 3;
-			grid-row-start: 2;
-			grid-row-end: 3;
-		}
-	}
-
-	&__title{
-		color: #000;
-		font-family: "Neo Sans Pro";
-		font-size: 3rem;
-		font-weight: 700;
-		line-height: .83;
-	}
-
 	.nav{
 		.separator{
 			border-left: 1px solid $color33;
@@ -76,6 +32,134 @@
 			}
 		}
 	}
+
+	 &__panel{
+		background-color: #fff;
+		padding: 3rem 2.5rem;
+
+		.checkbox input {
+			position: absolute;
+			z-index: -1;
+			opacity: 0;
+		}
+		.checkbox__text {
+			position: relative;
+			padding: 0 0 0 70px;
+			cursor: pointer;
+		}
+		.checkbox__text:before {
+			background: $color35;
+			border-radius: 30px;
+			content: '';
+			height: 30px;
+			left: 0;
+			position: absolute;
+			top: -4px;
+			transition: .2s;
+			width: 69px;
+		}
+		.checkbox__text:after {
+			@extend .flex-center;
+			background: #FFF;
+			border-radius: 10px;
+			color: #6a6a6a;
+			content: 'OFF';
+			font-size: .8rem;
+			height: 20px;
+			padding-top: 2px;
+			position: absolute;
+			right: 6px;
+			top: 1px;
+			transition: .2s;
+			width: 33px;
+		}
+		.checkbox input:checked + .checkbox__text:before {
+			background: $color3;
+			box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+		}
+		.checkbox input:checked + .checkbox__text:after {
+			content: "ON";
+			right: 32px;
+		}
+
+
+		// search by Vehicle
+		&-vehicle{
+			border-right: 1px solid #e8e8e8;
+			min-height: 374px;
+
+			grid-column-start: 1;
+			grid-column-end: 2;
+			grid-row-start: 1;
+			grid-row-end: 3;
+
+			.nav{
+				&-item{
+					font-size: 1.6rem;
+					font-weight: 700;
+				}
+				&-link{
+					@extend .flex-center;
+					border-radius: 3rem;
+					border: 3px solid  #fff;
+					height: 3.6rem;
+					padding: 0 1.2rem;
+					&.active{
+						border-color: $color3;
+					}
+				}
+				.separator{
+					height: 24px;
+					margin: 0 .9rem;
+				}
+			}
+
+			.nav-top{
+				margin-top: 1.2rem;
+				width: 63rem;
+			}
+
+			.veh-only{
+				font-size: 1.5rem;
+				.checkbox{
+					margin-left: 10px;
+					position: relative;
+					top: -10px;
+				}
+			}
+		}
+		&-partnum,
+		&-vin{
+			.btn{
+				margin-left: 1.8rem;
+			}
+		}
+
+		&-partnum{
+			border-bottom: 1px solid #e8e8e8;
+
+			grid-column-start: 2;
+			grid-column-end: 3;
+			grid-row-start: 1;
+			grid-row-end: 2;
+		}
+		&-vin{
+			grid-column-start: 2;
+			grid-column-end: 3;
+			grid-row-start: 2;
+			grid-row-end: 3;
+		}
+	}
+
+	&__title{
+		color: #000;
+		font-family: "Neo Sans Pro";
+		font-size: 3rem;
+		font-weight: 700;
+		line-height: .83;
+	}
+
+
 
 	.tab-content{
 		margin-top: 2.1rem;

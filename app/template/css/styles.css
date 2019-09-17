@@ -3906,7 +3906,7 @@ strong,
 .submit {
   cursor: pointer; }
 
-.flex-center, .header .shop-cart .count, .littlecart .cart-body .btn-checkout, .littlecart .cart-body .btn-check, #catalog-carousel a, .reviews .btn-show {
+.flex-center, .header .shop-cart .count, .littlecart .cart-body .btn-checkout, .littlecart .cart-body .btn-check, .searchbox__panel .checkbox__text:after, .searchbox__panel-vehicle .nav-link, #catalog-carousel a, .reviews .btn-show {
   display: flex;
   align-items: center;
   justify-content: center; }
@@ -4561,101 +4561,152 @@ button {
 
 /* =searchbox
 ---------------------------*/
-.searchbox .d-grid {
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr); }
-
-.searchbox__layout {
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15); }
-
-.searchbox__panel {
-  background-color: #fff;
-  padding: 3rem 2.5rem; }
-  .searchbox__panel-vehicle {
-    border-right: 1px solid #e8e8e8;
-    min-height: 374px;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 3; }
-  .searchbox__panel-partnum .btn, .searchbox__panel-vin .btn {
-    margin-left: 1.8rem; }
-  .searchbox__panel-partnum {
-    border-bottom: 1px solid #e8e8e8;
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 2; }
-  .searchbox__panel-vin {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 3; }
-
-.searchbox__title {
-  color: #000;
-  font-family: "Neo Sans Pro";
-  font-size: 3rem;
-  font-weight: 700;
-  line-height: .83; }
-
-.searchbox .nav .separator {
-  border-left: 1px solid #d6d6d6;
-  height: 28px;
-  width: 1px;
-  margin: 0 2.2rem; }
-
-.searchbox .nav-link {
-  color: #899299; }
-  .searchbox .nav-link.active {
-    color: #000000; }
-  .searchbox .nav-link:hover {
-    text-decoration: none; }
-    .searchbox .nav-link:hover:not(.active) {
-      color: #0099ff; }
-
-.searchbox .tab-content {
-  margin-top: 2.1rem; }
-
-.searchbox .form-control {
-  background-color: #f3f3f3;
-  border-radius: 4rem;
-  border: none;
-  height: 4rem;
-  padding: 0 15px;
-  width: 41rem;
-  transition: box-shadow .3s; }
-  .searchbox .form-control:hover, .searchbox .form-control:focus {
-    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15); }
-
-.searchbox .btn-file {
-  background-color: #778d9b;
-  border-radius: 50%;
-  box-shadow: 0 5px 15px rgba(0, 153, 255, 0.5);
-  height: 4rem;
-  margin-left: 2rem;
-  width: 4rem; }
-  .searchbox .btn-file + .btn-search {
-    margin-left: 10px; }
-
-.searchbox .btn-search {
-  background-repeat: no-repeat;
-  background-position: 13px center;
-  box-shadow: 0 5px 15px rgba(0, 153, 255, 0.5);
-  display: block;
-  font-weight: 700; }
-
-.searchbox .btn-middle {
-  background-image: url(../images/icons/search-middle.png);
-  border-radius: 4rem;
-  font-size: 1.6rem;
-  height: 4rem;
-  padding: 0 1.9rem 0 3.7rem; }
-
-.searchbox .example {
-  color: #959a9d;
-  font-size: 1.3rem;
-  margin: .4rem 0 0 4px; }
+.searchbox {
+  margin-top: -8rem;
+  position: relative; }
+  .searchbox .d-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr); }
+  .searchbox__layout {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15); }
+  .searchbox .nav .separator {
+    border-left: 1px solid #d6d6d6;
+    height: 28px;
+    width: 1px;
+    margin: 0 2.2rem; }
+  .searchbox .nav-link {
+    color: #899299; }
+    .searchbox .nav-link.active {
+      color: #000000; }
+    .searchbox .nav-link:hover {
+      text-decoration: none; }
+      .searchbox .nav-link:hover:not(.active) {
+        color: #0099ff; }
+  .searchbox__panel {
+    background-color: #fff;
+    padding: 3rem 2.5rem; }
+    .searchbox__panel .checkbox input {
+      position: absolute;
+      z-index: -1;
+      opacity: 0; }
+    .searchbox__panel .checkbox__text {
+      position: relative;
+      padding: 0 0 0 70px;
+      cursor: pointer; }
+    .searchbox__panel .checkbox__text:before {
+      background: #bcc7ce;
+      border-radius: 30px;
+      content: '';
+      height: 30px;
+      left: 0;
+      position: absolute;
+      top: -4px;
+      transition: .2s;
+      width: 69px; }
+    .searchbox__panel .checkbox__text:after {
+      background: #FFF;
+      border-radius: 10px;
+      color: #6a6a6a;
+      content: 'OFF';
+      font-size: .8rem;
+      height: 20px;
+      padding-top: 2px;
+      position: absolute;
+      right: 6px;
+      top: 1px;
+      transition: .2s;
+      width: 33px; }
+    .searchbox__panel .checkbox input:checked + .checkbox__text:before {
+      background: #0672ba;
+      box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2); }
+    .searchbox__panel .checkbox input:checked + .checkbox__text:after {
+      content: "ON";
+      right: 32px; }
+    .searchbox__panel-vehicle {
+      border-right: 1px solid #e8e8e8;
+      min-height: 374px;
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 1;
+      grid-row-end: 3; }
+      .searchbox__panel-vehicle .nav-item {
+        font-size: 1.6rem;
+        font-weight: 700; }
+      .searchbox__panel-vehicle .nav-link {
+        border-radius: 3rem;
+        border: 3px solid  #fff;
+        height: 3.6rem;
+        padding: 0 1.2rem; }
+        .searchbox__panel-vehicle .nav-link.active {
+          border-color: #0672ba; }
+      .searchbox__panel-vehicle .nav .separator {
+        height: 24px;
+        margin: 0 .9rem; }
+      .searchbox__panel-vehicle .nav-top {
+        margin-top: 1.2rem;
+        width: 63rem; }
+      .searchbox__panel-vehicle .veh-only {
+        font-size: 1.5rem; }
+        .searchbox__panel-vehicle .veh-only .checkbox {
+          margin-left: 10px;
+          position: relative;
+          top: -10px; }
+    .searchbox__panel-partnum .btn, .searchbox__panel-vin .btn {
+      margin-left: 1.8rem; }
+    .searchbox__panel-partnum {
+      border-bottom: 1px solid #e8e8e8;
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 1;
+      grid-row-end: 2; }
+    .searchbox__panel-vin {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 2;
+      grid-row-end: 3; }
+  .searchbox__title {
+    color: #000;
+    font-family: "Neo Sans Pro";
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: .83; }
+  .searchbox .tab-content {
+    margin-top: 2.1rem; }
+  .searchbox .form-control {
+    background-color: #f3f3f3;
+    border-radius: 4rem;
+    border: none;
+    height: 4rem;
+    padding: 0 15px;
+    width: 41rem;
+    transition: box-shadow .3s; }
+    .searchbox .form-control:hover, .searchbox .form-control:focus {
+      box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15); }
+  .searchbox .btn-file {
+    background-color: #778d9b;
+    border-radius: 50%;
+    box-shadow: 0 5px 15px rgba(0, 153, 255, 0.5);
+    height: 4rem;
+    margin-left: 2rem;
+    width: 4rem; }
+    .searchbox .btn-file + .btn-search {
+      margin-left: 10px; }
+  .searchbox .btn-search {
+    background-repeat: no-repeat;
+    background-position: 13px center;
+    box-shadow: 0 5px 15px rgba(0, 153, 255, 0.5);
+    display: block;
+    font-weight: 700; }
+  .searchbox .btn-middle {
+    background-image: url(../images/icons/search-middle.png);
+    border-radius: 4rem;
+    font-size: 1.6rem;
+    height: 4rem;
+    padding: 0 1.9rem 0 3.7rem; }
+  .searchbox .example {
+    color: #959a9d;
+    font-size: 1.3rem;
+    margin: .4rem 0 0 4px; }
 
 /* =/searchbox
 ---------------------------*/
