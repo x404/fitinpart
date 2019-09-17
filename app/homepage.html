@@ -592,6 +592,7 @@
 					<div class="searchbox__panel searchbox__panel-vehicle" id="number_search_sg">
 						<div class="searchbox__title">Search by Vehicle</div>	
 					</div>
+					<!-- part number - partsize -->
 					<div class="searchbox__panel searchbox__panel-partnum" id="part_search_sg">
 						<ul class="nav d-flex searchbox__title" id="part-tab" role="tablist">
 							<li class="nav-item">
@@ -616,7 +617,7 @@
 							<div class="tab-pane fade" id="part-size" role="tabpanel" aria-labelledby="part-size-tab">
 								<form action="#" method="post">
 									<div class="d-flex">
-										<input type="text" class="form-control" id="part_search_in2" name="prd_ids2" />
+										<input type="text" class="form-control" id="part-size_in" name="prd_ids2" />
 										<input type="submit" class="btn btn-search btn-middle btn-blue btn-blue-lighten-hover" value="Search" />
 									</div>
 								</form>
@@ -624,10 +625,45 @@
 							</div>
 						</div>
 					</div>
+
+					<!-- =vin -->
 					<div class="searchbox__panel searchbox__panel-vin" id="vin_search_sg">
-						<div class="searchbox__title">
-							VIN or Chassis No
+						<ul class="nav d-flex searchbox__title" id="vin-tab" role="tablist">
+							<li class="nav-item">
+								<a class="nav-link active" id="vin-number-tab" data-toggle="tab" href="#vin-number" role="tab" aria-controls="vin-number" aria-selected="true">VIN or Chassis No</a>
+							</li>
+							<li class="separator"></li>
+							<li class="nav-item">
+								<a class="nav-link" id="vin-size-tab" data-toggle="tab" href="#vin-size" role="tab" aria-controls="vin-size" aria-selected="false">Vehicle Plate No</a>
+							</li>
+						</ul>
+						
+						<div class="tab-content" id="vin-tabContent">
+							<div class="tab-pane fade show active" id="vin-number" role="tabpanel" aria-labelledby="vin-number-tab">
+								<form action="#" method="post">
+									<div class="d-flex">
+										<input type="text" class="form-control" id="vin_search_in" name="prd_ids" />
+										<button type="button" class="btn-file" onclick="$('#id_search_vin_img').click();"><i class="icon icon-camera"></i></button>
+										<input type="submit" class="btn btn-search btn-middle btn-blue btn-blue-lighten-hover" value="Search" />
+									</div>
+								</form>
+								<p class="example">Example: JHMCU26609213298</p> 
+							</div>
+							<div class="tab-pane fade" id="vin-size" role="tabpanel" aria-labelledby="vin-size-tab">
+								<form action="#" method="post">
+									<div class="d-flex">
+										<input type="text" class="form-control" id="vehicle-number" name="prd_ids2" />
+										<button type="button" class="btn-file" onclick="$('#id_search_vin_img').click();"><i class="icon icon-camera"></i></button>
+										<input type="submit" class="btn btn-search btn-middle btn-blue btn-blue-lighten-hover" value="Search" />
+									</div>
+								</form>
+								<form class="FrmVinSearchImage" style="display: none;" action="https://www.fitinpart.sg/index.php?route=tool/imgrecognize/ocr_vin">
+									<input type="file" id="id_search_vin_img" name="vin_img" accept="image/*" capture="camera" hidden="">
+								</form>
+								<p class="example">Example: JHMCU26609213298.</p> 
+							</div>
 						</div>
+
 					</div>
 				</div>
 			</div>

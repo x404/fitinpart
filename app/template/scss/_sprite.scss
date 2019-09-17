@@ -64,6 +64,17 @@ $icon-balloon-total-width: 105px;
 $icon-balloon-total-height: 74px;
 $icon-balloon-image: '../images/sprite.png';
 $icon-balloon: (0px, 0px, 0px, 0px, 24px, 32px, 105px, 74px, '../images/sprite.png', 'icon-balloon', );
+$icon-camera-name: 'icon-camera';
+$icon-camera-x: 18px;
+$icon-camera-y: 56px;
+$icon-camera-offset-x: -18px;
+$icon-camera-offset-y: -56px;
+$icon-camera-width: 20px;
+$icon-camera-height: 16px;
+$icon-camera-total-width: 105px;
+$icon-camera-total-height: 74px;
+$icon-camera-image: '../images/sprite.png';
+$icon-camera: (18px, 56px, -18px, -56px, 20px, 16px, 105px, 74px, '../images/sprite.png', 'icon-camera', );
 $icon-caret-name: 'icon-caret';
 $icon-caret-x: 93px;
 $icon-caret-y: 33px;
@@ -144,7 +155,7 @@ $icon-user: (24px, 0px, -24px, 0px, 26px, 26px, 105px, 74px, '../images/sprite.p
 $spritesheet-width: 105px;
 $spritesheet-height: 74px;
 $spritesheet-image: '../images/sprite.png';
-$spritesheet-sprites: ($icon-9dotted, $icon-arrow-right, $icon-arrow-right2, $icon-arrow-right3, $icon-balloon, $icon-caret, $icon-cart-blue, $icon-littlecart, $icon-slider-arrow-gray, $icon-slider-arrow, $icon-tel, $icon-user, );
+$spritesheet-sprites: ($icon-9dotted, $icon-arrow-right, $icon-arrow-right2, $icon-arrow-right3, $icon-balloon, $icon-camera, $icon-caret, $icon-cart-blue, $icon-littlecart, $icon-slider-arrow-gray, $icon-slider-arrow, $icon-tel, $icon-user, );
 $spritesheet: (105px, 74px, '../images/sprite.png', $spritesheet-sprites, );
 
 // The provided mixins are intended to be used with the array-like variables

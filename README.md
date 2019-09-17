@@ -1,4 +1,4 @@
-FITINPARS
+# FITINPARTS
 ================
 
 Верстка расположена по адресу [http://fitinpart.proverstka.com.ua](http://fitinpart.proverstka.com.ua)
@@ -19,3 +19,8 @@ __Используемые в проекте js плагины__
 
 * Стилизация скролов nicescroll[https://github.com/inuyaksa/jquery.nicescroll/blob/master/README.md](https://github.com/inuyaksa/jquery.nicescroll/blob/master/README.md)
 
+
+
+---------------------------------------------------------
+#homepage.html# 
+1. Вызов формы загрузки фотографий для поиска взят с основного сайта 

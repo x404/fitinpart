@@ -12,6 +12,7 @@
 		background-color: #fff;
 		padding: 3rem 2.5rem;
 		&-vehicle{
+			border-right: 1px solid #e8e8e8;
 			min-height: 374px;
 
 			grid-column-start: 1;
@@ -28,6 +29,7 @@
 		}
 
 		&-partnum{
+			border-bottom: 1px solid #e8e8e8;
 			// min-height: 187px;
 
 			grid-column-start: 2;
@@ -86,6 +88,23 @@
 		height: 4rem;
 		padding: 0 15px;
 		width: 41rem;
+		transition: box-shadow .3s;
+		&:hover,
+		&:focus{
+			box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
+		}
+	}
+
+	.btn-file{
+		background-color: #778d9b;
+		border-radius: 50%;
+		box-shadow: 0 5px 15px rgba(0, 153, 255, 0.5);
+		height: 4rem;
+		margin-left: 2rem;
+		width: 4rem;
+		& + .btn-search{
+			margin-left: 10px;
+		}
 	}
 
 	.btn{

@@ -170,6 +170,7 @@ em strong
 }
 
 .icon{
+	padding: 0;
 	position: relative; 
 	&:before{
 		@extend .before;
@@ -237,7 +238,7 @@ em strong
 		margin-right: 9px;
 	}
 
-
+ 
 	&-slider-arrow{
 		&:before{
 			@include sprite($icon-slider-arrow);
@@ -253,6 +254,12 @@ em strong
 		display: block;
 	}
 
+
+	&-camera{
+		@include sprite($icon-camera);
+		display: block;
+		margin: 0 auto;
+	}
 
 
 	&-balloon{

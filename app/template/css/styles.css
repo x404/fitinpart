@@ -3912,6 +3912,7 @@ strong,
   justify-content: center; }
 
 .icon {
+  padding: 0;
   position: relative; }
   .icon:before {
     left: 0;
@@ -3989,6 +3990,13 @@ strong,
     width: 12px;
     height: 21px;
     display: block; }
+  .icon-camera {
+    background-image: url(../images/sprite.png);
+    background-position: -18px -56px;
+    width: 20px;
+    height: 16px;
+    display: block;
+    margin: 0 auto; }
   .icon-balloon {
     padding-left: 30px;
     min-height: 32px;
@@ -4564,6 +4572,7 @@ button {
   background-color: #fff;
   padding: 3rem 2.5rem; }
   .searchbox__panel-vehicle {
+    border-right: 1px solid #e8e8e8;
     min-height: 374px;
     grid-column-start: 1;
     grid-column-end: 2;
@@ -4572,6 +4581,7 @@ button {
   .searchbox__panel-partnum .btn, .searchbox__panel-vin .btn {
     margin-left: 1.8rem; }
   .searchbox__panel-partnum {
+    border-bottom: 1px solid #e8e8e8;
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 1;
@@ -4613,7 +4623,20 @@ button {
   border: none;
   height: 4rem;
   padding: 0 15px;
-  width: 41rem; }
+  width: 41rem;
+  transition: box-shadow .3s; }
+  .searchbox .form-control:hover, .searchbox .form-control:focus {
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15); }
+
+.searchbox .btn-file {
+  background-color: #778d9b;
+  border-radius: 50%;
+  box-shadow: 0 5px 15px rgba(0, 153, 255, 0.5);
+  height: 4rem;
+  margin-left: 2rem;
+  width: 4rem; }
+  .searchbox .btn-file + .btn-search {
+    margin-left: 10px; }
 
 .searchbox .btn-search {
   background-repeat: no-repeat;
