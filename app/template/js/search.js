@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	
+
 	// SEARCH
 	// https://www.fitinpart.sg/catalog/view/javascript/function.js
 	$("#brand_select").multipleSelect({
@@ -151,11 +151,8 @@ $(document).ready(function(){
 	function SwitchEnabledAppsearchFields(){
 		$("#model_select, #year_select, #body_select, #engine_select, #engineno_select").not(':focus').multipleSelect("disable");
 		if($('select#brand_select :selected').val()>0) {
-			// $("#model_select").not(':focus').multipleSelect("enable");
-			$("#class_select").not(':focus').multipleSelect("enable");
-		}
-		if($('select#class_select :selected').val()>0) {
 			$("#model_select").not(':focus').multipleSelect("enable");
+			$("#class_select").not(':focus').multipleSelect("enable");
 		}
 		if($('select#model_select :selected').val()>0) {
 			$("#year_select,#body_select, #engine_select, #engineno_select").not(':focus').multipleSelect("enable");
