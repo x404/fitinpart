@@ -21,7 +21,7 @@
   .ms-parent.form-control {
     padding-left: 0;
     padding-right: 0; }
-  .ms-parent.brand, .ms-parent.class, .ms-parent.model {
+  .ms-parent.brand, .ms-parent.class, .ms-parent.model, .ms-parent.body {
     width: 100% !important; }
 
 .ms-choice {
@@ -51,7 +51,7 @@
 
 .ms-choice > span {
   display: block;
-  line-height: 1.2rem;
+  line-height: 1.2;
   overflow: hidden;
   padding-left: 16px;
   text-overflow: ellipsis;

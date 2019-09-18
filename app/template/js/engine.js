@@ -62,7 +62,7 @@ $(document).ready(function(){
 
 
 	// SEARCH
-
+	// https://www.fitinpart.sg/catalog/view/javascript/function.js
 	$("#brand_select").multipleSelect({
 		single: true,
 		filter: true,
@@ -153,6 +153,60 @@ $(document).ready(function(){
 	});
 
 
+   $("#body_select").multipleSelect({
+		filter: true,
+		single: true,
+		placeholder : '-Select Body-',
+		noMatchesFound:$('#chk_app_search_sg_only').is(':checked')?'No matches found<br>To show all bodies Turn <strong>OFF</strong> Common SG Veh':'No matches found',
+		onFilter: function(){
+			bodylist.update();
+		},
+		onOpen: function() {
+			bodylist.update();
+		},
+		onClick: function(view) {
+		   // if(view.value!=AppSearchCurrentParams.body) {
+			  //  getEngine(false);
+		   // }
+	  }
+   });
+
+
+	$("#engine_select").multipleSelect({
+		filter: true,
+		single: true,
+		placeholder : '-Select Engine-',
+		noMatchesFound:$('#chk_app_search_sg_only').is(':checked')?'No matches found<br>To show all engines Turn <strong>OFF</strong> Common SG Veh':'No matches found',
+		onFilter: function(){
+			enginelist.update();
+		},
+		onOpen: function() {
+			enginelist.update();
+		},
+		onClick: function(view) {
+		// 	if(view.value!=AppSearchCurrentParams.engine) {
+		// 	   getEngineNo(false);
+		// 	}
+		}
+	});
+	//*Code for the onChange changes
+	$("#engineno_select").multipleSelect({
+		filter: true,
+		single: true,
+		placeholder : '-Select EngineNo-',
+		noMatchesFound:$('#chk_app_search_sg_only').is(':checked')?'No matches found<br>To show all numbers Turn <strong>OFF</strong> Common SG Veh':'No matches found',
+		onFilter: function(){
+			enginenolist.update();
+		},
+		onOpen: function() {
+			enginenolist.update();
+		},
+		onClick: function(view) {
+			// if(view.value!=AppSearchCurrentParams.engineno) {
+			// }
+		}
+	});
+
 	var brandlist = new PerfectScrollbar('.searchbox .brand .listwrapper', {
 		wheelPropagation: true,
 		minScrollbarLength: 100,
@@ -173,8 +227,21 @@ $(document).ready(function(){
 		minScrollbarLength: 100,
 		maxScrollbarLength: 100,
 	});
-
-
+	var bodylist = new PerfectScrollbar('.searchbox .body .listwrapper', {
+		wheelPropagation: true,
+		minScrollbarLength: 100,
+		maxScrollbarLength: 100,
+	});
+	var enginelist = new PerfectScrollbar('.searchbox .engine .listwrapper', {
+		wheelPropagation: true,
+		minScrollbarLength: 100,
+		maxScrollbarLength: 100,
+	});
+	var enginenolist = new PerfectScrollbar('.searchbox .engineno .listwrapper', {
+		wheelPropagation: true,
+		minScrollbarLength: 100,
+		maxScrollbarLength: 100,
+	});
 
 	// homeslider
 	$('#homeslider').slick({

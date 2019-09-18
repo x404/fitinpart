@@ -4582,10 +4582,14 @@ button {
       text-decoration: none; }
       .searchbox .nav-link:hover:not(.active) {
         color: #0099ff; }
-  .searchbox #year_select {
+  .searchbox #year_select,
+  .searchbox #engine_select,
+  .searchbox #engineno_select {
     width: 145px; }
   .searchbox .ms-search {
     margin-bottom: 2px; }
+  .searchbox .hide-radio:first-child {
+    display: none !important; }
   .searchbox .ms-drop {
     padding: 0 0 13px; }
     .searchbox .ms-drop .ms-search {

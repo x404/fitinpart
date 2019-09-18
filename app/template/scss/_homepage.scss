@@ -34,11 +34,20 @@
 	}
 
 
-	#year_select{
+	#year_select,
+	#engine_select,
+	#engineno_select
+	{
 		width: 145px;
 	}
 	.ms-search{
 		margin-bottom: 2px;
+	}
+
+	.hide-radio{
+		&:first-child{
+			display: none !important;
+		}
 	}
 	
 	.ms-drop{
