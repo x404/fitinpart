@@ -33,6 +33,10 @@
 		}
 	}
 
+	.car-tab-layout{
+		width: 63rem;
+	}
+
 
 	#year_select,
 	#engine_select,
@@ -246,8 +250,8 @@
 
 	.btn{
 		&-search{
-			background-repeat: no-repeat;
 			background-position: 13px center;
+			background-repeat: no-repeat;
 			box-shadow: 0 5px 15px rgba(0, 153, 255, 0.5);
 			display: block;
 			font-weight: 700;
@@ -258,6 +262,13 @@
 			font-size: 1.6rem;
 			height: 4rem;
 			padding: 0 1.9rem 0 3.7rem;
+		}
+		&-big{
+			background-image: url(../images/icons/search-big.png);
+			border-radius: 5rem;
+			font-size: 1.8rem;
+			height: 5rem;
+			padding: 0 2.7rem 0 4.7rem;
 		}
 	}
 
