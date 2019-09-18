@@ -78,9 +78,9 @@ $(document).ready(function(){
 		onClick: function(view) {
 		//Unset the all selection values
 		   $("#class_select, #model_select, "
-		         + "#year_select,#body_select, #engine_select, #engineno_select").multipleSelect("uncheckAll");
+				 + "#year_select,#body_select, #engine_select, #engineno_select").multipleSelect("uncheckAll");
 
-		   // SwitchEnabledAppsearchFields();
+		   SwitchEnabledAppsearchFields();
 		   //Get class and model
 		   // getClass(0, 0, 0);
 		   // getModel(0, 0, 0, 0);
@@ -100,7 +100,7 @@ $(document).ready(function(){
 		},
 		onClick: function(view) {
 			$(" #model_select, #year_select, #body_select, #engine_select, #engineno_select").multipleSelect("uncheckAll");
-			// SwitchEnabledAppsearchFields();
+			SwitchEnabledAppsearchFields();
 			// getModel(0,0,0,0);
 		}
 	});
@@ -128,7 +128,7 @@ $(document).ready(function(){
 		onClick: function() {
 			$("#year_select, #body_select, #engine_select, #engineno_select").multipleSelect("uncheckAll");
 
-		// SwitchEnabledAppsearchFields();
+		SwitchEnabledAppsearchFields();
 		// getYears(false);
 		}
 	});
@@ -156,7 +156,7 @@ $(document).ready(function(){
    $("#body_select").multipleSelect({
 		filter: true,
 		single: true,
-		placeholder : 'Select Body',
+		placeholder : 'Body',
 		noMatchesFound:$('#chk_app_search_sg_only').is(':checked')?'No matches found<br>To show all bodies Turn <strong>OFF</strong> Common SG Veh':'No matches found',
 		onFilter: function(){
 			bodylist.update();
@@ -207,6 +207,23 @@ $(document).ready(function(){
 		}
 	});
 
+
+
+	function SwitchEnabledAppsearchFields(){
+		$("#model_select, #year_select, #body_select, #engine_select, #engineno_select").not(':focus').multipleSelect("disable");
+		if($('select#brand_select :selected').val()>0) {
+			// $("#model_select").not(':focus').multipleSelect("enable");
+			$("#class_select").not(':focus').multipleSelect("enable");
+		}
+		if($('select#class_select :selected').val()>0) {
+			$("#model_select").not(':focus').multipleSelect("enable");
+		}
+		if($('select#model_select :selected').val()>0) {
+			$("#year_select,#body_select, #engine_select, #engineno_select").not(':focus').multipleSelect("enable");
+		}
+	}
+
+
 	var brandlist = new PerfectScrollbar('.searchbox .brand .listwrapper', {
 		wheelPropagation: true,
 		minScrollbarLength: 100,
@@ -242,6 +259,12 @@ $(document).ready(function(){
 		minScrollbarLength: 100,
 		maxScrollbarLength: 100,
 	});
+
+
+
+
+
+
 
 	// homeslider
 	$('#homeslider').slick({
