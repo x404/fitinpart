@@ -21,7 +21,7 @@
   .ms-parent.form-control {
     padding-left: 0;
     padding-right: 0; }
-  .ms-parent.brand, .ms-parent.class, .ms-parent.model, .ms-parent.body {
+  .ms-parent.brand, .ms-parent.class, .ms-parent.model, .ms-parent.body, .ms-parent.brand2, .ms-parent.class2, .ms-parent.model2, .ms-parent.body2 {
     width: 100% !important; }
 
 .ms-choice {

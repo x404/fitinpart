@@ -1,49 +1,49 @@
 $(document).ready(function(){
 	// https://www.fitinpart.sg/catalog/view/javascript/function.js
-	$("#brand_select").multipleSelect({
+	$("#brand_select2").multipleSelect({
 		single: true,
 		filter: true,
 		placeholder : 'Maker',
 		noMatchesFound:$('#chk_app_search_sg_only').is(':checked')?'No matches found<br>To show all brands Turn <strong>OFF</strong> Common SG Veh':'No matches found',
 		onFilter: function(){
-			brandlist.update();
+			brandlist2.update();
 		},
 		onOpen: function() {
-			brandlist.update();
+			brandlist2.update();
 		},
 
 		onClick: function(view) {
 		//Unset the all selection values
-		   $("#class_select, #model_select, "
-				 + "#year_select,#body_select, #engine_select, #engineno_select").multipleSelect("uncheckAll");
+		   $("#class_select2, #model_select2, "
+				 + "#year_select2,#body_select2, #engine_select2, #engineno_select2").multipleSelect("uncheckAll");
 
-		   SwitchEnabledAppsearchFields();
+		   SwitchEnabledAppsearchFields2();
 		   //Get class and model
 		   // getClass(0, 0, 0);
 		   // getModel(0, 0, 0, 0);
 		}
 	});
 
-	$("#class_select").multipleSelect({
+	$("#class_select2").multipleSelect({
 		filter: true,
 		single: true,
 		placeholder : 'Class',
 		// noMatchesFound:$('#chk_app_search_sg_only').is(':checked')?'No matches found<br>To show all classes Turn <strong>OFF</strong> Common SG Veh':'No matches found',
 		onFilter: function(){
-			classlist.update();
+			classlist2.update();
 		},
 		onOpen: function() {
-			classlist.update();
+			classlist2.update();
 		},
 		onClick: function(view) {
-			$(" #model_select, #year_select, #body_select, #engine_select, #engineno_select").multipleSelect("uncheckAll");
-			SwitchEnabledAppsearchFields();
+			$(" #model_select2, #year_select2, #body_select2, #engine_select2, #engineno_select2").multipleSelect("uncheckAll");
+			SwitchEnabledAppsearchFields2();
 			// getModel(0,0,0,0);
 		}
 	});
 
 
-	$("#model_select").multipleSelect({
+	$("#model_select2").multipleSelect({
 		filter: true,//($( window ).width()>800),
 		multiple: true,
 		multipleWidth: 228,
@@ -57,30 +57,30 @@ $(document).ready(function(){
 			return opt;
 		},
 		onFilter: function(){
-			modellist.update();
+			modellist2.update();
 		},
 		onOpen: function() {
-			modellist.update();
+			modellist2.update();
 		},
 		onClick: function() {
-			$("#year_select, #body_select, #engine_select, #engineno_select").multipleSelect("uncheckAll");
+			$("#year_select2, #body_select2, #engine_select2, #engineno_select2").multipleSelect("uncheckAll");
 
-		SwitchEnabledAppsearchFields();
+		SwitchEnabledAppsearchFields2();
 		// getYears(false);
 		}
 	});
 
 
-	$("#year_select").multipleSelect({
+	$("#year_select2").multipleSelect({
 		filter: true,
 		single: true,
 		placeholder : 'Year',
 		noMatchesFound:$('#chk_app_search_sg_only').is(':checked')?'No matches found<br>To show all years Turn <strong>OFF</strong> Common SG Veh':'No matches found',
 		onFilter: function(){
-			yearlist.update();
+			yearlist2.update();
 		},
 		onOpen: function() {
-			yearlist.update();
+			yearlist2.update();
 		},
 		onClick: function(view) {
 			// if(view.value!=AppSearchCurrentParams.years) {
@@ -90,16 +90,16 @@ $(document).ready(function(){
 	});
 
 
-	$("#body_select").multipleSelect({
+	$("#body_select2").multipleSelect({
 		filter: true,
 		single: true,
 		placeholder : 'Body',
 		noMatchesFound:$('#chk_app_search_sg_only').is(':checked')?'No matches found<br>To show all bodies Turn <strong>OFF</strong> Common SG Veh':'No matches found',
 		onFilter: function(){
-			bodylist.update();
+			bodylist2.update();
 		},
 		onOpen: function() {
-			bodylist.update();
+			bodylist2.update();
 		},
 		onClick: function(view) {
 			// if(view.value!=AppSearchCurrentParams.body) {
@@ -109,16 +109,16 @@ $(document).ready(function(){
 	});
 
 
-	$("#engine_select").multipleSelect({
+	$("#engine_select2").multipleSelect({
 		filter: true,
 		single: true,
 		placeholder : 'Engine',
 		noMatchesFound:$('#chk_app_search_sg_only').is(':checked')?'No matches found<br>To show all engines Turn <strong>OFF</strong> Common SG Veh':'No matches found',
 		onFilter: function(){
-			enginelist.update();
+			enginelist2.update();
 		},
 		onOpen: function() {
-			enginelist.update();
+			enginelist2.update();
 		},
 		onClick: function(view) {
 		// 	if(view.value!=AppSearchCurrentParams.engine) {
@@ -127,16 +127,16 @@ $(document).ready(function(){
 		}
 	});
 	//*Code for the onChange changes
-	$("#engineno_select").multipleSelect({
+	$("#engineno_select2").multipleSelect({
 		filter: true,
 		single: true,
 		placeholder : 'EngineNo',
 		noMatchesFound:$('#chk_app_search_sg_only').is(':checked')?'No matches found<br>To show all numbers Turn <strong>OFF</strong> Common SG Veh':'No matches found',
 		onFilter: function(){
-			enginenolist.update();
+			enginenolist2.update();
 		},
 		onOpen: function() {
-			enginenolist.update();
+			enginenolist2.update();
 		},
 		onClick: function(view) {
 			// if(view.value!=AppSearchCurrentParams.engineno) {
@@ -145,49 +145,49 @@ $(document).ready(function(){
 	});
 
 
-	function SwitchEnabledAppsearchFields(){
-		$("#model_select, #year_select, #body_select, #engine_select, #engineno_select").not(':focus').multipleSelect("disable");
-		if($('select#brand_select :selected').val()>0) {
-			$("#model_select").not(':focus').multipleSelect("enable");
-			$("#class_select").not(':focus').multipleSelect("enable");
+	function SwitchEnabledAppsearchFields2(){
+		$("#model_select2, #year_select2, #body_select2, #engine_select2, #engineno_select2").not(':focus').multipleSelect("disable");
+		if($('select#brand_select2 :selected').val()>0) {
+			$("#model_select2").not(':focus').multipleSelect("enable");
+			$("#class_select2").not(':focus').multipleSelect("enable");
 		}
-		if($('select#model_select :selected').val()>0) {
-			$("#year_select,#body_select, #engine_select, #engineno_select").not(':focus').multipleSelect("enable");
+		if($('select#model_select2 :selected').val()>0) {
+			$("#year_select2,#body_select2, #engine_select2, #engineno_select2").not(':focus').multipleSelect("enable");
 		}
 	}
 
 
-	var brandlist = new PerfectScrollbar('.searchbox .brand .listwrapper', {
+	var brandlist2 = new PerfectScrollbar('.searchbox .brand2 .listwrapper', {
 		wheelPropagation: true,
 		minScrollbarLength: 100,
 		maxScrollbarLength: 100,
 	});
-	var classlist = new PerfectScrollbar('.searchbox .class .listwrapper', {
+	var classlist2 = new PerfectScrollbar('.searchbox .class2 .listwrapper', {
 		wheelPropagation: true,
 		minScrollbarLength: 100,
 		maxScrollbarLength: 100,
 	});
-	var modellist = new PerfectScrollbar('.searchbox .model .listwrapper', {
+	var modellist2 = new PerfectScrollbar('.searchbox .model2 .listwrapper', {
 		wheelPropagation: true,
 		minScrollbarLength: 100,
 		maxScrollbarLength: 100,
 	});
-	var yearlist = new PerfectScrollbar('.searchbox .year .listwrapper', {
+	var yearlist2 = new PerfectScrollbar('.searchbox .year2 .listwrapper', {
 		wheelPropagation: true,
 		minScrollbarLength: 100,
 		maxScrollbarLength: 100,
 	});
-	var bodylist = new PerfectScrollbar('.searchbox .body .listwrapper', {
+	var bodylist2 = new PerfectScrollbar('.searchbox .body2 .listwrapper', {
 		wheelPropagation: true,
 		minScrollbarLength: 100,
 		maxScrollbarLength: 100,
 	});
-	var enginelist = new PerfectScrollbar('.searchbox .engine .listwrapper', {
+	var enginelist2 = new PerfectScrollbar('.searchbox .engine2 .listwrapper', {
 		wheelPropagation: true,
 		minScrollbarLength: 100,
 		maxScrollbarLength: 100,
 	});
-	var enginenolist = new PerfectScrollbar('.searchbox .engineno .listwrapper', {
+	var enginenolist2 = new PerfectScrollbar('.searchbox .engineno2 .listwrapper', {
 		wheelPropagation: true,
 		minScrollbarLength: 100,
 		maxScrollbarLength: 100,

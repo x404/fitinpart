@@ -33,14 +33,20 @@
 		}
 	}
 
-	.car-tab-layout{
+	.car-tab-layout,
+	.moto-tab-layout
+	{
 		width: 63rem;
 	}
 
 
 	#year_select,
 	#engine_select,
-	#engineno_select
+	#engineno_select,
+
+	#year_select2,
+	#engine_select2,
+	#engineno_select2
 	{
 		width: 145px;
 	}
