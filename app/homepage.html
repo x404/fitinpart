@@ -595,7 +595,7 @@
 						<div class="searchbox__title">Search by Vehicle</div>
 
 						<div class="nav-top d-flex align-items-center justify-content-between">
-							<ul class="nav d-flex align-items-center" id="part-tab" role="tablist">
+							<ul class="nav d-flex align-items-center" id="veh_search-tab" role="tablist">
 								<li class="nav-item">
 									<a class="nav-link active" id="car-tab" data-toggle="tab" href="#car" role="tab" aria-controls="car" aria-selected="true">Car</a>
 								</li>
@@ -612,7 +612,7 @@
 							<div class="veh-only d-flex align-items-center">
 								Common SG Veh Only
 								<label class="checkbox">
-									<input type="checkbox" />
+									<input type="checkbox" name="veh-only" />
 									<div class="checkbox__text"></div>
 								</label>
 							</div>
@@ -620,124 +620,181 @@
 						
 						<div class="tab-content" id="car-tabContent">
 							<div class="tab-pane fade show active" id="car" role="tabpanel" aria-labelledby="car-tab">
-
-<div class="row">
-	<div class="col-lg-5">
-		<select id="brand_select" class="form-control brand">
-			<option value=""> Maker </option>
-			<option value="1">ACURA</option>
-			<option value="2">ALFA ROMEO</option>
-			<option value="227">ARO</option>
-			<option value="3">ASIA MOTORS</option>
-			<option value="4">ASTON MARTIN</option>
-			<option value="5">AUDI</option>
-			<option value="447">BAW</option>
-			<option value="6">BENTLEY</option>
-			<option value="7">BMW</option>
-			<option value="8">BMW (Alpina)</option>
-			<option value="99">BOBCAT</option>
-			<option value="272">BOVA</option>
-			<option value="266">BUGATTI</option>
-			<option value="10">BUICK (GM)</option>
-			<option value="453">BYD</option>
-			<option value="12">CADILLAC (GM)</option>
-			<option value="274">CATERPILLAR</option>
-			<option value="448">Chery</option>
-			<option value="15">CHEVROLET (GM)</option>
-			<option value="454">CHEVROLET (SGM)</option>
-			<option value="16">CHRYSLER</option>
-			<option value="18">CITROEN</option>
-			<option value="20">DAEWOO</option>
-			<option value="271">DAF</option>
-			<option value="22">DAIHATSU</option>
-			<option value="23">DAIHATSU (Piaggio)</option>
-			<option value="285">DATSUN</option>
-			<option value="24">DODGE</option>
-			<option value="424">DONGFENG</option>
-			<option value="25">FERRARI</option>
-			<option value="26">FIAT</option>
-			<option value="27">FORD</option>
-			<option value="28">FORD (Mercury)</option>
-			<option value="29">FORD (USA)</option>
-			<option value="444">FOTON</option>
-			<option value="232">GAZ</option>
-			<option value="431">GEELY</option>
-			<option value="30">GMC (TRUCK)</option>
-			<option value="449">Great Wall Motors</option>
-			<option value="425">HAFEI</option>
-			<option value="93">HOLDEN</option>
-			<option value="32">HONDA</option>
-			<option value="35">HUMMER</option>
-			<option value="36">HYUNDAI</option>
-			<option value="37">INFINITI</option>
-			<option value="38">ISUZU</option>
-			<option value="39">IVECO</option>
-			<option value="445">JAC</option>
-			<option value="40">JAGUAR</option>
-			<option value="42">JEEP</option>
-			<option value="43">KIA</option>
-			<option value="44">LADA</option>
-			<option value="426">LAMBORGHINI</option>
-			<option value="45">LANCIA</option>
-			<option value="46">LAND ROVER</option>
-			<option value="48">LEXUS</option>
-			<option value="354">LIFAN</option>
-			<option value="49">LIGIER AUTOMOBILES</option>
-			<option value="50">LINCOLN</option>
-			<option value="51">LONDON TAXI (Carbodies)</option>
-			<option value="53">LOTUS</option>
-			<option value="428">LUXGEN</option>
-			<option value="441">MAHINDRA</option>
-			<option value="459">MAN TGE Box</option>
-			<option value="442">MARUTI SUZUKI</option>
-			<option value="54">MASERATI</option>
-			<option value="55">MAZDA</option>
-			<option value="56">MAZDA JAPAN FORD</option>
-			<option value="58">MERCEDES-BENZ</option>
-			<option value="237">MG</option>
-			<option value="59">MICROCAR</option>
-			<option value="60">MINI</option>
-			<option value="61">MITSUBISHI</option>
-			<option value="429">MITSUOKA</option>
-			<option value="440">NAZA</option>
-			<option value="62">NISSAN</option>
-			<option value="65">OLDSMOBILE (GM)</option>
-			<option value="66">OPEL</option>
-			<option value="248">OPEL (Brasil)</option>
-			<option value="67">OPEL (Vauxhall)</option>
-			<option value="68">PERODUA</option>
-			<option value="69">PEUGEOT</option>
-			<option value="70">PEUGEOT(Mega/Aixav)</option>
-			<option value="73">PORSCHE</option>
-			<option value="74">PROTON</option>
-			<option value="450">Qoros</option>
-			<option value="446">RAVON</option>
-			<option value="75">RENAULT</option>
-			<option value="76">ROLLS-ROYCE</option>
-			<option value="77">ROVER</option>
-			<option value="78">ROVER (MG)</option>
-			<option value="79">SAAB</option>
-			<option value="455">SAIC</option>
-			<option value="80">SANTANA MOTOR</option>
-			<option value="81">SEAT</option>
-			<option value="82">SKODA</option>
-			<option value="83">SMART</option>
-			<option value="84">SSANGYONG</option>
-			<option value="85">SUBARU</option>
-			<option value="86">SUZUKI</option>
-			<option value="87">TATA MOTORS</option>
-			<option value="443">TESLA</option>
-			<option value="88">TOYOTA</option>
-			<option value="241">UAZ</option>
-			<option value="91">VOLKSWAGEN</option>
-			<option value="90">VOLVO</option>
-			<option value="92">ZASTAVA</option>
-		</select>
-	</div>
-	<div class="col-lg-5">
-	</div>
-</div>
-
+								<div class="row">
+									<div class="col-lg-5">
+										<select id="brand_select" class="form-control brand">
+											<option value=""> Maker </option>
+											<option value="1">ACURA</option>
+											<option value="2">ALFA ROMEO</option>
+											<option value="227">ARO</option>
+											<option value="3">ASIA MOTORS</option>
+											<option value="4">ASTON MARTIN</option>
+											<option value="5">AUDI</option>
+											<option value="447">BAW</option>
+											<option value="6">BENTLEY</option>
+											<option value="7">BMW</option>
+											<option value="8">BMW (Alpina)</option>
+											<option value="99">BOBCAT</option>
+											<option value="272">BOVA</option>
+											<option value="266">BUGATTI</option>
+											<option value="10">BUICK (GM)</option>
+											<option value="453">BYD</option>
+											<option value="12">CADILLAC (GM)</option>
+											<option value="274">CATERPILLAR</option>
+											<option value="448">Chery</option>
+											<option value="15">CHEVROLET (GM)</option>
+											<option value="454">CHEVROLET (SGM)</option>
+											<option value="16">CHRYSLER</option>
+											<option value="18">CITROEN</option>
+											<option value="20">DAEWOO</option>
+											<option value="271">DAF</option>
+											<option value="22">DAIHATSU</option>
+											<option value="23">DAIHATSU (Piaggio)</option>
+											<option value="285">DATSUN</option>
+											<option value="24">DODGE</option>
+											<option value="424">DONGFENG</option>
+											<option value="25">FERRARI</option>
+											<option value="26">FIAT</option>
+											<option value="27">FORD</option>
+											<option value="28">FORD (Mercury)</option>
+											<option value="29">FORD (USA)</option>
+											<option value="444">FOTON</option>
+											<option value="232">GAZ</option>
+											<option value="431">GEELY</option>
+											<option value="30">GMC (TRUCK)</option>
+											<option value="449">Great Wall Motors</option>
+											<option value="425">HAFEI</option>
+											<option value="93">HOLDEN</option>
+											<option value="32">HONDA</option>
+											<option value="35">HUMMER</option>
+											<option value="36">HYUNDAI</option>
+											<option value="37">INFINITI</option>
+											<option value="38">ISUZU</option>
+											<option value="39">IVECO</option>
+											<option value="445">JAC</option>
+											<option value="40">JAGUAR</option>
+											<option value="42">JEEP</option>
+											<option value="43">KIA</option>
+											<option value="44">LADA</option>
+											<option value="426">LAMBORGHINI</option>
+											<option value="45">LANCIA</option>
+											<option value="46">LAND ROVER</option>
+											<option value="48">LEXUS</option>
+											<option value="354">LIFAN</option>
+											<option value="49">LIGIER AUTOMOBILES</option>
+											<option value="50">LINCOLN</option>
+											<option value="51">LONDON TAXI (Carbodies)</option>
+											<option value="53">LOTUS</option>
+											<option value="428">LUXGEN</option>
+											<option value="441">MAHINDRA</option>
+											<option value="459">MAN TGE Box</option>
+											<option value="442">MARUTI SUZUKI</option>
+											<option value="54">MASERATI</option>
+											<option value="55">MAZDA</option>
+											<option value="56">MAZDA JAPAN FORD</option>
+											<option value="58">MERCEDES-BENZ</option>
+											<option value="237">MG</option>
+											<option value="59">MICROCAR</option>
+											<option value="60">MINI</option>
+											<option value="61">MITSUBISHI</option>
+											<option value="429">MITSUOKA</option>
+											<option value="440">NAZA</option>
+											<option value="62">NISSAN</option>
+											<option value="65">OLDSMOBILE (GM)</option>
+											<option value="66">OPEL</option>
+											<option value="248">OPEL (Brasil)</option>
+											<option value="67">OPEL (Vauxhall)</option>
+											<option value="68">PERODUA</option>
+											<option value="69">PEUGEOT</option>
+											<option value="70">PEUGEOT(Mega/Aixav)</option>
+											<option value="73">PORSCHE</option>
+											<option value="74">PROTON</option>
+											<option value="450">Qoros</option>
+											<option value="446">RAVON</option>
+											<option value="75">RENAULT</option>
+											<option value="76">ROLLS-ROYCE</option>
+											<option value="77">ROVER</option>
+											<option value="78">ROVER (MG)</option>
+											<option value="79">SAAB</option>
+											<option value="455">SAIC</option>
+											<option value="80">SANTANA MOTOR</option>
+											<option value="81">SEAT</option>
+											<option value="82">SKODA</option>
+											<option value="83">SMART</option>
+											<option value="84">SSANGYONG</option>
+											<option value="85">SUBARU</option>
+											<option value="86">SUZUKI</option>
+											<option value="87">TATA MOTORS</option>
+											<option value="443">TESLA</option>
+											<option value="88">TOYOTA</option>
+											<option value="241">UAZ</option>
+											<option value="91">VOLKSWAGEN</option>
+											<option value="90">VOLVO</option>
+											<option value="92">ZASTAVA</option>
+										</select>
+									</div>
+									<div class="col-lg-5">
+										<select id="class_select" class="form-control class">
+											<option value="">Class</option>
+											<option value="1018">A-Class</option>
+											<option value="2">B-Class</option>
+											<option value="1110">Binz</option>
+											<option value="3">C-Class</option>
+											<option value="1003">Citan - Class</option>
+											<option value="4">CL-Class</option>
+											<option value="20">CLA-Class</option>
+											<option value="26">CLC-Class</option>
+											<option value="5">CLK-Class</option>
+											<option value="22">CLS-Class</option>
+											<option value="6">E-Class</option>
+											<option value="1019">E-Class (Coupe/Cabrio)</option>
+											<option value="8">G-Class</option>
+											<option value="23">GL-Class</option>
+											<option value="1089">GLA-Class</option>
+											<option value="1117">GLC-Class</option>
+											<option value="1116">GLE-Class</option>
+											<option value="24">GLK-Class</option>
+											<option value="1004">MB-Serie</option>
+											<option value="1020">ML-Class</option>
+											<option value="25">R-Class</option>
+											<option value="10">S-Class</option>
+											<option value="12">SL-Class</option>
+											<option value="13">SLK-Class</option>
+											<option value="28">SLR-Class</option>
+											<option value="1090">SLS AMG-Class</option>
+											<option value="1021">Sprinter</option>
+											<option value="1118">Sprinter Classic</option>
+											<option value="1002">Sprinter II</option>
+											<option value="1015">Tourismo-Serie Bus</option>
+											<option value="1005">Transporter-Serie</option>
+											<option value="1017">Unimog-Serie</option>
+											<option value="1007">V-Class</option>
+											<option value="1006">Vario-Serie</option>
+											<option value="1056">Viano-Serie</option>
+											<option value="1008">Vito-Serie</option>
+											<option value="1119">X-Class</option>
+										</select>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-lg-5">
+										<select id="model_select" class="form-control model" multiple="">
+											<option value="21524">CDX</option>
+											<option value="1">Legend</option>
+											<option value="2">MDX</option>
+											<option value="3">NSX</option>
+											<option value="4">NSX-T</option>
+											<option value="5">RDX</option>
+											<option value="6">RL</option>
+											<option value="8">RSX Speed</option>
+											<option value="7">RSX Type-S</option>
+											<option value="11">TL Type-S</option>
+											<option value="21186">TLX</option>
+											<option value="13">TSX</option>
+											<option value="4946">ZDX</option>
+										</select>			
+									</div>
+								</div>
 							</div>
 							<div class="tab-pane fade" id="moto" role="tabpanel" aria-labelledby="moto-tab">
 2

@@ -33,6 +33,42 @@
 		}
 	}
 
+	.ms-search{
+		margin-bottom: 2px;
+	}
+	
+	.ms-drop{
+		padding: 0 0 13px;
+		.ms-search{
+			padding-top: 20px;
+		}
+	}
+	.listwrapper {
+		height: 250px;
+		overflow: hidden;
+		position: relative;
+		ul{
+			max-height: none !important;
+			height: auto !important;
+			li{
+				width: calc(100% - 27px) !important;
+			}
+		}
+
+		.ps__rail-y{
+			width: 3px;
+		}
+
+		.ps__thumb-y{
+			right: -3px;
+		}
+
+		.ms-no-results{
+			padding-left: 26px;
+			font-size: 1.5rem;
+		}
+	}
+
 	 &__panel{
 		background-color: #fff;
 		padding: 3rem 2.5rem;
@@ -126,6 +162,10 @@
 					position: relative;
 					top: -10px;
 				}
+			}
+
+			.row{
+				margin-bottom: 1.5rem;
 			}
 		}
 		&-partnum,

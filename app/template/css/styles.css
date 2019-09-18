@@ -4582,6 +4582,28 @@ button {
       text-decoration: none; }
       .searchbox .nav-link:hover:not(.active) {
         color: #0099ff; }
+  .searchbox .ms-search {
+    margin-bottom: 2px; }
+  .searchbox .ms-drop {
+    padding: 0 0 13px; }
+    .searchbox .ms-drop .ms-search {
+      padding-top: 20px; }
+  .searchbox .listwrapper {
+    height: 250px;
+    overflow: hidden;
+    position: relative; }
+    .searchbox .listwrapper ul {
+      max-height: none !important;
+      height: auto !important; }
+      .searchbox .listwrapper ul li {
+        width: calc(100% - 27px) !important; }
+    .searchbox .listwrapper .ps__rail-y {
+      width: 3px; }
+    .searchbox .listwrapper .ps__thumb-y {
+      right: -3px; }
+    .searchbox .listwrapper .ms-no-results {
+      padding-left: 26px;
+      font-size: 1.5rem; }
   .searchbox__panel {
     background-color: #fff;
     padding: 3rem 2.5rem; }
@@ -4651,6 +4673,8 @@ button {
           margin-left: 10px;
           position: relative;
           top: -10px; }
+      .searchbox__panel-vehicle .row {
+        margin-bottom: 1.5rem; }
     .searchbox__panel-partnum .btn, .searchbox__panel-vin .btn {
       margin-left: 1.8rem; }
     .searchbox__panel-partnum {

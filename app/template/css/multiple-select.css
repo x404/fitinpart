@@ -30,14 +30,12 @@
   padding: 0;
   overflow: hidden;
   cursor: pointer;
-  /*border: 1px solid #aaa;*/
   text-align: left;
   white-space: nowrap;
   line-height: 26px;
   color: #444;
   text-decoration: none;
-  border-radius: 4px;
-  /*background-color: #fff;*/ }
+  border-radius: 4px; }
   .ms-choice:hover > div {
     background-color: #0099ff; }
     .ms-choice:hover > div:before {
@@ -50,15 +48,12 @@
   cursor: default; }
 
 .ms-choice > span {
-  /*position: absolute;*/
-  /*top: 0;*/
-  /*left: 0;*/
-  /*right: 20px;*/
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
   display: block;
-  padding-left: 16px; }
+  line-height: 1.2rem;
+  overflow: hidden;
+  padding-left: 16px;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
 
 .ms-choice > span.placeholder {
   color: #999; }
@@ -125,7 +120,7 @@
   width: 100%;
   height: auto !important;
   min-height: 40px;
-  padding: 0 40px 0 10px;
+  padding: 0 40px 0 16px;
   margin: 0;
   outline: 0;
   border: none;
@@ -142,8 +137,9 @@
   list-style: none;
   display: list-item;
   background-image: none;
-  position: static;
-  padding: 0 8px 0 49px; }
+  position: static; }
+  .ms-drop ul > li span {
+    padding: 0 8px 0 49px; }
 
 .ms-drop ul > li .disabled {
   opacity: 0.35;
@@ -151,7 +147,10 @@
 
 .ms-drop ul > li.multiple {
   display: block;
-  float: left; }
+  padding-top: 5px;
+  padding-bottom: 5px; }
+  .ms-drop ul > li.multiple input[type="checkbox"] {
+    display: none; }
 
 .ms-drop ul > li.group {
   clear: both; }
@@ -172,33 +171,55 @@
 .ms-drop ul > li label.optgroup {
   font-weight: bold; }
 
-.ms-drop ul > li.hide-radio {
+.ms-drop ul > li.hide-radio, .ms-drop ul > li.multiple {
   position: relative; }
-  .ms-drop ul > li.hide-radio:before, .ms-drop ul > li.hide-radio:after {
-    border-radius: 50%;
+  .ms-drop ul > li.hide-radio:before, .ms-drop ul > li.hide-radio:after, .ms-drop ul > li.multiple:before, .ms-drop ul > li.multiple:after {
     content: "";
     display: block;
     position: absolute; }
-  .ms-drop ul > li.hide-radio:after {
-    background-color: #ffffff;
-    width: 6px;
-    height: 6px;
-    left: 27px;
-    top: 12px; }
-  .ms-drop ul > li.hide-radio:before {
+  .ms-drop ul > li.hide-radio:before, .ms-drop ul > li.multiple:before {
     background-color: #e5e6e7;
     height: 20px;
     left: 20px;
     top: 5px;
     width: 20px; }
-  .ms-drop ul > li.hide-radio.selected:before {
-    background-color: #0672ba; }
-  .ms-drop ul > li.hide-radio:hover:before {
-    background-color: #ffffff; }
-  .ms-drop ul > li.hide-radio:hover:after {
+  .ms-drop ul > li.hide-radio.selected:before, .ms-drop ul > li.multiple.selected:before {
     background-color: #0672ba; }
 
-.ms-drop ul > li.hide-radio:focus, .ms-drop ul > li.hide-radio:hover {
+.ms-drop ul > li.hide-radio:before, .ms-drop ul > li.hide-radio:after {
+  border-radius: 50%;
+  pointer-events: none; }
+
+.ms-drop ul > li.hide-radio:after {
+  background-color: #ffffff;
+  height: 6px;
+  left: 27px;
+  top: 12px;
+  width: 6px; }
+
+.ms-drop ul > li.hide-radio:hover:before {
+  background-color: #ffffff; }
+
+.ms-drop ul > li.hide-radio:hover:after {
+  background-color: #0672ba; }
+
+.ms-drop ul > li.multiple {
+  transition: .3s; }
+  .ms-drop ul > li.multiple:before {
+    border-radius: 5px;
+    pointer-events: none; }
+  .ms-drop ul > li.multiple:hover {
+    background-color: #0672ba;
+    color: #ffffff; }
+    .ms-drop ul > li.multiple:hover:before {
+      background-color: #e5e6e7; }
+  .ms-drop ul > li.multiple.selected:before {
+    background-image: url("data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAALCAQAAADljHTpAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfjCRIPGzu4ZVtqAAAAc0lEQVQY03XQMQqDUAyA4d8KvYprwZMIHsC1t3DzGO8CQvFOrm8TBJe/gxXR95oMGT6SkBSSjYYnI+YyqPp+ZLoCHQDrvy4Nglg7WKUkWBrV6OtOO86qRqcrHWOjZ4Rz/15ql5QOxD4lKX4fKmnZ+FwP/gJMS6DpesHpzwAAAABJRU5ErkJggg==");
+    background-repeat: no-repeat;
+    background-position: center; }
+
+.ms-drop ul > li.hide-radio:focus,
+.ms-drop ul > li.hide-radio:hover {
   background-color: #0672ba;
   color: #fff; }
 
