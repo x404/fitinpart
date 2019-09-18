@@ -4590,8 +4590,6 @@ button {
     width: 145px; }
   .searchbox .ms-search {
     margin-bottom: 2px; }
-  .searchbox .hide-radio:first-child {
-    display: none !important; }
   .searchbox .ms-drop {
     padding: 0 0 13px; }
     .searchbox .ms-drop .ms-search {

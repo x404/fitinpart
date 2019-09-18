@@ -77,8 +77,8 @@ $(document).ready(function(){
 
 		onClick: function(view) {
 		//Unset the all selection values
-		   // $("#class_select, #model_select, "
-		   //       + "#year_select,#body_select, #engine_select, #engineno_select").multipleSelect("uncheckAll");
+		   $("#class_select, #model_select, "
+		         + "#year_select,#body_select, #engine_select, #engineno_select").multipleSelect("uncheckAll");
 
 		   // SwitchEnabledAppsearchFields();
 		   //Get class and model
@@ -156,7 +156,7 @@ $(document).ready(function(){
    $("#body_select").multipleSelect({
 		filter: true,
 		single: true,
-		placeholder : '-Select Body-',
+		placeholder : 'Select Body',
 		noMatchesFound:$('#chk_app_search_sg_only').is(':checked')?'No matches found<br>To show all bodies Turn <strong>OFF</strong> Common SG Veh':'No matches found',
 		onFilter: function(){
 			bodylist.update();
@@ -175,7 +175,7 @@ $(document).ready(function(){
 	$("#engine_select").multipleSelect({
 		filter: true,
 		single: true,
-		placeholder : '-Select Engine-',
+		placeholder : 'Engine',
 		noMatchesFound:$('#chk_app_search_sg_only').is(':checked')?'No matches found<br>To show all engines Turn <strong>OFF</strong> Common SG Veh':'No matches found',
 		onFilter: function(){
 			enginelist.update();
@@ -193,7 +193,7 @@ $(document).ready(function(){
 	$("#engineno_select").multipleSelect({
 		filter: true,
 		single: true,
-		placeholder : '-Select EngineNo-',
+		placeholder : 'EngineNo',
 		noMatchesFound:$('#chk_app_search_sg_only').is(':checked')?'No matches found<br>To show all numbers Turn <strong>OFF</strong> Common SG Veh':'No matches found',
 		onFilter: function(){
 			enginenolist.update();
