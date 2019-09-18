@@ -61,6 +61,27 @@ $(document).ready(function(){
 	cartlist.update();
 
 
+// search
+
+  $("#brand_select").multipleSelect({
+    single: true,
+    filter: true,
+    placeholder : 'Maker',
+    // noMatchesFound:$('#chk_app_search_sg_only').is(':checked')?'No matches found<br>To show all brands Turn <strong>OFF</strong> Common SG Veh':'No matches found',
+
+      onClick: function(view) {
+        //Unset the all selection values
+           // $("#class_select, #model_select, "
+           //       + "#year_select,#body_select, #engine_select, #engineno_select").multipleSelect("uncheckAll");
+
+           // SwitchEnabledAppsearchFields();
+           //Get class and model
+           // getClass(0, 0, 0);
+           // getModel(0, 0, 0, 0);
+
+     }
+  });
+
 
 
 	// homeslider

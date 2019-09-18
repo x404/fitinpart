@@ -38,7 +38,10 @@ gulp.task('scss', function(){
 
 // сжатие css файла
 gulp.task('css-libs', ['scss'],  function(){
-	return gulp.src(config.templateDir + '/css/styles.css') // Выбираем файл для минификации
+	return gulp.src([
+			config.templateDir + '/css/styles.css',
+			config.templateDir + '/css/multiple-select.css'
+		]) // Выбираем файл для минификации
 		.pipe(cleancss())  // Сжимаем
 		.pipe(rename({suffix: '.min'}))  // Добавляем суффикс .min
 		.pipe(gulp.dest(config.templateDir + '/css')) // Выгружаем в папку app/css
