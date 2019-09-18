@@ -157,39 +157,40 @@ $(document).ready(function(){
 	}
 
 
-	var brandlist2 = new PerfectScrollbar('.searchbox .brand2 .listwrapper', {
+	var brandlist2 = new PerfectScrollbar('#moto .brand .listwrapper', {
 		wheelPropagation: true,
 		minScrollbarLength: 100,
 		maxScrollbarLength: 100,
 	});
-	var classlist2 = new PerfectScrollbar('.searchbox .class2 .listwrapper', {
+	var classlist2 = new PerfectScrollbar('#moto .class .listwrapper', {
 		wheelPropagation: true,
 		minScrollbarLength: 100,
 		maxScrollbarLength: 100,
 	});
-	var modellist2 = new PerfectScrollbar('.searchbox .model2 .listwrapper', {
+	var modellist2 = new PerfectScrollbar('#moto .model .listwrapper', {
 		wheelPropagation: true,
 		minScrollbarLength: 100,
 		maxScrollbarLength: 100,
 	});
-	var yearlist2 = new PerfectScrollbar('.searchbox .year2 .listwrapper', {
+	var yearlist2 = new PerfectScrollbar('#moto .year .listwrapper', {
 		wheelPropagation: true,
 		minScrollbarLength: 100,
 		maxScrollbarLength: 100,
 	});
-	var bodylist2 = new PerfectScrollbar('.searchbox .body2 .listwrapper', {
+	var bodylist2 = new PerfectScrollbar('#moto .body .listwrapper', {
 		wheelPropagation: true,
 		minScrollbarLength: 100,
 		maxScrollbarLength: 100,
 	});
-	var enginelist2 = new PerfectScrollbar('.searchbox .engine2 .listwrapper', {
+	var enginelist2 = new PerfectScrollbar('#moto .engine .listwrapper', {
 		wheelPropagation: true,
 		minScrollbarLength: 100,
 		maxScrollbarLength: 100,
 	});
-	var enginenolist2 = new PerfectScrollbar('.searchbox .engineno2 .listwrapper', {
+	var enginenolist2 = new PerfectScrollbar('#moto .engineno .listwrapper', {
 		wheelPropagation: true,
 		minScrollbarLength: 100,
 		maxScrollbarLength: 100,
 	});
+
 })

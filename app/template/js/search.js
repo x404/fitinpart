@@ -157,37 +157,37 @@ $(document).ready(function(){
 	}
 
 
-	var brandlist = new PerfectScrollbar('.searchbox .brand .listwrapper', {
+	var brandlist = new PerfectScrollbar('#car .brand .listwrapper', {
 		wheelPropagation: true,
 		minScrollbarLength: 100,
 		maxScrollbarLength: 100,
 	});
-	var classlist = new PerfectScrollbar('.searchbox .class .listwrapper', {
+	var classlist = new PerfectScrollbar('#car .class .listwrapper', {
 		wheelPropagation: true,
 		minScrollbarLength: 100,
 		maxScrollbarLength: 100,
 	});
-	var modellist = new PerfectScrollbar('.searchbox .model .listwrapper', {
+	var modellist = new PerfectScrollbar('#car .model .listwrapper', {
 		wheelPropagation: true,
 		minScrollbarLength: 100,
 		maxScrollbarLength: 100,
 	});
-	var yearlist = new PerfectScrollbar('.searchbox .year .listwrapper', {
+	var yearlist = new PerfectScrollbar('#car .year .listwrapper', {
 		wheelPropagation: true,
 		minScrollbarLength: 100,
 		maxScrollbarLength: 100,
 	});
-	var bodylist = new PerfectScrollbar('.searchbox .body .listwrapper', {
+	var bodylist = new PerfectScrollbar('#car .body .listwrapper', {
 		wheelPropagation: true,
 		minScrollbarLength: 100,
 		maxScrollbarLength: 100,
 	});
-	var enginelist = new PerfectScrollbar('.searchbox .engine .listwrapper', {
+	var enginelist = new PerfectScrollbar('#car .engine .listwrapper', {
 		wheelPropagation: true,
 		minScrollbarLength: 100,
 		maxScrollbarLength: 100,
 	});
-	var enginenolist = new PerfectScrollbar('.searchbox .engineno .listwrapper', {
+	var enginenolist = new PerfectScrollbar('#car .engineno .listwrapper', {
 		wheelPropagation: true,
 		minScrollbarLength: 100,
 		maxScrollbarLength: 100,
