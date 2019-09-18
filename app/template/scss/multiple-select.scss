@@ -8,12 +8,19 @@
 	display: inline-block;
 	position: relative;
 	vertical-align: middle;
-	width: 100% !important;
+	width: 100%;
 	padding: 0 !important;
 
 	&.form-control{
-	padding-left: 0;
-	padding-right: 0;
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	&.brand,
+	&.class,
+	&.model
+	{
+		width: 100% !important;
 	}
 }
 

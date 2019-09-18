@@ -134,6 +134,25 @@ $(document).ready(function(){
 	});
 
 
+	$("#year_select").multipleSelect({
+		filter: true,
+		single: true,
+		placeholder : 'Year',
+		noMatchesFound:$('#chk_app_search_sg_only').is(':checked')?'No matches found<br>To show all years Turn <strong>OFF</strong> Common SG Veh':'No matches found',
+		onFilter: function(){
+			yearlist.update();
+		},
+		onOpen: function() {
+			yearlist.update();
+		},
+		onClick: function(view) {
+			// if(view.value!=AppSearchCurrentParams.years) {
+			// 	getBody(false);
+			// }
+		}
+	});
+
+
 	var brandlist = new PerfectScrollbar('.searchbox .brand .listwrapper', {
 		wheelPropagation: true,
 		minScrollbarLength: 100,
@@ -149,7 +168,11 @@ $(document).ready(function(){
 		minScrollbarLength: 100,
 		maxScrollbarLength: 100,
 	});
-
+	var yearlist = new PerfectScrollbar('.searchbox .year .listwrapper', {
+		wheelPropagation: true,
+		minScrollbarLength: 100,
+		maxScrollbarLength: 100,
+	});
 
 
 

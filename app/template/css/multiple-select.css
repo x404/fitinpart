@@ -16,11 +16,13 @@
   display: inline-block;
   position: relative;
   vertical-align: middle;
-  width: 100% !important;
+  width: 100%;
   padding: 0 !important; }
   .ms-parent.form-control {
     padding-left: 0;
     padding-right: 0; }
+  .ms-parent.brand, .ms-parent.class, .ms-parent.model {
+    width: 100% !important; }
 
 .ms-choice {
   display: flex;

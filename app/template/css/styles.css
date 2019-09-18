@@ -4582,6 +4582,8 @@ button {
       text-decoration: none; }
       .searchbox .nav-link:hover:not(.active) {
         color: #0099ff; }
+  .searchbox #year_select {
+    width: 145px; }
   .searchbox .ms-search {
     margin-bottom: 2px; }
   .searchbox .ms-drop {
