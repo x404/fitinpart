@@ -1,14 +1,26 @@
 $(document).ready(function(){
 
-	// $('.j-search-select').selectize({
+	$('.count-price .plus').on('click', function(e){
+		e.preventDefault();
+		let $this = $(this),
+			countEl = $this.closest('.count').find('.count-control'),
+			cnt = parseInt(countEl.val())+1;
 
-	// });
+		countEl.val(cnt);
+	});
 
+	$('.count-price .minus').on('click', function(e){
+		e.preventDefault();
+		let $this = $(this),
+			countEl = $this.closest('.count').find('.count-control'),
+			cnt = parseInt(countEl.val())-1;
 
-   // $('select').multipleSelect({
-   //    single: true,
-   //    filter: true
-   //  })
+		// if ( cnt <= 0 ) {
+		// 	cnt = 0;
+		// };
+
+		countEl.val((cnt <= 0) ? cnt = 0 : cnt) ;
+	});
 
 
 	$('.country').on('click', '.dropdown-menu', function(e) {
