@@ -169,7 +169,9 @@ em strong
 	justify-content: center;
 }
 
+
 .icon{
+	display: block;
 	padding: 0;
 	position: relative; 
 	&:before{
@@ -298,6 +300,7 @@ em strong
 	cursor: pointer;
 	text-decoration: none;
 	transition: .3s;
+	border: none;
 	&:hover{
 		text-decoration: none;
 	}
@@ -306,7 +309,20 @@ em strong
 		border-radius: $h;
 		font-size: 1.8rem;
 		height: $h;
+		font-weight: 700;
 		min-width: 160px;
+	}
+
+	&-white{
+		background-color: $color2;
+		color: $color1;
+	}
+	&-gray{
+		&-hover{
+			&:hover{
+				background-color: $color36;
+			}
+		}
 	}
 
 	&-blue{
@@ -363,6 +379,53 @@ em strong
 			}
 		}
 	}
+
+	&-google{
+		@extend .flex-center;
+		box-shadow: 0 5px 15px rgba(0, 153, 255, 0.5);
+		color: #000 !important;
+		min-width: 0;
+		padding-left: .9rem;
+		position: relative;
+		width: 14.5rem;
+		&:before{
+			@extend .before;
+			@include sprite($icon-google);
+			left: 13px;
+			top: 14px;
+		}
+	}
+
+	&-facebook{
+		@extend .flex-center;
+		box-shadow: 0 5px 15px rgba(0, 153, 255, 0.5);
+		color: #fff !important;
+		min-width: 0;
+		padding-left: 2.6rem;
+		position: relative;
+		width: 14.5rem;
+		&:before{
+			@extend .before;
+			@include sprite($icon-fb);
+			left: 18px;
+			top: 12px;
+		}
+	}
+}
+
+
+.form-control{
+	background-color: $color8;
+	border-radius: 4rem;
+	border: none;
+	height: 4rem;
+	padding: 0 15px;
+	width: 100%;
+	transition: box-shadow .3s;
+	&:hover,
+	&:focus{
+		box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
+	}
 }
 
 button{
@@ -371,7 +434,9 @@ button{
 	background: transparent;
 }
 
-
+.sm-text{
+	font-size: 1.3rem;
+}
 /* =top
 ---------------------------*/
 .top{

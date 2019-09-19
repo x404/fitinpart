@@ -79,7 +79,7 @@
   transition: background-color .3s; }
   .ms-choice > div:before {
     background-image: url(../images/sprite.png);
-    background-position: -93px -33px;
+    background-position: -93px -54px;
     width: 10px;
     height: 7px;
     left: 50%;

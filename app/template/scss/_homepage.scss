@@ -225,24 +225,22 @@
 		line-height: .83;
 	}
 
-
-
 	.tab-content{
 		margin-top: 2.1rem;
 	}
 
 	.form-control{
-		background-color: $color8;
-		border-radius: 4rem;
-		border: none;
-		height: 4rem;
-		padding: 0 15px;
+		// background-color: $color8;
+		// border-radius: 4rem;
+		// border: none;
+		// height: 4rem;
+		// padding: 0 15px;
 		width: 41rem;
-		transition: box-shadow .3s;
-		&:hover,
-		&:focus{
-			box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
-		}
+		// transition: box-shadow .3s;
+		// &:hover,
+		// &:focus{
+		// 	box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
+		// }
 	}
 
 	.btn-file{

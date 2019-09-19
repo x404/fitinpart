@@ -372,7 +372,7 @@
 							<a href="tel:+6567497481" class="tel icon icon-tel" target="_blank">+65 67497481</a>
 						</div>
 						<div class="login">
-							<a href="#" class="login__link icon icon-user">My account</a>
+							<a href="#" class="login__link icon icon-user" data-toggle="modal" data-target="#loginModal">My account</a>
 						</div>
 					</div>
 				</div>
@@ -1799,6 +1799,63 @@
 		</div>
 	</footer>
 	<!-- =/footer -->	
+</div>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="loginModalLabel">Account login</h5>
+				<button type="button" class="close a-rotate90" data-dismiss="modal" aria-label="Close">
+					<svg width="22" height="22">
+						<line x1="0" y1="0" x2="22" y2="22"/>
+						<line x1="22" y1="0" x2="0" y2="22"/>
+					</svg>
+				</button>
+			</div>
+			<div class="modal-body">
+				<form action="#" method="post">
+					<fieldset>
+						<div class="form-group">
+							<label for="loginEmail">E-Mail Address <span class="asterisk">*</span></label>
+							<input type="email" id="loginEmail" class="form-control" value="" />
+						</div>
+						<div class="form-group">
+							<div class="d-flex justify-content-between">
+								<label for="loginPassword">Password <span class="asterisk">*</span></label>
+								<a href="#" title="" class="forgotten-link">Forgotten Password</a>
+							</div>
+							<input type="password" id="loginPassword" class="form-control" value="" />
+						</div>
+
+						<div class="custom-control custom-checkbox">
+							<input type="checkbox" class="custom-control-input" id="publicPC">
+							<label class="custom-control-label" for="publicPC">This is a public computer</label>
+						</div>
+
+						<button type="submit" class="btn btn-submit btn-blue btn-blue-lighten-hover btn-large"><i class="icon icon-arrowright2"></i>Login</button>
+
+						<p class="sm-text">By Login in, you agree to <a href="">Privacy Policy</a></p>
+
+					</fieldset>
+				</form>
+			</div>
+			<div class="modal-footer">
+				<p class="subtitle">Don't have an account?</p>
+				<p><a href="#">Sign up here</a> or login with</p>
+
+				<div class="login-buttons d-flex justify-content-between">
+					<a href="#" class="btn btn-google btn-white btn-gray-hover btn-large">Google</a>
+					<a href="#" class="btn btn-facebook btn-blue btn-blue-lighten-hover btn-large">Facebook</a>
+				</div>
+				<!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
+				<!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+			</div>
+		</div>
+	</div>
 </div>
 
 <div id="outdated"></div>

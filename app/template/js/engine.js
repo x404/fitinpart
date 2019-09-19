@@ -15,10 +15,6 @@ $(document).ready(function(){
 			countEl = $this.closest('.count').find('.count-control'),
 			cnt = parseInt(countEl.val())-1;
 
-		// if ( cnt <= 0 ) {
-		// 	cnt = 0;
-		// };
-
 		countEl.val((cnt <= 0) ? cnt = 0 : cnt) ;
 	});
 
