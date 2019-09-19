@@ -65,8 +65,7 @@
 
 	@for $i from 1 through 12{
 	  	.grid#{$infix}-#{$i}{
-			grid-template-columns: repeat(#{$i}, 1fr);  		
-			
+			grid-template-columns: repeat(#{$i}, 1fr);			
 	  	}
 	}
   }

@@ -31,15 +31,22 @@
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
-}
-
-
-.advantages{
 	background-image: url(../images/bg/advantage-bg.jpg);
 }
 
+
 .reviews{
 	background-image: url(../images/bg/reviews-bg.jpg);
+}
+
+.header .catalog{
+	&__bg{
+		background-color: $color3;
+		background-image: url(../images/bg/catalog-bg.png);
+		background-repeat: no-repeat;
+		background-position: left bottom;
+		padding: 3rem 0 2rem;
+	}
 }
 
 

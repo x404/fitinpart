@@ -436,7 +436,6 @@ button{
 			max-height: 30rem;
 			padding-top: 0;
 			padding-bottom: 0;
-			// padding-bottom: 1.2rem;
 			width: 32rem;
 			.dropdown{
 				&-item{
@@ -505,16 +504,16 @@ button{
 	}
 
 
-select {
-  width: 500px;
-}
+	select {
+	  width: 500px;
+	}
 
 
 	// right
 	&__tel{
 		font-size: 1.5rem;
 		font-weight: 700;
-		font-family: 'Neo Sans Pro';
+		font-family: 'Neo Sans Pro', Verdana, sans-serif;
 		.tel{		
 			&:hover{
 				color: $color2;
@@ -615,12 +614,28 @@ select {
 ---------------------------*/
 .header{
 	padding: 2.1rem 0 1.8rem;
+	position: relative;
 
 	.logo{
 		margin-right: 3.4rem;
 	}
+
+	.catalog__wrapper{
+		&:hover{
+			.catalog-btn{
+				box-shadow: 0 5px 15px rgba(0, 153, 255, 0.5);
+			}
+			.catalog{
+				&__menu{
+					opacity: 1;
+					z-index: 101;
+				}
+			}
+		}		
+	}
+
 	.catalog-btn{
-		font-family: 'Neo Sans Pro';
+		font-family: 'Neo Sans Pro', Verdana, sans-serif;
 		$h: 5rem;
 		align-items: center;
 		border-radius: $h;
@@ -631,11 +646,44 @@ select {
 		position: relative;
 		text-transform: uppercase;
 		width: 185px;
+		transition: .3s;
 		&.icon{
 			&:before{
 				left: 35px;
 				top: 50%;
 				margin-top: -9px;
+			}
+		}
+	}
+
+	.catalog{
+		&__item{
+			margin-bottom: 1.5rem;
+			width: 12.5%;
+		}
+		&__bg{
+			box-shadow: 0 5px 15px rgba(0, 153, 255, 0.5);
+		}
+		&__menu{
+			bottom: 0;
+			font-size: 1.8rem;
+			left: 0;
+			min-height: 197px;
+			position: absolute;
+			right: 0;
+			top: 0;
+			padding-top: 94px;
+			// z-index: 101;
+			opacity: 0;
+			z-index: -1;
+			transition: opacity .3s;
+			a{
+				color: $color2;
+				display: block;
+				text-align: center;
+				img{
+					filter: grayscale(1) brightness(5);
+				}
 			}
 		}
 	}
@@ -683,7 +731,7 @@ select {
 		}
 		.cart-layout{
 			opacity: 1;
-			z-index: 99;
+			z-index: 110;
 		}
 	}
 	.cart{
@@ -707,7 +755,7 @@ select {
 			// z-index: -1;
 
 			.title{
-				font-family: 'Neo Sans Pro';
+				font-family: 'Neo Sans Pro', Verdana, sans-serif;
 				color: $color14;
 				font-size: 2.5rem;
 				font-weight: 500;
@@ -997,7 +1045,7 @@ select {
 	h1,.title{
 		color: #000;
 		font-size: 4.8rem;
-		font-family: 'Neo Sans Pro';
+		font-family: 'Neo Sans Pro', Verdana, sans-serif;
 		font-weight: 700;
 	}
 }
