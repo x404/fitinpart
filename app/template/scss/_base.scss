@@ -384,6 +384,7 @@ em strong
 		@extend .flex-center;
 		box-shadow: 0 5px 15px rgba(0, 153, 255, 0.5);
 		color: #000 !important;
+		line-height: 1.39;
 		min-width: 0;
 		padding-left: .9rem;
 		position: relative;
@@ -398,8 +399,10 @@ em strong
 
 	&-facebook{
 		@extend .flex-center;
+		background-color: #395b98;
 		box-shadow: 0 5px 15px rgba(0, 153, 255, 0.5);
 		color: #fff !important;
+		line-height: 1.39;
 		min-width: 0;
 		padding-left: 2.6rem;
 		position: relative;

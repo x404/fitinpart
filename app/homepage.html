@@ -1803,10 +1803,10 @@
 
 
 
-<!-- Modal -->
+<!-- =Modal -->
 <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
 	<div class="modal-dialog modal-dialog-centered" role="document">
-		<div class="modal-content">
+		<div class="modal-content modal-content-bg">
 			<div class="modal-header">
 				<h5 class="modal-title" id="loginModalLabel">Account login</h5>
 				<button type="button" class="close a-rotate90" data-dismiss="modal" aria-label="Close">
@@ -1838,24 +1838,85 @@
 
 						<button type="submit" class="btn btn-submit btn-blue btn-blue-lighten-hover btn-large"><i class="icon icon-arrowright2"></i>Login</button>
 
-						<p class="sm-text">By Login in, you agree to <a href="">Privacy Policy</a></p>
-
+						<p class="sm-text">By Login in, you agree to <a href="#" title="">Privacy Policy</a></p>
 					</fieldset>
 				</form>
 			</div>
 			<div class="modal-footer">
 				<p class="subtitle">Don't have an account?</p>
-				<p><a href="#">Sign up here</a> or login with</p>
+				<p><a href="#" title="" data-toggle="modal" data-target="#registerModal">Sign up here</a> or login with</p>
 
 				<div class="login-buttons d-flex justify-content-between">
 					<a href="#" class="btn btn-google btn-white btn-gray-hover btn-large">Google</a>
-					<a href="#" class="btn btn-facebook btn-blue btn-blue-lighten-hover btn-large">Facebook</a>
+					<a href="#" class="btn btn-facebook btn-blue-lighten-hover btn-large">Facebook</a>
 				</div>
 			</div>
 		</div>
 	</div>
 </div>
 
+<div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="registerModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered" role="document">
+		<div class="modal-content modal-content-bg">
+			<div class="modal-header">
+				<h5 class="modal-title" id="registerModalLabel">Get started now</h5>
+				<button type="button" class="close a-rotate90" data-dismiss="modal" aria-label="Close">
+					<svg width="22" height="22">
+						<line x1="0" y1="0" x2="22" y2="22"/>
+						<line x1="22" y1="0" x2="0" y2="22"/>
+					</svg>
+				</button>
+			</div>
+			<div class="modal-body">
+				<p>Create an account to get access to garage, special offers, order history and more!</p>
+
+
+				<form action="#" method="post">
+					<fieldset>
+						<div class="form-group row">
+							<div class="col-lg-5">
+								<label for="registerEmail">E-Mail Address <span class="asterisk">*</span></label>
+								<input type="email" id="registerEmail" class="form-control" value="" />								
+							</div>
+							<div class="col-lg-5">
+								<label for="registerPassword">Password <span class="asterisk">*</span></label>
+								<input type="password" id="registerPassword" class="form-control" value="" />								
+							</div>
+						</div>
+						<div class="form-group row">
+							<div class="col-lg-5">
+								<label for="registerEmail">Name <span class="asterisk">*</span></label>
+								<input type="text" id="registerName" class="form-control" value="" />								
+							</div>
+							<div class="col-lg-5">
+								<label for="registerLastname">Last name <span class="asterisk">*</span></label>
+								<input type="text" id="registerLastname" class="form-control" value="" />								
+							</div>
+						</div>
+
+						<div class="d-flex align-items-center">
+							<button type="submit" class="btn btn-submit btn-blue btn-blue-lighten-hover btn-large"><i class="icon icon-arrowright2"></i>Register</button>
+							<p class="sm-text">By Login in, you agree to <a href="#" title="">Privacy Policy</a></p>							
+						</div>
+					</fieldset>
+				</form>
+			</div>
+			<div class="modal-footer">
+				<div class="d-flex justify-content-between align-items-center">
+					<div>
+						<p class="subtitle">Don't have an account?</p>
+						<p><a href="#">Sign up here</a> or login with</p>
+					</div>
+					<div class="login-buttons d-flex justify-content-between">
+						<a href="#" class="btn btn-google btn-white btn-gray-hover btn-large">Google</a>
+						<a href="#" class="btn btn-facebook btn-blue-lighten-hover btn-large">Facebook</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- =/Modal -->
 <div id="outdated"></div>
 <script src="/template/js/slick.min.js"></script>
 <script src="/template/js/slick-animation.min.js"></script>

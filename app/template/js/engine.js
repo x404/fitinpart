@@ -121,6 +121,9 @@ $(document).ready(function(){
 	});
 
 
+	$('#registerModal').on('show.bs.modal', function (e) {
+		$('#loginModal').modal('hide')
+	})
 
 	// mobile-menu
 	$('#navbar').each(function(){
