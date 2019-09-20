@@ -1095,8 +1095,13 @@ button{
 				button{
 					color: #778d9b;
 					padding: 0;
+					color: $color3;
+					&:disabled{
+						color: #778d9b;
+						cursor: default;
+					}
 					&:hover{
-						color: $color3;
+						// color: $color3;
 					}
 					&.active{
 						font-weight: 700;

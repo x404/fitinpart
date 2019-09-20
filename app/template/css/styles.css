@@ -4571,9 +4571,11 @@ button {
           display: none; }
       .search .vehicle-search-str .vehicle-search-item button {
         color: #778d9b;
-        padding: 0; }
-        .search .vehicle-search-str .vehicle-search-item button:hover {
-          color: #0672ba; }
+        padding: 0;
+        color: #0672ba; }
+        .search .vehicle-search-str .vehicle-search-item button:disabled {
+          color: #778d9b;
+          cursor: default; }
         .search .vehicle-search-str .vehicle-search-item button.active {
           font-weight: 700;
           color: #0e0e0e; }

@@ -29,6 +29,7 @@ function setPlaceholder(text){
 	search.setAttribute('placeholder', text);
 }
 
+const labels = ['Class', 'Model', 'Year', 'Body', 'Engine', 'EngineNO'];
 
 $(document).ready(function(){
 	// https://www.fitinpart.sg/catalog/view/javascript/function.js
@@ -53,13 +54,14 @@ $(document).ready(function(){
 			$el.textContent = $v_brand_select.multipleSelect('getSelects', 'text');
 			$input.value = $v_brand_select.multipleSelect('getSelects');
 
-		//Unset the all selection values
-		   // $("#class_select, #model_select, #year_select,#body_select, #engine_select, #engineno_select").multipleSelect("uncheckAll");
+			//Unset the all selection values
+			$("#v_class_select, #v_model_select, #v_year_select,#v_body_select, #v_engine_select, #v_engineno_select").multipleSelect("uncheckAll");
+			
+			SwitchEnabledAppsearchFieldsVehicle();
 
-		   // SwitchEnabledAppsearchFields();
-		   //Get class and model
-		   // getClass(0, 0, 0);
-		   // getModel(0, 0, 0, 0);
+			//Get class and model
+			// getClass(0, 0, 0);
+			// getModel(0, 0, 0, 0);
 		}
 	});
 
@@ -117,10 +119,9 @@ $(document).ready(function(){
 			$el.textContent = $v_model_select.multipleSelect('getSelects', 'text');
 			$input.value = $v_model_select.multipleSelect('getSelects');
 
-			console.log(view)
-			// $("#year_select, #body_select, #engine_select, #engineno_select").multipleSelect("uncheckAll");
+			$("#v_year_select, #v_body_select, #v_engine_select, #v_engineno_select").multipleSelect("uncheckAll");
 
-		// SwitchEnabledAppsearchFields();
+		SwitchEnabledAppsearchFieldsVehicle();
 		// getYears(false);
 		}
 	});
@@ -225,13 +226,47 @@ $(document).ready(function(){
 
 
 	function SwitchEnabledAppsearchFieldsVehicle(){
-		$("#model_select, #year_select, #body_select, #engine_select, #engineno_select").not(':focus').multipleSelect("disable");
-		if($('select#brand_select :selected').val()>0) {
-			$("#model_select").not(':focus').multipleSelect("enable");
-			$("#class_select").not(':focus').multipleSelect("enable");
+		$("#v_model_select, #v_year_select, #v_body_select, #v_engine_select, #v_engineno_select").not(':focus').multipleSelect("disable");
+
+		// $('button.year, button.body, button.engine, button.engineno').attr('disabled', true);
+
+		const yearEl = document.querySelector('button.year'),
+			  bodyEl = document.querySelector('button.body'),
+			  engineEl = document.querySelector('button.engine'),
+			  enginenoEl = document.querySelector('button.engineno'),
+			  yearInput = document.querySelector('input[name="year"]'),
+			  bodyInput = document.querySelector('input[name="body"]'),
+			  engineInput = document.querySelector('input[name="engine"]'),
+			  enginenoInput = document.querySelector('input[name="engineno"]');
+
+		yearEl.setAttribute('disabled', true);
+		bodyEl.setAttribute('disabled', true);
+		engineEl.setAttribute('disabled', true);
+		enginenoEl.setAttribute('disabled', true);
+
+		yearEl.textContent = labels[2];
+		bodyEl.textContent = labels[3];
+		engineEl.textContent = labels[4];
+		enginenoEl.textContent = labels[5];
+
+		yearEl.classList.remove('active');
+		bodyEl.classList.remove('active');
+		engineEl.classList.remove('active');
+		enginenoEl.classList.remove('active');
+
+		yearInput.value = '';
+		bodyInput.value = '';
+		engineInput.value = '';
+		enginenoInput.value = '';
+
+		if($('select#v_brand_select :selected').val()>0) {
+			$("#v_model_select").not(':focus').multipleSelect("enable");
+			$("#v_class_select").not(':focus').multipleSelect("enable");
+			$('button.class, button.model').removeAttr('disabled');
 		}
-		if($('select#model_select :selected').val()>0) {
-			$("#year_select,#body_select, #engine_select, #engineno_select").not(':focus').multipleSelect("enable");
+		if($('select#v_model_select :selected').val()>0) {
+			$("#v_year_select,#v_body_select, #v_engine_select, #v_engineno_select").not(':focus').multipleSelect("enable");
+			$('button.year, button.body, button.engine, button.engineno').removeAttr('disabled');
 		}
 	}
 
