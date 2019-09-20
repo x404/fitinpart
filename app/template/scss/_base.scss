@@ -1070,7 +1070,7 @@ button{
 			display: none;
 		}
 		&-str{
-			li{
+			.vehicle-search-item{
 				position: relative;
 				padding-right: 12px;
 				margin-right: 7px;
@@ -1108,6 +1108,61 @@ button{
 		.ms-drop{
 			width: 320px;
 		}
+
+
+		.ms-parent{
+			position: absolute;
+			left: 0;
+			top: 30px;
+			.ms-drop{
+				&:before{
+					color: #050505;
+					display: block;
+					font-family: "Neo Sans Pro";
+					font-size: 2.2rem;
+					font-weight: 500;
+					margin-bottom: 1.5rem;
+					padding-left: 2rem;
+				}
+			}			
+		}
+
+		.v_brand .ms-drop{
+			&:before{
+				content: 'Select brand';
+			}
+		}
+		.v_class .ms-drop{
+			&:before{
+				content: 'Select class';
+			}
+		}
+		.v_model .ms-drop{
+			&:before{
+				content: 'Select model';
+			}
+		}
+		.v_year .ms-drop{
+			&:before{
+				content: 'Select year';
+			}
+		}
+		.v_body .ms-drop{
+			&:before{
+				content: 'Select body';
+			}
+		}
+		.v_engine .ms-drop{
+			&:before{
+				content: 'Select engine';
+			}
+		}
+		.v_engineno .ms-drop{
+			&:before{
+				content: 'Select engineno';
+			}
+		}
+
 	}
 
 	select{

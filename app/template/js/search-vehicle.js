@@ -132,10 +132,10 @@ $(document).ready(function(){
 		placeholder : 'Year',
 		noMatchesFound:$('#chk_app_search_sg_only').is(':checked')?'No matches found<br>To show all years Turn <strong>OFF</strong> Common SG Veh':'No matches found',
 		onFilter: function(){
-			yearlist.update();
+			vyearlist.update();
 		},
 		onOpen: function() {
-			yearlist.update();
+			vyearlist.update();
 		},
 		onClick: function(view) {
 			const $el = document.querySelector('.vehicle-search .year'),
@@ -157,10 +157,10 @@ $(document).ready(function(){
 		placeholder : 'Body',
 		noMatchesFound:$('#chk_app_search_sg_only').is(':checked')?'No matches found<br>To show all bodies Turn <strong>OFF</strong> Common SG Veh':'No matches found',
 		onFilter: function(){
-			bodylist.update();
+			vbodylist.update();
 		},
 		onOpen: function() {
-			bodylist.update();
+			vbodylist.update();
 		},
 		onClick: function(view) {
 			const $el = document.querySelector('.vehicle-search .body'),
@@ -182,10 +182,10 @@ $(document).ready(function(){
 		placeholder : 'Engine',
 		noMatchesFound:$('#chk_app_search_sg_only').is(':checked')?'No matches found<br>To show all engines Turn <strong>OFF</strong> Common SG Veh':'No matches found',
 		onFilter: function(){
-			enginelist.update();
+			venginelist.update();
 		},
 		onOpen: function() {
-			enginelist.update();
+			venginelist.update();
 		},
 		onClick: function(view) {
 			const $el = document.querySelector('.vehicle-search .engine'),
@@ -207,10 +207,10 @@ $(document).ready(function(){
 		placeholder : 'EngineNo',
 		noMatchesFound:$('#chk_app_search_sg_only').is(':checked')?'No matches found<br>To show all numbers Turn <strong>OFF</strong> Common SG Veh':'No matches found',
 		onFilter: function(){
-			enginenolist.update();
+			venginenolist.update();
 		},
 		onOpen: function() {
-			enginenolist.update();
+			venginenolist.update();
 		},
 		onClick: function(view) {
 			const $el = document.querySelector('.vehicle-search .engineno'),
@@ -236,40 +236,40 @@ $(document).ready(function(){
 	}
 
 
-	var vbrandlist = new PerfectScrollbar('.select_groups .v_brand .listwrapper', {
+	var vbrandlist = new PerfectScrollbar('.vehicle-search .v_brand .listwrapper', {
 		wheelPropagation: true,
 		minScrollbarLength: 100,
 		maxScrollbarLength: 100,
 	});
 
-	var vclasslist = new PerfectScrollbar('.select_groups .v_class .listwrapper', {
+	var vclasslist = new PerfectScrollbar('.vehicle-search .v_class .listwrapper', {
 		wheelPropagation: true,
 		minScrollbarLength: 100,
 		maxScrollbarLength: 100,
 	});
-	var vmodellist = new PerfectScrollbar('.select_groups .v_model .listwrapper', {
-		wheelPropagation: true,
-		minScrollbarLength: 100,
-		maxScrollbarLength: 100,
-	});
-
-	var vyearlist = new PerfectScrollbar('.select_groups .v_year .listwrapper', {
+	var vmodellist = new PerfectScrollbar('.vehicle-search .v_model .listwrapper', {
 		wheelPropagation: true,
 		minScrollbarLength: 100,
 		maxScrollbarLength: 100,
 	});
 
-	var bodylist_ = new PerfectScrollbar('.select_groups .v_body .listwrapper', {
+	var vyearlist = new PerfectScrollbar('.vehicle-search .v_year .listwrapper', {
 		wheelPropagation: true,
 		minScrollbarLength: 100,
 		maxScrollbarLength: 100,
 	});
-	var enginelist_ = new PerfectScrollbar('.select_groups .v_engine .listwrapper', {
+
+	var vbodylist = new PerfectScrollbar('.vehicle-search .v_body .listwrapper', {
 		wheelPropagation: true,
 		minScrollbarLength: 100,
 		maxScrollbarLength: 100,
 	});
-	var enginenolist_ = new PerfectScrollbar('.select_groups .v_engineno .listwrapper', {
+	var venginelist = new PerfectScrollbar('.vehicle-search .v_engine .listwrapper', {
+		wheelPropagation: true,
+		minScrollbarLength: 100,
+		maxScrollbarLength: 100,
+	});
+	var venginenolist = new PerfectScrollbar('.vehicle-search .v_engineno .listwrapper', {
 		wheelPropagation: true,
 		minScrollbarLength: 100,
 		maxScrollbarLength: 100,

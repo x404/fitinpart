@@ -3895,7 +3895,7 @@ strong,
   .tdu:hover {
     text-decoration: none; }
 
-.before, .icon:before, .btn-view:before, .btn-google:before, .btn-facebook:before, .top__left:before, .top .login:before, .top .login:after, .littlecart .cart-body .cart-products .count .minus:before, .littlecart .cart-body .cart-products .count .plus:before, .littlecart .cart-body .cart-products .count .plus:after, .search .vehicle-search-str li:after, .promo .wrapper:before, .visual__item:before, .modal-content-bg:before, .modal-content-bg:after {
+.before, .icon:before, .btn-view:before, .btn-google:before, .btn-facebook:before, .top__left:before, .top .login:before, .top .login:after, .littlecart .cart-body .cart-products .count .minus:before, .littlecart .cart-body .cart-products .count .plus:before, .littlecart .cart-body .cart-products .count .plus:after, .search .vehicle-search-str .vehicle-search-item:after, .promo .wrapper:before, .visual__item:before, .modal-content-bg:before, .modal-content-bg:after {
   content: "";
   display: block;
   position: absolute; }
@@ -4552,11 +4552,11 @@ button {
     .search .vehicle-search .ms-choice,
     .search .vehicle-search select {
       display: none; }
-    .search .vehicle-search-str li {
+    .search .vehicle-search-str .vehicle-search-item {
       position: relative;
       padding-right: 12px;
       margin-right: 7px; }
-      .search .vehicle-search-str li:after {
+      .search .vehicle-search-str .vehicle-search-item:after {
         background-image: url("data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAKBAMAAACK4lk+AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAHlBMVEV3jZt3jZt3jZt3jZt3jZt3jZt3jZt3jZt3jZv///8yrQtdAAAACHRSTlMACaVjIWlmKZuh9gsAAAABYktHRAnx2aXsAAAAB3RJTUUH4wkUEjYy0AbW3gAAACRJREFUCNdjEDJgYGDwaAUSbB0BQDKjDcwsgBIgLlgCrASkGADAsQezjRTMRwAAAABJRU5ErkJggg==");
         background-position: left top;
         background-repeat: no-repeat;
@@ -4564,21 +4564,47 @@ button {
         right: 0;
         top: 6px;
         width: 7px; }
-      .search .vehicle-search-str li:last-child {
+      .search .vehicle-search-str .vehicle-search-item:last-child {
         margin-right: 0;
         padding-right: 0; }
-        .search .vehicle-search-str li:last-child:after {
+        .search .vehicle-search-str .vehicle-search-item:last-child:after {
           display: none; }
-      .search .vehicle-search-str li button {
+      .search .vehicle-search-str .vehicle-search-item button {
         color: #778d9b;
         padding: 0; }
-        .search .vehicle-search-str li button:hover {
+        .search .vehicle-search-str .vehicle-search-item button:hover {
           color: #0672ba; }
-        .search .vehicle-search-str li button.active {
+        .search .vehicle-search-str .vehicle-search-item button.active {
           font-weight: 700;
           color: #0e0e0e; }
     .search .vehicle-search .ms-drop {
       width: 320px; }
+    .search .vehicle-search .ms-parent {
+      position: absolute;
+      left: 0;
+      top: 30px; }
+      .search .vehicle-search .ms-parent .ms-drop:before {
+        color: #050505;
+        display: block;
+        font-family: "Neo Sans Pro";
+        font-size: 2.2rem;
+        font-weight: 500;
+        margin-bottom: 1.5rem;
+        padding-left: 2rem; }
+    .search .vehicle-search .v_brand .ms-drop:before {
+      content: 'Select brand'; }
+    .search .vehicle-search .v_class .ms-drop:before {
+      content: 'Select class'; }
+    .search .vehicle-search .v_model .ms-drop:before {
+      content: 'Select model'; }
+    .search .vehicle-search .v_year .ms-drop:before {
+      content: 'Select year'; }
+    .search .vehicle-search .v_body .ms-drop:before {
+      content: 'Select body'; }
+    .search .vehicle-search .v_engine .ms-drop:before {
+      content: 'Select engine'; }
+    .search .vehicle-search .v_engineno .ms-drop:before {
+      content: 'Select engineno'; }
   .search select {
     background-color: #778d9b;
     border-radius: 4rem;
