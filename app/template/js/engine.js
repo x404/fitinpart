@@ -1,5 +1,11 @@
-$(document).ready(function(){
+let select = document.getElementById("typesearch_select");
+select.onchange = function() {
+	console.log(this.value)
+}
 
+
+
+$(document).ready(function(){
 	$("#typesearch_select").multipleSelect({
 		single: true,
 		filter: false
