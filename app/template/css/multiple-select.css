@@ -82,13 +82,13 @@
     background-position: -93px -54px;
     width: 10px;
     height: 7px;
+    content: "";
+    display: block;
     left: 50%;
     margin-left: -5px;
     margin-top: -3px;
-    top: 50%;
-    content: "";
-    display: block;
-    position: absolute; }
+    position: absolute;
+    top: 50%; }
 
 .ms-choice > div.open {
   background-position: right top; }

@@ -1,5 +1,10 @@
 $(document).ready(function(){
 
+	$("#typesearch_select").multipleSelect({
+		single: true,
+		filter: false
+	})
+
 	$('.count-price .plus').on('click', function(e){
 		e.preventDefault();
 		let $this = $(this),

@@ -1010,30 +1010,109 @@ button{
 	flex-grow: 1;
 	padding-left: 2.8rem;
 	&__wrapper{
-		background-color: $color8;
-		border-radius: 5rem;
-		height: 5rem;
+		// border-radius: 5rem;
+		// height: 5rem;
 		position: relative;
 		z-index: 101;
 	}
 
 	.form-control{
-		background: none;
+		// background: none;
+		background-color: $color8;
 		border: none;
 		flex-grow: 1;
 		font-size: 1.3rem;
 		font-style: italic;
 		height: 5rem;
-		margin-left: 1.2rem;
+		// margin-left: 1.2rem;
+		padding-left: 190px;
 		outline: none;
+		&:focus,
+		&:active{
+
+		}
 	}
 
 	.submit{
-		background: url(../images/icons/search-icon2.png) no-repeat center left 45%;
+		background: url(../images/icons/search-icon2.png) no-repeat center;
 		border: none;
-		width: 5rem;
+		cursor: pointer;
 		height: 5rem;
 		padding: 0;
+		position: absolute;
+		right: 0;
+		top: 0;
+		width: 5rem;
+	}
+
+	.dropdown{
+		position: absolute;
+		left: 9px;
+		top: 8px;
+		.ms-parent{
+			width: 168px !important;
+		}
+		.ms-choice{
+			background-color: #778d9b;
+			color: #fff;
+			font-weight: 900;
+			height: 34px;
+			width: 168px;
+			& > div{
+				background: none;
+				height: 7px;
+				margin-top: -3px;
+				right: 11px;
+				top: 50%;
+				transition: transform .3s;
+				width: 10px;
+				z-index: 1001;
+
+				&:before{
+					filter: grayscale(1) brightness(5);
+				}
+
+				&.open{
+					transform: rotate(-180deg);
+				}
+			}
+
+			&:hover{
+				background-color: #3a505f;
+			}
+		}
+
+		.ms-drop{
+			background-color: #657884;
+			border-radius: 1.8rem;
+			color: #fff;
+			font-weight: 700;
+			padding: 0;
+			top: 0 !important;
+
+			li{
+				label{
+					padding: .9rem 0; 					
+				}
+				&:before,
+				&:after
+				{
+					display: none !important;
+				}
+				&.selected{
+					background-color: #778d9b;
+					border-radius: 1.8rem
+				}
+			}
+			ul{
+				padding: 0;
+			}
+			ul > li span{
+				font-weight: 900;
+				line-height: 1.2;
+				padding-left: 16px;
+			}
+		}
 	}
 }
 

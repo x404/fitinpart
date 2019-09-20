@@ -4511,26 +4511,74 @@ button {
   flex-grow: 1;
   padding-left: 2.8rem; }
   .search__wrapper {
-    background-color: #f3f3f3;
-    border-radius: 5rem;
-    height: 5rem;
     position: relative;
     z-index: 101; }
   .search .form-control {
-    background: none;
+    background-color: #f3f3f3;
     border: none;
     flex-grow: 1;
     font-size: 1.3rem;
     font-style: italic;
     height: 5rem;
-    margin-left: 1.2rem;
+    padding-left: 190px;
     outline: none; }
   .search .submit {
-    background: url(../images/icons/search-icon2.png) no-repeat center left 45%;
+    background: url(../images/icons/search-icon2.png) no-repeat center;
     border: none;
-    width: 5rem;
+    cursor: pointer;
     height: 5rem;
-    padding: 0; }
+    padding: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 5rem; }
+  .search .dropdown {
+    position: absolute;
+    left: 9px;
+    top: 8px; }
+    .search .dropdown .ms-parent {
+      width: 168px !important; }
+    .search .dropdown .ms-choice {
+      background-color: #778d9b;
+      color: #fff;
+      font-weight: 900;
+      height: 34px;
+      width: 168px; }
+      .search .dropdown .ms-choice > div {
+        background: none;
+        height: 7px;
+        margin-top: -3px;
+        right: 11px;
+        top: 50%;
+        transition: transform .3s;
+        width: 10px;
+        z-index: 1001; }
+        .search .dropdown .ms-choice > div:before {
+          filter: grayscale(1) brightness(5); }
+        .search .dropdown .ms-choice > div.open {
+          transform: rotate(-180deg); }
+      .search .dropdown .ms-choice:hover {
+        background-color: #3a505f; }
+    .search .dropdown .ms-drop {
+      background-color: #657884;
+      border-radius: 1.8rem;
+      color: #fff;
+      font-weight: 700;
+      padding: 0;
+      top: 0 !important; }
+      .search .dropdown .ms-drop li label {
+        padding: .9rem 0; }
+      .search .dropdown .ms-drop li:before, .search .dropdown .ms-drop li:after {
+        display: none !important; }
+      .search .dropdown .ms-drop li.selected {
+        background-color: #778d9b;
+        border-radius: 1.8rem; }
+      .search .dropdown .ms-drop ul {
+        padding: 0; }
+      .search .dropdown .ms-drop ul > li span {
+        font-weight: 900;
+        line-height: 1.2;
+        padding-left: 16px; }
 
 /* =/header
 ---------------------------*/
