@@ -1021,6 +1021,9 @@ button{
 		// height: 5rem;
 		position: relative;
 		z-index: 101;
+		form{
+			width: 100%;
+		}
 	}
 
 	.form-control{

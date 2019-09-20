@@ -469,18 +469,21 @@
 				<!-- =search -->
 				<div class="search">
 					<div class="search__wrapper d-flex">
-						<div class="dropdown">
-							<select id="typesearch_select" multiple="multiple">
-								<option value="Part Number" selected="selected">Part Number</option>
-								<option value="Vehicle Plate No">Vehicle Plate No</option>
-								<option value="VIN or Chassis No">VIN or Chassis No</option>
-								<option value="Vehicle Search">Vehicle Search</option>
-								<option value="Search by size">Search by size</option>
-							</select>
-						</div>
-						<input type="text" value="" placeholder="Example: J0220SE" class="form-control" /> 
-						<!-- <input type="submit" value="" class="submit" /> -->
-						<button type="submit" class="submit" aria-label="Search"><i class="icon icon-search"></i></button>
+						<form action="#" method="get">
+							<fieldset>
+								<div class="dropdown">
+									<select id="typesearch_select" name="typesearch" multiple="multiple">
+										<option value="Part Number" selected="selected">Part Number</option>
+										<option value="Vehicle Plate No">Vehicle Plate No</option>
+										<option value="VIN or Chassis No">VIN or Chassis No</option>
+										<option value="Vehicle Search">Vehicle Search</option>
+										<option value="Search by size">Search by size</option>
+									</select>
+								</div>
+								<input type="text" name="search" value="" placeholder="Example: J0220SE" class="form-control" /> 
+								<button type="submit" class="submit" aria-label="Search"><i class="icon icon-search"></i></button>		
+							</fieldset>
+						</form>
 					</div>
 				</div>
 				<!-- =/search -->
@@ -1927,12 +1930,13 @@
 </div>
 <!-- =/Modal -->
 <div id="outdated"></div>
+<!-- multiple select -->
+<script src="/template/js/multiple-select.min.js"></script>
+
 <script src="/template/js/slick.min.js"></script>
 <script src="/template/js/slick-animation.min.js"></script>
 <link rel="stylesheet" property="stylesheet" href="/template/css/animate.min.css">
 
-<!-- multiple select -->
-<script src="/template/js/multiple-select.min.js"></script>
 
 
 <!-- =scrollbar-->

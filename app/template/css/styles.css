@@ -4521,6 +4521,8 @@ button {
   .search__wrapper {
     position: relative;
     z-index: 101; }
+    .search__wrapper form {
+      width: 100%; }
   .search .form-control {
     background-color: #f3f3f3;
     border: none;
