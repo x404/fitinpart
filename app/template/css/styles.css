@@ -3932,7 +3932,7 @@ strong,
     padding-left: 35px; }
     .icon-user:before {
       background-image: url(../images/sprite.png);
-      background-position: -24px 0px;
+      background-position: -51px 0px;
       width: 26px;
       height: 26px;
       filter: brightness(5);
@@ -3944,12 +3944,12 @@ strong,
     padding-left: 64px; }
     .icon-9dotted:before {
       background-image: url(../images/sprite.png);
-      background-position: 0px -56px;
+      background-position: 0px -71px;
       width: 18px;
       height: 18px; }
   .icon-littlecart:before {
     background-image: url(../images/sprite.png);
-    background-position: -50px 0px;
+    background-position: 0px -32px;
     width: 27px;
     height: 24px;
     left: 30px;
@@ -3958,14 +3958,14 @@ strong,
     transition: filter .3s; }
   .icon-cartblue {
     background-image: url(../images/sprite.png);
-    background-position: 0px -32px;
+    background-position: -27px -32px;
     width: 27px;
     height: 24px;
     margin-right: 9px;
     transition: filter .3s; }
   .icon-arrowright:before {
     background-image: url(../images/sprite.png);
-    background-position: -38px -56px;
+    background-position: -22px -56px;
     width: 18px;
     height: 13px;
     left: 20px;
@@ -3973,7 +3973,7 @@ strong,
     top: 50%; }
   .icon-arrowright2 {
     background-image: url(../images/sprite.png);
-    background-position: -48px -32px;
+    background-position: 0px -56px;
     width: 22px;
     height: 15px;
     margin-right: 9px; }
@@ -3994,7 +3994,7 @@ strong,
     display: block; }
   .icon-camera {
     background-image: url(../images/sprite.png);
-    background-position: -18px -56px;
+    background-position: -18px -71px;
     width: 20px;
     height: 16px;
     display: block;
@@ -4010,6 +4010,14 @@ strong,
       height: 32px;
       left: 0;
       top: 0; }
+  .icon-search {
+    background-image: url(../images/sprite.png);
+    background-position: -24px 0px;
+    width: 27px;
+    height: 27px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; }
 
 .a-rotate90 svg, .littlecart .cart-body .cart-products .btn-del svg {
   transition: transform .3s; }
@@ -4088,7 +4096,7 @@ strong,
     width: 14.5rem; }
     .btn-google:before {
       background-image: url(../images/sprite.png);
-      background-position: -27px -32px;
+      background-position: -54px -32px;
       width: 21px;
       height: 22px;
       left: 13px;
@@ -4523,7 +4531,6 @@ button {
     padding-left: 190px;
     outline: none; }
   .search .submit {
-    background: url(../images/icons/search-icon2.png) no-repeat center;
     border: none;
     cursor: pointer;
     height: 5rem;
@@ -4531,7 +4538,10 @@ button {
     position: absolute;
     right: 0;
     top: 0;
-    width: 5rem; }
+    width: 5rem;
+    transition: filter .3s; }
+    .search .submit:hover {
+      filter: brightness(0.1) grayscale(1); }
   .search .dropdown {
     position: absolute;
     left: 9px;
