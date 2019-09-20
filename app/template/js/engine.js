@@ -1,31 +1,3 @@
-let select = document.getElementById("typesearch_select"),
-	search = document.getElementById("search");
-select.onchange = function() {
-	let placeholdertext = '';
-
-	switch(this.value){
-		case '1': // Part Number
-			placeholdertext = 'Example: J0220SE'
-			search.setAttribute('placeholder', placeholdertext);
-			break;
-		case '2': // Vehicle Plate No 
-			placeholdertext = "Example: o243oo124";
-			search.setAttribute('placeholder', placeholdertext);
-			break; 
-		case '3': // VIN or Chassis No
-			placeholdertext = "Example: JHMCU26609213298";
-			search.setAttribute('placeholder', placeholdertext);
-			break;
-		case '4': // Vehicle Search
-			break;
-		case '5': // Search by size
-			break;
-		default:
-			break;	
-	}
-}
-
-
 
 $(document).ready(function(){
 	$("#typesearch_select").multipleSelect({

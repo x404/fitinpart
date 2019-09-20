@@ -3895,7 +3895,7 @@ strong,
   .tdu:hover {
     text-decoration: none; }
 
-.before, .icon:before, .btn-view:before, .btn-google:before, .btn-facebook:before, .top__left:before, .top .login:before, .top .login:after, .littlecart .cart-body .cart-products .count .minus:before, .littlecart .cart-body .cart-products .count .plus:before, .littlecart .cart-body .cart-products .count .plus:after, .promo .wrapper:before, .visual__item:before, .modal-content-bg:before, .modal-content-bg:after {
+.before, .icon:before, .btn-view:before, .btn-google:before, .btn-facebook:before, .top__left:before, .top .login:before, .top .login:after, .littlecart .cart-body .cart-products .count .minus:before, .littlecart .cart-body .cart-products .count .plus:before, .littlecart .cart-body .cart-products .count .plus:after, .search .vehicle-search-str li:after, .promo .wrapper:before, .visual__item:before, .modal-content-bg:before, .modal-content-bg:after {
   content: "";
   display: block;
   position: absolute; }
@@ -4544,13 +4544,48 @@ button {
     transition: filter .3s; }
     .search .submit:hover {
       filter: brightness(0.1) grayscale(1); }
+  .search .vehicle-search {
+    position: absolute;
+    padding-left: 190px;
+    top: 55px;
+    left: 0; }
+    .search .vehicle-search .ms-choice,
+    .search .vehicle-search select {
+      display: none; }
+    .search .vehicle-search-str li {
+      position: relative;
+      padding-right: 12px;
+      margin-right: 7px; }
+      .search .vehicle-search-str li:after {
+        background-image: url("data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAKBAMAAACK4lk+AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAHlBMVEV3jZt3jZt3jZt3jZt3jZt3jZt3jZt3jZt3jZv///8yrQtdAAAACHRSTlMACaVjIWlmKZuh9gsAAAABYktHRAnx2aXsAAAAB3RJTUUH4wkUEjYy0AbW3gAAACRJREFUCNdjEDJgYGDwaAUSbB0BQDKjDcwsgBIgLlgCrASkGADAsQezjRTMRwAAAABJRU5ErkJggg==");
+        background-position: left top;
+        background-repeat: no-repeat;
+        height: 10px;
+        right: 0;
+        top: 6px;
+        width: 7px; }
+      .search .vehicle-search-str li:last-child {
+        margin-right: 0;
+        padding-right: 0; }
+        .search .vehicle-search-str li:last-child:after {
+          display: none; }
+      .search .vehicle-search-str li button {
+        color: #778d9b;
+        padding: 0; }
+        .search .vehicle-search-str li button:hover {
+          color: #0672ba; }
+        .search .vehicle-search-str li button.active {
+          font-weight: 700;
+          color: #0e0e0e; }
+    .search .vehicle-search .ms-drop {
+      width: 320px; }
   .search select {
     background-color: #778d9b;
     border-radius: 4rem;
-    width: 168px;
-    height: 34px;
     color: #fff;
-    overflow: hidden; }
+    height: 34px;
+    overflow: hidden;
+    width: 168px; }
     .search select option {
       background-color: #778d9b;
       height: 4rem;
@@ -4717,6 +4752,30 @@ button {
 
 /* =searchbox
 ---------------------------*/
+.searchbox .listwrapper,
+.header .vehicle-search .listwrapper {
+  height: 250px;
+  overflow: hidden;
+  position: relative;
+  z-index: 10; }
+  .searchbox .listwrapper ul,
+  .header .vehicle-search .listwrapper ul {
+    max-height: none !important;
+    height: auto !important; }
+    .searchbox .listwrapper ul li,
+    .header .vehicle-search .listwrapper ul li {
+      width: calc(100% - 27px) !important; }
+  .searchbox .listwrapper .ps__rail-y,
+  .header .vehicle-search .listwrapper .ps__rail-y {
+    width: 3px; }
+  .searchbox .listwrapper .ps__thumb-y,
+  .header .vehicle-search .listwrapper .ps__thumb-y {
+    right: -3px; }
+  .searchbox .listwrapper .ms-no-results,
+  .header .vehicle-search .listwrapper .ms-no-results {
+    padding-left: 26px;
+    font-size: 1.5rem; }
+
 .searchbox {
   margin-top: -8rem;
   position: relative; }
@@ -4756,22 +4815,6 @@ button {
     padding: 0 0 13px; }
     .searchbox .ms-drop .ms-search {
       padding-top: 20px; }
-  .searchbox .listwrapper {
-    height: 250px;
-    overflow: hidden;
-    position: relative; }
-    .searchbox .listwrapper ul {
-      max-height: none !important;
-      height: auto !important; }
-      .searchbox .listwrapper ul li {
-        width: calc(100% - 27px) !important; }
-    .searchbox .listwrapper .ps__rail-y {
-      width: 3px; }
-    .searchbox .listwrapper .ps__thumb-y {
-      right: -3px; }
-    .searchbox .listwrapper .ms-no-results {
-      padding-left: 26px;
-      font-size: 1.5rem; }
   .searchbox__panel {
     background-color: #fff;
     padding: 3rem 2.5rem; }
@@ -5640,7 +5683,7 @@ button {
   background-position: right bottom; }
 
 .about {
-  background-image: url(../images/bg/about-bg.jpg); }
+  background-image: url(../images/bg/about-bg.png); }
 
 .searchbox__panel-vehicle {
   background-image: url(../images/bg/vehicle-bg.jpg); }

@@ -1,0 +1,321 @@
+let select = document.getElementById("typesearch_select"),
+	search = document.getElementById("search");
+
+select.onchange = function() {
+	let placeholdertext = '';
+
+	switch(this.value){
+		case '1': // Part Number
+			setPlaceholder('Example: J0220SE');
+			break;
+		case '2': // Vehicle Plate No 
+			setPlaceholder('Example: o243oo124');
+			break; 
+		case '3': // VIN or Chassis No
+			setPlaceholder('Example: JHMCU26609213298');
+			break;
+		case '4': // Vehicle Search
+			// setPlaceholder('');
+			document.querySelector('#search').style.display = 'none';
+			break;
+		case '5': // Search by size
+			break;
+		default:
+			break;	
+	}
+}
+
+function setPlaceholder(text){
+	search.setAttribute('placeholder', text);
+}
+
+
+$(document).ready(function(){
+	// https://www.fitinpart.sg/catalog/view/javascript/function.js
+	const $v_brand_select = $("#v_brand_select");
+	$v_brand_select.multipleSelect({
+		single: true,
+		filter: true,
+		placeholder : 'Maker',
+		noMatchesFound:$('#chk_app_search_sg_only').is(':checked')?'No matches found<br>To show all brands Turn <strong>OFF</strong> Common SG Veh':'No matches found',
+		onFilter: function(){
+			vbrandlist.update();
+		},
+		onOpen: function() {
+			vbrandlist.update();
+		},
+
+		onClick: function(view) {
+			const $label = view.label,
+				$el = document.querySelector('.vehicle-search .maker'),
+				$input =  document.querySelector('.vehicle-search input[name="maker"]');
+			$el.classList.add('active');
+			$el.textContent = $v_brand_select.multipleSelect('getSelects', 'text');
+			$input.value = $v_brand_select.multipleSelect('getSelects');
+
+		//Unset the all selection values
+		   // $("#class_select, #model_select, #year_select,#body_select, #engine_select, #engineno_select").multipleSelect("uncheckAll");
+
+		   // SwitchEnabledAppsearchFields();
+		   //Get class and model
+		   // getClass(0, 0, 0);
+		   // getModel(0, 0, 0, 0);
+		}
+	});
+
+
+	const $v_class_select = $("#v_class_select");
+	$v_class_select.multipleSelect({
+		filter: true,
+		single: true,
+		placeholder : 'Class',
+		// noMatchesFound:$('#chk_app_search_sg_only').is(':checked')?'No matches found<br>To show all classes Turn <strong>OFF</strong> Common SG Veh':'No matches found',
+		onFilter: function(){
+			vclasslist.update();
+		},
+		onOpen: function() {
+			vclasslist.update();
+		},
+		onClick: function(view) {
+			const $el = document.querySelector('.vehicle-search .class'),
+				  $input =  document.querySelector('.vehicle-search input[name="class"]');
+			$el.classList.add('active');
+			$el.textContent = $v_class_select.multipleSelect('getSelects', 'text');
+			$input.value = $v_class_select.multipleSelect('getSelects');
+
+			// $(" #model_select, #year_select, #body_select, #engine_select, #engineno_select").multipleSelect("uncheckAll");
+			// SwitchEnabledAppsearchFields();
+			// getModel(0,0,0,0);
+		}
+	});
+
+
+	const $v_model_select = $("#v_model_select");
+	$v_model_select.multipleSelect({
+		filter: true,//($( window ).width()>800),
+		multiple: true,
+		multipleWidth: 228,
+		selectAll:false,
+		maxHeight:($( window ).width()<800)?100:250,
+		// noMatchesFound:$('#chk_app_search_sg_only').is(':checked')?'No matches found<br>To show all models Turn <strong>OFF</strong> Common SG Veh':'No matches found',
+		placeholder : 'Model',
+		textTemplate: function ($el) {
+			var txt=$el.html();
+			var opt=txt.replace(/\[/,'<i class="ms_aliases">[').replace(/\]/,']</i>');
+			return opt;
+		},
+		onFilter: function(){
+			vmodellist.update();
+		},
+		onOpen: function() {
+			vmodellist.update();
+		},
+		onClick: function(view) {
+			const $el = document.querySelector('.vehicle-search .model'),
+				  $input =  document.querySelector('.vehicle-search input[name="model"]');
+			$el.classList.add('active');
+			$el.textContent = $v_model_select.multipleSelect('getSelects', 'text');
+			$input.value = $v_model_select.multipleSelect('getSelects');
+
+			console.log(view)
+			// $("#year_select, #body_select, #engine_select, #engineno_select").multipleSelect("uncheckAll");
+
+		// SwitchEnabledAppsearchFields();
+		// getYears(false);
+		}
+	});
+
+	const $v_year_select = $("#v_year_select");
+	$v_year_select.multipleSelect({
+		filter: true,
+		single: true,
+		placeholder : 'Year',
+		noMatchesFound:$('#chk_app_search_sg_only').is(':checked')?'No matches found<br>To show all years Turn <strong>OFF</strong> Common SG Veh':'No matches found',
+		onFilter: function(){
+			yearlist.update();
+		},
+		onOpen: function() {
+			yearlist.update();
+		},
+		onClick: function(view) {
+			const $el = document.querySelector('.vehicle-search .year'),
+				  $input =  document.querySelector('.vehicle-search input[name="year"]');
+			$el.classList.add('active');
+			$el.textContent = $v_year_select.multipleSelect('getSelects', 'text');
+			$input.value = $v_year_select.multipleSelect('getSelects');
+			// if(view.value!=AppSearchCurrentParams.years) {
+			// 	getBody(false);
+			// }
+		}
+	});
+
+
+	const $v_body_select = $("#v_body_select");
+	$v_body_select.multipleSelect({
+		filter: true,
+		single: true,
+		placeholder : 'Body',
+		noMatchesFound:$('#chk_app_search_sg_only').is(':checked')?'No matches found<br>To show all bodies Turn <strong>OFF</strong> Common SG Veh':'No matches found',
+		onFilter: function(){
+			bodylist.update();
+		},
+		onOpen: function() {
+			bodylist.update();
+		},
+		onClick: function(view) {
+			const $el = document.querySelector('.vehicle-search .body'),
+				  $input =  document.querySelector('.vehicle-search input[name="body"]');
+			$el.classList.add('active');
+			$el.textContent = $v_body_select.multipleSelect('getSelects', 'text');
+			$input.value = $v_body_select.multipleSelect('getSelects');
+			// if(view.value!=AppSearchCurrentParams.body) {
+				//  getEngine(false);
+			// }
+		}
+	});
+
+
+	const $v_engine_select = $("#v_engine_select");
+	$v_engine_select.multipleSelect({
+		filter: true,
+		single: true,
+		placeholder : 'Engine',
+		noMatchesFound:$('#chk_app_search_sg_only').is(':checked')?'No matches found<br>To show all engines Turn <strong>OFF</strong> Common SG Veh':'No matches found',
+		onFilter: function(){
+			enginelist.update();
+		},
+		onOpen: function() {
+			enginelist.update();
+		},
+		onClick: function(view) {
+			const $el = document.querySelector('.vehicle-search .engine'),
+				  $input =  document.querySelector('.vehicle-search input[name="engine"]');
+			$el.classList.add('active');
+			$el.textContent = $v_engine_select.multipleSelect('getSelects', 'text');
+			$input.value = $v_engine_select.multipleSelect('getSelects');
+		// 	if(view.value!=AppSearchCurrentParams.engine) {
+		// 	   getEngineNo(false);
+		// 	}
+		}
+	});
+
+	// //*Code for the onChange changes
+	const $v_engineno_select = $("#v_engineno_select");
+	$v_engineno_select.multipleSelect({
+		filter: true,
+		single: true,
+		placeholder : 'EngineNo',
+		noMatchesFound:$('#chk_app_search_sg_only').is(':checked')?'No matches found<br>To show all numbers Turn <strong>OFF</strong> Common SG Veh':'No matches found',
+		onFilter: function(){
+			enginenolist.update();
+		},
+		onOpen: function() {
+			enginenolist.update();
+		},
+		onClick: function(view) {
+			const $el = document.querySelector('.vehicle-search .engineno'),
+				  $input =  document.querySelector('.vehicle-search input[name="engineno"]');
+			$el.classList.add('active');
+			$el.textContent = $v_engineno_select.multipleSelect('getSelects', 'text');
+			$input.value = $v_engineno_select.multipleSelect('getSelects');
+			// if(view.value!=AppSearchCurrentParams.engineno) {
+			// }
+		}
+	});
+
+
+	function SwitchEnabledAppsearchFieldsVehicle(){
+		$("#model_select, #year_select, #body_select, #engine_select, #engineno_select").not(':focus').multipleSelect("disable");
+		if($('select#brand_select :selected').val()>0) {
+			$("#model_select").not(':focus').multipleSelect("enable");
+			$("#class_select").not(':focus').multipleSelect("enable");
+		}
+		if($('select#model_select :selected').val()>0) {
+			$("#year_select,#body_select, #engine_select, #engineno_select").not(':focus').multipleSelect("enable");
+		}
+	}
+
+
+	var vbrandlist = new PerfectScrollbar('.select_groups .v_brand .listwrapper', {
+		wheelPropagation: true,
+		minScrollbarLength: 100,
+		maxScrollbarLength: 100,
+	});
+
+	var vclasslist = new PerfectScrollbar('.select_groups .v_class .listwrapper', {
+		wheelPropagation: true,
+		minScrollbarLength: 100,
+		maxScrollbarLength: 100,
+	});
+	var vmodellist = new PerfectScrollbar('.select_groups .v_model .listwrapper', {
+		wheelPropagation: true,
+		minScrollbarLength: 100,
+		maxScrollbarLength: 100,
+	});
+
+	var vyearlist = new PerfectScrollbar('.select_groups .v_year .listwrapper', {
+		wheelPropagation: true,
+		minScrollbarLength: 100,
+		maxScrollbarLength: 100,
+	});
+
+	var bodylist_ = new PerfectScrollbar('.select_groups .v_body .listwrapper', {
+		wheelPropagation: true,
+		minScrollbarLength: 100,
+		maxScrollbarLength: 100,
+	});
+	var enginelist_ = new PerfectScrollbar('.select_groups .v_engine .listwrapper', {
+		wheelPropagation: true,
+		minScrollbarLength: 100,
+		maxScrollbarLength: 100,
+	});
+	var enginenolist_ = new PerfectScrollbar('.select_groups .v_engineno .listwrapper', {
+		wheelPropagation: true,
+		minScrollbarLength: 100,
+		maxScrollbarLength: 100,
+	});
+
+
+	$('.vehicle-search-str .maker').click(function () {
+		setTimeout(function () {
+			$v_brand_select.multipleSelect('open')
+		}, 100)
+	})
+
+	$('.vehicle-search-str .class').click(function () {
+		setTimeout(function () {
+			$v_class_select.multipleSelect('open')
+		}, 100)
+	})
+
+
+	$('.vehicle-search-str .model').click(function () {
+		setTimeout(function () {
+			$v_model_select.multipleSelect('open')
+		}, 100)
+	})
+
+	$('.vehicle-search-str .year').click(function () {
+		setTimeout(function () {
+			$v_year_select.multipleSelect('open')
+		}, 100)
+	});
+
+	$('.vehicle-search-str .body').click(function () {
+		setTimeout(function () {
+			$v_body_select.multipleSelect('open')
+		}, 100)
+	});
+
+	$('.vehicle-search-str .engine').click(function () {
+		setTimeout(function () {
+			$v_engine_select.multipleSelect('open')
+		}, 100)
+	});
+
+	$('.vehicle-search-str .engineno').click(function () {
+		setTimeout(function () {
+			$v_engineno_select.multipleSelect('open')
+		}, 100)
+	});
+})
