@@ -4544,6 +4544,18 @@ button {
     transition: filter .3s; }
     .search .submit:hover {
       filter: brightness(0.1) grayscale(1); }
+  .search select {
+    background-color: #778d9b;
+    border-radius: 4rem;
+    width: 168px;
+    height: 34px;
+    color: #fff;
+    overflow: hidden; }
+    .search select option {
+      background-color: #778d9b;
+      height: 4rem;
+      padding-top: 8px;
+      padding-left: 15px; }
   .search .dropdown {
     position: absolute;
     left: 9px;
