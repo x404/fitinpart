@@ -1,5 +1,5 @@
-
 $(document).ready(function(){
+
 	$("#typesearch_select").multipleSelect({
 		single: true,
 		filter: false

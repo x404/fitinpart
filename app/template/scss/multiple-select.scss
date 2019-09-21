@@ -253,6 +253,12 @@
 			&:after{
 				background-color: $color3;
 			}
+			label{
+				// transition: color .3s;
+				&:hover{
+					color: #fff;   		
+				}
+			}
 		}
 	}
 

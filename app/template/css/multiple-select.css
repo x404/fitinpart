@@ -214,6 +214,9 @@
 .ms-drop ul > li.hide-radio:hover:after {
   background-color: #0672ba; }
 
+.ms-drop ul > li.hide-radio:hover label:hover {
+  color: #fff; }
+
 .ms-drop ul > li.multiple {
   transition: .3s; }
   .ms-drop ul > li.multiple:before {

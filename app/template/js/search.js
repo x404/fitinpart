@@ -145,16 +145,20 @@ $(document).ready(function(){
 	});
 
 
-	function SwitchEnabledAppsearchFields(){
-		$("#model_select, #year_select, #body_select, #engine_select, #engineno_select").not(':focus').multipleSelect("disable");
-		if($('select#brand_select :selected').val()>0) {
-			$("#model_select").not(':focus').multipleSelect("enable");
-			$("#class_select").not(':focus').multipleSelect("enable");
+	$("#ss_type_id").multipleSelect({
+		single: true,
+		filter: true,
+		placeholder : 'Parts type',
+		onFilter: function(){
+			typelist.update();
+		},
+		onOpen: function() {
+			typelist.update();
+		},
+
+		onClick: function(view) {
 		}
-		if($('select#model_select :selected').val()>0) {
-			$("#year_select,#body_select, #engine_select, #engineno_select").not(':focus').multipleSelect("enable");
-		}
-	}
+	});
 
 
 	var brandlist = new PerfectScrollbar('#car .brand .listwrapper', {
@@ -192,4 +196,21 @@ $(document).ready(function(){
 		minScrollbarLength: 100,
 		maxScrollbarLength: 100,
 	});
+	var typelist = new PerfectScrollbar('#searchbysizeModal .listwrapper', {
+		wheelPropagation: true,
+		minScrollbarLength: 100,
+		maxScrollbarLength: 100,
+	});
 })
+
+
+function SwitchEnabledAppsearchFields(){
+	$("#model_select, #year_select, #body_select, #engine_select, #engineno_select").not(':focus').multipleSelect("disable");
+	if($('select#brand_select :selected').val()>0) {
+		$("#model_select").not(':focus').multipleSelect("enable");
+		$("#class_select").not(':focus').multipleSelect("enable");
+	}
+	if($('select#model_select :selected').val()>0) {
+		$("#year_select,#body_select, #engine_select, #engineno_select").not(':focus').multipleSelect("enable");
+	}
+}
