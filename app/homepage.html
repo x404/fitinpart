@@ -2199,28 +2199,28 @@
 									<input type="radio" id="profile_47" name="profile_id" value="47" checked="checked">
 									<label class="ss_profile" for="profile_47">
 										<img src="https://www.jikiu.com/images/069d3bb002acd8d7dd095917f9efe4cb/bush/add594452a4336fb0eb7e0565af02689.jpg" height="100">
-										<a href="https://www.jikiu.com/images/069d3bb002acd8d7dd095917f9efe4cb/bush/add594452a4336fb0eb7e0565af02689.jpg" class="thumbnail icon icon-zoom" target="_blank"></a>
+										<a data-fancybox="gallery" href="https://www.jikiu.com/images/069d3bb002acd8d7dd095917f9efe4cb/bush/add594452a4336fb0eb7e0565af02689.jpg" class="thumbnail icon icon-zoom"></a>
 									</label>
 								</div>
 								<div class="subtype-item">
 									<input type="radio" id="profile_48" name="profile_id" value="48">
 									<label class="ss_profile" for="profile_48">
 										<img src="https://www.jikiu.com/images/069d3bb002acd8d7dd095917f9efe4cb/bush/915b1cd8c7ab729450f18d3fc6ba2397.jpg" height="100">
-										<a href="https://www.jikiu.com/images/069d3bb002acd8d7dd095917f9efe4cb/bush/915b1cd8c7ab729450f18d3fc6ba2397.jpg" class="thumbnail icon icon-zoom" target="_blank"></a>
+										<a data-fancybox="gallery" href="https://www.jikiu.com/images/069d3bb002acd8d7dd095917f9efe4cb/bush/915b1cd8c7ab729450f18d3fc6ba2397.jpg" class="thumbnail icon icon-zoom"></a>
 									</label>
 								</div>
 								<div class="subtype-item">
 									<input type="radio" id="profile_55" name="profile_id" value="55">
 									<label class="ss_profile" for="profile_55">
 										<img src="https://www.jikiu.com/images/069d3bb002acd8d7dd095917f9efe4cb/bush/6d7c911acbfcc696f7536b6a2e81a610.jpg" height="100">
-										<a href="https://www.jikiu.com/images/069d3bb002acd8d7dd095917f9efe4cb/bush/6d7c911acbfcc696f7536b6a2e81a610.jpg" class="thumbnail icon icon-zoom" target="_blank"></a>
+										<a  data-fancybox="gallery" href="https://www.jikiu.com/images/069d3bb002acd8d7dd095917f9efe4cb/bush/6d7c911acbfcc696f7536b6a2e81a610.jpg" class="thumbnail icon icon-zoom"></a>
 									</label>
 								</div>
 								<div class="subtype-item">
 									<input type="radio" id="profile_72" name="profile_id" value="72">
 									<label class="ss_profile" for="profile_72">
 										<img src="https://www.jikiu.com/images/069d3bb002acd8d7dd095917f9efe4cb/bush/46ffada2c485ebbc9b2659d2187d0fd2.jpg" height="100">
-										<a href="https://www.jikiu.com/images/069d3bb002acd8d7dd095917f9efe4cb/bush/46ffada2c485ebbc9b2659d2187d0fd2.jpg" class="thumbnail icon icon-zoom" target="_blank"></a>
+										<a data-fancybox="gallery" href="https://www.jikiu.com/images/069d3bb002acd8d7dd095917f9efe4cb/bush/46ffada2c485ebbc9b2659d2187d0fd2.jpg" class="thumbnail icon icon-zoom"></a>
 									</label>
 								</div>
 							</div>
@@ -2290,7 +2290,20 @@
 
 <!-- =scrollbar-->
 <script src="/template/js/perfect-scrollbar.min.js"></script>
-<link rel="stylesheet" property="stylesheet" href="/template/css/perfect-scrollbar.css">
+<link rel="stylesheet" property="stylesheet" href="/template/css/perfect-scrollbar.css" />
+
+<!-- =fancybox -->
+<script src="/template/js/jquery.fancybox.min.js"></script>
+<link rel="stylesheet" href="/template/css/jquery.fancybox.min.css" />
+<script>
+	$('[data-fancybox]').fancybox({
+		buttons : [
+			'zoom',
+			'thumbs',
+			'close'
+		]
+	});
+</script>
 
 <script src="/template/js/engine.js"></script>
 <script src="/template/js/search.js"></script>

@@ -86,8 +86,8 @@ gulp.task('compress', function(){
 				config.templateDir + '/js/modal.js', 
 				// config.templateDir + '/js/collapse.js',
 				config.templateDir + '/js/popper.min.js',
-				config.templateDir + '/js/dropdown.js',
-				config.templateDir + '/js/jquery.fancybox.min.js'
+				config.templateDir + '/js/dropdown.js'
+				// config.templateDir + '/js/jquery.fancybox.min.js'
 			]),
 			concat('libs.min.js'), // Собираем их в кучу в новом файле libs.min.js
 			uglify(), // Сжимае JS файл
