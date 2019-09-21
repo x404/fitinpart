@@ -17,6 +17,7 @@ select.onchange = function() {
 		case '4': // Vehicle Search
 			// setPlaceholder('');
 			document.querySelector('#search').style.display = 'none';
+			document.querySelector('.vehicle-layout').style.display = 'block';
 			break;
 		case '5': // Search by size
 			break;
@@ -26,6 +27,8 @@ select.onchange = function() {
 }
 
 function setPlaceholder(text){
+	document.querySelector('#search').style.display = 'block';
+	document.querySelector('.vehicle-layout').style.display = 'none';
 	search.setAttribute('placeholder', text);
 }
 

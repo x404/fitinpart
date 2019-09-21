@@ -1024,6 +1024,10 @@ button{
 		}
 	}
 
+	.dropdown{
+		z-index: 2;
+	}
+
 	.form-control{
 		// background: none;
 		background-color: $color8;
@@ -1045,26 +1049,34 @@ button{
 		// background: url(../images/icons/search-icon2.png) no-repeat center;
 		border: none;
 		cursor: pointer;
+		filter: brightness(.1) grayscale(1);
 		height: 5rem;
 		padding: 0;
 		position: absolute;
 		right: 0;
 		top: 0;
-		width: 5rem;
 		transition: filter .3s;
+		width: 5rem;
 		&:hover{
-			filter: brightness(.1) grayscale(1);
+			filter: none;
 		}
 	}
 
 
 
 	// vehicle search
+	.vehicle{
+		&-layout{
+			display: none;
+		}
+	}
 	.vehicle-search{
-		position: absolute;
-		padding-left: 190px;
-		top: 55px;
+		font-style: normal;
 		left: 0;
+		padding-left: 190px;
+		position: absolute;
+		top: 17px;
+		z-index: 1;
 		.ms-choice,
 		select{
 			display: none;
@@ -1082,7 +1094,7 @@ button{
 					background-repeat: no-repeat;
 					height: 10px;
 					right: 0;
-					top: 6px;
+					top: 4px;
 					width: 7px;
 				}
 				&:last-child{
@@ -1113,7 +1125,6 @@ button{
 		.ms-drop{
 			width: 320px;
 		}
-
 
 		.ms-parent{
 			position: absolute;
