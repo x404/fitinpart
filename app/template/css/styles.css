@@ -3949,7 +3949,7 @@ strong,
       height: 18px; }
   .icon-littlecart:before {
     background-image: url(../images/sprite.png);
-    background-position: 0px -32px;
+    background-position: -27px -32px;
     width: 27px;
     height: 24px;
     left: 30px;
@@ -3958,7 +3958,7 @@ strong,
     transition: filter .3s; }
   .icon-cartblue {
     background-image: url(../images/sprite.png);
-    background-position: -27px -32px;
+    background-position: 0px -32px;
     width: 27px;
     height: 24px;
     margin-right: 9px;
@@ -3979,7 +3979,7 @@ strong,
     margin-right: 9px; }
   .icon-slider-arrow:before {
     background-image: url(../images/sprite.png);
-    background-position: -93px -21px;
+    background-position: -93px -38px;
     width: 12px;
     height: 21px;
     left: 50%;
@@ -3988,7 +3988,7 @@ strong,
     top: 50%; }
   .icon-slider-arrow-gray {
     background-image: url(../images/sprite.png);
-    background-position: -93px 0px;
+    background-position: -93px -17px;
     width: 12px;
     height: 21px;
     display: block; }
@@ -4018,6 +4018,18 @@ strong,
     display: block;
     margin-left: auto;
     margin-right: auto; }
+  .icon-search-middle {
+    background-image: url(../images/sprite.png);
+    background-position: -93px 0px;
+    width: 17px;
+    height: 17px;
+    display: block; }
+  .icon-zoom {
+    background-image: url(../images/sprite.png);
+    background-position: -93px -59px;
+    width: 13px;
+    height: 13px;
+    display: block; }
 
 .a-rotate90 svg, .littlecart .cart-body .cart-products .btn-del svg {
   transition: transform .3s; }
@@ -4075,7 +4087,7 @@ strong,
     position: relative; }
     .btn-view:before {
       background-image: url(../images/sprite.png);
-      background-position: -93px -42px;
+      background-position: -93px -72px;
       width: 11px;
       height: 12px;
       left: 10px;
@@ -4286,7 +4298,7 @@ button {
 
 .dropdown-toggle:after {
   background-image: url(../images/sprite.png);
-  background-position: -93px -54px;
+  background-position: -40px -56px;
   width: 10px;
   height: 7px;
   border: none;
@@ -5756,7 +5768,8 @@ button {
   line-height: 0.83; }
 
 .modal-content {
-  border-radius: 0; }
+  border-radius: 0;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5); }
 
 .modal-footer {
   display: block; }
@@ -5940,9 +5953,9 @@ button {
   transition: .3s; }
 
 #searchbysizeModal #spec_fields_id {
-  margin-top: 1.8rem; }
+  margin-top: 2.1rem; }
   #searchbysizeModal #spec_fields_id .subtype {
-    margin-bottom: 1.2rem; }
+    margin-bottom: 3.2rem; }
   #searchbysizeModal #spec_fields_id .row {
     margin-top: 2rem; }
   #searchbysizeModal #spec_fields_id label {
@@ -5951,8 +5964,49 @@ button {
   #searchbysizeModal #spec_fields_id .form-control {
     width: 18rem; }
 
+#searchbysizeModal .subtype-list {
+  margin-top: 1rem; }
+
+#searchbysizeModal .subtype-item {
+  margin-right: 1rem;
+  width: 13rem; }
+  #searchbysizeModal .subtype-item:last-child {
+    margin-right: 0; }
+  #searchbysizeModal .subtype-item img {
+    display: block;
+    height: 80px;
+    margin-left: auto;
+    margin-right: auto; }
+  #searchbysizeModal .subtype-item input {
+    opacity: 0;
+    position: absolute; }
+    #searchbysizeModal .subtype-item input:checked + label {
+      border: 4px solid #0672ba;
+      padding: 0; }
+      #searchbysizeModal .subtype-item input:checked + label .icon-zoom {
+        right: 2px;
+        top: 2px; }
+    #searchbysizeModal .subtype-item input:hover + label {
+      border-width: 4px;
+      padding: 0; }
+      #searchbysizeModal .subtype-item input:hover + label .icon-zoom {
+        right: 2px;
+        top: 2px; }
+  #searchbysizeModal .subtype-item label {
+    cursor: pointer;
+    border: 2px solid #ebedf1;
+    display: block;
+    margin-right: 0 !important;
+    padding: 2px;
+    position: relative; }
+  #searchbysizeModal .subtype-item .icon-zoom {
+    position: absolute;
+    right: 4px;
+    top: 4px;
+    transition: none; }
+
 #searchbysizeModal .approximation_block {
-  margin-top: 3rem; }
+  margin-top: 2.6rem; }
   #searchbysizeModal .approximation_block .btn-group {
     background-color: #bcc7ce;
     border-radius: 3rem;
@@ -5977,6 +6031,16 @@ button {
       #searchbysizeModal .approximation_block .btn-group .input_approximation:hover + label {
         background-color: #8d99a0;
         color: #fff; }
+
+#searchbysizeModal .btn-submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 5px 15px rgba(0, 153, 255, 0.5);
+  line-height: 1;
+  margin-top: 3rem; }
+  #searchbysizeModal .btn-submit .icon {
+    margin-right: 5px; }
 
 /* =mobile-menu
 ---------------------------*/

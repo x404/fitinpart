@@ -281,6 +281,16 @@ em strong
 		margin-left: auto;
 		margin-right: auto;
 	}
+
+	&-search-middle{
+		@include sprite($icon-search-middle);
+		display: block;
+	}
+
+	&-zoom{
+		@include sprite($icon-zoom);
+		display: block;
+	}
 }
 
 
