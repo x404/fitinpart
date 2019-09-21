@@ -49,10 +49,11 @@
 			width: 1px;
 			margin: 0 2.2rem;
 		}
-		&-item{
-		}
 		&-link{
 			color: $color32;
+			font-weight: 700;
+			transition: color .3s;
+			line-height: 1.1;
 			&.active{
 				color: $color1;
 			}
