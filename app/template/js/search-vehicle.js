@@ -30,6 +30,19 @@ function setPlaceholder(text){
 }
 
 const labels = ['Class', 'Model', 'Year', 'Body', 'Engine', 'EngineNO'];
+const 
+	  classEl = document.querySelector('button.class'),
+	  modelEl = document.querySelector('button.model'),
+	  yearEl = document.querySelector('button.year'),
+	  bodyEl = document.querySelector('button.body'),
+	  engineEl = document.querySelector('button.engine'),
+	  enginenoEl = document.querySelector('button.engineno'),
+	  classInput = document.querySelector('input[name="class"]'),
+	  modelInput = document.querySelector('input[name="model"]'),
+	  yearInput = document.querySelector('input[name="year"]'),
+	  bodyInput = document.querySelector('input[name="body"]'),
+	  engineInput = document.querySelector('input[name="engine"]'),
+	  enginenoInput = document.querySelector('input[name="engineno"]');
 
 $(document).ready(function(){
 	// https://www.fitinpart.sg/catalog/view/javascript/function.js
@@ -56,7 +69,16 @@ $(document).ready(function(){
 
 			//Unset the all selection values
 			$("#v_class_select, #v_model_select, #v_year_select,#v_body_select, #v_engine_select, #v_engineno_select").multipleSelect("uncheckAll");
-			
+
+			classEl.textContent = labels[0];
+			modelEl.textContent = labels[1];
+
+			classEl.classList.remove('active');
+			modelEl.classList.remove('active');
+
+			classInput.value = '';
+			modelInput.value = '';
+
 			SwitchEnabledAppsearchFieldsVehicle();
 
 			//Get class and model
@@ -85,8 +107,13 @@ $(document).ready(function(){
 			$el.textContent = $v_class_select.multipleSelect('getSelects', 'text');
 			$input.value = $v_class_select.multipleSelect('getSelects');
 
-			// $(" #model_select, #year_select, #body_select, #engine_select, #engineno_select").multipleSelect("uncheckAll");
-			// SwitchEnabledAppsearchFields();
+			$("#v_model_select, #v_year_select, #v_body_select, #v_engine_select, #v_engineno_select").multipleSelect("uncheckAll");
+
+			modelEl.textContent = labels[1];
+			modelEl.classList.remove('active');
+			modelInput.value = '';
+
+			SwitchEnabledAppsearchFieldsVehicle();
 			// getModel(0,0,0,0);
 		}
 	});
@@ -228,17 +255,6 @@ $(document).ready(function(){
 	function SwitchEnabledAppsearchFieldsVehicle(){
 		$("#v_model_select, #v_year_select, #v_body_select, #v_engine_select, #v_engineno_select").not(':focus').multipleSelect("disable");
 
-		// $('button.year, button.body, button.engine, button.engineno').attr('disabled', true);
-
-		const yearEl = document.querySelector('button.year'),
-			  bodyEl = document.querySelector('button.body'),
-			  engineEl = document.querySelector('button.engine'),
-			  enginenoEl = document.querySelector('button.engineno'),
-			  yearInput = document.querySelector('input[name="year"]'),
-			  bodyInput = document.querySelector('input[name="body"]'),
-			  engineInput = document.querySelector('input[name="engine"]'),
-			  enginenoInput = document.querySelector('input[name="engineno"]');
-
 		yearEl.setAttribute('disabled', true);
 		bodyEl.setAttribute('disabled', true);
 		engineEl.setAttribute('disabled', true);
@@ -267,6 +283,7 @@ $(document).ready(function(){
 		if($('select#v_model_select :selected').val()>0) {
 			$("#v_year_select,#v_body_select, #v_engine_select, #v_engineno_select").not(':focus').multipleSelect("enable");
 			$('button.year, button.body, button.engine, button.engineno').removeAttr('disabled');
+			console.log("!!")
 		}
 	}
 
