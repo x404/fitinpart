@@ -20,6 +20,7 @@ select.onchange = function() {
 			document.querySelector('.vehicle-layout').style.display = 'block';
 			break;
 		case '5': // Search by size
+			$('#searchbysizeModal').modal('show')
 			break;
 		default:
 			break;	
