@@ -499,10 +499,40 @@ button{
 
 	&__menu{
 		flex-grow: 1;
+		width: 400px;
+		ul{
+			display: block;
+
+		}
 		li{
+			display: inline-block;
 			margin-right: 3.1rem;
-			&:last-childe{
+			white-space: nowrap;
+			&:last-child{
 				margin-right: 0;
+			}
+			&.flexMenu-viewMore{
+				& > a{
+					position: relative;
+					padding-right: 17px;
+					&:after{
+						@extend .before;
+						@include sprite($icon-caret);
+						right: 0;
+						top: 6px;
+					}
+				}
+			}
+			.flexMenu-popup{
+				background-color: $color3;
+				margin-left: -10px;
+				padding: .7rem 1rem;
+				position: relative;
+				z-index: 200;
+				li{
+					display: block;
+					margin-top: .6rem;
+				}
 			}
 		}
 	}
@@ -533,7 +563,6 @@ button{
 					color: $color1;
 					margin: 0 0 0 0;
 					padding: .5rem 0 .5rem 2.4rem;
-					// width: calc(100% - 32px);
 					&.current{
 						font-weight: 700;
 					}

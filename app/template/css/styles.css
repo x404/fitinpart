@@ -3895,7 +3895,7 @@ strong,
   .tdu:hover {
     text-decoration: none; }
 
-.before, .icon:before, .btn-view:before, .btn-google:before, .btn-facebook:before, .top__left:before, .top .login:before, .top .login:after, .littlecart .cart-body .cart-products .count .minus:before, .littlecart .cart-body .cart-products .count .plus:before, .littlecart .cart-body .cart-products .count .plus:after, .search .vehicle-search-str .vehicle-search-item:after, .promo .wrapper:before, .visual__item:before, .modal-content-bg:before, .modal-content-bg:after {
+.before, .icon:before, .btn-view:before, .btn-google:before, .btn-facebook:before, .top__left:before, .top__menu li.flexMenu-viewMore > a:after, .top .login:before, .top .login:after, .littlecart .cart-body .cart-products .count .minus:before, .littlecart .cart-body .cart-products .count .plus:before, .littlecart .cart-body .cart-products .count .plus:after, .search .vehicle-search-str .vehicle-search-item:after, .promo .wrapper:before, .visual__item:before, .modal-content-bg:before, .modal-content-bg:after {
   content: "";
   display: block;
   position: absolute; }
@@ -4176,11 +4176,35 @@ button {
     .top__left > div {
       position: relative; }
   .top__menu {
-    flex-grow: 1; }
+    flex-grow: 1;
+    width: 400px; }
+    .top__menu ul {
+      display: block; }
     .top__menu li {
-      margin-right: 3.1rem; }
-      .top__menu li:last-childe {
+      display: inline-block;
+      margin-right: 3.1rem;
+      white-space: nowrap; }
+      .top__menu li:last-child {
         margin-right: 0; }
+      .top__menu li.flexMenu-viewMore > a {
+        position: relative;
+        padding-right: 17px; }
+        .top__menu li.flexMenu-viewMore > a:after {
+          background-image: url(../images/sprite.png);
+          background-position: -77px -47px;
+          width: 10px;
+          height: 7px;
+          right: 0;
+          top: 6px; }
+      .top__menu li .flexMenu-popup {
+        background-color: #0672ba;
+        margin-left: -10px;
+        padding: .7rem 1rem;
+        position: relative;
+        z-index: 200; }
+        .top__menu li .flexMenu-popup li {
+          display: block;
+          margin-top: .6rem; }
   .top .lang {
     margin-left: 3.4rem; }
     .top .lang .btn img {

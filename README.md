@@ -16,7 +16,7 @@ __Используемые в проекте js плагины__
 * Slick animation [https://github.com/marvinhuebner/slick-animation/issues](https://github.com/marvinhuebner/slick-animation/issues) for slider of mainpage
 * Stylezed scroll by perfect scrollbar [https://github.com/mdbootstrap/perfect-scrollbar](https://github.com/mdbootstrap/perfect-scrollbar)
 * Multiple select [http://multiple-select.wenzhixin.net.cn](http://multiple-select.wenzhixin.net.cn)
-
+* Flex menu - menu with caret [https://github.com/352Media/flexMenu](https://github.com/352Media/flexMenu)
 
 * Стилизация скролов nicescroll[https://github.com/inuyaksa/jquery.nicescroll/blob/master/README.md](https://github.com/inuyaksa/jquery.nicescroll/blob/master/README.md)
 

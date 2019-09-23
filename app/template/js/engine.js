@@ -1,4 +1,11 @@
 $(document).ready(function(){
+	$('.top_menu_flex').flexMenu({
+		linkText: 'More',
+		linkTitle : '',
+		linkTextAll : 'Menu',
+		cutoff : '1'
+	});
+
 
 	$("#typesearch_select").multipleSelect({
 		single: true,
