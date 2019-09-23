@@ -427,3 +427,58 @@
 		}
 	}
 }
+
+
+.modal{
+	&-info{
+		display: none;
+		box-shadow: 0 5px 20px rgba(0, 153, 255, 0.5);
+		font-size: 1.7rem;
+		left: 50%;
+		line-height: 1.47;
+		margin-left: -160px;
+		min-height: 182px;
+		padding: 3rem 4rem 4rem 3.2rem;
+		position: fixed;
+		top: 50%;
+		margin-top: -100px;
+		width: 321px;
+		z-index: 1060;
+		&:after{
+			@extend .before;
+			background: url(../images/bg/info-modal-bg.png) no-repeat;
+			height: 154px;
+			right: -67px;
+			top: 0;
+			width: 67px;
+		}
+		&.show{
+			display: block;
+		}
+		.title{
+			font-size: 2.5rem;
+			font-family: "Neo Sans Pro";
+			font-weight: 700;
+			margin-bottom: 2.2rem;
+		}
+		.close{
+			padding: 0;
+			position: absolute;
+			right: 20px;
+			stroke-width: 4px;
+			stroke:#fff;
+			top: 20px;
+		}
+	}
+	&-success{
+		color: #fff
+	}
+}
+
+label.error{
+	display: none !important;
+}
+
+input.form-control.error{
+	border: 1px solid $color10;
+}

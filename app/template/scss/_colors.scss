@@ -45,6 +45,10 @@ $color36: #e5e6e7;
 	background-color: $color9;
 } 
 
+.bg-blue{
+	background-color: $color3;	
+}
+
 .primary-color-hover{
 	transition: background-color .3s;
 	&:hover{

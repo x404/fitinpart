@@ -2064,7 +2064,7 @@
 						<div class="form-group">
 							<div class="d-flex justify-content-between">
 								<label for="loginPassword">Password <span class="asterisk">*</span></label>
-								<a href="#" title="" class="forgotten-link" data-toggle="modal" data-target="#ForgotPasswordModal">Forgotten Password</a>
+								<a href="#" title="" class="forgotten-link" data-toggle="modal" data-target="#forgotPasswordModal">Forgotten Password</a>
 							</div>
 							<input type="password" id="loginPassword" class="form-control" value="" />
 						</div>
@@ -2172,10 +2172,10 @@
 			<div class="modal-body">
 				<p>Enter the e-mail address associated with your account. Click submit to have the link for your password e-mailed to you.</p>
 
-				<form action="#" method="post">
+				<form action="#" method="post" class="forgotPasswordForm">
 					<fieldset>
 						<label for="passwordEmail">E-Mail Address <span class="asterisk">*</span></label>
-						<input type="email" id="passwordEmail" class="form-control" value="" />						
+						<input type="email" id="passwordEmail" class="form-control email required" value="" />						
 						<button type="submit" class="btn btn-submit btn-blue btn-blue-lighten-hover btn-large"><i class="icon icon-arrowright2"></i>Continue</button>
 					</fieldset>
 				</form>
@@ -2313,6 +2313,23 @@
 	</div>
 </div>
 <!-- =/Modal -->
+
+
+<!-- =success -->
+<div class="modal-info modal-success bg-blue">
+	<p class="title">Success</p>
+	<p>The link for password reset has been sent to your e-mail address (valid for 12 hours).</p>
+	<button type="button" class="close a-rotate90" data-dismiss="modal" aria-label="Close">
+		<svg width="22" height="22">
+			<line x1="0" y1="0" x2="22" y2="22"/>
+			<line x1="22" y1="0" x2="0" y2="22"/>
+		</svg>
+	</button>
+</div>
+<!-- =/success -->
+
+
+
 <div id="outdated"></div>
 <!-- multiple select -->
 <script src="/template/js/multiple-select.min.js"></script>

@@ -303,6 +303,9 @@ template {
 .primary-color {
   background-color: #0099ff; }
 
+.bg-blue {
+  background-color: #0672ba; }
+
 .primary-color-hover {
   transition: background-color .3s; }
   .primary-color-hover:hover {
@@ -3895,7 +3898,7 @@ strong,
   .tdu:hover {
     text-decoration: none; }
 
-.before, .icon:before, .btn-view:before, .btn-google:before, .btn-facebook:before, .top__left:before, .top__menu li.flexMenu-viewMore > a:after, .top .login:before, .top .login:after, .littlecart .cart-body .cart-products .count .minus:before, .littlecart .cart-body .cart-products .count .plus:before, .littlecart .cart-body .cart-products .count .plus:after, .search .vehicle-search-str .vehicle-search-item:after, .promo .wrapper:before, .visual__item:before, .modal-content-bg:before, .modal-content-bg:after {
+.before, .icon:before, .btn-view:before, .btn-google:before, .btn-facebook:before, .top__left:before, .top__menu li.flexMenu-viewMore > a:after, .top .login:before, .top .login:after, .littlecart .cart-body .cart-products .count .minus:before, .littlecart .cart-body .cart-products .count .plus:before, .littlecart .cart-body .cart-products .count .plus:after, .search .vehicle-search-str .vehicle-search-item:after, .promo .wrapper:before, .visual__item:before, .modal-content-bg:before, .modal-content-bg:after, .modal-info:after {
   content: "";
   display: block;
   position: absolute; }
@@ -6116,6 +6119,50 @@ button {
   margin-top: 3rem; }
   #searchbysizeModal .btn-submit .icon {
     margin-right: 5px; }
+
+.modal-info {
+  display: none;
+  box-shadow: 0 5px 20px rgba(0, 153, 255, 0.5);
+  font-size: 1.7rem;
+  left: 50%;
+  line-height: 1.47;
+  margin-left: -160px;
+  min-height: 182px;
+  padding: 3rem 4rem 4rem 3.2rem;
+  position: fixed;
+  top: 50%;
+  margin-top: -100px;
+  width: 321px;
+  z-index: 1060; }
+  .modal-info:after {
+    background: url(../images/bg/info-modal-bg.png) no-repeat;
+    height: 154px;
+    right: -67px;
+    top: 0;
+    width: 67px; }
+  .modal-info.show {
+    display: block; }
+  .modal-info .title {
+    font-size: 2.5rem;
+    font-family: "Neo Sans Pro";
+    font-weight: 700;
+    margin-bottom: 2.2rem; }
+  .modal-info .close {
+    padding: 0;
+    position: absolute;
+    right: 20px;
+    stroke-width: 4px;
+    stroke: #fff;
+    top: 20px; }
+
+.modal-success {
+  color: #fff; }
+
+label.error {
+  display: none !important; }
+
+input.form-control.error {
+  border: 1px solid #c91537; }
 
 /* =mobile-menu
 ---------------------------*/

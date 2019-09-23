@@ -4,6 +4,9 @@
 .primary-color {
   background-color: #0099ff; }
 
+.bg-blue {
+  background-color: #0672ba; }
+
 .primary-color-hover {
   transition: background-color .3s; }
   .primary-color-hover:hover {

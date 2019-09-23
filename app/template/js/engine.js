@@ -141,6 +141,13 @@ $(document).ready(function(){
 		$('#loginModal').modal('hide')
 	})
 
+	$('.forgotPasswordForm').validate({
+		submitHandler:function(form) {
+			$('#forgotPasswordModal').modal('hide');
+			modalinfo.open();
+		}
+	})
+
 	// mobile-menu
 	$('#navbar').each(function(){
 		var $this = $(this),
@@ -178,3 +185,39 @@ $(function(){
 		}
 	})
 });
+
+
+// popup on homepage
+class InfoPopup{
+	constructor(name){
+		this.name = name;
+	}
+	open(){
+		document.querySelector(this.name + ' .close').addEventListener('click', () =>
+			this.close()
+		);
+
+		// GENERAL EVENT - ONKEYDOWN
+		document.addEventListener('keydown', (evt) => {
+			evt = evt || window.event;
+			let isEscape = false;
+			if ("key" in evt) {
+				isEscape = (evt.key == "Escape" || evt.key == "Esc");
+			} else {
+				isEscape = (evt.keyCode == 27);
+			}
+			if (isEscape) {
+				this.close();
+			}
+		});
+
+		// show popup
+		document.querySelector(this.name).classList.add('show');
+	}
+	close(){
+		// hide popup
+		document.querySelector(this.name).classList.remove('show');
+	}
+}
+
+let modalinfo = new InfoPopup('.modal-success');

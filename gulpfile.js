@@ -81,6 +81,7 @@ gulp.task('compress', function(){
 				config.templateDir + '/js/modernizr-custom-webp.js',
 				config.templateDir + '/js/modernizr.js',
 				// config.libsDir + '/jquery/dist/jquery.js',
+				config.libsDir + '/jquery-validation/dist/jquery.validate.min.js',
 				config.templateDir + '/js/util.js',
 				config.templateDir + '/js/tab.js', 
 				config.templateDir + '/js/modal.js', 
