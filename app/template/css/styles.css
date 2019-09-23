@@ -4319,11 +4319,14 @@ button {
   position: relative; }
   .header .logo {
     margin-right: 3.4rem; }
-  .header .catalog__wrapper:hover .catalog-btn {
-    box-shadow: 0 5px 15px rgba(0, 153, 255, 0.5); }
-  .header .catalog__wrapper:hover .catalog__menu {
-    opacity: 1;
-    z-index: 101; }
+  .header .catalog__wrapper {
+    cursor: pointer; }
+    .header .catalog__wrapper:hover .catalog-btn {
+      background-color: #0099ff;
+      box-shadow: 0 5px 15px rgba(0, 153, 255, 0.5); }
+    .header .catalog__wrapper:hover .catalog__menu {
+      opacity: 1;
+      z-index: 101; }
   .header .catalog-btn {
     font-family: 'Neo Sans Pro', Verdana, sans-serif;
     align-items: center;
@@ -4331,6 +4334,7 @@ button {
     color: #ffffff;
     display: flex;
     font-size: 1.8rem;
+    cursor: pointer;
     height: 5rem;
     position: relative;
     text-transform: uppercase;
@@ -4350,13 +4354,13 @@ button {
     font-size: 1.8rem;
     left: 0;
     min-height: 197px;
+    opacity: 0;
+    padding-top: 94px;
     position: absolute;
     right: 0;
     top: 0;
-    padding-top: 94px;
-    opacity: 0;
-    z-index: -1;
-    transition: opacity .3s; }
+    transition: .3s;
+    z-index: -1; }
     .header .catalog__menu a {
       color: #ffffff;
       display: block;
@@ -4377,11 +4381,11 @@ button {
       color: #ffffff;
       font-size: 1.1rem;
       font-style: normal;
-      line-height: 1;
-      padding-top: 1px;
       height: 2rem;
-      width: 2rem;
-      margin-left: 6rem; }
+      line-height: 1;
+      margin-left: 6.4rem;
+      padding-top: 1px;
+      width: 2rem; }
     .header .shop-cart:hover:before {
       filter: invert(1); }
 
@@ -5009,7 +5013,7 @@ button {
     height: 0;
     border-top: 160px solid #fff;
     border-right: 150px solid transparent;
-    z-index: 100; }
+    z-index: 50; }
 
 /* =/promo
 ---------------------------*/
@@ -5037,6 +5041,7 @@ button {
 
 #homeslider .right {
   flex-grow: 1;
+  padding-left: 130px;
   text-align: center; }
 
 #homeslider .title {
@@ -5259,9 +5264,11 @@ button {
   font-weight: 700;
   transition: color .3s; }
 
-.item-news__pic img {
-  transition: transform .3s;
-  width: 100%; }
+.item-news__pic {
+  overflow: hidden; }
+  .item-news__pic img {
+    transition: transform .3s;
+    width: 100%; }
 
 .item-news__text {
   color: #4b4b4b;

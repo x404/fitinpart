@@ -706,8 +706,10 @@ button{
 	}
 
 	.catalog__wrapper{
+		cursor: pointer;
 		&:hover{
 			.catalog-btn{
+				background-color: $color9;
 				box-shadow: 0 5px 15px rgba(0, 153, 255, 0.5);
 			}
 			.catalog{
@@ -727,6 +729,7 @@ button{
 		color: $color2;
 		display: flex;
 		font-size: 1.8rem;
+		cursor: pointer;
 		height: $h;
 		position: relative;
 		text-transform: uppercase;
@@ -754,14 +757,13 @@ button{
 			font-size: 1.8rem;
 			left: 0;
 			min-height: 197px;
+			opacity: 0;
+			padding-top: 94px;
 			position: absolute;
 			right: 0;
 			top: 0;
-			padding-top: 94px;
-			// z-index: 101;
-			opacity: 0;
+			transition: .3s;
 			z-index: -1;
-			transition: opacity .3s;
 			a{
 				color: $color2;
 				display: block;
@@ -789,11 +791,11 @@ button{
 			color: $color2;
 			font-size: 1.1rem;
 			font-style: normal;
-			line-height: 1;
-			padding-top: 1px;
 			height: 2rem;
+			line-height: 1;
+			margin-left: 6.4rem;
+			padding-top: 1px;
 			width: 2rem;
-			margin-left: 6rem;
 		}
 
 		&:hover{
