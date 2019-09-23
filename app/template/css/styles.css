@@ -3906,7 +3906,7 @@ strong,
 .submit {
   cursor: pointer; }
 
-.flex-center, .btn-google, .btn-facebook, .header .shop-cart .count, .littlecart .cart-body .btn-checkout, .littlecart .cart-body .btn-check, .searchbox__panel .checkbox__text:after, .searchbox__panel-vehicle .nav-link, .catalog a,
+.flex-center, .btn-google, .btn-facebook, .header .shop-cart__count, .header .compare__count, .littlecart .cart-body .btn-checkout, .littlecart .cart-body .btn-check, .searchbox__panel .checkbox__text:after, .searchbox__panel-vehicle .nav-link, .catalog a,
 .header .catalog__menu a, .reviews .btn-show {
   display: flex;
   align-items: center;
@@ -3923,7 +3923,7 @@ strong,
     padding-left: 27px; }
     .icon-tel:before {
       background-image: url(../images/sprite.png);
-      background-position: -77px 0px;
+      background-position: 0px -56px;
       width: 16px;
       height: 25px;
       top: -3px; }
@@ -3944,17 +3944,14 @@ strong,
     padding-left: 64px; }
     .icon-9dotted:before {
       background-image: url(../images/sprite.png);
-      background-position: 0px -71px;
+      background-position: -16px -56px;
       width: 18px;
       height: 18px; }
-  .icon-littlecart:before {
+  .icon-littlecart {
     background-image: url(../images/sprite.png);
     background-position: -27px -32px;
     width: 27px;
     height: 24px;
-    left: 30px;
-    margin-top: -12px;
-    top: 50%;
     transition: filter .3s; }
   .icon-cartblue {
     background-image: url(../images/sprite.png);
@@ -3965,7 +3962,7 @@ strong,
     transition: filter .3s; }
   .icon-arrowright:before {
     background-image: url(../images/sprite.png);
-    background-position: -22px -56px;
+    background-position: -54px -56px;
     width: 18px;
     height: 13px;
     left: 20px;
@@ -3973,13 +3970,13 @@ strong,
     top: 50%; }
   .icon-arrowright2 {
     background-image: url(../images/sprite.png);
-    background-position: 0px -56px;
+    background-position: -54px -32px;
     width: 22px;
     height: 15px;
     margin-right: 9px; }
   .icon-slider-arrow:before {
     background-image: url(../images/sprite.png);
-    background-position: -93px -38px;
+    background-position: -99px -47px;
     width: 12px;
     height: 21px;
     left: 50%;
@@ -3988,13 +3985,13 @@ strong,
     top: 50%; }
   .icon-slider-arrow-gray {
     background-image: url(../images/sprite.png);
-    background-position: -93px -17px;
+    background-position: -99px -26px;
     width: 12px;
     height: 21px;
     display: block; }
   .icon-camera {
     background-image: url(../images/sprite.png);
-    background-position: -18px -71px;
+    background-position: -34px -56px;
     width: 20px;
     height: 16px;
     display: block;
@@ -4020,15 +4017,21 @@ strong,
     margin-right: auto; }
   .icon-search-middle {
     background-image: url(../images/sprite.png);
-    background-position: -93px 0px;
+    background-position: 0px -81px;
     width: 17px;
     height: 17px;
     display: block; }
   .icon-zoom {
     background-image: url(../images/sprite.png);
-    background-position: -93px -59px;
+    background-position: -99px -68px;
     width: 13px;
     height: 13px;
+    display: block; }
+  .icon-compare {
+    background-image: url(../images/sprite.png);
+    background-position: -77px 0px;
+    width: 22px;
+    height: 25px;
     display: block; }
 
 .a-rotate90 svg, .littlecart .cart-body .cart-products .btn-del svg {
@@ -4087,7 +4090,7 @@ strong,
     position: relative; }
     .btn-view:before {
       background-image: url(../images/sprite.png);
-      background-position: -93px -72px;
+      background-position: -72px -56px;
       width: 11px;
       height: 12px;
       left: 10px;
@@ -4108,7 +4111,7 @@ strong,
     width: 14.5rem; }
     .btn-google:before {
       background-image: url(../images/sprite.png);
-      background-position: -54px -32px;
+      background-position: -77px -25px;
       width: 21px;
       height: 22px;
       left: 13px;
@@ -4124,7 +4127,7 @@ strong,
     width: 14.5rem; }
     .btn-facebook:before {
       background-image: url(../images/sprite.png);
-      background-position: -77px -25px;
+      background-position: -99px 0px;
       width: 14px;
       height: 26px;
       left: 18px;
@@ -4298,7 +4301,7 @@ button {
 
 .dropdown-toggle:after {
   background-image: url(../images/sprite.png);
-  background-position: -40px -56px;
+  background-position: -77px -47px;
   width: 10px;
   height: 7px;
   border: none;
@@ -4370,12 +4373,15 @@ button {
   .header .shop-cart {
     border-radius: 5rem;
     box-shadow: 0 1px 5px rgba(24, 35, 60, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 5rem;
     margin-left: 2.1rem;
     position: relative;
     width: 11.5rem;
     z-index: 100; }
-    .header .shop-cart .count {
+    .header .shop-cart__count {
       background-color: #c91537;
       border-radius: 50%;
       color: #ffffff;
@@ -4383,31 +4389,49 @@ button {
       font-style: normal;
       height: 2rem;
       line-height: 1;
-      margin-left: 6.4rem;
+      margin-left: .8rem;
       padding-top: 1px;
       width: 2rem; }
-    .header .shop-cart:hover:before {
-      filter: invert(1); }
+  .header .compare {
+    margin-left: 20px;
+    position: relative;
+    z-index: 101; }
+    .header .compare__link {
+      display: flex;
+      align-items: center; }
+      .header .compare__link:hover {
+        text-decoration: none; }
+    .header .compare__count {
+      background-color: #c91537;
+      border-radius: 50%;
+      color: #ffffff;
+      font-size: 1.1rem;
+      font-style: normal;
+      height: 2rem;
+      line-height: 1;
+      margin-left: .6rem;
+      padding-top: 1px;
+      width: 2rem; }
 
 .littlecart {
   position: relative; }
   .littlecart:hover .shop-cart {
-    color: #ffffff;
-    background-color: #0099ff; }
-    .littlecart:hover .shop-cart:before {
+    background-color: #0099ff;
+    color: #ffffff; }
+    .littlecart:hover .shop-cart .icon {
       filter: invert(1); }
   .littlecart:hover .cart-layout {
     opacity: 1;
     z-index: 110; }
   .littlecart .cart-layout {
+    opacity: 0;
+    padding-top: 70px;
     position: absolute;
     right: 0;
     top: 0;
-    padding-top: 70px;
+    transition: .3s;
     width: 48rem;
-    z-index: -1;
-    opacity: 0;
-    transition: .3s; }
+    z-index: -1; }
   .littlecart .cart-body {
     background-color: #fff;
     box-shadow: 5px 0 15px rgba(0, 0, 0, 0.25);
@@ -6219,3 +6243,20 @@ button {
 
 ::-ms-clear {
   display: none; }
+
+@media (max-width: 1399px) {
+  .header .catalog__wrapper .catalog-btn {
+    padding-left: 0;
+    text-indent: -9999em;
+    width: 5rem; }
+    .header .catalog__wrapper .catalog-btn span {
+      clip: rect(0 0 0 0);
+      height: 1px;
+      overflow: hidden;
+      position: absolute;
+      width: 1px; }
+    .header .catalog__wrapper .catalog-btn:before {
+      left: 50%;
+      margin-left: -9px; }
+  .header .shop-cart {
+    width: 8.7rem; } }

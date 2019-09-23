@@ -1,3 +1,28 @@
+@media (max-width: 1399px){
+	.header{
+		.catalog__wrapper .catalog-btn{
+			padding-left: 0;
+			text-indent: -9999em;
+			width: 5rem;
+			span{
+				clip: rect(0 0 0 0);
+				height: 1px;
+				overflow: hidden;
+				position: absolute;
+				width: 1px;
+			}
+			&:before{
+				left: 50%;
+				margin-left: -9px;
+			}
+		}
+		.shop-cart{
+			width: 8.7rem;
+		}
+	}
+}
+
+
 @media (max-width: 1199px){
 }
 

@@ -210,13 +210,14 @@ em strong
 	}
 
 	&-littlecart{
-		&:before{
-			@include sprite($icon-littlecart);
-			left: 30px;
-			margin-top: -12px;
-			top: 50%;
-			transition: filter .3s;
-		}		
+		@include sprite($icon-littlecart);
+		transition: filter .3s;
+
+		// &:before{
+		// 	left: 30px;
+		// 	margin-top: -12px;
+		// 	top: 50%;
+		// }		
 	}
 
 	&-cartblue{
@@ -289,6 +290,11 @@ em strong
 
 	&-zoom{
 		@include sprite($icon-zoom);
+		display: block;
+	}
+
+	&-compare{
+		@include sprite($icon-compare);
 		display: block;
 	}
 }
@@ -779,12 +785,15 @@ button{
 		$h: 5rem;
 		border-radius: $h;
 		box-shadow: 0 1px 5px rgba(24, 35, 60, 0.2);
+		display: flex;
+		align-items: center;
+		justify-content: center;
 		height: $h;
 		margin-left: 2.1rem;
 		position: relative;
 		width: 11.5rem;
 		z-index: 100;
-		.count{
+		&__count{
 			@extend .flex-center;
 			background-color: $color10;
 			border-radius: 50%;
@@ -793,15 +802,41 @@ button{
 			font-style: normal;
 			height: 2rem;
 			line-height: 1;
-			margin-left: 6.4rem;
+			margin-left: .8rem;
 			padding-top: 1px;
 			width: 2rem;
 		}
 
 		&:hover{
-			&:before{
-				filter: invert(1);
+			&.icon{
+				// filter: invert(1);
 			}
+		}
+	}
+
+	.compare{
+		margin-left: 20px;
+		position: relative;
+		z-index: 101;
+		&__link{
+			display: flex;
+			align-items: center;
+			&:hover{
+				text-decoration: none;
+			}
+		}
+		&__count{
+			@extend .flex-center;
+			background-color: $color10;
+			border-radius: 50%;
+			color: $color2;
+			font-size: 1.1rem;
+			font-style: normal;
+			height: 2rem;
+			line-height: 1;
+			margin-left: .6rem;
+			padding-top: 1px;
+			width: 2rem;
 		}
 	}
 }
@@ -810,9 +845,10 @@ button{
 	position: relative;
 	&:hover{
 		.shop-cart{
-			color: $color2;
 			background-color: $color9;
-			&:before{
+			color: $color2;
+			// &:before{
+			.icon{
 				filter: invert(1);
 			}
 		}
@@ -823,14 +859,14 @@ button{
 	}
 	.cart{
 		&-layout{
+			opacity: 0;	
+			padding-top: 70px;
 			position: absolute;
 			right: 0;
 			top: 0;
-			padding-top: 70px;
+			transition: .3s;
 			width: 48rem;	
 			z-index: -1;	
-			opacity: 0;	
-			transition: .3s;
 		}
 		&-body{
 			background-color: #fff;
