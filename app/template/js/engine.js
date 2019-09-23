@@ -137,6 +137,10 @@ $(document).ready(function(){
 		$('#loginModal').modal('hide')
 	})
 
+	$('#forgotPasswordModal').on('show.bs.modal', function (e) {
+		$('#loginModal').modal('hide')
+	})
+
 	// mobile-menu
 	$('#navbar').each(function(){
 		var $this = $(this),

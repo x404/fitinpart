@@ -2064,7 +2064,7 @@
 						<div class="form-group">
 							<div class="d-flex justify-content-between">
 								<label for="loginPassword">Password <span class="asterisk">*</span></label>
-								<a href="#" title="" class="forgotten-link">Forgotten Password</a>
+								<a href="#" title="" class="forgotten-link" data-toggle="modal" data-target="#ForgotPasswordModal">Forgotten Password</a>
 							</div>
 							<input type="password" id="loginPassword" class="form-control" value="" />
 						</div>
@@ -2093,6 +2093,7 @@
 	</div>
 </div>
 
+<!-- register -->
 <div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="registerModalLabel" aria-hidden="true">
 	<div class="modal-dialog modal-dialog-centered" role="document">
 		<div class="modal-content modal-content-bg">
@@ -2150,6 +2151,34 @@
 						<a href="#" class="btn btn-facebook btn-blue-lighten-hover btn-large">Facebook</a>
 					</div>
 				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- forgot password -->
+<div class="modal fade" id="forgotPasswordModal" tabindex="-1" role="dialog" aria-labelledby="ForgotPasswordModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered" role="document">
+		<div class="modal-content modal-content-bg">
+			<div class="modal-header">
+				<h5 class="modal-title" id="ForgotPasswordModalLabel">Forgot Your Password?</h5>
+				<button type="button" class="close a-rotate90" data-dismiss="modal" aria-label="Close">
+					<svg width="22" height="22">
+						<line x1="0" y1="0" x2="22" y2="22"/>
+						<line x1="22" y1="0" x2="0" y2="22"/>
+					</svg>
+				</button>
+			</div>
+			<div class="modal-body">
+				<p>Enter the e-mail address associated with your account. Click submit to have the link for your password e-mailed to you.</p>
+
+				<form action="#" method="post">
+					<fieldset>
+						<label for="passwordEmail">E-Mail Address <span class="asterisk">*</span></label>
+						<input type="email" id="passwordEmail" class="form-control" value="" />						
+						<button type="submit" class="btn btn-submit btn-blue btn-blue-lighten-hover btn-large"><i class="icon icon-arrowright2"></i>Continue</button>
+					</fieldset>
+				</form>
 			</div>
 		</div>
 	</div>
