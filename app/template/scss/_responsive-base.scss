@@ -1,8 +1,3 @@
-@media (max-width: 1450px){
-
-}
-
-
 @media (max-width: 1399px){
 	.header{
 		.catalog__wrapper .catalog-btn{
@@ -72,9 +67,6 @@
 		.login{
 			margin-right: -3.7rem;
 		}
-		&__left{
-			// padding-right: 2.5rem;
-		}
 		&__menu{
 			width: 100%;
 			li{
@@ -127,6 +119,11 @@
 		}
 		.compare{
 			margin-left: 1.5rem;
+		}
+
+		.catalog__menu{
+			font-size: 1.6rem;
+			padding-top: 89px;
 		}
 	}
 }

@@ -537,9 +537,15 @@
 		}
 		&-1{
 			background-image: url(../images/bg/visual-1-bg.png);
+			@media (max-width: 1199px){
+				background-image: url(../images/bg/visual-1-bg-1000.png);
+			}
 		}
 		&-2{
 			background-image: url(../images/bg/visual-2-bg.png);
+			@media (max-width: 1199px){
+				background-image: url(../images/bg/visual-2-bg-1000.png);				
+			}
 		}
 	}
 
