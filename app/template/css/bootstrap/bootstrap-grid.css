@@ -31,9 +31,9 @@ html {
   @media (min-width: 992px) {
     .container {
       max-width: 960px; } }
-  @media (min-width: 1250px) {
+  @media (min-width: 1200px) {
     .container {
-      max-width: 1200px; } }
+      max-width: 1140px; } }
 
 .container-fluid {
   width: 100%;
@@ -442,7 +442,7 @@ html {
   .offset-lg-9 {
     margin-left: 90%; } }
 
-@media (min-width: 1250px) {
+@media (min-width: 1200px) {
   .col-xl {
     flex-basis: 0;
     flex-grow: 1;
@@ -615,7 +615,7 @@ html {
   .d-lg-inline-flex {
     display: inline-flex !important; } }
 
-@media (min-width: 1250px) {
+@media (min-width: 1200px) {
   .d-xl-none {
     display: none !important; }
   .d-xl-inline {
@@ -967,7 +967,7 @@ html {
   .align-self-lg-stretch {
     align-self: stretch !important; } }
 
-@media (min-width: 1250px) {
+@media (min-width: 1200px) {
   .flex-xl-row {
     flex-direction: row !important; }
   .flex-xl-column {

@@ -537,6 +537,10 @@ button{
 		}
 	}
 
+	&__right{
+		padding-right: 25px;
+	}
+
 
 	.lang{
 		margin-left: 3.4rem;
@@ -1406,6 +1410,10 @@ button{
 
 	.payments{
 		margin-top: 3.5rem;
+		img{
+			margin-bottom: .8rem;
+			vertical-align: top;
+		}
 	}
 
 }

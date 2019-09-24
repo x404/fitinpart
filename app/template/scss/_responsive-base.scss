@@ -1,3 +1,8 @@
+@media (max-width: 1450px){
+
+}
+
+
 @media (max-width: 1399px){
 	.header{
 		.catalog__wrapper .catalog-btn{
@@ -18,6 +23,28 @@
 		}
 		.shop-cart{
 			width: 8.7rem;
+		}
+	}
+
+	.footer{
+		&__menu{
+			justify-content: space-ar b ound;
+			// margin-right: 2.5rem;
+			.menu{
+				margin-left: 0 !important;			
+			}
+		}
+	}
+}
+
+
+@media (max-width: 1250px){
+	.top{
+		&__right{
+			padding-right: 0;
+		}
+		.login{
+			margin-left: 3rem;
 		}
 	}
 }
