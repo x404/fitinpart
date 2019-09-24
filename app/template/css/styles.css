@@ -4775,6 +4775,11 @@ button {
       margin-left: 90px; }
   .footer .address {
     margin: 1.2rem 0 2.5rem; }
+    .footer .address:first-child {
+      margin-top: .8rem; }
+    .footer .address.icon:before {
+      top: 50%;
+      margin-top: -15px; }
   .footer .tel {
     font-size: 1.7rem;
     margin-bottom: 2.5rem; }
@@ -4782,6 +4787,7 @@ button {
     margin-top: 3.5rem; }
     .footer .payments img {
       margin-bottom: .8rem;
+      max-width: 100%;
       vertical-align: top; }
 
 /* =/footer
@@ -5240,8 +5246,20 @@ button {
       z-index: 1; }
     .visual__item-1 {
       background-image: url(../images/bg/visual-1-bg.png); }
+      @media (max-width: 1399px) {
+        .visual__item-1 {
+          background-image: url(../images/bg/visual-1-bg-1200.png); } }
+      @media (max-width: 1199px) {
+        .visual__item-1 {
+          background-image: url(../images/bg/visual-1-bg-1000.png); } }
     .visual__item-2 {
       background-image: url(../images/bg/visual-2-bg.png); }
+      @media (max-width: 1399px) {
+        .visual__item-2 {
+          background-image: url(../images/bg/visual-2-bg-1200.png); } }
+      @media (max-width: 1199px) {
+        .visual__item-2 {
+          background-image: url(../images/bg/visual-2-bg-1000.png); } }
   .visual__link {
     align-items: center;
     display: flex;
@@ -5474,7 +5492,11 @@ button {
     margin-top: .6rem; }
   .about .text {
     line-height: 1.76;
-    margin-top: 1.5rem; }
+    margin-top: 1.5rem;
+    color: #464646; }
+  .about img {
+    max-width: 100%;
+    vertical-align: top; }
 
 /* =/about
 ---------------------------*/
@@ -6388,8 +6410,13 @@ input.form-control.error {
       display: none; } }
 
 @media (max-width: 1199px) {
+  .main-grid {
+    overflow: hidden; }
   .top .login {
-    margin-right: -3.7rem; }
+    margin-right: -2.5rem;
+    width: 155px; }
+    .top .login:before {
+      width: 155px; }
   .top__menu {
     width: 100%; }
     .top__menu li {
@@ -6408,6 +6435,10 @@ input.form-control.error {
       .search .vehicle-search-str .vehicle-search-item {
         margin-right: 4px;
         padding-right: 10px; }
+  .searchbox__panel-partnum {
+    background-position: right -60px bottom; }
+  .searchbox__panel-vin {
+    background-position: right -70px bottom; }
   .header .logo {
     margin-right: 1.2rem; }
   .header .shop-cart {
@@ -6421,7 +6452,10 @@ input.form-control.error {
       max-width: 100%;
       height: auto; }
   .header .compare {
-    margin-left: 1.5rem; } }
+    margin-left: 1.5rem; }
+  .header .catalog__menu {
+    font-size: 1.6rem;
+    padding-top: 89px; } }
 
 @media (max-width: 1650px) {
   #homeslider .slick-prev {
@@ -6503,7 +6537,9 @@ input.form-control.error {
 
 @media (max-width: 1250px) {
   .lastnews {
-    padding-bottom: 2rem; } }
+    padding-bottom: 2rem; }
+  .promo .wrapper:before {
+    display: none !important; } }
 
 @media (max-width: 1199px) {
   #homeslider .layout {
@@ -6565,74 +6601,21 @@ input.form-control.error {
       width: 321px; }
   #catalog-carousel {
     padding-left: 15px;
-    padding-right: 15px; } }
-
-@media (max-width: 1500px) {
-  #homeslider .slick-arrow {
-    margin-top: -30px; }
-  #homeslider .slick-prev {
-    margin-left: -705px; }
-  #homeslider .slick-next {
-    margin-left: 645px; }
-  .lastnews .news__item {
-    width: 275px; } }
-
-@media (max-width: 1450px) {
-  #homeslider .layout {
-    max-width: 1000px; }
-  #homeslider .title {
-    font-size: 4rem; }
-  #homeslider .slick-arrow {
-    margin-top: -40px; }
-  #homeslider .slick-prev {
-    margin-left: -680px; }
-  #homeslider .slick-next {
-    margin-left: 620px; }
-  .searchbox__title {
-    font-size: 2.6rem; }
-  .catalog {
-    font-size: 1.7rem; }
-  .visual__item {
-    height: 17rem;
-    font-size: 3rem; }
-  .visual img {
-    max-height: 208px; }
-  .advantages {
-    font-size: 1.7rem; }
+    padding-right: 15px; }
   .main .title,
   .main h1 {
-    font-size: 4rem; }
-  .reviews {
-    padding-bottom: 7rem; }
-  .about {
-    font-size: 1.6rem; }
-    .about .subtitle {
-      font-size: 2.6rem; } }
-
-@media (max-width: 1399px) {
-  #homeslider .slick-prev {
-    margin-left: -650px; }
-  #homeslider .slick-next {
-    margin-left: 590px; }
-  .searchbox .car-tab-layout,
-  .searchbox .moto-tab-layout,
-  .searchbox .hd-tab-layout {
-    width: 100%; }
-  .searchbox__panel-vehicle .nav-top {
-    width: 100%; }
-  .searchbox .form-control {
-    width: 100%; }
-  .catalog {
-    font-size: 1.6rem; } }
-
-@media (max-width: 1350px) {
-  #homeslider .slick-prev {
-    margin-left: -580px; }
-  #homeslider .slick-next {
-    margin-left: 520px; }
+    font-size: 3.4rem; }
+  .advantages {
+    font-size: 1.6rem;
+    margin-top: 4.2rem; }
   .advantage__item {
-    flex: 0 0 25%; } }
-
-@media (max-width: 1250px) {
-  .lastnews {
-    padding-bottom: 2rem; } }
+    padding-right: 1rem; }
+  .visual img {
+    max-height: 175px; }
+  .visual__item {
+    font-size: 2.6rem;
+    height: 14.5rem; }
+  .lastnews .news__item {
+    width: 23rem; }
+  .item-news__title {
+    font-size: 1.6rem; } }

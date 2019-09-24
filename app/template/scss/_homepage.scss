@@ -537,9 +537,21 @@
 		}
 		&-1{
 			background-image: url(../images/bg/visual-1-bg.png);
+			@media (max-width: 1399px){
+				background-image: url(../images/bg/visual-1-bg-1200.png);
+			}
+			@media (max-width: 1199px){
+				background-image: url(../images/bg/visual-1-bg-1000.png);
+			}
 		}
 		&-2{
 			background-image: url(../images/bg/visual-2-bg.png);
+			@media (max-width: 1399px){
+				background-image: url(../images/bg/visual-2-bg-1200.png);
+			}
+			@media (max-width: 1199px){
+				background-image: url(../images/bg/visual-2-bg-1000.png);
+			}
 		}
 	}
 
@@ -874,6 +886,12 @@
 	.text{
 		line-height: 1.76;
 		margin-top: 1.5rem;
+		color: $color38;
+	}
+
+	img{
+		max-width: 100%;
+		vertical-align: top;
 	}
 }
 /* =/about

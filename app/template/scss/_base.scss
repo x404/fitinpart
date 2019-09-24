@@ -1402,6 +1402,16 @@ button{
 
 	.address{
 		margin: 1.2rem 0 2.5rem;
+		&:first-child{
+			margin-top: .8rem;
+		}
+
+		&.icon{
+			&:before{
+				top: 50%;
+				margin-top: -15px;
+			}
+		}
 	}
 
 	.tel{
@@ -1413,6 +1423,7 @@ button{
 		margin-top: 3.5rem;
 		img{
 			margin-bottom: .8rem;
+			max-width: 100%;
 			vertical-align: top;
 		}
 	}

@@ -24,8 +24,6 @@
 	}
 }
 
-
-
 @media (max-width: 1500px){
 	#homeslider{
 		.slick{
@@ -108,8 +106,6 @@
 	}
 }
 
-
-
 @media (max-width: 1399px){
 	#homeslider{
 		.slick{
@@ -146,7 +142,6 @@
 	}
 }
 
-
 @media (max-width: 1350px){
 	#homeslider{
 		.slick{
@@ -170,9 +165,8 @@
 	.lastnews{
 		padding-bottom: 2rem;
 	}
-
-	.about{
-
+	.promo .wrapper:before{
+		display: none !important;
 	}
 }
 
@@ -279,156 +273,41 @@
 		padding-left: 15px;
 		padding-right: 15px;
 	}
-}
-
-
-
-@media (max-width: 1500px){
-	#homeslider{
-		.slick{
-			&-arrow{
-				margin-top: -30px;
-			}
-			&-prev{
-				margin-left: -705px;
-			}
-			&-next{
-				margin-left: 645px;
-			}
-		}
-	}
-
-	.lastnews{
-		.news__item{
-			width: 275px;
-		}
-	}
-}
-
-@media (max-width: 1450px){
-	#homeslider{
-		.layout{
-			max-width: 1000px;
-		}
-		.title{
-			font-size: 4rem;
-		}
-		.slick{
-			&-arrow{
-				margin-top: -40px;
-			}
-			&-prev{
-				margin-left: -680px;
-			}
-			&-next{
-				margin-left: 620px;
-			}
-		}
-	}
-
-	.searchbox__title{
-		font-size: 2.6rem;
-	}
-
-	.catalog{
-		font-size: 1.7rem;
-	}
-
-	.visual{
-		&__item{
-			height: 17rem;  
-			font-size: 3rem;
-		}
-		img{
-			max-height: 208px;
-		}
-	}
-
-	.advantages{
-		font-size: 1.7rem;
-	}
 
 	.main .title,
 	.main h1{
-		font-size: 4rem;
+		font-size: 3.4rem;
 	}
 
-	.reviews{
-		padding-bottom: 7rem;
-	}
-
-	.about{
+	.advantages{
 		font-size: 1.6rem;
-		.subtitle{
-			font-size: 2.6rem;
-		}
+		margin-top: 4.2rem;
 	}
-}
-
-
-
-@media (max-width: 1399px){
-	#homeslider{
-		.slick{
-			&-prev{
-				margin-left: -650px;
-			}
-			&-next{
-				margin-left: 590px;
-			}
-		}
+	.advantage__item{
+		padding-right: 1rem;
 	}
 
-	.searchbox{
-		.car-tab-layout,
-		.moto-tab-layout,
-		.hd-tab-layout{
-			width: 100%;
-		}	
 
-		&__panel{
-			&-vehicle{
-				.nav-top{
-					width: 100%;
-				}
-			}
+	.visual{
+		img{
+			max-height: 175px;
 		}
-		.form-control{
-			width: 100%;
-		}
-	}
-
-	.catalog{
-		font-size: 1.6rem;
-	}
-}
-
-
-@media (max-width: 1350px){
-	#homeslider{
-		.slick{
-			&-prev{
-				margin-left: -580px;
-			}
-			&-next{
-				margin-left: 520px;
-			}
-		}
-	}
-
-	.advantage{
 		&__item{
-			flex: 0 0 25%;
+			font-size: 2.6rem;
+			height: 14.5rem;
 		}
 	}
-}
 
-@media (max-width: 1250px){
+	// news
 	.lastnews{
-		padding-bottom: 2rem;
+		.news__item{
+			width: 23rem
+		}
 	}
+	.item-news{
+		&__title{
+			font-size: 1.6rem;
+		}
+	}	
 
-	.about{
-		
-	}
 }
