@@ -55,10 +55,80 @@
 	.search{
 		padding-left: 1.3rem;
 	}
+
+	.top__tel{
+		.icon{
+			padding-left: 0;
+			&:before{
+				display: none;
+			}
+		}
+	}
 }
 
 
 @media (max-width: 1199px){
+	.top{
+		.login{
+			margin-right: -3.7rem;
+		}
+		&__left{
+			// padding-right: 2.5rem;
+		}
+		&__menu{
+			width: 100%;
+			li{
+				margin-right: 2.5rem;
+			}
+		}
+	}
+
+	.search{
+		padding-left: .8rem;
+		.dropdown{
+			.ms-parent{
+				font-size: 1.3rem;
+				width: 147px !important;
+			}
+			.ms-choice{
+				width: 147px;
+			}
+		}
+		.form-control{
+			padding-left: 165px;
+		}
+		.vehicle-search{
+			padding-left: 165px;
+			&-str .vehicle-search-item{
+				margin-right: 4px;
+				padding-right: 10px;
+			}
+		}
+
+	}
+
+	.header{
+		.logo{
+			margin-right: 1.2rem;
+		}
+		.shop-cart{
+			margin-left: 1rem;
+			width: 7.6rem;
+			&__count{
+				margin-left: .4rem;
+			}
+		}
+		.logo{
+			width: 155px;
+			img{
+				max-width: 100%;
+				height: auto;
+			}
+		}
+		.compare{
+			margin-left: 1.5rem;
+		}
+	}
 }
 
 @media (max-width: 1024px){

@@ -199,8 +199,13 @@
 				}
 			}
 
-			.row{
+			.row,
+			.vehicle-control{
 				margin-bottom: 1.5rem;
+			}
+
+			.btn-search{
+				margin-top: -12px;
 			}
 		}
 		&-partnum,

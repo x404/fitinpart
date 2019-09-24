@@ -172,6 +172,111 @@
 	}
 
 	.about{
-		
+
+	}
+}
+
+
+@media (max-width: 1199px){
+	#homeslider{
+		.layout{
+			height: 375px;
+			max-width: 850px;
+		}
+		.left{
+			width: 45%;
+		}
+		.title{
+			font-size: 3.5rem;
+			margin-top: -5.5rem;
+		}
+		.text{
+			font-size: 1.6rem;
+		}
+		.slick{
+			&-arrow{
+				margin-top: -40px;
+				height: 40px;
+				width: 40px;
+				&:before{
+					transform: scale(0.6)
+				}
+			}
+			&-prev{
+				margin-left: -475px;
+			}
+			&-next{
+				margin-left: 435px;
+			}
+		}
+		.more{
+			margin-top: 2rem;
+		}
+	}
+
+	.searchbox{
+		margin-top: -5.3rem;
+		&__title{
+			font-size: 2.4rem;
+		}
+		.d-grid{
+			grid-template-rows: auto;
+		}
+		&__panel{
+			&-vehicle{
+				border-right: none;
+				grid-column-start: 1;
+				grid-column-end: 3;
+				grid-row-start: 1;
+				grid-row-end: 1;
+				min-height: 0;
+			}
+			&-partnum{
+				grid-column-start: 1;
+				grid-column-end: 2;
+				grid-row-start: 2;
+				grid-row-end: 2;			
+			}
+			&-vin{
+				grid-column-start: 2;
+				grid-column-end: 3;
+				grid-row-start: 2;
+				grid-row-end: 2;			
+			}
+
+			&-partnum,
+			&-vin{
+				border-top: 1px solid $color37;
+			}
+			&-partnum{
+				border-right: 1px solid $color37;				
+			}
+		}
+
+		.nav .separator{
+			margin: 0 1.4rem;
+		}
+
+		.vehicle{
+			&-maker,
+			&-class,
+			&-model,
+			&-body
+			{
+				width: 33.3%;
+			}
+			&-year
+			{
+				width: 162px;
+			}
+			&-engine{
+				width: 321px;
+			}
+		}
+	}
+
+	#catalog-carousel{
+		padding-left: 15px;
+		padding-right: 15px;
 	}
 }

@@ -4273,7 +4273,8 @@ button {
   .top__tel {
     font-size: 1.5rem;
     font-weight: 700;
-    font-family: 'Neo Sans Pro', Verdana, sans-serif; }
+    font-family: 'Neo Sans Pro', Verdana, sans-serif;
+    white-space: nowrap; }
     .top__tel .tel:hover {
       color: #ffffff;
       text-decoration: none; }
@@ -4422,7 +4423,7 @@ button {
       padding-top: 1px;
       width: 2rem; }
   .header .compare {
-    margin-left: 20px;
+    margin-left: 2rem;
     position: relative;
     z-index: 101; }
     .header .compare__link {
@@ -5000,8 +5001,11 @@ button {
           margin-left: 10px;
           position: relative;
           top: -10px; }
-      .searchbox__panel-vehicle .row {
+      .searchbox__panel-vehicle .row,
+      .searchbox__panel-vehicle .vehicle-control {
         margin-bottom: 1.5rem; }
+      .searchbox__panel-vehicle .btn-search {
+        margin-top: -12px; }
     .searchbox__panel-partnum .btn, .searchbox__panel-vin .btn {
       margin-left: 1.8rem; }
     .searchbox__panel-partnum {
@@ -6377,7 +6381,47 @@ input.form-control.error {
   .header .logo {
     margin-right: 2rem; }
   .search {
-    padding-left: 1.3rem; } }
+    padding-left: 1.3rem; }
+  .top__tel .icon {
+    padding-left: 0; }
+    .top__tel .icon:before {
+      display: none; } }
+
+@media (max-width: 1199px) {
+  .top .login {
+    margin-right: -3.7rem; }
+  .top__menu {
+    width: 100%; }
+    .top__menu li {
+      margin-right: 2.5rem; }
+  .search {
+    padding-left: .8rem; }
+    .search .dropdown .ms-parent {
+      font-size: 1.3rem;
+      width: 147px !important; }
+    .search .dropdown .ms-choice {
+      width: 147px; }
+    .search .form-control {
+      padding-left: 165px; }
+    .search .vehicle-search {
+      padding-left: 165px; }
+      .search .vehicle-search-str .vehicle-search-item {
+        margin-right: 4px;
+        padding-right: 10px; }
+  .header .logo {
+    margin-right: 1.2rem; }
+  .header .shop-cart {
+    margin-left: 1rem;
+    width: 7.6rem; }
+    .header .shop-cart__count {
+      margin-left: .4rem; }
+  .header .logo {
+    width: 155px; }
+    .header .logo img {
+      max-width: 100%;
+      height: auto; }
+  .header .compare {
+    margin-left: 1.5rem; } }
 
 @media (max-width: 1650px) {
   #homeslider .slick-prev {
@@ -6460,3 +6504,65 @@ input.form-control.error {
 @media (max-width: 1250px) {
   .lastnews {
     padding-bottom: 2rem; } }
+
+@media (max-width: 1199px) {
+  #homeslider .layout {
+    height: 375px;
+    max-width: 850px; }
+  #homeslider .left {
+    width: 45%; }
+  #homeslider .title {
+    font-size: 3.5rem;
+    margin-top: -5.5rem; }
+  #homeslider .text {
+    font-size: 1.6rem; }
+  #homeslider .slick-arrow {
+    margin-top: -40px;
+    height: 40px;
+    width: 40px; }
+    #homeslider .slick-arrow:before {
+      transform: scale(0.6); }
+  #homeslider .slick-prev {
+    margin-left: -475px; }
+  #homeslider .slick-next {
+    margin-left: 435px; }
+  #homeslider .more {
+    margin-top: 2rem; }
+  .searchbox {
+    margin-top: -5.3rem; }
+    .searchbox__title {
+      font-size: 2.4rem; }
+    .searchbox .d-grid {
+      grid-template-rows: auto; }
+    .searchbox__panel-vehicle {
+      border-right: none;
+      grid-column-start: 1;
+      grid-column-end: 3;
+      grid-row-start: 1;
+      grid-row-end: 1;
+      min-height: 0; }
+    .searchbox__panel-partnum {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 2;
+      grid-row-end: 2; }
+    .searchbox__panel-vin {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 2;
+      grid-row-end: 2; }
+    .searchbox__panel-partnum, .searchbox__panel-vin {
+      border-top: 1px solid #e8e8e8; }
+    .searchbox__panel-partnum {
+      border-right: 1px solid #e8e8e8; }
+    .searchbox .nav .separator {
+      margin: 0 1.4rem; }
+    .searchbox .vehicle-maker, .searchbox .vehicle-class, .searchbox .vehicle-model, .searchbox .vehicle-body {
+      width: 33.3%; }
+    .searchbox .vehicle-year {
+      width: 162px; }
+    .searchbox .vehicle-engine {
+      width: 321px; }
+  #catalog-carousel {
+    padding-left: 15px;
+    padding-right: 15px; } }

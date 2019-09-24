@@ -638,6 +638,7 @@ button{
 		font-size: 1.5rem;
 		font-weight: 700;
 		font-family: 'Neo Sans Pro', Verdana, sans-serif;
+		white-space: nowrap;
 		.tel{		
 			&:hover{
 				color: $color2;
@@ -848,7 +849,7 @@ button{
 	}
 
 	.compare{
-		margin-left: 20px;
+		margin-left: 2rem;
 		position: relative;
 		z-index: 101;
 		&__link{
