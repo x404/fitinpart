@@ -1,9 +1,14 @@
+@media (max-width: 1450px){
+
+}
+
+
 @media (max-width: 1399px){
 	.header{
 		.catalog__wrapper .catalog-btn{
 			padding-left: 0;
 			text-indent: -9999em;
-			width: 5rem;
+			width: 5rem; 
 			span{
 				clip: rect(0 0 0 0);
 				height: 1px;
@@ -19,6 +24,36 @@
 		.shop-cart{
 			width: 8.7rem;
 		}
+	}
+
+	.footer{
+		&__menu{
+			justify-content: space-around;
+			.menu{
+				margin-left: 0 !important;			
+			}
+		}
+	}
+}
+
+
+@media (max-width: 1250px){
+	.top{
+		&__right{
+			padding-right: 0;
+		}
+		.login{
+			margin-left: 3rem;
+		}
+	}
+
+	.header{
+		.logo{
+			margin-right: 2rem;
+		}
+	}
+	.search{
+		padding-left: 1.3rem;
 	}
 }
 

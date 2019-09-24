@@ -7,6 +7,9 @@
 	}
 	.about{
 		background-image: url(../images/bg/about-bg.webp);
+		@media(max-width: 1250px){
+			background-image: url(../images/bg/about-bg-1200.webp);
+		}
 	}
 
 	.searchbox__panel{
@@ -60,6 +63,9 @@
 
 .about{
 	background-image: url(../images/bg/about-bg.png);
+	@media(max-width: 1250px){
+		background-image: url(../images/bg/about-bg-1200.png);		
+	}
 }
 
 
