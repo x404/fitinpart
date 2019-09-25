@@ -64,7 +64,7 @@
 
 @media (max-width: 1199px){
 	.main-grid{
-		overflow: hidden;
+		// overflow: hidden;
 	}
 	.top{
 		.login{
@@ -181,6 +181,15 @@
 			margin: .5rem 0 1.5rem;
 		}
 	}
+
+	#registerModal{
+		.modal-dialog{
+			max-width: 95%;
+		}
+		.login-buttons{
+			margin-top: 1.5rem;
+		}
+	}
 }
 
 @media (max-width: 600px){
@@ -193,11 +202,73 @@
 	}
 }
 
+
+@media (max-width: 575px){
+	#registerModal{
+		.form-group{
+			margin-bottom: 0;
+			& > div{
+				margin-bottom: 1.2rem;
+			}
+		}
+	}
+}
+
+
+@media (max-width: 550px){
+	#registerModal{
+
+	}
+}
+
+
 @media (max-width: 450px){
 	.footer{
 		.copyright{
 			display: block;
 			text-align: center;
 		}
+	}
+
+	#loginModal,
+	#forgotPasswordModal{
+		.modal-dialog{
+			max-width: 95%;
+		}
+	}
+	#loginModal{
+		.subtitle{
+			font-size: 1.6rem;
+		}
+	}
+
+	.modal{
+		.close{
+			right: 20px;
+			top: 20px;
+		}
+		&-header,
+		&-body,
+		&-footer
+		{
+			padding-left: 2rem;
+			padding-right: 2rem;
+		}
+		&-footer{
+			font-size: 1.5rem;
+		}
+	}
+}
+
+
+@media (max-width: 350px){
+	.btn-google{
+		padding-left: 1.6rem;		
+	}
+
+	.btn-google,
+	.btn-facebook
+	{
+		font-size: 1.6rem;
 	}
 }

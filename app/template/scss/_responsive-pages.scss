@@ -94,6 +94,10 @@
 		font-size: 4rem;
 	}
 
+	.modal-title{
+		font-size: 2.8rem;
+	}
+
 	.reviews{
 		padding-bottom: 7rem;
 	}
@@ -322,6 +326,10 @@
 		font-size: 3.4rem;
 	}
 
+	.modal-title{
+		font-size: 3.2rem;
+	}
+
 	.advantages{
 		font-size: 1.6rem;
 		margin-top: 4.2rem;
@@ -547,7 +555,7 @@
 @media (max-width: 720px){
 	.header,
 	.top{
-		// display: none;
+		display: none;
 	}
 	#homeslider{
 		.layout{
@@ -630,6 +638,10 @@
 
 	.main .title, .main h1{
 		font-size: 2.8rem;
+	}
+
+	.modal-title{
+		font-size: 2.6rem;
 	}
 
 	.reviews{
@@ -734,6 +746,19 @@
 	.searchbox .nav .separator{
 		margin: 0 .6rem;
 	}
+
+	.modal-dialog{
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.modal-content-bg{
+		&:before,
+		&:after
+		{
+			display: none;
+		}
+	}
 }
 
 
@@ -794,6 +819,10 @@
 	.main .title, 
 	.main h1{
 		font-size: 2.6rem;
+	}
+
+	.modal-title{
+		font-size: 2.4rem;
 	}
 	
 	.lastnews{
