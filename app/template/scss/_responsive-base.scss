@@ -165,6 +165,9 @@
 }
 
 @media (max-width: 767px){
+	.main-grid{
+		display: block !important;
+	}
 	.footer{
 		padding: 2.7rem 0 1.5rem;
 		.copyright{
@@ -186,6 +189,15 @@
 			p{
 				display: inline;
 			}
+		}
+	}
+}
+
+@media (max-width: 450px){
+	.footer{
+		.copyright{
+			display: block;
+			text-align: center;
 		}
 	}
 }

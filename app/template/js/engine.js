@@ -178,10 +178,10 @@ $(document).ready(function(){
 			{
 				breakpoint: 450,
 				settings: {
-					slidesToShow: 2,
+					slidesToShow: 1,
 					slidesToScroll: 1,
 					centerMode: true,
-					centerPadding: '15px'
+					centerPadding: '80px'
 				}
 			},
 			{
@@ -190,7 +190,16 @@ $(document).ready(function(){
 					slidesToShow: 1,
 					slidesToScroll: 1,
 					centerMode: true,
-					centerPadding: '70px'
+					centerPadding: '50px'
+				}
+			},
+			{
+				breakpoint: 350,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					centerMode: true,
+					centerPadding: '35px'
 				}
 			}
 		]

@@ -289,6 +289,10 @@ em strong
 		display: block;
 	}
 
+	&-search-big{
+		@include sprite($icon-search-big);
+	}
+
 	&-zoom{
 		@include sprite($icon-zoom);
 		display: block;

@@ -283,23 +283,6 @@
 		.nav .separator{
 			margin: 0 1.4rem;
 		}
-
-		// .vehicle{
-		// 	&-maker,
-		// 	&-class,
-		// 	&-model,
-		// 	&-body
-		// 	{
-		// 		width: 33.3%;
-		// 	}
-		// 	&-year
-		// 	{
-		// 		width: 162px;
-		// 	}
-		// 	&-engine{
-		// 		width: 321px;
-		// 	}
-		// }
 	}
 
 	.searchbox{
@@ -321,6 +304,7 @@
 		}
 	}
 
+	.ms-parent.year,
 	.ms-parent.engine,
 	.ms-parent.engineno
 	{
@@ -417,25 +401,13 @@
 		}
 	}
 
-	#catalog-carousel{
+
+	#catalog-carousel:not(.slick-initialized){
 		display: flex;
 		flex-wrap: wrap;
-		// .slick-track{
-		// 	display: flex;
-		// 	flex-wrap: wrap;
-		// 	width: 100% !important;
-		// 	transform: none !important;
-		// }
-		// .slick-slide{
-		// 	float: none !important;
-		// 	width: auto !important;
-		// }
 		& > div{
 			flex-basis: 25%;
 		}
-	}
-
-	.catalog{
 		a{
 			display: flex;
 			flex-direction: row;
@@ -519,7 +491,7 @@
 	}
 
 	.about{
-		background-position: 170% bottom;
+		background-image: url(../images/bg/about-bg-768.png) !important;
 		.subtitle{
 			font-size: 2.2rem;
 		}
@@ -553,6 +525,20 @@
 			{
 				width: 22.23%;
 			}
+		}
+	}
+
+	.about{
+		.title,
+		.subtitle,
+		.text{
+			text-align: center;
+		}
+		.btn{
+			margin-left: auto;
+			margin-right: auto;
+			display: flex;
+			width: 170px;
 		}
 	}
 }
@@ -611,7 +597,7 @@
 	}
 
 
-	#catalog-carousel{
+	#catalog-carousel:not(.slick-initialized){
 		> div{
 			flex-basis: 33.3%;
 			flex-shrink: 0;
@@ -637,7 +623,9 @@
 		padding: 3.6rem 0;
 	}
 	.advantage__item{
-		flex-basis: 50%;
+		flex-basis: 49%;
+		padding-right: 0;
+		margin-bottom: .8rem;
 	}
 
 	.main .title, .main h1{
@@ -659,25 +647,16 @@
 				}
 			}
 			.rated{
-			font-size: 1.4rem;				
+				font-size: 1.4rem;
+			}
+			h1{
+				flex-wrap: wrap;
+				text-align: center;
 			}
 		}
 	}
 
 	.about{
-		background-position: right -300% bottom;
-		.title,
-		.subtitle,
-		.text{
-			text-align: center;
-		}
-		.btn{
-			margin-left: auto;
-			margin-right: auto;
-			display: flex;
-			width: 170px;
-		}
-
 		.subtitle{
 			font-size: 2rem;
 		}
@@ -751,6 +730,10 @@
 	.reviews .btn-show{
 		margin-top: 2rem;
 	}
+
+	.searchbox .nav .separator{
+		margin: 0 .6rem;
+	}
 }
 
 
@@ -781,8 +764,8 @@
 
 
 @media (max-width: 500px){
-	#catalog-carousel{
-		> div{
+	#catalog-carousel:not(.slick-initialized){
+		& > div{
 			flex-basis: 50%;
 		}
 	}
@@ -794,10 +777,167 @@
 
 
 
+@media (max-width: 480px){
+	.searchbox__panel-vehicle{
+		.nav-top{
+			display: block !important;
+		}
+		.veh-only{
+			margin-top: 1rem;
+		}
+	}
+
+	.searchbox__title{
+		font-size: 2rem;
+	}
+
+	.main .title, 
+	.main h1{
+		font-size: 2.6rem;
+	}
+	
+	.lastnews{
+		padding-bottom: 2.7rem;
+	}
+}
+
+
 @media (max-width: 420px){
 	#homeslider{
-		.layout	{
-
+		.layout{
+			display: block !important;
+			height: auto;
+			padding-top: 30px;
+			padding-bottom: 65px;
 		}
+		.left{
+			width: 100%;
+		}
+		text-align: center;
+	}
+
+	.review-card__title{
+		font-size: 1.5rem;
+	}
+
+	.reviews__body{
+		margin-top: 2rem;
+	}
+
+
+	.searchbox{
+		&__panel{
+			padding-left: 1.5rem;
+			padding-right: 1.2rem;
+		}
+		.vehicle{
+			&-maker,
+			&-class,
+			&-model,
+			&-body
+			{
+				width: 100%;
+			}
+
+			&-year,
+			&-engine,
+			&-engineno
+			{
+				width: 50%;
+			}
+		}
+
+
+		.searchbox__panel-partnum,
+		.searchbox__panel-vin
+		{
+			.btn-search{
+				flex-shrink: 0;
+				margin-left: 1.2rem;
+				padding: 0;
+				width: 4rem;
+				.icon{
+					margin: auto;
+				}
+				span{
+					display: none !important;
+				}
+			}
+		}
+	}
+
+
+	.ms-parent.year{
+		width: 100% !important;
+	}
+
+	.catalog{
+		padding-bottom: 2rem;
+	}
+
+	#catalog-carousel:not(.slick-initialized) a{
+		// font-size: 1.5rem;
+		.pic{
+			margin-right: .7rem;
+		}
+	}
+
+	#catalog-carousel{
+		padding-left: 0;
+		padding-right: 0;
+	}	
+
+	.visual{
+		&__item{
+			height: 90px;
+			padding-left: 1.8rem;
+			&:before{
+				border-right-width: 60px;
+				border-top-width: 60px;
+			}
+
+			&-1{
+				margin-bottom: 3.5rem;
+			}
+		}
+		img{
+			max-height: 107px;
+		}
+	}
+
+	.reviews{
+		header{
+			.title{
+				.stars{
+					margin-left: .5rem;
+					margin-top: .5rem;
+				}
+			}
+		}
+		.container{
+			padding-left: 1.5rem;
+			padding-right: 1.5rem;
+		}
+	}
+
+	.about{
+		padding-top: 2.2rem;
+		.title{
+			margin-top: 2.8rem;
+		}
+	}
+
+	.brands{
+		margin-left: 2rem;
+		margin-right: 2rem;
+		padding: 3rem 0;
+		#brands-carousel{
+			padding-left: 20px;
+			padding-right: 20px;
+		}
+	}
+
+	#lastnews-carousel{
+		max-height: 320px;
 	}
 }

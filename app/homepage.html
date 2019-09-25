@@ -877,13 +877,13 @@
 					<div>
 						<div style="background-image: url(/images/homeslider-bg-1.jpg)" class="item">
 							<div class="layout text-color-white d-flex align-items-center">
+								<div class="right" data-animation-in="fadeInRight" data-delay-in="1.5" data-duration-in="2">
+									<img src="/images/jikiu.png" alt="" />
+								</div>
 								<div class="left" data-animation-in="fadeInLeft" data-delay-in="1" data-duration-in="2">
 									<div class="title">All your car needs</div>
 									<div class="text">Brakes, Lubricants, Filters, Engine Compartment, Steering System, Suspension & Frame, Transmission & Wheel, Wiper Blades by JIKIU is available now</div>
 									<a href="#" class="more btn btn-large btn-blue btn-blue-lighten-hover icon icon-arrowright">Show more</a>
-								</div>
-								<div class="right" data-animation-in="fadeInRight" data-delay-in="1.5" data-duration-in="2">
-									<img src="/images/jikiu.png" alt="" />
 								</div>
 							</div>
 						</div>
@@ -891,13 +891,13 @@
 					<div>
 						<div style="background-image: url(/images/homeslider-bg-2.jpg)" class="item">
 							<div class="layout d-flex align-items-center">
+								<div class="right" data-animation-in="fadeInRight" data-delay-in="1.5" data-duration-in="2">
+									<img src="/images/jikiu-inv.png" alt="" />
+								</div>
 								<div class="left" data-animation-in="fadeInLeft" data-delay-in="1" data-duration-in="2">
 									<div class="title">All your car needs</div>
 									<div class="text">Brakes, Lubricants, Filters, Engine Compartment, Steering System, Suspension & Frame, Transmission & Wheel, Wiper Blades by JIKIU is available now</div>
 									<a href="#" class="more btn btn-large btn-blue btn-blue-lighten-hover icon icon-arrowright">Show more</a>
-								</div>
-								<div class="right" data-animation-in="fadeInRight" data-delay-in="1.5" data-duration-in="2">
-									<img src="/images/jikiu-inv.png" alt="" />
 								</div>
 							</div>						
 						</div>
@@ -916,7 +916,7 @@
 					<div class="searchbox__panel searchbox__panel-vehicle" id="number_search_sg">
 						<div class="searchbox__title">Search by Vehicle</div>
 
-						<div class="nav-top d-flex align-items-center justify-content-between">
+						<div class="nav-top d-flex flex-wrap align-items-center justify-content-between">
 							<ul class="nav d-flex align-items-center" id="veh_search-tab" role="tablist">
 								<li class="nav-item">
 									<a class="nav-link active" id="car-tab" data-toggle="tab" href="#car" role="tab" aria-controls="car" aria-selected="true">Car</a>
@@ -1174,7 +1174,7 @@
 											</select>
 										</div>
 									</div>									
-									<button type="button" class="btn btn-search btn-big btn-blue btn-blue-lighten-hover">Search</button>
+									<button type="button" class="btn btn-search btn-big btn-blue btn-blue-lighten-hover"><i class="icon icon-search-big"></i>Search</button>
 								</div>
 							</div>
 
@@ -1182,7 +1182,7 @@
 							<div class="tab-pane fade" id="moto" role="tabpanel" aria-labelledby="moto-tab">
 								<div class="moto-tab-layout">
 									<div class="row">
-										<div class="vehicle-control vehicle-maker col-xl-5">
+										<div class="vehicle-control vehicle-maker">
 											<select id="brand_select2" class="brand" multiple="multiple">
 												<option value="1">ACURA</option>
 												<option value="2">ALFA ROMEO</option>
@@ -1293,7 +1293,7 @@
 												<option value="92">ZASTAVA</option>
 											</select>
 										</div>
-										<div class="vehicle-control vehicle-class col-xl-5">
+										<div class="vehicle-control vehicle-class">
 											<select id="class_select2" class="class" multiple="multiple" disabled="disabled">
 												<option value="1018">A-Class</option>
 												<option value="2">B-Class</option>
@@ -1334,7 +1334,7 @@
 												<option value="1119">X-Class</option>
 											</select>
 										</div>
-										<div class="vehicle-control vehicle-model col-xl-5">
+										<div class="vehicle-control vehicle-model">
 											<select id="model_select2" class="model" multiple="multiple" disabled="disabled">
 												<option value="21524">CDX</option>
 												<option value="1">Legend</option>
@@ -1351,7 +1351,7 @@
 												<option value="4946">ZDX</option>
 											</select>			
 										</div>
-										<div class="vehicle-control vehicle-year col-xl-5">
+										<div class="vehicle-control vehicle-year">
 											<select id="year_select2" class="year" multiple="multiple" disabled="disabled">
 												<option value="2019">2019</option>
 												<option value="2018">2018</option>
@@ -1390,19 +1390,20 @@
 												<option value="1985">1985</option>
 											</select>
 										</div>
-										<div class="vehicle-control vehicle-body col-xl-5">
+										<div class="vehicle-control vehicle-body">
 											<select id="body_select2" class="body" multiple="multiple" disabled="disabled">
 												<option value="906">906</option>
 												<option value="W415">W415</option>
 											</select>
 										</div>
-										<div class="vehicle-control vehicle-engine col-xl-5 d-flex justify-content-between">
+										<div class="vehicle-control vehicle-engine">
 											<select id="engine_select2" class="engine" multiple="multiple" disabled="disabled">
 												<option value="2100">2100</option>
 												<option value="2200">2200</option>
 												<option value="2300">2300</option>
 											</select>
-
+										</div>
+										<div class="vehicle-control vehicle-engineno">
 											<select id="engineno_select2" class="engineno" multiple="multiple" disabled="disabled">
 												<option value="100">100</option>
 												<option value="200">200</option>
@@ -1410,7 +1411,7 @@
 											</select>
 										</div>									
 									</div>
-									<button type="button" class="btn btn-search btn-big btn-blue btn-blue-lighten-hover">Search</button>
+									<button type="button" class="btn btn-search btn-big btn-blue btn-blue-lighten-hover"><i class="icon icon-search-big"></i>Search</button>
 								</div>
 							</div>
 
@@ -1418,7 +1419,7 @@
 							<div class="tab-pane fade" id="hd" role="tabpanel" aria-labelledby="hd-tab">
 								<div class="moto-tab-layout">
 									<div class="row">
-										<div class="col-xl-5 col-lg-4 vehicle-control">
+										<div class="col-xl-5 col-lg-4 vehicle-control vehicle-maker">
 											<select id="brand_select3" class="brand" multiple="multiple">
 												<option value="1">ACURA</option>
 												<option value="2">ALFA ROMEO</option>
@@ -1529,7 +1530,7 @@
 												<option value="92">ZASTAVA</option>
 											</select>
 										</div>
-										<div class="col-xl-5 col-lg-4 vehicle-control">
+										<div class="col-xl-5 col-lg-4 vehicle-control vehicle-model">
 											<select id="model_select3" class="model" multiple="multiple" disabled="disabled">
 												<option value="21524">CDX</option>
 												<option value="1">Legend</option>
@@ -1546,7 +1547,7 @@
 												<option value="4946">ZDX</option>
 											</select>												
 										</div>
-										<div class="col-xl-5 col-lg-2 vehicle-control d-flex justify-content-between">
+										<div class="col-xl-5 col-lg-2 vehicle-control vehicle-engineno">
 											<select id="engine_select3" class="engine" multiple="multiple" disabled="disabled">
 												<option value="2100">2100</option>
 												<option value="2200">2200</option>
@@ -1554,7 +1555,7 @@
 											</select>
 										</div>
 									</div>
-									<button type="button" class="btn btn-search btn-big btn-blue btn-blue-lighten-hover">Search</button>
+									<button type="button" class="btn btn-search btn-big btn-blue btn-blue-lighten-hover"><i class="icon icon-search-big"></i>Search</button>
 								</div>
 							</div>
 						</div>
@@ -1576,7 +1577,7 @@
 								<form action="#" method="post">
 									<div class="d-flex">
 										<input type="text" class="form-control" id="part_search_in" name="prd_ids" />
-										<input type="submit" class="btn btn-search btn-middle btn-blue btn-blue-lighten-hover" value="Search" />
+										<button type="submit" class="btn btn-search btn-middle btn-blue btn-blue-lighten-hover"><i class="icon icon-search-middle"></i><span>Search</span></button>
 									</div>
 								</form>
 								<p class="example">Example: N123P23</p> 
@@ -1602,7 +1603,7 @@
 									<div class="d-flex">
 										<input type="text" class="form-control" id="vin_search_in" name="prd_ids" />
 										<button type="button" class="btn-file d-none d-lg-block" onclick="$('#id_search_vin_img').click();"><i class="icon icon-camera"></i></button>
-										<input type="submit" class="btn btn-search btn-middle btn-blue btn-blue-lighten-hover" value="Search" />
+										<button type="submit" class="btn btn-search btn-middle btn-blue btn-blue-lighten-hover"><i class="icon icon-search-middle"></i><span>Search</span></button>
 									</div>
 								</form>
 								<p class="example">Example: JHMCU26609213298</p> 
@@ -1611,8 +1612,8 @@
 								<form action="#" method="post">
 									<div class="d-flex">
 										<input type="text" class="form-control" id="vehicle-number" name="prd_ids2" />
-										<button type="button" class="btn-file" onclick="$('#id_search_vin_img').click();"><i class="icon icon-camera"></i></button>
-										<input type="submit" class="btn btn-search btn-middle btn-blue btn-blue-lighten-hover" value="Search" />
+										<button type="button" class="btn-file d-none d-lg-block" onclick="$('#id_search_vin_img').click();"><i class="icon icon-camera"></i></button>
+										<button type="submit" class="btn btn-search btn-middle btn-blue btn-blue-lighten-hover"><i class="icon icon-search-middle"></i><span>Search</span></button>
 									</div>
 								</form>
 								<form class="FrmVinSearchImage" style="display: none;" action="https://www.fitinpart.sg/index.php?route=tool/imgrecognize/ocr_vin">
