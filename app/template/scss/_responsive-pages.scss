@@ -475,3 +475,166 @@
 		}
 	}
 }
+
+
+@media (max-width: 720px){
+	.header,
+	.top{
+		display: none;
+	}
+	#homeslider{
+		.layout{
+			height: 230px;
+			max-width: 100%;
+			padding-left: 3.2rem;
+			padding-right: 3.2rem;
+		}
+		.left{
+			width: 50%;
+		}
+		.text{
+			display: none;
+		}
+		.title{
+			font-size: 3rem;
+		}
+
+		.slick-dots{
+			position: absolute;
+			bottom: 10px;
+			left: 0;
+			right: 0;
+			display: flex;
+			justify-content: center;
+			li{
+				margin: 0 .3rem;
+			}
+			button{
+				background-color: #98392b;
+				border-radius: 50%;
+				height: 15px;
+				width: 15px;
+				text-indent: -9999em;
+			}
+
+			.slick-active{
+				button{
+					background-color: #fff;
+				}
+			}
+		}
+	}
+
+	.searchbox .d-grid{
+		display: block;
+	}
+
+	#catalog-carousel{
+		> div{
+			flex-basis: 165px;
+			flex-shrink: 0;
+			margin-bottom: .6rem;
+		}
+		justify-content: flex-start;
+	}
+
+	.visual{
+		&__item{
+			height: 13.5rem;
+			&-1{
+				margin-bottom: 5rem;
+			}
+		}
+		img{
+			max-height: 165px;
+		}
+	}
+
+
+	.advantages{
+		padding: 3.6rem 0;
+	}
+	.advantage__item{
+		flex-basis: 50%;
+	}
+
+	.main .title, .main h1{
+		font-size: 2.8rem;
+	}
+
+	.reviews{
+		padding-bottom: 5rem;
+		.title{
+			img{
+				height: 3.2rem;
+			}
+		}
+		header{
+			.stars{
+				height: 2.6rem;
+				img{
+					max-height: 100%;
+				}
+			}
+			.rated{
+			font-size: 1.4rem;				
+			}
+		}
+	}
+
+	.about{
+		background-position: right -300% bottom;
+		.title,
+		.subtitle,
+		.text{
+			text-align: center;
+		}
+		.btn{
+			margin-left: auto;
+			margin-right: auto;
+			display: flex;
+			width: 170px;
+		}
+
+		.subtitle{
+			font-size: 2rem;
+		}
+		.text{
+			font-size: 1.4rem;
+		}
+	}
+
+
+	.brands #brands-carousel{
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+
+}
+
+
+@media (max-width: 600px){
+	.brands{
+		.slick-arrow{
+			border: none;
+			height: 2rem;
+			width: 2rem;
+			&:hover,
+			&:focus{
+				background-color: transparent;
+				.icon{
+					filter: none;
+				}
+			}
+		}
+		#brands-carousel{
+			padding-left: 30px;
+			padding-right: 30px;
+			.slick-slide{
+				img{
+					max-width: 80%
+				}
+			}
+		}
+	}
+}

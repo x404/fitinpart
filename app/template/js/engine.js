@@ -93,7 +93,16 @@ $(document).ready(function(){
 		autoplaySpeed: 5000,
 		arrows : true,
 		fade: true,
-		speed: 1000
+		speed: 1000,
+		responsive: [
+			{
+				breakpoint: 721,
+				settings: {
+					arrows : false,
+					dots: true
+				}
+			}
+		]
 	});	
 
 
@@ -156,18 +165,7 @@ $(document).ready(function(){
 				breakpoint: 768,
 				settings: {
 					slidesToShow: 2,
-					slidesToScroll: 1,
-					centerMode: true,
-					centerPadding: '100px'
-				}
-			},
-			{
-				breakpoint: 650,
-				settings: {
-					slidesToShow: 2,
-					slidesToScroll: 1,
-					centerMode: true,
-					centerPadding: '70px'
+					slidesToScroll: 1
 				}
 			},
 			{
@@ -237,44 +235,13 @@ $(document).ready(function(){
 				settings: {
 					slidesToShow: 3,
 					slidesToScroll: 1,
-					centerMode: true,
-					centerPadding: '100px'
 				}
 			},
 			{
-				breakpoint: 650,
+				breakpoint: 500,
 				settings: {
 					slidesToShow: 2,
 					slidesToScroll: 1,
-					centerMode: true,
-					centerPadding: '70px'
-				}
-			},
-			{
-				breakpoint: 560,
-				settings: {
-					slidesToShow: 2,
-					slidesToScroll: 1,
-					centerMode: true,
-					centerPadding: '40px'
-				}
-			},
-			{
-				breakpoint: 450,
-				settings: {
-					slidesToShow: 2,
-					slidesToScroll: 1,
-					centerMode: true,
-					centerPadding: '15px'
-				}
-			},
-			{
-				breakpoint: 400,
-				settings: {
-					slidesToShow: 1,
-					slidesToScroll: 1,
-					centerMode: true,
-					centerPadding: '70px'
 				}
 			}
 		]

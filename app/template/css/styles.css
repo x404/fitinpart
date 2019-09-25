@@ -5521,6 +5521,7 @@ button {
     text-align: center; }
     .brands a img {
       display: inline;
+      max-width: 100%;
       vertical-align: top;
       transition: transform .3s; }
     .brands a:hover img {
@@ -6474,6 +6475,21 @@ input.form-control.error {
       margin-top: 1rem;
       padding-top: 3rem; } }
 
+@media (max-width: 767px) {
+  .footer {
+    padding: 2.7rem 0 1.5rem; }
+    .footer .copyright {
+      display: flex;
+      align-items: center; }
+      .footer .copyright .text {
+        padding-left: 1.5rem; }
+    .footer .address {
+      margin: .5rem 0 1.5rem; } }
+
+@media (max-width: 600px) {
+  .footer .text p {
+    display: inline; } }
+
 @media (max-width: 1650px) {
   #homeslider .slick-prev {
     margin-left: -730px; }
@@ -6732,3 +6748,100 @@ input.form-control.error {
     .brands .container {
       padding-left: 0;
       padding-right: 0; } }
+
+@media (max-width: 720px) {
+  .header,
+  .top {
+    display: none; }
+  #homeslider .layout {
+    height: 230px;
+    max-width: 100%;
+    padding-left: 3.2rem;
+    padding-right: 3.2rem; }
+  #homeslider .left {
+    width: 50%; }
+  #homeslider .text {
+    display: none; }
+  #homeslider .title {
+    font-size: 3rem; }
+  #homeslider .slick-dots {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center; }
+    #homeslider .slick-dots li {
+      margin: 0 .3rem; }
+    #homeslider .slick-dots button {
+      background-color: #98392b;
+      border-radius: 50%;
+      height: 15px;
+      width: 15px;
+      text-indent: -9999em; }
+    #homeslider .slick-dots .slick-active button {
+      background-color: #fff; }
+  .searchbox .d-grid {
+    display: block; }
+  #catalog-carousel {
+    justify-content: flex-start; }
+    #catalog-carousel > div {
+      flex-basis: 165px;
+      flex-shrink: 0;
+      margin-bottom: .6rem; }
+  .visual__item {
+    height: 13.5rem; }
+    .visual__item-1 {
+      margin-bottom: 5rem; }
+  .visual img {
+    max-height: 165px; }
+  .advantages {
+    padding: 3.6rem 0; }
+  .advantage__item {
+    flex-basis: 50%; }
+  .main .title,
+  .main h1 {
+    font-size: 2.8rem; }
+  .reviews {
+    padding-bottom: 5rem; }
+    .reviews .title img {
+      height: 3.2rem; }
+    .reviews header .stars {
+      height: 2.6rem; }
+      .reviews header .stars img {
+        max-height: 100%; }
+    .reviews header .rated {
+      font-size: 1.4rem; }
+  .about {
+    background-position: right -300% bottom; }
+    .about .title,
+    .about .subtitle,
+    .about .text {
+      text-align: center; }
+    .about .btn {
+      margin-left: auto;
+      margin-right: auto;
+      display: flex;
+      width: 170px; }
+    .about .subtitle {
+      font-size: 2rem; }
+    .about .text {
+      font-size: 1.4rem; }
+  .brands #brands-carousel {
+    padding-left: 40px;
+    padding-right: 40px; } }
+
+@media (max-width: 600px) {
+  .brands .slick-arrow {
+    border: none;
+    height: 2rem;
+    width: 2rem; }
+    .brands .slick-arrow:hover, .brands .slick-arrow:focus {
+      background-color: transparent; }
+      .brands .slick-arrow:hover .icon, .brands .slick-arrow:focus .icon {
+        filter: none; }
+  .brands #brands-carousel {
+    padding-left: 30px;
+    padding-right: 30px; }
+    .brands #brands-carousel .slick-slide img {
+      max-width: 80%; } }

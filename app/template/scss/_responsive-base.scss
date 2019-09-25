@@ -165,7 +165,27 @@
 }
 
 @media (max-width: 767px){
+	.footer{
+		padding: 2.7rem 0 1.5rem;
+		.copyright{
+			display: flex;
+			align-items: center;
+			.text{
+				padding-left: 1.5rem;
+			}
+		}
+		.address{
+			margin: .5rem 0 1.5rem;
+		}
+	}
 }
 
-@media (max-width: 545px){
+@media (max-width: 600px){
+	.footer{
+		.text{
+			p{
+				display: inline;
+			}
+		}
+	}
 }
