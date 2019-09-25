@@ -180,10 +180,11 @@ em strong
 		top: 0;
 	}
 	&-tel{
-		padding-left: 27px;
+		padding-left: 30px;
 		&:before{
 			@include sprite($icon-tel);
 			top: -3px;
+			left: 4px;
 		}		
 	}
 	&-user{
@@ -299,6 +300,9 @@ em strong
 	}
 }
 
+.w100{
+	width: 100%;
+}
 
 .a-rotate90{
 	svg{

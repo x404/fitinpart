@@ -147,6 +147,21 @@
 }
 
 @media (max-width: 991px){
+	.footer{
+		padding-bottom: 3rem;
+		.container{
+			padding-left: 24px;
+			padding-right: 24px;
+		}
+		.tel{
+			margin-bottom: 1.2rem;  
+		}
+		.payments{
+			border-top: 1px solid #4c4c4c;
+			margin-top: 1rem;
+			padding-top: 3rem;
+		}
+	}
 }
 
 @media (max-width: 767px){

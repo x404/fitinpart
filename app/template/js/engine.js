@@ -100,17 +100,29 @@ $(document).ready(function(){
 	$('#homeslider').slickAnimation();
 
 
+	if (document.body.clientWidth > 991){
+		$('#catalog-carousel').slick({
+			prevArrow:'<button class="slick-arrow slick-prev icon icon-slider-arrow" aria-label="Previous" type="button"></button>',
+			nextArrow:'<button class="slick-arrow slick-next icon icon-slider-arrow" aria-label="Next" type="button"></button>',
+			dots: false,
+			slidesToShow: 8,
+			slidesToScroll: 1,
+			autoplay: false,
+			autoplaySpeed: 5000,
+			arrows : true,
+			infinite: false,
+			responsive: [
+				{
+					breakpoint: 992,
+					settings: {
+						arrows : false,
+						slidesToShow: 8
+					}
+				}
+			]
+		});	
 
-	$('#catalog-carousel').slick({
-		prevArrow:'<button class="slick-arrow slick-prev icon icon-slider-arrow" aria-label="Previous" type="button"></button>',
-		nextArrow:'<button class="slick-arrow slick-next icon icon-slider-arrow" aria-label="Next" type="button"></button>',
-		dots: false,
-		slidesToShow: 8,
-		slidesToScroll: 1,
-		autoplay: false,
-		autoplaySpeed: 5000,
-		arrows : true
-	});	
+	}
 
 	$('#lastnews-carousel').slick({
 		dots: false,
@@ -128,6 +140,13 @@ $(document).ready(function(){
 			},
 			{
 				breakpoint: 992,
+				settings: {
+					slidesToShow: 4,
+					slidesToScroll: 1
+				}
+			},
+			{
+				breakpoint: 960,
 				settings: {
 					slidesToShow: 3,
 					slidesToScroll: 1
@@ -209,14 +228,14 @@ $(document).ready(function(){
 			{
 				breakpoint: 992,
 				settings: {
-					slidesToShow: 3,
+					slidesToShow: 4,
 					slidesToScroll: 1
 				}
 			},
 			{
 				breakpoint: 768,
 				settings: {
-					slidesToShow: 2,
+					slidesToShow: 3,
 					slidesToScroll: 1,
 					centerMode: true,
 					centerPadding: '100px'

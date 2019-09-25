@@ -1587,11 +1587,11 @@
 					<div class="searchbox__panel searchbox__panel-vin" id="vin_search_sg">
 						<ul class="nav d-flex searchbox__title" id="vin-tab" role="tablist">
 							<li class="nav-item">
-								<a class="nav-link active" id="vin-number-tab" data-toggle="tab" href="#vin-number" role="tab" aria-controls="vin-number" aria-selected="true">VIN or Chassis No</a>
+								<a class="nav-link active" id="vin-number-tab" data-toggle="tab" href="#vin-number" role="tab" aria-controls="vin-number" aria-selected="true"><span class="d-none d-lg-block">VIN or Chassis No</span><span class="d-block d-lg-none">VIN or Chas. No</span></a>
 							</li>
 							<li class="separator"></li>
 							<li class="nav-item">
-								<a class="nav-link" id="vin-size-tab" data-toggle="tab" href="#vin-size" role="tab" aria-controls="vin-size" aria-selected="false">Vehicle Plate No</a>
+								<a class="nav-link" id="vin-size-tab" data-toggle="tab" href="#vin-size" role="tab" aria-controls="vin-size" aria-selected="false"><span class="d-none d-lg-block">Vehicle Plate No</span><span class="d-block d-lg-none">Veh. Plate No</span></a>
 							</li>
 						</ul>
 						
@@ -1600,7 +1600,7 @@
 								<form action="#" method="post">
 									<div class="d-flex">
 										<input type="text" class="form-control" id="vin_search_in" name="prd_ids" />
-										<button type="button" class="btn-file" onclick="$('#id_search_vin_img').click();"><i class="icon icon-camera"></i></button>
+										<button type="button" class="btn-file d-none d-lg-block" onclick="$('#id_search_vin_img').click();"><i class="icon icon-camera"></i></button>
 										<input type="submit" class="btn btn-search btn-middle btn-blue btn-blue-lighten-hover" value="Search" />
 									</div>
 								</form>
@@ -1695,14 +1695,6 @@
 							Wiper Blades
 						</a>
 					</div>
-					<div>
-						<a href="#" title="">
-							<div class="pic">
-								<img src="/template/images/catalog/transmission.png" alt="Transmission & Wheel" />
-							</div>
-							Transmission <br> & Wheel
-						</a>
-					</div>
 				</div>
 			</div>
 		</div>
@@ -1712,7 +1704,7 @@
 		<div class="visual">
 			<div class="container">
 				<div class="row d-flex justify-content-between">
-					<div class="col-lg-5">	
+					<div class="col-md-5">	
 						<div class="visual__item visual__item-1">
 							<a href="#" title="" class="visual__link">
 								Performance <br> callipers
@@ -1720,7 +1712,7 @@
 							</a>
 						</div>
 					</div>
-					<div class="col-lg-5">
+					<div class="col-md-5">
 						<div class="visual__item visual__item-2">
 							<a href="#" title="" class="visual__link">
 								Wiper <br>  search
@@ -1773,9 +1765,9 @@
 				<div class="row">
 					<div class="col-xl-2 col-lg-2">
 						<header>
-							<h1 class="title">News and <br> promotions</h1>
+							<h1 class="title">News and promotions</h1>
 							<p>Some short text about current news and promotions</p>
-							<a href="#" class="btn btn-view" title="">View all news</a>
+							<a href="#" class="btn btn-view d-none d-lg-inline-flex" title="">View all news</a>
 						</header>
 					</div>
 					<div class="col-xl-8 col-lg-8">
@@ -1837,6 +1829,9 @@
 								</div>
 							</div>
 						</div>
+					</div>
+					<div class="text-center w100 d-inline-flex d-lg-none justify-content-center">
+						<a href="#" class="btn btn-view" title="">View all news</a>
 					</div>
 				</div>
 			</div>
@@ -1925,14 +1920,14 @@
 		<section class="about">
 			<div class="container">
 				<div class="row align-items-center">
-					<div class="col-xl-4 col-lg-4 text-center">
+					<div class="col-xl-4 col-lg-4 col-md-4 text-center">
 						<picture>
 							<source srcset="images/car-parts-1200.webp" type="image/webp" media="(max-width:1450px)">
 							<source srcset="images/car-parts.webp" type="image/webp">
 							<img src="images/car-parts.jpg" alt="">
 						</picture>
 					</div>
-					<div class="col-xl-5 col-lg-6">
+					<div class="col-xl-5 col-lg-6 col-md-5">
 						<header>
 							<h1 class="title">About Fitinpart.sg</h1>
 							<p class="subtitle">Online car parts distribution</p>
@@ -1970,14 +1965,14 @@
 	<footer class="footer">
 		<div class="container">
 			<div class="row">
-				<div class="copyright col-lg-2">
+				<div class="copyright col-lg-2 col-md-4">
 					<div class="logo"><img src="/template/images/logo2.jpg" alt="FitinPart"  /></div>
 					<p>© 2015-2019 FitinPart online car parts distributor </p>
 					<p>All rights reserved</p>						
 				</div>
 			
 				<!-- =menu -->
-				<div class="col-lg-5">
+				<div class="col-lg-5 d-none d-lg-block">
 					<div class="footer__menu d-flex">
 						<div class="menu">
 							<h3>Catalog</h3>
@@ -2007,23 +2002,21 @@
 				</div>
 				<!-- =/menu -->
 			
-				<div class="col-lg-3">
+				<div class="col-lg-3 col-md-6">
 					<div class="address icon icon-balloon">1 Kaki Bukit Rd 1 Enterprise One #03-10/11 Singapore 415934</div>
 					<div class="address icon icon-balloon">4 Tuas Basin Close Singapore 638797</div>
 					<div class="tel icon icon-tel">+65 67497481</div>
-					<div class="payments d-flex flex-wrap align-items-center">
+					<div class="payments flex-wrap align-items-center d-none d-lg-flex">
 						<img src="/images/payments.jpg" alt="">
 						<img src="/images/billmelater.jpg" alt="">
 					</div>
 				</div>
 			</div>
-			
-			
-			<!-- =contacts -->
-			<div class="contacts">
-				
+
+			<div class="payments flex-wrap align-items-center justify-content-center d-flex d-lg-none">
+				<img src="/images/payments.jpg" alt="">
+				<img src="/images/billmelater.jpg" alt="">
 			</div>
-			<!-- =/contacts -->
 		</div>
 	</footer>
 	<!-- =/footer -->	

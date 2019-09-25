@@ -309,5 +309,169 @@
 			font-size: 1.6rem;
 		}
 	}	
+}
 
+@media (max-width: 991px){
+	.container{
+		max-width: 100%;
+	}
+	#homeslider{
+		.layout{
+			height: 320px;
+			max-width: 605px;
+		}
+		.title{
+			font-size: 3.2rem;
+			margin-top: 0;
+		}
+		.right{
+			padding-left: 20px;
+		}
+		.slick{
+			&-arrow{
+				margin-top: -40px;
+			}
+			&-prev{
+				margin-left: 0;
+				left: 15px;
+			}
+			&-next{
+				margin-left: 0;
+				left: auto;
+				right: 15px;
+			}
+		}
+	}
+
+	.searchbox{
+		margin-top: 0;
+		.container{
+			padding-left: 0;
+			padding-right: 0;
+		}
+		&__panel{
+			padding-left: 2.2rem;
+			padding-right: 2.2rem;
+		}
+		&__title{
+			font-size: 2.2rem;
+		}
+	}
+
+	#catalog-carousel{
+		display: flex;
+		flex-wrap: wrap;
+		// .slick-track{
+		// 	display: flex;
+		// 	flex-wrap: wrap;
+		// 	width: 100% !important;
+		// 	transform: none !important;
+		// }
+		// .slick-slide{
+		// 	float: none !important;
+		// 	width: auto !important;
+		// }
+		& > div{
+			flex-basis: 25%;
+		}
+	}
+
+	.catalog{
+		a{
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: flex-start;
+			font-size: 1.5rem;
+			text-align: left;
+			.pic{
+				flex-shrink: 0;
+				min-height: 0;
+				max-width: 36px;
+				margin-right: 1.5rem;
+			}
+			img{
+				display: block;
+				max-width: 100%;
+				height: auto;
+			}
+		}
+	}
+
+	.visual{
+		margin-top: 2rem;
+		&__item{
+			height: 10.5rem;
+			font-size: 2.2rem;
+		}
+		img{
+			max-height: 130px;
+		}
+	}
+
+	.advantage{
+		&__pic{
+			background-color: transparent;
+			margin-right: 1rem;
+			width: 60px;
+		}
+	}
+
+	.lastnews{
+		padding-top: 4rem;
+		padding-bottom: 4rem;
+		.title{
+			text-align: center;
+		}
+		header{
+			p{
+				display: none;				
+			}
+		}
+	}
+
+	.main .title, .main h1{
+		font-size: 3rem;
+	}
+
+	.lastnews .news__item{
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.item-news{
+		&__desc{
+			padding: 2rem;
+		}
+	}
+
+	.reviews{
+		min-height: 0;
+		padding-top: 4.2rem;
+		.container{
+			padding-left: 2.4rem;
+			padding-right: 2.4rem;
+		}
+		.review-card{
+			&:last-child{
+				display: none;
+			}
+		}
+	}
+
+	.about{
+		background-position: 170% bottom;
+		.subtitle{
+			font-size: 2.2rem;
+		}
+	}
+
+	.brands{
+		margin-left: 2.4rem;
+		margin-right: 2.4rem;
+		.container{
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
 }
