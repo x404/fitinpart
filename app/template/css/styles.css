@@ -4577,7 +4577,8 @@ button {
       font-size: 1.8rem;
       font-weight: 700;
       height: 6.1rem;
-      margin-top: 1.8rem; }
+      margin-top: 1.8rem;
+      width: calc(100% - 1.5rem); }
       .littlecart .cart-body .btn-checkout .icon {
         transition: transform .3s; }
       .littlecart .cart-body .btn-checkout:hover .icon {
@@ -6811,9 +6812,6 @@ input.form-control.error {
     width: 170px; } }
 
 @media (max-width: 720px) {
-  .header,
-  .top {
-    display: none; }
   #homeslider .layout {
     height: 230px;
     max-width: 100%;

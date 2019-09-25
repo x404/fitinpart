@@ -915,10 +915,6 @@ button{
 			box-shadow: 5px 0 15px rgba(0,0,0,.25);
 			color: #000;
 			padding: 1.7rem 1.5rem 2rem 3rem;
-
-			// opacity: 0;
-			// z-index: -1;
-
 			.title{
 				font-family: 'Neo Sans Pro', Verdana, sans-serif;
 				color: $color14;
@@ -1075,6 +1071,7 @@ button{
 					font-weight: 700;
 					height: 6.1rem;
 					margin-top: 1.8rem;
+					width: calc(100% - 1.5rem);
 					.icon{
 						transition: transform .3s;
 					}
