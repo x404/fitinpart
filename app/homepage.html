@@ -891,7 +891,7 @@
 			<!-- =/compare -->
 
 			<!-- =search -->
-			<button type="button" class="btn btn-search"><i class="icon icon-search"></i></button>
+			<button type="button" class="btn btn-search" aria-label="Search"><i class="icon icon-search"></i></button>
 			<!-- =/search -->
 
 			<div class="littlecart">
@@ -950,7 +950,7 @@
 						<div class="searchbox__title">Search by Vehicle</div>
 
 						<div class="nav-top d-flex flex-wrap align-items-center justify-content-between">
-							<ul class="nav d-flex align-items-center" id="veh_search-tab" role="tablist">
+							<ul class="nav d-flex align-items-center" id="veh_search-tab" >
 								<li class="nav-item">
 									<a class="nav-link active" id="car-tab" data-toggle="tab" href="#car" role="tab" aria-controls="car" aria-selected="true">Car</a>
 								</li>
@@ -967,7 +967,7 @@
 							<div class="veh-only d-flex align-items-center">
 								Common SG Veh Only
 								<label class="checkbox">
-									<input type="checkbox" name="veh-only" />
+									<input type="checkbox" name="veh-only" value="" aria-label="Common SG Veh Only" />
 									<div class="checkbox__text"></div>
 								</label>
 							</div>
@@ -1207,7 +1207,7 @@
 											</select>
 										</div>
 									</div>									
-									<button type="button" class="btn btn-search btn-big btn-blue btn-blue-lighten-hover"><i class="icon icon-search-big"></i>Search</button>
+									<button type="button" class="btn btn-search btn-big btn-blue btn-blue-lighten-hover" aria-label="Search"><i class="icon icon-search-big"></i>Search</button>
 								</div>
 							</div>
 
@@ -1444,7 +1444,7 @@
 											</select>
 										</div>									
 									</div>
-									<button type="button" class="btn btn-search btn-big btn-blue btn-blue-lighten-hover"><i class="icon icon-search-big"></i>Search</button>
+									<button type="button" class="btn btn-search btn-big btn-blue btn-blue-lighten-hover" aria-label="Search"><i class="icon icon-search-big"></i>Search</button>
 								</div>
 							</div>
 
@@ -1588,7 +1588,7 @@
 											</select>
 										</div>
 									</div>
-									<button type="button" class="btn btn-search btn-big btn-blue btn-blue-lighten-hover"><i class="icon icon-search-big"></i>Search</button>
+									<button type="button" class="btn btn-search btn-big btn-blue btn-blue-lighten-hover" aria-label="Search"><i class="icon icon-search-big"></i>Search</button>
 								</div>
 							</div>
 						</div>
@@ -1601,7 +1601,7 @@
 							</li>
 							<li class="separator"></li>
 							<li class="nav-item">
-								<button class="nav-link" id="part-size-tab" aria-controls="part-size" aria-selected="false" data-toggle="modal" data-target="#searchbysizeModal">Part Size</button>
+								<button type="button" class="nav-link" id="part-size-tab" aria-controls="part-size" aria-selected="false" data-toggle="modal" data-target="#searchbysizeModal">Part Size</button>
 							</li>
 						</ul>
 						
@@ -1609,8 +1609,8 @@
 							<div class="tab-pane fade show active" id="part-number" role="tabpanel" aria-labelledby="part-number-tab">
 								<form action="#" method="post">
 									<div class="d-flex">
-										<input type="text" class="form-control" id="part_search_in" name="prd_ids" />
-										<button type="submit" class="btn btn-search btn-middle btn-blue btn-blue-lighten-hover"><i class="icon icon-search-middle"></i><span>Search</span></button>
+										<input type="text" class="form-control" id="part_search_in" name="prd_ids" aria-label="Part size" />
+										<button type="submit" class="btn btn-search btn-middle btn-blue btn-blue-lighten-hover" aria-label="Search"><i class="icon icon-search-middle"></i><span>Search</span></button>
 									</div>
 								</form>
 								<p class="example">Example: N123P23</p> 
@@ -1634,9 +1634,9 @@
 							<div class="tab-pane fade show active" id="vin-number" role="tabpanel" aria-labelledby="vin-number-tab">
 								<form action="#" method="post">
 									<div class="d-flex">
-										<input type="text" class="form-control" id="vin_search_in" name="prd_ids" />
+										<input type="text" class="form-control" id="vin_search_in" name="prd_ids" aria-label="Vin or chassic no" />
 										<button type="button" class="btn-file d-none d-lg-block" onclick="$('#id_search_vin_img').click();"><i class="icon icon-camera"></i></button>
-										<button type="submit" class="btn btn-search btn-middle btn-blue btn-blue-lighten-hover"><i class="icon icon-search-middle"></i><span>Search</span></button>
+										<button type="submit" class="btn btn-search btn-middle btn-blue btn-blue-lighten-hover" aria-label="Search"><i class="icon icon-search-middle"></i><span>Search</span></button>
 									</div>
 								</form>
 								<p class="example">Example: JHMCU26609213298</p> 
@@ -1644,9 +1644,9 @@
 							<div class="tab-pane fade" id="vin-size" role="tabpanel" aria-labelledby="vin-size-tab">
 								<form action="#" method="post">
 									<div class="d-flex">
-										<input type="text" class="form-control" id="vehicle-number" name="prd_ids2" />
+										<input type="text" class="form-control" id="vehicle-number" name="prd_ids2" aria-label="Vehicle plate no" />
 										<button type="button" class="btn-file d-none d-lg-block" onclick="$('#id_search_vin_img').click();"><i class="icon icon-camera"></i></button>
-										<button type="submit" class="btn btn-search btn-middle btn-blue btn-blue-lighten-hover"><i class="icon icon-search-middle"></i><span>Search</span></button>
+										<button type="submit" class="btn btn-search btn-middle btn-blue btn-blue-lighten-hover" aria-label="Search"><i class="icon icon-search-middle"></i><span>Search</span></button>
 									</div>
 								</form>
 								<form class="FrmVinSearchImage" style="display: none;" action="https://www.fitinpart.sg/index.php?route=tool/imgrecognize/ocr_vin">
@@ -1982,13 +1982,13 @@
 		<div class="brands">
 			<div class="container">
 				<div id="brands-carousel" class="slick-init justify-content-between">
-					<div><a href="#"><img src="images/brands/sb.jpg" alt=""/></a></div>
-					<div><a href="#"><img src="images/brands/js.jpg" alt=""/></a></div>
-					<div><a href="#"><img src="images/brands/nibk.jpg" alt=""/></a></div>
-					<div><a href="#"><img src="images/brands/jikiu.jpg" alt=""/></a></div>
-					<div><a href="#"><img src="images/brands/denso.jpg" alt=""/></a></div>
-					<div><a href="#"><img src="images/brands/azumi.jpg" alt=""/></a></div>
-					<div><a href="#"><img src="images/brands/denso.jpg" alt=""/></a></div>
+					<div><a href="#" title=""><img src="images/brands/sb.jpg" alt=""/></a></div>
+					<div><a href="#" title=""><img src="images/brands/js.jpg" alt=""/></a></div>
+					<div><a href="#" title=""><img src="images/brands/nibk.jpg" alt=""/></a></div>
+					<div><a href="#" title=""><img src="images/brands/jikiu.jpg" alt=""/></a></div>
+					<div><a href="#" title=""><img src="images/brands/denso.jpg" alt=""/></a></div>
+					<div><a href="#" title=""><img src="images/brands/azumi.jpg" alt=""/></a></div>
+					<div><a href="#" title=""><img src="images/brands/denso.jpg" alt=""/></a></div>
 				</div>
 			</div>
 		</div>
@@ -2253,29 +2253,29 @@
 								<div class="subtype-item">
 									<input type="radio" id="profile_47" name="profile_id" value="47" checked="checked">
 									<label class="ss_profile" for="profile_47">
-										<img src="https://www.jikiu.com/images/069d3bb002acd8d7dd095917f9efe4cb/bush/add594452a4336fb0eb7e0565af02689.jpg" height="100">
-										<a data-fancybox="gallery" href="https://www.jikiu.com/images/069d3bb002acd8d7dd095917f9efe4cb/bush/add594452a4336fb0eb7e0565af02689.jpg" class="thumbnail icon icon-zoom"></a>
+										<img src="https://www.jikiu.com/images/069d3bb002acd8d7dd095917f9efe4cb/bush/add594452a4336fb0eb7e0565af02689.jpg" alt="" />
+										<a data-fancybox="gallery" href="https://www.jikiu.com/images/069d3bb002acd8d7dd095917f9efe4cb/bush/add594452a4336fb0eb7e0565af02689.jpg" class="thumbnail icon icon-zoom" aria-label="Zoom"></a>
 									</label>
 								</div>
 								<div class="subtype-item">
 									<input type="radio" id="profile_48" name="profile_id" value="48">
 									<label class="ss_profile" for="profile_48">
-										<img src="https://www.jikiu.com/images/069d3bb002acd8d7dd095917f9efe4cb/bush/915b1cd8c7ab729450f18d3fc6ba2397.jpg" height="100">
-										<a data-fancybox="gallery" href="https://www.jikiu.com/images/069d3bb002acd8d7dd095917f9efe4cb/bush/915b1cd8c7ab729450f18d3fc6ba2397.jpg" class="thumbnail icon icon-zoom"></a>
+										<img src="https://www.jikiu.com/images/069d3bb002acd8d7dd095917f9efe4cb/bush/915b1cd8c7ab729450f18d3fc6ba2397.jpg" alt="" />
+										<a data-fancybox="gallery" href="https://www.jikiu.com/images/069d3bb002acd8d7dd095917f9efe4cb/bush/915b1cd8c7ab729450f18d3fc6ba2397.jpg" class="thumbnail icon icon-zoom" aria-label="Zoom"></a>
 									</label>
 								</div>
 								<div class="subtype-item">
 									<input type="radio" id="profile_55" name="profile_id" value="55">
 									<label class="ss_profile" for="profile_55">
-										<img src="https://www.jikiu.com/images/069d3bb002acd8d7dd095917f9efe4cb/bush/6d7c911acbfcc696f7536b6a2e81a610.jpg" height="100">
-										<a  data-fancybox="gallery" href="https://www.jikiu.com/images/069d3bb002acd8d7dd095917f9efe4cb/bush/6d7c911acbfcc696f7536b6a2e81a610.jpg" class="thumbnail icon icon-zoom"></a>
+										<img src="https://www.jikiu.com/images/069d3bb002acd8d7dd095917f9efe4cb/bush/6d7c911acbfcc696f7536b6a2e81a610.jpg" alt="" />
+										<a data-fancybox="gallery" href="https://www.jikiu.com/images/069d3bb002acd8d7dd095917f9efe4cb/bush/6d7c911acbfcc696f7536b6a2e81a610.jpg" class="thumbnail icon icon-zoom" aria-label="Zoom"></a>
 									</label>
 								</div>
 								<div class="subtype-item">
 									<input type="radio" id="profile_72" name="profile_id" value="72">
 									<label class="ss_profile" for="profile_72">
-										<img src="https://www.jikiu.com/images/069d3bb002acd8d7dd095917f9efe4cb/bush/46ffada2c485ebbc9b2659d2187d0fd2.jpg" height="100">
-										<a data-fancybox="gallery" href="https://www.jikiu.com/images/069d3bb002acd8d7dd095917f9efe4cb/bush/46ffada2c485ebbc9b2659d2187d0fd2.jpg" class="thumbnail icon icon-zoom"></a>
+										<img src="https://www.jikiu.com/images/069d3bb002acd8d7dd095917f9efe4cb/bush/46ffada2c485ebbc9b2659d2187d0fd2.jpg" alt="" />
+										<a data-fancybox="gallery" href="https://www.jikiu.com/images/069d3bb002acd8d7dd095917f9efe4cb/bush/46ffada2c485ebbc9b2659d2187d0fd2.jpg" class="thumbnail icon icon-zoom" aria-label="Zoom"></a>
 									</label>
 								</div>
 							</div>
