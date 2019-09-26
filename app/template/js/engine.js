@@ -294,19 +294,47 @@ $(document).ready(function(){
 });
 
 
-$(function(){
-	$('.policy input').click(function(){
-		var $this = $(this),
-			$submit = $this.closest('.form-policy');
 
-		if ($this.is(':checked')){
-			$submit.find('.input, .form-control, .submit, .btn-submit, textarea, input[type=radio], button').removeAttr('disabled');
-		} else {
-			$submit.addClass('disabled');
-			$submit.find('.input, .form-control, .submit, .btn-submit, textarea, input[type=radio], button').attr('disabled', true);
-		}
+// MODAL MENU
+// GENERAL EVENT - ONKEYDOWN
+document.onkeydown = function(evt) {
+	evt = evt || window.event;
+	var isEscape = false;
+	if ("key" in evt) {
+		isEscape = (evt.key == "Escape" || evt.key == "Esc");
+	} else {
+		isEscape = (evt.keyCode == 27);
+	}
+	if (isEscape && document.querySelector('.genmodal.open')) {
+		document.querySelector('.genmodal.open').setAttribute('aria-hidden', 'true');
+		document.querySelector('.genmodal.open').classList.remove('open');
+	}
+};
+
+
+[].forEach.call(document.querySelectorAll('.genmodal .close'),function(el,i){
+	el.addEventListener('click', function(e){
+		document.querySelector('.genmodal.open').setAttribute('aria-hidden', 'true');
+		document.querySelector('.genmodal.open').classList.remove('open');
 	})
 });
+ 
+ 
+[].forEach.call(document.querySelectorAll('[data-popup="modal"]'),function(el,i){
+	el.addEventListener('click', function(e){
+		let modal = this.dataset.target;
+		// if (window.innerWidth < 650 && modal=='#modal-menu') {
+			// modal = '#apanel';
+		// } else{
+			// for mobile menu
+			// document.querySelector('.apanel').classList.add('open');
+		// }
+
+		document.querySelector(modal).classList.add('open');
+		document.querySelector(modal).setAttribute('aria-hidden', 'false');
+	})
+});
+
 
 
 // popup on homepage

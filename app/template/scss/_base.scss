@@ -552,6 +552,56 @@ button{
 			}
 		}
 	}
+
+	.valute{
+		margin-right: 2.5rem;
+	}
+
+	select {
+	  width: 500px;
+	}
+
+
+	// right
+	&__tel{
+		font-size: 1.5rem;
+		font-weight: 700;
+		font-family: 'Neo Sans Pro', Verdana, sans-serif;
+		white-space: nowrap;
+		.tel{		
+			&:hover{
+				color: $color2;
+				text-decoration: none;
+			}
+		}
+	}
+
+	.login{
+		align-items: center;
+		display: flex;
+		height: 50px;
+		justify-content: center;
+		position: relative;
+		text-align: center;
+		width: 165px;
+		width: 220px;
+		background: url(../images/bg/login-bg.png) no-repeat;
+		&__link{
+			position: relative;
+			z-index: 10;
+			&:hover{
+				color: $color6;
+				text-decoration: none;
+			}
+		}
+	}
+
+
+}
+
+.top,
+.modal-menu
+{
 	.country{
 		.title{
 			font-size: 2.2rem;
@@ -625,50 +675,6 @@ button{
 		}
 
 	}
-	.valute{
-		margin-right: 2.5rem;
-	}
-
-
-	select {
-	  width: 500px;
-	}
-
-
-	// right
-	&__tel{
-		font-size: 1.5rem;
-		font-weight: 700;
-		font-family: 'Neo Sans Pro', Verdana, sans-serif;
-		white-space: nowrap;
-		.tel{		
-			&:hover{
-				color: $color2;
-				text-decoration: none;
-			}
-		}
-	}
-
-	.login{
-		align-items: center;
-		display: flex;
-		height: 50px;
-		justify-content: center;
-		position: relative;
-		text-align: center;
-		width: 165px;
-		width: 220px;
-		background: url(../images/bg/login-bg.png) no-repeat;
-		&__link{
-			position: relative;
-			z-index: 10;
-			&:hover{
-				color: $color6;
-				text-decoration: none;
-			}
-		}
-	}
-
 	.dropdown{
 		&-menu{
 			transform: translate3d(0px, 20px, 0px) !important;
@@ -694,7 +700,7 @@ button{
 				vertical-align: top;
 			}
 		}
-	}
+	}	
 }
 
 .dropdown{

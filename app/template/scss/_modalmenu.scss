@@ -1,0 +1,167 @@
+.modal-menu{
+	background-color: $color3;
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	color: #fff;
+	z-index: -1;
+	transform: translateY(-100%);
+	opacity: 0;
+	transition: .5s;
+	&.open{
+		transform: translateY(0);
+		opacity: 1;
+		z-index: 200;
+	}
+	&:before{
+		@extend .before;
+		width: 0;
+		height: 0;
+		border-top: 260px solid rgba(0,152,255,.5); 
+		border-right: 260px solid transparent;	
+	}
+	a{
+		color: currentColor;
+	}
+
+	.inner{
+		position: relative;
+		z-index: 201;
+		padding-top: 15px;
+	}
+
+	.tel{
+		font-size: 1.5rem;
+		font-weight: 700;
+		font-family: 'Neo Sans Pro', Verdana, sans-serif;
+	}
+
+	.panel{
+		background-color: $color5;
+		margin-top: 10px;
+		padding: 10px 0;
+		.login{
+			align-items: center;
+			display: flex;
+			font-weight: 700;
+			margin-right: 13px;
+			&__link{
+				align-items: center;
+				display: flex;
+				height: 26px;
+				line-height: 1.2;
+				&:hover{
+					text-decoration: none;
+					&:before{
+						filter: brightness(5);
+					}
+				}
+			}
+		}
+		.icon{
+			&-compare,
+			&-littlecart{
+				filter: invert(1);				
+			}
+			&-search{
+				filter: grayscale(1) brightness(5);
+			}
+		}
+		.compare{
+			margin: 0 12px;
+		}
+	}
+
+	.catalog{
+		font-size: 15px;
+		padding: 12px 0;
+		position: relative;
+		&:before{
+			@extend .before;
+			width: 0;
+			height: 0;
+			border-top: 312px solid rgba(0,152,255,.5); 
+			border-right: 312px solid transparent;	
+			left: 0;
+			top: 0;
+		}
+		.container{
+			position: relative;
+			z-index: 202;
+		}
+		img{
+			filter: grayscale(1) brightness(5);
+			max-width: 100%;
+		}
+		a{
+			display: flex;
+			flex-direction: row;
+			justify-content: flex-start;
+			font-weight: 700;
+		}
+		.pic{
+			margin-right: 19px;
+			min-height: 35px;
+			width: 38px;
+		}
+
+		&-item{
+			margin-bottom: 2px;
+		}
+	}
+
+	.options{
+		margin-top: 6px;
+		a{
+			font-size: 1.4rem;
+		}
+	}
+
+	.country{
+		margin: 0 16px;
+		@media (max-width: 420px){
+			.dropdown-menu{
+				margin-left: -70px;
+				width: 280px;
+				.countries-wrapper{
+					width: 100%;
+				}
+			}
+			.form-control{
+				width: calc(100% - 40px);
+			}
+		}
+	}
+	.menu{
+		background-color: #778d9b;
+		padding: 1px 0;
+		li{
+			margin: 20px 0;
+		}
+		a{
+			color: #fff;
+		} 
+	}
+
+	.close{
+		padding: 0;
+		position: absolute;
+		right: 15px;
+		top: 13px;
+		z-index: 300;
+		line{
+			stroke: #fff;
+			stroke-width: 4px;
+		}
+	}
+
+	@media (max-width: 350px){
+		.lang{
+			.dropdown-menu{
+				left: auto !important;
+				right: 0;
+			}
+		}
+	}
+}
