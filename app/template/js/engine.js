@@ -3,7 +3,7 @@ $(document).ready(function(){
 		linkText: 'More',
 		linkTitle : '',
 		linkTextAll : 'Menu',
-		cutoff : '1'
+		cutoff : 0
 	});
 
 
