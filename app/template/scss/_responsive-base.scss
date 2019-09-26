@@ -37,9 +37,6 @@
 		&__right{
 			padding-right: 0;
 		}
-		.login{
-			// margin-left: 3rem;
-		}
 	}
 
 	.header{
@@ -63,17 +60,10 @@
 
 
 @media (max-width: 1199px){
-	.main-grid{
-		// overflow: hidden;
-	}
 	.top{
 		.login{
 			margin-left: -1.5rem;
 			margin-right: -2.5rem;
-			// width: 155px;
-			&:before{
-				// width: 155px;
-			}
 		}
 		&__menu{
 			width: 100%;
@@ -145,9 +135,17 @@
 }
 
 @media (max-width: 1024px){
+	.top .login{
+		margin-right: -15px;
+		padding-left: 25px;
+		width: 180px;
+	}
 }
 
 @media (max-width: 991px){
+	.top .login{
+		margin-right: -8px;
+	}
 	.footer{
 		padding-bottom: 3rem;
 		.container{
@@ -167,11 +165,6 @@
 
 
 @media (max-width: 940px){
-	.header{
-		.search{
-			// display: none;
-		}
-	}
 	.top,
 	.header{
 		display: none;
@@ -235,9 +228,6 @@
 
 
 @media (max-width: 550px){
-	#registerModal{
-
-	}
 }
 
 

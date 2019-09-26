@@ -5287,8 +5287,8 @@ button {
     height: 100%;
     line-height: 1.2;
     position: relative;
-    text-decoration-color: #0672ba;
     text-decoration: underline;
+    text-decoration-color: #0672ba;
     z-index: 2; }
     .visual__link:hover {
       color: #0099ff;
@@ -6472,7 +6472,15 @@ input.form-control.error {
     font-size: 1.6rem;
     padding-top: 89px; } }
 
+@media (max-width: 1024px) {
+  .top .login {
+    margin-right: -15px;
+    padding-left: 25px;
+    width: 180px; } }
+
 @media (max-width: 991px) {
+  .top .login {
+    margin-right: -8px; }
   .footer {
     padding-bottom: 3rem; }
     .footer .container {

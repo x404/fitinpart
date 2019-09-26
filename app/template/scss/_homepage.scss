@@ -90,12 +90,6 @@
 		margin-bottom: 2px;
 	}
 
-	.hide-radio{
-		&:first-child{
-			// display: none !important;
-		}
-	}
-	
 	.ms-drop{
 		padding: 0 0 13px;
 		.ms-search{
@@ -244,17 +238,7 @@
 	}
 
 	.form-control{
-		// background-color: $color8;
-		// border-radius: 4rem;
-		// border: none;
-		// height: 4rem;
-		// padding: 0 15px;
 		width: 41rem;
-		// transition: box-shadow .3s;
-		// &:hover,
-		// &:focus{
-		// 	box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
-		// }
 	}
 
 	
@@ -311,14 +295,12 @@
 			}
 		}
 		&-middle{
-			// background-image: url(../images/icons/search-middle.png);
 			border-radius: 4rem;
 			font-size: 1.6rem;
 			height: 4rem;
 			padding: 0 1.9rem 0 1.3rem;
 		}
 		&-big{
-			// background-image: url(../images/icons/search-big.png);
 			border-radius: 5rem;
 			font-size: 1.8rem;
 			height: 5rem;
@@ -511,7 +493,6 @@
 	.slick{
 		&-arrow{
 			height: 21px;
-			// left: 50%;
 			position: absolute;
 			top: 33px;
 			width: 12px;
@@ -530,11 +511,9 @@
 
 		&-prev{
 			left: 0;
-			// margin-left: -790px;
 			transform: rotate(180deg);
 		}
 		&-next{
-			// margin-left: 778px;
 			right: 0;
 		}
 	}
@@ -601,8 +580,8 @@
 		height: 100%;
 		line-height: 1.2;
 		position: relative;
-		text-decoration-color: $color3;
 		text-decoration: underline;
+		text-decoration-color: $color3;
 		z-index: 2;
 		&:hover{
 			color: $color9;
@@ -683,14 +662,12 @@
 
 
 .item-news{
-	// padding: 20px 0;
 	&__link{
 		overflow: hidden; 
 		background-color: #fff;
 		display: block;
 		&:hover{
 			text-decoration: none;
-				// box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
 			.item-news{
 				&__title{
 					color: $color9	
@@ -830,7 +807,6 @@
 	border-left: 1px solid #000;
 	position: relative;
 	z-index: 2;
-	// width: 530px;
 	transition: z-index .3s;
 	flex-grow: 1;
 
@@ -860,9 +836,6 @@
 
 	&__author{
 		font-weight: 700;
-		a{
-			// color: $color19;			
-		}
 	}
 
 	&__date{

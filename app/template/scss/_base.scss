@@ -213,12 +213,6 @@ em strong
 	&-littlecart{
 		@include sprite($icon-littlecart);
 		transition: filter .3s;
-
-		// &:before{
-		// 	left: 30px;
-		// 	margin-top: -12px;
-		// 	top: 50%;
-		// }		
 	}
 
 	&-cartblue{
@@ -660,31 +654,11 @@ button{
 		display: flex;
 		height: 50px;
 		justify-content: center;
-		// margin-left: 3.5rem;
 		position: relative;
 		text-align: center;
 		width: 165px;
 		width: 220px;
 		background: url(../images/bg/login-bg.png) no-repeat;
-		// &:before{
-		// 	@extend .before;
-		// 	background-color: $color5;
-		// 	bottom: 0;
-		// 	left: 0;
-		// 	top: 0;
-		// 	transform: skewX(-45deg);
-		// 	width: 165px;
-		// 	z-index: 2;
-		// }
-		// &:after{
-		// 	@extend .before;
-		// 	background-color: rgba(1,152,255,.5);
-		// 	bottom: 0;
-		// 	height: 40px;
-		// 	left: -12px;
-		// 	transform: skewX(-45deg);
-		// 	width: 165px;
-		// }
 		&__link{
 			position: relative;
 			z-index: 10;
@@ -895,7 +869,6 @@ button{
 		.shop-cart{
 			background-color: $color9;
 			color: $color2;
-			// &:before{
 			.icon{
 				filter: invert(1);
 			}
@@ -1122,14 +1095,12 @@ button{
 	}
 
 	.form-control{
-		// background: none;
 		background-color: $color8;
 		border: none;
 		flex-grow: 1;
 		font-size: 1.3rem;
 		font-style: italic;
 		height: 5rem;
-		// margin-left: 1.2rem;
 		padding-left: 190px;
 		outline: none;
 		&:focus,
@@ -1139,7 +1110,6 @@ button{
 	}
 
 	.submit{
-		// background: url(../images/icons/search-icon2.png) no-repeat center;
 		border: none;
 		cursor: pointer;
 		filter: brightness(.1) grayscale(1);
@@ -1206,7 +1176,6 @@ button{
 						cursor: default;
 					}
 					&:hover{
-						// color: $color3;
 					}
 					&.active{
 						font-weight: 700;
