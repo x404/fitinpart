@@ -6116,11 +6116,9 @@ button {
   #searchbysizeModal #spec_fields_id .form-control {
     width: 18rem; }
 
-#searchbysizeModal .subtype-list {
-  margin-top: 1rem; }
-
 #searchbysizeModal .subtype-item {
   margin-right: 1rem;
+  margin-top: 1.5rem;
   width: 13rem; }
   #searchbysizeModal .subtype-item:last-child {
     margin-right: 0; }
@@ -6514,7 +6512,9 @@ input.form-control.error {
   #registerModal .modal-dialog {
     max-width: 95%; }
   #registerModal .login-buttons {
-    margin-top: 1.5rem; } }
+    margin-top: 1.5rem; }
+  #searchbysizeModal .modal-dialog {
+    max-width: 95%; } }
 
 @media (max-width: 600px) {
   .footer .text p {
@@ -6919,13 +6919,20 @@ input.form-control.error {
     font-size: 1.4rem; }
   .brands #brands-carousel {
     padding-left: 40px;
-    padding-right: 40px; } }
+    padding-right: 40px; }
+  #searchbysizeModal #spec_fields_id label {
+    margin-right: 1.2rem; } }
 
 @media (max-width: 650px) {
   .searchbox .vehicle-maker, .searchbox .vehicle-class, .searchbox .vehicle-model, .searchbox .vehicle-body {
     width: 50%; }
   .searchbox .vehicle-year, .searchbox .vehicle-engine, .searchbox .vehicle-engineno {
-    width: 160px; } }
+    width: 160px; }
+  #searchbysizeModal #spec_fields_id label {
+    white-space: nowrap; }
+  #searchbysizeModal #spec_fields_id .form-control {
+    flex-grow: 1;
+    width: 100%; } }
 
 @media (max-width: 600px) {
   .brands .slick-arrow {
@@ -6954,7 +6961,11 @@ input.form-control.error {
     margin-left: auto;
     margin-right: auto; }
   .modal-content-bg:before, .modal-content-bg:after {
-    display: none; } }
+    display: none; }
+  #searchbysizeModal #spec_fields_id .row {
+    margin-top: 0; }
+    #searchbysizeModal #spec_fields_id .row > div {
+      margin-top: 2rem; } }
 
 @media (max-width: 520px) {
   .lastnews {
@@ -7064,3 +7075,19 @@ input.form-control.error {
       padding-right: 20px; }
   #lastnews-carousel {
     max-height: 320px; } }
+
+@media (max-width: 350px) {
+  #searchbysizeModal .subtype-item {
+    margin-right: 0;
+    text-align: center;
+    width: 100%; }
+    #searchbysizeModal .subtype-item label {
+      margin-left: auto;
+      margin-right: auto !important;
+      width: 130px; }
+  #searchbysizeModal .btn-submit {
+    margin-left: auto;
+    margin-right: auto; }
+  #searchbysizeModal .approximation_block .btn-group {
+    display: flex;
+    justify-content: center; } }

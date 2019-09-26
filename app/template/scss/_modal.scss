@@ -326,10 +326,11 @@
 
 	.subtype{
 		&-list{
-			margin-top: 1rem;
+			// margin-top: 1rem;
 		}
 		&-item{
 			margin-right: 1rem;
+			margin-top: 1.5rem;
 			width: 13rem;
 			&:last-child{
 				margin-right: 0;

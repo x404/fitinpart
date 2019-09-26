@@ -190,6 +190,10 @@
 			margin-top: 1.5rem;
 		}
 	}
+
+	#searchbysizeModal .modal-dialog{
+		max-width: 95%;
+	}
 }
 
 @media (max-width: 600px){
