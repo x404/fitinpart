@@ -3909,7 +3909,8 @@ strong,
 .submit {
   cursor: pointer; }
 
-.flex-center, .btn-google, .btn-facebook, .compare__count, .shop-cart__count, .littlecart .cart-body .btn-checkout, .littlecart .cart-body .btn-check, .searchbox__panel .checkbox__text:after, .searchbox__panel-vehicle .nav-link, .catalog a,
+.flex-center, .btn-google, .btn-facebook, .compare__count, .shop-cart__count, .littlecart .cart-body .btn-checkout, .littlecart .cart-body .btn-check, .searchbox__panel .checkbox__text:after, .searchbox .subtab-link,
+.smartsearch .subtab-link, .catalog a,
 .header .catalog__menu a, .reviews .btn-show, .smartsearch #vehicleplatenoForm .checkbox__text:after,
 .smartsearch #partnumForm .checkbox__text:after {
   display: flex;
@@ -4933,7 +4934,6 @@ button {
   .searchbox .nav .separator {
     border-left: 1px solid #d6d6d6;
     height: 28px;
-    width: 1px;
     margin: 0 2.2rem; }
   .searchbox .nav-link {
     color: #899299;
@@ -5011,19 +5011,6 @@ button {
       grid-column-end: 2;
       grid-row-start: 1;
       grid-row-end: 3; }
-      .searchbox__panel-vehicle .nav-item {
-        font-size: 1.6rem;
-        font-weight: 700; }
-      .searchbox__panel-vehicle .nav-link {
-        border-radius: 3rem;
-        border: 3px solid  #fff;
-        height: 3.6rem;
-        padding: 0 1.2rem; }
-        .searchbox__panel-vehicle .nav-link.active {
-          border-color: #0672ba; }
-      .searchbox__panel-vehicle .nav .separator {
-        height: 24px;
-        margin: 0 .9rem; }
       .searchbox__panel-vehicle .nav-top {
         margin-top: 1.2rem;
         width: 63rem; }
@@ -5085,6 +5072,31 @@ button {
     color: #959a9d;
     font-size: 1.3rem;
     margin: .4rem 0 0 4px; }
+
+.searchbox .subtab-item,
+.smartsearch .subtab-item {
+  font-size: 1.6rem;
+  font-weight: 700; }
+
+.searchbox .subtab-link,
+.smartsearch .subtab-link {
+  border-radius: 3rem;
+  border: 3px solid  #fff;
+  height: 3.6rem;
+  padding: 0 1.2rem; }
+  .searchbox .subtab-link.active,
+  .smartsearch .subtab-link.active {
+    border-color: #0672ba; }
+  .searchbox .subtab-link:hover,
+  .smartsearch .subtab-link:hover {
+    text-decoration: none; }
+
+.searchbox .subtab .separator,
+.smartsearch .subtab .separator {
+  border-left: 1px solid #d6d6d6;
+  height: 24px;
+  margin: 0 .9rem;
+  width: 1px; }
 
 .searchbox .btn-search,
 .smartsearch .btn-search {

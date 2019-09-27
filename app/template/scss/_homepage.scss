@@ -46,7 +46,7 @@
 		.separator{
 			border-left: 1px solid $color33;
 			height: 28px;
-			width: 1px;
+			// width: 1px;
 			margin: 0 2.2rem;
 		}
 		&-link{
@@ -157,27 +157,6 @@
 			grid-column-end: 2;
 			grid-row-start: 1;
 			grid-row-end: 3;
-
-			.nav{
-				&-item{
-					font-size: 1.6rem;
-					font-weight: 700;
-				}
-				&-link{
-					@extend .flex-center;
-					border-radius: 3rem;
-					border: 3px solid  #fff;
-					height: 3.6rem;
-					padding: 0 1.2rem;
-					&.active{
-						border-color: $color3;
-					}
-				}
-				.separator{
-					height: 24px;
-					margin: 0 .9rem;
-				}
-			}
 
 			.nav-top{
 				margin-top: 1.2rem;
@@ -292,6 +271,33 @@
 .searchbox,
 .smartsearch
 {
+
+	.subtab{
+		&-item{
+			font-size: 1.6rem;
+			font-weight: 700;
+		}
+		&-link{
+			@extend .flex-center;
+			border-radius: 3rem;
+			border: 3px solid  #fff;
+			height: 3.6rem;
+			padding: 0 1.2rem;
+			&.active{
+				border-color: $color3;
+			}
+			&:hover{
+				text-decoration: none;
+			}
+		}
+		.separator{
+			border-left: 1px solid $color33;
+			height: 24px;
+			margin: 0 .9rem;
+			width: 1px;
+		}
+	}
+
 
 	.btn{
 		&-search{
