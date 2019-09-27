@@ -3910,7 +3910,8 @@ strong,
   cursor: pointer; }
 
 .flex-center, .btn-google, .btn-facebook, .compare__count, .shop-cart__count, .littlecart .cart-body .btn-checkout, .littlecart .cart-body .btn-check, .searchbox__panel .checkbox__text:after, .searchbox__panel-vehicle .nav-link, .catalog a,
-.header .catalog__menu a, .reviews .btn-show {
+.header .catalog__menu a, .reviews .btn-show, .smartsearch #vehicleplatenoForm .checkbox__text:after,
+.smartsearch #partnumForm .checkbox__text:after {
   display: flex;
   align-items: center;
   justify-content: center; }
@@ -5080,29 +5081,36 @@ button {
     flex-shrink: 0; }
     .searchbox .btn-file + .btn-search {
       margin-left: 10px; }
-  .searchbox .btn-search {
-    background-position: 13px center;
-    background-repeat: no-repeat;
-    box-shadow: 0 5px 15px rgba(0, 153, 255, 0.5);
-    display: flex;
-    font-weight: 700; }
-    .searchbox .btn-search i {
-      font-style: normal;
-      margin-right: .5rem; }
-  .searchbox .btn-middle {
-    border-radius: 4rem;
-    font-size: 1.6rem;
-    height: 4rem;
-    padding: 0 1.9rem 0 1.3rem; }
-  .searchbox .btn-big {
-    border-radius: 5rem;
-    font-size: 1.8rem;
-    height: 5rem;
-    padding: 0 2.7rem 0 1.3rem; }
   .searchbox .example {
     color: #959a9d;
     font-size: 1.3rem;
     margin: .4rem 0 0 4px; }
+
+.searchbox .btn-search,
+.smartsearch .btn-search {
+  background-position: 13px center;
+  background-repeat: no-repeat;
+  box-shadow: 0 5px 15px rgba(0, 153, 255, 0.5);
+  display: flex;
+  font-weight: 700; }
+  .searchbox .btn-search i,
+  .smartsearch .btn-search i {
+    font-style: normal;
+    margin-right: .5rem; }
+
+.searchbox .btn-middle,
+.smartsearch .btn-middle {
+  border-radius: 4rem;
+  font-size: 1.6rem;
+  height: 4rem;
+  padding: 0 1.9rem 0 1.3rem; }
+
+.searchbox .btn-big,
+.smartsearch .btn-big {
+  border-radius: 5rem;
+  font-size: 1.8rem;
+  height: 5rem;
+  padding: 0 2.7rem 0 1.3rem; }
 
 /* =/searchbox
 ---------------------------*/
@@ -6119,84 +6127,6 @@ button {
 #searchbysizeModal .hide-radio {
   transition: .3s; }
 
-#searchbysizeModal #spec_fields_id {
-  margin-top: 2.1rem; }
-  #searchbysizeModal #spec_fields_id .subtype {
-    margin-bottom: 3.2rem; }
-  #searchbysizeModal #spec_fields_id .row {
-    margin-top: 2rem; }
-  #searchbysizeModal #spec_fields_id label {
-    font-size: 1.3rem;
-    margin-right: 1.7rem; }
-  #searchbysizeModal #spec_fields_id .form-control {
-    width: 18rem; }
-
-#searchbysizeModal .subtype-item {
-  margin-right: 1rem;
-  margin-top: 1.5rem;
-  width: 13rem; }
-  #searchbysizeModal .subtype-item:last-child {
-    margin-right: 0; }
-  #searchbysizeModal .subtype-item img {
-    display: block;
-    height: 80px;
-    margin-left: auto;
-    margin-right: auto; }
-  #searchbysizeModal .subtype-item input {
-    opacity: 0;
-    position: absolute; }
-    #searchbysizeModal .subtype-item input:checked + label {
-      border: 4px solid #0672ba;
-      padding: 0; }
-      #searchbysizeModal .subtype-item input:checked + label .icon-zoom {
-        right: 2px;
-        top: 2px; }
-    #searchbysizeModal .subtype-item input:hover + label {
-      border-width: 4px;
-      padding: 0; }
-      #searchbysizeModal .subtype-item input:hover + label .icon-zoom {
-        right: 2px;
-        top: 2px; }
-  #searchbysizeModal .subtype-item label {
-    cursor: pointer;
-    border: 2px solid #ebedf1;
-    display: block;
-    margin-right: 0 !important;
-    padding: 2px;
-    position: relative; }
-  #searchbysizeModal .subtype-item .icon-zoom {
-    position: absolute;
-    right: 4px;
-    top: 4px;
-    transition: none; }
-
-#searchbysizeModal .approximation_block {
-  margin-top: 2.6rem; }
-  #searchbysizeModal .approximation_block .btn-group {
-    background-color: #bcc7ce;
-    border-radius: 3rem;
-    font-size: 1rem;
-    height: 3rem;
-    margin-top: .5rem;
-    padding: .5rem .7rem; }
-    #searchbysizeModal .approximation_block .btn-group label {
-      color: #4f565b;
-      cursor: pointer;
-      font-size: 1rem;
-      line-height: 1;
-      padding: .6rem 1rem;
-      transition: .3s;
-      border-radius: 2rem; }
-    #searchbysizeModal .approximation_block .btn-group .input_approximation:checked + label {
-      background-color: #0672ba;
-      color: #fff; }
-    #searchbysizeModal .approximation_block .btn-group .input_approximation {
-      opacity: 0;
-      position: absolute; }
-      #searchbysizeModal .approximation_block .btn-group .input_approximation:hover + label {
-        background-color: #8d99a0;
-        color: #fff; }
-
 #searchbysizeModal .btn-submit {
   display: flex;
   align-items: center;
@@ -6205,6 +6135,83 @@ button {
   margin-top: 3rem; }
   #searchbysizeModal .btn-submit .icon {
     margin-right: 5px; }
+
+.spec_fields {
+  margin-top: 2.1rem; }
+  .spec_fields .subtype {
+    margin-bottom: 3.2rem; }
+  .spec_fields .row {
+    margin-top: 2rem; }
+  .spec_fields label {
+    font-size: 1.3rem;
+    margin-right: 1.7rem; }
+  .spec_fields .form-control {
+    width: 18rem; }
+  .spec_fields .subtype-item {
+    margin-right: 1rem;
+    margin-top: 1.5rem;
+    width: 13rem; }
+    .spec_fields .subtype-item:last-child {
+      margin-right: 0; }
+    .spec_fields .subtype-item img {
+      display: block;
+      height: 80px;
+      margin-left: auto;
+      margin-right: auto; }
+    .spec_fields .subtype-item input {
+      opacity: 0;
+      position: absolute; }
+      .spec_fields .subtype-item input:checked + label {
+        border: 4px solid #0672ba;
+        padding: 0; }
+        .spec_fields .subtype-item input:checked + label .icon-zoom {
+          right: 2px;
+          top: 2px; }
+      .spec_fields .subtype-item input:hover + label {
+        border-width: 4px;
+        padding: 0; }
+        .spec_fields .subtype-item input:hover + label .icon-zoom {
+          right: 2px;
+          top: 2px; }
+    .spec_fields .subtype-item label {
+      cursor: pointer;
+      border: 2px solid #ebedf1;
+      display: block;
+      margin-right: 0 !important;
+      padding: 2px;
+      position: relative; }
+    .spec_fields .subtype-item .icon-zoom {
+      position: absolute;
+      right: 4px;
+      top: 4px;
+      transition: none; }
+
+.approximation_block {
+  margin-top: 2.6rem; }
+  .approximation_block .btn-group {
+    background-color: #bcc7ce;
+    border-radius: 3rem;
+    font-size: 1rem;
+    height: 3rem;
+    margin-top: .5rem;
+    padding: .5rem .7rem; }
+    .approximation_block .btn-group label {
+      color: #4f565b;
+      cursor: pointer;
+      font-size: 1rem;
+      line-height: 1;
+      padding: .6rem 1rem;
+      transition: .3s;
+      border-radius: 2rem; }
+    .approximation_block .btn-group .input_approximation:checked + label {
+      background-color: #0672ba;
+      color: #fff; }
+    .approximation_block .btn-group .input_approximation {
+      opacity: 0;
+      position: absolute; }
+      .approximation_block .btn-group .input_approximation:hover + label {
+        background-color: #8d99a0;
+        color: #fff; }
 
 .modal-info {
   display: none;
@@ -6249,6 +6256,13 @@ label.error {
 
 input.form-control.error {
   border: 1px solid #c91537; }
+
+#mobSearch .modal-dialog {
+  width: 300px; }
+
+#mobSearch .close {
+  right: 10px;
+  top: 10px; }
 
 .modal-menu {
   background-color: #0672ba;
@@ -6366,6 +6380,153 @@ input.form-control.error {
     .modal-menu .lang .dropdown-menu {
       left: auto !important;
       right: 0; } }
+
+.main ol {
+  counter-reset: li;
+  list-style: none; }
+  .main ol li {
+    margin: 1rem 0;
+    padding-left: 20px;
+    position: relative; }
+    .main ol li:before {
+      color: #119af7;
+      content: counter(li, decimal) ".";
+      counter-increment: li;
+      font-size: 14px;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 20px; }
+
+.smartsearch {
+  padding: 1.5rem; }
+  .smartsearch__header {
+    align-items: center;
+    display: flex;
+    font-family: 'Neo Sans Pro', Verdana, sans-serif; }
+    .smartsearch__header .title {
+      color: #000;
+      font-size: 1.6rem; }
+    .smartsearch__header .ms-parent {
+      font-size: 1.6rem;
+      width: 180px !important; }
+    .smartsearch__header .ms-choice {
+      background: none;
+      color: #0672ba;
+      font-family: 'Neo Sans Pro', Verdana, sans-serif;
+      font-weight: 700;
+      height: auto;
+      padding-right: 15px;
+      position: relative;
+      width: auto !important; }
+      .smartsearch__header .ms-choice > span {
+        line-height: 1.8; }
+      .smartsearch__header .ms-choice > div {
+        background-color: transparent;
+        height: 7px;
+        right: 1px;
+        top: 12px;
+        width: 10px; }
+        .smartsearch__header .ms-choice > div:before {
+          transition: transform .3s; }
+        .smartsearch__header .ms-choice > div.open:before {
+          transform: rotate(-180deg); }
+      .smartsearch__header .ms-choice:hover, .smartsearch__header .ms-choice:focus {
+        background-color: transparent;
+        box-shadow: none !important; }
+        .smartsearch__header .ms-choice:hover > span, .smartsearch__header .ms-choice:focus > span {
+          color: #0099ff; }
+        .smartsearch__header .ms-choice:hover div, .smartsearch__header .ms-choice:focus div {
+          background-color: transparent; }
+          .smartsearch__header .ms-choice:hover div:before, .smartsearch__header .ms-choice:focus div:before {
+            filter: none; }
+    .smartsearch__header .ms-drop {
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+      border-radius: 0 0 12px 12px;
+      padding: 5px 0 0;
+      width: 160px; }
+      .smartsearch__header .ms-drop ul > li.hide-radio:before, .smartsearch__header .ms-drop ul > li.hide-radio:after {
+        display: none; }
+      .smartsearch__header .ms-drop ul > li.hide-radio.selected {
+        background-color: #0672ba;
+        color: #ffffff; }
+      .smartsearch__header .ms-drop ul > li span {
+        padding-left: 1.2rem;
+        padding-right: 1.2rem; }
+  .smartsearch form {
+    margin-top: .8rem; }
+  .smartsearch .btn-search {
+    align-items: center;
+    font-size: 1.6rem;
+    margin-top: 1.3rem; }
+  .smartsearch .switch {
+    margin-top: .5rem;
+    margin-bottom: 1.2rem; }
+  .smartsearch #vehicleplatenoForm .checkbox input,
+  .smartsearch #partnumForm .checkbox input {
+    opacity: 0;
+    position: absolute;
+    z-index: -1; }
+  .smartsearch #vehicleplatenoForm .checkbox__text,
+  .smartsearch #partnumForm .checkbox__text {
+    cursor: pointer;
+    height: 30px;
+    margin-left: 10px;
+    padding: 0 0 0 70px;
+    position: relative; }
+  .smartsearch #vehicleplatenoForm .checkbox__text:before,
+  .smartsearch #partnumForm .checkbox__text:before {
+    background: #bcc7ce;
+    border-radius: 30px;
+    content: '';
+    height: 30px;
+    left: 0;
+    position: absolute;
+    transition: .2s;
+    width: 69px; }
+  .smartsearch #vehicleplatenoForm .checkbox__text:after,
+  .smartsearch #partnumForm .checkbox__text:after {
+    background: #FFF;
+    border-radius: 10px;
+    color: #6a6a6a;
+    content: 'OFF';
+    font-size: .8rem;
+    height: 20px;
+    padding-top: 2px;
+    position: absolute;
+    right: 6px;
+    top: 5px;
+    transition: .2s;
+    width: 33px; }
+  .smartsearch #vehicleplatenoForm .checkbox input:checked + .checkbox__text:before,
+  .smartsearch #partnumForm .checkbox input:checked + .checkbox__text:before {
+    background: #0672ba;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2); }
+  .smartsearch #vehicleplatenoForm .checkbox input:checked + .checkbox__text:after,
+  .smartsearch #partnumForm .checkbox input:checked + .checkbox__text:after {
+    content: "ON";
+    right: 32px; }
+  .smartsearch .control-item {
+    margin-top: 1rem; }
+    .smartsearch .control-item label {
+      white-space: nowrap; }
+    .smartsearch .control-item .form-control {
+      flex-grow: 1;
+      margin-left: 1.7rem; }
+  .smartsearch .approximation_block {
+    margin-top: 1.5rem;
+    margin-bottom: 2.5rem; }
+  .smartsearch .subtype-list {
+    justify-content: space-between; }
+  .smartsearch .spec_fields .subtype-item {
+    margin-right: 0;
+    margin-top: 1rem;
+    width: 48%; }
+  .smartsearch .spec_fields .form-control {
+    margin-left: 0;
+    width: 100%; }
+  .smartsearch .type_id_wrapper .ms-parent {
+    width: 100% !important; }
 
 /* =mobile-menu
 ---------------------------*/

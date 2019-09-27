@@ -10,6 +10,11 @@ $(document).ready(function(){
 	$("#typesearch_select").multipleSelect({
 		single: true,
 		filter: false
+	});
+
+	$("#typesearch_select2").multipleSelect({
+		single: true,
+		filter: false
 	})
 
 	$('.count-price .plus').on('click', function(e){

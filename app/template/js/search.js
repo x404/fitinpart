@@ -161,6 +161,22 @@ $(document).ready(function(){
 	});
 
 
+	// sm - smartsearch
+	$("#sm_ss_type_id").multipleSelect({
+		single: true,
+		filter: true,
+		placeholder : 'Parts type',
+		onFilter: function(){
+			typelist.update();
+		},
+		onOpen: function() {
+			typelist.update();
+		},
+
+		onClick: function(view) {
+		}
+	});
+
 	var brandlist = new PerfectScrollbar('#car .brand .listwrapper', {
 		wheelPropagation: true,
 		minScrollbarLength: 100,
@@ -197,6 +213,13 @@ $(document).ready(function(){
 		maxScrollbarLength: 100,
 	});
 	var typelist = new PerfectScrollbar('#searchbysizeModal .listwrapper', {
+		wheelPropagation: true,
+		minScrollbarLength: 100,
+		maxScrollbarLength: 100,
+	});
+
+	// smartsearch
+	var smtypelist = new PerfectScrollbar('#mobSearch .listwrapper', {
 		wheelPropagation: true,
 		minScrollbarLength: 100,
 		maxScrollbarLength: 100,

@@ -891,7 +891,7 @@
 			<!-- =/compare -->
 
 			<!-- =search -->
-			<button type="button" class="btn btn-search" aria-label="Search"><i class="icon icon-search"></i></button>
+			<button type="button" class="btn btn-search" aria-label="Search" data-toggle="modal" data-target="#mobSearch"><i class="icon icon-search"></i></button>
 			<!-- =/search -->
 
 			<div class="littlecart">
@@ -938,7 +938,7 @@
 						<div class="dropdown-menu" aria-labelledby="dropdownCountryLink">
 							<p class="title">Choose your country</p>
 							<div class="countries-wrapper">
-								<input type="text" class="form-control" id="search-country" autocomplete="off" />
+								<input type="text" class="form-control" id="search-country-mob" autocomplete="off" />
 								<div class="countries-list">
 									<a href="#" class="dropdown-item" title="">Afghanistan</a>
 									<a href="#" class="dropdown-item" title="">Åland Islands</a>
@@ -1013,7 +1013,7 @@
 							<a href="#" class="login__link icon icon-user" data-toggle="modal" data-target="#loginModal">My account</a>
 						</div>
 						<!-- =search -->
-						<button type="button" class="btn btn-search" aria-label="Search"><i class="icon icon-search"></i></button>
+						<button type="button" class="btn btn-search" aria-label="Search" data-toggle="modal" data-target="#mobSearch"><i class="icon icon-search"></i></button>
 						<!-- =/search -->
 
 						<!-- =compare -->
@@ -2465,7 +2465,7 @@
 							<option id="pt_223" value="p223">STRUT BAR RUBBER/BUSH</option>
 						</select>
 					</div>
-					<div id="spec_fields_id">
+					<div id="spec_fields_id" class="spec_fields">
 						<div class="subtype">
 							<p>Chose your type</p>
 							<div class="subtype-list d-flex flex-wrap">
@@ -2551,6 +2551,164 @@
 		</div>
 	</div>
 </div>
+
+
+<!-- mobile search -->
+<div class="modal fade" id="mobSearch" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered" role="document">
+		<div class="modal-content">
+			<div class="smartsearch">
+				<div class="smartsearch__header">
+					<h5 class="title" id="searchModalLabel">Search by</h5>
+					<div class="dropdown">
+						<select id="typesearch_select2" name="typesearch" >
+							<option value="1" selected="selected">Part Number</option>
+							<option value="2">Vehicle</option>
+							<option value="3">VIN or Chassis No</option>
+							<option value="4">Vehicle Search</option>
+							<option value="5">Search by size</option>
+						</select>
+					</div>
+				</div>
+				<div class="smartsearch__body">
+					<form action="#" method="get" id="partnumForm">
+						<fieldset>
+							<input type="text" class="form-control" name="search" placeholder="Example: JHMCU26609213298" />
+							<button type="submit" class="btn btn-search btn-middle btn-blue btn-blue-lighten-hover" aria-label="Search"><i class="icon icon-search-middle"></i>Search</button>
+						</fieldset>
+					</form>
+					<form action="#" method="get" id="vehicleplatenoForm">
+						<fieldset>
+							<input type="text" class="form-control" name="search" placeholder="Example: JHMCU26609213298" />
+							<button type="submit" class="btn btn-search btn-middle btn-blue btn-blue-lighten-hover" aria-label="Search"><i class="icon icon-search-middle"></i>Search</button>
+						</fieldset>
+					</form>
+					<form action="#" method="get" id="partnumForm">
+						<fieldset>
+							<div class="switch d-flex align-items-center">
+								Multi Line
+								<label class="checkbox">
+									<input type="checkbox" name="multiline" value="" aria-label="Multiline" />
+									<div class="checkbox__text"></div>
+								</label>
+							</div>							
+							<input type="text" class="form-control" name="search" placeholder="Example: JHMCU26609213298" />
+							<button type="submit" class="btn btn-search btn-middle btn-blue btn-blue-lighten-hover" aria-label="Search"><i class="icon icon-search-middle"></i>Search</button>
+						</fieldset>
+					</form>
+
+					<form action="#" method="get" id="sizeForm">
+						<fieldset>
+							<div class="type_id_wrapper">
+								<select name="ms_type_id" id="sm_ss_type_id" class="ss_type_id" multiple="multiple">
+									<option value=""> Parts type </option>
+									<option id="cat_1" value="1">Brake pads</option>
+									<option id="cat_288" value="288">Perfomance Brake pads</option>
+									<option id="cat_35" value="35">Rotor Disc</option>
+									<option id="cat_2" value="2">Brake Shoe</option>
+									<option id="cat_7" value="7">Cabin Filter</option>
+									<option id="cat_25" value="25">Air Filter</option>
+									<option id="cat_9" value="9">Oil Filter (element)</option>
+									<option id="cat_8" value="8">Oil Filter (spin-on)</option>
+									<option id="cat_11" value="11">Diesel Filter (spin-on)</option>
+									<option id="cat_12" value="12">Fuel Filter (element)</option>
+									<option id="pt_230" value="p230">BODY/FRAME BUSH</option>
+									<option id="pt_164" value="p164">BUSH, SUSPENSION</option>
+									<option id="pt_166" value="p166">DIFFERENTIAL MOUNTING</option>
+									<option id="pt_167" value="p167">DRIVE SHAFT BOOT</option>
+									<option id="pt_257" value="p257">ENGINE BUSHING</option>
+									<option id="pt_231" value="p231">SHOCK ABSORBER BUSH</option>
+									<option id="pt_285" value="p285">SPRING SHACKLE BUSH</option>
+									<option id="pt_258" value="p258">SPRING SHACKLE RUBBER</option>
+									<option id="pt_181" value="p181">STABILIZER BUSH</option>
+									<option id="pt_171" value="p171">STEERING BUSH</option>
+									<option id="pt_182" value="p182">STEERING GEAR BOOT</option>
+									<option id="pt_223" value="p223">STRUT BAR RUBBER/BUSH</option>
+								</select>
+							</div>
+							<div id="sm_spec_fields_id" class="spec_fields">
+								<div class="subtype">
+									<p>Chose your type</p>
+									<div class="subtype-list d-flex flex-wrap">
+										<div class="subtype-item">
+											<input type="radio" id="sm_profile_47" name="profile_id" value="47" checked="checked">
+											<label class="ss_profile" for="sm_profile_47">
+												<img src="https://www.jikiu.com/images/069d3bb002acd8d7dd095917f9efe4cb/bush/add594452a4336fb0eb7e0565af02689.jpg" alt="" />
+												<a data-fancybox="gallery" href="https://www.jikiu.com/images/069d3bb002acd8d7dd095917f9efe4cb/bush/add594452a4336fb0eb7e0565af02689.jpg" class="thumbnail icon icon-zoom" aria-label="Zoom"></a>
+											</label>
+										</div>
+										<div class="subtype-item">
+											<input type="radio" id="sm_profile_48" name="profile_id" value="48">
+											<label class="ss_profile" for="sm_profile_48">
+												<img src="https://www.jikiu.com/images/069d3bb002acd8d7dd095917f9efe4cb/bush/915b1cd8c7ab729450f18d3fc6ba2397.jpg" alt="" />
+												<a data-fancybox="gallery" href="https://www.jikiu.com/images/069d3bb002acd8d7dd095917f9efe4cb/bush/915b1cd8c7ab729450f18d3fc6ba2397.jpg" class="thumbnail icon icon-zoom" aria-label="Zoom"></a>
+											</label>
+										</div>
+										<div class="subtype-item">
+											<input type="radio" id="sm_profile_55" name="profile_id" value="55">
+											<label class="ss_profile" for="sm_profile_55">
+												<img src="https://www.jikiu.com/images/069d3bb002acd8d7dd095917f9efe4cb/bush/6d7c911acbfcc696f7536b6a2e81a610.jpg" alt="" />
+												<a data-fancybox="gallery" href="https://www.jikiu.com/images/069d3bb002acd8d7dd095917f9efe4cb/bush/6d7c911acbfcc696f7536b6a2e81a610.jpg" class="thumbnail icon icon-zoom" aria-label="Zoom"></a>
+											</label>
+										</div>
+										<div class="subtype-item">
+											<input type="radio" id="sm_profile_72" name="profile_id" value="72">
+											<label class="ss_profile" for="sm_profile_72">
+												<img src="https://www.jikiu.com/images/069d3bb002acd8d7dd095917f9efe4cb/bush/46ffada2c485ebbc9b2659d2187d0fd2.jpg" alt="" />
+												<a data-fancybox="gallery" href="https://www.jikiu.com/images/069d3bb002acd8d7dd095917f9efe4cb/bush/46ffada2c485ebbc9b2659d2187d0fd2.jpg" class="thumbnail icon icon-zoom" aria-label="Zoom"></a>
+											</label>
+										</div>
+									</div>
+								</div>
+								<div class="control-item d-flex align-items-center">
+									<label for="sm_spec1">Size A (mm)</label>
+									<input type="text" class="form-control" value="" name="specs[]" id="sm_spec1">
+								</div>
+								<div class="control-item d-flex align-items-center">
+									<label for="sm_spec2">Size B (mm)</label>
+									<input type="text" class="form-control" value="" name="specs[]" id="sm_spec2">
+								</div>
+								<div class="control-item d-flex align-items-center">
+									<label for="sm_spec3">Size C (mm)</label>
+									<input type="text" class="form-control" value="" name="specs[]" id="sm_spec3">
+								</div>
+								<div class="control-item d-flex align-items-center">
+									<label for="sm_spec4">Size D (mm)</label>
+									<input type="text" class="form-control" value="" name="specs[]" id="sm_spec4">
+								</div>
+								<div class="control-item d-flex align-items-center">
+									<label for="sm_spec5">TYPE: (mm)</label>
+									<input type="text" class="form-control" value="" name="specs[]" id="sm_spec5">
+								</div>
+							</div>
+							<div class="approximation_block">
+								<p>Approximation</p>
+								<div class="btn-group" data-toggle="buttons">
+									<input class="input_approximation" type="radio" name="approximation" id="sm_approximation05" value="0.5"><label for="sm_approximation05"> +/-0.5 mm</label>
+									<input class="input_approximation" type="radio" name="approximation" id="sm_approximation3" value="3" checked="checked"><label for="sm_approximation3"> +/-3 mm</label>
+									<input class="input_approximation" type="radio" name="approximation" id="sm_approximation5" value="5"><label for="sm_approximation5"> +/-5 mm</label>
+									<input class="input_approximation" type="radio" name="approximation" id="sm_approximation10" value="10"><label for="sm_approximation10"> +/-10 mm</label>
+								</div>
+							</div>
+
+							<button type="submit" class="btn btn-search btn-middle btn-blue btn-blue-lighten-hover" aria-label="Search"><i class="icon icon-search-middle"></i>Search</button>
+						</fieldset>
+					</form>
+				</div>
+			</div>
+
+			<button type="button" class="close a-rotate90" data-dismiss="modal" aria-label="Close">
+				<svg width="22" height="22">
+					<line x1="0" y1="0" x2="22" y2="22"/>
+					<line x1="22" y1="0" x2="0" y2="22"/>
+				</svg>
+			</button>
+		</div>
+	</div>
+</div>
+
+
+
 <!-- =/Modal -->
 
 
