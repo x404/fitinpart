@@ -21,6 +21,14 @@
 }
 
 
+.smartsearchForm
+{
+	display: none;
+	&.open{
+		display: block;
+	}
+}
+
 .smartsearch{
 	padding: 1.5rem;
 	&__header{
@@ -206,6 +214,22 @@
 	.type_id_wrapper {
 		.ms-parent{
 			width: 100% !important;
+		}
+	}
+
+	.ms-choice{
+		margin-left: 16px;
+		& > span{
+			padding-left: 0;
+		}
+	}
+
+	.ms-drop.bottom{
+		left: 15px;
+		top: 100%;
+		padding-top: 0;
+		ul{
+			padding: 0;
 		}
 	}
 }

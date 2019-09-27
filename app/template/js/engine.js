@@ -14,7 +14,11 @@ $(document).ready(function(){
 
 	$("#typesearch_select2").multipleSelect({
 		single: true,
-		filter: false
+		filter: false,
+		onClick: function(view) {
+			(document.querySelectorAll('.smartsearchForm.open').length == 1) ? document.querySelector('.smartsearchForm.open').classList.remove('open') : ''; 
+			document.querySelector('#' + view.value).classList.add('open')
+		}
 	})
 
 	$('.count-price .plus').on('click', function(e){

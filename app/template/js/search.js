@@ -172,7 +172,6 @@ $(document).ready(function(){
 		onOpen: function() {
 			typelist.update();
 		},
-
 		onClick: function(view) {
 		}
 	});

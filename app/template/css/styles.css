@@ -6398,6 +6398,11 @@ input.form-control.error {
       top: 0;
       width: 20px; }
 
+.smartsearchForm {
+  display: none; }
+  .smartsearchForm.open {
+    display: block; }
+
 .smartsearch {
   padding: 1.5rem; }
   .smartsearch__header {
@@ -6527,6 +6532,16 @@ input.form-control.error {
     width: 100%; }
   .smartsearch .type_id_wrapper .ms-parent {
     width: 100% !important; }
+  .smartsearch .ms-choice {
+    margin-left: 16px; }
+    .smartsearch .ms-choice > span {
+      padding-left: 0; }
+  .smartsearch .ms-drop.bottom {
+    left: 15px;
+    top: 100%;
+    padding-top: 0; }
+    .smartsearch .ms-drop.bottom ul {
+      padding: 0; }
 
 /* =mobile-menu
 ---------------------------*/
