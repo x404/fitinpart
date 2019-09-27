@@ -111,6 +111,14 @@
 				}
 			}
 		}
+
+
+		.ms-choice{
+			margin-left: 16px;
+			& > span{
+				padding-left: 0;
+			}
+		}
 	}
 
 	form{
@@ -217,12 +225,6 @@
 		}
 	}
 
-	.ms-choice{
-		margin-left: 16px;
-		& > span{
-			padding-left: 0;
-		}
-	}
 
 	.ms-drop.bottom{
 		left: 15px;

@@ -6458,6 +6458,10 @@ input.form-control.error {
       .smartsearch__header .ms-drop ul > li span {
         padding-left: 1.2rem;
         padding-right: 1.2rem; }
+    .smartsearch__header .ms-choice {
+      margin-left: 16px; }
+      .smartsearch__header .ms-choice > span {
+        padding-left: 0; }
   .smartsearch form {
     margin-top: .8rem; }
   .smartsearch .btn-search {
@@ -6532,10 +6536,6 @@ input.form-control.error {
     width: 100%; }
   .smartsearch .type_id_wrapper .ms-parent {
     width: 100% !important; }
-  .smartsearch .ms-choice {
-    margin-left: 16px; }
-    .smartsearch .ms-choice > span {
-      padding-left: 0; }
   .smartsearch .ms-drop.bottom {
     left: 15px;
     top: 100%;
