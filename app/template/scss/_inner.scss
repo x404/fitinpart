@@ -30,7 +30,7 @@
 }
 
 .smartsearch{
-	padding: 1.5rem;
+	padding: 1.3rem 1.8rem;
 	&__header{
 		align-items: center;
 		display: flex;
@@ -139,52 +139,7 @@
 	#vehicleplatenoForm,
 	#partnumForm
 	{
-		.checkbox input {
-			opacity: 0;
-			position: absolute;
-			z-index: -1;
-		}
-		.checkbox__text {
-			cursor: pointer;
-			height: 30px;
-			margin-left: 10px;
-			padding: 0 0 0 70px;
-			position: relative;
-		}
-		.checkbox__text:before {
-			background: $color35;
-			border-radius: 30px;
-			content: '';
-			height: 30px;
-			left: 0;
-			position: absolute;
-			// top: -4px;
-			transition: .2s;
-			width: 69px;
-		}
-		.checkbox__text:after {
-			@extend .flex-center;
-			background: #FFF;
-			border-radius: 10px;
-			color: #6a6a6a;
-			content: 'OFF';
-			font-size: .8rem;
-			height: 20px;
-			padding-top: 2px;
-			position: absolute;
-			right: 6px;
-			top: 5px;
-			transition: .2s;
-			width: 33px;
-		}
-		.checkbox input:checked + .checkbox__text:before {
-			background: $color3;
-			box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
-		}
-		.checkbox input:checked + .checkbox__text:after {
-			content: "ON";
-			right: 32px;
-		}
+
 	}
 
 	.control-item{
@@ -234,4 +189,72 @@
 			padding: 0;
 		}
 	}
+
+	.vehicle-control{
+		margin-bottom: 1.5rem;
+		width: 100%;
+		.ms-drop.bottom{
+			left: 0;
+		}
+	}
+
+	.ms-search{
+		margin: 1.5rem 0;
+	}
+	.ms-parent{
+		&.year,
+		&.engine,
+		&.engineno
+		{
+			width: 150px !important;
+		}
+	}
+}
+
+
+.checkbox input {
+	opacity: 0;
+	position: absolute;
+	z-index: -1;
+}
+.checkbox__text {
+	cursor: pointer;
+	height: 30px;
+	margin-left: 10px;
+	padding: 0 0 0 70px;
+	position: relative;
+}
+.checkbox__text:before {
+	background: $color35;
+	border-radius: 30px;
+	content: '';
+	height: 30px;
+	left: 0;
+	position: absolute;
+	// top: -4px;
+	transition: .2s;
+	width: 69px;
+}
+.checkbox__text:after {
+	@extend .flex-center;
+	background: #FFF;
+	border-radius: 10px;
+	color: #6a6a6a;
+	content: 'OFF';
+	font-size: .8rem;
+	height: 20px;
+	padding-top: 2px;
+	position: absolute;
+	right: 6px;
+	top: 5px;
+	transition: .2s;
+	width: 33px;
+}
+.checkbox input:checked + .checkbox__text:before {
+	background: $color3;
+	box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+.checkbox input:checked + .checkbox__text:after {
+	content: "ON";
+	right: 32px;
 }

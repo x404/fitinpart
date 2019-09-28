@@ -3911,8 +3911,7 @@ strong,
 
 .flex-center, .btn-google, .btn-facebook, .compare__count, .shop-cart__count, .littlecart .cart-body .btn-checkout, .littlecart .cart-body .btn-check, .searchbox__panel .checkbox__text:after, .searchbox .subtab-link,
 .smartsearch .subtab-link, .catalog a,
-.header .catalog__menu a, .reviews .btn-show, .smartsearch #vehicleplatenoForm .checkbox__text:after,
-.smartsearch #partnumForm .checkbox__text:after {
+.header .catalog__menu a, .reviews .btn-show, .checkbox__text:after {
   display: flex;
   align-items: center;
   justify-content: center; }
@@ -4895,31 +4894,37 @@ button {
 ---------------------------*/
 .searchbox .listwrapper,
 .header .vehicle-search .listwrapper,
-#searchbysizeModal .listwrapper {
+#searchbysizeModal .listwrapper,
+#vehicleForm .listwrapper {
   height: 250px;
   overflow: hidden;
   position: relative;
   z-index: 10; }
   .searchbox .listwrapper ul,
   .header .vehicle-search .listwrapper ul,
-  #searchbysizeModal .listwrapper ul {
+  #searchbysizeModal .listwrapper ul,
+  #vehicleForm .listwrapper ul {
     max-height: none !important;
     height: auto !important; }
     .searchbox .listwrapper ul li,
     .header .vehicle-search .listwrapper ul li,
-    #searchbysizeModal .listwrapper ul li {
+    #searchbysizeModal .listwrapper ul li,
+    #vehicleForm .listwrapper ul li {
       width: calc(100% - 27px) !important; }
   .searchbox .listwrapper .ps__rail-y,
   .header .vehicle-search .listwrapper .ps__rail-y,
-  #searchbysizeModal .listwrapper .ps__rail-y {
+  #searchbysizeModal .listwrapper .ps__rail-y,
+  #vehicleForm .listwrapper .ps__rail-y {
     width: 3px; }
   .searchbox .listwrapper .ps__thumb-y,
   .header .vehicle-search .listwrapper .ps__thumb-y,
-  #searchbysizeModal .listwrapper .ps__thumb-y {
+  #searchbysizeModal .listwrapper .ps__thumb-y,
+  #vehicleForm .listwrapper .ps__thumb-y {
     right: -3px; }
   .searchbox .listwrapper .ms-no-results,
   .header .vehicle-search .listwrapper .ms-no-results,
-  #searchbysizeModal .listwrapper .ms-no-results {
+  #searchbysizeModal .listwrapper .ms-no-results,
+  #vehicleForm .listwrapper .ms-no-results {
     padding-left: 26px;
     font-size: 1.5rem; }
 
@@ -6416,7 +6421,7 @@ input.form-control.error {
     display: block; }
 
 .smartsearch {
-  padding: 1.5rem; }
+  padding: 1.3rem 1.8rem; }
   .smartsearch__header {
     align-items: center;
     display: flex;
@@ -6483,50 +6488,6 @@ input.form-control.error {
   .smartsearch .switch {
     margin-top: .5rem;
     margin-bottom: 1.2rem; }
-  .smartsearch #vehicleplatenoForm .checkbox input,
-  .smartsearch #partnumForm .checkbox input {
-    opacity: 0;
-    position: absolute;
-    z-index: -1; }
-  .smartsearch #vehicleplatenoForm .checkbox__text,
-  .smartsearch #partnumForm .checkbox__text {
-    cursor: pointer;
-    height: 30px;
-    margin-left: 10px;
-    padding: 0 0 0 70px;
-    position: relative; }
-  .smartsearch #vehicleplatenoForm .checkbox__text:before,
-  .smartsearch #partnumForm .checkbox__text:before {
-    background: #bcc7ce;
-    border-radius: 30px;
-    content: '';
-    height: 30px;
-    left: 0;
-    position: absolute;
-    transition: .2s;
-    width: 69px; }
-  .smartsearch #vehicleplatenoForm .checkbox__text:after,
-  .smartsearch #partnumForm .checkbox__text:after {
-    background: #FFF;
-    border-radius: 10px;
-    color: #6a6a6a;
-    content: 'OFF';
-    font-size: .8rem;
-    height: 20px;
-    padding-top: 2px;
-    position: absolute;
-    right: 6px;
-    top: 5px;
-    transition: .2s;
-    width: 33px; }
-  .smartsearch #vehicleplatenoForm .checkbox input:checked + .checkbox__text:before,
-  .smartsearch #partnumForm .checkbox input:checked + .checkbox__text:before {
-    background: #0672ba;
-    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2); }
-  .smartsearch #vehicleplatenoForm .checkbox input:checked + .checkbox__text:after,
-  .smartsearch #partnumForm .checkbox input:checked + .checkbox__text:after {
-    content: "ON";
-    right: 32px; }
   .smartsearch .control-item {
     margin-top: 1rem; }
     .smartsearch .control-item label {
@@ -6554,6 +6515,59 @@ input.form-control.error {
     padding-top: 0; }
     .smartsearch .ms-drop.bottom ul {
       padding: 0; }
+  .smartsearch .vehicle-control {
+    margin-bottom: 1.5rem;
+    width: 100%; }
+    .smartsearch .vehicle-control .ms-drop.bottom {
+      left: 0; }
+  .smartsearch .ms-search {
+    margin: 1.5rem 0; }
+  .smartsearch .ms-parent.year, .smartsearch .ms-parent.engine, .smartsearch .ms-parent.engineno {
+    width: 150px !important; }
+
+.checkbox input {
+  opacity: 0;
+  position: absolute;
+  z-index: -1; }
+
+.checkbox__text {
+  cursor: pointer;
+  height: 30px;
+  margin-left: 10px;
+  padding: 0 0 0 70px;
+  position: relative; }
+
+.checkbox__text:before {
+  background: #bcc7ce;
+  border-radius: 30px;
+  content: '';
+  height: 30px;
+  left: 0;
+  position: absolute;
+  transition: .2s;
+  width: 69px; }
+
+.checkbox__text:after {
+  background: #FFF;
+  border-radius: 10px;
+  color: #6a6a6a;
+  content: 'OFF';
+  font-size: .8rem;
+  height: 20px;
+  padding-top: 2px;
+  position: absolute;
+  right: 6px;
+  top: 5px;
+  transition: .2s;
+  width: 33px; }
+
+.checkbox input:checked + .checkbox__text:before {
+  background: #0672ba;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2); }
+
+.checkbox input:checked + .checkbox__text:after {
+  content: "ON";
+  right: 32px; }
 
 /* =mobile-menu
 ---------------------------*/
