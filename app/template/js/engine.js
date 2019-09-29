@@ -342,13 +342,6 @@ document.onkeydown = function(evt) {
 [].forEach.call(document.querySelectorAll('[data-popup="modal"]'),function(el,i){
 	el.addEventListener('click', function(e){
 		let modal = this.dataset.target;
-		// if (window.innerWidth < 650 && modal=='#modal-menu') {
-			// modal = '#apanel';
-		// } else{
-			// for mobile menu
-			// document.querySelector('.apanel').classList.add('open');
-		// }
-
 		document.querySelector(modal).classList.add('open');
 		document.querySelector(modal).setAttribute('aria-hidden', 'false');
 	})
