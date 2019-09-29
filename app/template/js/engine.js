@@ -9,13 +9,23 @@ $(document).ready(function(){
 
 	$("#typesearch_select").multipleSelect({
 		single: true,
-		filter: false
+		filter: false,
+		onClick: function(view) {
+			// show form
+			if (view.value === 'sizeForm1'){
+				$('#searchbysizeModal').modal('show')
+			} else {
+				(document.querySelectorAll('.searchForm.open').length == 1) ? document.querySelector('.searchForm.open').classList.remove('open') : ''; 
+				document.querySelector('#' + view.value).classList.add('open');
+			}
+		}
 	});
 
 	$("#typesearch_select2").multipleSelect({
 		single: true,
 		filter: false,
 		onClick: function(view) {
+			// show form
 			(document.querySelectorAll('.smartsearchForm.open').length == 1) ? document.querySelector('.smartsearchForm.open').classList.remove('open') : ''; 
 			document.querySelector('#' + view.value).classList.add('open')
 		}
@@ -332,13 +342,6 @@ document.onkeydown = function(evt) {
 [].forEach.call(document.querySelectorAll('[data-popup="modal"]'),function(el,i){
 	el.addEventListener('click', function(e){
 		let modal = this.dataset.target;
-		// if (window.innerWidth < 650 && modal=='#modal-menu') {
-			// modal = '#apanel';
-		// } else{
-			// for mobile menu
-			// document.querySelector('.apanel').classList.add('open');
-		// }
-
 		document.querySelector(modal).classList.add('open');
 		document.querySelector(modal).setAttribute('aria-hidden', 'false');
 	})

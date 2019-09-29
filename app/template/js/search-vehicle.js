@@ -1,32 +1,3 @@
-let select = document.getElementById("typesearch_select"),
-	search = document.getElementById("search");
-
-select.onchange = function() {
-	let placeholdertext = '';
-
-	switch(this.value){
-		case '1': // Part Number
-			setPlaceholder('Example: J0220SE');
-			break;
-		case '2': // Vehicle Plate No 
-			setPlaceholder('Example: o243oo124');
-			break; 
-		case '3': // VIN or Chassis No
-			setPlaceholder('Example: JHMCU26609213298');
-			break;
-		case '4': // Vehicle Search
-			// setPlaceholder('');
-			document.querySelector('#search').style.display = 'none';
-			document.querySelector('.vehicle-layout').style.display = 'block';
-			break;
-		case '5': // Search by size
-			$('#searchbysizeModal').modal('show')
-			break;
-		default:
-			break;	
-	}
-}
-
 function setPlaceholder(text){
 	document.querySelector('#search').style.display = 'block';
 	document.querySelector('.vehicle-layout').style.display = 'none';
