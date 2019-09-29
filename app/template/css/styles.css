@@ -4643,8 +4643,6 @@ button {
     width: 5rem; }
     .search .submit:hover {
       filter: none; }
-  .search .vehicle-layout {
-    display: none; }
   .search .vehicle-search {
     font-style: normal;
     left: 0;
@@ -6415,11 +6413,15 @@ input.form-control.error {
       top: 0;
       width: 20px; }
 
+.searchForm,
 .smartsearchForm {
-  display: none;
-  margin-top: .8rem; }
+  display: none; }
+  .searchForm.open,
   .smartsearchForm.open {
     display: block; }
+
+.smartsearchForm {
+  margin-top: .8rem; }
 
 .smartsearch {
   padding: 1.3rem 1.8rem 1.3rem 1.4rem; }

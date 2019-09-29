@@ -470,19 +470,37 @@
 				<!-- =search -->
 				<div class="search">
 					<div class="search__wrapper d-flex">
-						<form action="#" method="get">
-							<fieldset>
-								<div class="dropdown">
-									<select id="typesearch_select" name="typesearch" multiple="multiple">
-										<option value="1" selected="selected">Part Number</option>
-										<option value="2">Vehicle Plate No</option>
-										<option value="3">VIN or Chassis No</option>
-										<option value="4">Vehicle Search</option>
-										<option value="5">Search by size</option>
-									</select>
-								</div>
-								<input type="text" name="search" id="search" value="" placeholder="Example: J0220SE" class="form-control" /> 
+						<div class="dropdown">
+							<select id="typesearch_select" name="typesearch" multiple="multiple">
+								<option value="partnumForm1" selected="selected">Part Number</option>
+								<option value="vehicleplatenoForm1">Vehicle Plate NO</option>
+								<option value="vinnumForm1">VIN or Chassis No</option>
+								<option value="vehicleForm1">Vehicle Search</option>
+								<option value="sizeForm1">Searh by size</option>
+							</select>
+						</div>
 
+
+						<form action="#" method="get" class="searchForm" id="vinnumForm1">
+							<fieldset>
+								<input type="text" class="form-control" name="search" placeholder="Example: J0220SE" />
+								<button type="submit" class="submit" aria-label="Search"><i class="icon icon-search"></i></button>
+							</fieldset>
+						</form>
+						<form action="#" method="get" class="searchForm" id="vehicleForm1">
+							<fieldset>
+								<input type="text" class="form-control" name="search" placeholder="Example: JHMCU26609213298" />
+								<button type="submit" class="submit" aria-label="Search"><i class="icon icon-search"></i></button>
+							</fieldset>
+						</form>
+						<form action="#" method="get" class="searchForm open" id="partnumForm1">
+							<fieldset>					
+								<input type="text" class="form-control" name="search" placeholder="Example: JHMCU26609213298" />
+								<button type="submit" class="submit" aria-label="Search"><i class="icon icon-search"></i></button>
+							</fieldset>
+						</form>
+						<form action="#" method="get" class="searchForm" id="vehicleplatenoForm1">
+							<fieldset>
 								<div class="form-control vehicle-layout">
 									<div class="vehicle-search">
 										<ul class="d-flex vehicle-search-str">
@@ -700,7 +718,7 @@
 												</select>
 											</li>		
 										</ul>
-
+								
 										<input type="hidden" name="maker" value="" />
 										<input type="hidden" name="class" value="" />
 										<input type="hidden" name="model" value="" />
@@ -710,7 +728,7 @@
 										<input type="hidden" name="engineno" value="" />
 									</div>									
 								</div>
-								<button type="submit" class="submit" aria-label="Search"><i class="icon icon-search"></i></button>		
+								<button type="submit" class="submit" aria-label="Search"><i class="icon icon-search"></i></button>
 							</fieldset>
 						</form>
 					</div>
