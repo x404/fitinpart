@@ -6416,12 +6416,13 @@ input.form-control.error {
       width: 20px; }
 
 .smartsearchForm {
-  display: none; }
+  display: none;
+  margin-top: .8rem; }
   .smartsearchForm.open {
     display: block; }
 
 .smartsearch {
-  padding: 1.3rem 1.8rem; }
+  padding: 1.3rem 1.8rem 1.3rem 1.4rem; }
   .smartsearch__header {
     align-items: center;
     display: flex;
@@ -6479,8 +6480,6 @@ input.form-control.error {
       margin-left: 16px; }
       .smartsearch__header .ms-choice > span {
         padding-left: 0; }
-  .smartsearch form {
-    margin-top: .8rem; }
   .smartsearch .btn-search {
     align-items: center;
     font-size: 1.6rem;
@@ -6521,7 +6520,8 @@ input.form-control.error {
     .smartsearch .vehicle-control .ms-drop.bottom {
       left: 0; }
   .smartsearch .ms-search {
-    margin: 1.5rem 0; }
+    margin: 1.5rem 0;
+    padding-right: 25px; }
   .smartsearch .ms-parent.year, .smartsearch .ms-parent.engine, .smartsearch .ms-parent.engineno {
     width: 150px !important; }
 

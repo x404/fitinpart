@@ -141,7 +141,7 @@ $(document).ready(function(){
 	});
 
 
-// modal search
+// Modal mobile search
 	$("#sm_brand_select").multipleSelect({
 		single: true,
 		filter: true,
