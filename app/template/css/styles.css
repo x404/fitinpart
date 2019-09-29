@@ -6423,6 +6423,8 @@ input.form-control.error {
 
 .smartsearch {
   padding: 1.3rem 1.8rem 1.3rem 1.4rem; }
+  .smartsearch .ms-drop ul > li.hide-radio label {
+    padding: .9rem 0; }
   .smartsearch__header {
     align-items: center;
     display: flex;

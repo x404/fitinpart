@@ -41,7 +41,6 @@ $(document).ready(function(){
 		}
 	});
 
-
 	$("#model_select3").multipleSelect({
 		filter: true,//($( window ).width()>800),
 		multiple: true,
@@ -69,8 +68,6 @@ $(document).ready(function(){
 		}
 	});
 
-
-
 	$("#engine_select3").multipleSelect({
 		filter: true,
 		single: true,
@@ -90,6 +87,93 @@ $(document).ready(function(){
 	});
 
 
+
+	$("#sm_brand_select3").multipleSelect({
+		single: true,
+		filter: true,
+		placeholder : 'Maker',
+		noMatchesFound:$('#chk_app_search_sg_only').is(':checked')?'No matches found<br>To show all brands Turn <strong>OFF</strong> Common SG Veh':'No matches found',
+		onFilter: function(){
+			sm_brandlist3.update();
+		},
+		onOpen: function() {
+			sm_brandlist3.update();
+		},
+
+		onClick: function(view) {
+		//Unset the all selection values
+		   $("#sm_class_select3, #sm_model_select3, #sm_engine_select3").multipleSelect("uncheckAll");
+
+		   SmSwitchEnabledAppsearchFields3();
+		   //Get class and model
+		   // getClass(0, 0, 0);
+		   // getModel(0, 0, 0, 0);
+		}
+	});
+
+	$("#sm_class_select3").multipleSelect({
+		filter: true,
+		single: true,
+		placeholder : 'Class',
+		// noMatchesFound:$('#chk_app_search_sg_only').is(':checked')?'No matches found<br>To show all classes Turn <strong>OFF</strong> Common SG Veh':'No matches found',
+		onFilter: function(){
+			sm_classlist3.update();
+		},
+		onOpen: function() {
+			sm_classlist3.update();
+		},
+		onClick: function(view) {
+			$(" #sm_model_select3, #sm_engine_select3").multipleSelect("uncheckAll");
+			SwitchEnabledAppsearchFields3();
+			// getModel(0,0,0,0);
+		}
+	});
+
+	$("#sm_model_select3").multipleSelect({
+		filter: true,//($( window ).width()>800),
+		multiple: true,
+		multipleWidth: 228,
+		selectAll:false,
+		maxHeight:($( window ).width()<800)?100:250,
+		// noMatchesFound:$('#chk_app_search_sg_only').is(':checked')?'No matches found<br>To show all models Turn <strong>OFF</strong> Common SG Veh':'No matches found',
+		placeholder : 'Model',
+		textTemplate: function ($el) {
+			var txt=$el.html();
+			var opt=txt.replace(/\[/,'<i class="ms_aliases">[').replace(/\]/,']</i>');
+			return opt;
+		},
+		onFilter: function(){
+			sm_modellist2.update();
+		},
+		onOpen: function() {
+			sm_modellist2.update();
+		},
+		onClick: function() {
+			$("#sm_engine_select3").multipleSelect("uncheckAll");
+
+		SmSwitchEnabledAppsearchFields3();
+		// getYears(false);
+		}
+	});
+
+	$("#sm_engine_select3").multipleSelect({
+		filter: true,
+		single: true,
+		placeholder : 'Engine',
+		noMatchesFound:$('#chk_app_search_sg_only').is(':checked')?'No matches found<br>To show all engines Turn <strong>OFF</strong> Common SG Veh':'No matches found',
+		onFilter: function(){
+			sm_enginelist2.update();
+		},
+		onOpen: function() {
+			sm_enginelist2.update();
+		},
+		onClick: function(view) {
+		// 	if(view.value!=AppSearchCurrentParams.engine) {
+		// 	   getEngineNo(false);
+		// 	}
+		}
+	});
+
 	function SwitchEnabledAppsearchFields3(){
 		$("#model_select3, #engine_select3").not(':focus').multipleSelect("disable");
 		if($('select#brand_select3 :selected').val()>0) {
@@ -98,6 +182,17 @@ $(document).ready(function(){
 		}
 		if($('select#model_select3 :selected').val()>0) {
 			$("#engine_select3").not(':focus').multipleSelect("enable");
+		}
+	}
+
+	function SmSwitchEnabledAppsearchFields3(){
+		$("#sm_model_select3, #sm_engine_select3").not(':focus').multipleSelect("disable");
+		if($('select#sm_brand_select3 :selected').val()>0) {
+			$("#sm_model_select3").not(':focus').multipleSelect("enable");
+			$("#sm_class_select3").not(':focus').multipleSelect("enable");
+		}
+		if($('select#sm_model_select3 :selected').val()>0) {
+			$("#sm_engine_select3").not(':focus').multipleSelect("enable");
 		}
 	}
 
@@ -120,4 +215,23 @@ $(document).ready(function(){
 		maxScrollbarLength: 100,
 	});
 
+
+
+	var sm_brandlist3 = new PerfectScrollbar('#sm_hd .brand .listwrapper', {
+		wheelPropagation: true,
+		minScrollbarLength: 100,
+		maxScrollbarLength: 100,
+	});
+
+	var sm_modellist2 = new PerfectScrollbar('#sm_hd .model .listwrapper', {
+		wheelPropagation: true,
+		minScrollbarLength: 100,
+		maxScrollbarLength: 100,
+	});
+
+	var sm_enginelist2 = new PerfectScrollbar('#sm_hd .engine .listwrapper', {
+		wheelPropagation: true,
+		minScrollbarLength: 100,
+		maxScrollbarLength: 100,
+	});
 })
