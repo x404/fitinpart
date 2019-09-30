@@ -85,7 +85,7 @@ p.pink-color {
   transition: background-color .3s; }
   .ms-choice > div:before {
     background-image: url(../images/sprite.png);
-    background-position: -124px -98px;
+    background-position: -124px -54px;
     width: 10px;
     height: 7px;
     content: "";
@@ -206,23 +206,18 @@ p.pink-color {
 .ms-drop ul > li.hide-radio:before, .ms-drop ul > li.hide-radio:after {
   border-radius: 50%;
   pointer-events: none; }
-
 .ms-drop ul > li.hide-radio:after {
   background-color: #ffffff;
   height: 6px;
   left: 27px;
   top: 12px;
   width: 6px; }
-
 .ms-drop ul > li.hide-radio:hover:before {
   background-color: #ffffff; }
-
 .ms-drop ul > li.hide-radio:hover:after {
   background-color: #0672ba; }
-
 .ms-drop ul > li.hide-radio:hover label:hover {
   color: #fff; }
-
 .ms-drop ul > li.multiple {
   transition: .3s; }
   .ms-drop ul > li.multiple:before {

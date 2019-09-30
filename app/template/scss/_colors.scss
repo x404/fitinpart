@@ -36,11 +36,16 @@ $color35: #bcc7ce;
 $color36: #e5e6e7;
 $color37: #e8e8e8;
 $color38: #464646;
+$color39: #8d8d8d;
 
 
-.pink-color{
+div.pink-color{
 	background-color: $color10;
 } 
+
+p.pink-color{
+	color: $color10;
+}
 
 
 .primary-color{

@@ -20,7 +20,7 @@
 <meta name="msapplication-config" content="/the_favicon/browserconfig.xml">
 <meta name="theme-color" content="#ffffff">
 <!-- InstanceBeginEditable name="doctitle" -->
-<title>Homepage</title>
+<title>Contacts</title>
 <!-- InstanceEndEditable -->
 <link rel="stylesheet" href="/template/css/styles.min.css" />
 <link rel="stylesheet" href="/template/css/multiple-select.css" />
@@ -1146,1097 +1146,123 @@
 	<!-- =main -->
 	<div class="main">
 		<!-- InstanceBeginEditable name="EditRegion3" -->
-		<!-- =promo -->
-		<div class="promo">
-			<div class="wrapper">
-				<div id="homeslider">
-					<div>
-						<div style="background-image: url(/images/homeslider-bg-1.jpg)" class="item">
-							<div class="layout text-color-white d-flex align-items-center">
-								<div class="right" data-animation-in="fadeInRight" data-delay-in="1.5" data-duration-in="2">
-									<img src="/images/jikiu.png" alt="" />
-								</div>
-								<div class="left" data-animation-in="fadeInLeft" data-delay-in="1" data-duration-in="2">
-									<div class="title">All your car needs</div>
-									<div class="text">Brakes, Lubricants, Filters, Engine Compartment, Steering System, Suspension & Frame, Transmission & Wheel, Wiper Blades by JIKIU is available now</div>
-									<a href="#" class="more btn btn-large btn-blue btn-blue-lighten-hover icon icon-arrowright">Show more</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div>
-						<div style="background-image: url(/images/homeslider-bg-2.jpg)" class="item">
-							<div class="layout d-flex align-items-center">
-								<div class="right" data-animation-in="fadeInRight" data-delay-in="1.5" data-duration-in="2">
-									<img src="/images/jikiu-inv.png" alt="" />
-								</div>
-								<div class="left" data-animation-in="fadeInLeft" data-delay-in="1" data-duration-in="2">
-									<div class="title">All your car needs</div>
-									<div class="text">Brakes, Lubricants, Filters, Engine Compartment, Steering System, Suspension & Frame, Transmission & Wheel, Wiper Blades by JIKIU is available now</div>
-									<a href="#" class="more btn btn-large btn-blue btn-blue-lighten-hover icon icon-arrowright">Show more</a>
-								</div>
-							</div>						
-						</div>
-					</div>
-				</div>
+		<div class="container">
+			<!-- =breadcrumbs -->
+			<div class="breadcrumbs">
+				<ul>
+					<li class="B_homecrumb"><a href="#" title="">Home </a></li>
+					<li>—</li>
+					<li><a href="#" title="">Catalog</a></li>
+					<li>—</li>
+					<li class="current"><a href="#" title="">Air filters</a></li>
+				</ul>
 			</div>
-		</div>
-		<!-- =/promo -->
-		
-		
-		<!-- =searchbox -->
-		<div class="searchbox">
-			<div class="container">
-				<div class="d-grid searchbox__layout">
-					<!-- =search by Vehicle -->
-					<div class="searchbox__panel searchbox__panel-vehicle" id="number_search_sg">
-						<div class="searchbox__title">Search by Vehicle</div>
-		
-						<div class="nav-top d-flex flex-wrap align-items-center justify-content-between">
-							<ul class="nav subtab d-flex align-items-center" id="veh_search-tab" role="tablist">
-								<li class="subtab-item">
-									<a class="subtab-link active" id="car-tab" data-toggle="tab" href="#car" role="tab" aria-controls="car" aria-selected="true">Car</a>
-								</li>
-								<li class="separator"></li>
-								<li class="subtab-item">
-									<a class="subtab-link" id="moto-tab" data-toggle="tab" href="#moto" role="tab" aria-controls="moto" aria-selected="false">Moto</a>
-								</li>
-								<li class="separator"></li>
-								<li class="subtab-item">
-									<a class="subtab-link" id="hd-tab" data-toggle="tab" href="#hd" role="tab" aria-controls="hd" aria-selected="false">HD</a>
-								</li>
-							</ul>
-		
-							<div class="veh-only d-flex align-items-center">
-								Common SG Veh Only
-								<label class="checkbox">
-									<input type="checkbox" name="veh-only" value="" aria-label="Common SG Veh Only" />
-									<div class="checkbox__text"></div>
-								</label>
-							</div>
-						</div>
-						
-						<div class="tab-content" id="car-tabContent">
-							<div class="tab-pane fade show active" id="car" role="tabpanel" aria-labelledby="car-tab">
-								<!-- =car-tab -->
-								<div class="car-tab-layout">
-									<div class="row">
-										<div class="vehicle-control vehicle-maker">
-											<select id="brand_select" class="brand" multiple="multiple">
-												<option value="1">ACURA</option>
-												<option value="2">ALFA ROMEO</option>
-												<option value="227">ARO</option>
-												<option value="3">ASIA MOTORS</option>
-												<option value="4">ASTON MARTIN</option>
-												<option value="5">AUDI</option>
-												<option value="447">BAW</option>
-												<option value="6">BENTLEY</option>
-												<option value="7">BMW</option>
-												<option value="8">BMW (Alpina)</option>
-												<option value="99">BOBCAT</option>
-												<option value="272">BOVA</option>
-												<option value="266">BUGATTI</option>
-												<option value="10">BUICK (GM)</option>
-												<option value="453">BYD</option>
-												<option value="12">CADILLAC (GM)</option>
-												<option value="274">CATERPILLAR</option>
-												<option value="448">Chery</option>
-												<option value="15">CHEVROLET (GM)</option>
-												<option value="454">CHEVROLET (SGM)</option>
-												<option value="16">CHRYSLER</option>
-												<option value="18">CITROEN</option>
-												<option value="20">DAEWOO</option>
-												<option value="271">DAF</option>
-												<option value="22">DAIHATSU</option>
-												<option value="23">DAIHATSU (Piaggio)</option>
-												<option value="285">DATSUN</option>
-												<option value="24">DODGE</option>
-												<option value="424">DONGFENG</option>
-												<option value="25">FERRARI</option>
-												<option value="26">FIAT</option>
-												<option value="27">FORD</option>
-												<option value="28">FORD (Mercury)</option>
-												<option value="29">FORD (USA)</option>
-												<option value="444">FOTON</option>
-												<option value="232">GAZ</option>
-												<option value="431">GEELY</option>
-												<option value="30">GMC (TRUCK)</option>
-												<option value="449">Great Wall Motors</option>
-												<option value="425">HAFEI</option>
-												<option value="93">HOLDEN</option>
-												<option value="32">HONDA</option>
-												<option value="35">HUMMER</option>
-												<option value="36">HYUNDAI</option>
-												<option value="37">INFINITI</option>
-												<option value="38">ISUZU</option>
-												<option value="39">IVECO</option>
-												<option value="445">JAC</option>
-												<option value="40">JAGUAR</option>
-												<option value="42">JEEP</option>
-												<option value="43">KIA</option>
-												<option value="44">LADA</option>
-												<option value="426">LAMBORGHINI</option>
-												<option value="45">LANCIA</option>
-												<option value="46">LAND ROVER</option>
-												<option value="48">LEXUS</option>
-												<option value="354">LIFAN</option>
-												<option value="49">LIGIER AUTOMOBILES</option>
-												<option value="50">LINCOLN</option>
-												<option value="51">LONDON TAXI (Carbodies)</option>
-												<option value="53">LOTUS</option>
-												<option value="428">LUXGEN</option>
-												<option value="441">MAHINDRA</option>
-												<option value="459">MAN TGE Box</option>
-												<option value="442">MARUTI SUZUKI</option>
-												<option value="54">MASERATI</option>
-												<option value="55">MAZDA</option>
-												<option value="56">MAZDA JAPAN FORD</option>
-												<option value="58">MERCEDES-BENZ</option>
-												<option value="237">MG</option>
-												<option value="59">MICROCAR</option>
-												<option value="60">MINI</option>
-												<option value="61">MITSUBISHI</option>
-												<option value="429">MITSUOKA</option>
-												<option value="440">NAZA</option>
-												<option value="62">NISSAN</option>
-												<option value="65">OLDSMOBILE (GM)</option>
-												<option value="66">OPEL</option>
-												<option value="248">OPEL (Brasil)</option>
-												<option value="67">OPEL (Vauxhall)</option>
-												<option value="68">PERODUA</option>
-												<option value="69">PEUGEOT</option>
-												<option value="70">PEUGEOT(Mega/Aixav)</option>
-												<option value="73">PORSCHE</option>
-												<option value="74">PROTON</option>
-												<option value="450">Qoros</option>
-												<option value="446">RAVON</option>
-												<option value="75">RENAULT</option>
-												<option value="76">ROLLS-ROYCE</option>
-												<option value="77">ROVER</option>
-												<option value="78">ROVER (MG)</option>
-												<option value="79">SAAB</option>
-												<option value="455">SAIC</option>
-												<option value="80">SANTANA MOTOR</option>
-												<option value="81">SEAT</option>
-												<option value="82">SKODA</option>
-												<option value="83">SMART</option>
-												<option value="84">SSANGYONG</option>
-												<option value="85">SUBARU</option>
-												<option value="86">SUZUKI</option>
-												<option value="87">TATA MOTORS</option>
-												<option value="443">TESLA</option>
-												<option value="88">TOYOTA</option>
-												<option value="241">UAZ</option>
-												<option value="91">VOLKSWAGEN</option>
-												<option value="90">VOLVO</option>
-												<option value="92">ZASTAVA</option>
-											</select>
-										</div>
-										<div class="vehicle-control vehicle-class">
-											<select id="class_select" class="class" multiple="multiple" disabled="disabled">
-												<option value="1018">A-Class</option>
-												<option value="2">B-Class</option>
-												<option value="1110">Binz</option>
-												<option value="3">C-Class</option>
-												<option value="1003">Citan - Class</option>
-												<option value="4">CL-Class</option>
-												<option value="20">CLA-Class</option>
-												<option value="26">CLC-Class</option>
-												<option value="5">CLK-Class</option>
-												<option value="22">CLS-Class</option>
-												<option value="6">E-Class</option>
-												<option value="1019">E-Class (Coupe/Cabrio)</option>
-												<option value="8">G-Class</option>
-												<option value="23">GL-Class</option>
-												<option value="1089">GLA-Class</option>
-												<option value="1117">GLC-Class</option>
-												<option value="1116">GLE-Class</option>
-												<option value="24">GLK-Class</option>
-												<option value="1004">MB-Serie</option>
-												<option value="1020">ML-Class</option>
-												<option value="25">R-Class</option>
-												<option value="10">S-Class</option>
-												<option value="12">SL-Class</option>
-												<option value="13">SLK-Class</option>
-												<option value="28">SLR-Class</option>
-												<option value="1090">SLS AMG-Class</option>
-												<option value="1021">Sprinter</option>
-												<option value="1118">Sprinter Classic</option>
-												<option value="1002">Sprinter II</option>
-												<option value="1015">Tourismo-Serie Bus</option>
-												<option value="1005">Transporter-Serie</option>
-												<option value="1017">Unimog-Serie</option>
-												<option value="1007">V-Class</option>
-												<option value="1006">Vario-Serie</option>
-												<option value="1056">Viano-Serie</option>
-												<option value="1008">Vito-Serie</option>
-												<option value="1119">X-Class</option>
-											</select>
-										</div>
-										<div class="vehicle-control vehicle-model">
-											<select id="model_select" class="model" multiple="multiple" disabled="disabled">
-												<option value="21524">CDX</option>
-												<option value="1">Legend</option>
-												<option value="2">MDX</option>
-												<option value="3">NSX</option>
-												<option value="4">NSX-T</option>
-												<option value="5">RDX</option>
-												<option value="6">RL</option>
-												<option value="8">RSX Speed</option>
-												<option value="7">RSX Type-S</option>
-												<option value="11">TL Type-S</option>
-												<option value="21186">TLX</option>
-												<option value="13">TSX</option>
-												<option value="4946">ZDX</option>
-											</select>			
-										</div>
-										<div class="vehicle-control vehicle-year">
-											<select id="year_select" class="year" multiple="multiple" disabled="disabled">
-												<option value="2019">2019</option>
-												<option value="2018">2018</option>
-												<option value="2017">2017</option>
-												<option value="2016">2016</option>
-												<option value="2015">2015</option>
-												<option value="2014">2014</option>
-												<option value="2013">2013</option>
-												<option value="2012">2012</option>
-												<option value="2011">2011</option>
-												<option value="2010">2010</option>
-												<option value="2009">2009</option>
-												<option value="2008">2008</option>
-												<option value="2007">2007</option>
-												<option value="2006">2006</option>
-												<option value="2005">2005</option>
-												<option value="2004">2004</option>
-												<option value="2003">2003</option>
-												<option value="2002">2002</option>
-												<option value="2001">2001</option>
-												<option value="2000">2000</option>
-												<option value="1999">1999</option>
-												<option value="1998">1998</option>
-												<option value="1997">1997</option>
-												<option value="1996">1996</option>
-												<option value="1995">1995</option>
-												<option value="1994">1994</option>
-												<option value="1993">1993</option>
-												<option value="1992">1992</option>
-												<option value="1991">1991</option>
-												<option value="1990">1990</option>
-												<option value="1989">1989</option>
-												<option value="1988">1988</option>
-												<option value="1987">1987</option>
-												<option value="1986">1986</option>
-												<option value="1985">1985</option>
-											</select>
-										</div>
-										<div class="vehicle-control vehicle-body">
-											<select id="body_select" class="body" multiple="multiple" disabled="disabled">
-												<option value="906">906</option>
-												<option value="W415">W415</option>
-											</select>
-										</div>
-										<div class="vehicle-control vehicle-engine">
-											<select id="engine_select" class="engine" multiple="multiple" disabled="disabled">
-												<option value="2100">2100</option>
-												<option value="2200">2200</option>
-												<option value="2300">2300</option>
-											</select>
-										</div>
-										<div class="vehicle-control vehicle-engineno">
-											<select id="engineno_select" class="engineno" multiple="multiple" disabled="disabled">
-												<option value="100">100</option>
-												<option value="200">200</option>
-												<option value="300">300</option>
-											</select>
-										</div>
-									</div>									
-									<button type="button" class="btn btn-search btn-big btn-blue btn-blue-lighten-hover" aria-label="Search"><i class="icon icon-search-big"></i>Search</button>
+			<!-- =/breadcrumbs -->
+
+			<h1>Contact us</h1>
+
+			<div class="row">
+				<div class="col-lg-8">
+					<div class="content content-location">
+						<div class="left">
+							<h2>Our Location</h2>
+							<div class="address__item d-flex">
+								<div class="address__item-icon">
+									<div class="icon icon-balloon-gray"></div>
+								</div>
+								<div class="address__item-text">
+									<p class="label">Adress 1</p>
+									<p>1 Kaki Bukit Rd 1 Enterprise One  #03-10/11 Singapore 415934</p>
+									<br>
+
+									<p><strong>Sales and Collection Point</strong></p>
+									<p class="pink-color">Cash, NETS, Visa & MasterCard accepted here</p>
 								</div>
 							</div>
-		
-							<!-- =moto-tab -->
-							<div class="tab-pane fade" id="moto" role="tabpanel" aria-labelledby="moto-tab">
-								<div class="moto-tab-layout">
-									<div class="row">
-										<div class="vehicle-control vehicle-maker">
-											<select id="brand_select2" class="brand" multiple="multiple">
-												<option value="1">ACURA</option>
-												<option value="2">ALFA ROMEO</option>
-												<option value="227">ARO</option>
-												<option value="3">ASIA MOTORS</option>
-												<option value="4">ASTON MARTIN</option>
-												<option value="5">AUDI</option>
-												<option value="447">BAW</option>
-												<option value="6">BENTLEY</option>
-												<option value="7">BMW</option>
-												<option value="8">BMW (Alpina)</option>
-												<option value="99">BOBCAT</option>
-												<option value="272">BOVA</option>
-												<option value="266">BUGATTI</option>
-												<option value="10">BUICK (GM)</option>
-												<option value="453">BYD</option>
-												<option value="12">CADILLAC (GM)</option>
-												<option value="274">CATERPILLAR</option>
-												<option value="448">Chery</option>
-												<option value="15">CHEVROLET (GM)</option>
-												<option value="454">CHEVROLET (SGM)</option>
-												<option value="16">CHRYSLER</option>
-												<option value="18">CITROEN</option>
-												<option value="20">DAEWOO</option>
-												<option value="271">DAF</option>
-												<option value="22">DAIHATSU</option>
-												<option value="23">DAIHATSU (Piaggio)</option>
-												<option value="285">DATSUN</option>
-												<option value="24">DODGE</option>
-												<option value="424">DONGFENG</option>
-												<option value="25">FERRARI</option>
-												<option value="26">FIAT</option>
-												<option value="27">FORD</option>
-												<option value="28">FORD (Mercury)</option>
-												<option value="29">FORD (USA)</option>
-												<option value="444">FOTON</option>
-												<option value="232">GAZ</option>
-												<option value="431">GEELY</option>
-												<option value="30">GMC (TRUCK)</option>
-												<option value="449">Great Wall Motors</option>
-												<option value="425">HAFEI</option>
-												<option value="93">HOLDEN</option>
-												<option value="32">HONDA</option>
-												<option value="35">HUMMER</option>
-												<option value="36">HYUNDAI</option>
-												<option value="37">INFINITI</option>
-												<option value="38">ISUZU</option>
-												<option value="39">IVECO</option>
-												<option value="445">JAC</option>
-												<option value="40">JAGUAR</option>
-												<option value="42">JEEP</option>
-												<option value="43">KIA</option>
-												<option value="44">LADA</option>
-												<option value="426">LAMBORGHINI</option>
-												<option value="45">LANCIA</option>
-												<option value="46">LAND ROVER</option>
-												<option value="48">LEXUS</option>
-												<option value="354">LIFAN</option>
-												<option value="49">LIGIER AUTOMOBILES</option>
-												<option value="50">LINCOLN</option>
-												<option value="51">LONDON TAXI (Carbodies)</option>
-												<option value="53">LOTUS</option>
-												<option value="428">LUXGEN</option>
-												<option value="441">MAHINDRA</option>
-												<option value="459">MAN TGE Box</option>
-												<option value="442">MARUTI SUZUKI</option>
-												<option value="54">MASERATI</option>
-												<option value="55">MAZDA</option>
-												<option value="56">MAZDA JAPAN FORD</option>
-												<option value="58">MERCEDES-BENZ</option>
-												<option value="237">MG</option>
-												<option value="59">MICROCAR</option>
-												<option value="60">MINI</option>
-												<option value="61">MITSUBISHI</option>
-												<option value="429">MITSUOKA</option>
-												<option value="440">NAZA</option>
-												<option value="62">NISSAN</option>
-												<option value="65">OLDSMOBILE (GM)</option>
-												<option value="66">OPEL</option>
-												<option value="248">OPEL (Brasil)</option>
-												<option value="67">OPEL (Vauxhall)</option>
-												<option value="68">PERODUA</option>
-												<option value="69">PEUGEOT</option>
-												<option value="70">PEUGEOT(Mega/Aixav)</option>
-												<option value="73">PORSCHE</option>
-												<option value="74">PROTON</option>
-												<option value="450">Qoros</option>
-												<option value="446">RAVON</option>
-												<option value="75">RENAULT</option>
-												<option value="76">ROLLS-ROYCE</option>
-												<option value="77">ROVER</option>
-												<option value="78">ROVER (MG)</option>
-												<option value="79">SAAB</option>
-												<option value="455">SAIC</option>
-												<option value="80">SANTANA MOTOR</option>
-												<option value="81">SEAT</option>
-												<option value="82">SKODA</option>
-												<option value="83">SMART</option>
-												<option value="84">SSANGYONG</option>
-												<option value="85">SUBARU</option>
-												<option value="86">SUZUKI</option>
-												<option value="87">TATA MOTORS</option>
-												<option value="443">TESLA</option>
-												<option value="88">TOYOTA</option>
-												<option value="241">UAZ</option>
-												<option value="91">VOLKSWAGEN</option>
-												<option value="90">VOLVO</option>
-												<option value="92">ZASTAVA</option>
-											</select>
-										</div>
-										<div class="vehicle-control vehicle-class">
-											<select id="class_select2" class="class" multiple="multiple" disabled="disabled">
-												<option value="1018">A-Class</option>
-												<option value="2">B-Class</option>
-												<option value="1110">Binz</option>
-												<option value="3">C-Class</option>
-												<option value="1003">Citan - Class</option>
-												<option value="4">CL-Class</option>
-												<option value="20">CLA-Class</option>
-												<option value="26">CLC-Class</option>
-												<option value="5">CLK-Class</option>
-												<option value="22">CLS-Class</option>
-												<option value="6">E-Class</option>
-												<option value="1019">E-Class (Coupe/Cabrio)</option>
-												<option value="8">G-Class</option>
-												<option value="23">GL-Class</option>
-												<option value="1089">GLA-Class</option>
-												<option value="1117">GLC-Class</option>
-												<option value="1116">GLE-Class</option>
-												<option value="24">GLK-Class</option>
-												<option value="1004">MB-Serie</option>
-												<option value="1020">ML-Class</option>
-												<option value="25">R-Class</option>
-												<option value="10">S-Class</option>
-												<option value="12">SL-Class</option>
-												<option value="13">SLK-Class</option>
-												<option value="28">SLR-Class</option>
-												<option value="1090">SLS AMG-Class</option>
-												<option value="1021">Sprinter</option>
-												<option value="1118">Sprinter Classic</option>
-												<option value="1002">Sprinter II</option>
-												<option value="1015">Tourismo-Serie Bus</option>
-												<option value="1005">Transporter-Serie</option>
-												<option value="1017">Unimog-Serie</option>
-												<option value="1007">V-Class</option>
-												<option value="1006">Vario-Serie</option>
-												<option value="1056">Viano-Serie</option>
-												<option value="1008">Vito-Serie</option>
-												<option value="1119">X-Class</option>
-											</select>
-										</div>
-										<div class="vehicle-control vehicle-model">
-											<select id="model_select2" class="model" multiple="multiple" disabled="disabled">
-												<option value="21524">CDX</option>
-												<option value="1">Legend</option>
-												<option value="2">MDX</option>
-												<option value="3">NSX</option>
-												<option value="4">NSX-T</option>
-												<option value="5">RDX</option>
-												<option value="6">RL</option>
-												<option value="8">RSX Speed</option>
-												<option value="7">RSX Type-S</option>
-												<option value="11">TL Type-S</option>
-												<option value="21186">TLX</option>
-												<option value="13">TSX</option>
-												<option value="4946">ZDX</option>
-											</select>			
-										</div>
-										<div class="vehicle-control vehicle-year">
-											<select id="year_select2" class="year" multiple="multiple" disabled="disabled">
-												<option value="2019">2019</option>
-												<option value="2018">2018</option>
-												<option value="2017">2017</option>
-												<option value="2016">2016</option>
-												<option value="2015">2015</option>
-												<option value="2014">2014</option>
-												<option value="2013">2013</option>
-												<option value="2012">2012</option>
-												<option value="2011">2011</option>
-												<option value="2010">2010</option>
-												<option value="2009">2009</option>
-												<option value="2008">2008</option>
-												<option value="2007">2007</option>
-												<option value="2006">2006</option>
-												<option value="2005">2005</option>
-												<option value="2004">2004</option>
-												<option value="2003">2003</option>
-												<option value="2002">2002</option>
-												<option value="2001">2001</option>
-												<option value="2000">2000</option>
-												<option value="1999">1999</option>
-												<option value="1998">1998</option>
-												<option value="1997">1997</option>
-												<option value="1996">1996</option>
-												<option value="1995">1995</option>
-												<option value="1994">1994</option>
-												<option value="1993">1993</option>
-												<option value="1992">1992</option>
-												<option value="1991">1991</option>
-												<option value="1990">1990</option>
-												<option value="1989">1989</option>
-												<option value="1988">1988</option>
-												<option value="1987">1987</option>
-												<option value="1986">1986</option>
-												<option value="1985">1985</option>
-											</select>
-										</div>
-										<div class="vehicle-control vehicle-body">
-											<select id="body_select2" class="body" multiple="multiple" disabled="disabled">
-												<option value="906">906</option>
-												<option value="W415">W415</option>
-											</select>
-										</div>
-										<div class="vehicle-control vehicle-engine">
-											<select id="engine_select2" class="engine" multiple="multiple" disabled="disabled">
-												<option value="2100">2100</option>
-												<option value="2200">2200</option>
-												<option value="2300">2300</option>
-											</select>
-										</div>
-										<div class="vehicle-control vehicle-engineno">
-											<select id="engineno_select2" class="engineno" multiple="multiple" disabled="disabled">
-												<option value="100">100</option>
-												<option value="200">200</option>
-												<option value="300">300</option>
-											</select>
-										</div>									
+							<div class="address__item d-flex">
+								<div class="address__item-icon">
+									<div class="icon icon-balloon-gray"></div>
+								</div>
+								<div class="address__item-text">
+									<p class="label">Adress 2</p>
+									<p>4 Tuas Basin Close Singapore 638797</p>
+									<br>
+
+									<p><strong>Collection Point only</strong></p>
+									<p class="pink-color">No cashier at this location, collection only</p>
+								</div>
+							</div>
+
+
+							<div class="address__item d-flex">
+								<div class="cell d-flex">
+									<div class="address__item-icon">
+										<div class="icon icon-tel-gray"></div>
 									</div>
-									<button type="button" class="btn btn-search btn-big btn-blue btn-blue-lighten-hover" aria-label="Search"><i class="icon icon-search-big"></i>Search</button>
-								</div>
-							</div>
-		
-							<!-- =hd-tab -->
-							<div class="tab-pane fade" id="hd" role="tabpanel" aria-labelledby="hd-tab">
-								<div class="moto-tab-layout">
-									<div class="row">
-										<div class="col-xl-5 col-lg-4 vehicle-control vehicle-maker">
-											<select id="brand_select3" class="brand" multiple="multiple">
-												<option value="1">ACURA</option>
-												<option value="2">ALFA ROMEO</option>
-												<option value="227">ARO</option>
-												<option value="3">ASIA MOTORS</option>
-												<option value="4">ASTON MARTIN</option>
-												<option value="5">AUDI</option>
-												<option value="447">BAW</option>
-												<option value="6">BENTLEY</option>
-												<option value="7">BMW</option>
-												<option value="8">BMW (Alpina)</option>
-												<option value="99">BOBCAT</option>
-												<option value="272">BOVA</option>
-												<option value="266">BUGATTI</option>
-												<option value="10">BUICK (GM)</option>
-												<option value="453">BYD</option>
-												<option value="12">CADILLAC (GM)</option>
-												<option value="274">CATERPILLAR</option>
-												<option value="448">Chery</option>
-												<option value="15">CHEVROLET (GM)</option>
-												<option value="454">CHEVROLET (SGM)</option>
-												<option value="16">CHRYSLER</option>
-												<option value="18">CITROEN</option>
-												<option value="20">DAEWOO</option>
-												<option value="271">DAF</option>
-												<option value="22">DAIHATSU</option>
-												<option value="23">DAIHATSU (Piaggio)</option>
-												<option value="285">DATSUN</option>
-												<option value="24">DODGE</option>
-												<option value="424">DONGFENG</option>
-												<option value="25">FERRARI</option>
-												<option value="26">FIAT</option>
-												<option value="27">FORD</option>
-												<option value="28">FORD (Mercury)</option>
-												<option value="29">FORD (USA)</option>
-												<option value="444">FOTON</option>
-												<option value="232">GAZ</option>
-												<option value="431">GEELY</option>
-												<option value="30">GMC (TRUCK)</option>
-												<option value="449">Great Wall Motors</option>
-												<option value="425">HAFEI</option>
-												<option value="93">HOLDEN</option>
-												<option value="32">HONDA</option>
-												<option value="35">HUMMER</option>
-												<option value="36">HYUNDAI</option>
-												<option value="37">INFINITI</option>
-												<option value="38">ISUZU</option>
-												<option value="39">IVECO</option>
-												<option value="445">JAC</option>
-												<option value="40">JAGUAR</option>
-												<option value="42">JEEP</option>
-												<option value="43">KIA</option>
-												<option value="44">LADA</option>
-												<option value="426">LAMBORGHINI</option>
-												<option value="45">LANCIA</option>
-												<option value="46">LAND ROVER</option>
-												<option value="48">LEXUS</option>
-												<option value="354">LIFAN</option>
-												<option value="49">LIGIER AUTOMOBILES</option>
-												<option value="50">LINCOLN</option>
-												<option value="51">LONDON TAXI (Carbodies)</option>
-												<option value="53">LOTUS</option>
-												<option value="428">LUXGEN</option>
-												<option value="441">MAHINDRA</option>
-												<option value="459">MAN TGE Box</option>
-												<option value="442">MARUTI SUZUKI</option>
-												<option value="54">MASERATI</option>
-												<option value="55">MAZDA</option>
-												<option value="56">MAZDA JAPAN FORD</option>
-												<option value="58">MERCEDES-BENZ</option>
-												<option value="237">MG</option>
-												<option value="59">MICROCAR</option>
-												<option value="60">MINI</option>
-												<option value="61">MITSUBISHI</option>
-												<option value="429">MITSUOKA</option>
-												<option value="440">NAZA</option>
-												<option value="62">NISSAN</option>
-												<option value="65">OLDSMOBILE (GM)</option>
-												<option value="66">OPEL</option>
-												<option value="248">OPEL (Brasil)</option>
-												<option value="67">OPEL (Vauxhall)</option>
-												<option value="68">PERODUA</option>
-												<option value="69">PEUGEOT</option>
-												<option value="70">PEUGEOT(Mega/Aixav)</option>
-												<option value="73">PORSCHE</option>
-												<option value="74">PROTON</option>
-												<option value="450">Qoros</option>
-												<option value="446">RAVON</option>
-												<option value="75">RENAULT</option>
-												<option value="76">ROLLS-ROYCE</option>
-												<option value="77">ROVER</option>
-												<option value="78">ROVER (MG)</option>
-												<option value="79">SAAB</option>
-												<option value="455">SAIC</option>
-												<option value="80">SANTANA MOTOR</option>
-												<option value="81">SEAT</option>
-												<option value="82">SKODA</option>
-												<option value="83">SMART</option>
-												<option value="84">SSANGYONG</option>
-												<option value="85">SUBARU</option>
-												<option value="86">SUZUKI</option>
-												<option value="87">TATA MOTORS</option>
-												<option value="443">TESLA</option>
-												<option value="88">TOYOTA</option>
-												<option value="241">UAZ</option>
-												<option value="91">VOLKSWAGEN</option>
-												<option value="90">VOLVO</option>
-												<option value="92">ZASTAVA</option>
-											</select>
-										</div>
-										<div class="col-xl-5 col-lg-4 vehicle-control vehicle-model">
-											<select id="model_select3" class="model" multiple="multiple" disabled="disabled">
-												<option value="21524">CDX</option>
-												<option value="1">Legend</option>
-												<option value="2">MDX</option>
-												<option value="3">NSX</option>
-		
-												<option value="4">NSX-T</option>
-												<option value="5">RDX</option>
-												<option value="6">RL</option>
-												<option value="8">RSX Speed</option>
-												<option value="7">RSX Type-S</option>
-												<option value="11">TL Type-S</option>
-												<option value="21186">TLX</option>
-												<option value="13">TSX</option>
-												<option value="4946">ZDX</option>
-											</select>												
-										</div>
-										<div class="col-xl-5 col-lg-2 vehicle-control vehicle-engineno">
-											<select id="engine_select3" class="engine" multiple="multiple" disabled="disabled">
-												<option value="2100">2100</option>
-												<option value="2200">2200</option>
-												<option value="2300">2300</option>
-											</select>
-										</div>
+									<div class="address__item-text">
+										<p class="label">Telephone</p>
+										<p class="num">+65 67497481</p>
 									</div>
-									<button type="button" class="btn btn-search btn-big btn-blue btn-blue-lighten-hover" aria-label="Search"><i class="icon icon-search-big"></i>Search</button>
+								</div>
+								<div class="cell d-flex">
+									<div class="address__item-icon">
+										<div class="icon icon-fax-gray"></div>
+									</div>
+									<div class="address__item-text">
+										<p class="label">Fax</p>
+										<p class="num">+65-6299-8933</p>
+									</div>
 								</div>
 							</div>
-						</div>
-					</div>
-					<!-- part number - partsize -->
-					<div class="searchbox__panel searchbox__panel-partnum" id="part_search_sg">
-						<ul class="nav d-flex searchbox__title" id="part-tab" role="tablist">
-							<li class="nav-item">
-								<a class="nav-link active" id="part-number-tab" data-toggle="tab" href="#part-number" role="tab" aria-controls="part-number" aria-selected="true">Part Number</a>
-							</li>
-							<li class="separator"></li>
-							<li class="nav-item">
-								<button type="button" class="nav-link" id="part-size-tab" aria-controls="part-size" aria-selected="false" data-toggle="modal" data-target="#searchbysizeModal">Part Size</button>
-							</li>
-						</ul>
-						
-						<div class="tab-content" id="part-tabContent">
-							<div class="tab-pane fade show active" id="part-number" role="tabpanel" aria-labelledby="part-number-tab">
-								<form action="#" method="post">
+
+
+							<div class="address__item d-flex">
+								<div class="address__item-icon">
+									<div class="icon icon-clock-gray"></div>
+								</div>
+								<div class="address__item-text">
+									<h3>Opening Times</h3>
 									<div class="d-flex">
-										<input type="text" class="form-control" id="part_search_in" name="prd_ids" aria-label="Part size" />
-										<button type="submit" class="btn btn-search btn-middle btn-blue btn-blue-lighten-hover" aria-label="Search"><i class="icon icon-search-middle"></i><span>Search</span></button>
+										<div class="days">
+											<p><strong>Mon - Friday</strong></p>
+											<p>9:30am - 6:30pm</p>
+										</div>	
+										<div class="days">
+											<p><strong>Sat</strong></p>
+											<p>9:30am - 1:30pm</p>
+										</div>	
+										<div class="days">
+											<p class="strong"><strong>Sat</strong></p>
+											<p>9:30am - 1:30pm</p>
+										</div>	
 									</div>
-								</form>
-								<p class="example">Example: N123P23</p> 
+									<p class="pink-color">Excluding Public holidays</p>
+								</div>
 							</div>
+
+							<div class="address__item work-time d-flex">
+								<div class="address__item-icon">
+									<div class="icon icon-online-gray"></div>
+								</div>
+								<div class="address__item-text">
+									<h3>Online Support</h3>
+									<p><strong>Mon - Friday</strong></p>
+									<p>7:00am - 3:00am</p>									
+								</div>
+							</div>
+
+
 						</div>
+						<div class="right">
+							<div id="map"></div>
+						</div>						
 					</div>
-		
-					<!-- =vin -->
-					<div class="searchbox__panel searchbox__panel-vin" id="vin_search_sg">
-						<ul class="nav d-flex searchbox__title" id="vin-tab" role="tablist">
-							<li class="nav-item">
-								<a class="nav-link active" id="vin-number-tab" data-toggle="tab" href="#vin-number" role="tab" aria-controls="vin-number" aria-selected="true"><span class="d-none d-lg-block">VIN or Chassis No</span><span class="d-block d-lg-none">VIN or Chas. No</span></a>
-							</li>
-							<li class="separator"></li>
-							<li class="nav-item">
-								<a class="nav-link" id="vin-size-tab" data-toggle="tab" href="#vin-size" role="tab" aria-controls="vin-size" aria-selected="false"><span class="d-none d-lg-block">Vehicle Plate No</span><span class="d-block d-lg-none">Veh. Plate No</span></a>
-							</li>
-						</ul>
-						
-						<div class="tab-content" id="vin-tabContent">
-							<div class="tab-pane fade show active" id="vin-number" role="tabpanel" aria-labelledby="vin-number-tab">
-								<form action="#" method="post">
-									<div class="d-flex">
-										<input type="text" class="form-control" id="vin_search_in" name="prd_ids" aria-label="Vin or chassic no" />
-										<button type="button" class="btn-file d-none d-lg-block" onclick="$('#id_search_vin_img').click();"><i class="icon icon-camera"></i></button>
-										<button type="submit" class="btn btn-search btn-middle btn-blue btn-blue-lighten-hover" aria-label="Search"><i class="icon icon-search-middle"></i><span>Search</span></button>
-									</div>
-								</form>
-								<p class="example">Example: JHMCU26609213298</p> 
-							</div>
-							<div class="tab-pane fade" id="vin-size" role="tabpanel" aria-labelledby="vin-size-tab">
-								<form action="#" method="post">
-									<div class="d-flex">
-										<input type="text" class="form-control" id="vehicle-number" name="prd_ids2" aria-label="Vehicle plate no" />
-										<button type="button" class="btn-file d-none d-lg-block" onclick="$('#id_search_vin_img').click();"><i class="icon icon-camera"></i></button>
-										<button type="submit" class="btn btn-search btn-middle btn-blue btn-blue-lighten-hover" aria-label="Search"><i class="icon icon-search-middle"></i><span>Search</span></button>
-									</div>
-								</form>
-								<form class="FrmVinSearchImage" style="display: none;" action="https://www.fitinpart.sg/index.php?route=tool/imgrecognize/ocr_vin">
-									<input type="file" id="id_search_vin_img" name="vin_img" accept="image/*" capture="camera" hidden="">
-								</form>
-								<p class="example">Example: JHMCU26609213298.</p> 
-							</div>
-						</div>
-		
-					</div>
+				</div>
+				<div class="col-lg-2">
+					
 				</div>
 			</div>
 		</div>
-		<!-- =/searchbox -->
-		
-		<!-- =catalog -->
-		<div class="catalog">
-			<div class="container">
-				<div id="catalog-carousel" class="slick-init">			
-					<div>
-						<a href="#" title="">
-							<div class="pic">
-								<img src="/template/images/catalog/brakes.png" alt="Brakes" />
-							</div>
-							Brakes
-						</a>
-					</div>
-					<div>
-						<a href="#" title="">
-							<div class="pic">
-								<img src="/template/images/catalog/lubricants.png" alt="Lubricants" />
-							</div>
-							Lubricants
-						</a>
-					</div>
-					<div>
-						<a href="#" title="">
-							<div class="pic">
-								<img src="/template/images/catalog/filters.png" alt="Filters" />
-							</div>
-							Filters
-						</a>
-					</div>
-					<div>
-						<a href="#" title="">
-							<div class="pic">
-								<img src="/template/images/catalog/engine-compartment.png" alt="Engine Compartment" />
-							</div>
-							Engine<br> Compartment
-						</a>
-					</div>
-					<div>
-						<a href="#" title="">
-							<div class="pic">
-								<img src="/template/images/catalog/steering-system.png" alt="Steering System" />
-							</div>
-							Steering <br> System
-						</a>
-					</div>
-					<div>
-						<a href="#" title="">
-							<div class="pic">
-								<img src="/template/images/catalog/suspension-frame.png" alt="Suspension & Frame" />
-							</div>
-							Suspension <br> & Frame
-						</a>
-					</div>
-					<div>
-						<a href="#" title="">
-							<div class="pic">
-								<img src="/template/images/catalog/transmission.png" alt="Transmission & Wheel" />
-							</div>
-							Transmission <br> & Wheel
-						</a>
-					</div>
-					<div>
-						<a href="#" title="">
-							<div class="pic">
-								<img src="/template/images/catalog/wiper-blades.png" alt="Wiper Blades" />
-							</div>
-							Wiper Blades
-						</a>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- =/catalog -->
-		
-		<!-- =visual -->
-		<div class="visual">
-			<div class="container">
-				<div class="row d-flex justify-content-between">
-					<div class="col-md-5">	
-						<div class="visual__item visual__item-1">
-							<a href="#" title="" class="visual__link">
-								Performance <br> callipers
-								<img src="/images/break.png" alt="" />
-							</a>
-						</div>
-					</div>
-					<div class="col-md-5">
-						<div class="visual__item visual__item-2">
-							<a href="#" title="" class="visual__link">
-								Wiper <br>  search
-								<img src="/images/wiper.png" alt="" />
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- =/visual -->
-		
-		<!-- =advantages -->
-		 <div class="advantages">
-			<div class="container">
-				<div class="advantages-layout d-flex align-items-center justify-content-between flex-wrap">
-					<div class="advantage__item">
-						<div class="advantage__pic flex-center">
-							<img src="/template/images/icons/advantage-1.png" alt="" loading="lazy" />
-						</div>
-						Worldwide delivery
-					</div>
-					<div class="advantage__item">
-						<div class="advantage__pic flex-center">
-							<img src="/template/images/icons/advantage-2.png" alt="" loading="lazy" />
-						</div>
-						More than 200,000 vehicles covered
-					</div>
-					<div class="advantage__item">
-						<div class="advantage__pic flex-center">
-							<img src="/template/images/icons/advantage-3.png" alt="" loading="lazy" />
-						</div>
-						Proven Quality
-					</div>
-					<div class="advantage__item">
-						<div class="advantage__pic flex-center">
-							<img src="/template/images/icons/advantage-4.png" alt="" loading="lazy" />
-						</div>
-						Flexible return policy
-					</div>
-				</div>
-			</div>
-		 </div>
-		<!-- =/advantages -->
-		
-		
-		<!-- =lastnews -->
-		<section class="lastnews">
-			<div class="container">
-				<div class="row">
-					<div class="col-xl-2 col-lg-2">
-						<header>
-							<h1 class="title">News and promotions</h1>
-							<p>Some short text about current news and promotions</p>
-							<a href="#" class="btn btn-view d-none d-lg-inline-flex" title="">View all news</a>
-						</header>
-					</div>
-					<div class="col-xl-8 col-lg-8">
-						<div id="lastnews-carousel" class="slick-init justify-content-between">
-							<div>
-								<div class="news__item item-news">
-									<a href="#" class="item-news__link">
-										<div class="item-news__pic">
-											<img src="/images/new-1.jpg" alt="" loading="lazy" />
-										</div>
-										<div class="item-news__desc">
-											<h4 class="item-news__title">All of you need</h4>
-											<div class="item-news__text">At Fitinparts we are committed to be the GO to automotive service parts supplier. Our continuous mission targets is</div>
-											<p class="item-news__date">1 may 2019</p>
-										</div>
-									</a>
-								</div>
-							</div>
-							<div>
-								<div class="news__item item-news">
-									<a href="#" class="item-news__link">
-										<div class="item-news__pic">
-											<img src="/images/new-2.jpg" alt="" loading="lazy" />
-										</div>
-										<div class="item-news__desc">
-											<h4 class="item-news__title">New oil filters</h4>
-											<div class="item-news__text">At Fitinparts we are committed to be the GO to automotive service parts supplier. Our continuous mission targets is</div>
-											<p class="item-news__date">1 may 2019</p>
-										</div>
-									</a>
-								</div>
-							</div>
-							<div>
-								<div class="news__item item-news">
-									<a href="#" class="item-news__link">
-										<div class="item-news__pic">
-											<img src="/images/new-3.jpg" alt="" loading="lazy" />
-										</div>
-										<div class="item-news__desc">
-											<h4 class="item-news__title">NIBK present</h4>
-											<div class="item-news__text">At Fitinparts we are committed to be the GO to automotive service parts supplier. Our continuous mission targets is</div>
-											<p class="item-news__date">1 may 2019</p>
-										</div>
-									</a>
-								</div>
-							</div>
-							<div>
-								<div class="news__item item-news">
-									<a href="#" class="item-news__link">
-										<div class="item-news__pic">
-											<img src="/images/new-4.jpg" alt="" loading="lazy" />
-										</div>
-										<div class="item-news__desc">
-											<h4 class="item-news__title">JS Asakashi</h4>
-											<div class="item-news__text">At Fitinparts we are committed to be the GO to automotive service parts supplier. Our continuous mission targets is</div>
-											<p class="item-news__date">1 may 2019</p>
-										</div>
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="text-center w100 d-inline-flex d-lg-none justify-content-center">
-						<a href="#" class="btn btn-view" title="">View all news</a>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- =/lastnews -->
-		
-		
-		<!-- =reviews -->
-		<section class="reviews">
-			<div class="container">
-				<header class="text-center">
-					<div class="title">
-						<h1>Reviews on <a href="#" title="" target="_blank"><img src="/template/images/trustpilot.png" alt="trustpilot" /></a></h1>
-						<div class="stars">
-							<img src="/template/images/rate-stars.png" alt="" />		
-						</div>
-					</div>
-					<p class="rated"><a href="#" title="">Rated <strong>9.6</strong> out of <strong>10</strong> based on <u>1 250 reviews</u></a></p>
-				</header>
-				<div class="reviews__body">
-					<div class="d-sm-flex justify-content-between">
-						<div class="review-card">
-							<a href="#" class="review-card__link">
-								<div class="review-card__header">
-									<img src="//user-images.trustpilot.com/5d7d14b7d4a3046e4ba6b800/64x64.png" alt="" class="profile-image">
-									<div class="review-card__info">
-										<div class="review-card__author">hanif</div>
-										<div class="review-card__date">1 may 2019</div>
-									</div>
-								</div>
-								<div class="star-rating star-rating--medium">
-									<img src="//cdn.trustpilot.net/brand-assets/4.1.0/stars/stars-5.svg" alt="5 звезд: Замечательно">
-								</div>
-								<div class="review-card__title">Not happy with totals and taxes</div>
-								<div class="review-card__body">
-									Excellent service. Arrived on schedule. Taxes and Duty were unfair, I had to pay on DHL freight as well. Must do better on declaring value of goods.
-								</div>
-							</a>
-						</div>
-						<div class="review-card">
-							<a href="#" class="review-card__link">
-								<div class="review-card__header">
-									<img src="//user-images.trustpilot.com/5d7d14b7d4a3046e4ba6b800/64x64.png" alt="" class="profile-image">
-									<div class="review-card__info">
-										<div class="review-card__author">hanif</div>
-										<div class="review-card__date">1 may 2019</div>
-									</div>
-								</div>
-								<div class="star-rating star-rating--medium">
-									<img src="//cdn.trustpilot.net/brand-assets/4.1.0/stars/stars-5.svg" alt="5 звезд: Замечательно">
-								</div>
-								<div class="review-card__title">Not happy with totals and taxes</div>
-								<div class="review-card__body">
-									Excellent service. Arrived on schedule. Taxes and Duty were unfair, I had to pay on DHL freight as well. Must do better on declaring value of goods.
-								</div>
-							</a>
-						</div>
-						<div class="review-card">
-							<a href="#" class="review-card__link">
-								<div class="review-card__header">
-									<img src="//user-images.trustpilot.com/5d7d14b7d4a3046e4ba6b800/64x64.png" alt="" class="profile-image">
-									<div class="review-card__info">
-										<div class="review-card__author">hanif</div>
-										<div class="review-card__date">1 may 2019</div>
-									</div>
-								</div>
-								<div class="star-rating star-rating--medium">
-									<img src="//cdn.trustpilot.net/brand-assets/4.1.0/stars/stars-5.svg" alt="5 звезд: Замечательно">
-								</div>
-								<div class="review-card__title">Not happy with totals and taxes</div>
-								<div class="review-card__body">
-									Excellent service. Arrived on schedule. Taxes and Duty were unfair, I had to pay on DHL freight as well. Must do better on declaring value of goods.
-								</div>
-							</a>
-						</div>
-					</div>
-				</div>
-		
-				<a href="#" title="" class="btn btn-show btn-green btn-green-lighten-hover">Show all</a>
-			</div>
-		</section>
-		<!-- =/reviews -->
-		
-		
-		<!-- =about -->
-		<section class="about">
-			<div class="container">
-				<div class="row align-items-center">
-					<div class="col-xl-4 col-lg-4 col-md-4 text-center">
-						<picture>
-							<source srcset="images/car-parts-1200.webp" type="image/webp" media="(max-width:1450px)">
-							<source srcset="images/car-parts.webp" type="image/webp">
-							<img src="images/car-parts.jpg" alt="">
-						</picture>
-					</div>
-					<div class="col-xl-5 col-lg-6 col-md-5">
-						<header>
-							<h1 class="title">About Fitinpart.sg</h1>
-							<p class="subtitle">Online car parts distribution</p>
-						</header>
-						<div class="text">
-							<p>At Fitinparts we are committed to be the GO to automotive service parts supplier. Our continuous mission targets is to implement innovative ways of enhancing quality and speed of service, ease of transactions and upkeep for client’s various needs. Understanding every client’s situation and proving a trustworthy solution is at the core of our operations.</p>		
-						</div>
-						<a href="" class="btn btn-view">View all about us</a>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- =/about -->
-		
-		
-		<!-- =brands -->
-		<div class="brands">
-			<div class="container">
-				<div id="brands-carousel" class="slick-init justify-content-between">
-					<div><a href="#" title=""><img src="images/brands/sb.jpg" alt=""/></a></div>
-					<div><a href="#" title=""><img src="images/brands/js.jpg" alt=""/></a></div>
-					<div><a href="#" title=""><img src="images/brands/nibk.jpg" alt=""/></a></div>
-					<div><a href="#" title=""><img src="images/brands/jikiu.jpg" alt=""/></a></div>
-					<div><a href="#" title=""><img src="images/brands/denso.jpg" alt=""/></a></div>
-					<div><a href="#" title=""><img src="images/brands/azumi.jpg" alt=""/></a></div>
-					<div><a href="#" title=""><img src="images/brands/denso.jpg" alt=""/></a></div>
-				</div>
-			</div>
-		</div>
-		<!-- =/brands -->
 		<!-- InstanceEndEditable -->
 	</div>
 	<!-- =/main -->
@@ -3434,6 +2460,44 @@
 <script src="/template/js/search-moto.js"></script>
 <script src="/template/js/search-hd.js"></script>
 <!-- InstanceBeginEditable name="EditRegion4" -->
+
+
+<script>
+	var map,
+		coordinates = {lat: 1.333384, lng: 103.802040};
+
+	var gmarkers = [];
+
+
+	var locations = [
+		[1.333384, 103.902040],
+		[1.313486, 103.653377]
+	];
+
+	function initMap() {
+		map = new google.maps.Map(document.getElementById('map'), {
+			center: coordinates,
+			zoom: 11
+		});
+
+		let marker;
+
+
+		for (let i = 0; i < locations.length; i++) {  
+			marker = new google.maps.Marker({
+				position: new google.maps.LatLng(locations[i][0], locations[i][1]),
+				map: map,
+				icon: '/template/images/balloon.png'
+			});
+
+			gmarkers.push(marker);
+
+		};	
+	}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDkAypCWE9K5jTaVD0t4jxjhpJOITKYBI8&callback=initMap"></script>
+
 <!-- InstanceEndEditable -->
 </body>
 <!-- InstanceEnd --></html>

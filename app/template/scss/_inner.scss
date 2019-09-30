@@ -266,3 +266,49 @@
 	content: "ON";
 	right: 32px;
 }
+
+
+
+// =breadcrumbs
+.breadcrumbs{
+	$color: $color39;
+	color: $color;
+	margin: 1.4rem 0;
+	a{
+		color: $color;
+	}
+	 ul{
+	 	display: flex;
+	 	flex-wrap: wrap;
+	 	li{
+	 		margin: 0 .8rem;
+	 		&.B_homecrumb{
+	 			a{
+	 				padding-left: 25px;
+	 				position: relative;
+	 				&:before{
+	 					@extend .before;
+	 					@include sprite($icon-home);
+	 					left: 0;
+	 					top: 1px;
+	 				}
+	 			}
+	 		}
+	 	}
+	 }
+}
+
+
+.main{
+	h1,h2,h3,h4,h5,h6{
+		font-family: "Neo Sans Pro";
+		font-weight: 700;
+		color: #000;
+	}
+	h1{font-size: 4rem;}
+	h2{font-size: 3.5rem;}
+	h3{font-size: 3rem;}
+	h4{font-size: 2.8rem;}
+	h5{font-size: 2.6rem;}
+	h6{font-size: 2.4rem;}
+}

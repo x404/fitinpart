@@ -271,6 +271,33 @@ em strong
 		}
 	}
 
+
+	&-balloon-gray{
+		display: block;
+		@include sprite($icon-balloon-gray);
+	}
+
+	&-tel-gray{
+		display: block;
+		@include sprite($icon-tel-gray);
+	}
+
+
+	&-fax-gray{
+		display: block;
+		@include sprite($icon-fax-gray);
+	}
+
+	&-clock-gray{
+		display: block;
+		@include sprite($icon-clock-gray);
+	}
+
+	&-online-gray{
+		display: block;
+		@include sprite($icon-online-gray);
+	}
+
 	&-search{
 		@include sprite($icon-search);
 		display: block;
@@ -728,6 +755,7 @@ button{
 /* =header
 ---------------------------*/
 .header{
+	box-shadow: 0 3px 7px rgba(0, 0, 0, 0.1);
 	padding: 2.1rem 0 1.8rem;
 	position: relative;
 
@@ -1304,7 +1332,6 @@ button{
 
 		.ms-drop{
 			background-color: #657884;
-			border-radius: 1.8rem;
 			color: #fff;
 			font-weight: 700;
 			padding: 0;
@@ -1321,7 +1348,7 @@ button{
 				}
 				&.selected{
 					background-color: #778d9b;
-					border-radius: 1.8rem
+					// border-radius: 1.8rem
 				}
 			}
 			ul{
