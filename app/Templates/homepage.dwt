@@ -40,7 +40,7 @@
 <!-- TemplateEndEditable -->
 </head>
 <body>
-<div class="main-grid">
+<div class="main-grid inner">
 	<!-- =top -->
 	<div class="top">
 		<div class="container">
@@ -2346,6 +2346,7 @@
 <script src="/template/js/search-moto.js"></script>
 <script src="/template/js/search-hd.js"></script>
 <!-- TemplateBeginEditable name="EditRegion4" -->
+	
 <!-- TemplateEndEditable -->
 </body>
 </html>

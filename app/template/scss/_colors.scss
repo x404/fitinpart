@@ -39,7 +39,8 @@ $color38: #464646;
 $color39: #8d8d8d;
 
 
-div.pink-color{
+.pink-color:not(p)
+{
 	background-color: $color10;
 } 
 
