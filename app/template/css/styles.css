@@ -6649,7 +6649,7 @@ input.form-control.error {
 .main h6 {
   font-size: 2.4rem; }
 
-.inner .main {
+.main {
   background-color: #f5f6f8; }
 
 .content-location {
@@ -6699,6 +6699,22 @@ input.form-control.error {
     width: 53%; }
   .content-location #map {
     height: 675px; }
+
+.form-mailus .title {
+  font-size: 2.5rem; }
+
+.form-mailus label {
+  margin-top: 1.5rem; }
+
+.form-mailus .form-control {
+  background-color: #ffffff; }
+
+.form-mailus .capthca {
+  margin-top: 1.5rem; }
+
+.form-mailus .btn-submit {
+  box-shadow: 0 5px 15px rgba(0, 153, 255, 0.5);
+  margin-top: 2.2rem; }
 
 /* =mobile-menu
 ---------------------------*/
