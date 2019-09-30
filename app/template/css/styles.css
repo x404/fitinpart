@@ -297,7 +297,7 @@ template {
 [hidden] {
   display: none; }
 
-div.pink-color {
+.pink-color:not(p) {
   background-color: #c91537; }
 
 p.pink-color {
