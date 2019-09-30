@@ -227,15 +227,17 @@
 }
 
 
-@media (max-width: 550px){
-}
-
 
 @media (max-width: 450px){
 	.footer{
 		.copyright{
 			display: block;
+			padding-left: 0;
+			padding-right: 0;
 			text-align: center;
+			.text{
+				padding-left: 0;
+			}
 		}
 	}
 
