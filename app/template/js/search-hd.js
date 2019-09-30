@@ -143,10 +143,10 @@ $(document).ready(function(){
 			return opt;
 		},
 		onFilter: function(){
-			sm_modellist2.update();
+			sm_modellist3.update();
 		},
 		onOpen: function() {
-			sm_modellist2.update();
+			sm_modellist3.update();
 		},
 		onClick: function() {
 			$("#sm_engine_select3").multipleSelect("uncheckAll");
@@ -162,10 +162,10 @@ $(document).ready(function(){
 		placeholder : 'Engine',
 		noMatchesFound:$('#chk_app_search_sg_only').is(':checked')?'No matches found<br>To show all engines Turn <strong>OFF</strong> Common SG Veh':'No matches found',
 		onFilter: function(){
-			sm_enginelist2.update();
+			sm_enginelist3.update();
 		},
 		onOpen: function() {
-			sm_enginelist2.update();
+			sm_enginelist3.update();
 		},
 		onClick: function(view) {
 		// 	if(view.value!=AppSearchCurrentParams.engine) {
@@ -197,23 +197,29 @@ $(document).ready(function(){
 	}
 
 
-	var brandlist3 = new PerfectScrollbar('#hd .brand .listwrapper', {
-		wheelPropagation: true,
-		minScrollbarLength: 100,
-		maxScrollbarLength: 100,
-	});
+	if (document.querySelectorAll('#hd .brand .listwrapper').length >= 1) {
+		brandlist2 = new PerfectScrollbar('#hd .brand .listwrapper', {
+			wheelPropagation: true,
+			minScrollbarLength: 100,
+			maxScrollbarLength: 100,
+		});
+	};
 
-	var modellist2 = new PerfectScrollbar('#hd .model .listwrapper', {
-		wheelPropagation: true,
-		minScrollbarLength: 100,
-		maxScrollbarLength: 100,
-	});
+	if (document.querySelectorAll('#hd .model .listwrapper').length >= 1) {
+		modellist2 = new PerfectScrollbar('#hd .model .listwrapper', {
+			wheelPropagation: true,
+			minScrollbarLength: 100,
+			maxScrollbarLength: 100,
+		});
+	};
 
-	var enginelist2 = new PerfectScrollbar('#hd .engine .listwrapper', {
-		wheelPropagation: true,
-		minScrollbarLength: 100,
-		maxScrollbarLength: 100,
-	});
+	if (document.querySelectorAll('#hd .engine .listwrapper').length >= 1) {
+		enginelist2 = new PerfectScrollbar('#hd .engine .listwrapper', {
+			wheelPropagation: true,
+			minScrollbarLength: 100,
+			maxScrollbarLength: 100,
+		});
+	};
 
 
 
@@ -223,13 +229,13 @@ $(document).ready(function(){
 		maxScrollbarLength: 100,
 	});
 
-	var sm_modellist2 = new PerfectScrollbar('#sm_hd .model .listwrapper', {
+	var sm_modellist3 = new PerfectScrollbar('#sm_hd .model .listwrapper', {
 		wheelPropagation: true,
 		minScrollbarLength: 100,
 		maxScrollbarLength: 100,
 	});
 
-	var sm_enginelist2 = new PerfectScrollbar('#sm_hd .engine .listwrapper', {
+	var sm_enginelist3 = new PerfectScrollbar('#sm_hd .engine .listwrapper', {
 		wheelPropagation: true,
 		minScrollbarLength: 100,
 		maxScrollbarLength: 100,

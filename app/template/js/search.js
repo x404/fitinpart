@@ -317,46 +317,69 @@ $(document).ready(function(){
 		}
 	});
 
-	var brandlist = new PerfectScrollbar('#car .brand .listwrapper', {
-		wheelPropagation: true,
-		minScrollbarLength: 100,
-		maxScrollbarLength: 100,
-	});
-	var classlist = new PerfectScrollbar('#car .class .listwrapper', {
-		wheelPropagation: true,
-		minScrollbarLength: 100,
-		maxScrollbarLength: 100,
-	});
-	var modellist = new PerfectScrollbar('#car .model .listwrapper', {
-		wheelPropagation: true,
-		minScrollbarLength: 100,
-		maxScrollbarLength: 100,
-	});
-	var yearlist = new PerfectScrollbar('#car .year .listwrapper', {
-		wheelPropagation: true,
-		minScrollbarLength: 100,
-		maxScrollbarLength: 100,
-	});
-	var bodylist = new PerfectScrollbar('#car .body .listwrapper', {
-		wheelPropagation: true,
-		minScrollbarLength: 100,
-		maxScrollbarLength: 100,
-	});
-	var enginelist = new PerfectScrollbar('#car .engine .listwrapper', {
-		wheelPropagation: true,
-		minScrollbarLength: 100,
-		maxScrollbarLength: 100,
-	});
-	var enginenolist = new PerfectScrollbar('#car .engineno .listwrapper', {
-		wheelPropagation: true,
-		minScrollbarLength: 100,
-		maxScrollbarLength: 100,
-	});
-	var typelist = new PerfectScrollbar('#searchbysizeModal .listwrapper', {
-		wheelPropagation: true,
-		minScrollbarLength: 100,
-		maxScrollbarLength: 100,
-	});
+	if (document.querySelectorAll('#car .brand .listwrapper').length >= 1) {
+		brandlist = new PerfectScrollbar('#car .brand .listwrapper', {
+				wheelPropagation: true,
+				minScrollbarLength: 100,
+				maxScrollbarLength: 100,
+			});
+	};
+
+	
+	if (document.querySelectorAll('#car .class .listwrapper').length >= 1) {
+		classlist = new PerfectScrollbar('#car .class .listwrapper', {
+			wheelPropagation: true,
+			minScrollbarLength: 100,
+			maxScrollbarLength: 100,
+		});
+	};
+
+	if (document.querySelectorAll('#car .model .listwrapper').length >= 1) {
+		modellist = new PerfectScrollbar('#car .model .listwrapper', {
+			wheelPropagation: true,
+			minScrollbarLength: 100,
+			maxScrollbarLength: 100,
+		});
+	};
+
+	if (document.querySelectorAll('#car .year .listwrapper').length >= 1) {
+		yearlist = new PerfectScrollbar('#car .year .listwrapper', {
+			wheelPropagation: true,
+			minScrollbarLength: 100,
+			maxScrollbarLength: 100,
+		});
+	};
+
+	if (document.querySelectorAll('#car .class .listwrapper').length >= 1) {
+		bodylist = new PerfectScrollbar('#car .body .listwrapper', {
+			wheelPropagation: true,
+			minScrollbarLength: 100,
+			maxScrollbarLength: 100,
+		});
+	};
+
+	if (document.querySelectorAll('#car .engine .listwrapper').length >= 1) {
+		enginelist = new PerfectScrollbar('#car .engine .listwrapper', {
+			wheelPropagation: true,
+			minScrollbarLength: 100,
+			maxScrollbarLength: 100,
+		});
+	};
+
+	if (document.querySelectorAll('#car .engineno .listwrapper').length >= 1) {
+		enginenolist = new PerfectScrollbar('#car .engineno .listwrapper', {
+			wheelPropagation: true,
+			minScrollbarLength: 100,
+			maxScrollbarLength: 100,
+		});
+	};
+
+	var	typelist = new PerfectScrollbar('#searchbysizeModal .listwrapper', {
+			wheelPropagation: true,
+			minScrollbarLength: 100,
+			maxScrollbarLength: 100,
+		});
+
 
 	// smartsearch
 	var sm_typelist = new PerfectScrollbar('#mobSearch .listwrapper', {
