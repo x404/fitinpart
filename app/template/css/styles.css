@@ -6700,21 +6700,29 @@ input.form-control.error {
   .content-location #map {
     height: 675px; }
 
-.form-mailus .title {
-  font-size: 2.5rem; }
-
-.form-mailus label {
-  margin-top: 1.5rem; }
-
-.form-mailus .form-control {
-  background-color: #ffffff; }
-
-.form-mailus .capthca {
-  margin-top: 1.5rem; }
-
-.form-mailus .btn-submit {
-  box-shadow: 0 5px 15px rgba(0, 153, 255, 0.5);
-  margin-top: 2.2rem; }
+.form-mailus {
+  padding-top: 2.8rem; }
+  .form-mailus .title {
+    font-size: 2.5rem; }
+  .form-mailus label {
+    font-size: 1.5rem;
+    margin-top: 1.5rem; }
+  .form-mailus .form-control {
+    background-color: #ffffff;
+    margin-top: .3rem; }
+  .form-mailus .captcha {
+    margin-top: 1rem; }
+  .form-mailus .btn-submit {
+    box-shadow: 0 5px 15px rgba(0, 153, 255, 0.5);
+    margin-top: 2.2rem;
+    text-align: center !important;
+    width: 13rem;
+    display: block;
+    min-width: 0;
+    padding: 0; }
+  .form-mailus textarea.form-control {
+    height: 13rem;
+    border-radius: 15px; }
 
 /* =mobile-menu
 ---------------------------*/
