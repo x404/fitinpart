@@ -4030,13 +4030,13 @@ strong,
   .icon-fax-gray {
     display: block;
     background-image: url(../images/sprite.png);
-    background-position: -81px -27px;
+    background-position: -54px -27px;
     width: 27px;
     height: 27px; }
   .icon-clock-gray {
     display: block;
     background-image: url(../images/sprite.png);
-    background-position: -54px 0px;
+    background-position: -81px -27px;
     width: 27px;
     height: 27px; }
   .icon-online-gray {
@@ -4061,7 +4061,7 @@ strong,
     display: block; }
   .icon-search-big {
     background-image: url(../images/sprite.png);
-    background-position: -54px -27px;
+    background-position: -54px 0px;
     width: 27px;
     height: 27px; }
   .icon-zoom {
@@ -4075,6 +4075,12 @@ strong,
     background-position: -30px -32px;
     width: 22px;
     height: 25px;
+    display: block; }
+  .icon-arrow-down-gray {
+    background-image: url(../images/sprite.png);
+    background-position: -124px -98px;
+    width: 10px;
+    height: 12px;
     display: block; }
 
 .w100 {
@@ -4178,6 +4184,20 @@ strong,
       height: 26px;
       left: 18px;
       top: 12px; }
+  .btn-more {
+    background-color: #eaecf0;
+    color: #687075;
+    font-size: 1.5rem;
+    font-weight: 700;
+    height: 6rem;
+    margin: 2.2rem 0;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .btn-more .icon {
+      margin-left: .8rem; }
 
 .form-control {
   background-color: #f3f3f3;
@@ -4237,7 +4257,7 @@ button {
         padding-right: 17px; }
         .top__menu li.flexMenu-viewMore > a:after {
           background-image: url(../images/sprite.png);
-          background-position: -124px -98px;
+          background-position: -124px -110px;
           width: 10px;
           height: 7px;
           right: 0;
@@ -4383,7 +4403,7 @@ button {
 
 .dropdown-toggle:after {
   background-image: url(../images/sprite.png);
-  background-position: -124px -98px;
+  background-position: -124px -110px;
   width: 10px;
   height: 7px;
   border: none;
@@ -5426,42 +5446,6 @@ button {
   .lastnews .news__item {
     width: 31.3rem; }
 
-.item-news__link {
-  overflow: hidden;
-  background-color: #fff;
-  display: block; }
-  .item-news__link:hover {
-    text-decoration: none; }
-    .item-news__link:hover .item-news__title {
-      color: #0099ff; }
-    .item-news__link:hover .item-news__pic img {
-      transform: scale(1.05); }
-
-.item-news__desc {
-  padding: 2.5rem 2.2rem 2.5rem 2.5rem; }
-
-.item-news__title {
-  font-family: "Neo Sans Pro";
-  font-size: 1.8rem;
-  font-weight: 700;
-  transition: color .3s; }
-
-.item-news__pic {
-  overflow: hidden; }
-  .item-news__pic img {
-    transition: transform .3s;
-    width: 100%; }
-
-.item-news__text {
-  color: #4b4b4b;
-  font-size: 1.5rem;
-  line-height: 1.6;
-  margin-top: .6rem; }
-
-.item-news__date {
-  color: #919191;
-  margin-top: .8rem; }
-
 /* =/lastnews
 ---------------------------*/
 /* =reviews
@@ -6428,6 +6412,10 @@ input.form-control.error {
       left: auto !important;
       right: 0; } }
 
+.inner .main {
+  background-color: #f5f6f8;
+  padding-bottom: 7rem; }
+
 .main ol {
   counter-reset: li;
   list-style: none; }
@@ -6615,16 +6603,18 @@ input.form-control.error {
     flex-wrap: wrap; }
     .breadcrumbs ul li {
       margin: 0 .8rem; }
-      .breadcrumbs ul li.B_homecrumb a {
-        padding-left: 25px;
-        position: relative; }
-        .breadcrumbs ul li.B_homecrumb a:before {
-          background-image: url(../images/sprite.png);
-          background-position: -124px -59px;
-          width: 17px;
-          height: 14px;
-          left: 0;
-          top: 1px; }
+      .breadcrumbs ul li.B_homecrumb {
+        margin-left: 0; }
+        .breadcrumbs ul li.B_homecrumb a {
+          padding-left: 25px;
+          position: relative; }
+          .breadcrumbs ul li.B_homecrumb a:before {
+            background-image: url(../images/sprite.png);
+            background-position: -124px -59px;
+            width: 17px;
+            height: 14px;
+            left: 0;
+            top: 1px; }
 
 .main h1, .main h2, .main h3, .main h4, .main h5, .main h6 {
   font-family: "Neo Sans Pro";
@@ -6649,8 +6639,81 @@ input.form-control.error {
 .main h6 {
   font-size: 2.4rem; }
 
-.main {
-  background-color: #f5f6f8; }
+.news header {
+  background-color: #3a5160;
+  color: #fffefe;
+  padding-top: 1.4rem;
+  padding-bottom: 10.5rem; }
+  .news header .subtitle {
+    font-size: 1.7rem;
+    margin-top: .8rem; }
+
+.news h1 {
+  color: #fffefe; }
+
+.news .breadcrumbs {
+  color: #fffefe;
+  margin-top: 0; }
+  .news .breadcrumbs a {
+    color: currentColor; }
+  .news .breadcrumbs .B_homecrumb a:before {
+    filter: brightness(1.7); }
+
+.news__list {
+  margin-top: -7.5rem; }
+  .news__list .d-grid {
+    grid-row-gap: 15px;
+    grid-column-gap: 15px; }
+  .news__list .item-news {
+    transition: box-shadow .3s; }
+    .news__list .item-news:hover {
+      box-shadow: 0 5px 20px rgba(0, 113, 189, 0.15); }
+
+.lastnews .item-news__link,
+.news__list .item-news__link {
+  overflow: hidden;
+  background-color: #fff;
+  display: block; }
+  .lastnews .item-news__link:hover,
+  .news__list .item-news__link:hover {
+    text-decoration: none; }
+    .lastnews .item-news__link:hover .item-news__title,
+    .news__list .item-news__link:hover .item-news__title {
+      color: #0099ff; }
+    .lastnews .item-news__link:hover .item-news__pic img,
+    .news__list .item-news__link:hover .item-news__pic img {
+      transform: scale(1.05); }
+
+.lastnews .item-news__desc,
+.news__list .item-news__desc {
+  padding: 2.5rem 2.2rem 2.5rem 2.5rem; }
+
+.lastnews .item-news__title,
+.news__list .item-news__title {
+  font-family: "Neo Sans Pro";
+  font-size: 1.8rem;
+  font-weight: 700;
+  transition: color .3s; }
+
+.lastnews .item-news__pic,
+.news__list .item-news__pic {
+  overflow: hidden; }
+  .lastnews .item-news__pic img,
+  .news__list .item-news__pic img {
+    transition: transform .3s;
+    width: 100%; }
+
+.lastnews .item-news__text,
+.news__list .item-news__text {
+  color: #4b4b4b;
+  font-size: 1.5rem;
+  line-height: 1.6;
+  margin-top: .6rem; }
+
+.lastnews .item-news__date,
+.news__list .item-news__date {
+  color: #919191;
+  margin-top: .8rem; }
 
 .content-location {
   background-color: #ffffff;
@@ -6659,7 +6722,7 @@ input.form-control.error {
   display: flex;
   font-size: 1.5rem;
   font-weight: 1.5rem;
-  margin: 2.8rem 5.5rem 10rem 0;
+  margin: 2.8rem 5.5rem 0 0;
   padding: 1.9rem 1.2rem 1.2rem 3rem; }
   .content-location .address__item {
     margin-top: 2rem; }

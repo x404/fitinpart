@@ -1,0 +1,98 @@
+.news{
+	header{
+		background-color: #3a5160;
+		color: $color40;
+		padding-top: 1.4rem;
+		padding-bottom: 10.5rem;
+		.subtitle{
+			font-size: 1.7rem;
+			margin-top: .8rem;
+		}
+	}
+	h1{
+		color: $color40;
+	}
+	.breadcrumbs{
+		color: $color40;
+		margin-top: 0;
+		a{
+			color: currentColor;
+		}
+		.B_homecrumb{
+			a:before{
+				filter: brightness(1.7);				
+			}
+		}
+	}
+
+	&__list{
+		margin-top: -7.5rem;
+		.d-grid{
+			grid-row-gap: 15px;
+			grid-column-gap: 15px;
+		}
+		.item-news{
+			transition: box-shadow .3s;
+			&:hover{
+				box-shadow: 0 5px 20px rgba(0, 113, 189, 0.15);
+			}
+		}
+	}
+}
+
+.lastnews,
+.news__list{
+	.item-news{
+		&__link{
+			overflow: hidden; 
+			background-color: #fff;
+			display: block;
+			&:hover{
+				text-decoration: none;
+				.item-news{
+					&__title{
+						color: $color9	
+					}
+					&__pic{
+						img{
+							transform: scale(1.05)
+						}
+					}
+				}
+			}
+		}
+
+		&__desc{
+			padding: 2.5rem 2.2rem 2.5rem 2.5rem;
+		}
+
+		&__title{
+			font-family: "Neo Sans Pro";
+			font-size: 1.8rem;
+			font-weight: 700;
+			transition: color .3s;
+		}
+
+		&__pic{
+			overflow: hidden;
+			img{
+				transition: transform .3s;
+				width: 100%;
+			}
+		}
+
+		&__text{
+			color: $color19;
+			font-size: 1.5rem;
+			line-height: 1.6;
+			margin-top: .6rem;
+		}
+
+		&__date{
+			color: $color20;
+			margin-top: .8rem;
+		}
+	}
+
+}
+

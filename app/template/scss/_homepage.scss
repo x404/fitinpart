@@ -671,59 +671,6 @@
 	}
 }
 
-
-
-.item-news{
-	&__link{
-		overflow: hidden; 
-		background-color: #fff;
-		display: block;
-		&:hover{
-			text-decoration: none;
-			.item-news{
-				&__title{
-					color: $color9	
-				}
-				&__pic{
-					img{
-						transform: scale(1.05)
-					}
-				}
-			}
-		}
-	}
-
-	&__desc{
-		padding: 2.5rem 2.2rem 2.5rem 2.5rem;
-	}
-
-	&__title{
-		font-family: "Neo Sans Pro";
-		font-size: 1.8rem;
-		font-weight: 700;
-		transition: color .3s;
-	}
-
-	&__pic{
-		overflow: hidden;
-		img{
-			transition: transform .3s;
-			width: 100%;
-		}
-	}
-
-	&__text{
-		color: $color19;
-		font-size: 1.5rem;
-		line-height: 1.6;
-		margin-top: .6rem;
-	}
-
-	&__date{
-		color: $color20;
-		margin-top: .8rem;
-	}
-}
 /* =/lastnews
 ---------------------------*/
 
