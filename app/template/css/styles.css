@@ -6713,7 +6713,8 @@ input.form-control.error {
 
 .lastnews .item-news__pic,
 .news__list .item-news__pic {
-  overflow: hidden; }
+  overflow: hidden;
+  border: 1px solid #fff; }
   .lastnews .item-news__pic img,
   .news__list .item-news__pic img {
     transition: transform .3s;
