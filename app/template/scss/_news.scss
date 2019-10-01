@@ -127,3 +127,33 @@
 
 }
 
+
+
+.content-heading{
+	background-color: #1e2427;
+	background-image: url(../images/bg/new-bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: #fff;
+	padding: 1.2rem 0 4.6rem;
+	h1{
+		color: #fffefe;
+	}
+	.date{
+		margin: .8rem 0;
+	}
+	.subtitle{
+		font-size: 1.7rem;
+	}
+	.breadcrumbs{
+		color: #acbcc6;
+		margin-top: 0;
+		a{
+			color: currentColor;			
+		}
+	}
+
+	.btn-back{
+		margin-top: 1.5rem;
+	}
+}

@@ -321,3 +321,190 @@
 	h5{font-size: 2.6rem;}
 	h6{font-size: 2.4rem;}
 }
+
+.content{
+	font-size: 1.7rem;
+	padding-top: 4rem;
+
+	p{
+		line-height: 1.76;
+	}
+
+	a{
+		color: $color3;
+		text-decoration: underline;
+		&:hover{
+			text-decoration: none;
+		}
+	}
+
+	h2,h3,h4,h5,h6{
+		margin-top: 3rem;
+		margin-bottom: 1.5rem;
+	}
+
+	img{
+		max-width: 100%;
+	}
+
+	img.justifyleft, table.justifyleft {float:left; margin-right:50px;margin-bottom:40px;margin-top: 10px;}
+	img.justifyright, table.justifyright {float:right; margin-left:20px;margin-bottom:10px;}
+	img.justifycenter, table.justifycenter { display: block; margin-left: auto; margin-right: auto;}
+
+	.text-center{
+		text-align: center;
+	}
+	.text-right{
+		text-align: right;
+	}
+
+	.alignleft {
+		float: left;
+		margin: 20px 20px 10px 0;
+	}
+
+	.alignright {
+		float: right;
+		margin: 7px 0 10px 10px;
+	}
+
+	.aligncenter {
+		clear: both;
+		display: block;
+		margin: 10px auto;
+	}
+
+
+	blockquote{
+		background-color: $color3;
+		border-bottom: 5px solid $color3;
+		border-top: 5px solid $color3;
+		color: $color2;
+		display: block;
+		font-family: "Neo Sans Pro";
+		font-size: 2.4rem;
+		font-weight: 500;
+		margin: 3rem -160px;
+		padding: 2.5rem 160px;
+		position: relative;
+		&:after{
+			border-top: 3px solid #fff;
+			content: "";
+			display: block;
+			position: absolute;
+			right: 44px;
+			top: 40px;
+			width: 116px;
+		}
+		&:before{
+			background: url(../images/quote.png) no-repeat;
+			content: "";
+			display: block;
+			height: 25px;
+			left: 90px;
+			position: absolute;
+			top: 30px;
+			width: 39px;
+			z-index: 2;
+		}
+
+		&.bq-blue{
+			&:before{
+				filter: grayscale(1) brightness(5);
+			}
+		}
+		&.bq-transp{
+			background-color: transparent;
+			color: $color3;
+		}
+	}
+
+	strong{
+		color: #000;
+	}
+
+
+	// ol
+	ol{
+		counter-reset:li;
+		margin-left: 0;
+		list-style: none;
+		margin-bottom: 20px;
+		& > li{
+			position: relative;
+			padding-left: 30px;
+			margin: 3.4rem 0;
+			&:before{
+				// background: $color_1;
+				color: $color3;
+				font-size: 1.7rem;
+				$s: 3.1rem;
+				border-radius: $s;
+				content: counter(li) ")";; /* В качестве данных используем счетчик */
+				counter-increment:li; /* Увеличиваем значение счетчика на 1 */
+				/* Позиционируем и стилизируем цифры */
+				position:absolute;
+				text-align: center;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				top:0px;
+				left:0;
+				font-weight: 700;
+			}
+			ol{
+				list-style-type: none;
+				// counter-reset:li;
+				margin-left: 5px;
+				li{
+					&:before{
+						content: counter(li) "."; /* В качестве данных используем счетчик */
+						counter-increment:li; /* Увеличиваем значение счетчика на 1 */
+					}
+				}
+			}
+		}
+	}
+
+	ul{
+		list-style: none;
+		li{
+			margin: 3.7rem 0; 
+			position: relative;
+			padding-left: 30px;
+			&:before{
+				@extend .before;
+				border-top: 4px solid $color3;
+				left: 0;
+				top: 10px;
+				width: 17px;
+			}
+			li{
+				padding-left: 28px;
+				&:before{
+					width: 9px;
+				}
+			}
+		}
+	}
+
+
+	table{
+		color: #3f3f3f;
+		width: 100%;
+		th{
+			background-color: $color2;
+			border-bottom: 5px solid $color3;
+			font-size: 1.6rem;
+			padding: 1.6rem 2rem;
+		}
+
+		td{
+			font-size: 1.5rem;
+			padding: 1.3rem 2rem;
+			strong{
+				color: #000;
+			}
+		}
+	}
+}
