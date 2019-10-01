@@ -53,7 +53,7 @@
   @include media-breakpoint-up($breakpoint) {
     $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
 	  	.d#{$infix}-grid{
-	  		display: grid
+	  		display: grid !important
 	  	}
   }
 }

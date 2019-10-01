@@ -38,6 +38,36 @@
 			}
 		}
 	}
+
+	@media (max-width: 767px){
+		.news{
+			&__item{
+				margin:0 1rem 2rem;
+				width: 290px;
+			}
+		}	
+		&-grid{
+			justify-content: space-around;
+		}
+	}
+
+	@media (max-width: 575px){
+		header{
+			padding-bottom: 2rem;
+		}
+		.news{
+			&__list{
+				margin-top: 1.5rem;
+			}
+			&__item{
+				margin-left: auto; 
+				margin-right: auto; 
+			}
+		}
+	}
+
+	&-grid{
+	}
 }
 
 .lastnews,
