@@ -4215,9 +4215,12 @@ strong,
     width: 10rem; }
     .btn-back .icon {
       margin-right: 3px;
-      transition: filter .3s; }
-    .btn-back:hover .icon {
-      filter: brightness(5); }
+      transition: .3s; }
+    .btn-back:hover {
+      box-shadow: 0 5px 15px rgba(0, 153, 255, 0.5); }
+      .btn-back:hover .icon {
+        filter: brightness(5);
+        left: -2px; }
 
 .form-control {
   background-color: #f3f3f3;

@@ -504,11 +504,13 @@ em strong
 		width: 10rem;
 		.icon{
 			margin-right: 3px;
-			transition: filter .3s;
+			transition: .3s;
 		}
 		&:hover{
+			box-shadow: 0 5px 15px rgba(0, 153, 255, 0.5);
 			.icon{
-				filter: brightness(5)
+				filter: brightness(5);
+				left: -2px;
 			}
 		}
 	}
