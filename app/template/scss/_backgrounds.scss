@@ -5,10 +5,12 @@
 	.reviews{
 		background-image: url(../images/bg/reviews-bg.webp);
 	}
-	.about{
-		background-image: url(../images/bg/about-bg.webp);
-		@media(max-width: 1250px){
-			background-image: url(../images/bg/about-bg-1200.webp);
+	.homepage{
+		.about{
+			background-image: url(../images/bg/about-bg.webp);
+			@media(max-width: 1250px){
+				background-image: url(../images/bg/about-bg-1200.webp);
+			}
 		}
 	}
 
@@ -54,17 +56,19 @@
 
 
 .reviews,
-.about,
+.homepage .about,
 .searchbox__panel
 {
 	background-repeat: no-repeat;
 	background-position: right bottom
 }
 
-.about{
-	background-image: url(../images/bg/about-bg.png);
-	@media(max-width: 1250px){
-		background-image: url(../images/bg/about-bg-1200.png);
+.homepage{
+	.about{
+		background-image: url(../images/bg/about-bg.png);
+		@media(max-width: 1250px){
+			background-image: url(../images/bg/about-bg-1200.png);
+		}
 	}
 }
 

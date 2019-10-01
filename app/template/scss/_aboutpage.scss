@@ -1,0 +1,60 @@
+.aboutus-page{
+	.intro{
+		padding-right: 10rem;
+		&__title{
+			color: #000;
+			font-family: "Neo Sans Pro";
+			font-size: 2.5rem;
+			font-weight: 700;
+			line-height: 1.2;
+			margin-bottom: 2rem;
+			padding-left: 160px;
+			position: relative;
+			&:before{
+				@extend .before;
+				height: 6px;
+				width: 103px;
+				background-color: $color44;
+				border-radius: 6px;
+				left: 0;
+				top: 15px;
+			}
+		}
+		&__text{
+			color: $color43;
+			font-size: 1.7rem;
+			line-height: 1.76;
+			margin: 2rem 0;
+			padding-left: 160px;
+		}
+	}
+	.about{
+		grid-column-gap: 0;
+		grid-row-gap: 0;
+		&__cell{
+			align-items: center;
+			border: 2px solid #e4e6ea;
+			display: flex;
+			flex-direction: column;
+			height: 277px;
+			margin-bottom: -2px;
+			margin-right: -2px;
+			padding-top: 40px;
+			text-align: center;
+		}
+		&__subtitle{
+			font-size: 1.7rem;
+			margin: 3rem 0 1.5rem;
+		}
+		&__title{
+			color: #000;
+			font-family: "Neo Sans Pro";
+			font-size: 2.2rem;
+			font-weight: 500;
+		}
+
+		&__pic{
+			height: 70px;
+		}
+	}
+}

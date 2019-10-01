@@ -3902,7 +3902,7 @@ strong,
   .tdu:hover {
     text-decoration: none; }
 
-.before, .icon:before, .btn-view:before, .btn-google:before, .btn-facebook:before, .top__left:before, .top__menu li.flexMenu-viewMore > a:after, .littlecart .cart-body .cart-products .count .minus:before, .littlecart .cart-body .cart-products .count .plus:before, .littlecart .cart-body .cart-products .count .plus:after, .search .vehicle-search-str .vehicle-search-item:after, .promo .wrapper:before, .visual__item:before, .modal-content-bg:before, .modal-content-bg:after, .modal-info:after, .modal-menu:before, .modal-menu .catalog:before, .breadcrumbs ul li.B_homecrumb a:before, .content ul li:before, .content-location .days:not(:last-child):after {
+.before, .icon:before, .btn-view:before, .btn-google:before, .btn-facebook:before, .top__left:before, .top__menu li.flexMenu-viewMore > a:after, .littlecart .cart-body .cart-products .count .minus:before, .littlecart .cart-body .cart-products .count .plus:before, .littlecart .cart-body .cart-products .count .plus:after, .search .vehicle-search-str .vehicle-search-item:after, .promo .wrapper:before, .visual__item:before, .modal-content-bg:before, .modal-content-bg:after, .modal-info:after, .modal-menu:before, .modal-menu .catalog:before, .breadcrumbs ul li.B_homecrumb a:before, .content ul li:before, .aboutus-page .intro__title:before, .content-location .days:not(:last-child):after {
   content: "";
   display: block;
   position: absolute; }
@@ -5586,60 +5586,60 @@ button {
 
 /* =/reviews
 ---------------------------*/
-/* =about
----------------------------*/
-.about {
-  padding: 4.5rem 0;
-  font-size: 1.7rem; }
-  .about .subtitle {
-    color: #0571b9;
-    font-size: 2.8rem;
-    font-family: "Neo Sans Pro";
-    font-weight: 700;
-    margin-top: .6rem; }
-  .about .text {
-    line-height: 1.76;
-    margin-top: 1.5rem;
-    color: #464646; }
-  .about img {
-    max-width: 100%;
-    vertical-align: top; }
-
-/* =/about
----------------------------*/
-/* =brands
----------------------------*/
-.brands {
-  border-top: 1px solid #d7d7d7;
-  padding: 5rem 0 6rem; }
-  .brands div.slick-slide {
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 75px; }
-  .brands a {
-    display: inline-block;
-    padding-top: 10px;
-    text-align: center; }
-    .brands a img {
-      display: inline;
+.homepage {
+  /* =about
+	---------------------------*/
+  /* =/about
+	---------------------------*/
+  /* =brands
+	---------------------------*/ }
+  .homepage .about {
+    padding: 4.5rem 0;
+    font-size: 1.7rem; }
+    .homepage .about .subtitle {
+      color: #0571b9;
+      font-size: 2.8rem;
+      font-family: "Neo Sans Pro";
+      font-weight: 700;
+      margin-top: .6rem; }
+    .homepage .about .text {
+      line-height: 1.76;
+      margin-top: 1.5rem;
+      color: #464646; }
+    .homepage .about img {
       max-width: 100%;
-      vertical-align: top;
-      transition: transform .3s; }
-    .brands a:hover img {
-      transform: translateY(-10px); }
-  .brands img {
-    margin-left: auto;
-    margin-right: auto; }
-  .brands .slick-next {
-    right: 0; }
-  .brands .slick-prev {
-    left: 0;
-    transform: rotate(180deg); }
-  .brands #brands-carousel {
-    padding-left: 60px;
-    padding-right: 60px; }
+      vertical-align: top; }
+  .homepage .brands {
+    border-top: 1px solid #d7d7d7;
+    padding: 5rem 0 6rem; }
+    .homepage .brands div.slick-slide {
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 75px; }
+    .homepage .brands a {
+      display: inline-block;
+      padding-top: 10px;
+      text-align: center; }
+      .homepage .brands a img {
+        display: inline;
+        max-width: 100%;
+        vertical-align: top;
+        transition: transform .3s; }
+      .homepage .brands a:hover img {
+        transform: translateY(-10px); }
+    .homepage .brands img {
+      margin-left: auto;
+      margin-right: auto; }
+    .homepage .brands .slick-next {
+      right: 0; }
+    .homepage .brands .slick-prev {
+      left: 0;
+      transform: rotate(180deg); }
+    .homepage .brands #brands-carousel {
+      padding-left: 60px;
+      padding-right: 60px; }
 
 .slick-arrow-round-gray {
   border-radius: 50%;
@@ -5906,10 +5906,10 @@ button {
 .webp .reviews {
   background-image: url(../images/bg/reviews-bg.webp); }
 
-.webp .about {
+.webp .homepage .about {
   background-image: url(../images/bg/about-bg.webp); }
   @media (max-width: 1250px) {
-    .webp .about {
+    .webp .homepage .about {
       background-image: url(../images/bg/about-bg-1200.webp); } }
 
 .webp .searchbox__panel-vehicle {
@@ -5938,15 +5938,15 @@ button {
   padding: 3rem 0 2rem; }
 
 .reviews,
-.about,
+.homepage .about,
 .searchbox__panel {
   background-repeat: no-repeat;
   background-position: right bottom; }
 
-.about {
+.homepage .about {
   background-image: url(../images/bg/about-bg.png); }
   @media (max-width: 1250px) {
-    .about {
+    .homepage .about {
       background-image: url(../images/bg/about-bg-1200.png); } }
 
 .searchbox__panel-vehicle {
@@ -6639,28 +6639,24 @@ input.form-control.error {
             left: 0;
             top: 1px; }
 
-.main h1, .main h2, .main h3, .main h4, .main h5, .main h6 {
-  font-family: "Neo Sans Pro";
-  font-weight: 700;
-  color: #000; }
-
-.main h1 {
-  font-size: 4rem; }
-
-.main h2 {
-  font-size: 3.5rem; }
-
-.main h3 {
-  font-size: 3rem; }
-
-.main h4 {
-  font-size: 2.8rem; }
-
-.main h5 {
-  font-size: 2.6rem; }
-
-.main h6 {
-  font-size: 2.4rem; }
+.main {
+  font-size: 1.5rem; }
+  .main h1, .main h2, .main h3, .main h4, .main h5, .main h6 {
+    font-family: "Neo Sans Pro";
+    font-weight: 700;
+    color: #000; }
+  .main h1 {
+    font-size: 4rem; }
+  .main h2 {
+    font-size: 3.5rem; }
+  .main h3 {
+    font-size: 3rem; }
+  .main h4 {
+    font-size: 2.8rem; }
+  .main h5 {
+    font-size: 2.6rem; }
+  .main h6 {
+    font-size: 2.4rem; }
 
 .content {
   font-size: 1.7rem;
@@ -7034,6 +7030,55 @@ input.form-control.error {
       color: currentColor; }
   .content-heading .btn-back {
     margin-top: 1.5rem; }
+
+.aboutus-page .intro {
+  padding-right: 10rem; }
+  .aboutus-page .intro__title {
+    color: #000;
+    font-family: "Neo Sans Pro";
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+    padding-left: 160px;
+    position: relative; }
+    .aboutus-page .intro__title:before {
+      height: 6px;
+      width: 103px;
+      background-color: #2899d7;
+      border-radius: 6px;
+      left: 0;
+      top: 15px; }
+  .aboutus-page .intro__text {
+    color: #454c50;
+    font-size: 1.7rem;
+    line-height: 1.76;
+    margin: 2rem 0;
+    padding-left: 160px; }
+
+.aboutus-page .about {
+  grid-column-gap: 0;
+  grid-row-gap: 0; }
+  .aboutus-page .about__cell {
+    align-items: center;
+    border: 2px solid #e4e6ea;
+    display: flex;
+    flex-direction: column;
+    height: 277px;
+    margin-bottom: -2px;
+    margin-right: -2px;
+    padding-top: 40px;
+    text-align: center; }
+  .aboutus-page .about__subtitle {
+    font-size: 1.7rem;
+    margin: 3rem 0 1.5rem; }
+  .aboutus-page .about__title {
+    color: #000;
+    font-family: "Neo Sans Pro";
+    font-size: 2.2rem;
+    font-weight: 500; }
+  .aboutus-page .about__pic {
+    height: 70px; }
 
 .content-location {
   background-color: #ffffff;
