@@ -6739,6 +6739,8 @@ input.form-control.error {
     .content blockquote.bq-transp {
       background-color: transparent;
       color: #0672ba; }
+      .content blockquote.bq-transp:after {
+        display: none; }
   .content strong {
     color: #000; }
   .content ol {
@@ -6803,6 +6805,87 @@ input.form-control.error {
       padding: 1.3rem 2rem; }
       .content table td strong {
         color: #000; }
+  @media (max-width: 1700px) {
+    .content blockquote {
+      margin-left: 0;
+      margin-right: 0; } }
+  @media (max-width: 950px) {
+    .content img.justifyleft, .content table.justifyleft {
+      float: none;
+      margin-right: 0; }
+    .content img.justifyright, .content table.justifyright {
+      float: none;
+      margin-left: 0; }
+    .content blockquote {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      padding-left: 60px;
+      padding-right: 40px; }
+      .content blockquote:after {
+        display: none; }
+      .content blockquote:before {
+        left: 10px; } }
+  @media (max-width: 767px) {
+    .content blockquote {
+      font-size: 2rem; }
+    .content h1 {
+      font-size: 3.8rem; }
+    .content h2 {
+      font-size: 3.2rem; }
+    .content h3 {
+      font-size: 2.8rem; }
+    .content h4 {
+      font-size: 2.6rem; }
+    .content h5 {
+      font-size: 2.4rem; }
+    .content h6 {
+      font-size: 2.3rem; } }
+  @media (max-width: 575px) {
+    .content {
+      font-size: 1.5rem; }
+      .content blockquote {
+        font-size: 1.8rem; }
+      .content h1 {
+        font-size: 3.6rem; }
+      .content h2 {
+        font-size: 3rem; }
+      .content h3 {
+        font-size: 2.6rem; }
+      .content h4 {
+        font-size: 2.4rem; }
+      .content h5 {
+        font-size: 2.2rem; }
+      .content h6 {
+        font-size: 2.1rem; } }
+  @media (max-width: 350px) {
+    .content {
+      font-size: 1.5rem; }
+      .content blockquote {
+        font-size: 1.6rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem; }
+        .content blockquote:before {
+          display: none; }
+      .content ul li {
+        margin: 2rem 0; }
+      .content ol li {
+        margin: 2rem 0; }
+      .content table th,
+      .content table td {
+        padding-left: 1rem;
+        padding-right: 1rem; }
+      .content h1 {
+        font-size: 3rem; }
+      .content h2 {
+        font-size: 2.5rem; }
+      .content h3 {
+        font-size: 2.2rem; }
+      .content h4 {
+        font-size: 2rem; }
+      .content h5 {
+        font-size: 1.8rem; }
+      .content h6 {
+        font-size: 1.6rem; } }
 
 .readmore {
   border-top: 2px solid #d6dde1;
@@ -6816,6 +6899,27 @@ input.form-control.error {
     margin-top: 2.5rem; }
   .readmore .news__item {
     width: 38rem; }
+  @media (max-width: 1199px) {
+    .readmore.lastnews .news__item {
+      width: 26rem; } }
+  @media (max-width: 992px) {
+    .readmore.lastnews .news__item {
+      width: 23rem; } }
+  @media (max-width: 959px) {
+    .readmore.lastnews .news__item {
+      width: 26rem; } }
+  @media (max-width: 820px) {
+    .readmore.lastnews .news__item {
+      width: 24rem; } }
+  @media (max-width: 550px) {
+    .readmore.lastnews .news__item {
+      width: 23rem; } }
+  @media (max-width: 500px) {
+    .readmore.lastnews .news__item {
+      width: 21rem; }
+    .readmore.lastnews .item-news__desc {
+      padding-left: 1.7rem;
+      padding-right: 1.7rem; } }
 
 .news header {
   background-color: #3a5160;
