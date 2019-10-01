@@ -6801,6 +6801,19 @@ input.form-control.error {
       .content table td strong {
         color: #000; }
 
+.readmore {
+  border-top: 2px solid #d6dde1;
+  padding-top: 4.5rem;
+  margin-top: 6rem; }
+  .readmore h1,
+  .readmore .title {
+    color: #000;
+    font-size: 3.6rem; }
+  .readmore #lastnews-carousel {
+    margin-top: 2.5rem; }
+  .readmore .news__item {
+    width: 38rem; }
+
 .news header {
   background-color: #3a5160;
   color: #fffefe;

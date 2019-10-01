@@ -508,3 +508,21 @@
 		}
 	}
 }
+
+
+.readmore{
+	border-top: 2px solid #d6dde1;
+	padding-top: 4.5rem;
+	margin-top: 6rem;
+	h1,
+	.title{
+		color: #000;
+		font-size: 3.6rem;
+	}
+	#lastnews-carousel{
+		margin-top: 2.5rem;
+	}
+	.news__item{
+		width: 38rem;
+	}	
+}
