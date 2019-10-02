@@ -7218,6 +7218,21 @@ input.form-control.error {
     margin-bottom: 5rem; }
   .aboutus-page .brands .main-brands {
     margin-bottom: 11rem; }
+  .aboutus-page .ourservice {
+    font-size: 2rem;
+    margin-top: 17rem;
+    padding-bottom: 12rem; }
+    .aboutus-page .ourservice__item {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 1.25rem 0; }
+    .aboutus-page .ourservice__pic {
+      min-width: 45px;
+      margin-right: 1.5rem;
+      text-align: center; }
+    .aboutus-page .ourservice .text {
+      padding-left: 10rem;
+      padding-top: 1rem; }
 
 .title-md {
   font-family: "Neo Sans Pro";
