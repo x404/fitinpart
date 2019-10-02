@@ -323,14 +323,28 @@ $(document).ready(function(){
 		prevArrow:'<button class="slick-arrow slick-arrow-round-blue slick-prev" aria-label="Previous" type="button"><i class=" icon icon-slider-arrow-blue"></i></button>',
 		nextArrow:'<button class="slick-arrow slick-arrow-round-blue slick-next" aria-label="Next" type="button"><i class=" icon icon-slider-arrow-blue"></i></button>',
 		dots: false,
-		slidesToShow: 4,
+		slidesToShow: 3,
 		slidesToScroll: 1,
 		autoplay: false,
 		autoplaySpeed: 5000,
 		arrows : true,
-		variableWidth: true,
 		centerMode: true,
-		appendArrows : $('.fitinpart-manage .arrows')
+		lazyLoad: 'ondemand',
+		appendArrows : $('.fitinpart-manage .arrows'),
+		responsive: [
+			{
+				breakpoint: 992,
+				settings: {
+					slidesToShow: 2
+				}
+			},
+			{
+				breakpoint: 767,
+				settings: {
+					slidesToShow: 1
+				}
+			}
+		]
 	});
 
 $('#fitinpart-carousel').on('afterChange', function(event, slick, currentSlide, nextSlide){

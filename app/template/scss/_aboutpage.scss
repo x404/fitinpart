@@ -136,12 +136,12 @@
 		}
 
 		&__pic{
-			position: relative;
 			margin-right: 1rem;
 			padding-right: 20px;
+			position: relative;
 			img{
-				display: block;
 				box-shadow: 10px 17px 40px rgba(0, 51, 95, 0.15);
+				display: block;
 				max-width: 100%;
 			}
 			&:after{
@@ -290,7 +290,6 @@
 
 					&:before{
 						background-color: $color44;
-						// background: $color_1;
 						color: #fff;
 						font-size: 1.7rem;
 						$s: 4rem;
@@ -411,6 +410,9 @@
 	@media (max-width: 1199px){
 		font-size: 2.4rem;
 	}
+	@media (max-width: 767px){
+		font-size: 20px;
+	}
 }
 
 .bl-line,
@@ -426,6 +428,13 @@
 		bottom: 0;
 		height: 6px;
 		width: 103px;
+	}
+	@media (max-width: 767px){
+		padding-bottom: 15px;
+		&:after{
+			width: 70px;
+			height: 4px;
+		}
 	}
 }
 
@@ -488,12 +497,6 @@
 		.ouroffice__text{
 			padding-left: 0;
 			padding-right: 0;
-		}
-
-		.brands{
-			&__list{
-
-			}
 		}
 
 		.about{
@@ -617,8 +620,6 @@
 		}
 
 		.brands{
-			&__list{
-			}
 			&__item{
 				width: calc(25% - 4px); 
 				margin: 2px;
@@ -633,6 +634,254 @@
 			padding-bottom: 0;
 			.text{
 				margin-bottom: 30px;
+			}
+		}
+	}
+
+
+	@media (max-width: 767px){
+		.intro-command{
+			padding-top: 0;
+		}
+		.intro{
+			&__title,
+			&__text{
+				padding-left: 0;
+				&:before{
+					display: none;
+				}
+			}
+		}
+		.quote{
+			font-size: 20px;
+		}
+
+		.advantages{
+			padding: 40px 0;
+			&__text{
+				font-size: 16px;
+			}
+		}
+
+		.advantage__item{
+			width: calc(50% - 40px);
+		}
+
+		.products{
+			.title-md{
+				padding-bottom: 18px;
+			}
+			&__item{
+				width: 33%;
+			}
+		}
+
+		.brands{
+			&__item{
+				width: calc(33% - 4px);
+			}
+			&__text{
+				font-size: 18px;
+			}
+		}
+
+		.ourservice{
+			margin-top: 4rem;
+		}
+	}
+
+	@media (max-width: 576px){
+		.intro{
+			&__title{
+				font-size: 22px;
+			}
+			&__text{
+				font-size: 15px;
+			}
+		}
+
+		.about{
+			&__cell{
+				width: 50%;
+			}
+		}
+
+		.quote{
+			font-size: 18px;
+			padding: 20px 0;
+			.pin{
+				font-size: 45px;
+			}
+		}
+
+		.advantages{
+			padding: 20px 0;
+			&__text{
+				font-size: 15px;
+			}
+		}
+
+		.advantage{
+			&__item{
+				font-size: 15px;
+				margin-top: 20px;			
+			}
+		}
+
+		.ouroffice{
+			padding: 3rem 0;
+		}
+
+		.products__item{
+			width: 50%;
+		}
+
+		.brands__item{
+			width: calc(50% - 4px)
+		}
+	}
+
+
+	@media (max-width: 480px){
+		.intro{
+			&__title{
+				font-size: 20px;
+			}
+		}
+
+		.about{
+			&__subtitle{
+				font-size: 15px;
+				margin-top: 20px;
+			}
+			&__title{
+				font-size: 1.6rem;
+			}
+
+			&__cell{
+				height: 220px;
+			}
+		}
+
+		.item-products__title{
+			font-size: 15px;
+		}
+
+		.products__item{
+			height: auto;
+			padding-bottom: 40px;			
+		}
+		.ourservice{
+			font-size: 16px;
+			.text{
+				padding-left: 0;
+			}
+		}
+
+		.warranty{
+			h3{
+				font-size: 18px;
+			}
+			.text{
+				font-size: 15px;
+			}
+		}
+	}
+
+
+	@media (max-width: 400px){
+		.advantage__item{
+			width: 100%;
+		}
+
+		.products{
+			&__list{
+				display: block !important;
+			}
+			&__item{
+				margin-left: auto;
+				margin-right: auto;
+				margin-bottom: 10px;
+				width: 90%;
+			}
+		}
+
+		.brands{
+			padding-top: 0;
+			&__text{
+				margin-top: 20px;
+				font-size: 16px;
+				line-height: 1.5;
+			}
+
+			&__list{
+				display: block !important;
+			}
+
+			&__item{
+				width: 280px;
+				margin: 4px auto;
+			}
+		}
+
+		.ourservice{
+			margin-top: 0;
+			.title-md{
+				text-align: center;
+				&:after{
+					left: 50%;
+					margin-left: -50px;
+				}
+			}
+			&__item{
+				display: block;
+				text-align: center;
+			}
+			&__pic{
+				margin-left: auto;
+				margin-right: auto;
+				margin-bottom: 8px;
+			}
+		}
+	}
+
+
+	@media (max-width: 350px){
+		.about{
+			display: block;
+			&__cell{
+				margin-left: auto;
+				margin-right: auto;
+				margin-bottom: 2px;
+				width: 280px;
+			}
+		}
+
+		.ouroffice{
+			font-size: 16px;
+		}
+
+		.brands{
+			margin-left: 0;
+			margin-right: 0;
+			.main-brands{
+				margin-bottom: 5rem;
+			}
+		}
+
+		#brands-carousel2{
+			margin-left: -15px;
+			margin-right: -15px;
+		}
+
+		.ourservice,
+		.warranty{
+			.title-md{
+				text-align: center;
+				&:after{
+					left: 50%;
+					margin-left: -35px;
+				}
 			}
 		}
 	}

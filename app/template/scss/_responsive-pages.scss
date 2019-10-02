@@ -627,13 +627,15 @@
 	}
 
 
-	.advantages{
-		padding: 3.6rem 0;
-	}
-	.advantage__item{
-		flex-basis: 49%;
-		padding-right: 0;
-		margin-bottom: .8rem;
+	.homepage{
+		.advantages{
+			padding: 3.6rem 0;
+		}
+		.advantage__item{
+			flex-basis: 49%;
+			padding-right: 0;
+			margin-bottom: .8rem;
+		}
 	}
 
 	.main .title, .main h1{
