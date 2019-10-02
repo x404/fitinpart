@@ -5921,6 +5921,9 @@ button {
 .webp .searchbox__panel-vin {
   background-image: url(../images/bg/vin-bg.webp); }
 
+.webp .intro-command-bg {
+  background-image: url(../images/bg/command-bg.webp); }
+
 .advantages {
   background-repeat: no-repeat;
   background-position: center;
@@ -5957,6 +5960,11 @@ button {
 
 .searchbox__panel-vin {
   background-image: url(../images/bg/vin-bg.jpg); }
+
+.intro-command-bg {
+  background-image: url(../images/bg/command-bg.jpg);
+  background-position: top center;
+  background-repeat: no-repeat; }
 
 .modal .close {
   padding: 0;
@@ -6618,7 +6626,7 @@ input.form-control.error {
 
 .breadcrumbs {
   color: #8d8d8d;
-  margin: 1.4rem 0; }
+  padding: 1.4rem 0; }
   .breadcrumbs a {
     color: #8d8d8d; }
   .breadcrumbs ul {
@@ -7040,6 +7048,7 @@ input.form-control.error {
     font-weight: 700;
     line-height: 1.2;
     margin-bottom: 2rem;
+    margin-top: 3rem;
     padding-left: 160px;
     position: relative; }
     .aboutus-page .intro__title:before {
@@ -7071,14 +7080,39 @@ input.form-control.error {
     text-align: center; }
   .aboutus-page .about__subtitle {
     font-size: 1.7rem;
-    margin: 3rem 0 1.5rem; }
+    margin: 3rem 0 .6rem; }
   .aboutus-page .about__title {
     color: #000;
     font-family: "Neo Sans Pro";
     font-size: 2.2rem;
-    font-weight: 500; }
+    font-weight: 500;
+    line-height: 1.36; }
   .aboutus-page .about__pic {
     height: 70px; }
+
+.aboutus-page .intro-command-bg {
+  background-color: #e1e7eb;
+  padding-bottom: 15rem; }
+
+.aboutus-page .intro-command {
+  padding-top: 3.5rem; }
+
+.aboutus-page .quote {
+  border-bottom: 5px solid #c91537;
+  border-top: 5px solid #c91537;
+  color: #c91537;
+  font-family: "Neo Sans Pro";
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 1.25;
+  margin-top: 1.2rem;
+  padding: 5.7rem 0 4.8rem;
+  text-align: center; }
+  .aboutus-page .quote .pin {
+    line-height: .4;
+    font-weight: 500;
+    height: 2.5rem;
+    font-size: 10rem; }
 
 .content-location {
   background-color: #ffffff;

@@ -8,6 +8,7 @@
 			font-weight: 700;
 			line-height: 1.2;
 			margin-bottom: 2rem;
+			margin-top: 3rem;
 			padding-left: 160px;
 			position: relative;
 			&:before{
@@ -44,17 +45,47 @@
 		}
 		&__subtitle{
 			font-size: 1.7rem;
-			margin: 3rem 0 1.5rem;
+			margin: 3rem 0 .6rem;
 		}
 		&__title{
 			color: #000;
 			font-family: "Neo Sans Pro";
 			font-size: 2.2rem;
 			font-weight: 500;
+			line-height: 1.36;
 		}
 
 		&__pic{
 			height: 70px;
+		}
+	}
+
+	.intro-command-bg{
+		background-color: #e1e7eb;
+		padding-bottom: 15rem;
+	}
+
+	.intro-command{
+		padding-top: 3.5rem;
+	}
+
+	.quote{
+		$color: $color10;
+		border-bottom: 5px solid $color;
+		border-top: 5px solid $color;
+		color: $color;
+		font-family: "Neo Sans Pro";
+		font-size: 4rem;
+		font-weight: 700;
+		line-height: 1.25;
+		margin-top: 1.2rem;
+		padding: 5.7rem 0 4.8rem;
+		text-align: center;
+		.pin{
+			line-height: .4;
+			font-weight: 500;
+			height: 2.5rem;
+			font-size: 10rem;
 		}
 	}
 }
