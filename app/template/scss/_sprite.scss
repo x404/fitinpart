@@ -251,6 +251,17 @@ $icon-search-total-width: 141px;
 $icon-search-total-height: 121px;
 $icon-search-image: '../images/sprite.png';
 $icon-search: (81px, 27px, -81px, -27px, 27px, 27px, 141px, 121px, '../images/sprite.png', 'icon-search', );
+$icon-slider-arrow-blue-name: 'icon-slider-arrow-blue';
+$icon-slider-arrow-blue-x: 40px;
+$icon-slider-arrow-blue-y: 88px;
+$icon-slider-arrow-blue-offset-x: -40px;
+$icon-slider-arrow-blue-offset-y: -88px;
+$icon-slider-arrow-blue-width: 8px;
+$icon-slider-arrow-blue-height: 13px;
+$icon-slider-arrow-blue-total-width: 141px;
+$icon-slider-arrow-blue-total-height: 121px;
+$icon-slider-arrow-blue-image: '../images/sprite.png';
+$icon-slider-arrow-blue: (40px, 88px, -40px, -88px, 8px, 13px, 141px, 121px, '../images/sprite.png', 'icon-slider-arrow-blue', );
 $icon-slider-arrow-gray-name: 'icon-slider-arrow-gray';
 $icon-slider-arrow-gray-x: 124px;
 $icon-slider-arrow-gray-y: 17px;
@@ -320,7 +331,7 @@ $icon-zoom: (124px, 73px, -124px, -73px, 13px, 13px, 141px, 121px, '../images/sp
 $spritesheet-width: 141px;
 $spritesheet-height: 121px;
 $spritesheet-image: '../images/sprite.png';
-$spritesheet-sprites: ($icon-9dotted, $icon-arrow-down-gray, $icon-arrow-left-gray, $icon-arrow-right, $icon-arrow-right2, $icon-arrow-right3, $icon-balloon-gray, $icon-balloon, $icon-camera, $icon-caret, $icon-cart-blue, $icon-clock-gray, $icon-compare, $icon-fax-gray, $icon-fb, $icon-google, $icon-home, $icon-littlecart, $icon-online-gray, $icon-search-big, $icon-search-middle, $icon-search, $icon-slider-arrow-gray, $icon-slider-arrow, $icon-tel-gray, $icon-tel, $icon-user, $icon-zoom, );
+$spritesheet-sprites: ($icon-9dotted, $icon-arrow-down-gray, $icon-arrow-left-gray, $icon-arrow-right, $icon-arrow-right2, $icon-arrow-right3, $icon-balloon-gray, $icon-balloon, $icon-camera, $icon-caret, $icon-cart-blue, $icon-clock-gray, $icon-compare, $icon-fax-gray, $icon-fb, $icon-google, $icon-home, $icon-littlecart, $icon-online-gray, $icon-search-big, $icon-search-middle, $icon-search, $icon-slider-arrow-blue, $icon-slider-arrow-gray, $icon-slider-arrow, $icon-tel-gray, $icon-tel, $icon-user, $icon-zoom, );
 $spritesheet: (141px, 121px, '../images/sprite.png', $spritesheet-sprites, );
 
 // The provided mixins are intended to be used with the array-like variables

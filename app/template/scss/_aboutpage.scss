@@ -256,10 +256,84 @@
 	}
 }
 
+#fitinpart-carousel{
+	a{
+		display: block;
+		margin-right: 2px;
+		position: relative;
+		&:after,
+		&:before
+		{
+			@extend .before;
+			opacity: 0;
+			transition: opacity .3s;
+		}
+		&:hover{
+			&:after,
+			&:before{
+				opacity: 1;
+			}			
+		}
+
+		&:before{
+			background-color: rgba(0, 153, 255, .5);
+			bottom: 0;
+			left: 0;
+			right: 0;
+			top: 0;
+		}
+		&:after{
+			background: url(../images/bigzoom.png) no-repeat;
+			height: 136px;
+			left: 50%;
+			margin-left: -72px;
+			margin-top: -72px;
+			top: 50%;
+			width: 135px;
+		}
+	}
+	img{
+		display: block;
+	}
+
+}
+
+.fitinpart-manage{
+	margin-top: 2.5rem;
+	position: relative;
+	padding-left: 160px;
+	.arrows{
+		display: flex;
+		margin-left: 20px;
+	}
+	.text{
+		color: #242830;
+		font-size: 1.7rem;
+		font-weight: 700;
+	}
+	#current{
+		color: $color45;
+	}
+	.slick{
+		&-arrow{
+			left: 0;
+			top: 2.5rem;
+			margin-top: 0;
+			position: static;
+		}
+		&-next{
+			margin-left: 1.1rem;
+			.icon{
+				transform: rotate(180deg)				
+			}
+		}
+	}
+}
+
 .title-md{
+	color: #000;
 	font-family: "Neo Sans Pro";
 	font-size: 3rem;
-	color: #000;
 	font-weight: 500;
 }
 

@@ -254,6 +254,9 @@ em strong
 		@include sprite($icon-slider-arrow-gray);
 	}
 
+	&-slider-arrow-blue{
+		@include sprite($icon-slider-arrow-blue);
+	}
 
 	&-camera{
 		@include sprite($icon-camera);

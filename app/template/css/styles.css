@@ -3908,7 +3908,7 @@ strong,
   .tdu:hover {
     text-decoration: none; }
 
-.before, .icon:before, .btn-view:before, .btn-google:before, .btn-facebook:before, .top__left:before, .top__menu li.flexMenu-viewMore > a:after, .littlecart .cart-body .cart-products .count .minus:before, .littlecart .cart-body .cart-products .count .plus:before, .littlecart .cart-body .cart-products .count .plus:after, .search .vehicle-search-str .vehicle-search-item:after, .promo .wrapper:before, .visual__item:before, .modal-content-bg:before, .modal-content-bg:after, .modal-info:after, .modal-menu:before, .modal-menu .catalog:before, .breadcrumbs ul li.B_homecrumb a:before, .content ul li:before, .aboutus-page .intro__title:before, .aboutus-page .advantages__text:after, .aboutus-page .ouroffice__pic:after, .bl-line:after,
+.before, .icon:before, .btn-view:before, .btn-google:before, .btn-facebook:before, .top__left:before, .top__menu li.flexMenu-viewMore > a:after, .littlecart .cart-body .cart-products .count .minus:before, .littlecart .cart-body .cart-products .count .plus:before, .littlecart .cart-body .cart-products .count .plus:after, .search .vehicle-search-str .vehicle-search-item:after, .promo .wrapper:before, .visual__item:before, .modal-content-bg:before, .modal-content-bg:after, .modal-info:after, .modal-menu:before, .modal-menu .catalog:before, .breadcrumbs ul li.B_homecrumb a:before, .content ul li:before, .aboutus-page .intro__title:before, .aboutus-page .advantages__text:after, .aboutus-page .ouroffice__pic:after, #fitinpart-carousel a:after, #fitinpart-carousel a:before, .bl-line:after,
 .bc-line:after, .content-location .days:not(:last-child):after {
   content: "";
   display: block;
@@ -4009,6 +4009,11 @@ strong,
     background-position: -124px -17px;
     width: 12px;
     height: 21px; }
+  .icon-slider-arrow-blue {
+    background-image: url(../images/sprite.png);
+    background-position: -40px -88px;
+    width: 8px;
+    height: 13px; }
   .icon-camera {
     background-image: url(../images/sprite.png);
     background-position: -18px -103px;
@@ -5667,6 +5672,25 @@ button {
   .slick-arrow-round-gray .icon {
     margin: auto; }
 
+.slick-arrow-round-blue {
+  border-radius: 50%;
+  margin-top: -2rem;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  transition: .3s;
+  z-index: 50;
+  display: flex;
+  height: 34px;
+  width: 34px;
+  border: 2px solid #0099ff; }
+  .slick-arrow-round-blue:hover, .slick-arrow-round-blue:focus {
+    background-color: #0099ff; }
+    .slick-arrow-round-blue:hover .icon, .slick-arrow-round-blue:focus .icon {
+      filter: brightness(15); }
+  .slick-arrow-round-blue .icon {
+    margin: auto; }
+
 /* =/brands
 ---------------------------*/
 /* =mobile-menu
@@ -7234,10 +7258,60 @@ input.form-control.error {
       padding-left: 10rem;
       padding-top: 1rem; }
 
+#fitinpart-carousel a {
+  display: block;
+  margin-right: 2px;
+  position: relative; }
+  #fitinpart-carousel a:after, #fitinpart-carousel a:before {
+    opacity: 0;
+    transition: opacity .3s; }
+  #fitinpart-carousel a:hover:after, #fitinpart-carousel a:hover:before {
+    opacity: 1; }
+  #fitinpart-carousel a:before {
+    background-color: rgba(0, 153, 255, 0.5);
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0; }
+  #fitinpart-carousel a:after {
+    background: url(../images/bigzoom.png) no-repeat;
+    height: 136px;
+    left: 50%;
+    margin-left: -72px;
+    margin-top: -72px;
+    top: 50%;
+    width: 135px; }
+
+#fitinpart-carousel img {
+  display: block; }
+
+.fitinpart-manage {
+  margin-top: 2.5rem;
+  position: relative;
+  padding-left: 160px; }
+  .fitinpart-manage .arrows {
+    display: flex;
+    margin-left: 20px; }
+  .fitinpart-manage .text {
+    color: #242830;
+    font-size: 1.7rem;
+    font-weight: 700; }
+  .fitinpart-manage #current {
+    color: #0f77bc; }
+  .fitinpart-manage .slick-arrow {
+    left: 0;
+    top: 2.5rem;
+    margin-top: 0;
+    position: static; }
+  .fitinpart-manage .slick-next {
+    margin-left: 1.1rem; }
+    .fitinpart-manage .slick-next .icon {
+      transform: rotate(180deg); }
+
 .title-md {
+  color: #000;
   font-family: "Neo Sans Pro";
   font-size: 3rem;
-  color: #000;
   font-weight: 500; }
 
 .bl-line,

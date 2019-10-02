@@ -319,6 +319,25 @@ $(document).ready(function(){
 		]
 	});
 
+	$('#fitinpart-carousel').slick({
+		prevArrow:'<button class="slick-arrow slick-arrow-round-blue slick-prev" aria-label="Previous" type="button"><i class=" icon icon-slider-arrow-blue"></i></button>',
+		nextArrow:'<button class="slick-arrow slick-arrow-round-blue slick-next" aria-label="Next" type="button"><i class=" icon icon-slider-arrow-blue"></i></button>',
+		dots: false,
+		slidesToShow: 4,
+		slidesToScroll: 1,
+		autoplay: false,
+		autoplaySpeed: 5000,
+		arrows : true,
+		variableWidth: true,
+		centerMode: true,
+		appendArrows : $('.fitinpart-manage .arrows')
+	});
+
+$('#fitinpart-carousel').on('afterChange', function(event, slick, currentSlide, nextSlide){
+	$('#current').text(parseInt(currentSlide + 1));
+	console.log(currentSlide);
+});
+
 
 	$('#registerModal').on('show.bs.modal', function (e) {
 		$('#loginModal').modal('hide')
