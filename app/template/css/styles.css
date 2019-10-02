@@ -3922,7 +3922,7 @@ strong,
 
 .flex-center, .btn-google, .btn-facebook, .compare__count, .shop-cart__count, .littlecart .cart-body .btn-checkout, .littlecart .cart-body .btn-check, .searchbox__panel .checkbox__text:after, .searchbox .subtab-link,
 .smartsearch .subtab-link, .catalog a,
-.header .catalog__menu a, .reviews .btn-show, .checkbox__text:after {
+.header .catalog__menu a, .reviews .btn-show, .checkbox__text:after, .aboutus-page .brands__item {
   display: flex;
   align-items: center;
   justify-content: center; }
@@ -7055,155 +7055,169 @@ input.form-control.error {
   .content-heading .btn-back {
     margin-top: 1.5rem; }
 
-.aboutus-page .intro {
-  padding-right: 10rem; }
-  .aboutus-page .intro__title {
-    color: #000;
+.aboutus-page {
+  background-color: #fff; }
+  .aboutus-page .intro {
+    padding-right: 10rem; }
+    .aboutus-page .intro__title {
+      color: #000;
+      font-family: "Neo Sans Pro";
+      font-size: 2.5rem;
+      font-weight: 700;
+      line-height: 1.2;
+      margin-bottom: 2rem;
+      margin-top: 3rem;
+      padding-left: 160px;
+      position: relative; }
+      .aboutus-page .intro__title:before {
+        height: 6px;
+        width: 103px;
+        background-color: #2899d7;
+        border-radius: 6px;
+        left: 0;
+        top: 15px; }
+    .aboutus-page .intro__text {
+      color: #454c50;
+      font-size: 1.7rem;
+      line-height: 1.76;
+      margin: 2rem 0;
+      padding-left: 160px; }
+  .aboutus-page .about {
+    grid-column-gap: 0;
+    grid-row-gap: 0; }
+    .aboutus-page .about__cell {
+      align-items: center;
+      border: 2px solid #e4e6ea;
+      display: flex;
+      flex-direction: column;
+      height: 277px;
+      margin-bottom: -2px;
+      margin-right: -2px;
+      padding-top: 40px;
+      text-align: center; }
+    .aboutus-page .about__subtitle {
+      font-size: 1.7rem;
+      margin: 3rem 0 .6rem; }
+    .aboutus-page .about__title {
+      color: #000;
+      font-family: "Neo Sans Pro";
+      font-size: 2.2rem;
+      font-weight: 500;
+      line-height: 1.36; }
+    .aboutus-page .about__pic {
+      height: 70px; }
+  .aboutus-page .intro-command-bg {
+    background-color: #e1e7eb;
+    padding-bottom: 15rem; }
+  .aboutus-page .intro-command {
+    padding-top: 3.5rem; }
+  .aboutus-page .quote {
+    border-bottom: 5px solid #c91537;
+    border-top: 5px solid #c91537;
+    color: #c91537;
     font-family: "Neo Sans Pro";
-    font-size: 2.5rem;
+    font-size: 4rem;
     font-weight: 700;
-    line-height: 1.2;
-    margin-bottom: 2rem;
+    line-height: 1.25;
+    margin-top: 1.2rem;
+    padding: 5.7rem 0 4.8rem;
+    text-align: center; }
+    .aboutus-page .quote .pin {
+      line-height: .4;
+      font-weight: 500;
+      height: 2.5rem;
+      font-size: 10rem; }
+  .aboutus-page .advantages {
+    background-color: #27282c;
+    color: #ffffff;
+    font-family: "Neo Sans Pro";
+    padding: 9.6rem 0 12rem; }
+    .aboutus-page .advantages__text {
+      font-size: 3rem;
+      font-weight: 700;
+      line-height: 1.36;
+      position: relative;
+      padding-top: 2rem;
+      padding-bottom: 5rem; }
+      .aboutus-page .advantages__text:after {
+        background-color: #2899d7;
+        bottom: 0;
+        height: 6px;
+        left: 0;
+        border-radius: 6px;
+        width: 103px; }
+  .aboutus-page .advantage__item {
+    font-size: 1.8rem;
     margin-top: 3rem;
-    padding-left: 160px;
-    position: relative; }
-    .aboutus-page .intro__title:before {
-      height: 6px;
-      width: 103px;
-      background-color: #2899d7;
-      border-radius: 6px;
-      left: 0;
-      top: 15px; }
-  .aboutus-page .intro__text {
+    width: 50%; }
+  .aboutus-page .ouroffice {
     color: #454c50;
     font-size: 1.7rem;
     line-height: 1.76;
-    margin: 2rem 0;
-    padding-left: 160px; }
-
-.aboutus-page .about {
-  grid-column-gap: 0;
-  grid-row-gap: 0; }
-  .aboutus-page .about__cell {
-    align-items: center;
-    border: 2px solid #e4e6ea;
-    display: flex;
-    flex-direction: column;
-    height: 277px;
-    margin-bottom: -2px;
-    margin-right: -2px;
-    padding-top: 40px;
+    padding: 11.5rem 0 10rem; }
+    .aboutus-page .ouroffice__text {
+      padding-left: 10rem;
+      padding-right: 6rem; }
+    .aboutus-page .ouroffice__pic {
+      position: relative;
+      margin-right: 1rem;
+      padding-right: 20px; }
+      .aboutus-page .ouroffice__pic img {
+        display: block;
+        box-shadow: 10px 17px 40px rgba(0, 51, 95, 0.15);
+        max-width: 100%; }
+      .aboutus-page .ouroffice__pic:after {
+        border-right: 11px solid #2899d7;
+        right: 0;
+        top: 0;
+        height: 100%; }
+  .aboutus-page .products .title-md {
+    padding-bottom: 3.4rem; }
+  .aboutus-page .products__list {
+    grid-column-gap: 0;
+    grid-row-gap: 0;
+    margin-top: 4.5rem; }
+  .aboutus-page .products__item {
+    height: 26.5rem; }
+    .aboutus-page .products__item-middle .item-products__pic {
+      margin-top: 5rem; }
+    .aboutus-page .products__item-middle .item-products__title {
+      padding-top: 2.7rem; }
+  .aboutus-page .item-products {
+    border: 1px solid  #e4e6ea;
     text-align: center; }
-  .aboutus-page .about__subtitle {
+    .aboutus-page .item-products__pic {
+      min-height: 100px;
+      margin-top: 3.8rem; }
+    .aboutus-page .item-products__title {
+      font-size: 1.8rem;
+      font-weight: 500;
+      font-family: "Neo Sans Pro";
+      line-height: 1.67;
+      padding-top: 1rem; }
+  .aboutus-page .brands__list {
+    grid-row-gap: 10px;
+    grid-column-gap: 10px; }
+  .aboutus-page .brands__item {
+    background-color: #f5f6f8;
+    height: 123px;
+    width: 205px; }
+  .aboutus-page .brands__text {
+    color: #454c50;
+    font-family: "Neo Sans Pro";
+    font-size: 2.5rem;
+    line-height: 1.4;
+    margin-top: 10.6rem;
+    padding-bottom: 3.7rem; }
+  .aboutus-page .brands .subtitle {
+    color: #353535;
     font-size: 1.7rem;
-    margin: 3rem 0 .6rem; }
-  .aboutus-page .about__title {
-    color: #000;
-    font-family: "Neo Sans Pro";
-    font-size: 2.2rem;
-    font-weight: 500;
-    line-height: 1.36; }
-  .aboutus-page .about__pic {
-    height: 70px; }
-
-.aboutus-page .intro-command-bg {
-  background-color: #e1e7eb;
-  padding-bottom: 15rem; }
-
-.aboutus-page .intro-command {
-  padding-top: 3.5rem; }
-
-.aboutus-page .quote {
-  border-bottom: 5px solid #c91537;
-  border-top: 5px solid #c91537;
-  color: #c91537;
-  font-family: "Neo Sans Pro";
-  font-size: 4rem;
-  font-weight: 700;
-  line-height: 1.25;
-  margin-top: 1.2rem;
-  padding: 5.7rem 0 4.8rem;
-  text-align: center; }
-  .aboutus-page .quote .pin {
-    line-height: .4;
-    font-weight: 500;
-    height: 2.5rem;
-    font-size: 10rem; }
-
-.aboutus-page .advantages {
-  background-color: #27282c;
-  color: #ffffff;
-  font-family: "Neo Sans Pro";
-  padding: 9.6rem 0 12rem; }
-  .aboutus-page .advantages__text {
-    font-size: 3rem;
-    font-weight: 700;
-    line-height: 1.36;
-    position: relative;
-    padding-top: 2rem;
-    padding-bottom: 5rem; }
-    .aboutus-page .advantages__text:after {
-      background-color: #2899d7;
-      bottom: 0;
-      height: 6px;
-      left: 0;
-      border-radius: 6px;
-      width: 103px; }
-
-.aboutus-page .advantage__item {
-  font-size: 1.8rem;
-  margin-top: 3rem;
-  width: 50%; }
-
-.aboutus-page .ouroffice {
-  color: #454c50;
-  font-size: 1.7rem;
-  line-height: 1.76;
-  padding: 11.5rem 0 10rem; }
-  .aboutus-page .ouroffice__text {
-    padding-left: 10rem;
-    padding-right: 6rem; }
-  .aboutus-page .ouroffice__pic {
-    position: relative;
-    margin-right: 1rem;
-    padding-right: 20px; }
-    .aboutus-page .ouroffice__pic img {
-      display: block;
-      box-shadow: 10px 17px 40px rgba(0, 51, 95, 0.15);
-      max-width: 100%; }
-    .aboutus-page .ouroffice__pic:after {
-      border-right: 11px solid #2899d7;
-      right: 0;
-      top: 0;
-      height: 100%; }
-
-.aboutus-page .products .title-md {
-  padding-bottom: 3.4rem; }
-
-.aboutus-page .products__list {
-  grid-column-gap: 0;
-  grid-row-gap: 0;
-  margin-top: 4.5rem; }
-
-.aboutus-page .products__item {
-  height: 26.5rem; }
-  .aboutus-page .products__item-middle .item-products__pic {
-    margin-top: 5rem; }
-  .aboutus-page .products__item-middle .item-products__title {
-    padding-top: 2.7rem; }
-
-.aboutus-page .item-products {
-  border: 1px solid  #e4e6ea;
-  text-align: center; }
-  .aboutus-page .item-products__pic {
-    min-height: 100px;
-    margin-top: 3.8rem; }
-  .aboutus-page .item-products__title {
-    font-size: 1.8rem;
-    font-weight: 500;
-    font-family: "Neo Sans Pro";
-    line-height: 1.67;
-    padding-top: 1rem; }
+    margin-bottom: 2.8rem; }
+  .aboutus-page .brands #brands-carousel2 {
+    margin-top: 6rem;
+    margin-bottom: 5rem; }
+  .aboutus-page .brands .main-brands {
+    margin-bottom: 11rem; }
 
 .title-md {
   font-family: "Neo Sans Pro";

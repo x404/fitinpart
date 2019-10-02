@@ -1,4 +1,5 @@
 .aboutus-page{
+	background-color: #fff;
 	.intro{
 		padding-right: 10rem;
 		&__title{
@@ -152,7 +153,7 @@
 		}
 	}
 
-
+	// products
 	.products{
 		.title-md{
 			padding-bottom: 3.4rem;
@@ -192,6 +193,43 @@
 			font-family: "Neo Sans Pro";
 			line-height: 1.67;	
 			padding-top: 1rem;	
+		}
+	}
+	//  =/products
+
+
+	.brands{
+		&__list{
+			grid-row-gap: 10px;
+			grid-column-gap: 10px;
+		}
+		&__item{
+			@extend .flex-center;
+			background-color: #f5f6f8;
+			height: 123px;
+			width: 205px;
+		}
+
+		&__text{
+			color: $color43;
+			font-family: "Neo Sans Pro";
+			font-size: 2.5rem;
+			line-height: 1.4;
+			margin-top: 10.6rem;
+			padding-bottom: 3.7rem;
+		}
+		.subtitle{
+			color: #353535;
+			font-size: 1.7rem;
+			margin-bottom: 2.8rem;
+		}
+		#brands-carousel2{
+			margin-top: 6rem;
+			margin-bottom: 5rem;
+		}
+
+		.main-brands{
+			margin-bottom: 11rem;
 		}
 	}
 }

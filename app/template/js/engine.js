@@ -273,6 +273,52 @@ $(document).ready(function(){
 		]
 	});
 
+	$('#brands-carousel2').slick({
+		dots: false,
+		slidesToShow: 6,
+		slidesToScroll: 1,
+		autoplay: false,
+		autoplaySpeed: 5000,
+		arrows : false,
+		responsive: [
+			{
+				breakpoint: 1399,
+				settings: {
+					slidesToShow: 5,
+					slidesToScroll: 1
+				}
+			},
+			{
+				breakpoint: 1200,
+				settings: {
+					slidesToShow: 4,
+					slidesToScroll: 1
+				}
+			},
+			{
+				breakpoint: 992,
+				settings: {
+					slidesToShow: 4,
+					slidesToScroll: 1
+				}
+			},
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 3,
+					slidesToScroll: 1,
+				}
+			},
+			{
+				breakpoint: 500,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 1,
+				}
+			}
+		]
+	});
+
 
 	$('#registerModal').on('show.bs.modal', function (e) {
 		$('#loginModal').modal('hide')
