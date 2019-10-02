@@ -126,7 +126,7 @@
 		color: $color43;
 		font-size: 1.7rem;
 		line-height: 1.76;
-		padding: 11.5rem 0;
+		padding: 11.5rem 0 10rem;
 
 		&__text{
 			padding-left: 10rem;
@@ -151,6 +151,49 @@
 			}
 		}
 	}
+
+
+	.products{
+		.title-md{
+			padding-bottom: 3.4rem;
+		}
+		&__list{
+			grid-column-gap: 0;
+			grid-row-gap: 0;
+			margin-top: 4.5rem;
+		}
+
+		&__item{
+			height: 26.5rem;
+			&-middle{
+				.item-products{
+					&__pic{
+						margin-top: 5rem;
+					}
+					&__title{
+						padding-top: 2.7rem;
+					}
+				}
+			}
+		}
+	}
+
+	.item-products{
+		border: 1px solid  #e4e6ea;
+		text-align: center;
+		&__pic{
+			min-height: 100px;
+			margin-top: 3.8rem;
+		}
+
+		&__title{
+			font-size: 1.8rem;
+			font-weight: 500;
+			font-family: "Neo Sans Pro";
+			line-height: 1.67;	
+			padding-top: 1rem;	
+		}
+	}
 }
 
 .title-md{
@@ -160,7 +203,8 @@
 	font-weight: 500;
 }
 
-.bl-line
+.bl-line,
+.bc-line
 {
 	position: relative;
 	padding-bottom: 2.5rem;
