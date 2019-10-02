@@ -7257,6 +7257,49 @@ input.form-control.error {
     .aboutus-page .ourservice .text {
       padding-left: 10rem;
       padding-top: 1rem; }
+  .aboutus-page .warranty {
+    background-color: #f5f6f8;
+    padding: 7.5rem 0 10rem; }
+    .aboutus-page .warranty h3 {
+      font-size: 2rem; }
+    .aboutus-page .warranty .text {
+      font-size: 1.7rem;
+      line-height: 1.76;
+      padding-right: 80px; }
+      .aboutus-page .warranty .text h3 {
+        margin-bottom: 1rem; }
+      .aboutus-page .warranty .text strong {
+        color: #000; }
+      .aboutus-page .warranty .text ol {
+        line-height: 1.47;
+        margin: 2rem 0; }
+        .aboutus-page .warranty .text ol li {
+          margin: 2rem 0 3.2rem;
+          padding-left: 53px;
+          position: relative; }
+          .aboutus-page .warranty .text ol li:before {
+            background-color: #2899d7;
+            color: #fff;
+            font-size: 1.7rem;
+            width: 4rem;
+            height: 4rem;
+            border-radius: 4rem;
+            content: counter(li);
+            /* В качестве данных используем счетчик */
+            counter-increment: li;
+            /* Увеличиваем значение счетчика на 1 */
+            /* Позиционируем и стилизируем цифры */
+            position: absolute;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            top: 0px;
+            left: 0;
+            flex-shrink: 0;
+            font-weight: 700; }
+  .aboutus-page .fitinpart {
+    margin-bottom: 2.5rem; }
 
 #fitinpart-carousel a {
   display: block;
