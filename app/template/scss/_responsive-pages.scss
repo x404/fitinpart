@@ -191,7 +191,7 @@
 		}
 	}
 
-	.advantage{
+	.homepage .advantage{
 		&__item{
 			flex: 0 0 25%;
 		}
@@ -330,14 +330,16 @@
 		font-size: 3.2rem;
 	}
 
-	.advantages{
-		font-size: 1.6rem;
-		margin-top: 4.2rem;
-	}
-	.advantage__item{
-		padding-right: 1rem;
-	}
 
+	.homepage{
+		.advantages{
+			font-size: 1.6rem;
+			margin-top: 4.2rem;
+		}
+		.advantage__item{
+			padding-right: 1rem;
+		}
+	}
 
 	.visual{
 		img{
@@ -497,12 +499,14 @@
 			}
 		}
 	}
-
-	.about{
-		background-image: url(../images/bg/about-bg-768.png) !important;
-		.subtitle{
-			font-size: 2.2rem;
-		}
+	
+	.homepage{
+		.about{
+			background-image: url(../images/bg/about-bg-768.png) !important;
+			.subtitle{
+				font-size: 2.2rem;
+			}
+		}		
 	}
 
 	.brands{

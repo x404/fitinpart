@@ -6487,6 +6487,9 @@ input.form-control.error {
   background-color: #f5f6f8;
   padding-bottom: 7rem; }
 
+.main img {
+  max-width: 100%; }
+
 .main ol {
   counter-reset: li;
   list-style: none; }
@@ -7080,7 +7083,8 @@ input.form-control.error {
     margin-top: 1.5rem; }
 
 .aboutus-page {
-  background-color: #fff; }
+  background-color: #fff !important;
+  padding-bottom: 0 !important; }
   .aboutus-page .intro {
     padding-right: 10rem; }
     .aboutus-page .intro__title {
@@ -7224,8 +7228,7 @@ input.form-control.error {
     grid-column-gap: 10px; }
   .aboutus-page .brands__item {
     background-color: #f5f6f8;
-    height: 123px;
-    width: 205px; }
+    height: 123px; }
   .aboutus-page .brands__text {
     color: #454c50;
     font-family: "Neo Sans Pro";
@@ -7240,6 +7243,12 @@ input.form-control.error {
   .aboutus-page .brands #brands-carousel2 {
     margin-top: 6rem;
     margin-bottom: 5rem; }
+    .aboutus-page .brands #brands-carousel2 a {
+      display: flex;
+      height: 100%;
+      min-height: 65px; }
+      .aboutus-page .brands #brands-carousel2 a img {
+        margin: auto; }
   .aboutus-page .brands .main-brands {
     margin-bottom: 11rem; }
   .aboutus-page .ourservice {
@@ -7350,12 +7359,21 @@ input.form-control.error {
     margin-left: 1.1rem; }
     .fitinpart-manage .slick-next .icon {
       transform: rotate(180deg); }
+  @media (max-width: 1199px) {
+    .fitinpart-manage {
+      padding-left: 0; } }
 
 .title-md {
   color: #000;
   font-family: "Neo Sans Pro";
   font-size: 3rem;
   font-weight: 500; }
+  @media (max-width: 1399px) {
+    .title-md {
+      font-size: 2.6rem; } }
+  @media (max-width: 1199px) {
+    .title-md {
+      font-size: 2.4rem; } }
 
 .bl-line,
 .bc-line {
@@ -7373,6 +7391,113 @@ input.form-control.error {
 .bc-line:after {
   left: 50%;
   margin-left: -50px; }
+
+@media (max-width: 1650px) {
+  .aboutus-page .intro-command-bg {
+    padding-bottom: 12rem; }
+  .aboutus-page .quote {
+    font-size: 3.6rem; }
+  .aboutus-page .advantages__text {
+    font-size: 2.4rem; }
+  .aboutus-page .brands__text {
+    font-size: 2.2rem; } }
+
+@media (max-width: 1399px) {
+  .aboutus-page .intro__title, .aboutus-page .intro__text {
+    padding-left: 110px; }
+  .aboutus-page .intro__title:before {
+    width: 70px; }
+  .aboutus-page .quote {
+    font-size: 3.2rem; }
+  .aboutus-page .intro-command-bg {
+    padding-bottom: 8rem; }
+  .aboutus-page .advantages {
+    padding: 6rem 0; }
+    .aboutus-page .advantages__text {
+      font-size: 2.1rem;
+      line-height: 1.5; }
+  .aboutus-page .ouroffice__text {
+    padding-left: 0;
+    padding-right: 0; }
+  .aboutus-page .about__cell {
+    height: 250px;
+    padding-top: 30px; }
+  .aboutus-page .about__title {
+    font-size: 2rem; }
+  .aboutus-page .warranty {
+    padding-bottom: 5rem;
+    padding-top: 3rem; }
+    .aboutus-page .warranty .text {
+      padding-right: 0; } }
+
+@media (max-width: 1199px) {
+  .aboutus-page .about__cell {
+    background-color: #eef3f6; }
+  .aboutus-page .advantages__text {
+    font-size: 2rem; }
+  .aboutus-page .quote {
+    font-size: 2.6rem;
+    padding: 3.5rem 0; }
+    .aboutus-page .quote .pin {
+      font-size: 6rem; }
+  .aboutus-page .intro-command-bg {
+    padding-bottom: 5rem; }
+  .aboutus-page .ouroffice {
+    padding: 5rem 0; }
+  .aboutus-page .brands__text {
+    margin-top: 5rem; }
+  .aboutus-page .ourservice {
+    margin-top: 7rem;
+    font-size: 1.8rem;
+    padding-bottom: 8rem; }
+    .aboutus-page .ourservice .text {
+      padding-left: 5rem; } }
+
+@media (max-width: 991px) {
+  .aboutus-page .intro {
+    padding-right: 0; }
+  .aboutus-page .about__cell {
+    width: 33%; }
+  .aboutus-page .quote {
+    font-size: 24px;
+    border-bottom-width: 3px;
+    border-top-width: 3px;
+    padding: 30px 0; }
+  .aboutus-page .advantage__item {
+    margin: 30px 10px 0;
+    width: calc(33% - 20px); }
+  .aboutus-page .ouroffice header {
+    text-align: center; }
+  .aboutus-page .ouroffice .title-md {
+    text-align: center; }
+    .aboutus-page .ouroffice .title-md:after {
+      left: 50%;
+      margin-left: -50px; }
+  .aboutus-page .ouroffice__pic {
+    margin-top: 20px;
+    margin-right: 0;
+    padding-right: 0;
+    text-align: center; }
+    .aboutus-page .ouroffice__pic img {
+      margin-left: auto;
+      margin-right: auto; }
+    .aboutus-page .ouroffice__pic:after {
+      display: none; }
+  .aboutus-page .products__item {
+    width: 25%;
+    height: 250px; }
+  .aboutus-page .item-products__title {
+    font-size: 16px;
+    line-height: 1.5; }
+  .aboutus-page .brands__item {
+    width: calc(25% - 4px);
+    margin: 2px; }
+  .aboutus-page .ourservice {
+    padding-bottom: 40px; }
+  .aboutus-page .warranty {
+    padding-bottom: 0; }
+    .aboutus-page .warranty .text {
+      margin-bottom: 30px; } }
 
 .content-location {
   background-color: #ffffff;
@@ -8038,7 +8163,7 @@ input.form-control.error {
     margin-left: -580px; }
   #homeslider .slick-next {
     margin-left: 520px; }
-  .advantage__item {
+  .homepage .advantage__item {
     flex: 0 0 25%; } }
 
 @media (max-width: 1250px) {
@@ -8115,10 +8240,10 @@ input.form-control.error {
     font-size: 3.4rem; }
   .modal-title {
     font-size: 3.2rem; }
-  .advantages {
+  .homepage .advantages {
     font-size: 1.6rem;
     margin-top: 4.2rem; }
-  .advantage__item {
+  .homepage .advantage__item {
     padding-right: 1rem; }
   .visual img {
     max-height: 175px; }
@@ -8215,9 +8340,9 @@ input.form-control.error {
       padding-right: 2.4rem; }
     .reviews .review-card:last-child {
       display: none; }
-  .about {
+  .homepage .about {
     background-image: url(../images/bg/about-bg-768.png) !important; }
-    .about .subtitle {
+    .homepage .about .subtitle {
       font-size: 2.2rem; }
   .brands {
     margin-left: 2.4rem;

@@ -7,6 +7,9 @@
 
 
 .main{
+	img{
+		max-width: 100%;
+	}
 	ol{
 		counter-reset: li;  
 		list-style: none;
