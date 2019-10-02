@@ -15,6 +15,12 @@ p.pink-color {
   .primary-color-hover:hover {
     background-color: #0099ff; }
 
+.azure-color {
+  color: #2899d7; }
+
+.azure-bg-color {
+  background-color: #2899d7; }
+
 /**
  * @author zhixin wen <wenzhixin2010@gmail.com>
  */

@@ -617,19 +617,21 @@
 
 /* =advantages
 ---------------------------*/
-.advantages{
-	background-color: #28292d;
-	color: $color2;
-	font-family: "Neo Sans Pro";
-	font-size: 1.8rem;
-	font-weight: 700;
-	margin-top: 6.5rem;
-	&-layout{
-		min-height: 14rem;
-		width: 100%;
+.homepage{
+	.advantages{
+		background-color: #28292d;
+		color: $color2;
+		font-family: "Neo Sans Pro";
+		font-size: 1.8rem;
+		font-weight: 700;
+		margin-top: 6.5rem;
+		&-layout{
+			min-height: 14rem;
+			width: 100%;
+		}
 	}
-}
 
+}
 .advantage{
 	&__item{
 		display: flex;

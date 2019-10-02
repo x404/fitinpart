@@ -315,6 +315,12 @@ p.pink-color {
   .primary-color-hover:hover {
     background-color: #0099ff; }
 
+.azure-color {
+  color: #2899d7; }
+
+.azure-bg-color {
+  background-color: #2899d7; }
+
 @font-face {
   font-family: "Proxima Nova";
   src: url("../fonts/ProximaNova-Regular/proxima_nova_regular.woff2") format("woff2"), url("../fonts/ProximaNova-Regular/proxima_nova_regular.woff") format("woff");
@@ -3902,7 +3908,7 @@ strong,
   .tdu:hover {
     text-decoration: none; }
 
-.before, .icon:before, .btn-view:before, .btn-google:before, .btn-facebook:before, .top__left:before, .top__menu li.flexMenu-viewMore > a:after, .littlecart .cart-body .cart-products .count .minus:before, .littlecart .cart-body .cart-products .count .plus:before, .littlecart .cart-body .cart-products .count .plus:after, .search .vehicle-search-str .vehicle-search-item:after, .promo .wrapper:before, .visual__item:before, .modal-content-bg:before, .modal-content-bg:after, .modal-info:after, .modal-menu:before, .modal-menu .catalog:before, .breadcrumbs ul li.B_homecrumb a:before, .content ul li:before, .aboutus-page .intro__title:before, .content-location .days:not(:last-child):after {
+.before, .icon:before, .btn-view:before, .btn-google:before, .btn-facebook:before, .top__left:before, .top__menu li.flexMenu-viewMore > a:after, .littlecart .cart-body .cart-products .count .minus:before, .littlecart .cart-body .cart-products .count .plus:before, .littlecart .cart-body .cart-products .count .plus:after, .search .vehicle-search-str .vehicle-search-item:after, .promo .wrapper:before, .visual__item:before, .modal-content-bg:before, .modal-content-bg:after, .modal-info:after, .modal-menu:before, .modal-menu .catalog:before, .breadcrumbs ul li.B_homecrumb a:before, .content ul li:before, .aboutus-page .intro__title:before, .aboutus-page .advantages__text:after, .content-location .days:not(:last-child):after {
   content: "";
   display: block;
   position: absolute; }
@@ -5427,14 +5433,14 @@ button {
 ---------------------------*/
 /* =advantages
 ---------------------------*/
-.advantages {
+.homepage .advantages {
   background-color: #28292d;
   color: #ffffff;
   font-family: "Neo Sans Pro";
   font-size: 1.8rem;
   font-weight: 700;
   margin-top: 6.5rem; }
-  .advantages-layout {
+  .homepage .advantages-layout {
     min-height: 14rem;
     width: 100%; }
 
@@ -5900,11 +5906,11 @@ button {
 .slick-arrow.slick-hidden {
   display: none; }
 
-.webp .advantages {
-  background-image: url(../images/bg/advantage-bg.webp); }
-
 .webp .reviews {
   background-image: url(../images/bg/reviews-bg.webp); }
+
+.webp .homepage .advantages {
+  background-image: url(../images/bg/advantage-bg.webp); }
 
 .webp .homepage .about {
   background-image: url(../images/bg/about-bg.webp); }
@@ -5924,11 +5930,8 @@ button {
 .webp .intro-command-bg {
   background-image: url(../images/bg/command-bg.webp); }
 
-.advantages {
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-image: url(../images/bg/advantage-bg.jpg); }
+.webp .bg-1 {
+  background-image: url(../images/bg/bg-1.webp); }
 
 .reviews {
   background-image: url(../images/bg/reviews-bg.jpg); }
@@ -5945,6 +5948,12 @@ button {
 .searchbox__panel {
   background-repeat: no-repeat;
   background-position: right bottom; }
+
+.homepage .advantages {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url(../images/bg/advantage-bg.jpg); }
 
 .homepage .about {
   background-image: url(../images/bg/about-bg.png); }
@@ -5965,6 +5974,12 @@ button {
   background-image: url(../images/bg/command-bg.jpg);
   background-position: top center;
   background-repeat: no-repeat; }
+
+.bg-1 {
+  background-image: url(../images/bg/bg-1.jpg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover; }
 
 .modal .close {
   padding: 0;
@@ -7113,6 +7128,31 @@ input.form-control.error {
     font-weight: 500;
     height: 2.5rem;
     font-size: 10rem; }
+
+.aboutus-page .advantages {
+  background-color: #27282c;
+  color: #ffffff;
+  font-family: "Neo Sans Pro";
+  padding: 9.6rem 0 12rem; }
+  .aboutus-page .advantages__text {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.36;
+    position: relative;
+    padding-top: 2rem;
+    padding-bottom: 5rem; }
+    .aboutus-page .advantages__text:after {
+      background-color: #2899d7;
+      bottom: 0;
+      height: 6px;
+      left: 0;
+      border-radius: 6px;
+      width: 103px; }
+
+.aboutus-page .advantage__item {
+  font-size: 1.8rem;
+  margin-top: 3rem;
+  width: 50%; }
 
 .content-location {
   background-color: #ffffff;

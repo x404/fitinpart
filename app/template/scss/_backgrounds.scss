@@ -1,11 +1,11 @@
 .webp{
-	.advantages{
-		background-image: url(../images/bg/advantage-bg.webp);
-	}
 	.reviews{
 		background-image: url(../images/bg/reviews-bg.webp);
 	}
 	.homepage{
+		.advantages{
+			background-image: url(../images/bg/advantage-bg.webp);
+		}
 		.about{
 			background-image: url(../images/bg/about-bg.webp);
 			@media(max-width: 1250px){
@@ -29,19 +29,13 @@
 	.intro-command-bg{
 		background-image: url(../images/bg/command-bg.webp);
 	}
+
+	.bg-1{
+		background-image: url(../images/bg/bg-1.webp);
+	}
 }
 
 
-
-
-
-.advantages
-{
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
-	background-image: url(../images/bg/advantage-bg.jpg);
-}
 
 
 .reviews{
@@ -68,6 +62,14 @@
 }
 
 .homepage{
+	.advantages
+	{
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		background-image: url(../images/bg/advantage-bg.jpg);
+	}
+
 	.about{
 		background-image: url(../images/bg/about-bg.png);
 		@media(max-width: 1250px){
@@ -94,4 +96,12 @@
 	background-image: url(../images/bg/command-bg.jpg);
 	background-position: top center;
 	background-repeat: no-repeat;
+}
+
+
+.bg-1{
+	background-image: url(../images/bg/bg-1.jpg);
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: cover;	
 }

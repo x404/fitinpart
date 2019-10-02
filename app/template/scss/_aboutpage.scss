@@ -88,4 +88,37 @@
 			font-size: 10rem;
 		}
 	}
+
+	.advantages{
+		background-color: #27282c; 
+		color: $color2;
+		font-family: "Neo Sans Pro";
+		padding: 9.6rem 0 12rem;
+
+		&__text{
+			font-size: 3rem;
+			font-weight: 700;
+			line-height: 1.36;
+			position: relative;
+			padding-top: 2rem;
+			padding-bottom: 5rem;
+			&:after{
+				@extend .before;
+				background-color: $color44;
+				bottom: 0;
+				height: 6px;
+				left: 0;
+				border-radius: 6px;
+				width: 103px;
+			}
+		}
+	}
+
+	.advantage{
+		&__item{
+			font-size: 1.8rem;
+			margin-top: 3rem;
+			width: 50%;
+		}
+	}
 }
