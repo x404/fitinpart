@@ -3908,7 +3908,7 @@ strong,
   .tdu:hover {
     text-decoration: none; }
 
-.before, .icon:before, .btn-view:before, .btn-google:before, .btn-facebook:before, .top__left:before, .top__menu li.flexMenu-viewMore > a:after, .littlecart .cart-body .cart-products .count .minus:before, .littlecart .cart-body .cart-products .count .plus:before, .littlecart .cart-body .cart-products .count .plus:after, .search .vehicle-search-str .vehicle-search-item:after, .promo .wrapper:before, .visual__item:before, .modal-content-bg:before, .modal-content-bg:after, .modal-info:after, .modal-menu:before, .modal-menu .catalog:before, .breadcrumbs ul li.B_homecrumb a:before, .content ul li:before, .aboutus-page .intro__title:before, .aboutus-page .advantages__text:after, .content-location .days:not(:last-child):after {
+.before, .icon:before, .btn-view:before, .btn-google:before, .btn-facebook:before, .top__left:before, .top__menu li.flexMenu-viewMore > a:after, .littlecart .cart-body .cart-products .count .minus:before, .littlecart .cart-body .cart-products .count .plus:before, .littlecart .cart-body .cart-products .count .plus:after, .search .vehicle-search-str .vehicle-search-item:after, .promo .wrapper:before, .visual__item:before, .modal-content-bg:before, .modal-content-bg:after, .modal-info:after, .modal-menu:before, .modal-menu .catalog:before, .breadcrumbs ul li.B_homecrumb a:before, .content ul li:before, .aboutus-page .intro__title:before, .aboutus-page .advantages__text:after, .aboutus-page .ouroffice__pic:after, .bl-line:after, .content-location .days:not(:last-child):after {
   content: "";
   display: block;
   position: absolute; }
@@ -7153,6 +7153,49 @@ input.form-control.error {
   font-size: 1.8rem;
   margin-top: 3rem;
   width: 50%; }
+
+.aboutus-page .ouroffice {
+  color: #454c50;
+  font-size: 1.7rem;
+  line-height: 1.76;
+  padding: 11.5rem 0; }
+  .aboutus-page .ouroffice__text {
+    padding-left: 10rem;
+    padding-right: 6rem; }
+  .aboutus-page .ouroffice__pic {
+    position: relative;
+    margin-right: 1rem;
+    padding-right: 20px; }
+    .aboutus-page .ouroffice__pic img {
+      display: block;
+      box-shadow: 10px 17px 40px rgba(0, 51, 95, 0.15);
+      max-width: 100%; }
+    .aboutus-page .ouroffice__pic:after {
+      border-right: 11px solid #2899d7;
+      right: 0;
+      top: 0;
+      height: 100%; }
+
+.title-md {
+  font-family: "Neo Sans Pro";
+  font-size: 3rem;
+  color: #000;
+  font-weight: 500; }
+
+.bl-line {
+  position: relative;
+  padding-bottom: 2.5rem;
+  margin-bottom: 3rem; }
+  .bl-line:after {
+    background-color: #2899d7;
+    border-radius: 6px;
+    bottom: 0;
+    height: 6px;
+    width: 103px; }
+
+.bc-line:after {
+  left: 50%;
+  margin-left: -50px; }
 
 .content-location {
   background-color: #ffffff;
