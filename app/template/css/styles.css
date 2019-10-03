@@ -7703,13 +7703,19 @@ aside .filter .ps__rail-y {
 aside .filter .ps__thumb-y:hover, aside .filter .ps__thumb-y:focus {
   background-color: #0099ff; }
 
+aside .filter .height {
+  transition: .3s; }
+
 aside .filter .to-collapse {
   padding: 0;
   position: absolute;
   right: 11px;
   top: 25px; }
   aside .filter .to-collapse img {
-    display: block; }
+    display: block;
+    transition: transform .3s; }
+  aside .filter .to-collapse.down img {
+    transform: rotate(180deg); }
 
 .comparison-info {
   color: #000;

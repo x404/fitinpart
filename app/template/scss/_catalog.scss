@@ -46,6 +46,14 @@ aside{
 			}
 		}
 
+		.height{
+			&-full{
+				// height: auto !important;
+			}
+			transition: .3s;
+			// height: 0;
+		}
+
 		.to-collapse{
 			padding: 0;
 			position: absolute;
@@ -53,6 +61,12 @@ aside{
 			top: 25px;
 			img{
 				display: block;
+				transition: transform .3s;
+			}
+			&.down{
+				img{
+					transform: rotate(180deg)
+				}
 			}
 		}
 	}

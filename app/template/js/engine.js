@@ -469,6 +469,16 @@ $(document).ready(function(){
 			};
 		init();
 	});	
+
+
+	// collapse filter box in catalog page
+	$('.filter__box .to-collapse').click(function(e){
+		let $this = $(this);
+		e.preventDefault();
+		$this.toggleClass('down');
+		$this.prev('.filter__body').slideToggle();
+	});
+
 });
 
 
