@@ -3891,8 +3891,10 @@ h2 {
 h3 {
   font-size: 1.6rem; }
 
-.regular {
-  font-family: "SegoeUIRegular"; }
+.neosans, .top__tel, .header .catalog-btn, .littlecart .cart-body .title, .littlecart .cart-body .cart-products .item-title, .littlecart .cart-body .cart-products .price, .search .vehicle-search .ms-parent .ms-drop:before, .main h1, .main .title, .searchbox__title, #homeslider .title, .visual__item, .homepage .advantages, .reviews header h1, .review-card__title, .homepage .about .subtitle, .modal-title, #loginModal .subtitle,
+#registerModal .subtitle, .modal-info .title, .smartsearch__header, .smartsearch__header .ms-choice, .main h2, .main h3, .main h4, .main h5, .main h6, .content blockquote, .lastnews .item-news__title,
+.news__list .item-news__title, .aboutus-page .intro__title, .aboutus-page .about__title, .aboutus-page .quote, .aboutus-page .advantages, .aboutus-page .item-products__title, .aboutus-page .brands__text, .title-md, .mob-header .btn-menu, .mob-header .tel {
+  font-family: 'Neo Sans Pro', Verdana, sans-serif; }
 
 strong,
 .bold {
@@ -4319,7 +4321,6 @@ button {
   .top__tel {
     font-size: 1.5rem;
     font-weight: 700;
-    font-family: 'Neo Sans Pro', Verdana, sans-serif;
     white-space: nowrap; }
     .top__tel .tel:hover {
       color: #ffffff;
@@ -4469,7 +4470,6 @@ button {
       opacity: 1;
       z-index: 101; }
   .header .catalog-btn {
-    font-family: 'Neo Sans Pro', Verdana, sans-serif;
     align-items: center;
     border-radius: 5rem;
     color: #ffffff;
@@ -4582,7 +4582,6 @@ button {
     color: #000;
     padding: 1.7rem 1.5rem 2rem 3rem; }
     .littlecart .cart-body .title {
-      font-family: 'Neo Sans Pro', Verdana, sans-serif;
       color: #010101;
       font-size: 2.5rem;
       font-weight: 500; }
@@ -4602,7 +4601,6 @@ button {
         width: 130px; }
       .littlecart .cart-body .cart-products .item-title {
         font-size: 1.5rem;
-        font-family: "Neo Sans Pro";
         font-weight: 700; }
         .littlecart .cart-body .cart-products .item-title a:hover {
           color: #0099ff;
@@ -4655,7 +4653,6 @@ button {
             top: 0; }
       .littlecart .cart-body .cart-products .price {
         color: #c91537;
-        font-family: "Neo Sans Pro";
         font-size: 1.5rem;
         font-weight: 400;
         margin-left: 2.2rem;
@@ -4778,7 +4775,6 @@ button {
       .search .vehicle-search .ms-parent .ms-drop:before {
         color: #050505;
         display: block;
-        font-family: "Neo Sans Pro";
         font-size: 2.2rem;
         font-weight: 500;
         margin-bottom: 1.5rem;
@@ -4910,7 +4906,6 @@ button {
   .main h1, .main .title {
     color: #000;
     font-size: 4.8rem;
-    font-family: 'Neo Sans Pro', Verdana, sans-serif;
     font-weight: 700; }
 
 .tab-content > .tab-pane {
@@ -5130,7 +5125,6 @@ button {
       grid-row-end: 3; }
   .searchbox__title {
     color: #000;
-    font-family: "Neo Sans Pro";
     font-size: 3rem;
     font-weight: 700;
     line-height: .83; }
@@ -5264,7 +5258,6 @@ button {
 
 #homeslider .title {
   font-size: 5rem;
-  font-family: 'Neo Sans Pro', Verdana, sans-serif;
   font-weight: 700;
   line-height: 1.3; }
 
@@ -5378,7 +5371,6 @@ button {
     background-position: right top;
     column-gap: 2.5rem;
     flex-grow: 1;
-    font-family: "Neo Sans Pro";
     font-size: 4rem;
     font-weight: 700;
     height: 24rem;
@@ -5442,7 +5434,6 @@ button {
 .homepage .advantages {
   background-color: #28292d;
   color: #ffffff;
-  font-family: "Neo Sans Pro";
   font-size: 1.8rem;
   font-weight: 700;
   margin-top: 6.5rem; }
@@ -5509,8 +5500,7 @@ button {
       display: flex;
       align-items: center;
       line-height: 1.5;
-      font-weight: 700;
-      font-family: "Neo Sans Pro"; }
+      font-weight: 700; }
       .reviews header h1 img {
         margin-left: 1.4rem; }
     .reviews header .rated {
@@ -5560,7 +5550,6 @@ button {
     font-size: 1.6rem;
     padding-top: 2.5rem;
     font-weight: 700;
-    font-family: "Neo Sans Pro";
     transition: color .3s; }
   .review-card__header {
     display: flex;
@@ -5611,7 +5600,6 @@ button {
     .homepage .about .subtitle {
       color: #0571b9;
       font-size: 2.8rem;
-      font-family: "Neo Sans Pro";
       font-weight: 700;
       margin-top: .6rem; }
     .homepage .about .text {
@@ -6022,7 +6010,6 @@ button {
 
 .modal-title {
   color: #000000;
-  font-family: 'Neo Sans Pro', Verdana, sans-serif;
   font-size: 3rem;
   line-height: 0.83;
   line-height: 1.3; }
@@ -6103,7 +6090,6 @@ button {
 #loginModal .subtitle,
 #registerModal .subtitle {
   color: #000;
-  font-family: 'Neo Sans Pro', Verdana, sans-serif;
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: .7rem; }
@@ -6339,7 +6325,6 @@ button {
     display: block; }
   .modal-info .title {
     font-size: 2.5rem;
-    font-family: "Neo Sans Pro";
     font-weight: 700;
     margin-bottom: 2.2rem; }
   .modal-info .close {
@@ -6523,8 +6508,7 @@ input.form-control.error {
     padding: .9rem 0; }
   .smartsearch__header {
     align-items: center;
-    display: flex;
-    font-family: 'Neo Sans Pro', Verdana, sans-serif; }
+    display: flex; }
     .smartsearch__header .title {
       color: #000;
       font-size: 1.6rem; }
@@ -6534,7 +6518,6 @@ input.form-control.error {
     .smartsearch__header .ms-choice {
       background: none;
       color: #0672ba;
-      font-family: 'Neo Sans Pro', Verdana, sans-serif;
       font-weight: 700;
       height: auto;
       padding-right: 15px;
@@ -6693,7 +6676,6 @@ input.form-control.error {
 .main {
   font-size: 1.5rem; }
   .main h1, .main h2, .main h3, .main h4, .main h5, .main h6 {
-    font-family: "Neo Sans Pro";
     font-weight: 700;
     color: #000; }
   .main h1 {
@@ -6757,7 +6739,6 @@ input.form-control.error {
     border-top: 5px solid #0672ba;
     color: #ffffff;
     display: block;
-    font-family: "Neo Sans Pro";
     font-size: 2.4rem;
     font-weight: 500;
     margin: 3rem -160px;
@@ -7035,7 +7016,6 @@ input.form-control.error {
 
 .lastnews .item-news__title,
 .news__list .item-news__title {
-  font-family: "Neo Sans Pro";
   font-size: 1.8rem;
   font-weight: 700;
   transition: color .3s; }
@@ -7089,7 +7069,6 @@ input.form-control.error {
     padding-right: 10rem; }
     .aboutus-page .intro__title {
       color: #000;
-      font-family: "Neo Sans Pro";
       font-size: 2.5rem;
       font-weight: 700;
       line-height: 1.2;
@@ -7128,7 +7107,6 @@ input.form-control.error {
       margin: 3rem 0 .6rem; }
     .aboutus-page .about__title {
       color: #000;
-      font-family: "Neo Sans Pro";
       font-size: 2.2rem;
       font-weight: 500;
       line-height: 1.36; }
@@ -7143,7 +7121,6 @@ input.form-control.error {
     border-bottom: 5px solid #c91537;
     border-top: 5px solid #c91537;
     color: #c91537;
-    font-family: "Neo Sans Pro";
     font-size: 4rem;
     font-weight: 700;
     line-height: 1.25;
@@ -7158,7 +7135,6 @@ input.form-control.error {
   .aboutus-page .advantages {
     background-color: #27282c;
     color: #ffffff;
-    font-family: "Neo Sans Pro";
     padding: 9.6rem 0 12rem; }
     .aboutus-page .advantages__text {
       font-size: 3rem;
@@ -7220,7 +7196,6 @@ input.form-control.error {
     .aboutus-page .item-products__title {
       font-size: 1.8rem;
       font-weight: 500;
-      font-family: "Neo Sans Pro";
       line-height: 1.67;
       padding-top: 1rem; }
   .aboutus-page .brands__list {
@@ -7231,7 +7206,6 @@ input.form-control.error {
     height: 123px; }
   .aboutus-page .brands__text {
     color: #454c50;
-    font-family: "Neo Sans Pro";
     font-size: 2.5rem;
     line-height: 1.4;
     margin-top: 10.6rem;
@@ -7365,7 +7339,6 @@ input.form-control.error {
 
 .title-md {
   color: #000;
-  font-family: "Neo Sans Pro";
   font-size: 3rem;
   font-weight: 500; }
   @media (max-width: 1399px) {
@@ -8099,7 +8072,6 @@ input.form-control.error {
   .mob-header .btn-menu {
     background-color: #c91537;
     color: #fff;
-    font-family: "Neo Sans Pro";
     font-size: 1.5rem;
     font-weight: 700;
     height: 80px;
@@ -8125,7 +8097,6 @@ input.form-control.error {
   .mob-header .tel {
     flex-grow: 1;
     text-align: center;
-    font-family: "Neo Sans Pro";
     font-size: 1.5rem;
     font-weight: 700;
     margin-left: 1.6rem;

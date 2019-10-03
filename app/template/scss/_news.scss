@@ -95,7 +95,7 @@
 		}
 
 		&__title{
-			font-family: "Neo Sans Pro";
+			@extend .neosans;
 			font-size: 1.8rem;
 			font-weight: 700;
 			transition: color .3s;

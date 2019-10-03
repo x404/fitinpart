@@ -5,7 +5,7 @@
 		padding-right: 10rem;
 		&__title{
 			color: #000;
-			font-family: "Neo Sans Pro";
+			@extend .neosans;
 			font-size: 2.5rem;
 			font-weight: 700;
 			line-height: 1.2;
@@ -51,7 +51,7 @@
 		}
 		&__title{
 			color: #000;
-			font-family: "Neo Sans Pro";
+			@extend .neosans;
 			font-size: 2.2rem;
 			font-weight: 500;
 			line-height: 1.36;
@@ -76,7 +76,7 @@
 		border-bottom: 5px solid $color;
 		border-top: 5px solid $color;
 		color: $color;
-		font-family: "Neo Sans Pro";
+		@extend .neosans;
 		font-size: 4rem;
 		font-weight: 700;
 		line-height: 1.25;
@@ -94,7 +94,7 @@
 	.advantages{
 		background-color: #27282c; 
 		color: $color2;
-		font-family: "Neo Sans Pro";
+		@extend .neosans;
 		padding: 9.6rem 0 12rem;
 
 		&__text{
@@ -191,7 +191,7 @@
 		&__title{
 			font-size: 1.8rem;
 			font-weight: 500;
-			font-family: "Neo Sans Pro";
+			@extend .neosans;
 			line-height: 1.67;	
 			padding-top: 1rem;	
 		}
@@ -212,7 +212,7 @@
 
 		&__text{
 			color: $color43;
-			font-family: "Neo Sans Pro";
+			@extend .neosans;
 			font-size: 2.5rem;
 			line-height: 1.4;
 			margin-top: 10.6rem;
@@ -401,7 +401,7 @@
 
 .title-md{
 	color: #000;
-	font-family: "Neo Sans Pro";
+	@extend .neosans;
 	font-size: 3rem;
 	font-weight: 500;
 	@media (max-width: 1399px){
