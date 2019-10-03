@@ -3893,7 +3893,7 @@ h3 {
 
 .neosans, .top__tel, .header .catalog-btn, .littlecart .cart-body .title, .littlecart .cart-body .cart-products .item-title, .littlecart .cart-body .cart-products .price, .search .vehicle-search .ms-parent .ms-drop:before, .main h1, .main .title, .searchbox__title, #homeslider .title, .visual__item, .homepage .advantages, .reviews header h1, .review-card__title, .homepage .about .subtitle, .modal-title, #loginModal .subtitle,
 #registerModal .subtitle, .modal-info .title, .smartsearch__header, .smartsearch__header .ms-choice, .main h2, .main h3, .main h4, .main h5, .main h6, .content blockquote, .lastnews .item-news__title,
-.news__list .item-news__title, .aboutus-page .intro__title, .aboutus-page .about__title, .aboutus-page .quote, .aboutus-page .advantages, .aboutus-page .item-products__title, .aboutus-page .brands__text, .title-md, .mob-header .btn-menu, .mob-header .tel {
+.news__list .item-news__title, .aboutus-page .intro__title, .aboutus-page .about__title, .aboutus-page .quote, .aboutus-page .advantages, .aboutus-page .item-products__title, .aboutus-page .brands__text, .title-md, .comparison__body .product-title, .mob-header .btn-menu, .mob-header .tel {
   font-family: 'Neo Sans Pro', Verdana, sans-serif; }
 
 strong,
@@ -3924,7 +3924,7 @@ strong,
 
 .flex-center, .btn-google, .btn-facebook, .compare__count, .shop-cart__count, .littlecart .cart-body .btn-checkout, .littlecart .cart-body .btn-check, .searchbox__panel .checkbox__text:after, .searchbox .subtab-link,
 .smartsearch .subtab-link, .catalog a,
-.header .catalog__menu a, .reviews .btn-show, .checkbox__text:after, .aboutus-page .brands__item {
+.header .catalog__menu a, .reviews .btn-show, .checkbox__text:after, .aboutus-page .brands__item, .comparison__column .btn-del {
   display: flex;
   align-items: center;
   justify-content: center; }
@@ -4116,6 +4116,9 @@ strong,
   border: none;
   text-align: center; }
 
+.box-shadow {
+  box-shadow: 0 5px 15px rgba(0, 153, 255, 0.5); }
+
 .btn {
   cursor: pointer;
   text-decoration: none;
@@ -4235,6 +4238,22 @@ strong,
       .btn-back:hover .icon {
         filter: brightness(5);
         left: -2px; }
+  .btn-tocart {
+    border-radius: 5rem;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Proxima Nova";
+    font-size: 18px;
+    font-weight: 700;
+    height: 5rem;
+    line-height: 1.39;
+    position: relative;
+    width: 18rem; }
+    .btn-tocart .icon {
+      filter: invert(1);
+      margin-right: .8rem; }
 
 .form-control {
   background-color: #f3f3f3;
@@ -7620,6 +7639,120 @@ input.form-control.error {
     .aboutus-page .warranty .title-md:after {
       left: 50%;
       margin-left: -35px; } }
+
+.comparison-info {
+  color: #000;
+  font-size: 1.7rem;
+  line-height: 2.35;
+  margin-bottom: 1.2rem; }
+
+.comparison__column-first .comparison__cell {
+  font-weight: 700; }
+
+.comparison__column-first img {
+  display: block; }
+
+.comparison__column-head .comparison__cell {
+  border-top: 1px solid #dee0e4;
+  padding: .9rem 0; }
+  .comparison__column-head .comparison__cell-first {
+    padding-top: 0; }
+  .comparison__column-head .comparison__cell:last-child {
+    border-bottom: 1px solid #dee0e4; }
+
+.comparison__column .btn-del {
+  background-color: #c91537;
+  border-radius: 50%;
+  height: 40px;
+  padding: 0;
+  position: absolute;
+  right: 8px;
+  top: 11px;
+  transition: background-color .3s;
+  width: 40px; }
+  .comparison__column .btn-del line {
+    stroke: #fff;
+    stroke-width: 3px; }
+  .comparison__column .btn-del:hover {
+    background-color: #ff1b46; }
+
+.comparison__cell {
+  color: #000;
+  font-style: 1.5rem; }
+  .comparison__cell-first {
+    padding-top: 0; }
+  .comparison__cell:first-child {
+    border-top: none;
+    padding-bottom: 0;
+    height: 475px; }
+  .comparison__cell-first {
+    height: 450px; }
+
+.comparison__body .comparison__column {
+  background-color: #fff;
+  margin-left: 1.4rem;
+  padding: 0 2.2rem;
+  position: relative;
+  width: 305px; }
+  .comparison__body .comparison__column-null {
+    background-color: #dfe6ea; }
+
+.comparison__body .comparison__cell {
+  padding: 1rem 0 .9rem; }
+  .comparison__body .comparison__cell-first {
+    border-bottom: 1px solid #dee0e4; }
+
+.comparison__body .pic {
+  height: 175px;
+  padding-top: 2.5rem; }
+
+.comparison__body .detail {
+  margin-top: 5rem; }
+
+.comparison__body .product-title {
+  font-size: 1.7rem;
+  font-weight: 700;
+  text-transform: uppercase; }
+
+.comparison__body .preorder {
+  color: #bea416;
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.56;
+  margin-top: 1.1rem; }
+  .comparison__body .preorder .form-control {
+    background-color: #fff;
+    border-radius: 0;
+    border: 1px solid #bbbbbb;
+    height: 22px;
+    margin-left: 1rem;
+    padding: 0 .5rem;
+    width: 55px;
+    font-size: 1.4rem;
+    text-align: center; }
+
+.comparison__body .quantity {
+  color: #6c7173;
+  font-style: italic;
+  font-size: 1.4rem; }
+
+.comparison__body .price-layout {
+  border-top: 1px solid #dee0e4;
+  margin-top: 1.7rem;
+  text-align: center; }
+
+.comparison__body .price .current-price {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #000;
+  font-family: "Neo Sans Pro";
+  line-height: 3.33; }
+
+.comparison__body .price .old-price {
+  color: #eb5c5c;
+  font-size: 1.5rem;
+  line-height: 4;
+  margin-left: 1.2rem; }
 
 .content-location {
   background-color: #ffffff;

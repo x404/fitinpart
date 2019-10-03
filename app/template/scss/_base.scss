@@ -358,6 +358,10 @@ em strong
 	text-align: center;
 }
 
+.box-shadow{
+	box-shadow: 0 5px 15px rgba(0, 153, 255, 0.5);
+}
+
 .btn{
 	cursor: pointer;
 	text-decoration: none;
@@ -515,6 +519,26 @@ em strong
 				filter: brightness(5);
 				left: -2px;
 			}
+		}
+	}
+
+	&-tocart{
+		border-radius: 5rem;
+		color: $color2;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-family: "Proxima Nova";
+		font-size: 18px;
+		font-weight: 700;
+		height: 5rem;
+		line-height: 1.39;
+		position: relative;
+		width: 18rem;
+
+		.icon{
+			filter: invert(1);
+			margin-right: .8rem;
 		}
 	}
 }

@@ -1,0 +1,164 @@
+.comparison{
+	&__layout{
+
+	}
+
+	&-info{
+		color: #000;
+		font-size: 1.7rem;
+		line-height: 2.35;
+		margin-bottom: 1.2rem;
+	}
+
+	&__column{
+		&-first{
+			.comparison{
+				&__cell{
+					font-weight: 700;
+				}
+			}
+			img{
+				display: block;
+			}
+		}
+
+		&-head{
+			.comparison{
+				&__cell{
+					border-top: 1px solid $color46;
+					padding: .9rem 0;
+					&-first{
+						padding-top: 0;
+					}
+					&:last-child{
+						border-bottom: 1px solid $color46;
+					}
+				}
+			}
+		}
+
+		.btn-del{
+			@extend .flex-center;
+			background-color: #c91537;
+			border-radius: 50%;
+			height: 40px;
+			padding: 0;
+			position: absolute;
+			right: 8px;
+			top: 11px;
+			transition: background-color .3s;
+			width: 40px;
+			line{
+				stroke: #fff;
+				stroke-width: 3px;				
+			}
+
+			&:hover{
+				background-color: #ff1b46;
+			}
+		}
+	}
+
+	&__cell{
+		color: #000;
+		font-style: 1.5rem;
+
+		&-first{
+			padding-top: 0;
+		}
+		&:first-child{
+			border-top: none;
+			padding-bottom: 0;
+			height: 475px;
+		}
+
+		&-first{
+			height: 450px;	
+		}
+	}
+
+
+	&__body{
+		.comparison{
+			&__column{
+				background-color: #fff;
+				margin-left: 1.4rem;
+				padding: 0 2.2rem;
+				position: relative;
+				width: 305px;
+				&-null{
+					background-color: #dfe6ea
+				}
+			}
+
+			&__cell{
+				padding: 1rem 0 .9rem;
+				&-first{
+					border-bottom: 1px solid $color46;
+				}
+			}
+		}
+
+		.pic{
+			height: 175px;
+			padding-top: 2.5rem;
+		}
+
+		.detail{
+			margin-top: 5rem;			
+		}
+
+		.product-title{
+			@extend .neosans;
+			font-size: 1.7rem;
+			font-weight: 700;
+			text-transform: uppercase;
+		}
+
+		.preorder{
+			color: #bea416;
+			font-size: 1.6rem;
+			font-weight: 700;
+			line-height: 1.56;
+			margin-top: 1.1rem;
+			.form-control{
+				background-color: #fff;
+				border-radius: 0;
+				border: 1px solid #bbbbbb;
+				height: 22px;
+				margin-left: 1rem;
+				padding: 0 .5rem;
+				width: 55px;
+				font-size: 1.4rem;
+				text-align: center;
+			}
+		}
+
+		.quantity{
+			color: #6c7173;
+			font-style: italic;
+			font-size: 1.4rem;
+		}
+
+		.price{
+			&-layout{
+				border-top: 1px solid $color46;
+				margin-top: 1.7rem;
+				text-align: center;
+			}
+			.current-price{
+				font-size: 1.8rem;
+				font-weight: 700;
+				color: #000;
+				font-family: "Neo Sans Pro";
+				line-height: 3.33;
+			}
+			.old-price{
+				color: #eb5c5c;
+				font-size: 1.5rem;
+				line-height: 4;
+				margin-left: 1.2rem;
+			}
+		}
+	}
+}
