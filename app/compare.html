@@ -1161,164 +1161,181 @@
 			<h1>Product Comparison</h1>
 			<p class="comparison-info">In your comparsion list <strong>5 items</strong></p>
 
-			<div class="comparison__layout d-flex">
-				<div class="comparison__column comparison__column-head comparison__column-first">
-					<div class="comparison__cell comparison__cell-first">
-						<picture>
-							<source srcset="/template/images/comparison-logo.webp" type="image/webp">
-							<img src="/template/images/comparison-logo.jpg" alt="" />
-						</picture>						
-					</div>
-					<div class="comparison__cell">Location</div>
-					<div class="comparison__cell">Type</div>
-					<div class="comparison__cell">Minimum Rim (inch)</div>
-					<div class="comparison__cell">Pcs In Set</div>
-					<div class="comparison__cell">Pitch Circle Ø</div>
-					<div class="comparison__cell">Drum Ø</div>
-					<div class="comparison__cell">Disc Thickness (Min)</div>
-					<div class="comparison__cell">Disc Thickness (Max)</div>
-					<div class="comparison__cell">Outter Ø</div>
-					<div class="comparison__cell">Front/Rear</div>
-					<div class="comparison__cell">Num. of holes</div>
-					<div class="comparison__cell">Height</div>
-					<div class="comparison__cell">Centering Diameter</div>
-					<div class="comparison__cell">Notes</div>
+			<div class="comparison__layout row">
+				<div class="col-lg-2">
+					<div class="comparison__column comparison__column-head comparison__column-first">
+						<div class="comparison__cell comparison__cell-first">
+							<picture>
+								<source srcset="/template/images/comparison-logo.webp" type="image/webp">
+								<img src="/template/images/comparison-logo.jpg" alt="" />
+							</picture>						
+						</div>
+						<div class="comparison__cell">Location</div>
+						<div class="comparison__cell">Type</div>
+						<div class="comparison__cell">Minimum Rim (inch)</div>
+						<div class="comparison__cell">Pcs In Set</div>
+						<div class="comparison__cell">Pitch Circle Ø</div>
+						<div class="comparison__cell">Drum Ø</div>
+						<div class="comparison__cell">Disc Thickness (Min)</div>
+						<div class="comparison__cell">Disc Thickness (Max)</div>
+						<div class="comparison__cell">Outter Ø</div>
+						<div class="comparison__cell">Front/Rear</div>
+						<div class="comparison__cell">Num. of holes</div>
+						<div class="comparison__cell">Height</div>
+						<div class="comparison__cell">Centering Diameter</div>
+						<div class="comparison__cell">Notes</div>
+					</div>					
 				</div>
-				<div class="comparison__body d-flex">
-					<div id="comparison-carousel" class="slick-init">
-						<div class="comparison__column text-center">
-							<div class="comparison__cell comparison__cell-first">
-								<div class="pic">
-									<img src="/images/product.jpg" alt="" />
-								</div>
-								<div class="detail">
-									<p class="product-title">SB BP23001</p>
-									<div class="d-flex justify-content-center preorder">
-										Pre-Order <input type="text" class="form-control" name="quantity" value="" />
+				<div class="col-lg-8">
+					<div class="comparison__body">
+						<div class="comparison-arrow"></div>
+						<div id="comparison-carousel" class="slick-init">
+							<div>
+								<div class="comparison__column text-center">
+									<div class="comparison__cell comparison__cell-first">
+										<div class="pic">
+											<img src="/images/product.jpg" alt="" />
+										</div>
+										<div class="detail">
+											<p class="product-title">SB BP23001</p>
+											<div class="d-flex justify-content-center preorder">
+												Pre-Order <input type="text" class="form-control" name="quantity" value="" />
+											</div>
+											<div class="quantity">300+ Pre-Order 6 days</div>
+										</div>
+										<div class="price-layout">
+											<div class="price">
+												<span class="current-price">US31.50</span>
+												<span class="old-price">US31.50</span>
+											</div>
+											<div class="action">
+												<button type="button" class="btn btn-tocart btn-blue btn-blue-lighten-hover box-shadow"><i class="icon icon-littlecart"></i>Add to cart</button>
+											</div>
+										</div>
+										<button type="button" class="btn-del a-rotate90">
+											<svg width="19" height="19">
+												<line x1="0" y1="0" x2="19" y2="19"/>
+												<line x1="19" y1="0" x2="0" y2="19"/>
+											</svg>
+										</button>
 									</div>
-									<div class="quantity">300+ Pre-Order 6 days</div>
+									<div class="comparison__cell">Front Axle Rotor</div>
+									<div class="comparison__cell">Right</div>
+									<div class="comparison__cell">238</div>
+									<div class="comparison__cell">100</div>
+									<div class="comparison__cell">Vented</div>
+									<div class="comparison__cell">18</div>
+									<div class="comparison__cell">Vented</div>
+									<div class="comparison__cell">4</div>
+									<div class="comparison__cell">18</div>
+									<div class="comparison__cell">54</div>
+									<div class="comparison__cell">48</div>
+									<div class="comparison__cell">16</div>
+									<div class="comparison__cell">127</div>
+									<div class="comparison__cell">Front</div>
 								</div>
-								<div class="price-layout">
-									<div class="price">
-										<span class="current-price">US31.50</span>
-										<span class="old-price">US31.50</span>
-									</div>
-									<div class="action">
-										<button type="button" class="btn btn-tocart btn-blue btn-blue-lighten-hover box-shadow"><i class="icon icon-littlecart"></i>Add to cart</button>
-									</div>
-								</div>
-								<button type="button" class="btn-del a-rotate90">
-									<svg width="19" height="19">
-										<line x1="0" y1="0" x2="19" y2="19"/>
-										<line x1="19" y1="0" x2="0" y2="19"/>
-									</svg>
-								</button>
 							</div>
-							<div class="comparison__cell">Front Axle Rotor</div>
-							<div class="comparison__cell">Right</div>
-							<div class="comparison__cell">238</div>
-							<div class="comparison__cell">100</div>
-							<div class="comparison__cell">Vented</div>
-							<div class="comparison__cell">18</div>
-							<div class="comparison__cell">Vented</div>
-							<div class="comparison__cell">4</div>
-							<div class="comparison__cell">18</div>
-							<div class="comparison__cell">54</div>
-							<div class="comparison__cell">48</div>
-							<div class="comparison__cell">16</div>
-							<div class="comparison__cell">127</div>
-							<div class="comparison__cell">Front</div>
-						</div>
-						<div class="comparison__column text-center">
-							<div class="comparison__cell comparison__cell-first">
-								<div class="pic">
-									<img src="/images/product.jpg" alt="" />
-								</div>
-								<div class="detail">
-									<p class="product-title">SB BP23001</p>
-									<div class="d-flex justify-content-center preorder">
-										Pre-Order <input type="text" class="form-control" name="quantity" value="" />
+							<div>
+								<div class="comparison__column text-center">
+									<div class="comparison__cell comparison__cell-first">
+										<div class="pic">
+											<img src="/images/product.jpg" alt="" />
+										</div>
+										<div class="detail">
+											<p class="product-title">SB BP23001</p>
+											<div class="d-flex justify-content-center preorder">
+												Pre-Order <input type="text" class="form-control" name="quantity" value="" />
+											</div>
+											<div class="quantity">300+ Pre-Order 6 days</div>
+										</div>
+										<div class="price-layout">
+											<div class="price">
+												<span class="current-price">US31.50</span>
+												<span class="old-price">US31.50</span>
+											</div>
+											<div class="action">
+												<button type="button" class="btn btn-tocart btn-blue btn-blue-lighten-hover box-shadow"><i class="icon icon-littlecart"></i>Add to cart</button>
+											</div>
+										</div>
+										<button type="button" class="btn-del a-rotate90">
+											<svg width="19" height="19">
+												<line x1="0" y1="0" x2="19" y2="19"/>
+												<line x1="19" y1="0" x2="0" y2="19"/>
+											</svg>
+										</button>
 									</div>
-									<div class="quantity">300+ Pre-Order 6 days</div>
+									<div class="comparison__cell">Front Axle Rotor</div>
+									<div class="comparison__cell">Right</div>
+									<div class="comparison__cell">238</div>
+									<div class="comparison__cell">100</div>
+									<div class="comparison__cell">Vented</div>
+									<div class="comparison__cell">18</div>
+									<div class="comparison__cell">Vented</div>
+									<div class="comparison__cell">4</div>
+									<div class="comparison__cell">18</div>
+									<div class="comparison__cell">54</div>
+									<div class="comparison__cell">48</div>
+									<div class="comparison__cell">16</div>
+									<div class="comparison__cell">127</div>
+									<div class="comparison__cell">Front</div>
 								</div>
-								<div class="price-layout">
-									<div class="price">
-										<span class="current-price">US31.50</span>
-										<span class="old-price">US31.50</span>
-									</div>
-									<div class="action">
-										<button type="button" class="btn btn-tocart btn-blue btn-blue-lighten-hover box-shadow"><i class="icon icon-littlecart"></i>Add to cart</button>
-									</div>
-								</div>
-								<button type="button" class="btn-del a-rotate90">
-									<svg width="19" height="19">
-										<line x1="0" y1="0" x2="19" y2="19"/>
-										<line x1="19" y1="0" x2="0" y2="19"/>
-									</svg>
-								</button>
 							</div>
-							<div class="comparison__cell">Front Axle Rotor</div>
-							<div class="comparison__cell">Right</div>
-							<div class="comparison__cell">238</div>
-							<div class="comparison__cell">100</div>
-							<div class="comparison__cell">Vented</div>
-							<div class="comparison__cell">18</div>
-							<div class="comparison__cell">Vented</div>
-							<div class="comparison__cell">4</div>
-							<div class="comparison__cell">18</div>
-							<div class="comparison__cell">54</div>
-							<div class="comparison__cell">48</div>
-							<div class="comparison__cell">16</div>
-							<div class="comparison__cell">127</div>
-							<div class="comparison__cell">Front</div>
-						</div>
-						<div class="comparison__column text-center">
-							<div class="comparison__cell comparison__cell-first">
-								<div class="pic">
-									<img src="/images/product.jpg" alt="" />
-								</div>
-								<div class="detail">
-									<p class="product-title">SB BP23001</p>
-									<div class="d-flex justify-content-center preorder">
-										Pre-Order <input type="text" class="form-control" name="quantity" value="" />
+							<div>
+								<div class="comparison__column text-center">
+									<div class="comparison__cell comparison__cell-first">
+										<div class="pic">
+											<img src="/images/product.jpg" alt="" />
+										</div>
+										<div class="detail">
+											<p class="product-title">SB BP23001</p>
+											<div class="d-flex justify-content-center preorder">
+												Pre-Order <input type="text" class="form-control" name="quantity" value="" />
+											</div>
+											<div class="quantity">300+ Pre-Order 6 days</div>
+										</div>
+										<div class="price-layout">
+											<div class="price">
+												<span class="current-price">US31.50</span>
+												<span class="old-price">US31.50</span>
+											</div>
+											<div class="action">
+												<button type="button" class="btn btn-tocart btn-blue btn-blue-lighten-hover box-shadow"><i class="icon icon-littlecart"></i>Add to cart</button>
+											</div>
+										</div>
+										<button type="button" class="btn-del a-rotate90">
+											<svg width="19" height="19">
+												<line x1="0" y1="0" x2="19" y2="19"/>
+												<line x1="19" y1="0" x2="0" y2="19"/>
+											</svg>
+										</button>
 									</div>
-									<div class="quantity">300+ Pre-Order 6 days</div>
+									<div class="comparison__cell">Front Axle Rotor</div>
+									<div class="comparison__cell">Right</div>
+									<div class="comparison__cell">238</div>
+									<div class="comparison__cell">100</div>
+									<div class="comparison__cell">Vented</div>
+									<div class="comparison__cell">18</div>
+									<div class="comparison__cell">Vented</div>
+									<div class="comparison__cell">4</div>
+									<div class="comparison__cell">18</div>
+									<div class="comparison__cell">54</div>
+									<div class="comparison__cell">48</div>
+									<div class="comparison__cell">16</div>
+									<div class="comparison__cell">127</div>
+									<div class="comparison__cell">Front</div>
 								</div>
-								<div class="price-layout">
-									<div class="price">
-										<span class="current-price">US31.50</span>
-										<span class="old-price">US31.50</span>
-									</div>
-									<div class="action">
-										<button type="button" class="btn btn-tocart btn-blue btn-blue-lighten-hover box-shadow"><i class="icon icon-littlecart"></i>Add to cart</button>
-									</div>
-								</div>
-								<button type="button" class="btn-del a-rotate90">
-									<svg width="19" height="19">
-										<line x1="0" y1="0" x2="19" y2="19"/>
-										<line x1="19" y1="0" x2="0" y2="19"/>
-									</svg>
-								</button>
 							</div>
-							<div class="comparison__cell">Front Axle Rotor</div>
-							<div class="comparison__cell">Right</div>
-							<div class="comparison__cell">238</div>
-							<div class="comparison__cell">100</div>
-							<div class="comparison__cell">Vented</div>
-							<div class="comparison__cell">18</div>
-							<div class="comparison__cell">Vented</div>
-							<div class="comparison__cell">4</div>
-							<div class="comparison__cell">18</div>
-							<div class="comparison__cell">54</div>
-							<div class="comparison__cell">48</div>
-							<div class="comparison__cell">16</div>
-							<div class="comparison__cell">127</div>
-							<div class="comparison__cell">Front</div>
+							<div>
+								<div class="comparison__column comparison__column-null"></div>
+							</div>
+							<div>
+								<div class="comparison__column comparison__column-null"></div>
+							</div>
 						</div>
-						<div class="comparison__column comparison__column-null"></div>
-						
-					</div>
+					</div>					
 				</div>
+
+
 			</div>
 			<!-- =/breadcrumbs -->
 		</div>

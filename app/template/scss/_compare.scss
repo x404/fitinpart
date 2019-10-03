@@ -23,6 +23,7 @@
 		}
 
 		&-head{
+			flex-shrink: 0;
 			.comparison{
 				&__cell{
 					border-top: 1px solid $color46;
@@ -77,6 +78,25 @@
 		}
 	}
 
+	&-arrow{
+		position: absolute;
+		right: 0;
+		top: 0;
+		.slick{
+			&-arrow{
+
+			}
+
+			&-next{
+				.icon{
+					transform: rotate(180deg)
+				}
+			}
+			&-prev{
+				left: -40px;
+			}
+		}
+	}
 
 	&__body{
 		.comparison{

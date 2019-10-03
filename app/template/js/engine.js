@@ -347,11 +347,61 @@ $(document).ready(function(){
 		]
 	});
 
-$('#fitinpart-carousel').on('afterChange', function(event, slick, currentSlide, nextSlide){
-	$('#current').text(parseInt(currentSlide + 1));
-	console.log(currentSlide);
-});
+	$('#fitinpart-carousel').on('afterChange', function(event, slick, currentSlide, nextSlide){
+		$('#current').text(parseInt(currentSlide + 1));
+	});
 
+
+
+
+	$('#comparison-carousel').slick({
+		prevArrow:'<button class="slick-arrow slick-arrow-round-blue slick-prev" aria-label="Previous" type="button"><i class=" icon icon-slider-arrow-blue"></i></button>',
+		nextArrow:'<button class="slick-arrow slick-arrow-round-blue slick-next" aria-label="Next" type="button"><i class=" icon icon-slider-arrow-blue"></i></button>',
+		dots: false,
+		slidesToShow: 4,
+		slidesToScroll: 1,
+		autoplay: false,
+		autoplaySpeed: 5000,
+		arrows : true,
+		appendArrows : $('.comparison-arrow'),
+		responsive: [
+			{
+				breakpoint: 1399,
+				settings: {
+					slidesToShow: 5,
+					slidesToScroll: 1
+				}
+			},
+			{
+				breakpoint: 1200,
+				settings: {
+					slidesToShow: 4,
+					slidesToScroll: 1
+				}
+			},
+			{
+				breakpoint: 992,
+				settings: {
+					slidesToShow: 4,
+					slidesToScroll: 1
+				}
+			},
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 3,
+					slidesToScroll: 1,
+				}
+			},
+			{
+				breakpoint: 500,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 1,
+				}
+			}
+		]
+	});
 
 	$('#registerModal').on('show.bs.modal', function (e) {
 		$('#loginModal').modal('hide')
