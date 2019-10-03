@@ -42,16 +42,8 @@ aside{
 			&:hover,
 			&:focus
 			{
-				background-color: $color9				
+				background-color: $color9;
 			}
-		}
-
-		.height{
-			&-full{
-				// height: auto !important;
-			}
-			transition: .3s;
-			// height: 0;
 		}
 
 		.to-collapse{
@@ -67,6 +59,22 @@ aside{
 				img{
 					transform: rotate(180deg)
 				}
+			}
+		}
+
+		.param_control{
+			background-color: #f3f3f3;
+			border-radius: 40px;
+			border: none;
+			color: #626466;
+			font-size: 1.3rem;
+			height: 40px;
+			line-height: 1.92;
+			padding: 0 10px; 
+			width: 119px;
+			&:hover,
+			&:focus{
+				box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
 			}
 		}
 	}

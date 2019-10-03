@@ -7703,9 +7703,6 @@ aside .filter .ps__rail-y {
 aside .filter .ps__thumb-y:hover, aside .filter .ps__thumb-y:focus {
   background-color: #0099ff; }
 
-aside .filter .height {
-  transition: .3s; }
-
 aside .filter .to-collapse {
   padding: 0;
   position: absolute;
@@ -7716,6 +7713,19 @@ aside .filter .to-collapse {
     transition: transform .3s; }
   aside .filter .to-collapse.down img {
     transform: rotate(180deg); }
+
+aside .filter .param_control {
+  background-color: #f3f3f3;
+  border-radius: 40px;
+  border: none;
+  color: #626466;
+  font-size: 1.3rem;
+  height: 40px;
+  line-height: 1.92;
+  padding: 0 10px;
+  width: 119px; }
+  aside .filter .param_control:hover, aside .filter .param_control:focus {
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15); }
 
 .comparison-info {
   color: #000;
