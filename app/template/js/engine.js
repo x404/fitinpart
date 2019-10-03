@@ -112,6 +112,25 @@ $(document).ready(function(){
 
 
 
+	// filter box (catalog)
+	// init scrollbar of countries
+	const filterbrandlist = new PerfectScrollbar('.filter-brand .scroll', {
+		wheelPropagation: true,
+		minScrollbarLength: 35,
+		maxScrollbarLength: 65,
+	});
+	filterbrandlist.update();
+
+
+	const filtertypelist = new PerfectScrollbar('.filter-type .scroll', {
+		wheelPropagation: true,
+		minScrollbarLength: 35,
+		maxScrollbarLength: 65,
+	});
+	filtertypelist.update();
+
+
+
 	// homeslider
 	$('#homeslider').slick({
 		prevArrow:'<button class="slick-arrow slick-prev icon icon-slider-arrow" aria-label="Previous" type="button"></button>',

@@ -10,14 +10,50 @@ aside{
 			@extend .neosans;
 			color: #000;
 			font-weight: 700;
+			font-size: 1.6rem;
 		}
 		.inner{
-			padding: 1.5rem 1.8rem 2rem;			
+			padding: 1.7rem 1.5rem 2rem 2.1rem;
 		}
 	}
 	.filter{
 		.inner{
 			border-bottom: 1px solid #e9eaec;
+			position: relative;
+		}
+
+		.list{
+			font-size: 1.4rem;
+			margin-top: 1.2rem;
+			max-height: 150px;
+			position: relative;
+			.custom-control{
+				margin-bottom: 1rem;
+				&:nth-last-child(3){
+					margin-bottom: 0;
+				}
+			}
+		}
+
+		.ps__rail-y{
+			right: 5px !important;
+		}
+		.ps__thumb-y{
+			&:hover,
+			&:focus
+			{
+				background-color: $color9				
+			}
+		}
+
+		.to-collapse{
+			padding: 0;
+			position: absolute;
+			right: 11px;
+			top: 25px;
+			img{
+				display: block;
+			}
 		}
 	}
 }

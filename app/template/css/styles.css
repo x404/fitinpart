@@ -3922,7 +3922,7 @@ strong,
 .submit {
   cursor: pointer; }
 
-.flex-center, .btn-google, .btn-facebook, .compare__count, .shop-cart__count, .littlecart .cart-body .btn-checkout, .littlecart .cart-body .btn-check, .searchbox__panel .checkbox__text:after, .searchbox .subtab-link,
+.flex-center, .btn-middle, .btn-google, .btn-facebook, .compare__count, .shop-cart__count, .littlecart .cart-body .btn-checkout, .littlecart .cart-body .btn-check, .searchbox__panel .checkbox__text:after, .searchbox .subtab-link,
 .smartsearch .subtab-link, .catalog a,
 .header .catalog__menu a, .reviews .btn-show, .checkbox__text:after, .aboutus-page .brands__item, .comparison__column .btn-del {
   display: flex;
@@ -4132,11 +4132,20 @@ strong,
     height: 5rem;
     font-weight: 700;
     min-width: 160px; }
+  .btn-middle {
+    border-radius: 4rem;
+    font-size: 1.6rem;
+    height: 4rem;
+    font-weight: 700;
+    min-width: 120px; }
   .btn-white {
     background-color: #ffffff;
     color: #000000; }
-  .btn-gray-hover:hover {
-    background-color: #e5e6e7; }
+  .btn-gray {
+    background-color: #8c9ba6;
+    color: #fff; }
+    .btn-gray-hover:hover {
+      background-color: #e5e6e7; }
   .btn-blue {
     background-color: #0672ba;
     color: #ffffff; }
@@ -7669,12 +7678,38 @@ aside .widget {
   margin-bottom: 2.5rem; }
   aside .widget-title {
     color: #000;
-    font-weight: 700; }
+    font-weight: 700;
+    font-size: 1.6rem; }
   aside .widget .inner {
-    padding: 1.5rem 1.8rem 2rem; }
+    padding: 1.7rem 1.5rem 2rem 2.1rem; }
 
 aside .filter .inner {
-  border-bottom: 1px solid #e9eaec; }
+  border-bottom: 1px solid #e9eaec;
+  position: relative; }
+
+aside .filter .list {
+  font-size: 1.4rem;
+  margin-top: 1.2rem;
+  max-height: 150px;
+  position: relative; }
+  aside .filter .list .custom-control {
+    margin-bottom: 1rem; }
+    aside .filter .list .custom-control:nth-last-child(3) {
+      margin-bottom: 0; }
+
+aside .filter .ps__rail-y {
+  right: 5px !important; }
+
+aside .filter .ps__thumb-y:hover, aside .filter .ps__thumb-y:focus {
+  background-color: #0099ff; }
+
+aside .filter .to-collapse {
+  padding: 0;
+  position: absolute;
+  right: 11px;
+  top: 25px; }
+  aside .filter .to-collapse img {
+    display: block; }
 
 .comparison-info {
   color: #000;

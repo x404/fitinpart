@@ -379,11 +379,25 @@ em strong
 		min-width: 160px;
 	}
 
+
+	&-middle{
+		$h: 4rem; 
+		border-radius: $h;
+		font-size: 1.6rem;
+		height: $h;
+		font-weight: 700;
+		min-width: 120px;
+		@extend .flex-center;
+	}
+
+
 	&-white{
 		background-color: $color2;
 		color: $color1;
 	}
 	&-gray{
+		background-color: #8c9ba6;
+		color: #fff;
 		&-hover{
 			&:hover{
 				background-color: $color36;
@@ -551,6 +565,8 @@ em strong
 			margin-right: .8rem;
 		}
 	}
+
+
 }
 
 
