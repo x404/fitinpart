@@ -26,7 +26,18 @@ $(document).ready(function(){
 		filter: false,
 		onClick: function(view) {
 			// show form
-			(document.querySelectorAll('.smartsearchForm.open').length == 1) ? document.querySelector('.smartsearchForm.open').classList.remove('open') : ''; 
+			(document.querySelectorAll('.modal .smartsearchForm.open').length == 1) ? document.querySelector('.modal .smartsearchForm.open').classList.remove('open') : ''; 
+			document.querySelector('#' + view.value).classList.add('open')
+		}
+	})
+
+
+	$("#typesearch_select3").multipleSelect({
+		single: true,
+		filter: false,
+		onClick: function(view) {
+			// show form
+			(document.querySelectorAll('aside .smartsearchForm.open').length == 1) ? document.querySelector('aside .smartsearchForm.open').classList.remove('open') : ''; 
 			document.querySelector('#' + view.value).classList.add('open')
 		}
 	})

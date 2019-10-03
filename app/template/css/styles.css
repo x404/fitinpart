@@ -3893,7 +3893,7 @@ h3 {
 
 .neosans, .top__tel, .header .catalog-btn, .littlecart .cart-body .title, .littlecart .cart-body .cart-products .item-title, .littlecart .cart-body .cart-products .price, .search .vehicle-search .ms-parent .ms-drop:before, .main h1, .main .title, .searchbox__title, #homeslider .title, .visual__item, .homepage .advantages, .reviews header h1, .review-card__title, .homepage .about .subtitle, .modal-title, #loginModal .subtitle,
 #registerModal .subtitle, .modal-info .title, .smartsearch__header, .smartsearch__header .ms-choice, .main h2, .main h3, .main h4, .main h5, .main h6, .content blockquote, .lastnews .item-news__title,
-.news__list .item-news__title, .aboutus-page .intro__title, .aboutus-page .about__title, .aboutus-page .quote, .aboutus-page .advantages, .aboutus-page .item-products__title, .aboutus-page .brands__text, .title-md, .comparison__body .product-title, .mob-header .btn-menu, .mob-header .tel {
+.news__list .item-news__title, .aboutus-page .intro__title, .aboutus-page .about__title, .aboutus-page .quote, .aboutus-page .advantages, .aboutus-page .item-products__title, .aboutus-page .brands__text, .title-md, aside .widget-title, .comparison__body .product-title, .mob-header .btn-menu, .mob-header .tel {
   font-family: 'Neo Sans Pro', Verdana, sans-serif; }
 
 strong,
@@ -4206,19 +4206,26 @@ strong,
       left: 18px;
       top: 12px; }
   .btn-more {
+    align-items: center;
     background-color: #eaecf0;
     color: #687075;
+    display: flex;
     font-size: 1.5rem;
     font-weight: 700;
     height: 6rem;
+    justify-content: center;
     margin: 2.2rem 0;
     text-align: center;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center; }
+    transition: .3s;
+    width: 100%; }
     .btn-more .icon {
+      transition: filter .3s;
       margin-left: .8rem; }
+    .btn-more:hover {
+      background-color: #0099ff;
+      color: #fff; }
+      .btn-more:hover .icon {
+        filter: brightness(15); }
   .btn-back {
     background-color: #eaecf0;
     color: #687075;
@@ -4994,7 +5001,8 @@ button {
 .searchbox .listwrapper,
 .header .vehicle-search .listwrapper,
 #searchbysizeModal .listwrapper,
-#vehicleForm .listwrapper {
+#vehicleForm .listwrapper,
+.tab-content .listwrapper {
   height: 250px;
   overflow: hidden;
   position: relative;
@@ -5002,28 +5010,33 @@ button {
   .searchbox .listwrapper ul,
   .header .vehicle-search .listwrapper ul,
   #searchbysizeModal .listwrapper ul,
-  #vehicleForm .listwrapper ul {
+  #vehicleForm .listwrapper ul,
+  .tab-content .listwrapper ul {
     max-height: none !important;
     height: auto !important; }
     .searchbox .listwrapper ul li,
     .header .vehicle-search .listwrapper ul li,
     #searchbysizeModal .listwrapper ul li,
-    #vehicleForm .listwrapper ul li {
+    #vehicleForm .listwrapper ul li,
+    .tab-content .listwrapper ul li {
       width: calc(100% - 27px) !important; }
   .searchbox .listwrapper .ps__rail-y,
   .header .vehicle-search .listwrapper .ps__rail-y,
   #searchbysizeModal .listwrapper .ps__rail-y,
-  #vehicleForm .listwrapper .ps__rail-y {
+  #vehicleForm .listwrapper .ps__rail-y,
+  .tab-content .listwrapper .ps__rail-y {
     width: 3px; }
   .searchbox .listwrapper .ps__thumb-y,
   .header .vehicle-search .listwrapper .ps__thumb-y,
   #searchbysizeModal .listwrapper .ps__thumb-y,
-  #vehicleForm .listwrapper .ps__thumb-y {
+  #vehicleForm .listwrapper .ps__thumb-y,
+  .tab-content .listwrapper .ps__thumb-y {
     right: -3px; }
   .searchbox .listwrapper .ms-no-results,
   .header .vehicle-search .listwrapper .ms-no-results,
   #searchbysizeModal .listwrapper .ms-no-results,
-  #vehicleForm .listwrapper .ms-no-results {
+  #vehicleForm .listwrapper .ms-no-results,
+  .tab-content .listwrapper .ms-no-results {
     padding-left: 26px;
     font-size: 1.5rem; }
 
@@ -6521,109 +6534,120 @@ input.form-control.error {
 .smartsearchForm {
   margin-top: .8rem; }
 
-.smartsearch {
+.modal .smartsearch {
   padding: 1.3rem 1.8rem 1.3rem 1.4rem; }
-  .smartsearch .ms-drop ul > li.hide-radio label {
-    padding: .9rem 0; }
-  .smartsearch__header {
-    align-items: center;
-    display: flex; }
-    .smartsearch__header .title {
-      color: #000;
-      font-size: 1.6rem; }
-    .smartsearch__header .ms-parent {
-      font-size: 1.6rem;
-      width: 180px !important; }
-    .smartsearch__header .ms-choice {
-      background: none;
-      color: #0672ba;
-      font-weight: 700;
-      height: auto;
-      padding-right: 15px;
-      position: relative;
-      width: auto !important; }
-      .smartsearch__header .ms-choice > span {
-        line-height: 1.8; }
-      .smartsearch__header .ms-choice > div {
-        background-color: transparent;
-        height: 7px;
-        right: 1px;
-        top: 12px;
-        width: 10px; }
-        .smartsearch__header .ms-choice > div:before {
-          transition: transform .3s; }
-        .smartsearch__header .ms-choice > div.open:before {
-          transform: rotate(-180deg); }
-      .smartsearch__header .ms-choice:hover, .smartsearch__header .ms-choice:focus {
-        background-color: transparent;
-        box-shadow: none !important; }
-        .smartsearch__header .ms-choice:hover > span, .smartsearch__header .ms-choice:focus > span {
-          color: #0099ff; }
-        .smartsearch__header .ms-choice:hover div, .smartsearch__header .ms-choice:focus div {
-          background-color: transparent; }
-          .smartsearch__header .ms-choice:hover div:before, .smartsearch__header .ms-choice:focus div:before {
-            filter: none; }
-    .smartsearch__header .ms-drop {
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
-      border-radius: 0 0 12px 12px;
-      padding: 5px 0 0;
-      width: 160px; }
-      .smartsearch__header .ms-drop ul > li.hide-radio:before, .smartsearch__header .ms-drop ul > li.hide-radio:after {
-        display: none; }
-      .smartsearch__header .ms-drop ul > li.hide-radio.selected {
-        background-color: #0672ba;
-        color: #ffffff; }
-      .smartsearch__header .ms-drop ul > li span {
-        padding-left: 1.2rem;
-        padding-right: 1.2rem; }
-    .smartsearch__header .ms-choice {
-      margin-left: 16px; }
-      .smartsearch__header .ms-choice > span {
-        padding-left: 0; }
-  .smartsearch .btn-search {
-    align-items: center;
+
+.smartsearch__header {
+  align-items: center;
+  display: flex; }
+  .smartsearch__header .title {
+    color: #000;
+    font-size: 1.6rem; }
+  .smartsearch__header .ms-parent {
     font-size: 1.6rem;
-    margin-top: 1.3rem; }
-  .smartsearch .switch {
-    margin-top: .5rem;
-    margin-bottom: 1.2rem; }
-  .smartsearch .control-item {
-    margin-top: 1rem; }
-    .smartsearch .control-item label {
-      white-space: nowrap; }
-    .smartsearch .control-item .form-control {
-      flex-grow: 1;
-      margin-left: 1.7rem; }
-  .smartsearch .approximation_block {
-    margin-top: 1.5rem;
-    margin-bottom: 2.5rem; }
-  .smartsearch .subtype-list {
-    justify-content: space-between; }
-  .smartsearch .spec_fields .subtype-item {
-    margin-right: 0;
-    margin-top: 1rem;
-    width: 48%; }
-  .smartsearch .spec_fields .form-control {
-    margin-left: 0;
-    width: 100%; }
-  .smartsearch .type_id_wrapper .ms-parent {
-    width: 100% !important; }
-  .smartsearch .ms-drop.bottom {
-    left: 15px;
-    top: 100%;
-    padding-top: 0; }
-    .smartsearch .ms-drop.bottom ul {
-      padding: 0; }
-  .smartsearch .vehicle-control {
-    margin-bottom: 1.5rem;
-    width: 100%; }
-    .smartsearch .vehicle-control .ms-drop.bottom {
-      left: 0; }
-  .smartsearch .ms-search {
-    margin: 1.5rem 0;
-    padding-right: 25px; }
-  .smartsearch .ms-parent.year, .smartsearch .ms-parent.engine, .smartsearch .ms-parent.engineno {
-    width: 150px !important; }
+    width: 180px !important; }
+  .smartsearch__header .ms-choice {
+    background: none;
+    color: #0672ba;
+    font-weight: 700;
+    height: auto;
+    padding-right: 15px;
+    position: relative;
+    width: auto !important; }
+    .smartsearch__header .ms-choice > span {
+      line-height: 1.8; }
+    .smartsearch__header .ms-choice > div {
+      background-color: transparent;
+      height: 7px;
+      right: 1px;
+      top: 12px;
+      width: 10px; }
+      .smartsearch__header .ms-choice > div:before {
+        transition: transform .3s; }
+      .smartsearch__header .ms-choice > div.open:before {
+        transform: rotate(-180deg); }
+    .smartsearch__header .ms-choice:hover, .smartsearch__header .ms-choice:focus {
+      background-color: transparent;
+      box-shadow: none !important; }
+      .smartsearch__header .ms-choice:hover > span, .smartsearch__header .ms-choice:focus > span {
+        color: #0099ff; }
+      .smartsearch__header .ms-choice:hover div, .smartsearch__header .ms-choice:focus div {
+        background-color: transparent; }
+        .smartsearch__header .ms-choice:hover div:before, .smartsearch__header .ms-choice:focus div:before {
+          filter: none; }
+  .smartsearch__header .ms-drop {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    border-radius: 0 0 12px 12px;
+    padding: 5px 0 0;
+    width: 160px; }
+    .smartsearch__header .ms-drop ul > li.hide-radio:before, .smartsearch__header .ms-drop ul > li.hide-radio:after {
+      display: none; }
+    .smartsearch__header .ms-drop ul > li.hide-radio.selected {
+      background-color: #0672ba;
+      color: #ffffff; }
+    .smartsearch__header .ms-drop ul > li span {
+      padding-left: 1.2rem;
+      padding-right: 1.2rem; }
+  .smartsearch__header .ms-choice {
+    margin-left: 16px; }
+    .smartsearch__header .ms-choice > span {
+      padding-left: 0; }
+
+.smartsearch .btn-search {
+  align-items: center;
+  font-size: 1.6rem;
+  margin-top: 1.3rem; }
+
+.smartsearch .switch {
+  margin-top: .5rem;
+  margin-bottom: 1.2rem; }
+
+.smartsearch .control-item {
+  margin-top: 1rem; }
+  .smartsearch .control-item label {
+    white-space: nowrap; }
+  .smartsearch .control-item .form-control {
+    flex-grow: 1;
+    margin-left: 1.7rem; }
+
+.smartsearch .approximation_block {
+  margin-top: 1.5rem;
+  margin-bottom: 2.5rem; }
+
+.smartsearch .subtype-list {
+  justify-content: space-between; }
+
+.smartsearch .spec_fields .subtype-item {
+  margin-right: 0;
+  margin-top: 1rem;
+  width: 48%; }
+
+.smartsearch .spec_fields .form-control {
+  margin-left: 0;
+  width: 100%; }
+
+.smartsearch .type_id_wrapper .ms-parent {
+  width: 100% !important; }
+
+.smartsearch .ms-drop.bottom {
+  left: 15px;
+  top: 100%;
+  padding-top: 0; }
+  .smartsearch .ms-drop.bottom ul {
+    padding: 0; }
+
+.smartsearch .vehicle-control {
+  margin-bottom: 1.5rem;
+  width: 100%; }
+  .smartsearch .vehicle-control .ms-drop.bottom {
+    left: 0; }
+
+.smartsearch .ms-search {
+  margin: 1.5rem 0;
+  padding-right: 25px; }
+
+.smartsearch .ms-parent.year, .smartsearch .ms-parent.engine, .smartsearch .ms-parent.engineno {
+  width: 150px !important; }
 
 .checkbox input {
   opacity: 0;
@@ -7639,6 +7663,18 @@ input.form-control.error {
     .aboutus-page .warranty .title-md:after {
       left: 50%;
       margin-left: -35px; } }
+
+aside .widget {
+  background-color: #fff;
+  margin-bottom: 2.5rem; }
+  aside .widget-title {
+    color: #000;
+    font-weight: 700; }
+  aside .widget .inner {
+    padding: 1.5rem 1.8rem 2rem; }
+
+aside .filter .inner {
+  border-bottom: 1px solid #e9eaec; }
 
 .comparison-info {
   color: #000;

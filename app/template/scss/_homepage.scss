@@ -3,7 +3,8 @@
 .searchbox,
 .header .vehicle-search,
 #searchbysizeModal,
-#vehicleForm
+#vehicleForm,
+.tab-content
 {
 	.listwrapper {
 		height: 250px;
@@ -272,7 +273,6 @@
 .searchbox,
 .smartsearch
 {
-
 	.subtab{
 		&-item{
 			font-size: 1.6rem;

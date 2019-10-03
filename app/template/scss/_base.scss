@@ -482,19 +482,29 @@ em strong
 	}
 
 	&-more{
+		align-items: center;
 		background-color: $color41;
 		color: #687075;
+		display: flex;
 		font-size: 1.5rem;
 		font-weight: 700;
 		height: 6rem;
+		justify-content: center;
 		margin: 2.2rem 0;
 		text-align: center;
+		transition: .3s;
 		width: 100%;
-		display: flex;
-		align-items: center;
-		justify-content: center;
 		.icon{
+			transition: filter .3s;
 			margin-left: .8rem;
+		}
+
+		&:hover{
+			background-color: $color9;
+			color: #fff;
+			.icon{
+				filter: brightness(15);
+			}
 		}
 	}
 

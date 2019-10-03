@@ -1,0 +1,23 @@
+.catalog-page{
+
+}
+
+aside{
+	.widget{
+		background-color: #fff;
+		margin-bottom: 2.5rem;
+		&-title{
+			@extend .neosans;
+			color: #000;
+			font-weight: 700;
+		}
+		.inner{
+			padding: 1.5rem 1.8rem 2rem;			
+		}
+	}
+	.filter{
+		.inner{
+			border-bottom: 1px solid #e9eaec;
+		}
+	}
+}

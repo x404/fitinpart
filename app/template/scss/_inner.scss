@@ -44,10 +44,15 @@
 	margin-top: .8rem;	
 }
 
+.modal{
+	.smartsearch{
+		padding: 1.3rem 1.8rem 1.3rem 1.4rem;
+	}
+}
+
 .smartsearch{
-	padding: 1.3rem 1.8rem 1.3rem 1.4rem;
 	.ms-drop ul > li.hide-radio label{
-		padding: .9rem 0;
+		// padding: .9rem 0;
 	}
 	&__header{
 		align-items: center;
