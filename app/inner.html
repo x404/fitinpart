@@ -2357,51 +2357,9 @@
 <script src="/template/js/search-hd.js"></script>
 <!-- InstanceBeginEditable name="EditRegion4" -->
 
-
 <script>
-	var map,
-		coordinates = {lat: 1.333384, lng: 103.802040};
-
-	var locations = [
-		[1.333384, 103.902040],
-		[1.313486, 103.653377]
-	];
-
-	function initMap() {
-		map = new google.maps.Map(document.getElementById('map'), {
-			center: coordinates,
-			zoom: 11
-		});
-		var markerImageHover = new google.maps.MarkerImage(
-			'/template/images/balloon-hover.png'
-		);
-		var markerImage = new google.maps.MarkerImage(
-			'/template/images/balloon.png'
-		);
-
-		let marker;
-
-		for (let i = 0; i < locations.length; i++) {  
-			marker = new google.maps.Marker({
-				position: new google.maps.LatLng(locations[i][0], locations[i][1]),
-				map: map,
-				icon: '/template/images/balloon.png'
-			});
-
-			google.maps.event.addListener(marker, 'mouseover', function() {
-			  this.setIcon(markerImageHover);
-			});
-			google.maps.event.addListener(marker, 'mouseout', function() {
-			  this.setIcon(markerImage);
-			});
-		};
-	}
-
-
+	
 </script>
-
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDkAypCWE9K5jTaVD0t4jxjhpJOITKYBI8&callback=initMap"></script>
-
 <!-- InstanceEndEditable -->
 </body>
 <!-- InstanceEnd --></html>
