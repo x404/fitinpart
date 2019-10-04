@@ -333,6 +333,14 @@ em strong
 		@include sprite($icon-arrow-down-gray);	
 		display: block;
 	}
+
+
+	&-tofav{
+		@include sprite($icon-tofav);	
+	}
+	&-infav{
+		@include sprite($icon-infav);
+	}
 }
 
 .w100{

@@ -167,18 +167,26 @@
 				text-align: center;
 			}
 			.current-price{
-				font-size: 1.8rem;
-				font-weight: 700;
-				color: #000;
-				font-family: "Neo Sans Pro";
 				line-height: 3.33;
 			}
 			.old-price{
-				color: #eb5c5c;
-				font-size: 1.5rem;
 				line-height: 4;
 				margin-left: 1.2rem;
 			}
 		}
 	}
+}
+
+
+.current-price{
+	color: #000;
+	font-family: "Neo Sans Pro";
+	font-size: 1.8rem;
+	font-weight: 700;
+}
+.old-price{
+	color: #eb5c5c;
+	font-size: 1.5rem;
+	text-decoration: line-through;
+
 }
