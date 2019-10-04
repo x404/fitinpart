@@ -345,6 +345,19 @@ em strong
 	&-letter{
 		@include sprite($icon-letter);
 	}
+
+
+	&-badge{
+		&-1-white{
+			@include sprite($icon-badge-1-white)
+		}
+		&-2-white{
+			@include sprite($icon-badge-2-white)
+		}
+		&-3-white{
+			@include sprite($icon-badge-3-white)
+		}
+	}
 }
 
 .w100{
