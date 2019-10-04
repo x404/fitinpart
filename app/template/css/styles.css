@@ -7723,9 +7723,17 @@ aside .filter .param_control {
   height: 40px;
   line-height: 1.92;
   padding: 0 10px;
-  width: 119px; }
+  width: 119px;
+  transition: box-shadow .3s; }
   aside .filter .param_control:hover, aside .filter .param_control:focus {
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15); }
+
+aside .filter .slider {
+  margin-top: 1.9rem;
+  width: 96%; }
+  aside .filter .slider_controls {
+    color: #b7bbbe;
+    margin-top: 2rem; }
 
 .comparison-info {
   color: #000;

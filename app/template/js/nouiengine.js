@@ -1,9 +1,9 @@
 var minslider = 40,
 	maxslider = 30000,
 
-	handlesSlider2 = document.getElementById('slider-price'), 
-	pricefrom = document.getElementById('price-from'),
-	priceto = document.getElementById('price-to');
+	handlesSlider2 = document.getElementById('slider-cost'), 
+	costfrom = document.getElementById('cost-from'),
+	costto = document.getElementById('cost-to');
 
 
 
@@ -24,20 +24,20 @@ noUiSlider.create(handlesSlider2, {
 
 // cost aside
 handlesSlider2.noUiSlider.on('update', function(values, handle){
-	pricefrom.value = values[0];
-	priceto.value = values[1];
+	costfrom.value = values[0];
+	costto.value = values[1];
 });
 
 handlesSlider2.noUiSlider.on('change', function(values, handle){
-	// handlesSlider22.noUiSlider.set([pricefrom.value, priceto.value]);
+	// handlesSlider22.noUiSlider.set([costfrom.value, costto.value]);
 });
-pricefrom.addEventListener('change', function ( ) {
+costfrom.addEventListener('change', function ( ) {
 	handlesSlider2.noUiSlider.set([this.value, null]);
-	pricefromsm.value = this.value;
+	costfromsm.value = this.value;
 	// handlesSlider22.noUiSlider.set([this.value, null]);
 });
-priceto.addEventListener('change', function ( ) {
+costto.addEventListener('change', function ( ) {
 	handlesSlider2.noUiSlider.set([null, this.value]);
-	pricetosm.value = this.value;
+	costtosm.value = this.value;
 	// handlesSlider22.noUiSlider.set([null, this.value]);
 });

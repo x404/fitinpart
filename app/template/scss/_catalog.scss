@@ -72,9 +72,19 @@ aside{
 			line-height: 1.92;
 			padding: 0 10px; 
 			width: 119px;
+			transition: box-shadow .3s;
 			&:hover,
 			&:focus{
 				box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
+			}
+		}
+
+		.slider{
+			margin-top: 1.9rem;
+			width: 96%;
+			&_controls{
+				color: #b7bbbe;
+				margin-top: 2rem;
 			}
 		}
 	}
