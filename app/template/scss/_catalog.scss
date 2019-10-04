@@ -182,7 +182,7 @@ aside{
 
 	.item-products{
 		background-color: #fff;
-		padding: 2.4rem 0 1.7rem;
+		padding: 0 0 1.7rem;
 		transition: box-shadow .3s;
 		&:hover{
 			box-shadow: 0 5px 20px rgba(0, 113, 189, 0.15);
@@ -197,8 +197,11 @@ aside{
 			flex-grow: 1;
 		}
 		&__pic{
-			text-align: center;
 			overflow: hidden;
+			padding-top: 2.4rem;
+			text-align: center;
+			height: 200px;
+			@extend .flex-center;
 			img{
 				transition: transform .3s;
 				vertical-align: top;
@@ -222,12 +225,20 @@ aside{
 				}
 			}
 		}
+		
+		.instock{
+			margin-top: 1rem;
+		}
 
 		&__subtitle{
 			font-size: 1.4rem;
 			color: $color10;
 			font-style: italic;
+			& + .instock{
+				margin-top: 0;
+			}
 		}
+		
 
 
 		&__bottom{
