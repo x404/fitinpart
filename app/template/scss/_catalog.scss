@@ -89,3 +89,83 @@ aside{
 		}
 	}
 }
+
+.sortbox{
+	color: #4c4c4c;
+	font-size: 1.4rem;
+	margin-top: 1.2rem;
+	.sort-label{
+		@extend .neosans;
+		color: #000;
+		font-weight: 700;
+	}
+	li{
+		align-items: center;
+		display: flex;
+		margin-left: 8px;
+		margin-right: 15px;
+		position: relative;
+		&:first-child{
+			margin-right: 0.3rem; 
+			margin-left: 0;
+		}
+	}
+
+	.param-sort{
+		align-items: center;
+		border-radius: 2rem;
+		display: flex;
+		height: 2rem;
+		line-height: 1;
+		padding-left: .5rem;
+		padding-right: 2.2rem;
+		position: relative;
+		&:after{
+			@extend .before;
+			@include sprite($icon-caret);
+			right: 6px;
+			top: 7px;
+			transition: .3s;
+		}
+			color: $color9;
+		&:hover{
+			text-decoration: none;
+		}
+
+		&.active{
+			background-color: #8c9ba6;
+			color: #fff;
+			&:after{
+				filter: grayscale(1) brightness(15);
+
+			}
+			& + .sort-reset{
+				display: block;
+			}
+		}
+
+		&.sort-asc{
+			&:after{
+				transform: rotate(180deg);
+			}
+		}
+
+	}
+
+	.sort-reset{
+		display: none;
+		height: 12px;
+		margin-left: 3px;
+		padding: 0;
+		position: absolute;
+		right: -16px;
+		top: 5px;
+		svg{
+			vertical-align: top;
+		}
+		line{
+			stroke-width: 2px;
+			stroke: #c91537;
+		}
+	}
+}

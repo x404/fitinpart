@@ -3893,7 +3893,7 @@ h3 {
 
 .neosans, .top__tel, .header .catalog-btn, .littlecart .cart-body .title, .littlecart .cart-body .cart-products .item-title, .littlecart .cart-body .cart-products .price, .search .vehicle-search .ms-parent .ms-drop:before, .main h1, .main .title, .searchbox__title, #homeslider .title, .visual__item, .homepage .advantages, .reviews header h1, .review-card__title, .homepage .about .subtitle, .modal-title, #loginModal .subtitle,
 #registerModal .subtitle, .modal-info .title, .smartsearch__header, .smartsearch__header .ms-choice, .main h2, .main h3, .main h4, .main h5, .main h6, .content blockquote, .lastnews .item-news__title,
-.news__list .item-news__title, .aboutus-page .intro__title, .aboutus-page .about__title, .aboutus-page .quote, .aboutus-page .advantages, .aboutus-page .item-products__title, .aboutus-page .brands__text, .title-md, aside .widget-title, .comparison__body .product-title, .mob-header .btn-menu, .mob-header .tel {
+.news__list .item-news__title, .aboutus-page .intro__title, .aboutus-page .about__title, .aboutus-page .quote, .aboutus-page .advantages, .aboutus-page .item-products__title, .aboutus-page .brands__text, .title-md, aside .widget-title, .sortbox .sort-label, .comparison__body .product-title, .mob-header .btn-menu, .mob-header .tel {
   font-family: 'Neo Sans Pro', Verdana, sans-serif; }
 
 strong,
@@ -3911,7 +3911,7 @@ strong,
     text-decoration: none; }
 
 .before, .icon:before, .btn-view:before, .btn-google:before, .btn-facebook:before, .top__left:before, .top__menu li.flexMenu-viewMore > a:after, .littlecart .cart-body .cart-products .count .minus:before, .littlecart .cart-body .cart-products .count .plus:before, .littlecart .cart-body .cart-products .count .plus:after, .search .vehicle-search-str .vehicle-search-item:after, .promo .wrapper:before, .visual__item:before, .modal-content-bg:before, .modal-content-bg:after, .modal-info:after, .modal-menu:before, .modal-menu .catalog:before, .breadcrumbs ul li.B_homecrumb a:before, .content ul li:before, .aboutus-page .intro__title:before, .aboutus-page .advantages__text:after, .aboutus-page .ouroffice__pic:after, #fitinpart-carousel a:after, #fitinpart-carousel a:before, .bl-line:after,
-.bc-line:after, .content-location .days:not(:last-child):after {
+.bc-line:after, .sortbox .param-sort:after, .content-location .days:not(:last-child):after {
   content: "";
   display: block;
   position: absolute; }
@@ -7734,6 +7734,65 @@ aside .filter .slider {
   aside .filter .slider_controls {
     color: #b7bbbe;
     margin-top: 2rem; }
+
+.sortbox {
+  color: #4c4c4c;
+  font-size: 1.4rem;
+  margin-top: 1.2rem; }
+  .sortbox .sort-label {
+    color: #000;
+    font-weight: 700; }
+  .sortbox li {
+    align-items: center;
+    display: flex;
+    margin-left: 8px;
+    margin-right: 15px;
+    position: relative; }
+    .sortbox li:first-child {
+      margin-right: 0.3rem;
+      margin-left: 0; }
+  .sortbox .param-sort {
+    align-items: center;
+    border-radius: 2rem;
+    display: flex;
+    height: 2rem;
+    line-height: 1;
+    padding-left: .5rem;
+    padding-right: 2.2rem;
+    position: relative;
+    color: #0099ff; }
+    .sortbox .param-sort:after {
+      background-image: url(../images/sprite.png);
+      background-position: -108px -76px;
+      width: 10px;
+      height: 7px;
+      right: 6px;
+      top: 7px;
+      transition: .3s; }
+    .sortbox .param-sort:hover {
+      text-decoration: none; }
+    .sortbox .param-sort.active {
+      background-color: #8c9ba6;
+      color: #fff; }
+      .sortbox .param-sort.active:after {
+        filter: grayscale(1) brightness(15); }
+      .sortbox .param-sort.active + .sort-reset {
+        display: block; }
+    .sortbox .param-sort.sort-asc:after {
+      transform: rotate(180deg); }
+  .sortbox .sort-reset {
+    display: none;
+    height: 12px;
+    margin-left: 3px;
+    padding: 0;
+    position: absolute;
+    right: -16px;
+    top: 5px; }
+    .sortbox .sort-reset svg {
+      vertical-align: top; }
+    .sortbox .sort-reset line {
+      stroke-width: 2px;
+      stroke: #c91537; }
 
 .comparison-info {
   color: #000;
