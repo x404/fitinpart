@@ -7848,10 +7848,15 @@ aside .filter .slider {
       font-style: italic; }
       .products__list .item-products__subtitle + .instock {
         margin-top: 0; }
+    .products__list .item-products .preorder-text {
+      margin-top: .5rem; }
     .products__list .item-products__bottom {
       border-top: 1px solid #e6eaec;
       margin: 3rem 2.2rem 0;
       padding-top: 1.4rem; }
+    .products__list .item-products .price {
+      display: flex;
+      flex-direction: column; }
     .products__list .item-products .fav-cart {
       display: flex; }
     .products__list .item-products .btn-cart {
@@ -7921,6 +7926,11 @@ aside .filter .slider {
   color: #bea416; }
   .status-4 .indicator .unit {
     background-color: #bea416; }
+
+.preorder-text {
+  color: #6c7173;
+  font-style: italic;
+  font-size: 1.4rem; }
 
 .comparison-info {
   color: #000;
@@ -8023,11 +8033,6 @@ aside .filter .slider {
     width: 55px;
     font-size: 1.4rem;
     text-align: center; }
-
-.comparison__body .quantity {
-  color: #6c7173;
-  font-style: italic;
-  font-size: 1.4rem; }
 
 .comparison__body .price-layout {
   border-top: 1px solid #dee0e4;

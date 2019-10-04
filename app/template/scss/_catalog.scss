@@ -225,7 +225,7 @@ aside{
 				}
 			}
 		}
-		
+
 		.instock{
 			margin-top: 1rem;
 		}
@@ -238,7 +238,10 @@ aside{
 				margin-top: 0;
 			}
 		}
-		
+
+		.preorder-text{
+			margin-top: .5rem;
+		}	
 
 
 		&__bottom{
@@ -246,8 +249,9 @@ aside{
 			margin: 3rem 2.2rem 0;
 			padding-top: 1.4rem;
 		}
-		.current-price{
-
+		.price{
+			display: flex;
+			flex-direction: column;
 		}
 
 		.fav-cart{
@@ -358,5 +362,11 @@ aside{
 			}
 		}
 	}
+}
+
+.preorder-text{
+	color: #6c7173;
+	font-style: italic;
+	font-size: 1.4rem;
 }
 
