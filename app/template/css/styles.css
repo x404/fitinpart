@@ -7955,7 +7955,7 @@ aside .filter .slider {
         position: absolute;
         top: 0;
         transform: translateY(-5px);
-        transition: .3s;
+        transition: transform .3s, opacity .3s;
         z-index: -1; }
       .products__list .item-products .tooltip__body {
         background-color: #2a2f32;
