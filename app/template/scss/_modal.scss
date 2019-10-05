@@ -93,6 +93,23 @@
 }
 
 
+.modal-content-rbg{
+	min-height: 154px;
+	&:after{
+		background: url(../images/bg/modal-bg-2.png) no-repeat;
+		@extend .before;
+	}
+	&:after{
+		background-position: right top;
+		height: 154px;
+		right: -67px;
+		top: 0;
+		width: 67px;
+	}
+}
+
+
+
 #loginModal,
 #registerModal
 {
@@ -465,9 +482,11 @@
 			padding: 0;
 			position: absolute;
 			right: 20px;
-			stroke-width: 4px;
-			stroke:#fff;
 			top: 20px;
+			line{
+				stroke-width: 4px;
+				stroke:#fff;
+			}
 		}
 	}
 	&-success{

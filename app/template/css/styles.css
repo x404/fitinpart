@@ -3910,7 +3910,7 @@ strong,
   .tdu:hover {
     text-decoration: none; }
 
-.before, .icon:before, .btn-view:before, .btn-google:before, .btn-facebook:before, .top__left:before, .top__menu li.flexMenu-viewMore > a:after, .littlecart .cart-body .cart-products .count .minus:before, .littlecart .cart-body .cart-products .count .plus:before, .littlecart .cart-body .cart-products .count .plus:after, .search .vehicle-search-str .vehicle-search-item:after, .promo .wrapper:before, .visual__item:before, .modal-content-bg:before, .modal-content-bg:after, .modal-info:after, .modal-menu:before, .modal-menu .catalog:before, .breadcrumbs ul li.B_homecrumb a:before, .content ul li:before, .aboutus-page .intro__title:before, .aboutus-page .advantages__text:after, .aboutus-page .ouroffice__pic:after, #fitinpart-carousel a:after, #fitinpart-carousel a:before, .bl-line:after,
+.before, .icon:before, .btn-view:before, .btn-google:before, .btn-facebook:before, .top__left:before, .top__menu li.flexMenu-viewMore > a:after, .littlecart .cart-body .cart-products .count .minus:before, .littlecart .cart-body .cart-products .count .plus:before, .littlecart .cart-body .cart-products .count .plus:after, .search .vehicle-search-str .vehicle-search-item:after, .promo .wrapper:before, .visual__item:before, .modal-content-bg:before, .modal-content-bg:after, .modal-content-rbg:after, .modal-info:after, .modal-menu:before, .modal-menu .catalog:before, .breadcrumbs ul li.B_homecrumb a:before, .content ul li:before, .aboutus-page .intro__title:before, .aboutus-page .advantages__text:after, .aboutus-page .ouroffice__pic:after, #fitinpart-carousel a:after, #fitinpart-carousel a:before, .bl-line:after,
 .bc-line:after, .sortbox .param-sort:after, .products__list .item-products .labels .label-tooltip:before, .products__list .item-products .additional__panel .item button:before, .content-location .days:not(:last-child):after {
   content: "";
   display: block;
@@ -5003,6 +5003,9 @@ button {
   height: 1px;
   overflow: hidden;
   clip: rect(0 0 0 0); }
+
+.upcase {
+  text-transform: uppercase; }
 
 @font-face {
   font-family: "Proxima Nova";
@@ -6155,6 +6158,17 @@ button {
   top: 0;
   width: 118px; }
 
+.modal-content-rbg {
+  min-height: 154px; }
+  .modal-content-rbg:after {
+    background: url(../images/bg/modal-bg-2.png) no-repeat; }
+  .modal-content-rbg:after {
+    background-position: right top;
+    height: 154px;
+    right: -67px;
+    top: 0;
+    width: 67px; }
+
 #loginModal .modal-body a,
 #registerModal .modal-body a {
   color: #0672ba; }
@@ -6420,9 +6434,10 @@ button {
     padding: 0;
     position: absolute;
     right: 20px;
-    stroke-width: 4px;
-    stroke: #fff;
     top: 20px; }
+    .modal-info .close line {
+      stroke-width: 4px;
+      stroke: #fff; }
 
 .modal-success {
   color: #fff; }
@@ -7899,8 +7914,6 @@ aside .filter .slider {
     .products__list .item-products .price {
       display: flex;
       flex-direction: column; }
-    .products__list .item-products .fav-cart {
-      display: flex; }
     .products__list .item-products .btn-cart {
       background-color: #0672ba;
       border-radius: 50%;
@@ -7920,9 +7933,22 @@ aside .filter .slider {
         box-shadow: none; }
         .products__list .item-products .btn-cart.incart:hover {
           background-color: #778d9b; }
+    .products__list .item-products .fav-cart {
+      display: flex;
+      align-items: center; }
     .products__list .item-products .btn-fav {
       margin-right: 1.6rem;
       padding: 0; }
+      .products__list .item-products .btn-fav-in {
+        background-image: url(../images/sprite.png);
+        background-position: -80px -62px;
+        width: 26px;
+        height: 23px; }
+    .products__list .item-products .to-fav {
+      background-image: url(../images/sprite.png);
+      background-position: -108px 0px;
+      width: 26px;
+      height: 23px; }
     .products__list .item-products .btn-tooltip {
       background-color: #778d9b;
       border-radius: 50%;
@@ -8136,6 +8162,43 @@ aside .filter .slider {
   color: #6c7173;
   font-style: italic;
   font-size: 1.4rem; }
+
+.added-to-compare {
+  overflow: visible; }
+  .added-to-compare .close {
+    right: 20px;
+    top: 20px; }
+    .added-to-compare .close line {
+      stroke: #fff; }
+
+.added-to-compare {
+  height: 154px;
+  left: 50%;
+  margin-left: -160px;
+  margin-top: -75px;
+  position: fixed;
+  top: 50%;
+  color: #fff;
+  width: 321px; }
+  .added-to-compare .modal-content {
+    background-image: url(../images/wish-bg.png);
+    background-repeat: no-repeat;
+    background-position: right 13px bottom;
+    background-color: #0672ba;
+    box-shadow: 0 5px 20px rgba(0, 153, 255, 0.5);
+    padding: 2.4rem 3rem 2.5rem;
+    font-size: 1.7rem;
+    line-height: 1.47; }
+    .added-to-compare .modal-content a {
+      color: #fff; }
+  .added-to-compare .modal-title {
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1.6rem; }
+
+.show {
+  display: block; }
 
 .comparison-info {
   color: #000;

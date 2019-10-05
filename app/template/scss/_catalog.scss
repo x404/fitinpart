@@ -261,9 +261,7 @@ aside{
 			flex-direction: column;
 		}
 
-		.fav-cart{
-			display: flex;
-		}
+
 		.btn{
 			&-cart{
 				@extend .flex-center;
@@ -293,11 +291,25 @@ aside{
 			}
 		}
 
-
+		.fav-cart{
+			display: flex;
+			align-items: center;
+		}
 		.btn-fav{
 			margin-right: 1.6rem;
 			padding: 0;
+			&-in{
+				@include sprite($icon-infav);
+			}
 		}
+		.to-fav{
+			@include sprite($icon-tofav);
+			&:hover{
+				// @include sprite($icon-infav);
+			}
+		}
+
+
 
 		.btn-tooltip{
 			@extend .neosans;
@@ -589,3 +601,53 @@ aside{
 	font-size: 1.4rem;
 }
 
+
+
+.added-to-compare
+{
+	overflow: visible;
+	.close{
+		right: 20px;
+		top: 20px;
+		line{
+			stroke: #fff;
+		}
+	}
+}
+
+.added-to-compare{
+	height: 154px;
+	left: 50%;
+	margin-left: -160px;
+	margin-top: -75px;
+	position: fixed;
+	top: 50%;
+	color: #fff;
+	width: 321px;
+	.modal{
+		&-content{
+			background-image: url(../images/wish-bg.png);
+			background-repeat: no-repeat;
+			background-position: right 13px bottom;
+			background-color: #0672ba;
+			box-shadow: 0 5px 20px rgba(0, 153, 255, 0.5);
+			padding: 2.4rem 3rem 2.5rem;
+			font-size: 1.7rem;
+			line-height: 1.47;
+			a{
+				color: #fff;
+			}
+		}
+		&-title{
+			color: #fff;
+			font-size: 2.5rem;
+			font-weight: 700;
+			margin-bottom: 1.6rem;
+		}
+	}
+
+}
+
+.show{
+	display: block;
+}

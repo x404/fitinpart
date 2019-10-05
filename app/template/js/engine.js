@@ -520,6 +520,53 @@ document.onkeydown = function(evt) {
 };
 
 
+function fadeoutWishlistInfo(){
+	$('.wishlist-info').fadeOut('normal',function(){
+		this.remove();
+	});	
+}
+
+// close wishlist
+$(document).on('click','.wishlist-info .close', function(e){
+	e.preventDefault();
+	fadeoutWishlistInfo();
+});
+
+// to wishlist
+$(document).on('click','.to-fav', function(e){
+	e.preventDefault();
+	var $this = $(this);
+	msg = `
+		<div class="wishlist-info added-to-compare modal show">
+			<div class="modal-content modal-content-rbg">
+				<p class="modal-title">Success</p>
+				<p>You have added <strong class="upcase"> ${$this.data('title')} </strong> to your <a href="#"><strong>wish list!</strong></a></p>
+				<button type="button" class="close a-rotate90" aria-label="Close">
+					<svg width="22" height="22">
+						<line x1="0" y1="0" x2="22" y2="22"/>
+						<line x1="22" y1="0" x2="0" y2="22"/>
+					</svg>
+				</button>
+			</div>
+		</div>
+	`;
+	$('body').append(msg);
+	$this.removeClass('to-fav').addClass('btn-fav-in');
+
+	var timerfav = window.setInterval(function(){
+		fadeoutWishlistInfo();
+		window.clearInterval(timerfav);
+	},4000);
+});
+
+// from wishlist
+$(document).on('click','.btn-fav-in', function(e){
+	e.preventDefault();
+	var $this = $(this);
+	$this.removeClass('btn-fav-in').addClass('to-fav');
+});
+
+
 [].forEach.call(document.querySelectorAll('.genmodal .close'),function(el,i){
 	el.addEventListener('click', function(e){
 		document.querySelector('.genmodal.open').setAttribute('aria-hidden', 'true');
