@@ -3911,7 +3911,7 @@ strong,
     text-decoration: none; }
 
 .before, .icon:before, .btn-view:before, .btn-google:before, .btn-facebook:before, .top__left:before, .top__menu li.flexMenu-viewMore > a:after, .littlecart .cart-body .cart-products .count .minus:before, .littlecart .cart-body .cart-products .count .plus:before, .littlecart .cart-body .cart-products .count .plus:after, .search .vehicle-search-str .vehicle-search-item:after, .promo .wrapper:before, .visual__item:before, .modal-content-bg:before, .modal-content-bg:after, .modal-info:after, .modal-menu:before, .modal-menu .catalog:before, .breadcrumbs ul li.B_homecrumb a:before, .content ul li:before, .aboutus-page .intro__title:before, .aboutus-page .advantages__text:after, .aboutus-page .ouroffice__pic:after, #fitinpart-carousel a:after, #fitinpart-carousel a:before, .bl-line:after,
-.bc-line:after, .sortbox .param-sort:after, .products__list .item-products .additional__panel .item button:before, .content-location .days:not(:last-child):after {
+.bc-line:after, .sortbox .param-sort:after, .products__list .item-products .labels .label-tooltip:before, .products__list .item-products .additional__panel .item button:before, .content-location .days:not(:last-child):after {
   content: "";
   display: block;
   position: absolute; }
@@ -7983,7 +7983,8 @@ aside .filter .slider {
       left: 18px;
       position: absolute;
       top: 17px;
-      z-index: 10; }
+      z-index: 10;
+      height: 25px; }
       .products__list .item-products .labels .label {
         background: #c91537;
         border-radius: 2.5rem;
@@ -7992,11 +7993,44 @@ aside .filter .slider {
         font-size: 1.4rem;
         height: 2.5rem;
         margin-right: .5rem;
+        overflow: hidden;
+        position: relative;
         width: 5rem; }
         .products__list .item-products .labels .label:last-child {
           margin-right: 0; }
         .products__list .item-products .labels .label .icon {
           margin-right: 5px; }
+        .products__list .item-products .labels .label:hover {
+          overflow: visible; }
+          .products__list .item-products .labels .label:hover > .label-tooltip {
+            opacity: 1;
+            z-index: 10;
+            transform: translateY(0); }
+        .products__list .item-products .labels .label-tooltip {
+          background-color: #2a2f32;
+          box-shadow: 0 2px 5px rgba(0, 153, 255, 0.5);
+          left: 50%;
+          margin-left: -5.2rem;
+          padding: .6rem 1rem;
+          position: absolute;
+          text-align: center;
+          top: calc(100% + 10px);
+          width: 10.4rem;
+          border-radius: 10px;
+          opacity: 0;
+          z-index: -1;
+          transition: .4s;
+          transform: translateY(-5px); }
+          .products__list .item-products .labels .label-tooltip:before {
+            width: 0;
+            height: 0;
+            border-left: 8px solid transparent;
+            border-right: 8px solid transparent;
+            border-bottom: 8px solid #2a2f32;
+            left: 50%;
+            margin-left: -8px;
+            margin-top: -8px;
+            top: 0; }
     .products__list .item-products .additional__panel {
       background: #eaecf0;
       box-shadow: 0 5px 20px rgba(0, 113, 189, 0.15);
