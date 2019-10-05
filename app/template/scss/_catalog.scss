@@ -197,6 +197,7 @@ aside{
 				opacity: 1;
 				z-index: 10;
 			}
+
 		}
 		&__body{
 			padding: 0 2.2rem;
@@ -326,7 +327,7 @@ aside{
 				.tooltip__layout{
 					opacity: 1;
 					transform: translateY(0);
-					z-index: 10;
+					z-index: 20;
 				}
 			}
 			&__layout{
@@ -394,36 +395,78 @@ aside{
 			}
 		}
 
+
+		// additional panel
 		.additional__panel{
 			background: #eaecf0;
-			position: absolute;
 			box-shadow: 0 5px 20px rgba(0, 113, 189, 0.15);
+			left: 0;
+			position: absolute;
 			top: 100%;
 			width: 100%;
-			left: 0;
 			opacity: 0;
 			z-index: -1;
+			padding: .6rem 0;
+			transition: background-color .3s;
+			&:hover{
+				background-color: $color9;
+				color: #fff;
+				.item{
+					button,
+					.count{
+						color: #fff !important;					
+					}
+					button{
+						&:before{
+							background-color: #fff;
+							background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAHCAYAAAAxrNxjAAAAbUlEQVQoU2NkYGDgBGIJIL4PxNiAIlDwBSOQWArEUUCcDsSz0FSmAfkzgXgZSGEyEM+BKkBWDFMEkkoBKQSBTCCehqQYxASZBAJZQDwdphBdMcwFYEUgDrJCEB/ZOhQ3oysEKdaEGncdZiyIBgCjGREZelM6mwAAAABJRU5ErkJggg==");
+						}
+						.icon{
+							filter: grayscale(1) brightness(5);
+						}
+					}
+				}
+			}
 			.item{
-				min-height: 40px;
-				// margin: 0 2rem;
-				padding: 0 2rem;
-				border-bottom: 1px solid #c9d1d7;
-				width: calc(100% - 42px);
-				margin-left: 21px;
-				font-size: 1.5rem;
-				display: flex;
 				align-items: center;
+				border-bottom: 1px solid #c9d1d7;
+				display: flex;
+				font-size: 1.5rem;
+				margin-left: 21px;
+				min-height: 40px;
+				width: calc(100% - 42px);
 				&:last-child{
 					border-bottom: none;
 				}
 				button{
+					display: flex;
+					align-items: center;
 					color: $color3;			
 					font-weight: 700;
+					transition: .3s;
+					position: relative;
+					padding-left: 30px;
+					.icon{
+						margin-right: 5px;
+					}
+
+					&:before{
+						@extend .before;
+						background-color: #778d9b;
+						border-radius: 50%;
+						height: 20px;
+						left: 0;
+						top: 2px;
+						width: 20px;
+						background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAHCAYAAAAxrNxjAAAAeUlEQVQoU2P8//8/JwMDgwQjI+N9II0BgPKKQMEXjEDGUiAjCojTgYpnIasEyqUB+TOBeBlIYTKQMQeqAK4YSRFIKoURRAIFM4HUNJhiKA0yCQSygDZNByvEohgmDFYE4sAVQhXD3ATiorgZRSFUsSbYBEbG68geAwAFYC8Qs5IYcwAAAABJRU5ErkJggg==");
+						background-repeat: no-repeat;
+						background-position: center;
+					}
 				}
 				.count{
 					color: $color10;
+					margin-left: 5px;
 				}
-
 			}
 		}
 	}

@@ -357,6 +357,12 @@ em strong
 		&-3-white{
 			@include sprite($icon-badge-3-white)
 		}
+		&-4-blue{
+			@include sprite($icon-badge-4-blue)
+		}
+		&-5-blue{
+			@include sprite($icon-badge-5-blue)
+		}
 	}
 }
 
