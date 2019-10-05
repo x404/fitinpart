@@ -282,13 +282,13 @@ aside{
 				&:hover{
 					background-color: $color9;
 				}				
-			}
-			&-incart{
-				background-color: #778d9b;
-				box-shadow: none;
-				// cursor: default;
-				&:hover{
+				&.incart{
 					background-color: #778d9b;
+					box-shadow: none;
+					// cursor: default;
+					&:hover{
+						background-color: #778d9b;
+					}
 				}
 			}
 		}

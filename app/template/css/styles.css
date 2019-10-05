@@ -7915,11 +7915,11 @@ aside .filter .slider {
         margin-left: -4px; }
       .products__list .item-products .btn-cart:hover {
         background-color: #0099ff; }
-    .products__list .item-products .btn-incart {
-      background-color: #778d9b;
-      box-shadow: none; }
-      .products__list .item-products .btn-incart:hover {
-        background-color: #778d9b; }
+      .products__list .item-products .btn-cart.incart {
+        background-color: #778d9b;
+        box-shadow: none; }
+        .products__list .item-products .btn-cart.incart:hover {
+          background-color: #778d9b; }
     .products__list .item-products .btn-fav {
       margin-right: 1.6rem;
       padding: 0; }
