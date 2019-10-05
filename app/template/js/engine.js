@@ -450,8 +450,14 @@ $(document).ready(function(){
 		]
 	});
 
+	$('#loginModal').on('show.bs.modal', function (e) {
+		fadeoutWishlistInfo();
+	});
+
+
 	$('#registerModal').on('show.bs.modal', function (e) {
-		$('#loginModal').modal('hide')
+		$('#loginModal').modal('hide');
+		fadeoutWishlistInfo();
 	})
 
 	$('#forgotPasswordModal').on('show.bs.modal', function (e) {
@@ -537,7 +543,7 @@ $(document).on('click','.to-fav', function(e){
 	e.preventDefault();
 	var $this = $(this);
 	msg = `
-		<div class="wishlist-info added-to-compare modal show">
+		<div class="wishlist-info wishlist-info-success modal show">
 			<div class="modal-content modal-content-rbg">
 				<p class="modal-title">Success</p>
 				<p>You have added <strong class="upcase"> ${$this.data('title')} </strong> to your <a href="#"><strong>wish list!</strong></a></p>
@@ -557,6 +563,29 @@ $(document).on('click','.to-fav', function(e){
 		fadeoutWishlistInfo();
 		window.clearInterval(timerfav);
 	},4000);
+});
+
+
+$(document).on('click','.to-fav-noauth', function(e){
+	e.preventDefault();
+	var $this = $(this);
+	msg = `
+		<div class="wishlist-info wishlist-info-wrong modal show">
+			<div class="modal-content modal-content-rbg">
+				<p class="modal-title">Wrong</p>
+				<p>You must <a href="#" title="" data-toggle="modal" data-target="#loginModal"><strong>login</strong></a> or <a href="#" title="" data-toggle="modal" data-target="#registerModal"><strong>create an account</strong></a> to save <strong class="upcase">${$this.data('title')}</strong> to your <strong>wish list</strong>!</p>
+
+				<button type="button" class="close a-rotate90" aria-label="Close">
+					<svg width="22" height="22">
+						<line x1="0" y1="0" x2="22" y2="22"/>
+						<line x1="22" y1="0" x2="0" y2="22"/>
+					</svg>
+				</button>
+			</div>
+		</div>
+	`;
+	$('body').append(msg);
+
 });
 
 // from wishlist

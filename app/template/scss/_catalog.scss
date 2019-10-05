@@ -302,7 +302,9 @@ aside{
 				@include sprite($icon-infav);
 			}
 		}
-		.to-fav{
+		.to-fav,
+		.to-fav-noauth
+		{
 			@include sprite($icon-tofav);
 			&:hover{
 				// @include sprite($icon-infav);
@@ -603,7 +605,7 @@ aside{
 
 
 
-.added-to-compare
+.wishlist-info
 {
 	overflow: visible;
 	.close{
@@ -615,8 +617,8 @@ aside{
 	}
 }
 
-.added-to-compare{
-	height: 154px;
+.wishlist-info{
+	// height: 154px;
 	left: 50%;
 	margin-left: -160px;
 	margin-top: -75px;
@@ -629,7 +631,7 @@ aside{
 			background-image: url(../images/wish-bg.png);
 			background-repeat: no-repeat;
 			background-position: right 13px bottom;
-			background-color: #0672ba;
+			
 			box-shadow: 0 5px 20px rgba(0, 153, 255, 0.5);
 			padding: 2.4rem 3rem 2.5rem;
 			font-size: 1.7rem;
@@ -646,6 +648,21 @@ aside{
 		}
 	}
 
+	&-success{
+		.modal{
+			&-content{
+				background-color: #0672ba;
+			}
+		}		
+	}
+
+	&-wrong{
+		.modal{
+			&-content{
+				background-color: #ba0642;
+			}
+		}		
+	}
 }
 
 .show{

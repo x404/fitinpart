@@ -7944,7 +7944,8 @@ aside .filter .slider {
         background-position: -80px -62px;
         width: 26px;
         height: 23px; }
-    .products__list .item-products .to-fav {
+    .products__list .item-products .to-fav,
+    .products__list .item-products .to-fav-noauth {
       background-image: url(../images/sprite.png);
       background-position: -108px 0px;
       width: 26px;
@@ -8163,16 +8164,15 @@ aside .filter .slider {
   font-style: italic;
   font-size: 1.4rem; }
 
-.added-to-compare {
+.wishlist-info {
   overflow: visible; }
-  .added-to-compare .close {
+  .wishlist-info .close {
     right: 20px;
     top: 20px; }
-    .added-to-compare .close line {
+    .wishlist-info .close line {
       stroke: #fff; }
 
-.added-to-compare {
-  height: 154px;
+.wishlist-info {
   left: 50%;
   margin-left: -160px;
   margin-top: -75px;
@@ -8180,22 +8180,25 @@ aside .filter .slider {
   top: 50%;
   color: #fff;
   width: 321px; }
-  .added-to-compare .modal-content {
+  .wishlist-info .modal-content {
     background-image: url(../images/wish-bg.png);
     background-repeat: no-repeat;
     background-position: right 13px bottom;
-    background-color: #0672ba;
     box-shadow: 0 5px 20px rgba(0, 153, 255, 0.5);
     padding: 2.4rem 3rem 2.5rem;
     font-size: 1.7rem;
     line-height: 1.47; }
-    .added-to-compare .modal-content a {
+    .wishlist-info .modal-content a {
       color: #fff; }
-  .added-to-compare .modal-title {
+  .wishlist-info .modal-title {
     color: #fff;
     font-size: 2.5rem;
     font-weight: 700;
     margin-bottom: 1.6rem; }
+  .wishlist-info-success .modal-content {
+    background-color: #0672ba; }
+  .wishlist-info-wrong .modal-content {
+    background-color: #ba0642; }
 
 .show {
   display: block; }
