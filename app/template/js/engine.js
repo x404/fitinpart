@@ -615,6 +615,7 @@ $(document).on('click','.btn-fav-in', function(e){
 
 
 
+
 // popup on homepage
 class InfoPopup{
 	constructor(name){

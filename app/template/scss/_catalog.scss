@@ -797,3 +797,74 @@ aside{
 		padding-bottom: 0 !important;
 	}
 }
+
+
+#notifyModal{
+	.modal{
+		&-content{
+			background-image: url(../images/bg/notify-bg.png);
+			background-repeat: no-repeat;
+			background-position: right bottom;
+			font-size: 1.5rem;
+			min-height: 35rem;
+			padding-bottom: 4rem;
+		}
+
+		&-dialog{
+			width: 48rem;
+		}
+
+		&-header{
+			padding-bottom: 2.2rem;
+		}
+
+		&-body{
+			padding-bottom: 3.1rem;
+		}
+
+		&-title{
+			font-size: 2.5rem;
+		}
+
+		&-footer{
+			background-color: transparent;
+			justify-content: flex-start;
+			padding: 0 0 0 3.6rem;
+		}
+	}
+
+	.settings-link{
+		background-color: #dde2e6;
+		border-radius: 3rem;
+		color: $color3;
+		display: inline-block;
+		font-size: 1.4rem;
+		height: 3rem;
+		line-height: 3rem;
+		margin-top: .5rem;
+		padding: 0 2rem 0 28px;
+		position: relative;
+		transition: background-color .3s;
+		&:before{
+			@extend .before;
+			@include sprite($icon-settings);
+			left: 7px;
+			top: 8px;
+		}
+		&:hover{
+			color: $color2;
+			background-color: $color3;
+			text-decoration: none;
+			&:before{
+				filter: grayscale(1) invert(1) brightness(5)
+			}
+		}
+	}
+
+	.btn{
+		min-width: 105px;
+		padding-left: 3rem;
+		padding-right: 3rem;
+		margin-right: .7rem;
+	}
+}
