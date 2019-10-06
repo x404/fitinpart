@@ -588,11 +588,14 @@ $(document).ready(function(){
 
 
 	//aside
-	var aside_typelist = new PerfectScrollbar('#sizeForm3 .listwrapper', {
-		wheelPropagation: true,
-		minScrollbarLength: 100,
-		maxScrollbarLength: 100,
-	});
+	if (document.querySelectorAll('#sizeForm3 .listwrapper').length >= 1) {
+		aside_typelist = new PerfectScrollbar('#sizeForm3 .listwrapper', {
+			wheelPropagation: true,
+			minScrollbarLength: 100,
+			maxScrollbarLength: 100,
+		});
+	};
+
 
 	if (document.querySelectorAll('#aside_car .brand .listwrapper').length >= 1) {
 		aside_brandlist = new PerfectScrollbar('#aside_car .brand .listwrapper', {

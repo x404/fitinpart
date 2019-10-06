@@ -132,20 +132,24 @@ $(document).ready(function(){
 
 	// filter box (catalog)
 	// init scrollbar of countries
-	const filterbrandlist = new PerfectScrollbar('.filter-brand .scroll', {
-		wheelPropagation: true,
-		minScrollbarLength: 35,
-		maxScrollbarLength: 65,
-	});
-	filterbrandlist.update();
+	if (document.querySelectorAll('.filter-brand .scroll').length >= 1) {
+		filterbrandlist = new PerfectScrollbar('.filter-brand .scroll', {
+			wheelPropagation: true,
+			minScrollbarLength: 35,
+			maxScrollbarLength: 65,
+		});
+		filterbrandlist.update();
+	};
 
 
-	const filtertypelist = new PerfectScrollbar('.filter-type .scroll', {
-		wheelPropagation: true,
-		minScrollbarLength: 35,
-		maxScrollbarLength: 65,
-	});
-	filtertypelist.update();
+	if (document.querySelectorAll('.filter-type .scroll').length >= 1) {
+		filtertypelist = new PerfectScrollbar('.filter-type .scroll', {
+			wheelPropagation: true,
+			minScrollbarLength: 35,
+			maxScrollbarLength: 65,
+		});
+		filtertypelist.update();
+	};
 
 
 
@@ -412,32 +416,34 @@ $(document).ready(function(){
 		autoplaySpeed: 5000,
 		arrows : true,
 		appendArrows : $('.comparison-arrow'),
+		infinite: false, 
 		responsive: [
 			{
-				breakpoint: 1399,
+				breakpoint: 1700,
 				settings: {
-					slidesToShow: 5,
+					slidesToShow: 3,
 					slidesToScroll: 1
 				}
 			},
 			{
-				breakpoint: 1200,
+				breakpoint: 1400,
 				settings: {
-					slidesToShow: 4,
-					slidesToScroll: 1
+					slidesToShow: 2,
+					slidesToScroll: 1,
+					centerMode: true
 				}
 			},
 			{
 				breakpoint: 992,
 				settings: {
-					slidesToShow: 4,
+					slidesToShow: 2,
 					slidesToScroll: 1
 				}
 			},
 			{
 				breakpoint: 768,
 				settings: {
-					slidesToShow: 3,
+					slidesToShow: 2,
 					slidesToScroll: 1,
 				}
 			},
