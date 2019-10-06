@@ -45,6 +45,7 @@ $color44: #2899d7;
 $color45: #0f77bc;
 $color46: #dee0e4;
 $color47: #2a2f32;
+$color48: #deecdf;
 
 
 .pink-color:not(p)
@@ -74,3 +75,6 @@ p.pink-color{
 
 .azure-color{color: $color44}
 .azure-bg-color{background-color: $color44}
+
+.pale-blue-bg{background-color: $color41}
+.moderately-green-bg{background-color: $color48}

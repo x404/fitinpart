@@ -1040,6 +1040,79 @@ button{
 	}
 }
 
+.countmodule{
+	display: flex;
+	align-items: center;
+	&-price{
+		align-items: center;
+		display: flex;
+		margin-top: .4rem;
+	}
+	.form-control{
+		$h: 3rem;
+		background-color: $color15;
+		border-radius: $h;
+		border: none;
+		height: $h;
+		margin: 0 5px;
+		text-align: center;
+		width: 6.2rem;
+		transition: box-shadow .3s;
+		&:hover,
+		&:focus
+		{
+			box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
+
+		}
+	}
+
+	.minus,
+	.plus{
+		padding: 0;
+		height: 15px;
+		width: 15px;
+		&:hover{
+			&:before,
+			&:after{
+				border-color: $color9;
+			}
+		}
+	}
+	.minus{
+		position: relative;
+		&:before
+		{
+			@extend .before;
+		}
+		&:before{
+			border-top: 3px solid $color3;
+			left: 0;
+			top: 6px;
+			width: 100%;
+		}
+	}
+	.plus{
+		position: relative;
+		&:before,
+		&:after{
+			@extend .before;
+		}
+		&:before{
+			border-top: 3px solid $color3;
+			left: 0;
+			top: 6px;
+			width: 100%;
+		}
+
+		&:after{
+			border-left: 3px solid $color3;
+			height: 100%;
+			left: 6px;
+			top: 0;
+		}
+	}
+}
+
 .littlecart{
 	position: relative;
 	&:hover{
@@ -1113,76 +1186,7 @@ button{
 				}
 
 				.count{
-					display: flex;
-					align-items: center;
-					&-price{
-						align-items: center;
-						display: flex;
-						margin-top: .4rem;
-					}
-					.form-control{
-						$h: 3rem;
-						background-color: $color15;
-						border-radius: $h;
-						border: none;
-						height: $h;
-						margin: 0 5px;
-						text-align: center;
-						width: 6.2rem;
-						transition: box-shadow .3s;
-						&:hover,
-						&:focus
-						{
-							box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
-
-						}
-					}
-
-					.minus,
-					.plus{
-						padding: 0;
-						height: 15px;
-						width: 15px;
-						&:hover{
-							&:before,
-							&:after{
-								border-color: $color9;
-							}
-						}
-					}
-					.minus{
-						position: relative;
-						&:before
-						{
-							@extend .before;
-						}
-						&:before{
-							border-top: 3px solid $color3;
-							left: 0;
-							top: 6px;
-							width: 100%;
-						}
-					}
-					.plus{
-						position: relative;
-						&:before,
-						&:after{
-							@extend .before;
-						}
-						&:before{
-							border-top: 3px solid $color3;
-							left: 0;
-							top: 6px;
-							width: 100%;
-						}
-
-						&:after{
-							border-left: 3px solid $color3;
-							height: 100%;
-							left: 6px;
-							top: 0;
-						}
-					}
+					@extend .countmodule;
 				}
 
 				.price{

@@ -59,20 +59,21 @@ $(document).ready(function(){
 		}
 	})
 
-	$('.count-price .plus').on('click', function(e){
+	$('.countmodule').ForceNumericOnly();
+
+	$('.countmodule .plus').on('click', function(e){
 		e.preventDefault();
 		let $this = $(this),
-			countEl = $this.closest('.count').find('.count-control'),
-			cnt = parseInt(countEl.val())+1;
-
+			countEl = $this.closest('.countmodule').find('.count-control'),
+			cnt = parseInt(countEl.val()) + 1;
 		countEl.val(cnt);
 	});
 
-	$('.count-price .minus').on('click', function(e){
+	$('.countmodule .minus').on('click', function(e){
 		e.preventDefault();
 		let $this = $(this),
-			countEl = $this.closest('.count').find('.count-control'),
-			cnt = parseInt(countEl.val())-1;
+			countEl = $this.closest('.countmodule').find('.count-control'),
+			cnt = parseInt(countEl.val()) - 1;
 
 		countEl.val((cnt <= 0) ? cnt = 0 : cnt) ;
 	});
