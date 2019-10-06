@@ -1186,7 +1186,11 @@ button{
 				}
 
 				.count{
-					@extend .countmodule;
+					&-price{
+						align-items: center;
+						display: flex;
+						margin-top: .4rem;
+					}
 				}
 
 				.price{
