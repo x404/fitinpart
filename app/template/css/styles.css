@@ -3899,7 +3899,7 @@ h3 {
 
 .neosans, .top__tel, .header .catalog-btn, .littlecart .cart-body .title, .littlecart .cart-body .cart-products .item-title, .littlecart .cart-body .cart-products .price, .search .vehicle-search .ms-parent .ms-drop:before, .main h1, .main .title, .searchbox__title, #homeslider .title, .visual__item, .homepage .advantages, .reviews header h1, .review-card__title, .homepage .about .subtitle, .modal-title, #loginModal .subtitle,
 #registerModal .subtitle, .modal-info .title, .smartsearch__header, .smartsearch__header .ms-choice, .main h2, .main h3, .main h4, .main h5, .main h6, .content blockquote, .lastnews .item-news__title,
-.news__list .item-news__title, .aboutus-page .intro__title, .aboutus-page .about__title, .aboutus-page .quote, .aboutus-page .advantages, .aboutus-page .item-products__title, .aboutus-page .brands__text, .title-md, aside .widget-title, .sortbox .sort-label, .item-products__title, .products__list .item-products .btn-tooltip, .products__list .item-products .tooltip-title, .modal-v2 .box__title, .comparison__body .product-title, .mob-header .btn-menu, .mob-header .tel {
+.news__list .item-news__title, .aboutus-page .intro__title, .aboutus-page .about__title, .aboutus-page .quote, .aboutus-page .advantages, .aboutus-page .item-products__title, .aboutus-page .brands__text, .title-md, aside .widget-title, .sortbox .sort-label, .item-products__title, .products__list .item-products .btn-tooltip, .products__list .item-products .tooltip-title, .modal-v2 .box__title, #addtocardModal1 .product-title, #addtocardModal1 .count-price .price, .comparison__body .product-title, .mob-header .btn-menu, .mob-header .tel {
   font-family: 'Neo Sans Pro', Verdana, sans-serif; }
 
 strong,
@@ -3930,7 +3930,7 @@ strong,
 
 .flex-center, .btn-middle, .btn-google, .btn-facebook, .btn-circle, .compare__count, .shop-cart__count, .littlecart .cart-body .btn-checkout, .littlecart .cart-body .btn-check, .searchbox__panel .checkbox__text:after, .searchbox .subtab-link,
 .smartsearch .subtab-link, .catalog a,
-.header .catalog__menu a, .reviews .btn-show, .checkbox__text:after, .aboutus-page .brands__item, .item-products .btn-cart, .products__list .item-products__pic, .products__list .item-products .btn-tooltip, .products__list .item-products .labels .label, .comparison__column .btn-del {
+.header .catalog__menu a, .reviews .btn-show, .checkbox__text:after, .aboutus-page .brands__item, .item-products .btn-cart, .products__list .item-products__pic, .products__list .item-products .btn-tooltip, .products__list .item-products .labels .label, #addtocardModal1 .modal-footer .btn, .comparison__column .btn-del {
   display: flex;
   align-items: center;
   justify-content: center; }
@@ -8352,6 +8352,78 @@ aside .filter .slider {
   padding-left: 3rem;
   padding-right: 3rem;
   margin-right: .7rem; }
+
+#addtocardModal1 .modal-dialog {
+  max-width: 440px; }
+
+#addtocardModal1 .modal-header {
+  padding-top: 3rem; }
+
+#addtocardModal1 .modal-body {
+  padding-bottom: 1rem; }
+
+#addtocardModal1 .modal-content {
+  padding-bottom: 3.5rem; }
+
+#addtocardModal1 .modal-footer {
+  background-color: transparent;
+  padding: 0 0 0 3rem;
+  justify-content: flex-start; }
+  #addtocardModal1 .modal-footer .btn {
+    font-size: 1.6rem; }
+    #addtocardModal1 .modal-footer .btn .icon {
+      filter: invert(1);
+      margin-right: .8rem; }
+    #addtocardModal1 .modal-footer .btn-submit {
+      margin-right: 1.7rem; }
+    #addtocardModal1 .modal-footer .btn-close {
+      min-width: 110px; }
+
+#addtocardModal1 .product-pic {
+  max-width: 10rem;
+  margin-right: 3.2rem; }
+
+#addtocardModal1 .product-title {
+  color: #000;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1.2rem; }
+
+#addtocardModal1 .count-price {
+  align-items: center;
+  display: flex;
+  margin-top: 1.2rem; }
+  #addtocardModal1 .count-price .price {
+    color: #000;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-left: 2.5rem; }
+
+#addtocardModal1 .desc {
+  flex-grow: 1; }
+
+#addtocardModal1 .remarks {
+  color: #6c7173;
+  margin-top: 1.6rem; }
+  #addtocardModal1 .remarks p {
+    font-style: italic; }
+  #addtocardModal1 .remarks .form-control {
+    border-radius: 30px;
+    height: 30px;
+    margin-right: 1.1rem;
+    width: 162px; }
+  #addtocardModal1 .remarks .ok {
+    background-color: #778d9b;
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAANCAYAAABLjFUnAAAA3ElEQVQ4T2NkoAD8///fGKh9KRALAXEoI7lmQQ3aBTUIZEwrWYZhMegd0DATsGFASRsgJcrIyLiekEtxGOQG1HuWEWrQYaghC4CCibgMxGcQSA/IMD8gvRHJgH1AA53RDSRkENgwqDfnA+kEJAPuAA1UhfGJMQhuGNTAPUAa2UV7gQa6EGsQimFQA28DaRUkF24Gsq2Roh8Ua+DAxhauGEkD6JK9QIVOWBTjNQjDZUhhhB6GIIOcgS66gC/p4Ey0QBeWADVWA/EbIA4lZBBOlyG5kBloyF98rkGWAwDHv2DpQksQ8gAAAABJRU5ErkJggg==");
+    background-position: 49% center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px; }
+
+#addtocardModal1 .preorder-text {
+  font-size: 1.3rem;
+  margin-top: .3rem; }
 
 .comparison-info {
   color: #000;
