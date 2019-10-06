@@ -742,7 +742,7 @@ aside{
 		align-items: center;
 		justify-content: space-between;
 		padding-top: 1.5rem;
-		padding-bottom: 2.5rem;
+		padding-bottom: 2rem;
 
 		& > div{
 			padding-right: 3rem;
@@ -785,6 +785,10 @@ aside{
 
 		.price{
 			width: 105px;
+		}
+
+		&:last-child{
+			padding-bottom: 1.5rem;
 		}
 	}
 

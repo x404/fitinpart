@@ -8265,7 +8265,7 @@ aside .filter .slider {
   align-items: center;
   justify-content: space-between;
   padding-top: 1.5rem;
-  padding-bottom: 2.5rem; }
+  padding-bottom: 2rem; }
   .products__strlist .item-products > div {
     padding-right: 3rem; }
     .products__strlist .item-products > div:last-child {
@@ -8290,6 +8290,8 @@ aside .filter .slider {
     width: 15rem; }
   .products__strlist .item-products .price {
     width: 105px; }
+  .products__strlist .item-products:last-child {
+    padding-bottom: 1.5rem; }
 
 .products__strlist-first {
   padding-top: .2rem !important;
