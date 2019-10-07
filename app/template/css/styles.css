@@ -8638,12 +8638,72 @@ aside .filter .slider {
     border-top: 1px solid #e8e8e8; }
   .wiper-search .step__title {
     font-size: 2.5rem;
-    font-weight: 400; }
+    font-weight: 400;
+    margin-left: -8px; }
     .wiper-search .step__title .num {
       color: #289fed;
       font-size: 4rem;
       font-weight: 700;
       line-height: 0.75; }
+  .wiper-search .step__field {
+    margin-right: -8px; }
+
+.wiper-search .step-1 .radio-item label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 17rem;
+  transition: .3s; }
+
+.wiper-search .radio {
+  margin: 10px 0 0 7px;
+  opacity: 0;
+  position: absolute;
+  z-index: -1; }
+
+.wiper-search .radio + label {
+  border: 1px solid #f1f3f7;
+  cursor: pointer;
+  position: relative;
+  text-align: center;
+  width: 297px; }
+
+.wiper-search .radio + label:before {
+  content: '';
+  position: absolute;
+  top: 22px;
+  left: 21px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #e8e8e8; }
+
+.wiper-search .radio + label:after {
+  content: '';
+  position: absolute;
+  top: 28px;
+  left: 27px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #fff;
+  opacity: 0;
+  transition: .2s; }
+
+.wiper-search .radio-circle:checked + label {
+  border-left: 1px solid #fff;
+  border-right: 1px solid #fff;
+  border-top: 1px solid #fff;
+  border-bottom: 5px solid #0672ba;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  padding-top: 2px; }
+
+.wiper-search .radio-circle:checked + label:after {
+  opacity: 1; }
+
+.wiper-search .radio:checked + label:before,
+.wiper-search .radio:focus + label:before {
+  background: #0672ba; }
 
 .webp .wiper-search .intro:after {
   background-image: url(../images/wipers/wiper.webp); }
