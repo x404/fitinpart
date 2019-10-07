@@ -5207,7 +5207,7 @@ button {
         .searchbox__panel-vehicle .veh-only .checkbox {
           margin-left: 10px;
           position: relative;
-          top: -10px; }
+          top: 5px; }
       .searchbox__panel-vehicle .row,
       .searchbox__panel-vehicle .vehicle-control {
         margin-bottom: 1.5rem; }
