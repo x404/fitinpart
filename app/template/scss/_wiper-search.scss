@@ -8,6 +8,7 @@
 		color: #fff;
 		font-size: 2rem;
 		margin-top: 3rem;
+		margin-bottom: 2rem;
 		&__body{
 			background: url(../images/bg/drop.png) no-repeat right 60px top;
 			display: flex;
@@ -43,7 +44,6 @@
 			line-height: 1.2;
 			margin-bottom: 1.5rem;
 		}
-
 	}
 	.btn{
 		border-radius: 6rem;
@@ -62,7 +62,7 @@
 
 	.step{
 		padding-top: 5rem;
-		padding-bottom: 4rem;
+		padding-bottom: 5.2rem;
 		&:not(:first-child){
 			border-top: 1px solid #e8e8e8;
 		}
@@ -75,7 +75,7 @@
 				color: #289fed;
 				font-size: 4rem;
 				font-weight: 700;
-				line-height: 0.75;
+				line-height: 1.25;
 			}
 		}
 		&__field{
@@ -131,15 +131,15 @@
 				width: 8px;
 			}
 			&:before{
-				transition: background-color .3s;
+				background: #e8e8e8;
+				border-radius: 50%;
 				content: '';
+				height: 20px;
+				left: 21px;
 				position: absolute;
 				top: 22px;
-				left: 21px;
+				transition: background-color .3s;
 				width: 20px;
-				height: 20px;
-				border-radius: 50%;
-				background: #e8e8e8;				
 			}
 			&:hover{
 				&:before{
@@ -148,8 +148,6 @@
 			}
 		}
 		&:checked + label{
-			// border-left: 1px solid #fff;
-			// border-right: 1px solid #fff;
 			border-bottom: 5px solid #0672ba;
 			box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
 			padding-top: 2px;
@@ -166,23 +164,34 @@
 		}
 	}
 
+	.step-1{
+		 .radio-item{
+		 	width: 300px;
+		 }
+	}
+
 	.step-2{ 
-		background: url(../images/wiper-lineage.jpg) no-repeat right bottom;
-		padding-bottom: 380px;
-		margin-bottom: 50px;
+		.step__field{
+			background-size: contain;
+		}
+
+		.tapeline{
+			left: 50px;
+			margin-top: 35px;
+			position: relative;
+		}
 	}
 
 	.step-3{
+		padding-bottom: 1rem;
 		.radio-item{
 			min-height: 28rem;
-			width: 41rem;
+			width: 45rem;
 			label{
 				padding: 3.5rem 3rem 4rem 6rem;
 			}
 		}
-		label{
-			// border: 1px solid #f0f2f7;
-		}
+
 		.radio-circle + label{
 			&:before{
 				margin-top: -10px;
@@ -198,10 +207,10 @@
 
 	.sizes-table{
 		.size-item{
+			flex-grow: 1;
 			font-family: Arial;
 			height: 84px;
 			margin-right: 3px;
-			width: 50px;
 			&:not(:first-child){
 				background-color: #e8e8e8;
 			}
@@ -260,7 +269,7 @@
 	.details{
 		.box{
 			border: 1px solid #f1f3f7;
-			padding: 3.5rem;
+			padding: 4rem 3.5rem 3.5rem;
 		}
 		.label{
 			align-items: center;
@@ -268,7 +277,7 @@
 			border-radius: 5rem;
 			color: #fff;
 			display: flex;
-			font-size: 1.7rem;
+			font-size: 1.6rem;
 			font-weight: 700;
 			height: 5rem;
 			padding-left: 52px;
