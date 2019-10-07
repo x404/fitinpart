@@ -20,7 +20,7 @@
 			position: relative;
 			&:after{
 				@extend .before;
-				background: url(../images/wipers/wiper.png) no-repeat;
+				background: url(../images/wipers/wiper.png) no-repeat right bottom;
 				bottom: 0;
 				height: 288px;
 				right: 0;
@@ -70,7 +70,7 @@
 		&__title{
 			font-size: 2.5rem;
 			font-weight: 400;
-			margin-left: -8px;
+			// margin-left: -8px;
 			.num{
 				color: #289fed;
 				font-size: 4rem;
@@ -79,7 +79,7 @@
 			}
 		}
 		&__field{
-			margin-right: -8px;
+			// margin-right: -8px;
 		}
 	}
 
@@ -270,6 +270,10 @@
 		.box{
 			border: 1px solid #f1f3f7;
 			padding: 4rem 3.5rem 3.5rem;
+			margin-top: 1.5rem;
+		}
+		.cell{
+			flex-grow: 1;
 		}
 		.label{
 			align-items: center;
@@ -283,6 +287,7 @@
 			padding-left: 52px;
 			padding-right: 2rem;
 			position: relative;
+			max-width: 205px;
 			&:before{
 				@extend .before;
 				background-color: #fff;
@@ -298,6 +303,188 @@
 		}
 	}
 
+	@media (max-width: 1500px){
+		.step-1 .radio-item{
+			width: 280px;
+		}
+	}
+
+	@media (max-width: 1399px){
+		.step-1 .radio-item{
+			width: 230px;
+		}
+		.step{
+			&__title{
+				font-size: 2.1rem;
+				.num{
+					font-size: 3rem;
+				}
+			}
+		}
+		.details{
+			.label{
+				font-size: 1.4rem;
+				padding-right: 1rem;
+				padding-left: 45px;
+			}
+			.box{
+				padding: 1.4rem;
+				.cell{
+					margin: 0 .5rem;
+					&:first-child{
+						margin-left: 0;
+					}
+					&:last-child{
+						margin-right: 0;
+					}
+				}
+			}
+		}
+	}
+
+	@media (max-width: 1199px){
+		.details .box{
+			justify-content: center;
+			img{
+				max-width: 75%;
+			}
+			.cell{
+				text-align: center;
+			}
+		}
+
+		.details .box .cell:first-child{
+			margin-bottom: 2rem;
+			width: 100%;
+			.label{
+				width: 180px;
+			}
+		}
+	}
+
+	@media (max-width: 991px){
+		.intro{
+			font-size: 1.6rem;
+			&__body{
+				min-height: 0;
+				padding: 5rem 0;
+				padding-left: 2rem;
+				padding-right: 320px;
+				&:before{
+					display: none;
+				}
+				&:after{
+					background-size: contain;
+					height: 200px;
+					width: 300px;
+				}
+			}
+		}
+
+		.step{
+			&__title{
+				margin-bottom: 2rem;
+			}
+		}
+		.step-1 .radio-item{
+			width: auto;
+			flex-grow: 1;
+			margin: 0 1rem;
+		}
+
+
+		.step-2 .tapeline{
+			position: static;
+		}
+	}
+
+
+
+	@media (max-width: 767px){
+		.intro{
+			font-size: 1.5rem;
+			&__body{
+				padding-right: 80px;
+				&:after{
+					display: none;
+				}
+			}
+			.subtitle{
+				font-size: 2.6rem;
+			}
+		}
+
+		.step-1
+		{
+			.radio-item{
+				margin-bottom: 1rem;
+				margin-left: auto;
+				margin-right: auto;
+				width: 280px;
+			}
+		}
+		.step-3{
+			.radio-item{
+				margin: 0 15px;
+			}
+		}
+	}
+
+
+	@media (max-width: 750px){
+		.step__title{
+			font-size: 1.8rem;
+			.num{
+				font-size: 2.8rem;
+			}
+		}
+	}
+
+	@media (max-width: 650px){
+		.sizes-responsive{
+			overflow-y: hidden;
+			width: 100%;
+			border: 1px solid #dddddd;
+			overflow-y: auto;
+			.sizes-table{
+				width: 800px;
+			}
+
+		}
+
+		.step-2 .tapeline{
+			display: none;
+		}
+
+		.step-3 .radio-item{
+			min-height: 0
+		}
+
+		.step{
+			padding-top: 2.5rem;
+			padding-bottom: 2.5rem;
+		}
+
+		.btn{
+			margin-top: 3rem;
+		}
+	}
+
+
+	@media (max-width: 575px){
+		.step-3 .radio-item{
+			margin-left: auto;
+			margin-right: auto;
+			width: 90%;
+		}
+		.details .box .cell{
+			margin-bottom: 2rem;
+			.label{
+				margin-left: auto;
+				margin-right: auto;
+			}
+		}
+	}
 }
 
 .webp{
@@ -309,3 +496,4 @@
 		}
 	}
 }
+
