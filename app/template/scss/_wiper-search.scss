@@ -1,0 +1,93 @@
+.wiper-search{
+	&.main{
+		background-color: #fff;		
+	}
+	.intro{
+		@extend .neosans;
+		background: linear-gradient(to right, #1087d6, #3cb3ff);
+		color: #fff;
+		font-size: 2rem;
+		margin-top: 3rem;
+		&__body{
+			background: url(../images/bg/drop.png) no-repeat right 60px top;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			min-height: 240px;
+			padding-left: 16rem;
+			padding-right: 480px;
+			position: relative;
+			&:after{
+				@extend .before;
+				background: url(../images/wipers/wiper.png) no-repeat;
+				bottom: 0;
+				height: 288px;
+				right: 0;
+				width: 401px;
+			}
+			&:before{
+				@extend .before;
+				border-right: 120px solid transparent;
+				border-top: 120px solid #fff;
+				height: 0;
+				left: 0;
+				top: 0;
+				width: 0;
+			}
+		}
+
+
+		.subtitle{
+			font-size: 3rem;
+			font-weight: 500;
+			line-height: 1.2;
+			margin-bottom: 1.5rem;
+		}
+
+	}
+	.btn{
+		border-radius: 6rem;
+		box-shadow: 0 5px 15px rgba(0, 153, 255, 0.5);
+		font-size: 1.8rem;
+		font-weight: 700;
+		height: 6rem;
+		justify-content: center;
+		margin-top: 6rem;
+		width: 100%;
+	}
+
+	.steps{
+		@extend .neosans;
+	}
+
+	.step{
+		padding-top: 5rem;
+		padding-bottom: 4rem;
+		&:not(:first-child){
+			border-top: 1px solid #e8e8e8;
+		}
+
+		&__title{
+			font-size: 2.5rem;
+			font-weight: 400;
+			.num{
+				color: #289fed;
+				font-size: 4rem;
+				font-weight: 700;
+				line-height: 0.75;
+			}
+		}
+		&__field{
+		}
+	}
+}
+
+.webp{
+	.wiper-search{
+		.intro{
+			&:after{
+				background-image: url(../images/wipers/wiper.webp);
+			}
+		}
+	}
+}

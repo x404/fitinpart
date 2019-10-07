@@ -3899,7 +3899,7 @@ h3 {
 
 .neosans, .top__tel, .header .catalog-btn, .littlecart .cart-body .title, .littlecart .cart-body .cart-products .item-title, .littlecart .cart-body .cart-products .price, .search .vehicle-search .ms-parent .ms-drop:before, .main h1, .main .title, .searchbox__title, #homeslider .title, .visual__item, .homepage .advantages, .reviews header h1, .review-card__title, .homepage .about .subtitle, .modal-title, #loginModal .subtitle,
 #registerModal .subtitle, .modal-info .title, .smartsearch__header, .smartsearch__header .ms-choice, .main h2, .main h3, .main h4, .main h5, .main h6, .content blockquote, .lastnews .item-news__title,
-.news__list .item-news__title, .aboutus-page .intro__title, .aboutus-page .about__title, .aboutus-page .quote, .aboutus-page .advantages, .aboutus-page .item-products__title, .aboutus-page .brands__text, .title-md, aside .widget-title, .sortbox .sort-label, .item-products__title, .products__list .item-products .btn-tooltip, .products__list .item-products .tooltip-title, .modal-v2 .box__title, #addtocardModal1 .product-title, #addtocardModal1 .count-price .price, .comparison__body .product-title, .mob-header .btn-menu, .mob-header .tel {
+.news__list .item-news__title, .aboutus-page .intro__title, .aboutus-page .about__title, .aboutus-page .quote, .aboutus-page .advantages, .aboutus-page .item-products__title, .aboutus-page .brands__text, .title-md, aside .widget-title, .sortbox .sort-label, .item-products__title, .products__list .item-products .btn-tooltip, .products__list .item-products .tooltip-title, .modal-v2 .box__title, #addtocardModal1 .product-title, #addtocardModal1 .count-price .price, .comparison__body .product-title, .wiper-search .intro, .wiper-search .steps, .mob-header .btn-menu, .mob-header .tel {
   font-family: 'Neo Sans Pro', Verdana, sans-serif; }
 
 strong,
@@ -3917,7 +3917,7 @@ strong,
     text-decoration: none; }
 
 .before, .icon:before, .btn-view:before, .btn-google:before, .btn-facebook:before, .top__left:before, .top__menu li.flexMenu-viewMore > a:after, .countmodule .minus:before, .countmodule .plus:before, .countmodule .plus:after, .search .vehicle-search-str .vehicle-search-item:after, .promo .wrapper:before, .visual__item:before, .modal-content-bg:before, .modal-content-bg:after, .modal-content-rbg:after, .modal-info:after, .modal-menu:before, .modal-menu .catalog:before, .breadcrumbs ul li.B_homecrumb a:before, .content ul li:before, .aboutus-page .intro__title:before, .aboutus-page .advantages__text:after, .aboutus-page .ouroffice__pic:after, #fitinpart-carousel a:after, #fitinpart-carousel a:before, .bl-line:after,
-.bc-line:after, .sortbox .param-sort:after, .products__list .item-products .labels .label-tooltip:before, .products__list .item-products .additional__panel .item button:before, #notifyModal .settings-link:before, .content-location .days:not(:last-child):after {
+.bc-line:after, .sortbox .param-sort:after, .products__list .item-products .labels .label-tooltip:before, .products__list .item-products .additional__panel .item button:before, #notifyModal .settings-link:before, .wiper-search .intro__body:after, .wiper-search .intro__body:before, .content-location .days:not(:last-child):after {
   content: "";
   display: block;
   position: absolute; }
@@ -8584,6 +8584,69 @@ aside .filter .slider {
     width: 305px; }
   .comparison__column-head .comparison__cell {
     padding-left: 5px; } }
+
+.wiper-search.main {
+  background-color: #fff; }
+
+.wiper-search .intro {
+  background: linear-gradient(to right, #1087d6, #3cb3ff);
+  color: #fff;
+  font-size: 2rem;
+  margin-top: 3rem; }
+  .wiper-search .intro__body {
+    background: url(../images/bg/drop.png) no-repeat right 60px top;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 240px;
+    padding-left: 16rem;
+    padding-right: 480px;
+    position: relative; }
+    .wiper-search .intro__body:after {
+      background: url(../images/wipers/wiper.png) no-repeat;
+      bottom: 0;
+      height: 288px;
+      right: 0;
+      width: 401px; }
+    .wiper-search .intro__body:before {
+      border-right: 120px solid transparent;
+      border-top: 120px solid #fff;
+      height: 0;
+      left: 0;
+      top: 0;
+      width: 0; }
+  .wiper-search .intro .subtitle {
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 1.5rem; }
+
+.wiper-search .btn {
+  border-radius: 6rem;
+  box-shadow: 0 5px 15px rgba(0, 153, 255, 0.5);
+  font-size: 1.8rem;
+  font-weight: 700;
+  height: 6rem;
+  justify-content: center;
+  margin-top: 6rem;
+  width: 100%; }
+
+.wiper-search .step {
+  padding-top: 5rem;
+  padding-bottom: 4rem; }
+  .wiper-search .step:not(:first-child) {
+    border-top: 1px solid #e8e8e8; }
+  .wiper-search .step__title {
+    font-size: 2.5rem;
+    font-weight: 400; }
+    .wiper-search .step__title .num {
+      color: #289fed;
+      font-size: 4rem;
+      font-weight: 700;
+      line-height: 0.75; }
+
+.webp .wiper-search .intro:after {
+  background-image: url(../images/wipers/wiper.webp); }
 
 .content-location {
   background-color: #ffffff;
