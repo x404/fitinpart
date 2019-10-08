@@ -316,5 +316,43 @@
 			}
 		}
 	}
+	// ordersstat
+	.ordersstat{
+		background-color: #fff;
+		margin-top: 2rem;
+		padding-left: 2.5rem;
+		a{
+			align-items: center;
+			display: flex;
+			flex-direction: column;
+			height: 100%;
+			padding: 3rem 2.5rem 4.5rem 2.5rem;
+			text-decoration: none;
+			border-bottom: 5px solid rgba(255,255,255,0);
+			&:hover{
+				background-color: #eaecf0;
+				border-bottom-color: #0672ba;
+				.num,
+				.sign{
+					color: #000;
+				}
+			}
+		}
+		&__cell{
+			// display: flex;
+		}
+		.num{
+			color: $color3;
+			font-size: 3rem;
+			font-weight: 700;
+			line-height: 1.2;
+			margin-bottom: .5rem;
+		}
+		.sign{
+			color: #333;
+			font-size: 1.5rem;
+			text-align: center;
+		}
+	}
 }
 

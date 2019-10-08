@@ -9623,6 +9623,35 @@ aside .filter .slider {
       top: .5rem;
       z-index: 10; }
 
+.myaccount .ordersstat {
+  background-color: #fff;
+  margin-top: 2rem;
+  padding-left: 2.5rem; }
+  .myaccount .ordersstat a {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 3rem 2.5rem 4.5rem 2.5rem;
+    text-decoration: none;
+    border-bottom: 5px solid rgba(255, 255, 255, 0); }
+    .myaccount .ordersstat a:hover {
+      background-color: #eaecf0;
+      border-bottom-color: #0672ba; }
+      .myaccount .ordersstat a:hover .num,
+      .myaccount .ordersstat a:hover .sign {
+        color: #000; }
+  .myaccount .ordersstat .num {
+    color: #0672ba;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: .5rem; }
+  .myaccount .ordersstat .sign {
+    color: #333;
+    font-size: 1.5rem;
+    text-align: center; }
+
 /* =mobile-menu
 ---------------------------*/
 .show-sm,
