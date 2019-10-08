@@ -25,6 +25,14 @@
 
 	.methods{
 		margin-top: 2.5rem;
+		&__wrapper{
+			grid-template-columns: repeat(3, 1fr);
+			grid-column-gap: 40px;			
+		}
+
+		.d-grid{
+
+		}
 		.title{
 			font-size: 2.2rem;
 			font-weight: 700;
@@ -42,7 +50,7 @@
 				font-weight: 700;
 				height: 10rem;
 				padding-left: 20px;
-				width: 51rem;
+				width: 100%;
 				&:hover{
 					background-color: #0099ff;
 					color: #fff;
@@ -82,6 +90,25 @@
 			.icon{
 				margin-right: 13px;
 			}
+		}
+	}
+
+	@media (max-width: 991px){
+		.methods__cell{
+			width: calc(33.3% - 20px);
+		}
+	}
+	@media (max-width: 767px){
+		.methods__cell{
+			margin-left: auto;
+			margin-right: auto;
+			margin-bottom: 1rem;
+			width: calc(50% - 20px);
+		}
+	}
+	@media (max-width: 575px){
+		.methods__cell{
+			width: 280px;
 		}
 	}
 }

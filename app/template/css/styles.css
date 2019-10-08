@@ -9235,6 +9235,9 @@ aside .filter .slider {
 
 .thankyou-page .methods {
   margin-top: 2.5rem; }
+  .thankyou-page .methods__wrapper {
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 40px; }
   .thankyou-page .methods .title {
     font-size: 2.2rem;
     font-weight: 700;
@@ -9251,7 +9254,7 @@ aside .filter .slider {
       font-weight: 700;
       height: 10rem;
       padding-left: 20px;
-      width: 51rem; }
+      width: 100%; }
       .thankyou-page .methods__cell a:hover {
         background-color: #0099ff;
         color: #fff;
@@ -9280,6 +9283,21 @@ aside .filter .slider {
     padding: 0 3rem 0 1.3rem; }
     .thankyou-page .finish .btn .icon {
       margin-right: 13px; }
+
+@media (max-width: 991px) {
+  .thankyou-page .methods__cell {
+    width: calc(33.3% - 20px); } }
+
+@media (max-width: 767px) {
+  .thankyou-page .methods__cell {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+    width: calc(50% - 20px); } }
+
+@media (max-width: 575px) {
+  .thankyou-page .methods__cell {
+    width: 280px; } }
 
 /* =mobile-menu
 ---------------------------*/
