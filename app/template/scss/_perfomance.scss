@@ -1,0 +1,90 @@
+.perfomance-page{
+	table{
+		width: 90%;
+		td{
+			padding-top: 0.2rem;
+			padding-bottom: 0.2rem;
+		}
+	}
+	.intro{
+		background: linear-gradient(to right, #f1862f, #f59b3c);
+		color: #fff;
+		font-size: 1.7rem;
+		margin-bottom: 9rem;
+		margin-top: 4rem;
+		position: relative;
+		.subtitle{
+			@extend .neosans; 
+			font-size: 3rem;
+			font-weight: 500;
+		}
+
+		&__body{
+			background: url(../images/bg/perfomance-bg.jpg) no-repeat right top;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			min-height: 440px;
+			padding-left: 16rem;
+			padding-right: 480px;
+			position: relative;
+			&:after{
+				@extend .before;
+				background: url(../images/break-2.png) no-repeat right bottom ;
+				bottom: -35px;
+				height: 533px;
+				right: 30px;
+				width: 545px;
+				z-index: 999;
+			}
+			&:before{
+				@extend .before;
+				border-right: 120px solid transparent;
+				border-top: 120px solid #f5f6f8;
+				height: 0;
+				left: 0;
+				top: 0;
+				width: 0;
+			}
+		}
+
+	}
+
+	.subtitle{
+		padding-left: 108px;
+		margin-bottom: 4rem;
+		position: relative;
+		&:before{
+			@extend .before;
+			background: url(../images/tel-big.png) no-repeat center #c91537;
+			border-radius: 50%;
+			height: 88px;
+			left: 0;
+			margin-top: -44px;
+			top: 50%;
+			width: 88px;
+		}
+
+	}
+
+	.list-title{
+		@extend .neosans;
+		font-size: 2rem;
+		font-weight: 500;
+	}
+
+	li{
+		margin: .5rem 0;
+	}
+}
+
+.table-title{
+	@extend .neosans;
+	color: $color3;
+	font-size: 3rem;
+	font-weight: 500;
+	margin-bottom: 1rem;
+	& + table{
+		margin-top: 1.7rem;
+	}
+}

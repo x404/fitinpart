@@ -509,6 +509,7 @@
 			border-bottom: 5px solid $color3;
 			font-size: 1.6rem;
 			padding: 1.6rem 2rem;
+			color: #000;
 		}
 
 		td{
@@ -517,6 +518,14 @@
 			strong{
 				color: #000;
 			}
+		}
+
+		.current-price{
+			font-size: 1.7rem;
+			line-height: 1.2;
+		}
+		.old-price{
+			font-size: 1.4rem;
 		}
 	}
 

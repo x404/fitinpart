@@ -3899,7 +3899,7 @@ h3 {
 
 .neosans, .top__tel, .header .catalog-btn, .littlecart .cart-body .title, .littlecart .cart-body .cart-products .item-title, .littlecart .cart-body .cart-products .price, .search .vehicle-search .ms-parent .ms-drop:before, .main h1, .main .title, .searchbox__title, #homeslider .title, .visual__item, .homepage .advantages, .reviews header h1, .review-card__title, .homepage .about .subtitle, .modal-title, #loginModal .subtitle,
 #registerModal .subtitle, .modal-info .title, .smartsearch__header, .smartsearch__header .ms-choice, .main h2, .main h3, .main h4, .main h5, .main h6, .content blockquote, .lastnews .item-news__title,
-.news__list .item-news__title, .aboutus-page .intro__title, .aboutus-page .about__title, .aboutus-page .quote, .aboutus-page .advantages, .aboutus-page .item-products__title, .aboutus-page .brands__text, .title-md, aside .widget-title, .sortbox .sort-label, .item-products__title, .products__list .item-products .btn-tooltip, .products__list .item-products .tooltip-title, .modal-v2 .box__title, #addtocardModal1 .product-title, #addtocardModal1 .count-price .price, .comparison__body .product-title, .wiper-search .intro, .wiper-search .steps, .mob-header .btn-menu, .mob-header .tel {
+.news__list .item-news__title, .aboutus-page .intro__title, .aboutus-page .about__title, .aboutus-page .quote, .aboutus-page .advantages, .aboutus-page .item-products__title, .aboutus-page .brands__text, .title-md, aside .widget-title, .sortbox .sort-label, .item-products__title, .products__list .item-products .btn-tooltip, .products__list .item-products .tooltip-title, .modal-v2 .box__title, #addtocardModal1 .product-title, #addtocardModal1 .count-price .price, .comparison__body .product-title, .wiper-search .intro, .wiper-search .steps, .perfomance-page .intro .subtitle, .perfomance-page .list-title, .table-title, .mob-header .btn-menu, .mob-header .tel {
   font-family: 'Neo Sans Pro', Verdana, sans-serif; }
 
 strong,
@@ -3917,7 +3917,7 @@ strong,
     text-decoration: none; }
 
 .before, .icon:before, .btn-view:before, .btn-google:before, .btn-facebook:before, .top__left:before, .top__menu li.flexMenu-viewMore > a:after, .countmodule .minus:before, .countmodule .plus:before, .countmodule .plus:after, .search .vehicle-search-str .vehicle-search-item:after, .promo .wrapper:before, .visual__item:before, .modal-content-bg:before, .modal-content-bg:after, .modal-content-rbg:after, .modal-info:after, .modal-menu:before, .modal-menu .catalog:before, .breadcrumbs ul li.B_homecrumb a:before, .content ul li:before, .aboutus-page .intro__title:before, .aboutus-page .advantages__text:after, .aboutus-page .ouroffice__pic:after, #fitinpart-carousel a:after, #fitinpart-carousel a:before, .bl-line:after,
-.bc-line:after, .sortbox .param-sort:after, .products__list .item-products .labels .label-tooltip:before, .products__list .item-products .additional__panel .item button:before, #notifyModal .settings-link:before, .wiper-search .intro__body:after, .wiper-search .intro__body:before, .wiper-search .details .label:before, .content-location .days:not(:last-child):after {
+.bc-line:after, .sortbox .param-sort:after, .products__list .item-products .labels .label-tooltip:before, .products__list .item-products .additional__panel .item button:before, #notifyModal .settings-link:before, .wiper-search .intro__body:after, .wiper-search .intro__body:before, .wiper-search .details .label:before, .perfomance-page .intro__body:after, .perfomance-page .intro__body:before, .perfomance-page .subtitle:before, .content-location .days:not(:last-child):after {
   content: "";
   display: block;
   position: absolute; }
@@ -3946,7 +3946,7 @@ strong,
     padding-left: 30px; }
     .icon-tel:before {
       background-image: url(../images/sprite.png);
-      background-position: 0px -88px;
+      background-position: 0px -106px;
       width: 16px;
       height: 25px;
       top: -3px;
@@ -3956,7 +3956,7 @@ strong,
     padding-left: 35px; }
     .icon-user:before {
       background-image: url(../images/sprite.png);
-      background-position: 0px -62px;
+      background-position: -27px -79px;
       width: 26px;
       height: 26px;
       filter: brightness(5);
@@ -3968,25 +3968,25 @@ strong,
     padding-left: 64px; }
     .icon-9dotted:before {
       background-image: url(../images/sprite.png);
-      background-position: -16px -88px;
+      background-position: -58px -32px;
       width: 18px;
       height: 18px; }
   .icon-littlecart {
     background-image: url(../images/sprite.png);
-    background-position: -26px -62px;
+    background-position: -53px -79px;
     width: 27px;
     height: 24px;
     transition: filter .3s; }
   .icon-cartblue {
     background-image: url(../images/sprite.png);
-    background-position: -53px -62px;
+    background-position: -106px 0px;
     width: 27px;
     height: 24px;
     margin-right: 9px;
     transition: filter .3s; }
   .icon-arrowright:before {
     background-image: url(../images/sprite.png);
-    background-position: -74px -88px;
+    background-position: -36px -106px;
     width: 18px;
     height: 13px;
     left: 20px;
@@ -3994,18 +3994,18 @@ strong,
     top: 50%; }
   .icon-arrowright2 {
     background-image: url(../images/sprite.png);
-    background-position: -108px -70px;
+    background-position: -82px -32px;
     width: 22px;
     height: 15px;
     margin-right: 9px; }
   .icon-arrow-left-gray {
     background-image: url(../images/sprite.png);
-    background-position: -46px -113px;
+    background-position: -133px -72px;
     width: 12px;
     height: 10px; }
   .icon-slider-arrow:before {
     background-image: url(../images/sprite.png);
-    background-position: -134px -26px;
+    background-position: -147px -17px;
     width: 12px;
     height: 21px;
     left: 50%;
@@ -4014,17 +4014,17 @@ strong,
     top: 50%; }
   .icon-slider-arrow-gray {
     background-image: url(../images/sprite.png);
-    background-position: -134px -47px;
+    background-position: -147px -38px;
     width: 12px;
     height: 21px; }
   .icon-slider-arrow-blue {
     background-image: url(../images/sprite.png);
-    background-position: -46px -32px;
+    background-position: -133px -94px;
     width: 8px;
     height: 13px; }
   .icon-camera {
     background-image: url(../images/sprite.png);
-    background-position: 0px -113px;
+    background-position: -16px -106px;
     width: 20px;
     height: 16px;
     margin: 0 auto; }
@@ -4034,7 +4034,7 @@ strong,
     padding-top: .5rem; }
     .icon-balloon:before {
       background-image: url(../images/sprite.png);
-      background-position: 0px -30px;
+      background-position: -58px 0px;
       width: 24px;
       height: 32px;
       left: 0;
@@ -4042,36 +4042,36 @@ strong,
   .icon-balloon-gray {
     display: block;
     background-image: url(../images/sprite.png);
-    background-position: -30px 0px;
+    background-position: -82px 0px;
     width: 24px;
     height: 32px; }
   .icon-tel-gray {
     display: block;
     background-image: url(../images/sprite.png);
-    background-position: -30px -32px;
+    background-position: -81px -52px;
     width: 16px;
     height: 25px; }
   .icon-fax-gray {
     display: block;
     background-image: url(../images/sprite.png);
-    background-position: -54px 0px;
+    background-position: -27px -52px;
     width: 27px;
     height: 27px; }
   .icon-clock-gray {
     display: block;
     background-image: url(../images/sprite.png);
-    background-position: -54px -27px;
+    background-position: 0px -52px;
     width: 27px;
     height: 27px; }
   .icon-online-gray {
     display: block;
     background-image: url(../images/sprite.png);
-    background-position: 0px 0px;
+    background-position: -28px 0px;
     width: 30px;
     height: 30px; }
   .icon-search {
     background-image: url(../images/sprite.png);
-    background-position: -81px 0px;
+    background-position: -54px -52px;
     width: 27px;
     height: 27px;
     display: block;
@@ -4079,71 +4079,71 @@ strong,
     margin-right: auto; }
   .icon-search-middle {
     background-image: url(../images/sprite.png);
-    background-position: 0px -129px;
+    background-position: -147px 0px;
     width: 17px;
     height: 17px;
     display: block; }
   .icon-search-big {
     background-image: url(../images/sprite.png);
-    background-position: -81px -27px;
+    background-position: 0px -79px;
     width: 27px;
     height: 27px; }
   .icon-zoom {
     background-image: url(../images/sprite.png);
-    background-position: -134px -82px;
+    background-position: -147px -101px;
     width: 13px;
     height: 13px;
     display: block; }
   .icon-compare {
     background-image: url(../images/sprite.png);
-    background-position: -108px -23px;
+    background-position: -106px -70px;
     width: 22px;
     height: 25px;
     display: block; }
   .icon-arrow-down-gray {
     background-image: url(../images/sprite.png);
-    background-position: -17px -129px;
+    background-position: -133px -82px;
     width: 10px;
     height: 12px;
     display: block; }
   .icon-tofav {
     background-image: url(../images/sprite.png);
-    background-position: -108px 0px;
+    background-position: -106px -24px;
     width: 26px;
     height: 23px; }
   .icon-infav {
     background-image: url(../images/sprite.png);
-    background-position: -80px -62px;
+    background-position: -106px -47px;
     width: 26px;
     height: 23px; }
   .icon-letter {
     background-image: url(../images/sprite.png);
-    background-position: -34px -88px;
+    background-position: -80px -79px;
     width: 23px;
     height: 14px; }
   .icon-badge-1-white {
     background-image: url(../images/sprite.png);
-    background-position: -134px -95px;
+    background-position: -133px -26px;
     width: 12px;
     height: 12px; }
   .icon-badge-2-white {
     background-image: url(../images/sprite.png);
-    background-position: -104px -88px;
+    background-position: -133px -49px;
     width: 13px;
     height: 11px; }
   .icon-badge-3-white {
     background-image: url(../images/sprite.png);
-    background-position: -134px -68px;
+    background-position: -147px -87px;
     width: 14px;
     height: 14px; }
   .icon-badge-4-blue {
     background-image: url(../images/sprite.png);
-    background-position: -92px -88px;
+    background-position: -147px -114px;
     width: 12px;
     height: 12px; }
   .icon-badge-5-blue {
     background-image: url(../images/sprite.png);
-    background-position: -117px -88px;
+    background-position: -133px -38px;
     width: 13px;
     height: 11px; }
 
@@ -4222,7 +4222,7 @@ strong,
     position: relative; }
     .btn-view:before {
       background-image: url(../images/sprite.png);
-      background-position: -35px -113px;
+      background-position: -133px -60px;
       width: 11px;
       height: 12px;
       left: 10px;
@@ -4243,7 +4243,7 @@ strong,
     width: 14.5rem; }
     .btn-google:before {
       background-image: url(../images/sprite.png);
-      background-position: -108px -48px;
+      background-position: -28px -30px;
       width: 21px;
       height: 22px;
       left: 13px;
@@ -4259,7 +4259,7 @@ strong,
     width: 14.5rem; }
     .btn-facebook:before {
       background-image: url(../images/sprite.png);
-      background-position: -134px 0px;
+      background-position: -133px 0px;
       width: 14px;
       height: 26px;
       left: 18px;
@@ -4383,7 +4383,7 @@ button {
         padding-right: 17px; }
         .top__menu li.flexMenu-viewMore > a:after {
           background-image: url(../images/sprite.png);
-          background-position: -81px -54px;
+          background-position: -133px -107px;
           width: 10px;
           height: 7px;
           right: 0;
@@ -4528,7 +4528,7 @@ button {
 
 .dropdown-toggle:after {
   background-image: url(../images/sprite.png);
-  background-position: -81px -54px;
+  background-position: -133px -107px;
   width: 10px;
   height: 7px;
   border: none;
@@ -6793,7 +6793,7 @@ input.form-control.error {
           position: relative; }
           .breadcrumbs ul li.B_homecrumb a:before {
             background-image: url(../images/sprite.png);
-            background-position: -57px -88px;
+            background-position: -147px -59px;
             width: 17px;
             height: 14px;
             left: 0;
@@ -6953,12 +6953,18 @@ input.form-control.error {
       background-color: #ffffff;
       border-bottom: 5px solid #0672ba;
       font-size: 1.6rem;
-      padding: 1.6rem 2rem; }
+      padding: 1.6rem 2rem;
+      color: #000; }
     .content table td {
       font-size: 1.5rem;
       padding: 1.3rem 2rem; }
       .content table td strong {
         color: #000; }
+    .content table .current-price {
+      font-size: 1.7rem;
+      line-height: 1.2; }
+    .content table .old-price {
+      font-size: 1.4rem; }
   @media (max-width: 1700px) {
     .content blockquote {
       margin-left: 0;
@@ -7837,7 +7843,7 @@ aside .filter .slider {
     color: #0099ff; }
     .sortbox .param-sort:after {
       background-image: url(../images/sprite.png);
-      background-position: -81px -54px;
+      background-position: -133px -107px;
       width: 10px;
       height: 7px;
       right: 6px;
@@ -7959,13 +7965,13 @@ aside .filter .slider {
       padding: 0; }
       .products__list .item-products .btn-fav-in {
         background-image: url(../images/sprite.png);
-        background-position: -80px -62px;
+        background-position: -106px -47px;
         width: 26px;
         height: 23px; }
     .products__list .item-products .to-fav,
     .products__list .item-products .to-fav-noauth {
       background-image: url(../images/sprite.png);
-      background-position: -108px 0px;
+      background-position: -106px -24px;
       width: 26px;
       height: 23px; }
     .products__list .item-products .btn-tooltip {
@@ -8335,7 +8341,7 @@ aside .filter .slider {
   transition: background-color .3s; }
   #notifyModal .settings-link:before {
     background-image: url(../images/sprite.png);
-    background-position: -20px -113px;
+    background-position: -147px -73px;
     width: 15px;
     height: 14px;
     left: 7px;
@@ -8923,6 +8929,74 @@ aside .filter .slider {
 
 .webp .wiper-search .intro:after {
   background-image: url(../images/wipers/wiper.webp); }
+
+.perfomance-page table {
+  width: 90%; }
+  .perfomance-page table td {
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem; }
+
+.perfomance-page .intro {
+  background: linear-gradient(to right, #f1862f, #f59b3c);
+  color: #fff;
+  font-size: 1.7rem;
+  margin-bottom: 9rem;
+  margin-top: 4rem;
+  position: relative; }
+  .perfomance-page .intro .subtitle {
+    font-size: 3rem;
+    font-weight: 500; }
+  .perfomance-page .intro__body {
+    background: url(../images/bg/perfomance-bg.jpg) no-repeat right top;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 440px;
+    padding-left: 16rem;
+    padding-right: 480px;
+    position: relative; }
+    .perfomance-page .intro__body:after {
+      background: url(../images/break-2.png) no-repeat right bottom;
+      bottom: -35px;
+      height: 533px;
+      right: 30px;
+      width: 545px;
+      z-index: 999; }
+    .perfomance-page .intro__body:before {
+      border-right: 120px solid transparent;
+      border-top: 120px solid #f5f6f8;
+      height: 0;
+      left: 0;
+      top: 0;
+      width: 0; }
+
+.perfomance-page .subtitle {
+  padding-left: 108px;
+  margin-bottom: 4rem;
+  position: relative; }
+  .perfomance-page .subtitle:before {
+    background: url(../images/tel-big.png) no-repeat center #c91537;
+    border-radius: 50%;
+    height: 88px;
+    left: 0;
+    margin-top: -44px;
+    top: 50%;
+    width: 88px; }
+
+.perfomance-page .list-title {
+  font-size: 2rem;
+  font-weight: 500; }
+
+.perfomance-page li {
+  margin: .5rem 0; }
+
+.table-title {
+  color: #0672ba;
+  font-size: 3rem;
+  font-weight: 500;
+  margin-bottom: 1rem; }
+  .table-title + table {
+    margin-top: 1.7rem; }
 
 .content-location {
   background-color: #ffffff;

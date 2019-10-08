@@ -97,7 +97,7 @@ p.pink-color {
   transition: background-color .3s; }
   .ms-choice > div:before {
     background-image: url(../images/sprite.png);
-    background-position: -81px -54px;
+    background-position: -133px -107px;
     width: 10px;
     height: 7px;
     content: "";
