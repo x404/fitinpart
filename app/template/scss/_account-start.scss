@@ -10,6 +10,24 @@
 	&-reward{@include sprite($icon-a-reward);	}
 	&-transactions{@include sprite($icon-a-transactions);	}
 	&-notifications{@include sprite($icon-a-notifications);	}
+	&-logout{@include sprite($icon-logout);	}
+}
+
+.logout{
+	@extend .neosans;
+	color: $color10;
+	font-size: 1.6rem;
+	font-weight: 700;
+	.icon{
+		margin-right: 8px;
+	}
+	&:hover{
+		color: #ff0030;
+		text-decoration: none;
+		.icon{
+			filter: brightness(1.3);
+		}
+	}
 }
 
 .myaccount{
