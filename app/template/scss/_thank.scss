@@ -1,0 +1,87 @@
+.thankyou-page{
+	.order{
+		&-info{
+			background-color: #778d9b;
+			color: #fff;
+			font-size: 1.7rem;
+			font-weight: 700;
+			margin-top: 2.5rem;
+			padding: 3.2rem 3rem 3.2rem 3rem;
+		}
+		&-num{
+			background-color: #c91537;
+			font-size: 1.5rem;
+			font-weight: 400;
+			margin-right: 5.5rem;
+			padding: 1.2rem 2rem 1.5rem 1.8rem;
+			.num{
+				font-size: 3rem;
+				font-weight: 700;
+				line-height: 1;
+			}
+		}
+	}
+	
+
+	.methods{
+		margin-top: 2.5rem;
+		.title{
+			font-size: 2.2rem;
+			font-weight: 700;
+			margin-bottom: .8rem;
+		}
+		&__cell{
+			align-items: center;
+			display: flex;
+			a{
+				align-items: center;
+				background-color: #fff;
+				display: flex;
+				flex-shrink: 0;
+				font-size: 1.7rem;
+				font-weight: 700;
+				height: 10rem;
+				padding-left: 20px;
+				width: 51rem;
+				&:hover{
+					background-color: #0099ff;
+					color: #fff;
+					text-decoration: none;
+				}
+				.icon{
+					margin-right: 16px;
+				}
+
+				&:hover{
+					.icon{
+						filter: grayscale(1) brightness(4);
+					}
+				}
+			}
+		}
+	}
+
+	.finish{
+		background-color: #fff;
+		margin-top: 2.8rem;
+		padding: 2.8rem 2.8rem 2.5rem;
+		.form-control{
+			border-radius: 15px;
+			height: 8rem;
+			margin-top: 1rem;
+			width: 100%;
+		}
+		.btn{
+			border-radius: 4rem;
+			font-size: 1.5rem;
+			font-weight: 700;
+			height: 4rem;
+			line-height: 1.2;
+			margin: 1.4rem 1rem 0 0;
+			padding: 0 3rem 0 1.3rem;
+			.icon{
+				margin-right: 13px;
+			}
+		}
+	}
+}

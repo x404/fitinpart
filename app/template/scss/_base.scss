@@ -364,7 +364,19 @@ em strong
 			@include sprite($icon-badge-5-blue)
 		}
 	}
-}
+
+	&-good{
+		@include sprite($icon-good);
+	}
+	&-bad{
+		@include sprite($icon-bad);
+	}
+
+
+	&-clock-blue{@include sprite($icon-clock-blue)}
+	&-list-blue{@include sprite($icon-list-blue)}
+	&-back-blue{@include sprite($icon-back-blue)}
+} 
 
 .w100{
 	width: 100%;
@@ -466,7 +478,11 @@ em strong
 			}
 		}
 	}
-
+	
+	&-red{
+		background-color: $color10;
+		color: $color2;
+	}
 
 	&-view{
 		align-items: center;
@@ -545,8 +561,8 @@ em strong
 		transition: .3s;
 		width: 100%;
 		.icon{
-			transition: filter .3s;
 			margin-left: .8rem;
+			transition: filter .3s;
 		}
 
 		&:hover{
@@ -559,15 +575,15 @@ em strong
 	}
 
 	&-back{
+		align-items: center;
 		background-color: #eaecf0;
+		border-radius: 3.4rem;
 		color: $color42;
 		display: flex;
-		align-items: center;
-		justify-content: center;
 		font-size: 1.5rem;
-		border-radius: 3.4rem;
-		height: 3.4rem;
 		font-weight: 700;
+		height: 3.4rem;
+		justify-content: center;
 		width: 10rem;
 		.icon{
 			margin-right: 3px;
