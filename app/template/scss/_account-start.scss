@@ -129,6 +129,10 @@
 	.plate{
 		color: #fff;
 		padding: 3rem 4rem;
+		transition: .3s;
+		&:hover{
+			box-shadow: 0 5px 20px rgba(0, 113, 189, 0.5);
+		}
 		a,
 		strong{
 			color: currentColor;
@@ -151,6 +155,19 @@
 		    	margin-bottom: 1.2rem;
 		    }
 
+		}
+		&-cars,
+		&-items{
+			padding: 0;
+			a{
+				@extend .flex-center;
+				flex-direction: column;
+				height: 100%;
+				padding: 3rem 4rem;
+			}
+			&:hover{
+				background-color: #c91537;
+			}
 		}
 		&-cars{
 			background: url(../images/bg/car.png) no-repeat right bottom #119af7;

@@ -3931,7 +3931,7 @@ strong,
 
 .flex-center, .btn-middle, .btn-google, .btn-facebook, .btn-circle, .compare__count, .shop-cart__count, .littlecart .cart-body .btn-checkout, .littlecart .cart-body .btn-check, .searchbox__panel .checkbox__text:after, .searchbox .subtab-link,
 .smartsearch .subtab-link, .catalog a,
-.header .catalog__menu a, .reviews .btn-show, .checkbox__text:after, .aboutus-page .brands__item, .item-products .btn-cart, .products__list .item-products__pic, .products__list .item-products .btn-tooltip, .products__list .item-products .labels .label, #addtocardModal1 .modal-footer .btn, .comparison__column .btn-del, .myaccount aside ul li .icon-wrapper {
+.header .catalog__menu a, .reviews .btn-show, .checkbox__text:after, .aboutus-page .brands__item, .item-products .btn-cart, .products__list .item-products__pic, .products__list .item-products .btn-tooltip, .products__list .item-products .labels .label, #addtocardModal1 .modal-footer .btn, .comparison__column .btn-del, .myaccount aside ul li .icon-wrapper, .myaccount .plate-cars a, .myaccount .plate-items a {
   display: flex;
   align-items: center;
   justify-content: center; }
@@ -9489,7 +9489,10 @@ aside .filter .slider {
 
 .myaccount .plate {
   color: #fff;
-  padding: 3rem 4rem; }
+  padding: 3rem 4rem;
+  transition: .3s; }
+  .myaccount .plate:hover {
+    box-shadow: 0 5px 20px rgba(0, 113, 189, 0.5); }
   .myaccount .plate a,
   .myaccount .plate strong {
     color: currentColor; }
@@ -9506,6 +9509,14 @@ aside .filter .slider {
     padding-bottom: 3.5rem; }
     .myaccount .plate-user .panel__title {
       margin-bottom: 1.2rem; }
+  .myaccount .plate-cars, .myaccount .plate-items {
+    padding: 0; }
+    .myaccount .plate-cars a, .myaccount .plate-items a {
+      flex-direction: column;
+      height: 100%;
+      padding: 3rem 4rem; }
+    .myaccount .plate-cars:hover, .myaccount .plate-items:hover {
+      background-color: #c91537; }
   .myaccount .plate-cars {
     background: url(../images/bg/car.png) no-repeat right bottom #119af7;
     grid-column: 1 / 2;
