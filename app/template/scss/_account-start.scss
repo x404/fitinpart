@@ -1,0 +1,98 @@
+.icon{
+	&-myaccount{@include sprite($icon-a-myaccount);	}
+	&-garage{@include sprite($icon-a-garage);	}
+	&-vehicle{@include sprite($icon-a-vehicle);	}
+	&-stock{@include sprite($icon-a-stock);	}
+	&-addressbook{@include sprite($icon-a-addressbook);	}
+	&-wishlist{@include sprite($icon-a-wishlist);	}
+	&-orders{@include sprite($icon-a-orders);	}
+	&-itemorders{@include sprite($icon-a-itemorders);	}
+	&-reward{@include sprite($icon-a-reward);	}
+	&-transactions{@include sprite($icon-a-transactions);	}
+	&-notifications{@include sprite($icon-a-notifications);	}
+}
+
+.myaccount{
+ 	h1{
+		margin-bottom: 2rem;
+	}
+
+	// =aside
+	aside{
+		width: 23rem;
+		ul{
+			@extend .neosans;
+			font-weight: 700;
+			font-size: 1.6rem;
+			a{
+				color: #778d9b;
+				&:hover{
+					color: $color9;
+					text-decoration: none;
+					.icon{
+						filter: none;
+					}
+				}
+			}
+			li{
+				padding: 1.3rem 0;
+				a, span{
+					position: relative;
+				}
+				a{
+					padding-left: 46px;
+				}
+				span{
+					margin-left: 46px;
+					.icon-wrapper{
+						left: -46px;
+					}
+				}
+
+				&.current{
+					position: relative;
+					color: #000;
+					span,
+					a{
+						border-bottom: 5px solid $color3;
+						padding-bottom: 2px;
+					}
+					.icon{
+						filter: grayscale(1) invert(1) brightness(0) ;
+					}
+				}
+				.icon{
+					line-height: 1;
+					filter: grayscale(1);
+					margin-top: -10px;
+					&-wrapper{
+						@extend .flex-center;
+						position: absolute;
+						width: 45px;
+						left: 0;
+						height: 30px;
+						top: 0;
+					}
+				}
+			}
+		}
+
+		.contacts{
+			border-top: 2px solid #d6dde1;
+			font-size: 1.7rem;
+			margin-top: 6.5rem;
+			padding-top: 2rem;
+		}
+
+		.tel{
+			@extend .neosans;
+			color: #000;
+			font-weight: 700;
+			font-size: 2.5rem;
+			&:hover{
+				text-decoration: none;
+			}
+		}
+	}
+	// =/aside
+}
