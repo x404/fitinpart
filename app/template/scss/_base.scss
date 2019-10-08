@@ -625,6 +625,16 @@ em strong
 		@extend .flex-center;
 	}
 
+
+	&-showall{
+		border-radius: 4rem;
+		font-size: 1.5rem;
+		height: 4rem;
+		padding-left: 20px;
+		padding-right: 2rem;
+		position: relative;
+	}
+
 }
 
 

@@ -13,6 +13,7 @@
 	&-logout{@include sprite($icon-logout);	}
 	&-key{@include sprite($icon-key);	}
 	&-pencil{@include sprite($icon-pencil);	}
+	&-3line{@include sprite($icon-3line);}
 }
 
 .logout{
@@ -125,7 +126,7 @@
 		grid-column-gap: 20px;
 		grid-template-columns: auto auto 630px
 	}
-	.panel{
+	.plate{
 		color: #fff;
 		padding: 3rem 4rem;
 		a,
@@ -167,6 +168,25 @@
 		    grid-column: 3 / 4;
 		    grid-row: 1 / 3;
 		    font-size: 1.5rem;
+		}
+		&-address{
+			background: url(../images/bg/address.png) no-repeat left bottom #778d9b;
+			margin-top: 2rem;
+			font-size: 1.5rem;
+			.plate__title{
+				margin-bottom: .8rem;
+			}
+			.btn{
+				border: 2px solid #fff;
+				margin-left: 2rem;
+				.icon{
+					margin-right: 6px;
+				}
+				&:hover{
+					background-color: $color10;
+					border-color: $color10;
+				}
+			}
 		}
 
 		.customer{

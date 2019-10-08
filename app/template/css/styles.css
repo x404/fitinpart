@@ -3899,7 +3899,7 @@ h3 {
 
 .neosans, .top__tel, .header .catalog-btn, .littlecart .cart-body .title, .littlecart .cart-body .cart-products .item-title, .littlecart .cart-body .cart-products .price, .search .vehicle-search .ms-parent .ms-drop:before, .main h1, .main .title, .searchbox__title, #homeslider .title, .visual__item, .homepage .advantages, .reviews header h1, .review-card__title, .homepage .about .subtitle, .modal-title, #loginModal .subtitle,
 #registerModal .subtitle, .modal-info .title, .smartsearch__header, .smartsearch__header .ms-choice, .main h2, .main h3, .main h4, .main h5, .main h6, .content blockquote, .lastnews .item-news__title,
-.news__list .item-news__title, .aboutus-page .intro__title, .aboutus-page .about__title, .aboutus-page .quote, .aboutus-page .advantages, .aboutus-page .item-products__title, .aboutus-page .brands__text, .title-md, aside .widget-title, .sortbox .sort-label, .item-products__title, .products__list .item-products .btn-tooltip, .products__list .item-products .tooltip-title, .modal-v2 .box__title, #addtocardModal1 .product-title, #addtocardModal1 .count-price .price, .comparison__body .product-title, .wiper-search .intro, .wiper-search .steps, .perfomance-page .intro .subtitle, .perfomance-page .list-title, .table-title, .logout, .myaccount aside ul, .myaccount aside .tel, .myaccount .panel__title, .myaccount .panel .statistic__field, .mob-header .btn-menu, .mob-header .tel {
+.news__list .item-news__title, .aboutus-page .intro__title, .aboutus-page .about__title, .aboutus-page .quote, .aboutus-page .advantages, .aboutus-page .item-products__title, .aboutus-page .brands__text, .title-md, aside .widget-title, .sortbox .sort-label, .item-products__title, .products__list .item-products .btn-tooltip, .products__list .item-products .tooltip-title, .modal-v2 .box__title, #addtocardModal1 .product-title, #addtocardModal1 .count-price .price, .comparison__body .product-title, .wiper-search .intro, .wiper-search .steps, .perfomance-page .intro .subtitle, .perfomance-page .list-title, .table-title, .logout, .myaccount aside ul, .myaccount aside .tel, .myaccount .plate__title, .myaccount .plate .statistic__field, .mob-header .btn-menu, .mob-header .tel {
   font-family: 'Neo Sans Pro', Verdana, sans-serif; }
 
 strong,
@@ -3974,13 +3974,13 @@ strong,
       height: 18px; }
   .icon-littlecart {
     background-image: url(../images/sprite.png);
-    background-position: -22px -129px;
+    background-position: -49px -129px;
     width: 27px;
     height: 24px;
     transition: filter .3s; }
   .icon-cartblue {
     background-image: url(../images/sprite.png);
-    background-position: -49px -129px;
+    background-position: -22px -129px;
     width: 27px;
     height: 24px;
     margin-right: 9px;
@@ -4001,12 +4001,12 @@ strong,
     margin-right: 9px; }
   .icon-arrow-left-gray {
     background-image: url(../images/sprite.png);
-    background-position: -162px -149px;
+    background-position: -62px -55px;
     width: 12px;
     height: 10px; }
   .icon-slider-arrow:before {
     background-image: url(../images/sprite.png);
-    background-position: -162px -107px;
+    background-position: -162px -128px;
     width: 12px;
     height: 21px;
     left: 50%;
@@ -4015,7 +4015,7 @@ strong,
     top: 50%; }
   .icon-slider-arrow-gray {
     background-image: url(../images/sprite.png);
-    background-position: -162px -128px;
+    background-position: -162px -107px;
     width: 12px;
     height: 21px; }
   .icon-slider-arrow-blue {
@@ -4055,24 +4055,24 @@ strong,
   .icon-fax-gray {
     display: block;
     background-image: url(../images/sprite.png);
-    background-position: -55px -102px;
+    background-position: -135px -27px;
     width: 27px;
     height: 27px; }
   .icon-clock-gray {
     display: block;
     background-image: url(../images/sprite.png);
-    background-position: -135px 0px;
+    background-position: -135px -54px;
     width: 27px;
     height: 27px; }
   .icon-online-gray {
     display: block;
     background-image: url(../images/sprite.png);
-    background-position: -74px -30px;
+    background-position: -74px 0px;
     width: 30px;
     height: 30px; }
   .icon-search {
     background-image: url(../images/sprite.png);
-    background-position: -135px -54px;
+    background-position: -28px -102px;
     width: 27px;
     height: 27px;
     display: block;
@@ -4086,7 +4086,7 @@ strong,
     display: block; }
   .icon-search-big {
     background-image: url(../images/sprite.png);
-    background-position: -135px -27px;
+    background-position: -82px -102px;
     width: 27px;
     height: 27px; }
   .icon-zoom {
@@ -4103,18 +4103,18 @@ strong,
     display: block; }
   .icon-arrow-down-gray {
     background-image: url(../images/sprite.png);
-    background-position: -62px -55px;
+    background-position: -150px -129px;
     width: 10px;
     height: 12px;
     display: block; }
   .icon-tofav {
     background-image: url(../images/sprite.png);
-    background-position: 0px -159px;
+    background-position: -109px -102px;
     width: 26px;
     height: 23px; }
   .icon-infav {
     background-image: url(../images/sprite.png);
-    background-position: -109px -102px;
+    background-position: 0px -159px;
     width: 26px;
     height: 23px; }
   .icon-letter {
@@ -4129,7 +4129,7 @@ strong,
     height: 12px; }
   .icon-badge-2-white {
     background-image: url(../images/sprite.png);
-    background-position: -43px -31px;
+    background-position: -56px -31px;
     width: 13px;
     height: 11px; }
   .icon-badge-3-white {
@@ -4144,17 +4144,17 @@ strong,
     height: 12px; }
   .icon-badge-5-blue {
     background-image: url(../images/sprite.png);
-    background-position: -56px -31px;
+    background-position: -43px -31px;
     width: 13px;
     height: 11px; }
   .icon-good {
     background-image: url(../images/sprite.png);
-    background-position: -183px -161px;
+    background-position: -183px -141px;
     width: 20px;
     height: 20px; }
   .icon-bad {
     background-image: url(../images/sprite.png);
-    background-position: -183px -141px;
+    background-position: -183px -161px;
     width: 20px;
     height: 20px; }
   .icon-clock-blue {
@@ -4353,6 +4353,13 @@ strong,
     border-radius: 50%;
     width: 5rem;
     height: 5rem; }
+  .btn-showall {
+    border-radius: 4rem;
+    font-size: 1.5rem;
+    height: 4rem;
+    padding-left: 20px;
+    padding-right: 2rem;
+    position: relative; }
 
 .form-control {
   background-color: #f3f3f3;
@@ -7994,13 +8001,13 @@ aside .filter .slider {
       padding: 0; }
       .products__list .item-products .btn-fav-in {
         background-image: url(../images/sprite.png);
-        background-position: -109px -102px;
+        background-position: 0px -159px;
         width: 26px;
         height: 23px; }
     .products__list .item-products .to-fav,
     .products__list .item-products .to-fav-noauth {
       background-image: url(../images/sprite.png);
-      background-position: 0px -159px;
+      background-position: -109px -102px;
       width: 26px;
       height: 23px; }
     .products__list .item-products .btn-tooltip {
@@ -9328,13 +9335,13 @@ aside .filter .slider {
 
 .icon-vehicle {
   background-image: url(../images/sprite.png);
-  background-position: -28px -102px;
+  background-position: -55px -102px;
   width: 27px;
   height: 27px; }
 
 .icon-stock {
   background-image: url(../images/sprite.png);
-  background-position: -82px -102px;
+  background-position: -135px 0px;
   width: 27px;
   height: 27px; }
 
@@ -9352,7 +9359,7 @@ aside .filter .slider {
 
 .icon-orders {
   background-image: url(../images/sprite.png);
-  background-position: -27px -72px;
+  background-position: -58px -72px;
   width: 31px;
   height: 25px; }
 
@@ -9370,7 +9377,7 @@ aside .filter .slider {
 
 .icon-transactions {
   background-image: url(../images/sprite.png);
-  background-position: -74px 0px;
+  background-position: -74px -30px;
   width: 30px;
   height: 30px; }
 
@@ -9382,7 +9389,7 @@ aside .filter .slider {
 
 .icon-logout {
   background-image: url(../images/sprite.png);
-  background-position: -58px -72px;
+  background-position: -27px -72px;
   width: 31px;
   height: 25px; }
 
@@ -9397,6 +9404,12 @@ aside .filter .slider {
   background-position: -183px -47px;
   width: 22px;
   height: 22px; }
+
+.icon-3line {
+  background-image: url(../images/sprite.png);
+  background-position: -162px -149px;
+  width: 14px;
+  height: 10px; }
 
 .logout {
   color: #c91537;
@@ -9474,79 +9487,93 @@ aside .filter .slider {
   grid-column-gap: 20px;
   grid-template-columns: auto auto 630px; }
 
-.myaccount .panel {
+.myaccount .plate {
   color: #fff;
   padding: 3rem 4rem; }
-  .myaccount .panel a,
-  .myaccount .panel strong {
+  .myaccount .plate a,
+  .myaccount .plate strong {
     color: currentColor; }
-  .myaccount .panel a {
+  .myaccount .plate a {
     text-decoration: none; }
-  .myaccount .panel__title {
+  .myaccount .plate__title {
     font-size: 2.4rem;
     font-weight: 700;
     line-height: 1.4; }
-  .myaccount .panel-user {
+  .myaccount .plate-user {
     background: url(../images/bg/user.png) no-repeat right bottom #0672ba;
     grid-column: 1 / 3;
     grid-row: 1 / 2;
     padding-bottom: 3.5rem; }
-    .myaccount .panel-user .panel__title {
+    .myaccount .plate-user .panel__title {
       margin-bottom: 1.2rem; }
-  .myaccount .panel-cars {
+  .myaccount .plate-cars {
     background: url(../images/bg/car.png) no-repeat right bottom #119af7;
     grid-column: 1 / 2;
     grid-row: 2 / 3;
     min-height: 125px; }
-  .myaccount .panel-items {
+  .myaccount .plate-items {
     background: url(../images/bg/heart.png) no-repeat right bottom #50caf1;
     grid-column: 2 / 3;
     grid-row: 2 / 3; }
-  .myaccount .panel-balance {
+  .myaccount .plate-balance {
     background: url(../images/bg/card.png) no-repeat right bottom #28292d;
     grid-column: 3 / 4;
     grid-row: 1 / 3;
     font-size: 1.5rem; }
-  .myaccount .panel .customer {
+  .myaccount .plate-address {
+    background: url(../images/bg/address.png) no-repeat left bottom #778d9b;
+    margin-top: 2rem;
+    font-size: 1.5rem; }
+    .myaccount .plate-address .plate__title {
+      margin-bottom: .8rem; }
+    .myaccount .plate-address .btn {
+      border: 2px solid #fff;
+      margin-left: 2rem; }
+      .myaccount .plate-address .btn .icon {
+        margin-right: 6px; }
+      .myaccount .plate-address .btn:hover {
+        background-color: #c91537;
+        border-color: #c91537; }
+  .myaccount .plate .customer {
     background-color: #c91537;
     font-size: 1.5rem;
     margin-right: 2.2rem;
     padding: 1rem 1.8rem; }
-    .myaccount .panel .customer .num {
+    .myaccount .plate .customer .num {
       font-weight: 700;
       font-size: 3rem;
       line-height: 1.2; }
-  .myaccount .panel .status {
+  .myaccount .plate .status {
     flex-grow: 1; }
-  .myaccount .panel .right a {
+  .myaccount .plate .right a {
     display: flex;
     margin-top: .8rem; }
-    .myaccount .panel .right a:hover {
+    .myaccount .plate .right a:hover {
       color: #36ff00; }
-      .myaccount .panel .right a:hover .icon {
+      .myaccount .plate .right a:hover .icon {
         filter: none; }
-  .myaccount .panel .right .icon {
+  .myaccount .plate .right .icon {
     margin-right: 10px;
     filter: grayscale(1) brightness(5); }
-  .myaccount .panel h3 {
+  .myaccount .plate h3 {
     color: currentColor;
     font-size: 1.8rem;
     font-weight: 700;
     margin-top: 1.8rem;
     margin-bottom: .5rem; }
-  .myaccount .panel .statistic {
+  .myaccount .plate .statistic {
     margin-top: 1rem; }
-    .myaccount .panel .statistic__title {
+    .myaccount .plate .statistic__title {
       font-size: 1.5rem; }
-    .myaccount .panel .statistic__field {
+    .myaccount .plate .statistic__field {
       text-transform: uppercase;
       font-weight: 700;
       font-size: 2rem; }
-    .myaccount .panel .statistic .cell:first-child {
+    .myaccount .plate .statistic .cell:first-child {
       padding-right: 2rem;
       margin-right: 2rem;
       border-right: 1px solid #fff; }
-  .myaccount .panel .tooltip-label {
+  .myaccount .plate .tooltip-label {
     background-color: #0672ba;
     border-radius: 50%;
     color: #fff;
@@ -9554,29 +9581,29 @@ aside .filter .slider {
     height: 2rem;
     margin-left: 8px;
     width: 2rem; }
-    .myaccount .panel .tooltip-label:hover {
+    .myaccount .plate .tooltip-label:hover {
       background-color: #0099ff; }
-      .myaccount .panel .tooltip-label:hover .tooltip-body {
+      .myaccount .plate .tooltip-label:hover .tooltip-body {
         transform: translateY(-5px); }
-  .myaccount .panel .tooltip-body {
+  .myaccount .plate .tooltip-body {
     font-size: 1.4rem;
     transform: translateY(-8px); }
-  .myaccount .panel .balance {
+  .myaccount .plate .balance {
     margin-bottom: .5rem; }
-    .myaccount .panel .balance__rail {
+    .myaccount .plate .balance__rail {
       background: #fff;
       border-radius: 3rem;
       height: 3rem;
       position: relative;
       width: 100%; }
-    .myaccount .panel .balance__active {
+    .myaccount .plate .balance__active {
       background: #09bb5d;
       border-radius: 3rem;
       height: 4rem;
       left: 0;
       position: absolute;
       top: -.5rem; }
-    .myaccount .panel .balance__text {
+    .myaccount .plate .balance__text {
       color: #fff;
       font-size: 1.5rem;
       font-weight: 700;
