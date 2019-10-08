@@ -76,6 +76,129 @@
 	li{
 		margin: .5rem 0;
 	}
+
+
+	@media (max-width: 1399px){
+		table{
+			width: 98%;
+			td,
+			th{
+				padding-left: .2rem;
+				padding-right: .2rem;
+			}
+		}
+	}
+
+
+	@media (max-width: 1399px){
+		.intro{
+			.subtitle{
+				font-size: 26px;
+			}
+			&__body{
+				min-height: 0;
+				padding-right: 350px;
+				padding-top: 30px;
+				padding-bottom: 30px;
+				&:after{
+					background-size: contain;
+					width: 460px;
+				}
+			}
+		}
+
+		table{
+			td,
+			th{
+				text-align: center;				
+			}
+		}
+	}
+
+	@media (max-width: 1199px){
+		.intro{
+			&__body{
+				padding-left: 25px;
+				&:before{
+					display: none;
+				}
+				&:after{
+					height: 400px;
+					width: 430px;
+					right: 10px;
+					top: -10px;
+				}
+			}
+		}
+	}
+
+	@media (max-width: 991px){
+		table{
+			float: none !important;
+			margin-bottom: 2rem;
+			width: 100%;
+		}
+		.table-title{
+			font-size: 2.6rem;
+			text-align: left !important;
+		}
+
+		.intro{
+			.subtitle{
+				font-size: 20px;
+				padding-left: 0;
+				text-align: center;
+				&:before{
+					display: none;
+				}
+			}
+			&__body{
+				padding-left: 25px;
+				padding-right: 70px;
+				&:before,
+				&:after{
+					display: none;
+				}
+			}
+		}
+
+	}
+	@media (max-width: 576px){
+
+		.intro{
+			&__body{
+				padding-right: 25px;
+			}
+			.subtitle{
+				// font-size: 16px;
+			}
+		}
+
+		.table-title{
+			font-size: 2.2rem;
+		}
+		table{
+			.current-price{
+				font-size: 1.6rem;
+			}
+			.old-price{
+				font-size: 1.3rem;
+			}
+		}
+	}
+
+	@media (max-width: 480px){
+		table{
+			th,
+			td{
+				padding-left: 8px;
+				padding-right: 8px;
+			}
+		}
+		.table-title{
+			font-size: 2rem;
+		}
+	}
 }
 
 .table-title{

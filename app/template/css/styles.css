@@ -8990,6 +8990,78 @@ aside .filter .slider {
 .perfomance-page li {
   margin: .5rem 0; }
 
+@media (max-width: 1399px) {
+  .perfomance-page table {
+    width: 98%; }
+    .perfomance-page table td,
+    .perfomance-page table th {
+      padding-left: .2rem;
+      padding-right: .2rem; } }
+
+@media (max-width: 1399px) {
+  .perfomance-page .intro .subtitle {
+    font-size: 26px; }
+  .perfomance-page .intro__body {
+    min-height: 0;
+    padding-right: 350px;
+    padding-top: 30px;
+    padding-bottom: 30px; }
+    .perfomance-page .intro__body:after {
+      background-size: contain;
+      width: 460px; }
+  .perfomance-page table td,
+  .perfomance-page table th {
+    text-align: center; } }
+
+@media (max-width: 1199px) {
+  .perfomance-page .intro__body {
+    padding-left: 25px; }
+    .perfomance-page .intro__body:before {
+      display: none; }
+    .perfomance-page .intro__body:after {
+      height: 400px;
+      width: 430px;
+      right: 10px;
+      top: -10px; } }
+
+@media (max-width: 991px) {
+  .perfomance-page table {
+    float: none !important;
+    margin-bottom: 2rem;
+    width: 100%; }
+  .perfomance-page .table-title {
+    font-size: 2.6rem;
+    text-align: left !important; }
+  .perfomance-page .intro .subtitle {
+    font-size: 20px;
+    padding-left: 0;
+    text-align: center; }
+    .perfomance-page .intro .subtitle:before {
+      display: none; }
+  .perfomance-page .intro__body {
+    padding-left: 25px;
+    padding-right: 70px; }
+    .perfomance-page .intro__body:before, .perfomance-page .intro__body:after {
+      display: none; } }
+
+@media (max-width: 576px) {
+  .perfomance-page .intro__body {
+    padding-right: 25px; }
+  .perfomance-page .table-title {
+    font-size: 2.2rem; }
+  .perfomance-page table .current-price {
+    font-size: 1.6rem; }
+  .perfomance-page table .old-price {
+    font-size: 1.3rem; } }
+
+@media (max-width: 480px) {
+  .perfomance-page table th,
+  .perfomance-page table td {
+    padding-left: 8px;
+    padding-right: 8px; }
+  .perfomance-page .table-title {
+    font-size: 2rem; } }
+
 .table-title {
   color: #0672ba;
   font-size: 3rem;
