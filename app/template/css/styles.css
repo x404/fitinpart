@@ -3899,7 +3899,7 @@ h3 {
 
 .neosans, .top__tel, .header .catalog-btn, .littlecart .cart-body .title, .littlecart .cart-body .cart-products .item-title, .littlecart .cart-body .cart-products .price, .search .vehicle-search .ms-parent .ms-drop:before, .main h1, .main .title, .searchbox__title, #homeslider .title, .visual__item, .homepage .advantages, .reviews header h1, .review-card__title, .homepage .about .subtitle, .modal-title, #loginModal .subtitle,
 #registerModal .subtitle, .modal-info .title, .smartsearch__header, .smartsearch__header .ms-choice, .main h2, .main h3, .main h4, .main h5, .main h6, .content blockquote, .lastnews .item-news__title,
-.news__list .item-news__title, .aboutus-page .intro__title, .aboutus-page .about__title, .aboutus-page .quote, .aboutus-page .advantages, .aboutus-page .item-products__title, .aboutus-page .brands__text, .title-md, aside .widget-title, .sortbox .sort-label, .item-products__title, .products__list .item-products .btn-tooltip, .products__list .item-products .tooltip-title, .modal-v2 .box__title, #addtocardModal1 .product-title, #addtocardModal1 .count-price .price, .comparison__body .product-title, .wiper-search .intro, .wiper-search .steps, .perfomance-page .intro .subtitle, .perfomance-page .list-title, .table-title, .logout, .myaccount aside ul, .myaccount aside .tel, .myaccount .plate__title, .myaccount .plate .statistic__field, .myaccount .ordersstat .num, #quickorderModal .modal-body h2, #quickorderModal .modal-body ol li:before, .mob-header .btn-menu, .mob-header .tel {
+.news__list .item-news__title, .aboutus-page .intro__title, .aboutus-page .about__title, .aboutus-page .quote, .aboutus-page .advantages, .aboutus-page .item-products__title, .aboutus-page .brands__text, .title-md, aside .widget-title, .sortbox .sort-label, .item-products__title, .products__list .item-products .btn-tooltip, .products__list .item-products .tooltip-title, .modal-v2 .box__title, #addtocardModal1 .product-title, #addtocardModal1 .count-price .price, .comparison__body .product-title, .wiper-search .intro, .wiper-search .steps, .perfomance-page .intro .subtitle, .perfomance-page .list-title, .table-title, .logout, .myaccount aside ul, .myaccount aside .tel, .myaccount .plate__title, .myaccount .plate .statistic__field, .myaccount .ordersstat .num, .latest-orders header, #quickorderModal .modal-body h2, #quickorderModal .modal-body ol li:before, .mob-header .btn-menu, .mob-header .tel {
   font-family: 'Neo Sans Pro', Verdana, sans-serif; }
 
 strong,
@@ -3947,7 +3947,7 @@ strong,
     padding-left: 30px; }
     .icon-tel:before {
       background-image: url(../images/sprite.png);
-      background-position: -183px -111px;
+      background-position: -183px -91px;
       width: 16px;
       height: 25px;
       top: -3px;
@@ -4001,12 +4001,12 @@ strong,
     margin-right: 9px; }
   .icon-arrow-left-gray {
     background-image: url(../images/sprite.png);
-    background-position: -68px -159px;
+    background-position: -82px -159px;
     width: 12px;
     height: 10px; }
   .icon-slider-arrow:before {
     background-image: url(../images/sprite.png);
-    background-position: -89px -72px;
+    background-position: -62px -43px;
     width: 12px;
     height: 21px;
     left: 50%;
@@ -4015,7 +4015,7 @@ strong,
     top: 50%; }
   .icon-slider-arrow-gray {
     background-image: url(../images/sprite.png);
-    background-position: -62px -43px;
+    background-position: -89px -72px;
     width: 12px;
     height: 21px; }
   .icon-slider-arrow-blue {
@@ -4055,13 +4055,13 @@ strong,
   .icon-fax-gray {
     display: block;
     background-image: url(../images/sprite.png);
-    background-position: -82px -102px;
+    background-position: -28px -102px;
     width: 27px;
     height: 27px; }
   .icon-clock-gray {
     display: block;
     background-image: url(../images/sprite.png);
-    background-position: -135px 0px;
+    background-position: -55px -102px;
     width: 27px;
     height: 27px; }
   .icon-online-gray {
@@ -4086,7 +4086,7 @@ strong,
     display: block; }
   .icon-search-big {
     background-image: url(../images/sprite.png);
-    background-position: -28px -102px;
+    background-position: -135px -27px;
     width: 27px;
     height: 27px; }
   .icon-zoom {
@@ -4154,7 +4154,7 @@ strong,
     height: 20px; }
   .icon-bad {
     background-image: url(../images/sprite.png);
-    background-position: -183px -91px;
+    background-position: -183px -116px;
     width: 20px;
     height: 20px; }
   .icon-clock-blue {
@@ -9337,13 +9337,13 @@ aside .filter .slider {
 
 .icon-vehicle {
   background-image: url(../images/sprite.png);
-  background-position: -135px -27px;
+  background-position: -135px 0px;
   width: 27px;
   height: 27px; }
 
 .icon-stock {
   background-image: url(../images/sprite.png);
-  background-position: -55px -102px;
+  background-position: -82px -102px;
   width: 27px;
   height: 27px; }
 
@@ -9361,7 +9361,7 @@ aside .filter .slider {
 
 .icon-orders {
   background-image: url(../images/sprite.png);
-  background-position: -27px -72px;
+  background-position: -58px -72px;
   width: 31px;
   height: 25px; }
 
@@ -9391,23 +9391,29 @@ aside .filter .slider {
 
 .icon-logout {
   background-image: url(../images/sprite.png);
-  background-position: -58px -72px;
+  background-position: -27px -72px;
   width: 31px;
   height: 25px; }
 
 .icon-key {
   background-image: url(../images/sprite.png);
-  background-position: -183px -47px;
+  background-position: -183px -25px;
   width: 22px;
   height: 22px; }
 
 .icon-pencil {
   background-image: url(../images/sprite.png);
-  background-position: -183px -25px;
+  background-position: -183px -47px;
   width: 22px;
   height: 22px; }
 
 .icon-3line {
+  background-image: url(../images/sprite.png);
+  background-position: -68px -159px;
+  width: 14px;
+  height: 10px; }
+
+.icon-3lineblue {
   background-image: url(../images/sprite.png);
   background-position: -54px -159px;
   width: 14px;
@@ -9500,6 +9506,7 @@ aside .filter .slider {
       text-decoration: none; }
 
 .myaccount .content {
+  margin-left: 5rem;
   flex-grow: 1; }
 
 .myaccount .grid-information {
@@ -9677,6 +9684,11 @@ aside .filter .slider {
   .myaccount .ordersstat__cell-gray .num,
   .myaccount .ordersstat__cell-gray .sign {
     color: #778d9b; }
+  .myaccount .ordersstat__cell.active a {
+    background-color: #0099ff; }
+    .myaccount .ordersstat__cell.active a .num,
+    .myaccount .ordersstat__cell.active a .sign {
+      color: #fff; }
   .myaccount .ordersstat .btn {
     border-radius: 5rem;
     font-size: 1.7rem;
@@ -9690,6 +9702,117 @@ aside .filter .slider {
       margin-right: 10px; }
     .myaccount .ordersstat .btn:hover {
       box-shadow: 0 5px 15px rgba(0, 153, 255, 0.5); }
+
+.latest-orders {
+  margin-top: 4rem;
+  background-color: #eaecf0;
+  padding: 4rem 4rem 0; }
+  .latest-orders header {
+    color: #778d9b;
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 1.2; }
+    .latest-orders header .title {
+      font-size: 2.4rem; }
+    .latest-orders header a {
+      color: currentColor;
+      text-decoration: none; }
+      .latest-orders header a:hover {
+        text-decoration: none;
+        color: #0099ff; }
+    .latest-orders header li {
+      padding: 0;
+      margin: 0; }
+      .latest-orders header li:before {
+        display: none; }
+      .latest-orders header li.separator {
+        height: 23px;
+        width: 2px;
+        background-color: currentColor;
+        margin: 0 2rem;
+        margin-top: 2px; }
+  .latest-orders .btn-more {
+    margin-top: 0; }
+    .latest-orders .btn-more .icon {
+      margin-right: 5px;
+      margin-top: -2px;
+      filter: grayscale(1) brightness(0.5); }
+    .latest-orders .btn-more:hover {
+      background-color: transparent;
+      color: #0099ff; }
+      .latest-orders .btn-more:hover .icon {
+        filter: none; }
+
+.orders__list {
+  background-color: #fff;
+  color: #2b2b2b; }
+  .orders__list .tr {
+    display: flex;
+    align-items: center;
+    height: 8rem;
+    font-size: 1.5rem; }
+    .orders__list .tr-head {
+      border-bottom: 5px solid #0672ba;
+      font-weight: 700;
+      font-size: 1.4rem; }
+    .orders__list .tr .td {
+      padding-left: 3rem;
+      padding-right: 1rem;
+      flex-shrink: 0; }
+      .orders__list .tr .td-1 {
+        width: 11.5rem;
+        width: 9.4%; }
+      .orders__list .tr .td-2 {
+        width: 12.5rem;
+        width: 10.2%; }
+      .orders__list .tr .td-3 {
+        width: 12.5rem;
+        width: 10.2%; }
+      .orders__list .tr .td-4 {
+        width: 14rem;
+        width: 11.5%; }
+      .orders__list .tr .td-5 {
+        width: 19.5rem;
+        width: 15.2%; }
+      .orders__list .tr .td-6 {
+        width: 21rem;
+        width: 17.2%; }
+      .orders__list .tr .td-7 {
+        width: 15rem;
+        width: 12.3%; }
+    .orders__list .tr-item {
+      border-bottom: 2px solid #eaecf0;
+      transition: box-shadow .3s; }
+      .orders__list .tr-item:last-child {
+        border-bottom: none; }
+      .orders__list .tr-item:hover {
+        box-shadow: 0 5px 15px rgba(0, 153, 255, 0.5);
+        position: relative;
+        z-index: 10; }
+      .orders__list .tr-item .td-1, .orders__list .tr-item .td-2, .orders__list .tr-item .td-3 {
+        font-size: 1.5rem; }
+      .orders__list .tr-item .td-1, .orders__list .tr-item .td-2, .orders__list .tr-item .td-7 {
+        font-weight: 700; }
+      .orders__list .tr-item button {
+        text-align: left; }
+      .orders__list .tr-item .tracknum {
+        color: #0672ba;
+        font-size: 1.5rem;
+        text-decoration: underline; }
+        .orders__list .tr-item .tracknum:hover {
+          color: #0099ff;
+          text-decoration: none; }
+      .orders__list .tr-item .print,
+      .orders__list .tr-item .view {
+        transition: filter .3s; }
+        .orders__list .tr-item .print:hover,
+        .orders__list .tr-item .view:hover {
+          filter: none; }
+      .orders__list .tr-item .print {
+        filter: grayscale(1); }
+      .orders__list .tr-item .view {
+        filter: brightness(0.7);
+        margin-left: 2rem; }
 
 #quickorderModal .modal-header {
   padding-bottom: 1rem; }
