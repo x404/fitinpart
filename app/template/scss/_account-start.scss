@@ -475,4 +475,24 @@
 			}
 		}
 	}
+
+	@media (max-width: 767px){
+		.modal{
+			&-dialog{
+				max-width: 95%
+			}
+			&-content{
+				.right{
+					margin-left: 0;
+				}
+			}
+			&-body{
+				.btn{
+					margin-bottom: 1.5rem;
+					padding-right: 1.5rem;
+					width: 255px;
+				}
+			}
+		}
+	}
 }

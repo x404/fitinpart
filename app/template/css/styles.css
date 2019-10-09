@@ -9757,6 +9757,16 @@ aside .filter .slider {
     margin-left: 5rem;
     margin-top: 2rem; }
 
+@media (max-width: 767px) {
+  #quickorderModal .modal-dialog {
+    max-width: 95%; }
+  #quickorderModal .modal-content .right {
+    margin-left: 0; }
+  #quickorderModal .modal-body .btn {
+    margin-bottom: 1.5rem;
+    padding-right: 1.5rem;
+    width: 255px; } }
+
 /* =mobile-menu
 ---------------------------*/
 .show-sm,
