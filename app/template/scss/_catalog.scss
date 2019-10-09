@@ -188,33 +188,33 @@ aside{
 		font-size: 1.4rem;
 		font-style: italic;
 	}
+}
 
 
-	.btn{
-		&-cart{
-			@extend .flex-center;
-			background-color: $color3;
-			border-radius: 50%;
-			box-shadow: 0 5px 15px rgba(0, 153, 255, 0.5);
-			height: 50px;
-			padding: 0;
-			transition: background-color .3s;
-			width: 50px;
-			.icon{
-				filter: invert(1);
-				margin-right: 0;
-				margin-left: -4px;
-			}
+.btn{
+	&-cart{
+		@extend .flex-center;
+		background-color: $color3;
+		border-radius: 50%;
+		box-shadow: 0 5px 15px rgba(0, 153, 255, 0.5);
+		height: 50px;
+		padding: 0;
+		transition: background-color .3s;
+		width: 50px;
+		.icon{
+			filter: invert(1);
+			margin-right: 0;
+			margin-left: -4px;
+		}
+		&:hover{
+			background-color: $color9;
+		}				
+		&.incart{
+			background-color: #778d9b;
+			box-shadow: none;
+			// cursor: default;
 			&:hover{
-				background-color: $color9;
-			}				
-			&.incart{
 				background-color: #778d9b;
-				box-shadow: none;
-				// cursor: default;
-				&:hover{
-					background-color: #778d9b;
-				}
 			}
 		}
 	}

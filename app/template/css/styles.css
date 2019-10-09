@@ -3931,7 +3931,7 @@ strong,
 
 .flex-center, .btn-middle, .btn-google, .btn-facebook, .btn-circle, .compare__count, .shop-cart__count, .littlecart .cart-body .btn-checkout, .littlecart .cart-body .btn-check, .searchbox__panel .checkbox__text:after, .searchbox .subtab-link,
 .smartsearch .subtab-link, .catalog a,
-.header .catalog__menu a, .reviews .btn-show, .checkbox__text:after, .aboutus-page .brands__item, .item-products .btn-cart, .products__list .item-products__pic, .products__list .item-products .btn-tooltip, .products__list .item-products .labels .label, #addtocardModal1 .modal-footer .btn, .comparison__column .btn-del, .myaccount aside ul li .icon-wrapper, .myaccount .plate-cars a, .myaccount .plate-items a {
+.header .catalog__menu a, .reviews .btn-show, .checkbox__text:after, .aboutus-page .brands__item, .btn-cart, .products__list .item-products__pic, .products__list .item-products .btn-tooltip, .products__list .item-products .labels .label, #addtocardModal1 .modal-footer .btn, .comparison__column .btn-del, .myaccount aside ul li .icon-wrapper, .myaccount .plate-cars a, .myaccount .plate-items a {
   display: flex;
   align-items: center;
   justify-content: center; }
@@ -7926,7 +7926,7 @@ aside .filter .slider {
   font-size: 1.4rem;
   font-style: italic; }
 
-.item-products .btn-cart {
+.btn-cart {
   background-color: #0672ba;
   border-radius: 50%;
   box-shadow: 0 5px 15px rgba(0, 153, 255, 0.5);
@@ -7934,16 +7934,16 @@ aside .filter .slider {
   padding: 0;
   transition: background-color .3s;
   width: 50px; }
-  .item-products .btn-cart .icon {
+  .btn-cart .icon {
     filter: invert(1);
     margin-right: 0;
     margin-left: -4px; }
-  .item-products .btn-cart:hover {
+  .btn-cart:hover {
     background-color: #0099ff; }
-  .item-products .btn-cart.incart {
+  .btn-cart.incart {
     background-color: #778d9b;
     box-shadow: none; }
-    .item-products .btn-cart.incart:hover {
+    .btn-cart.incart:hover {
       background-color: #778d9b; }
 
 .products__list {
@@ -9821,7 +9821,8 @@ aside .filter .slider {
         margin-left: 2rem; }
   .orders__list .moreinfo {
     background-color: #eaecf0;
-    color: #fff; }
+    color: #fff;
+    padding-bottom: 2rem; }
   .orders__list .tracking {
     background-color: #778d9b;
     padding: 2.5rem 3rem 0; }
@@ -9909,6 +9910,57 @@ aside .filter .slider {
       padding: .5rem 1.2rem .5rem 0; }
     .orders__list .orderinfo table tr > td:first-child {
       width: 150px; }
+
+.products__list {
+  margin-left: 3rem;
+  margin-right: 3rem;
+  margin-bottom: 2rem; }
+  .products__list .tr {
+    padding-right: 2rem; }
+  .products__list .tr-head {
+    background-color: #fff;
+    color: #535353;
+    min-height: 5rem; }
+    .products__list .tr-head .td {
+      font-size: 1.4rem; }
+  .products__list .tr:hover {
+    box-shadow: none; }
+  .products__list .tr-item {
+    background-color: #fff; }
+  .products__list .tr .inner {
+    background-color: #fff;
+    color: #323232;
+    min-height: 7rem; }
+    .products__list .tr .inner .td-1 {
+      font-weight: normal; }
+    .products__list .tr .inner .td-remark {
+      color: #535353;
+      font-style: italic; }
+  .products__list .tr .td {
+    padding-left: 2.2rem; }
+    .products__list .tr .td-1 {
+      font-size: 1.3rem;
+      width: 16.5%; }
+    .products__list .tr .td-2 {
+      width: 7.7%; }
+    .products__list .tr .td-3 {
+      width: 7.7%; }
+    .products__list .tr .td-remark {
+      font-size: 1.3rem;
+      width: 19.5%; }
+    .products__list .tr .td-5 {
+      width: 10%; }
+    .products__list .tr .td-6 {
+      width: 8.5%; }
+    .products__list .tr .td-7 {
+      width: 8.5%; }
+    .products__list .tr .td-9 {
+      flex-grow: 1;
+      text-align: right;
+      display: flex;
+      justify-content: flex-end; }
+  .products__list .tr-item {
+    margin-top: 1rem; }
 
 #quickorderModal .modal-header {
   padding-bottom: 1rem; }

@@ -572,10 +572,8 @@
 	}
 	.moreinfo{
 		background-color: #eaecf0;
-		// margin-left: 3.2rem;
-		// margin-right: 3.2rem;
-		// margin-bottom: 4rem;
 		color: #fff;
+		padding-bottom: 2rem;
 	}
 
 	.tracking{
@@ -713,7 +711,90 @@
 }
 
 
+.products__list{
+	margin-left: 3rem;
+	margin-right: 3rem;
+	margin-bottom: 2rem;
+	.tr{
+		padding-right: 2rem;
+	}
+	.tr-head{
+		background-color: #fff;
+		color: #535353;
+		min-height: 5rem;
+		.td{
+			font-size: 1.4rem;
+		}
+	}
+	.tr{
+		&:hover{
+			box-shadow: none;
+		}
+		&-item{
+			background-color: #fff;
+		}
+		.inner{
+			background-color: #fff;
+			color: #323232;
+			min-height: 7rem;
 
+			.td{
+				&-1{
+					font-weight: normal;
+				}
+				&-remark{
+					color: #535353;
+					font-style: italic;					
+				}
+			}
+		}
+		.td{
+			padding-left: 2.2rem;
+			&-1{
+				font-size: 1.3rem;
+				width: 16.5%;
+			}
+			&-2{
+				width: 7.7%
+			}
+			&-3{
+				width: 7.7%;
+			}
+			&-remark{
+				font-size: 1.3rem;
+				width: 19.5%;
+			}
+			&-5{
+				width: 10%;
+			}
+			&-6{
+				width: 8.5%;
+			}
+			&-7{
+				width: 8.5%;
+			}
+			&-8{
+
+			}
+
+			&-9{
+				flex-grow: 1;
+				text-align: right;
+				display: flex;
+				justify-content: flex-end;
+			}
+		}
+
+		&-item{
+			margin-top: 1rem;
+		}
+	}
+	.td{
+	}
+}
+ 
+
+ 
 #quickorderModal{
 	.modal{
 		&-header{
