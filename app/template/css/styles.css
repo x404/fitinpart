@@ -3899,7 +3899,7 @@ h3 {
 
 .neosans, .top__tel, .header .catalog-btn, .littlecart .cart-body .title, .littlecart .cart-body .cart-products .item-title, .littlecart .cart-body .cart-products .price, .search .vehicle-search .ms-parent .ms-drop:before, .main h1, .main .title, .searchbox__title, #homeslider .title, .visual__item, .homepage .advantages, .reviews header h1, .review-card__title, .homepage .about .subtitle, .modal-title, #loginModal .subtitle,
 #registerModal .subtitle, .modal-info .title, .smartsearch__header, .smartsearch__header .ms-choice, .main h2, .main h3, .main h4, .main h5, .main h6, .content blockquote, .lastnews .item-news__title,
-.news__list .item-news__title, .aboutus-page .intro__title, .aboutus-page .about__title, .aboutus-page .quote, .aboutus-page .advantages, .aboutus-page .item-products__title, .aboutus-page .brands__text, .title-md, aside .widget-title, .sortbox .sort-label, .item-products__title, .products__list .item-products .btn-tooltip, .products__list .item-products .tooltip-title, .modal-v2 .box__title, #addtocardModal1 .product-title, #addtocardModal1 .count-price .price, .comparison__body .product-title, .wiper-search .intro, .wiper-search .steps, .perfomance-page .intro .subtitle, .perfomance-page .list-title, .table-title, .logout, .myaccount aside ul, .myaccount aside .tel, .myaccount .plate__title, .myaccount .plate .statistic__field, .myaccount .ordersstat .num, .mob-header .btn-menu, .mob-header .tel {
+.news__list .item-news__title, .aboutus-page .intro__title, .aboutus-page .about__title, .aboutus-page .quote, .aboutus-page .advantages, .aboutus-page .item-products__title, .aboutus-page .brands__text, .title-md, aside .widget-title, .sortbox .sort-label, .item-products__title, .products__list .item-products .btn-tooltip, .products__list .item-products .tooltip-title, .modal-v2 .box__title, #addtocardModal1 .product-title, #addtocardModal1 .count-price .price, .comparison__body .product-title, .wiper-search .intro, .wiper-search .steps, .perfomance-page .intro .subtitle, .perfomance-page .list-title, .table-title, .logout, .myaccount aside ul, .myaccount aside .tel, .myaccount .plate__title, .myaccount .plate .statistic__field, .myaccount .ordersstat .num, #quickorderModal .modal-body h2, #quickorderModal .modal-body ol li:before, .mob-header .btn-menu, .mob-header .tel {
   font-family: 'Neo Sans Pro', Verdana, sans-serif; }
 
 strong,
@@ -3947,7 +3947,7 @@ strong,
     padding-left: 30px; }
     .icon-tel:before {
       background-image: url(../images/sprite.png);
-      background-position: -183px -91px;
+      background-position: -183px -111px;
       width: 16px;
       height: 25px;
       top: -3px;
@@ -4001,12 +4001,12 @@ strong,
     margin-right: 9px; }
   .icon-arrow-left-gray {
     background-image: url(../images/sprite.png);
-    background-position: -62px -55px;
+    background-position: -68px -159px;
     width: 12px;
     height: 10px; }
   .icon-slider-arrow:before {
     background-image: url(../images/sprite.png);
-    background-position: -162px -128px;
+    background-position: -89px -72px;
     width: 12px;
     height: 21px;
     left: 50%;
@@ -4015,12 +4015,12 @@ strong,
     top: 50%; }
   .icon-slider-arrow-gray {
     background-image: url(../images/sprite.png);
-    background-position: -162px -107px;
+    background-position: -62px -43px;
     width: 12px;
     height: 21px; }
   .icon-slider-arrow-blue {
     background-image: url(../images/sprite.png);
-    background-position: -174px -107px;
+    background-position: -205px 0px;
     width: 8px;
     height: 13px; }
   .icon-camera {
@@ -4035,7 +4035,7 @@ strong,
     padding-top: .5rem; }
     .icon-balloon:before {
       background-image: url(../images/sprite.png);
-      background-position: -104px -57px;
+      background-position: -104px -25px;
       width: 24px;
       height: 32px;
       left: 0;
@@ -4043,7 +4043,7 @@ strong,
   .icon-balloon-gray {
     display: block;
     background-image: url(../images/sprite.png);
-    background-position: -104px -25px;
+    background-position: -104px -57px;
     width: 24px;
     height: 32px; }
   .icon-tel-gray {
@@ -4055,13 +4055,13 @@ strong,
   .icon-fax-gray {
     display: block;
     background-image: url(../images/sprite.png);
-    background-position: -55px -102px;
+    background-position: -82px -102px;
     width: 27px;
     height: 27px; }
   .icon-clock-gray {
     display: block;
     background-image: url(../images/sprite.png);
-    background-position: -82px -102px;
+    background-position: -135px 0px;
     width: 27px;
     height: 27px; }
   .icon-online-gray {
@@ -4072,7 +4072,7 @@ strong,
     height: 30px; }
   .icon-search {
     background-image: url(../images/sprite.png);
-    background-position: -135px -27px;
+    background-position: -135px -54px;
     width: 27px;
     height: 27px;
     display: block;
@@ -4103,7 +4103,7 @@ strong,
     display: block; }
   .icon-arrow-down-gray {
     background-image: url(../images/sprite.png);
-    background-position: -150px -129px;
+    background-position: -11px -182px;
     width: 10px;
     height: 12px;
     display: block; }
@@ -4134,7 +4134,7 @@ strong,
     height: 11px; }
   .icon-badge-3-white {
     background-image: url(../images/sprite.png);
-    background-position: -54px -159px;
+    background-position: -148px -129px;
     width: 14px;
     height: 14px; }
   .icon-badge-4-blue {
@@ -4149,12 +4149,12 @@ strong,
     height: 11px; }
   .icon-good {
     background-image: url(../images/sprite.png);
-    background-position: -183px -116px;
+    background-position: -183px -136px;
     width: 20px;
     height: 20px; }
   .icon-bad {
     background-image: url(../images/sprite.png);
-    background-position: -183px -136px;
+    background-position: -183px -91px;
     width: 20px;
     height: 20px; }
   .icon-clock-blue {
@@ -4164,7 +4164,7 @@ strong,
     height: 43px; }
   .icon-list-blue {
     background-image: url(../images/sprite.png);
-    background-position: -58px -72px;
+    background-position: -104px 0px;
     width: 31px;
     height: 25px; }
   .icon-back-blue {
@@ -4192,6 +4192,8 @@ strong,
   box-shadow: 0 5px 15px rgba(0, 153, 255, 0.5); }
   .box-shadow-gray {
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3); }
+  .box-shadow-green {
+    box-shadow: 0 5px 15px rgba(7, 186, 92, 0.5); }
 
 .btn {
   cursor: pointer;
@@ -4251,7 +4253,7 @@ strong,
     position: relative; }
     .btn-view:before {
       background-image: url(../images/sprite.png);
-      background-position: -62px -43px;
+      background-position: 0px -182px;
       width: 11px;
       height: 12px;
       left: 10px;
@@ -6829,7 +6831,7 @@ input.form-control.error {
           position: relative; }
           .breadcrumbs ul li.B_homecrumb a:before {
             background-image: url(../images/sprite.png);
-            background-position: -133px -129px;
+            background-position: -162px -140px;
             width: 17px;
             height: 14px;
             left: 0;
@@ -8391,7 +8393,7 @@ aside .filter .slider {
   transition: background-color .3s; }
   #notifyModal .settings-link:before {
     background-image: url(../images/sprite.png);
-    background-position: -89px -72px;
+    background-position: -133px -129px;
     width: 15px;
     height: 14px;
     left: 7px;
@@ -9335,13 +9337,13 @@ aside .filter .slider {
 
 .icon-vehicle {
   background-image: url(../images/sprite.png);
-  background-position: -135px 0px;
+  background-position: -135px -27px;
   width: 27px;
   height: 27px; }
 
 .icon-stock {
   background-image: url(../images/sprite.png);
-  background-position: -135px -54px;
+  background-position: -55px -102px;
   width: 27px;
   height: 27px; }
 
@@ -9389,25 +9391,25 @@ aside .filter .slider {
 
 .icon-logout {
   background-image: url(../images/sprite.png);
-  background-position: -104px 0px;
+  background-position: -58px -72px;
   width: 31px;
   height: 25px; }
 
 .icon-key {
   background-image: url(../images/sprite.png);
-  background-position: -183px -25px;
+  background-position: -183px -47px;
   width: 22px;
   height: 22px; }
 
 .icon-pencil {
   background-image: url(../images/sprite.png);
-  background-position: -183px -47px;
+  background-position: -183px -25px;
   width: 22px;
   height: 22px; }
 
 .icon-3line {
   background-image: url(../images/sprite.png);
-  background-position: -162px -149px;
+  background-position: -54px -159px;
   width: 14px;
   height: 10px; }
 
@@ -9416,6 +9418,18 @@ aside .filter .slider {
   background-position: -26px -159px;
   width: 28px;
   height: 21px; }
+
+.icon-arrow-middle-right {
+  background-image: url(../images/sprite.png);
+  background-position: -162px -107px;
+  width: 18px;
+  height: 15px; }
+
+.icon-arrow-middle-down {
+  background-image: url(../images/sprite.png);
+  background-position: -162px -122px;
+  width: 15px;
+  height: 18px; }
 
 .logout {
   color: #c91537;
@@ -9468,11 +9482,11 @@ aside .filter .slider {
         filter: grayscale(1);
         margin-top: -10px; }
         .myaccount aside ul li .icon-wrapper {
-          position: absolute;
-          width: 45px;
-          left: 0;
           height: 30px;
-          top: 0; }
+          left: 0;
+          position: absolute;
+          top: 0;
+          width: 45px; }
   .myaccount aside .contacts {
     border-top: 2px solid #d6dde1;
     font-size: 1.7rem;
@@ -9676,6 +9690,72 @@ aside .filter .slider {
       margin-right: 10px; }
     .myaccount .ordersstat .btn:hover {
       box-shadow: 0 5px 15px rgba(0, 153, 255, 0.5); }
+
+#quickorderModal .modal-header {
+  padding-bottom: 1rem; }
+
+#quickorderModal .modal-dialog {
+  max-width: 71rem; }
+
+#quickorderModal .modal-content {
+  background-image: url(../images/bg/clock.png);
+  background-repeat: no-repeat;
+  background-position: right bottom; }
+
+#quickorderModal .modal-body {
+  color: #393939;
+  font-size: 1.5rem; }
+  #quickorderModal .modal-body h2 {
+    color: #000;
+    font-size: 2.5rem;
+    margin-top: 2rem; }
+  #quickorderModal .modal-body .btn-groups {
+    margin: 2rem 0 3rem; }
+  #quickorderModal .modal-body .btn {
+    align-items: center;
+    display: flex;
+    margin-right: 2.3rem;
+    padding-right: 3rem;
+    padding-left: 2rem; }
+    #quickorderModal .modal-body .btn .icon {
+      margin-right: 12px; }
+  #quickorderModal .modal-body ol {
+    color: #393939;
+    list-style: none;
+    counter-reset: li; }
+    #quickorderModal .modal-body ol li {
+      line-height: 1.8;
+      margin: 2rem 0;
+      position: relative;
+      padding-left: 42px; }
+      #quickorderModal .modal-body ol li:last-child {
+        margin-bottom: 0; }
+      #quickorderModal .modal-body ol li:before {
+        color: #fff;
+        background-color: #0672ba;
+        font-size: 1.4rem;
+        border-radius: 50%;
+        flex-shrink: 0;
+        height: 3.1rem;
+        width: 3.1rem;
+        border-radius: 3.1rem;
+        content: counter(li);
+        /* В качестве данных используем счетчик */
+        counter-increment: li;
+        /* Увеличиваем значение счетчика на 1 */
+        /* Позиционируем и стилизируем цифры */
+        position: absolute;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: 5px;
+        left: 0;
+        font-weight: 700;
+        line-height: 1; }
+  #quickorderModal .modal-body .right {
+    margin-left: 5rem;
+    margin-top: 2rem; }
 
 /* =mobile-menu
 ---------------------------*/
