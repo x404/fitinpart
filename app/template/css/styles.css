@@ -3899,7 +3899,7 @@ h3 {
 
 .neosans, .top__tel, .header .catalog-btn, .littlecart .cart-body .title, .littlecart .cart-body .cart-products .item-title, .littlecart .cart-body .cart-products .price, .search .vehicle-search .ms-parent .ms-drop:before, .main h1, .main .title, .searchbox__title, #homeslider .title, .visual__item, .homepage .advantages, .reviews header h1, .review-card__title, .homepage .about .subtitle, .modal-title, #loginModal .subtitle,
 #registerModal .subtitle, .modal-info .title, .smartsearch__header, .smartsearch__header .ms-choice, .main h2, .main h3, .main h4, .main h5, .main h6, .content blockquote, .lastnews .item-news__title,
-.news__list .item-news__title, .aboutus-page .intro__title, .aboutus-page .about__title, .aboutus-page .quote, .aboutus-page .advantages, .aboutus-page .item-products__title, .aboutus-page .brands__text, .title-md, aside .widget-title, .sortbox .sort-label, .item-products__title, .products__list .item-products .btn-tooltip, .products__list .item-products .tooltip-title, .modal-v2 .box__title, #addtocardModal1 .product-title, #addtocardModal1 .count-price .price, .comparison__body .product-title, .wiper-search .intro, .wiper-search .steps, .perfomance-page .intro .subtitle, .perfomance-page .list-title, .table-title, .logout, .myaccount aside ul, .myaccount aside .tel, .myaccount .plate__title, .myaccount .plate .statistic__field, .myaccount .ordersstat .num, .latest-orders header, #quickorderModal .modal-body h2, #quickorderModal .modal-body ol li:before, .mob-header .btn-menu, .mob-header .tel {
+.news__list .item-news__title, .aboutus-page .intro__title, .aboutus-page .about__title, .aboutus-page .quote, .aboutus-page .advantages, .aboutus-page .item-products__title, .aboutus-page .brands__text, .title-md, aside .widget-title, .sortbox .sort-label, .item-products__title, .products__list .item-products .btn-tooltip, .products__list .item-products .tooltip-title, .modal-v2 .box__title, #addtocardModal1 .product-title, #addtocardModal1 .count-price .price, .comparison__body .product-title, .wiper-search .intro, .wiper-search .steps, .perfomance-page .intro .subtitle, .perfomance-page .list-title, .table-title, .logout, .myaccount aside ul, .myaccount aside .tel, .myaccount .plate__title, .myaccount .plate .statistic__field, .myaccount .ordersstat .num, .latest-orders header, .orders__list .tracking__title, #quickorderModal .modal-body h2, #quickorderModal .modal-body ol li:before, .mob-header .btn-menu, .mob-header .tel {
   font-family: 'Neo Sans Pro', Verdana, sans-serif; }
 
 strong,
@@ -3918,7 +3918,7 @@ strong,
 
 .before, .icon:before, .btn-view:before, .btn-google:before, .btn-facebook:before, .top__left:before, .top__menu li.flexMenu-viewMore > a:after, .countmodule .minus:before, .countmodule .plus:before, .countmodule .plus:after, .search .vehicle-search-str .vehicle-search-item:after, .promo .wrapper:before, .visual__item:before, .modal-content-bg:before, .modal-content-bg:after, .modal-content-rbg:after, .modal-info:after, .modal-menu:before, .modal-menu .catalog:before, .breadcrumbs ul li.B_homecrumb a:before, .content ul li:before, .aboutus-page .intro__title:before, .aboutus-page .advantages__text:after, .aboutus-page .ouroffice__pic:after, #fitinpart-carousel a:after, #fitinpart-carousel a:before, .bl-line:after,
 .bc-line:after, .sortbox .param-sort:after, .products__list .item-products .additional__panel .item button:before, .label-tooltip:before,
-.tooltip-body:before, #notifyModal .settings-link:before, .wiper-search .intro__body:after, .wiper-search .intro__body:before, .wiper-search .details .label:before, .perfomance-page .intro__body:after, .perfomance-page .intro__body:before, .perfomance-page .subtitle:before, .content-location .days:not(:last-child):after {
+.tooltip-body:before, #notifyModal .settings-link:before, .wiper-search .intro__body:after, .wiper-search .intro__body:before, .wiper-search .details .label:before, .perfomance-page .intro__body:after, .perfomance-page .intro__body:before, .perfomance-page .subtitle:before, .content-location .days:not(:last-child):after, .orders__list .tracking__item:before, .orders__list .tracking__item:after {
   content: "";
   display: block;
   position: absolute; }
@@ -9747,11 +9747,11 @@ aside .filter .slider {
   background-color: #fff;
   color: #2b2b2b; }
   .orders__list .tr {
-    display: flex;
     align-items: center;
-    height: 8rem;
+    display: flex;
     font-size: 1.5rem; }
     .orders__list .tr-head {
+      min-height: 8rem;
       border-bottom: 5px solid #0672ba;
       font-weight: 700;
       font-size: 1.4rem; }
@@ -9781,6 +9781,7 @@ aside .filter .slider {
         width: 15rem;
         width: 12.3%; }
     .orders__list .tr-item {
+      display: block;
       border-bottom: 2px solid #eaecf0;
       transition: box-shadow .3s; }
       .orders__list .tr-item:last-child {
@@ -9789,6 +9790,11 @@ aside .filter .slider {
         box-shadow: 0 5px 15px rgba(0, 153, 255, 0.5);
         position: relative;
         z-index: 10; }
+      .orders__list .tr-item .inner {
+        align-items: center;
+        display: flex;
+        min-height: 8rem;
+        width: 100%; }
       .orders__list .tr-item .td-1, .orders__list .tr-item .td-2, .orders__list .tr-item .td-3 {
         font-size: 1.5rem; }
       .orders__list .tr-item .td-1, .orders__list .tr-item .td-2, .orders__list .tr-item .td-7 {
@@ -9813,6 +9819,58 @@ aside .filter .slider {
       .orders__list .tr-item .view {
         filter: brightness(0.7);
         margin-left: 2rem; }
+  .orders__list .moreinfo {
+    background-color: #778d9b;
+    margin-left: 3.2rem;
+    margin-right: 3.2rem;
+    margin-bottom: 4rem;
+    padding: 2.5rem 3rem;
+    color: #fff; }
+  .orders__list .tracking__item {
+    display: flex;
+    border-bottom: 1px solid #8b9eaa;
+    padding: 1.5rem 0;
+    line-height: 1.2;
+    position: relative;
+    margin-left: 60px; }
+    .orders__list .tracking__item:before {
+      border-left: 8px solid #596b77;
+      left: -44px;
+      top: 12px;
+      height: 105%; }
+    .orders__list .tracking__item:after {
+      background: url(../images/track-dot.png) no-repeat left top;
+      width: 40px;
+      height: 40px;
+      left: -60px;
+      top: 12px; }
+    .orders__list .tracking__item:last-child {
+      border-bottom: none; }
+      .orders__list .tracking__item:last-child:before {
+        display: none; }
+  .orders__list .tracking__title {
+    flex-shrink: 0;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: .6rem; }
+  .orders__list .tracking__date {
+    flex-shrink: 0;
+    width: 13rem; }
+    .orders__list .tracking__date p {
+      line-height: 1.2; }
+  .orders__list .tracking .date {
+    font-size: 1.7rem; }
+  .orders__list .tracking .time {
+    color: #dce6ec;
+    font-size: 1.5rem; }
+  .orders__list .tracking__status {
+    flex-shrink: 0;
+    font-size: 1.7rem;
+    font-weight: 700;
+    margin-right: 7rem;
+    width: 20rem; }
+  .orders__list .tracking__msg {
+    line-height: 1.5; }
 
 #quickorderModal .modal-header {
   padding-bottom: 1rem; }

@@ -463,11 +463,11 @@
 	background-color: #fff;
 	color: #2b2b2b;
 	.tr{
-		display: flex;
 		align-items: center;
-		height: 8rem;
+		display: flex;
 		font-size: 1.5rem;
 		&-head{
+			min-height: 8rem;
 			border-bottom: 5px solid $color3;
 			font-weight: 700;
 			font-size: 1.4rem;
@@ -508,6 +508,7 @@
 		}
 
 		&-item{
+			display: block;
 			border-bottom: 2px solid #eaecf0;
 			transition: box-shadow .3s;
 			&:last-child{
@@ -518,6 +519,14 @@
 				position: relative;
 				z-index: 10;
 			}
+
+			.inner{
+				align-items: center;
+				display: flex;
+				min-height: 8rem;
+				width: 100%;
+			}
+
 			.td{
 				&-1,
 				&-2,
@@ -559,6 +568,81 @@
 				filter: brightness(.7);				
 				margin-left: 2rem;
 			}
+		}
+	}
+	.moreinfo{
+		background-color: #778d9b;
+		margin-left: 3.2rem;
+		margin-right: 3.2rem;
+		margin-bottom: 4rem;
+		padding: 2.5rem 3rem;
+		color: #fff;
+	}
+
+	.tracking{
+		&__item{
+			display: flex;
+			border-bottom: 1px solid #8b9eaa;
+			padding: 1.5rem 0;
+			line-height: 1.2;
+			position: relative;
+			margin-left: 60px;
+			&:before{
+				@extend .before;
+				border-left: 8px solid #596b77;
+				left: -44px;
+				top: 12px;
+				height: 105%;
+			}
+
+			&:after{
+				@extend .before;
+				background: url(../images/track-dot.png) no-repeat left top;
+				width: 40px;
+				height: 40px;
+				left: -60px;
+				top: 12px;
+			}
+			&:last-child{
+				border-bottom: none;
+				&:before{
+					display: none;
+				}
+			}
+
+		}
+		&__title{
+			@extend .neosans;
+			flex-shrink: 0;
+			font-size: 2.5rem;
+			font-weight: 700;
+			margin-bottom: .6rem;
+		}
+		&__date{
+			flex-shrink: 0;
+			width: 13rem;
+			p{
+				line-height: 1.2;
+			}
+		}
+		.date{
+			font-size: 1.7rem;
+		}
+		.time{
+			color: #dce6ec;
+			font-size: 1.5rem;
+		}
+
+		&__status{
+			flex-shrink: 0;
+			font-size: 1.7rem;
+			font-weight: 700;
+			margin-right: 7rem;
+			width: 20rem;
+		}
+
+		&__msg{
+			line-height: 1.5;
 		}
 	}
 }
