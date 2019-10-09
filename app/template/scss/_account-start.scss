@@ -14,7 +14,8 @@
 	&-key{@include sprite($icon-key);	}
 	&-pencil{@include sprite($icon-pencil);	}
 	&-3line{@include sprite($icon-3line);}
-}
+	&-qtime{@include sprite($icon-qtime);}
+} 
 
 .logout{
 	@extend .neosans;
@@ -325,10 +326,10 @@
 			align-items: center;
 			display: flex;
 			flex-direction: column;
-			height: 100%;
-			padding: 3rem 2.5rem 4.5rem 2.5rem;
-			text-decoration: none;
 			border-bottom: 5px solid rgba(255,255,255,0);
+			height: 100%;
+			padding: 2rem 2.5rem 1.8rem 2.5rem;
+			text-decoration: none;
 			&:hover{
 				background-color: #eaecf0;
 				border-bottom-color: #0672ba;
@@ -338,10 +339,9 @@
 				}
 			}
 		}
-		&__cell{
-			// display: flex;
-		}
+
 		.num{
+			@extend .neosans;
 			color: $color3;
 			font-size: 3rem;
 			font-weight: 700;
@@ -352,6 +352,38 @@
 			color: #333;
 			font-size: 1.5rem;
 			text-align: center;
+		}
+
+		&__cell{
+			&-red{
+				.num,
+				.sign{
+					color: $color10;
+				}
+			}
+			&-gray{
+				.num,
+				.sign{
+					color: #778d9b;
+				}
+			}
+		}
+
+		.btn{
+			border-radius: 5rem;
+			font-size: 1.7rem;
+			font-weight: 700;
+			height: 5rem;
+			line-height: 1;
+			margin: auto;
+			padding-left: 3.4rem;
+			padding-right: 4rem;
+			.icon{
+				margin-right: 10px;
+			}
+			&:hover{
+				box-shadow: 0 5px 15px rgba(0, 153, 255, 0.5);
+			}
 		}
 	}
 }

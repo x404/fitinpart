@@ -3899,7 +3899,7 @@ h3 {
 
 .neosans, .top__tel, .header .catalog-btn, .littlecart .cart-body .title, .littlecart .cart-body .cart-products .item-title, .littlecart .cart-body .cart-products .price, .search .vehicle-search .ms-parent .ms-drop:before, .main h1, .main .title, .searchbox__title, #homeslider .title, .visual__item, .homepage .advantages, .reviews header h1, .review-card__title, .homepage .about .subtitle, .modal-title, #loginModal .subtitle,
 #registerModal .subtitle, .modal-info .title, .smartsearch__header, .smartsearch__header .ms-choice, .main h2, .main h3, .main h4, .main h5, .main h6, .content blockquote, .lastnews .item-news__title,
-.news__list .item-news__title, .aboutus-page .intro__title, .aboutus-page .about__title, .aboutus-page .quote, .aboutus-page .advantages, .aboutus-page .item-products__title, .aboutus-page .brands__text, .title-md, aside .widget-title, .sortbox .sort-label, .item-products__title, .products__list .item-products .btn-tooltip, .products__list .item-products .tooltip-title, .modal-v2 .box__title, #addtocardModal1 .product-title, #addtocardModal1 .count-price .price, .comparison__body .product-title, .wiper-search .intro, .wiper-search .steps, .perfomance-page .intro .subtitle, .perfomance-page .list-title, .table-title, .logout, .myaccount aside ul, .myaccount aside .tel, .myaccount .plate__title, .myaccount .plate .statistic__field, .mob-header .btn-menu, .mob-header .tel {
+.news__list .item-news__title, .aboutus-page .intro__title, .aboutus-page .about__title, .aboutus-page .quote, .aboutus-page .advantages, .aboutus-page .item-products__title, .aboutus-page .brands__text, .title-md, aside .widget-title, .sortbox .sort-label, .item-products__title, .products__list .item-products .btn-tooltip, .products__list .item-products .tooltip-title, .modal-v2 .box__title, #addtocardModal1 .product-title, #addtocardModal1 .count-price .price, .comparison__body .product-title, .wiper-search .intro, .wiper-search .steps, .perfomance-page .intro .subtitle, .perfomance-page .list-title, .table-title, .logout, .myaccount aside ul, .myaccount aside .tel, .myaccount .plate__title, .myaccount .plate .statistic__field, .myaccount .ordersstat .num, .mob-header .btn-menu, .mob-header .tel {
   font-family: 'Neo Sans Pro', Verdana, sans-serif; }
 
 strong,
@@ -4035,7 +4035,7 @@ strong,
     padding-top: .5rem; }
     .icon-balloon:before {
       background-image: url(../images/sprite.png);
-      background-position: -104px -25px;
+      background-position: -104px -57px;
       width: 24px;
       height: 32px;
       left: 0;
@@ -4043,25 +4043,25 @@ strong,
   .icon-balloon-gray {
     display: block;
     background-image: url(../images/sprite.png);
-    background-position: -104px -57px;
+    background-position: -104px -25px;
     width: 24px;
     height: 32px; }
   .icon-tel-gray {
     display: block;
     background-image: url(../images/sprite.png);
-    background-position: -183px -116px;
+    background-position: -183px -156px;
     width: 16px;
     height: 25px; }
   .icon-fax-gray {
     display: block;
     background-image: url(../images/sprite.png);
-    background-position: -135px -27px;
+    background-position: -55px -102px;
     width: 27px;
     height: 27px; }
   .icon-clock-gray {
     display: block;
     background-image: url(../images/sprite.png);
-    background-position: -135px -54px;
+    background-position: -82px -102px;
     width: 27px;
     height: 27px; }
   .icon-online-gray {
@@ -4072,7 +4072,7 @@ strong,
     height: 30px; }
   .icon-search {
     background-image: url(../images/sprite.png);
-    background-position: -28px -102px;
+    background-position: -135px -27px;
     width: 27px;
     height: 27px;
     display: block;
@@ -4086,7 +4086,7 @@ strong,
     display: block; }
   .icon-search-big {
     background-image: url(../images/sprite.png);
-    background-position: -82px -102px;
+    background-position: -28px -102px;
     width: 27px;
     height: 27px; }
   .icon-zoom {
@@ -4134,7 +4134,7 @@ strong,
     height: 11px; }
   .icon-badge-3-white {
     background-image: url(../images/sprite.png);
-    background-position: -26px -159px;
+    background-position: -54px -159px;
     width: 14px;
     height: 14px; }
   .icon-badge-4-blue {
@@ -4149,12 +4149,12 @@ strong,
     height: 11px; }
   .icon-good {
     background-image: url(../images/sprite.png);
-    background-position: -183px -141px;
+    background-position: -183px -116px;
     width: 20px;
     height: 20px; }
   .icon-bad {
     background-image: url(../images/sprite.png);
-    background-position: -183px -161px;
+    background-position: -183px -136px;
     width: 20px;
     height: 20px; }
   .icon-clock-blue {
@@ -4164,7 +4164,7 @@ strong,
     height: 43px; }
   .icon-list-blue {
     background-image: url(../images/sprite.png);
-    background-position: -104px 0px;
+    background-position: -58px -72px;
     width: 31px;
     height: 25px; }
   .icon-back-blue {
@@ -9335,13 +9335,13 @@ aside .filter .slider {
 
 .icon-vehicle {
   background-image: url(../images/sprite.png);
-  background-position: -55px -102px;
+  background-position: -135px 0px;
   width: 27px;
   height: 27px; }
 
 .icon-stock {
   background-image: url(../images/sprite.png);
-  background-position: -135px 0px;
+  background-position: -135px -54px;
   width: 27px;
   height: 27px; }
 
@@ -9359,7 +9359,7 @@ aside .filter .slider {
 
 .icon-orders {
   background-image: url(../images/sprite.png);
-  background-position: -58px -72px;
+  background-position: -27px -72px;
   width: 31px;
   height: 25px; }
 
@@ -9389,7 +9389,7 @@ aside .filter .slider {
 
 .icon-logout {
   background-image: url(../images/sprite.png);
-  background-position: -27px -72px;
+  background-position: -104px 0px;
   width: 31px;
   height: 25px; }
 
@@ -9410,6 +9410,12 @@ aside .filter .slider {
   background-position: -162px -149px;
   width: 14px;
   height: 10px; }
+
+.icon-qtime {
+  background-image: url(../images/sprite.png);
+  background-position: -26px -159px;
+  width: 28px;
+  height: 21px; }
 
 .logout {
   color: #c91537;
@@ -9631,10 +9637,10 @@ aside .filter .slider {
     align-items: center;
     display: flex;
     flex-direction: column;
+    border-bottom: 5px solid rgba(255, 255, 255, 0);
     height: 100%;
-    padding: 3rem 2.5rem 4.5rem 2.5rem;
-    text-decoration: none;
-    border-bottom: 5px solid rgba(255, 255, 255, 0); }
+    padding: 2rem 2.5rem 1.8rem 2.5rem;
+    text-decoration: none; }
     .myaccount .ordersstat a:hover {
       background-color: #eaecf0;
       border-bottom-color: #0672ba; }
@@ -9651,6 +9657,25 @@ aside .filter .slider {
     color: #333;
     font-size: 1.5rem;
     text-align: center; }
+  .myaccount .ordersstat__cell-red .num,
+  .myaccount .ordersstat__cell-red .sign {
+    color: #c91537; }
+  .myaccount .ordersstat__cell-gray .num,
+  .myaccount .ordersstat__cell-gray .sign {
+    color: #778d9b; }
+  .myaccount .ordersstat .btn {
+    border-radius: 5rem;
+    font-size: 1.7rem;
+    font-weight: 700;
+    height: 5rem;
+    line-height: 1;
+    margin: auto;
+    padding-left: 3.4rem;
+    padding-right: 4rem; }
+    .myaccount .ordersstat .btn .icon {
+      margin-right: 10px; }
+    .myaccount .ordersstat .btn:hover {
+      box-shadow: 0 5px 15px rgba(0, 153, 255, 0.5); }
 
 /* =mobile-menu
 ---------------------------*/
