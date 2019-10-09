@@ -571,15 +571,16 @@
 		}
 	}
 	.moreinfo{
-		background-color: #778d9b;
-		margin-left: 3.2rem;
-		margin-right: 3.2rem;
-		margin-bottom: 4rem;
-		padding: 2.5rem 3rem;
+		background-color: #eaecf0;
+		// margin-left: 3.2rem;
+		// margin-right: 3.2rem;
+		// margin-bottom: 4rem;
 		color: #fff;
 	}
 
 	.tracking{
+		background-color: #778d9b;
+		padding: 2.5rem 3rem 0;
 		&__item{
 			display: flex;
 			border-bottom: 1px solid #8b9eaa;
@@ -643,6 +644,70 @@
 
 		&__msg{
 			line-height: 1.5;
+		}
+	}
+
+	.orderinfo{
+		color: #303030;
+		padding: 1.6rem 3rem 1.5rem;
+		.print{
+			@extend .neosans;
+			color: $color3;
+			filter: none;
+			font-size: 1.5rem;
+			text-decoration: none;
+			&:hover{
+				color: $color9;
+				img{
+					filter: none;
+				}
+			}
+			img{
+				transition: filter .3s;
+				filter: brightness(.65);
+			}
+		}
+		&__title{
+			@extend .neosans;
+			font-weight: 700;
+			font-size: 2.5rem;
+			margin-bottom: 1.1rem;
+		}
+		.subtitle{
+			@extend .neosans;
+			font-weight: 700;
+			font-size: 1.8rem;
+			margin-bottom: .4rem;
+		}
+		.cell{
+			line-height: 1.2;
+			strong{
+				color: #383b43;				
+			}
+			font-size: 1.5rem;
+			margin-right: 6.5rem;
+			&:last-child{
+				margin-right: 0;
+			}
+
+			&-1{
+				flex-grow: 2
+			}
+
+			&-2,
+			&-3{
+				flex-grow: 1
+			}
+
+		}
+
+		table{
+			td{
+				padding: .5rem 1.2rem .5rem 0;
+			}
+			tr>td:first-child{
+				width: 150px;
+			}
 		}
 	}
 }

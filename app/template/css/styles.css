@@ -3899,7 +3899,7 @@ h3 {
 
 .neosans, .top__tel, .header .catalog-btn, .littlecart .cart-body .title, .littlecart .cart-body .cart-products .item-title, .littlecart .cart-body .cart-products .price, .search .vehicle-search .ms-parent .ms-drop:before, .main h1, .main .title, .searchbox__title, #homeslider .title, .visual__item, .homepage .advantages, .reviews header h1, .review-card__title, .homepage .about .subtitle, .modal-title, #loginModal .subtitle,
 #registerModal .subtitle, .modal-info .title, .smartsearch__header, .smartsearch__header .ms-choice, .main h2, .main h3, .main h4, .main h5, .main h6, .content blockquote, .lastnews .item-news__title,
-.news__list .item-news__title, .aboutus-page .intro__title, .aboutus-page .about__title, .aboutus-page .quote, .aboutus-page .advantages, .aboutus-page .item-products__title, .aboutus-page .brands__text, .title-md, aside .widget-title, .sortbox .sort-label, .item-products__title, .products__list .item-products .btn-tooltip, .products__list .item-products .tooltip-title, .modal-v2 .box__title, #addtocardModal1 .product-title, #addtocardModal1 .count-price .price, .comparison__body .product-title, .wiper-search .intro, .wiper-search .steps, .perfomance-page .intro .subtitle, .perfomance-page .list-title, .table-title, .logout, .myaccount aside ul, .myaccount aside .tel, .myaccount .plate__title, .myaccount .plate .statistic__field, .myaccount .ordersstat .num, .latest-orders header, .orders__list .tracking__title, #quickorderModal .modal-body h2, #quickorderModal .modal-body ol li:before, .mob-header .btn-menu, .mob-header .tel {
+.news__list .item-news__title, .aboutus-page .intro__title, .aboutus-page .about__title, .aboutus-page .quote, .aboutus-page .advantages, .aboutus-page .item-products__title, .aboutus-page .brands__text, .title-md, aside .widget-title, .sortbox .sort-label, .item-products__title, .products__list .item-products .btn-tooltip, .products__list .item-products .tooltip-title, .modal-v2 .box__title, #addtocardModal1 .product-title, #addtocardModal1 .count-price .price, .comparison__body .product-title, .wiper-search .intro, .wiper-search .steps, .perfomance-page .intro .subtitle, .perfomance-page .list-title, .table-title, .logout, .myaccount aside ul, .myaccount aside .tel, .myaccount .plate__title, .myaccount .plate .statistic__field, .myaccount .ordersstat .num, .latest-orders header, .orders__list .tracking__title, .orders__list .orderinfo .print, .orders__list .orderinfo__title, .orders__list .orderinfo .subtitle, #quickorderModal .modal-body h2, #quickorderModal .modal-body ol li:before, .mob-header .btn-menu, .mob-header .tel {
   font-family: 'Neo Sans Pro', Verdana, sans-serif; }
 
 strong,
@@ -9820,57 +9820,95 @@ aside .filter .slider {
         filter: brightness(0.7);
         margin-left: 2rem; }
   .orders__list .moreinfo {
-    background-color: #778d9b;
-    margin-left: 3.2rem;
-    margin-right: 3.2rem;
-    margin-bottom: 4rem;
-    padding: 2.5rem 3rem;
+    background-color: #eaecf0;
     color: #fff; }
-  .orders__list .tracking__item {
-    display: flex;
-    border-bottom: 1px solid #8b9eaa;
-    padding: 1.5rem 0;
-    line-height: 1.2;
-    position: relative;
-    margin-left: 60px; }
-    .orders__list .tracking__item:before {
-      border-left: 8px solid #596b77;
-      left: -44px;
-      top: 12px;
-      height: 105%; }
-    .orders__list .tracking__item:after {
-      background: url(../images/track-dot.png) no-repeat left top;
-      width: 40px;
-      height: 40px;
-      left: -60px;
-      top: 12px; }
-    .orders__list .tracking__item:last-child {
-      border-bottom: none; }
-      .orders__list .tracking__item:last-child:before {
-        display: none; }
-  .orders__list .tracking__title {
-    flex-shrink: 0;
-    font-size: 2.5rem;
-    font-weight: 700;
-    margin-bottom: .6rem; }
-  .orders__list .tracking__date {
-    flex-shrink: 0;
-    width: 13rem; }
-    .orders__list .tracking__date p {
-      line-height: 1.2; }
-  .orders__list .tracking .date {
-    font-size: 1.7rem; }
-  .orders__list .tracking .time {
-    color: #dce6ec;
-    font-size: 1.5rem; }
-  .orders__list .tracking__status {
-    flex-shrink: 0;
-    font-size: 1.7rem;
-    font-weight: 700;
-    margin-right: 7rem;
-    width: 20rem; }
-  .orders__list .tracking__msg {
-    line-height: 1.5; }
+  .orders__list .tracking {
+    background-color: #778d9b;
+    padding: 2.5rem 3rem 0; }
+    .orders__list .tracking__item {
+      display: flex;
+      border-bottom: 1px solid #8b9eaa;
+      padding: 1.5rem 0;
+      line-height: 1.2;
+      position: relative;
+      margin-left: 60px; }
+      .orders__list .tracking__item:before {
+        border-left: 8px solid #596b77;
+        left: -44px;
+        top: 12px;
+        height: 105%; }
+      .orders__list .tracking__item:after {
+        background: url(../images/track-dot.png) no-repeat left top;
+        width: 40px;
+        height: 40px;
+        left: -60px;
+        top: 12px; }
+      .orders__list .tracking__item:last-child {
+        border-bottom: none; }
+        .orders__list .tracking__item:last-child:before {
+          display: none; }
+    .orders__list .tracking__title {
+      flex-shrink: 0;
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: .6rem; }
+    .orders__list .tracking__date {
+      flex-shrink: 0;
+      width: 13rem; }
+      .orders__list .tracking__date p {
+        line-height: 1.2; }
+    .orders__list .tracking .date {
+      font-size: 1.7rem; }
+    .orders__list .tracking .time {
+      color: #dce6ec;
+      font-size: 1.5rem; }
+    .orders__list .tracking__status {
+      flex-shrink: 0;
+      font-size: 1.7rem;
+      font-weight: 700;
+      margin-right: 7rem;
+      width: 20rem; }
+    .orders__list .tracking__msg {
+      line-height: 1.5; }
+  .orders__list .orderinfo {
+    color: #303030;
+    padding: 1.6rem 3rem 1.5rem; }
+    .orders__list .orderinfo .print {
+      color: #0672ba;
+      filter: none;
+      font-size: 1.5rem;
+      text-decoration: none; }
+      .orders__list .orderinfo .print:hover {
+        color: #0099ff; }
+        .orders__list .orderinfo .print:hover img {
+          filter: none; }
+      .orders__list .orderinfo .print img {
+        transition: filter .3s;
+        filter: brightness(0.65); }
+    .orders__list .orderinfo__title {
+      font-weight: 700;
+      font-size: 2.5rem;
+      margin-bottom: 1.1rem; }
+    .orders__list .orderinfo .subtitle {
+      font-weight: 700;
+      font-size: 1.8rem;
+      margin-bottom: .4rem; }
+    .orders__list .orderinfo .cell {
+      line-height: 1.2;
+      font-size: 1.5rem;
+      margin-right: 6.5rem; }
+      .orders__list .orderinfo .cell strong {
+        color: #383b43; }
+      .orders__list .orderinfo .cell:last-child {
+        margin-right: 0; }
+      .orders__list .orderinfo .cell-1 {
+        flex-grow: 2; }
+      .orders__list .orderinfo .cell-2, .orders__list .orderinfo .cell-3 {
+        flex-grow: 1; }
+    .orders__list .orderinfo table td {
+      padding: .5rem 1.2rem .5rem 0; }
+    .orders__list .orderinfo table tr > td:first-child {
+      width: 150px; }
 
 #quickorderModal .modal-header {
   padding-bottom: 1rem; }
