@@ -9713,9 +9713,7 @@ aside .filter .slider {
       margin-right: 1.5rem; }
   .myaccount .ordersstat a {
     padding-left: 1.5rem;
-    padding-right: 1.5rem; }
-  .myaccount .orders__list .tr .td {
-    padding-left: 1.5rem; } }
+    padding-right: 1.5rem; } }
 
 @media (max-width: 1399px) {
   .myaccount .grid-information {
@@ -9744,53 +9742,7 @@ aside .filter .slider {
       padding-right: 2rem;
       padding-left: 1.5rem; }
       .myaccount .ordersstat .btn .icon {
-        margin-right: 5px; }
-  .myaccount .orders__list .tr .td {
-    padding-left: 1rem;
-    padding-right: .5rem; }
-  .myaccount .orders__list .tr {
-    font-size: 1.4rem; }
-  .myaccount .orders__list .tr-item .view {
-    margin-left: .5rem; }
-  .myaccount .orders__list .tr-item .tracknum {
-    font-size: 1.4rem; }
-  .myaccount .orders__list .tr-item .td-1, .myaccount .orders__list .tr-item .td-2, .myaccount .orders__list .tr-item .td-3 {
-    font-size: 1.4rem; }
-  .myaccount .orders__list .tracking__status {
-    margin-right: 3rem; }
-  .myaccount .orders__list .orderinfo .cell {
-    margin-right: 3rem; }
-  .myaccount .products__list .tr-head {
-    display: none; }
-  .myaccount .products__list .tr {
-    padding-right: 0; }
-  .myaccount .products__list .tr-item .inner {
-    display: block;
-    position: relative;
-    padding: 1.2rem 1.8rem 1.5rem; }
-    .myaccount .products__list .tr-item .inner .td {
-      display: flex;
-      position: relative;
-      width: 100%;
-      padding: 0; }
-      .myaccount .products__list .tr-item .inner .td:before {
-        display: block;
-        content: attr(data-title);
-        font-weight: bold;
-        width: 140px;
-        flex-shrink: 0;
-        font-style: normal;
-        color: #535353; }
-      .myaccount .products__list .tr-item .inner .td-9 {
-        position: static; }
-    .myaccount .products__list .tr-item .inner .btn-cart {
-      position: absolute;
-      right: 10px;
-      top: 10px;
-      height: 38px;
-      width: 38px; }
-      .myaccount .products__list .tr-item .inner .btn-cart .icon {
-        transform: scale(0.7); } }
+        margin-right: 5px; } }
 
 @media (max-width: 1199px) {
   .myaccount .content {
@@ -9902,6 +9854,13 @@ aside .filter .slider {
       color: #0099ff; }
       .latest-orders .btn-more:hover .icon {
         filter: none; }
+  @media (max-width: 1199px) {
+    .latest-orders {
+      padding-top: 2.5rem; }
+      .latest-orders header {
+        font-size: 2.2rem; }
+        .latest-orders header .title {
+          font-size: 2.2rem; } }
 
 .orders__list {
   background-color: #fff;
@@ -9917,7 +9876,7 @@ aside .filter .slider {
       font-weight: 700;
       min-height: 8.4rem; }
     .orders__list .tr .td {
-      padding-left: 3rem;
+      padding-left: 1.5rem;
       padding-right: 1rem;
       flex-shrink: 0; }
       .orders__list .tr .td-1 {
@@ -10104,6 +10063,100 @@ aside .filter .slider {
       flex-shrink: 0;
       width: 9rem;
       text-align: left; }
+  @media (max-width: 1399px) {
+    .orders__list .tr .td {
+      padding-left: 1rem;
+      padding-right: .5rem; }
+    .orders__list .tr {
+      font-size: 1.4rem; }
+    .orders__list .tr-item .view {
+      margin-left: .5rem; }
+    .orders__list .tr-item .tracknum {
+      font-size: 1.4rem;
+      padding-left: 0;
+      padding-right: 0; }
+    .orders__list .tr-item .td-1, .orders__list .tr-item .td-2, .orders__list .tr-item .td-3 {
+      font-size: 1.4rem; }
+    .orders__list .tracking__status {
+      margin-right: 3rem; }
+    .orders__list .orderinfo .cell {
+      margin-right: 3rem; }
+    .orders__list .order-total {
+      display: block !important; }
+      .orders__list .order-total .left {
+        text-align: left; }
+      .orders__list .order-total .order-piece-title, .orders__list .order-total .order-piece-sum {
+        flex: 0 0 auto;
+        text-align: left; }
+      .orders__list .order-total-title {
+        margin-right: 5px; }
+      .orders__list .order-total .right {
+        font-size: 1.8rem; } }
+  @media (max-width: 1199px) {
+    .orders__list .tracking {
+      padding: 1.5rem 2rem; }
+      .orders__list .tracking__title {
+        font-size: 2rem; }
+      .orders__list .tracking__status,
+      .orders__list .tracking .date {
+        font-size: 1.5rem; }
+      .orders__list .tracking .time {
+        font-size: 1.3rem; }
+      .orders__list .tracking__status {
+        width: 14.5rem; }
+      .orders__list .tracking__date {
+        width: 9rem; }
+    .orders__list .orderinfo__title {
+      font-size: 2rem; }
+    .orders__list .orderinfo .cell {
+      font-size: 1.4rem; }
+    .orders__list .subtitle {
+      font-size: 1.6rem; }
+    .orders__list table td {
+      font-size: 1.4rem; }
+    .orders__list .tr-head {
+      display: none; }
+    .orders__list .tr .td {
+      padding-left: 2rem;
+      padding-right: 0.2rem; }
+    .orders__list .tr-item .inner {
+      flex-wrap: wrap;
+      padding-right: 10rem;
+      padding-bottom: 1.5rem;
+      padding-top: 1rem;
+      position: relative; }
+      .orders__list .tr-item .inner .td:before {
+        font-size: 1.4rem; }
+    .orders__list .tr-item .td {
+      flex-shrink: 0;
+      margin-bottom: 2px;
+      margin-top: .7rem;
+      position: relative; }
+      .orders__list .tr-item .td:before {
+        content: attr(data-title);
+        color: #757575;
+        display: block;
+        font-size: 1.2rem;
+        font-weight: normal; }
+      .orders__list .tr-item .td-1 {
+        width: 15%; }
+      .orders__list .tr-item .td-2 {
+        width: 22%; }
+      .orders__list .tr-item .td-3 {
+        width: 17%; }
+      .orders__list .tr-item .td-4 {
+        width: 21%; }
+      .orders__list .tr-item .td-5 {
+        width: 25%; }
+      .orders__list .tr-item .td-6 {
+        width: 75%; }
+      .orders__list .tr-item .td-7 {
+        width: 25%; }
+      .orders__list .tr-item .td-printview {
+        margin-top: -15px;
+        position: absolute;
+        right: 0;
+        top: 50%; } }
 
 .products__list {
   margin-left: 3rem;
@@ -10156,6 +10209,42 @@ aside .filter .slider {
       justify-content: flex-end; }
   .products__list .tr-item {
     margin-top: 1rem; }
+  @media (max-width: 1399px) {
+    .products__list .tr-head {
+      display: none; }
+    .products__list .tr {
+      padding-right: 0; }
+    .products__list .tr-item .inner {
+      display: block;
+      position: relative;
+      padding: 1.2rem 1.8rem 1.5rem; }
+      .products__list .tr-item .inner .td {
+        display: flex;
+        position: relative;
+        width: 100%;
+        padding: 0; }
+        .products__list .tr-item .inner .td:before {
+          display: block;
+          content: attr(data-title);
+          font-weight: bold;
+          width: 140px;
+          flex-shrink: 0;
+          font-style: normal;
+          color: #535353; }
+        .products__list .tr-item .inner .td-9 {
+          position: static; }
+      .products__list .tr-item .inner .btn-cart {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        height: 38px;
+        width: 38px; }
+        .products__list .tr-item .inner .btn-cart .icon {
+          transform: scale(0.7); } }
+  @media (max-width: 1199px) {
+    .products__list .tr-item .td {
+      margin-top: 0;
+      margin-bottom: 0; } }
 
 #quickorderModal .modal-header {
   padding-bottom: 1rem; }
