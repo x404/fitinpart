@@ -774,7 +774,13 @@ button{
 			}
 		}
 	}
-
+// .dropdown:hover > .dropdown-menu {
+//     display: block;
+// }
+// .dropdown > .dropdown-toggle:active {
+//     /*Without this, clicking will make it sticky*/
+//     pointer-events: none;
+// }
 	.login{
 		align-items: center;
 		display: flex;
@@ -791,6 +797,44 @@ button{
 			&:hover{
 				color: $color6;
 				text-decoration: none;
+			}
+		}
+
+		.cust{
+			@extend .flex-center;
+			background-color: $color10;
+			border-radius: 3rem;
+			color: #fff;
+			height: 3rem;
+			margin-left: 2.5rem;
+			padding-left: 1.5rem;
+			padding-right: 2rem;
+		}
+
+		.dropdown-menu{
+			// display: block !important;
+			border-radius: .5rem;
+			padding: 1.2rem 0;
+			width: 21rem;
+			a{
+				align-items: center;
+				color: #393939;
+				display: flex;
+				padding: 5px 1.4rem;
+				&:hover{
+					background-color: $color9;
+					color: $color2;
+					.icon{
+						filter: invert(1) brightness(5);
+					}
+				}
+			}
+			.icon-wrapper{
+				width: 34px;
+			}
+			.icon{
+				margin-left: auto;
+				margin-right: auto;
 			}
 		}
 	}

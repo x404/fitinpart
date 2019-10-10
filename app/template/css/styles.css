@@ -3929,7 +3929,7 @@ strong,
 .submit {
   cursor: pointer; }
 
-.flex-center, .btn-middle, .btn-google, .btn-facebook, .btn-circle, .compare__count, .shop-cart__count, .littlecart .cart-body .btn-checkout, .littlecart .cart-body .btn-check, .searchbox__panel .checkbox__text:after, .searchbox .subtab-link,
+.flex-center, .btn-middle, .btn-google, .btn-facebook, .btn-circle, .top .login .cust, .compare__count, .shop-cart__count, .littlecart .cart-body .btn-checkout, .littlecart .cart-body .btn-check, .searchbox__panel .checkbox__text:after, .searchbox .subtab-link,
 .smartsearch .subtab-link, .catalog a,
 .header .catalog__menu a, .reviews .btn-show, .checkbox__text:after, .aboutus-page .brands__item, .btn-cart, .products__list .item-products__pic, .products__list .item-products .btn-tooltip, .products__list .item-products .labels .label, #addtocardModal1 .modal-footer .btn, .comparison__column .btn-del, .myaccount aside ul li .icon-wrapper, .myaccount .plate-cars a, .myaccount .plate-items a {
   display: flex;
@@ -3969,18 +3969,18 @@ strong,
     padding-left: 64px; }
     .icon-9dotted:before {
       background-image: url(../images/sprite.png);
-      background-position: -162px -56px;
+      background-position: -162px -110px;
       width: 18px;
       height: 18px; }
   .icon-littlecart {
     background-image: url(../images/sprite.png);
-    background-position: -49px -129px;
+    background-position: -22px -129px;
     width: 27px;
     height: 24px;
     transition: filter .3s; }
   .icon-cartblue {
     background-image: url(../images/sprite.png);
-    background-position: -22px -129px;
+    background-position: -49px -129px;
     width: 27px;
     height: 24px;
     margin-right: 9px;
@@ -4001,12 +4001,12 @@ strong,
     margin-right: 9px; }
   .icon-arrow-left-gray {
     background-image: url(../images/sprite.png);
-    background-position: -82px -159px;
+    background-position: -62px -55px;
     width: 12px;
     height: 10px; }
   .icon-slider-arrow:before {
     background-image: url(../images/sprite.png);
-    background-position: -62px -43px;
+    background-position: -205px -91px;
     width: 12px;
     height: 21px;
     left: 50%;
@@ -4015,17 +4015,17 @@ strong,
     top: 50%; }
   .icon-slider-arrow-gray {
     background-image: url(../images/sprite.png);
-    background-position: -89px -72px;
+    background-position: -205px -70px;
     width: 12px;
     height: 21px; }
   .icon-slider-arrow-blue {
     background-image: url(../images/sprite.png);
-    background-position: -205px 0px;
+    background-position: -128px -159px;
     width: 8px;
     height: 13px; }
   .icon-camera {
     background-image: url(../images/sprite.png);
-    background-position: -162px -74px;
+    background-position: -54px -159px;
     width: 20px;
     height: 16px;
     margin: 0 auto; }
@@ -4049,13 +4049,13 @@ strong,
   .icon-tel-gray {
     display: block;
     background-image: url(../images/sprite.png);
-    background-position: -183px -156px;
+    background-position: -183px -136px;
     width: 16px;
     height: 25px; }
   .icon-fax-gray {
     display: block;
     background-image: url(../images/sprite.png);
-    background-position: -28px -102px;
+    background-position: -135px 0px;
     width: 27px;
     height: 27px; }
   .icon-clock-gray {
@@ -4067,7 +4067,7 @@ strong,
   .icon-online-gray {
     display: block;
     background-image: url(../images/sprite.png);
-    background-position: -74px 0px;
+    background-position: -74px -30px;
     width: 30px;
     height: 30px; }
   .icon-search {
@@ -4080,18 +4080,18 @@ strong,
     margin-right: auto; }
   .icon-search-middle {
     background-image: url(../images/sprite.png);
-    background-position: -162px -90px;
+    background-position: 0px -182px;
     width: 17px;
     height: 17px;
     display: block; }
   .icon-search-big {
     background-image: url(../images/sprite.png);
-    background-position: -135px -27px;
+    background-position: -28px -102px;
     width: 27px;
     height: 27px; }
   .icon-zoom {
     background-image: url(../images/sprite.png);
-    background-position: -122px -89px;
+    background-position: -205px -176px;
     width: 13px;
     height: 13px;
     display: block; }
@@ -4103,18 +4103,18 @@ strong,
     display: block; }
   .icon-arrow-down-gray {
     background-image: url(../images/sprite.png);
-    background-position: -11px -182px;
+    background-position: -133px -129px;
     width: 10px;
     height: 12px;
     display: block; }
   .icon-tofav {
     background-image: url(../images/sprite.png);
-    background-position: -109px -102px;
+    background-position: 0px -159px;
     width: 26px;
     height: 23px; }
   .icon-infav {
     background-image: url(../images/sprite.png);
-    background-position: 0px -159px;
+    background-position: -109px -102px;
     width: 26px;
     height: 23px; }
   .icon-letter {
@@ -4124,32 +4124,32 @@ strong,
     height: 14px; }
   .icon-badge-1-white {
     background-image: url(../images/sprite.png);
-    background-position: -86px -60px;
+    background-position: -43px -31px;
     width: 12px;
     height: 12px; }
   .icon-badge-2-white {
     background-image: url(../images/sprite.png);
-    background-position: -56px -31px;
+    background-position: -55px -31px;
     width: 13px;
     height: 11px; }
   .icon-badge-3-white {
     background-image: url(../images/sprite.png);
-    background-position: -148px -129px;
+    background-position: -205px -162px;
     width: 14px;
     height: 14px; }
   .icon-badge-4-blue {
     background-image: url(../images/sprite.png);
-    background-position: -74px -60px;
+    background-position: -122px -89px;
     width: 12px;
     height: 12px; }
   .icon-badge-5-blue {
     background-image: url(../images/sprite.png);
-    background-position: -43px -31px;
+    background-position: -89px -72px;
     width: 13px;
     height: 11px; }
   .icon-good {
     background-image: url(../images/sprite.png);
-    background-position: -183px -136px;
+    background-position: -183px -161px;
     width: 20px;
     height: 20px; }
   .icon-bad {
@@ -4164,7 +4164,7 @@ strong,
     height: 43px; }
   .icon-list-blue {
     background-image: url(../images/sprite.png);
-    background-position: -104px 0px;
+    background-position: -58px -72px;
     width: 31px;
     height: 25px; }
   .icon-back-blue {
@@ -4253,7 +4253,7 @@ strong,
     position: relative; }
     .btn-view:before {
       background-image: url(../images/sprite.png);
-      background-position: 0px -182px;
+      background-position: -62px -43px;
       width: 11px;
       height: 12px;
       left: 10px;
@@ -4468,6 +4468,33 @@ button {
       .top .login__link:hover {
         color: #97feff;
         text-decoration: none; }
+    .top .login .cust {
+      background-color: #c91537;
+      border-radius: 3rem;
+      color: #fff;
+      height: 3rem;
+      margin-left: 2.5rem;
+      padding-left: 1.5rem;
+      padding-right: 2rem; }
+    .top .login .dropdown-menu {
+      border-radius: .5rem;
+      padding: 1.2rem 0;
+      width: 21rem; }
+      .top .login .dropdown-menu a {
+        align-items: center;
+        color: #393939;
+        display: flex;
+        padding: 5px 1.4rem; }
+        .top .login .dropdown-menu a:hover {
+          background-color: #0099ff;
+          color: #ffffff; }
+          .top .login .dropdown-menu a:hover .icon {
+            filter: invert(1) brightness(5); }
+      .top .login .dropdown-menu .icon-wrapper {
+        width: 34px; }
+      .top .login .dropdown-menu .icon {
+        margin-left: auto;
+        margin-right: auto; }
 
 .top .country .title,
 .modal-menu .country .title {
@@ -6831,7 +6858,7 @@ input.form-control.error {
           position: relative; }
           .breadcrumbs ul li.B_homecrumb a:before {
             background-image: url(../images/sprite.png);
-            background-position: -162px -140px;
+            background-position: -162px -145px;
             width: 17px;
             height: 14px;
             left: 0;
@@ -8003,13 +8030,13 @@ aside .filter .slider {
       padding: 0; }
       .products__list .item-products .btn-fav-in {
         background-image: url(../images/sprite.png);
-        background-position: 0px -159px;
+        background-position: -109px -102px;
         width: 26px;
         height: 23px; }
     .products__list .item-products .to-fav,
     .products__list .item-products .to-fav-noauth {
       background-image: url(../images/sprite.png);
-      background-position: -109px -102px;
+      background-position: 0px -159px;
       width: 26px;
       height: 23px; }
     .products__list .item-products .btn-tooltip {
@@ -8393,7 +8420,7 @@ aside .filter .slider {
   transition: background-color .3s; }
   #notifyModal .settings-link:before {
     background-image: url(../images/sprite.png);
-    background-position: -133px -129px;
+    background-position: -205px -148px;
     width: 15px;
     height: 14px;
     left: 7px;
@@ -9337,13 +9364,13 @@ aside .filter .slider {
 
 .icon-vehicle {
   background-image: url(../images/sprite.png);
-  background-position: -135px 0px;
+  background-position: -82px -102px;
   width: 27px;
   height: 27px; }
 
 .icon-stock {
   background-image: url(../images/sprite.png);
-  background-position: -82px -102px;
+  background-position: -135px -27px;
   width: 27px;
   height: 27px; }
 
@@ -9361,7 +9388,7 @@ aside .filter .slider {
 
 .icon-orders {
   background-image: url(../images/sprite.png);
-  background-position: -58px -72px;
+  background-position: -104px 0px;
   width: 31px;
   height: 25px; }
 
@@ -9379,7 +9406,7 @@ aside .filter .slider {
 
 .icon-transactions {
   background-image: url(../images/sprite.png);
-  background-position: -74px -30px;
+  background-position: -74px 0px;
   width: 30px;
   height: 30px; }
 
@@ -9395,27 +9422,99 @@ aside .filter .slider {
   width: 31px;
   height: 25px; }
 
-.icon-key {
+.icon-myaccount-sm {
   background-image: url(../images/sprite.png);
-  background-position: -183px -25px;
-  width: 22px;
-  height: 22px; }
+  background-position: -162px -73px;
+  width: 18px;
+  height: 19px; }
 
-.icon-pencil {
+.icon-garage-sm {
+  background-image: url(../images/sprite.png);
+  background-position: -74px -60px;
+  width: 20px;
+  height: 11px; }
+
+.icon-vehicle-sm {
+  background-image: url(../images/sprite.png);
+  background-position: -205px -18px;
+  width: 16px;
+  height: 17px; }
+
+.icon-stock-sm {
+  background-image: url(../images/sprite.png);
+  background-position: -205px -35px;
+  width: 16px;
+  height: 17px; }
+
+.icon-addressbook-sm {
+  background-image: url(../images/sprite.png);
+  background-position: -205px -130px;
+  width: 13px;
+  height: 18px; }
+
+.icon-wishlist-sm {
+  background-image: url(../images/sprite.png);
+  background-position: -74px -159px;
+  width: 18px;
+  height: 16px; }
+
+.icon-orders-sm {
+  background-image: url(../images/sprite.png);
+  background-position: -110px -159px;
+  width: 18px;
+  height: 15px; }
+
+.icon-itemorders-sm {
+  background-image: url(../images/sprite.png);
+  background-position: -162px -128px;
+  width: 19px;
+  height: 17px; }
+
+.icon-reward-sm {
+  background-image: url(../images/sprite.png);
+  background-position: -205px -112px;
+  width: 13px;
+  height: 18px; }
+
+.icon-transactions-sm {
+  background-image: url(../images/sprite.png);
+  background-position: -162px -92px;
+  width: 18px;
+  height: 18px; }
+
+.icon-notifications-sm {
+  background-image: url(../images/sprite.png);
+  background-position: -205px 0px;
+  width: 16px;
+  height: 18px; }
+
+.icon-logout-sm {
+  background-image: url(../images/sprite.png);
+  background-position: -162px -56px;
+  width: 21px;
+  height: 17px; }
+
+.icon-key {
   background-image: url(../images/sprite.png);
   background-position: -183px -47px;
   width: 22px;
   height: 22px; }
 
+.icon-pencil {
+  background-image: url(../images/sprite.png);
+  background-position: -183px -25px;
+  width: 22px;
+  height: 22px; }
+
 .icon-3line {
   background-image: url(../images/sprite.png);
-  background-position: -68px -159px;
+  background-position: -89px -83px;
   width: 14px;
   height: 10px; }
 
 .icon-3lineblue {
   background-image: url(../images/sprite.png);
-  background-position: -54px -159px;
+  background-position: -205px -189px;
   width: 14px;
   height: 10px; }
 
@@ -9427,13 +9526,13 @@ aside .filter .slider {
 
 .icon-arrow-middle-right {
   background-image: url(../images/sprite.png);
-  background-position: -162px -107px;
+  background-position: -92px -159px;
   width: 18px;
   height: 15px; }
 
 .icon-arrow-middle-down {
   background-image: url(../images/sprite.png);
-  background-position: -162px -122px;
+  background-position: -205px -52px;
   width: 15px;
   height: 18px; }
 
