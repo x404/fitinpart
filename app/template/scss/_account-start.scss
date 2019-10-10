@@ -11,6 +11,22 @@
 	&-transactions{@include sprite($icon-a-transactions);	}
 	&-notifications{@include sprite($icon-a-notifications);	}
 	&-logout{@include sprite($icon-logout);	}
+
+
+	&-myaccount-sm{@include sprite($icon-a-myaccount-sm);	}
+	&-garage-sm{@include sprite($icon-a-garage-sm);	}
+	&-vehicle-sm{@include sprite($icon-a-vehicle-sm);	}
+	&-stock-sm{@include sprite($icon-a-stock-sm);	}
+	&-addressbook-sm{@include sprite($icon-a-addressbook-sm);	}
+	&-wishlist-sm{@include sprite($icon-a-wishlist-sm);	}
+	&-orders-sm{@include sprite($icon-a-orders-sm);	}
+	&-itemorders-sm{@include sprite($icon-a-itemorders-sm);	}
+	&-reward-sm{@include sprite($icon-a-reward-sm);	}
+	&-transactions-sm{@include sprite($icon-a-transactions-sm);	}
+	&-notifications-sm{@include sprite($icon-a-notifications-sm);	}
+	&-logout-sm{@include sprite($icon-a-logout-sm);	}
+
+
 	&-key{@include sprite($icon-key);	}
 	&-pencil{@include sprite($icon-pencil);	}
 	&-3line{@include sprite($icon-3line);}
