@@ -9772,6 +9772,10 @@ aside .filter .slider {
       margin-bottom: 1rem;
       padding-left: 2rem; } }
 
+@media (max-width: 950px) {
+  .myaccount .ordersstat .btn {
+    display: none !important; } }
+
 @media (max-width: 850px) {
   .myaccount .ordersstat__cell {
     width: 33%; } }
@@ -9856,11 +9860,14 @@ aside .filter .slider {
         filter: none; }
   @media (max-width: 1199px) {
     .latest-orders {
-      padding-top: 2.5rem; }
+      padding: 2.5rem 2.5rem 0; }
       .latest-orders header {
         font-size: 2.2rem; }
         .latest-orders header .title {
           font-size: 2.2rem; } }
+  @media (max-width: 950px) {
+    .latest-orders {
+      margin-top: 3rem; } }
 
 .orders__list {
   background-color: #fff;
@@ -10014,11 +10021,11 @@ aside .filter .slider {
     .orders__list .orderinfo .cell {
       line-height: 1.2;
       font-size: 1.5rem;
-      margin-right: 6.5rem; }
+      padding-right: 6.5rem; }
       .orders__list .orderinfo .cell strong {
         color: #383b43; }
       .orders__list .orderinfo .cell:last-child {
-        margin-right: 0; }
+        padding-right: 0; }
       .orders__list .orderinfo .cell-1 {
         flex-grow: 2; }
       .orders__list .orderinfo .cell-2, .orders__list .orderinfo .cell-3 {
@@ -10044,8 +10051,9 @@ aside .filter .slider {
       line-height: 1.8;
       margin-right: 6rem;
       text-align: right; }
-      .orders__list .order-total .left > div {
-        margin: .5rem 0 1rem; }
+    .orders__list .order-total .str {
+      line-height: 1.5;
+      margin: .5rem 0 1rem; }
     .orders__list .order-total .right {
       color: #c91537;
       font-size: 2.2rem;
@@ -10080,7 +10088,7 @@ aside .filter .slider {
     .orders__list .tracking__status {
       margin-right: 3rem; }
     .orders__list .orderinfo .cell {
-      margin-right: 3rem; }
+      padding-right: 3rem; }
     .orders__list .order-total {
       display: block !important; }
       .orders__list .order-total .left {
@@ -10110,6 +10118,10 @@ aside .filter .slider {
       font-size: 2rem; }
     .orders__list .orderinfo .cell {
       font-size: 1.4rem; }
+      .orders__list .orderinfo .cell-1 {
+        margin-bottom: 2rem; }
+      .orders__list .orderinfo .cell-2, .orders__list .orderinfo .cell-3 {
+        width: calc(50% - 15px); }
     .orders__list .subtitle {
       font-size: 1.6rem; }
     .orders__list table td {
@@ -10117,16 +10129,14 @@ aside .filter .slider {
     .orders__list .tr-head {
       display: none; }
     .orders__list .tr .td {
-      padding-left: 2rem;
+      padding-left: 1rem;
       padding-right: 0.2rem; }
     .orders__list .tr-item .inner {
       flex-wrap: wrap;
-      padding-right: 10rem;
+      padding-right: 9rem;
       padding-bottom: 1.5rem;
       padding-top: 1rem;
       position: relative; }
-      .orders__list .tr-item .inner .td:before {
-        font-size: 1.4rem; }
     .orders__list .tr-item .td {
       flex-shrink: 0;
       margin-bottom: 2px;
@@ -10157,6 +10167,48 @@ aside .filter .slider {
         position: absolute;
         right: 0;
         top: 50%; } }
+  @media (max-width: 991px) {
+    .orders__list .order-total .str {
+      margin: 0; }
+    .orders__list .order-total .order-piece-title, .orders__list .order-total .order-piece-sum {
+      display: inline; }
+    .orders__list .order-total .right {
+      margin-top: 1rem; } }
+  @media (max-width: 900px) {
+    .orders__list .tr .td-1 {
+      width: 20%; }
+    .orders__list .tr .td-2 {
+      width: 80%; }
+    .orders__list .tr .td-3 {
+      width: 20%; }
+    .orders__list .tr .td-4 {
+      width: 30%; }
+    .orders__list .tr .td-5 {
+      width: 25%; }
+    .orders__list .tr .td-6 {
+      width: 75%; }
+    .orders__list .tr .td-7 {
+      width: 25%; } }
+  @media (max-width: 768px) {
+    .orders__list .tr .td-1 {
+      width: 15%; }
+    .orders__list .tr .td-2 {
+      width: 22%; }
+    .orders__list .tr .td-3 {
+      width: 17%; }
+    .orders__list .tr .td-4 {
+      width: 21%; }
+    .orders__list .tr .td-5 {
+      width: 25%; }
+    .orders__list .tr .td-6 {
+      width: 75%; }
+    .orders__list .tr .td-7 {
+      width: 25%; }
+    .orders__list .order-total .right {
+      margin-top: 0;
+      line-height: 1.5; }
+    .orders__list .moreinfo {
+      padding-bottom: 1rem; } }
 
 .products__list {
   margin-left: 3rem;
@@ -10224,13 +10276,14 @@ aside .filter .slider {
         width: 100%;
         padding: 0; }
         .products__list .tr-item .inner .td:before {
-          display: block;
+          color: #535353;
           content: attr(data-title);
-          font-weight: bold;
-          width: 140px;
+          display: block;
+          font-size: 1.4rem;
           flex-shrink: 0;
           font-style: normal;
-          color: #535353; }
+          font-weight: bold;
+          width: 140px; }
         .products__list .tr-item .inner .td-9 {
           position: static; }
       .products__list .tr-item .inner .btn-cart {
