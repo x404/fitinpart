@@ -512,6 +512,11 @@ $(document).ready(function(){
 
 	$('.slider_controls .param_control').ForceNumericOnly();
 
+
+	$('.orders__list .view, .orders__list .tracknum').click(function(e){
+		e.preventDefault();
+		$(this).closest('.tr-item').toggleClass('showfull')
+	});
 });
 
 

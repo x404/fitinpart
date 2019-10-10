@@ -9957,26 +9957,23 @@ aside .filter .slider {
       padding-right: 1rem;
       flex-shrink: 0; }
       .orders__list .tr .td-1 {
-        width: 11.5rem;
-        width: 9.4%; }
+        width: 10.5%; }
       .orders__list .tr .td-2 {
-        width: 12.5rem;
         width: 10.2%; }
       .orders__list .tr .td-3 {
-        width: 12.5rem;
         width: 10.2%; }
       .orders__list .tr .td-4 {
-        width: 14rem;
         width: 11.5%; }
       .orders__list .tr .td-5 {
-        width: 19.5rem;
         width: 15.2%; }
       .orders__list .tr .td-6 {
-        width: 21rem;
         width: 17.2%; }
       .orders__list .tr .td-7 {
-        width: 15rem;
         width: 12.3%; }
+      .orders__list .tr .td-printview {
+        flex-grow: 1;
+        justify-content: flex-end;
+        align-items: center; }
     .orders__list .tr-item {
       display: block;
       border-bottom: 2px solid #eaecf0;
@@ -10019,11 +10016,23 @@ aside .filter .slider {
         filter: grayscale(1); }
       .orders__list .tr-item .view {
         filter: brightness(0.7);
-        margin-left: 2rem; }
+        margin-left: 2rem;
+        width: 28px;
+        height: 23px;
+        background: url(../images/view.png) no-repeat center; }
+        .orders__list .tr-item .view img {
+          display: none; }
+    .orders__list .tr.showfull .moreinfo {
+      max-height: 1500px; }
+    .orders__list .tr.showfull .view {
+      background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAANCAYAAABGkiVgAAABH0lEQVQ4T2NkIAKsYghllhN/ZPropdzpMIbVfwlpYSSk4IygMf9fFpanQHXcQPyV+c8faZP3Zz/i00fQ0BOi5muBioJghvxnYFhn8fpkMNmGnhS1mMPA8D8Z0wDGueavT6TgMhinS7EYeAdoiArCINwGYzUU6OX5QIkEJC8v4Hn9Of2LKO9MdHFgUCSiuxjDUGwGPnotlwKKdXAqEH00h5DBKIbiMxDmGmIMhhtKjIHEGgw2FD1SgMlmAczLuGIYm4sZGCCRx3hM3FKX+d+/S8iRQshAfC7+y8SkxwjNMVeBCqUZGRlmPXgll0VMVkQ2WEHs0bT//xnSgGJPgTlOG+z9KwxabD8EOSWA2e8RoWyLSx7oODmO999f6DBc+wUAZXSUcM8qEZIAAAAASUVORK5CYII=") !important; }
   .orders__list .moreinfo {
     background-color: #eaecf0;
     color: #fff;
-    padding-bottom: 2rem; }
+    padding-bottom: 2rem;
+    max-height: 0;
+    overflow: hidden;
+    transition: .6s; }
   .orders__list .tracking {
     background-color: #778d9b;
     padding: 2.5rem 3rem 0; }
