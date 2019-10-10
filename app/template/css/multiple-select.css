@@ -211,7 +211,8 @@ p.pink-color {
     height: 20px;
     left: 20px;
     top: 5px;
-    width: 20px; }
+    width: 20px;
+    border: none; }
   .ms-drop ul > li.hide-radio.selected:before, .ms-drop ul > li.multiple.selected:before {
     background-color: #0672ba; }
 
