@@ -376,6 +376,15 @@ em strong
 	&-clock-blue{@include sprite($icon-clock-blue)}
 	&-list-blue{@include sprite($icon-list-blue)}
 	&-back-blue{@include sprite($icon-back-blue)}
+
+
+	&-ok{
+		@include sprite($icon-ok)
+	}
+
+	&-arrowleft{
+		@include sprite($icon-arrowleft)
+	}
 } 
 
 .w100{
@@ -455,6 +464,7 @@ em strong
 			}
 		}
 	}
+
 
 	&-blue{
 		background-color: $color3;
@@ -636,6 +646,21 @@ em strong
 		padding-left: 20px;
 		padding-right: 2rem;
 		position: relative;
+	}
+
+	&-save{
+		align-items: center;
+		border-radius: 4rem;
+		display: flex;
+		font-size: 1.5rem;
+		font-weight: 700;
+		height: 4rem;
+		margin-top: 2rem;
+		padding-left: 1.3rem;
+		padding-right: 2.6rem;
+		.icon{
+			margin-right: 11px;
+		}
 	}
 
 }
