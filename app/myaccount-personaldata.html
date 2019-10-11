@@ -9,7 +9,7 @@
 <meta name="format-detection" content="telephone=no">
 <meta name="robots" content="noindex,nofollow" />
 
-<link rel="apple-touch-icon" sizes="180x  180" href="/the_favicon/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/the_favicon/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/the_favicon/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/the_favicon/favicon-16x16.png">
 <link rel="manifest" href="/the_favicon/site.webmanifest">
@@ -1373,10 +1373,12 @@
 			<div class="myaccount">
 
 				<div class="head d-flex justify-content-between">
-					<h1>My Account</h1>
+					<div class="left">
+						<h1>My Account</h1>
+						<a href="myaccount-start.html" class="btn btn-back btn-darkgray"><i class="icon icon-arrowleft"></i>Back</a>
+					</div>
 
 					<div class="right">
-						<a href="myaccount-start.html" class="btn btn-back btn-darkgray"><i class="icon icon-arrowleft"></i>Back</a>
 						<a href="#" class="logout d-flex align-items-center"><i class="icon icon-logout"></i>Logout</a>
 					</div>
 				</div>
@@ -1582,7 +1584,7 @@
 					<!-- =/aside -->
 					<div class="content">
 						<div class="row">
-							<div class="col-lg-5">
+							<div class="col-sm-5">
 								<div class="region">
 									<form action="#" method="post">
 										<fieldset>
@@ -1598,7 +1600,7 @@
 											<input name="email" id="your-email" type="email" class="form-control" value="" />
 
 											<label for="your-tel">Telephone*</label>
-											<input name="tel" id="tel" type="tel" class="form-control" value="" />
+											<input name="tel" id="your-tel" type="tel" class="form-control" value="" />
 
 											<label for="your-fax">Fax</label>
 											<input name="fax" id="your-fax" type="text" class="form-control" value="" />
@@ -1608,20 +1610,20 @@
 
 											<button type="submit" class="btn btn-save btn-blue btn-blue-lighten-hover"><i class="icon icon-ok"></i>Save</button>
 										</fieldset>
-									</form>									
+									</form>
 								</div>
 							</div>
-							<div class="col-lg-5">
+							<div class="col-sm-5">
 								<div class="region">
 									<form action="#" method="post">
 										<fieldset>
 											<p class="subtitle">Change Your Password</p>
 											
 											<label for="psw">Password <span class="asterisk">*</span></label>
-											<input type="password" name="psw" value="" class="form-control" />
+											<input type="password" id="psw" name="psw" value="" class="form-control" />
 											
-											<label for="psw">Password Confirm <span class="asterisk">*</span></label>
-											<input type="password" name="confirm-psw" value="" class="form-control" />
+											<label for="confirm-psw">Password Confirm <span class="asterisk">*</span></label>
+											<input type="password" id="confirm-psw" name="confirm-psw" value="" class="form-control" />
 
 											<button type="submit" class="btn btn-save btn-blue btn-blue-lighten-hover"><i class="icon icon-ok"></i>Save</button>
 										</fieldset>
@@ -1678,7 +1680,8 @@
 											</div>
 											
 											<button type="submit" class="btn btn-save btn-blue btn-blue-lighten-hover"><i class="icon icon-ok"></i>Save</button>
-										</fieldset>															
+										</fieldset>	
+									</form>
 								</div>
 							</div>
 						</div>
@@ -2939,14 +2942,6 @@
 				mobordersstatmenu.update();
 			}
 		});
-
-		mobordersstatmenu = new PerfectScrollbar('.mob-ordersstatmenu .listwrapper', {
-			wheelPropagation: true,
-			minScrollbarLength: 35,
-			maxScrollbarLength: 65,
-		});
-		mobordersstatmenu.update();
-
 	});
 </script>
 <!-- InstanceEndEditable -->
