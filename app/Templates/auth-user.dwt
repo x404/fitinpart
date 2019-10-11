@@ -2703,14 +2703,6 @@
 <!-- TemplateBeginEditable name="EditRegion4" -->
 <script>
 	$(document).ready(function(){
-		$("#accountmenu").multipleSelect({
-			single: true,
-			filter: false,
-			onClick: function(view) {
-				url = view.value;
-				window.location.href = url;
-			}
-		});
 		$("#ordersstatmenu").multipleSelect({
 			single: true,
 			filter: false,

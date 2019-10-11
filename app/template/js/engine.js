@@ -15,7 +15,7 @@ function toggleDropdown (e) {
 $('body')
   .on('mouseenter mouseleave','.dropdown',toggleDropdown)
   .on('click', '.dropdown-menu a', toggleDropdown);
-  
+
 
 	$.fn.ForceNumericOnly =
 	function(){
@@ -643,6 +643,11 @@ $(document).on('click','.btn-fav-in', function(e){
 });
 
 
+
+// user menu
+$(document).on('click','.btn-accountmenu', function(e){
+	$(this).toggleClass('open').next().slideToggle()
+})
 
 
 // popup on homepage

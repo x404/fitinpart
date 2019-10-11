@@ -1380,33 +1380,100 @@
 
 				<!-- =mobile account menu -->
 				<div class="mob-accountmenu d-md-none">
-					<select name="accountmenu" id="accountmenu" multiple="multiple">
-						<option value="/myaccount-start.html" selected="selected">My Account</option>
-						<option value="http://google.com">Garage</option>
-						<option value="">Vehicle requests</option>
-						<option value="">Stock requests</option>
-						<option value="">Address Books</option>
-						<option value="/wishlist.html">Wish List</option>
-						<option value="/history.html">Order History</option>
-						<option value="">Item order history</option>
-						<option value="">Reward Points</option>
-						<option value="">Transactions</option>
-						<option value="">Notification Settings</option>
-					</select>
+					<button type="button" class="btn-accountmenu">My Account</button>
+					<div class="menu">
+						<ul>
+							<li class="current">
+								<span>	
+									<i class="icon-wrapper">
+										<i class="icon icon-myaccount"></i>
+									</i>
+									My Account
+								</span>
+							</li>
+							<li>
+								<a href="#" title="">
+									<i class="icon-wrapper">
+										<i class="icon icon-garage"></i>
+									</i>
+									Garage
+								</a>
+							</li>
+							<li>
+								<a href="#" title="">
+									<i class="icon-wrapper">
+										<i class="icon icon-vehicle"></i>
+									</i>
+									Vehicle requests
+								</a>
+							</li>
+							<li>
+								<a href="#" title="">
+									<i class="icon-wrapper">
+										<i class="icon icon-stock"></i>
+									</i>
+									Stock requests
+								</a>
+							</li>
+							<li>
+								<a href="#" title="">
+									<i class="icon-wrapper">
+										<i class="icon icon-addressbook"></i>
+									</i>
+									Address Books
+								</a>
+							</li>
+							<li>
+								<a href="#" title="">
+									<i class="icon-wrapper">
+										<i class="icon icon-wishlist"></i>
+									</i>
+									Wish List
+								</a>
+							</li>
+							<li>
+								<a href="#" title="">
+									<i class="icon-wrapper">
+										<i class="icon icon-orders"></i>
+									</i>
+									Order History
+								</a>
+							</li>
+							<li>
+								<a href="#" title="">
+									<i class="icon-wrapper">
+										<i class="icon icon-itemorders"></i>
+									</i>
+									Item order history
+								</a>
+							</li>
+							<li>
+								<a href="#" title="">
+									<i class="icon-wrapper">
+										<i class="icon icon-reward"></i>
+									</i>
+									Reward Points
+								</a>
+							</li>
+							<li>
+								<a href="#" title="">
+									<i class="icon-wrapper">
+										<i class="icon icon-transactions"></i>
+									</i>
+									Transactions
+								</a>
+							</li>
+							<li>
+								<a href="#" title="">
+									<i class="icon-wrapper">
+										<i class="icon icon-notifications"></i>
+									</i>
+									Notification Settings
+								</a>
+							</li>
+						 </ul>
+					</div>
 				</div>
-
-				<script>
-					$(document).ready(function(){
-						$("#accountmenu").multipleSelect({
-							single: true,
-							filter: false,
-							onClick: function(view) {
-								url = view.value;
-								window.location.href = url;
-							}
-						});
-					})
-				</script>
 				<!-- =/mobile account menu -->
 
 
@@ -1605,20 +1672,7 @@
 								<option value="http://#3">Canceled (2)</option>
 							</select>
 						</div>
-						<script>
-							$(document).ready(function(){
-								$("#ordersstatmenu").multipleSelect({
-									single: true,
-									filter: false,
-									onClick: function(view) {
-										url = view.value;
-										window.location.href = url;
-									}
-								});
-							})
-						</script>							
-
-
+		
 						<div class="ordersstat d-flex">
 							 <div class="ordersstat__cell">
 							 	 <a href="#" title="">
@@ -5910,9 +5964,17 @@
 <script src="/template/js/search-moto.js"></script>
 <script src="/template/js/search-hd.js"></script>
 <!-- InstanceBeginEditable name="EditRegion4" -->
-
 <script>
-	
+	$(document).ready(function(){
+		$("#ordersstatmenu").multipleSelect({
+			single: true,
+			filter: false,
+			onClick: function(view) {
+				url = view.value;
+				window.location.href = url;
+			}
+		});
+	});
 </script>
 <!-- InstanceEndEditable -->
 </body>

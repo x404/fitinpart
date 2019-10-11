@@ -3899,7 +3899,7 @@ h3 {
 
 .neosans, .top__tel, .header .catalog-btn, .littlecart .cart-body .title, .littlecart .cart-body .cart-products .item-title, .littlecart .cart-body .cart-products .price, .search .vehicle-search .ms-parent .ms-drop:before, .main h1, .main .title, .searchbox__title, #homeslider .title, .visual__item, .homepage .advantages, .reviews header h1, .review-card__title, .homepage .about .subtitle, .modal-title, #loginModal .subtitle,
 #registerModal .subtitle, .modal-info .title, .smartsearch__header, .smartsearch__header .ms-choice, .main h2, .main h3, .main h4, .main h5, .main h6, .content blockquote, .lastnews .item-news__title,
-.news__list .item-news__title, .aboutus-page .intro__title, .aboutus-page .about__title, .aboutus-page .quote, .aboutus-page .advantages, .aboutus-page .item-products__title, .aboutus-page .brands__text, .title-md, aside .widget-title, .sortbox .sort-label, .item-products__title, .products__list .item-products .btn-tooltip, .products__list .item-products .tooltip-title, .modal-v2 .box__title, #addtocardModal1 .product-title, #addtocardModal1 .count-price .price, .comparison__body .product-title, .wiper-search .intro, .wiper-search .steps, .perfomance-page .intro .subtitle, .perfomance-page .list-title, .table-title, .logout, .myaccount aside ul, .myaccount aside .tel, .myaccount .plate__title, .myaccount .plate .statistic__field, .myaccount .ordersstat .num, .mob-accountmenu .ms-choice, .latest-orders header, .orders__list .tracking__title, .orders__list .orderinfo .print, .orders__list .orderinfo__title, .orders__list .subtitle, #quickorderModal .modal-body h2, #quickorderModal .modal-body ol li:before, .mob-header .btn-menu, .mob-header .tel {
+.news__list .item-news__title, .aboutus-page .intro__title, .aboutus-page .about__title, .aboutus-page .quote, .aboutus-page .advantages, .aboutus-page .item-products__title, .aboutus-page .brands__text, .title-md, aside .widget-title, .sortbox .sort-label, .item-products__title, .products__list .item-products .btn-tooltip, .products__list .item-products .tooltip-title, .modal-v2 .box__title, #addtocardModal1 .product-title, #addtocardModal1 .count-price .price, .comparison__body .product-title, .wiper-search .intro, .wiper-search .steps, .perfomance-page .intro .subtitle, .perfomance-page .list-title, .table-title, .logout, .myaccount aside ul, .myaccount aside .tel, .myaccount .plate__title, .myaccount .plate .statistic__field, .myaccount .ordersstat .num, .mob-accountmenu .btn-accountmenu, .mob-accountmenu .menu, .latest-orders header, .orders__list .tracking__title, .orders__list .orderinfo .print, .orders__list .orderinfo__title, .orders__list .subtitle, #quickorderModal .modal-body h2, #quickorderModal .modal-body ol li:before, .mob-header .btn-menu, .mob-header .tel {
   font-family: 'Neo Sans Pro', Verdana, sans-serif; }
 
 strong,
@@ -3918,7 +3918,7 @@ strong,
 
 .before, .icon:before, .btn-view:before, .btn-google:before, .btn-facebook:before, .top__left:before, .top__menu li.flexMenu-viewMore > a:after, .countmodule .minus:before, .countmodule .plus:before, .countmodule .plus:after, .search .vehicle-search-str .vehicle-search-item:after, .promo .wrapper:before, .visual__item:before, .modal-content-bg:before, .modal-content-bg:after, .modal-content-rbg:after, .modal-info:after, .modal-menu:before, .modal-menu .catalog:before, .breadcrumbs ul li.B_homecrumb a:before, .content ul li:before, .aboutus-page .intro__title:before, .aboutus-page .advantages__text:after, .aboutus-page .ouroffice__pic:after, #fitinpart-carousel a:after, #fitinpart-carousel a:before, .bl-line:after,
 .bc-line:after, .sortbox .param-sort:after, .products__list .item-products .additional__panel .item button:before, .label-tooltip:before,
-.tooltip-body:before, #notifyModal .settings-link:before, .wiper-search .intro__body:after, .wiper-search .intro__body:before, .wiper-search .details .label:before, .perfomance-page .intro__body:after, .perfomance-page .intro__body:before, .perfomance-page .subtitle:before, .content-location .days:not(:last-child):after, .orders__list .tracking__item:before, .orders__list .tracking__item:after {
+.tooltip-body:before, #notifyModal .settings-link:before, .wiper-search .intro__body:after, .wiper-search .intro__body:before, .wiper-search .details .label:before, .perfomance-page .intro__body:after, .perfomance-page .intro__body:before, .perfomance-page .subtitle:before, .content-location .days:not(:last-child):after, .mob-accountmenu .btn-accountmenu:before, .orders__list .tracking__item:before, .orders__list .tracking__item:after {
   content: "";
   display: block;
   position: absolute; }
@@ -9955,34 +9955,48 @@ aside .filter .slider {
 
 .mob-accountmenu {
   background-color: #fff;
-  margin-bottom: 20px;
-  padding: 15px 13px; }
-  .mob-accountmenu select {
-    height: 0;
-    visibility: hidden; }
-  .mob-accountmenu .ms-choice {
-    background-color: transparent;
+  margin-bottom: 20px; }
+  .mob-accountmenu .btn-accountmenu {
     color: #8f9fa7;
-    font-size: 20px;
-    font-weight: 700; }
-    .mob-accountmenu .ms-choice span {
-      padding-left: 42px; }
-    .mob-accountmenu .ms-choice > div {
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 15px 13px 15px 50px;
+    text-align: left;
+    width: 100%;
+    position: relative; }
+    .mob-accountmenu .btn-accountmenu:before {
+      background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAHCAYAAAA4R3wZAAAAcElEQVQoU2P8//+/EwMDwxwg7mBkZJwFpHECoNo0oGQFEKcwQjXuhapOx6UZqmkmVJ0zI4gBFMwEUtNwaUbTlAU0fDpYIz7N2DSB1MM1YtGcBTUT5hKwTTCLUDRi0QxTh6IJw0YkZ4NCrxHKr8cWYADdcjaGjxct/gAAAABJRU5ErkJggg==");
+      background-repeat: no-repeat;
+      background-position: center;
       background-color: #0a74bb;
-      width: 30px;
+      border-radius: 50%;
       height: 30px;
-      right: auto;
-      left: 0; }
-      .mob-accountmenu .ms-choice > div:before {
-        background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAHCAYAAAA4R3wZAAAAcElEQVQoU2P8//+/EwMDwxwg7mBkZJwFpHECoNo0oGQFEKcwQjXuhapOx6UZqmkmVJ0zI4gBFMwEUtNwaUbTlAU0fDpYIz7N2DSB1MM1YtGcBTUT5hKwTTCLUDRi0QxTh6IJw0YkZ4NCrxHKr8cWYADdcjaGjxct/gAAAABJRU5ErkJggg==");
-        background-position: left top;
-        height: 7px;
-        width: 14px;
-        margin-left: -7px; }
-    .mob-accountmenu .ms-choice:hover, .mob-accountmenu .ms-choice:focus {
-      box-shadow: none !important; }
-  .mob-accountmenu .ms-parent {
-    width: 100% !important; }
+      width: 30px;
+      left: 13px;
+      top: 15px;
+      transition: transform .3s; }
+    .mob-accountmenu .btn-accountmenu.open:before {
+      transform: rotate(180deg); }
+  .mob-accountmenu .menu {
+    font-size: 14px;
+    font-weight: 700;
+    padding-left: 10px;
+    padding-bottom: 10px; }
+    .mob-accountmenu .menu a {
+      color: #778d9b; }
+    .mob-accountmenu .menu a, .mob-accountmenu .menu span {
+      display: flex;
+      padding: 7px 0;
+      align-items: center; }
+    .mob-accountmenu .menu .current a .icon, .mob-accountmenu .menu .current span .icon {
+      filter: grayscale(1) brightness(0.2); }
+    .mob-accountmenu .menu .icon-wrapper {
+      display: flex;
+      justify-content: center;
+      width: 35px;
+      margin-right: 12px; }
+    .mob-accountmenu .menu .icon {
+      filter: grayscale(1) brightness(1); }
 
 .mob-ordersstatmenu {
   background-color: #fff;
@@ -10913,6 +10927,8 @@ aside .filter .slider {
     width: 100%; }
     .top__menu li {
       margin-right: 2.5rem; }
+  .login .dropdown-menu {
+    left: -100px; }
   .search {
     padding-left: .8rem; }
     .search .dropdown .ms-parent {
@@ -10973,7 +10989,10 @@ aside .filter .slider {
 @media (max-width: 940px) {
   .top,
   .header {
-    display: none; } }
+    display: none; }
+  .login .dropdown-menu {
+    left: -50px;
+    top: -15px; } }
 
 @media (max-width: 767px) {
   .main-grid {
