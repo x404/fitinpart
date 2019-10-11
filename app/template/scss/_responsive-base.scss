@@ -74,6 +74,13 @@
 				margin-right: 2.5rem;
 			}
 		}
+
+	}
+
+	.login{
+		.dropdown-menu{
+			left: -100px;
+		}
 	}
 
 	.search{
@@ -171,6 +178,13 @@
 	.top,
 	.header{
 		display: none;
+	}
+
+	.login{
+		.dropdown-menu{
+			left: -50px;
+			top: -15px;
+		}
 	}
 }
 
