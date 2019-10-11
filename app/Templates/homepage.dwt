@@ -24,8 +24,7 @@
 <!-- TemplateEndEditable -->
 <link rel="stylesheet" href="/template/css/styles.min.css" />
 <link rel="stylesheet" href="/template/css/multiple-select.css" />
-<script src="/template/js/jquery.slim.min.js"></script>
-<!-- <script src="/template/js/jquery-1.12.4.min.js"></script> -->
+<script src="/template/js/jquery.min.js"></script>
 <script src="/template/js/libs.min.js"></script>
 
 
