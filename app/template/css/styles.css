@@ -9846,6 +9846,18 @@ aside .filter .slider {
 .myaccount .mob-ordersstatmenu {
   display: none; }
 
+.myaccount .btn-more {
+  margin-top: 0; }
+  .myaccount .btn-more .icon {
+    filter: grayscale(1) brightness(0.5);
+    margin-right: 5px;
+    margin-top: -2px; }
+  .myaccount .btn-more:hover {
+    background-color: transparent;
+    color: #0099ff; }
+    .myaccount .btn-more:hover .icon {
+      filter: none; }
+
 @media (max-width: 1550px) {
   .myaccount .plate {
     padding-left: 2rem;
@@ -10070,17 +10082,9 @@ aside .filter .slider {
         margin-top: 2px;
         margin: 0 2rem;
         width: 2px; }
-  .latest-orders .btn-more {
-    margin-top: 0; }
-    .latest-orders .btn-more .icon {
-      filter: grayscale(1) brightness(0.5);
-      margin-right: 5px;
-      margin-top: -2px; }
-    .latest-orders .btn-more:hover {
-      background-color: transparent;
-      color: #0099ff; }
-      .latest-orders .btn-more:hover .icon {
-        filter: none; }
+  .latest-orders .orders__list .tr-item {
+    margin-bottom: 0;
+    border-bottom: 2px solid #eaecf0; }
   @media (max-width: 1199px) {
     .latest-orders {
       padding: 2.5rem 2.5rem 0; }
@@ -10109,7 +10113,6 @@ aside .filter .slider {
       margin: 0 8px !important; } }
 
 .orders__list {
-  background-color: #fff;
   color: #2b2b2b;
   margin-top: 2.2rem; }
   .orders__list .tr {
@@ -10117,6 +10120,7 @@ aside .filter .slider {
     display: flex;
     font-size: 1.5rem; }
     .orders__list .tr-head {
+      background-color: #fff;
       border-bottom: 5px solid #0672ba;
       font-size: 1.4rem;
       font-weight: 700;
@@ -10144,9 +10148,10 @@ aside .filter .slider {
         justify-content: flex-end;
         align-items: center; }
     .orders__list .tr-item {
+      background-color: #fff;
       display: block;
-      border-bottom: 2px solid #eaecf0;
-      transition: box-shadow .3s; }
+      transition: box-shadow .3s;
+      margin-bottom: 1.2rem; }
       .orders__list .tr-item:last-child {
         border-bottom: none; }
       .orders__list .tr-item:hover {
@@ -10192,13 +10197,13 @@ aside .filter .slider {
         .orders__list .tr-item .view img {
           display: none; }
     .orders__list .tr.showfull .moreinfo {
-      max-height: 1500px; }
+      max-height: 1500px;
+      padding-bottom: 2rem; }
     .orders__list .tr.showfull .view {
       background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAANCAYAAABGkiVgAAABH0lEQVQ4T2NkIAKsYghllhN/ZPropdzpMIbVfwlpYSSk4IygMf9fFpanQHXcQPyV+c8faZP3Zz/i00fQ0BOi5muBioJghvxnYFhn8fpkMNmGnhS1mMPA8D8Z0wDGueavT6TgMhinS7EYeAdoiArCINwGYzUU6OX5QIkEJC8v4Hn9Of2LKO9MdHFgUCSiuxjDUGwGPnotlwKKdXAqEH00h5DBKIbiMxDmGmIMhhtKjIHEGgw2FD1SgMlmAczLuGIYm4sZGCCRx3hM3FKX+d+/S8iRQshAfC7+y8SkxwjNMVeBCqUZGRlmPXgll0VMVkQ2WEHs0bT//xnSgGJPgTlOG+z9KwxabD8EOSWA2e8RoWyLSx7oODmO999f6DBc+wUAZXSUcM8qEZIAAAAASUVORK5CYII=") !important; }
   .orders__list .moreinfo {
     background-color: #eaecf0;
     color: #fff;
-    padding-bottom: 2rem;
     max-height: 0;
     overflow: hidden;
     transition: .6s; }
@@ -10416,6 +10421,7 @@ aside .filter .slider {
         width: 25%; }
       .orders__list .tr-item .td-printview {
         margin-top: -15px;
+        padding-right: 10px;
         position: absolute;
         right: 0;
         top: 50%; } }
@@ -10458,9 +10464,7 @@ aside .filter .slider {
       width: 25%; }
     .orders__list .order-total .right {
       margin-top: 0;
-      line-height: 1.5; }
-    .orders__list .moreinfo {
-      padding-bottom: 1rem; } }
+      line-height: 1.5; } }
   @media (max-width: 650px) {
     .orders__list .tr .td-1 {
       width: 30%; }
