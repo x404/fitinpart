@@ -10011,6 +10011,23 @@ aside .filter .slider {
   .mob-ordersstatmenu .ms-drop ul li {
     margin-top: 0;
     margin-bottom: 0; }
+  .mob-ordersstatmenu .ms-drop {
+    padding-top: 5px !important;
+    padding-bottom: 15px !important; }
+  .mob-ordersstatmenu .listwrapper {
+    height: 185px;
+    position: relative; }
+    .mob-ordersstatmenu .listwrapper li {
+      padding-left: 0 !important; }
+      .mob-ordersstatmenu .listwrapper li:before, .mob-ordersstatmenu .listwrapper li:after {
+        display: none !important; }
+      .mob-ordersstatmenu .listwrapper li label {
+        padding: 5px 0 !important; }
+      .mob-ordersstatmenu .listwrapper li span {
+        padding-left: 15px; }
+    .mob-ordersstatmenu .listwrapper ul {
+      max-height: none !important;
+      height: auto !important; }
 
 .latest-orders {
   background-color: #eaecf0;

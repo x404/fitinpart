@@ -5972,8 +5972,19 @@
 			onClick: function(view) {
 				url = view.value;
 				window.location.href = url;
+			},
+			onOpen: function() {
+				mobordersstatmenu.update();
 			}
 		});
+
+		mobordersstatmenu = new PerfectScrollbar('.mob-ordersstatmenu .listwrapper', {
+			wheelPropagation: true,
+			minScrollbarLength: 35,
+			maxScrollbarLength: 65,
+		});
+		mobordersstatmenu.update();
+
 	});
 </script>
 <!-- InstanceEndEditable -->

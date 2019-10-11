@@ -692,6 +692,8 @@
 			filter: grayscale(1) brightness(1);
 		}
 	}
+
+
 }
 
 
@@ -713,6 +715,32 @@
 				margin-top: 0;
 				margin-bottom: 0;
 			}
+		}
+	}
+
+	.ms-drop{
+		padding-top: 5px !important;
+		padding-bottom: 15px !important;
+	}
+	.listwrapper{
+		height: 185px;
+		position: relative;
+		li{
+			padding-left: 0 !important;
+			&:before,
+			&:after{
+				display: none !important;
+			}
+			label{
+				padding: 5px 0 !important;
+			}
+			span{
+				padding-left: 15px;
+			}
+		}		
+		ul{
+			max-height: none!important;
+			height: auto !important;
 		}
 	}
 }
