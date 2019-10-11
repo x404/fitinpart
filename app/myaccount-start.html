@@ -24,7 +24,7 @@
 <!-- InstanceEndEditable -->
 <link rel="stylesheet" href="/template/css/styles.min.css" />
 <link rel="stylesheet" href="/template/css/multiple-select.css" />
-<script src="/template/js/jquery.slim.min.js"></script>
+<script src="/template/js/jquery.min.js"></script>
 <!-- <script src="/template/js/jquery-1.12.4.min.js"></script> -->
 <script src="/template/js/libs.min.js"></script>
 
@@ -375,89 +375,114 @@
 						<div class="top__tel">
 							<a href="tel:+6567497481" class="tel icon icon-tel" target="_blank">+65 67497481</a>
 						</div>
-						<div class="login">
-								<a class="icon icon-user dropdown-toggle" href="#" role="button" id="dropdownUserMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<div class="login in">
+							<div class="dropdown">
+								<a class="icon icon-user dropdown-toggle usermenu" href="#" role="button" id="dropdownUserMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 									Pavel
 								</a>
 
 								<div class="dropdown-menu" aria-labelledby="dropdownUserMenuLink">
-<a href="#" title="">
-	<i class="icon-wrapper">
-		<i class="icon icon-myaccount-sm"></i>
-	</i>
-	My account
-</a>
-<a href="#" title="">
-	<i class="icon-wrapper">
-		<i class="icon icon-garage-sm"></i>
-	</i>
-	Garage
-</a>
-<a href="#" title="">
-	<i class="icon-wrapper">
-		<i class="icon icon-vehicle-sm"></i>
-	</i>
-	Vehicle requests
-</a>
-<a href="#" title="">
-	<i class="icon-wrapper">
-		<i class="icon icon-stock-sm"></i>
-	</i>
-	Stock requests
-</a>
-<a href="#" title="">
-	<i class="icon-wrapper">
-		<i class="icon icon-addressbook-sm"></i>
-	</i>
-	Address Books
-</a>
-<a href="#" title="">
-	<i class="icon-wrapper">
-		<i class="icon icon-wishlist-sm"></i>
-	</i>
-	Wish List
-</a>
-<a href="#" title="">
-	<i class="icon-wrapper">
-		<i class="icon icon-orders-sm"></i>
-	</i>
-	Order History
-</a>
-<a href="#" title="">
-	<i class="icon-wrapper">
-		<i class="icon icon-itemorders-sm"></i>
-	</i>
-	Item order history
-</a>
-<a href="#" title="">
-	<i class="icon-wrapper">
-		<i class="icon icon-reward-sm"></i>
-	</i>
-	Reward Points
-</a>
-<a href="#" title="">
-	<i class="icon-wrapper">
-		<i class="icon icon-transactions-sm"></i>
-	</i>
-	Transactions
-</a>
-<a href="#" title="">
-	<i class="icon-wrapper">
-		<i class="icon icon-notifications-sm"></i>
-	</i>
-	Notification Settings
-</a>
-<a href="#" title="">
-	<i class="icon-wrapper">
-		<i class="icon icon-logout-sm"></i>
-	</i>
-	Loguot
-</a>
-
-
+									<ul>
+										<li class="active">
+											<a href="#" title="">
+												<i class="icon-wrapper">
+													<i class="icon icon-myaccount-sm"></i>
+												</i>
+												My account
+											</a>
+										</li>
+										<li>
+											<a href="#" title="">
+												<i class="icon-wrapper">
+													<i class="icon icon-garage-sm"></i>
+												</i>
+												Garage
+											</a>
+										</li>
+										<li>
+											<a href="#" title="">
+												<i class="icon-wrapper">
+													<i class="icon icon-vehicle-sm"></i>
+												</i>
+												Vehicle requests
+											</a>
+										</li>
+										<li>
+											<a href="#" title="">
+												<i class="icon-wrapper">
+													<i class="icon icon-stock-sm"></i>
+												</i>
+												Stock requests
+											</a>
+										</li>
+										<li>
+											<a href="#" title="">
+												<i class="icon-wrapper">
+													<i class="icon icon-addressbook-sm"></i>
+												</i>
+												Address Books
+											</a>
+										</li>
+										<li>
+											<a href="#" title="">
+												<i class="icon-wrapper">
+													<i class="icon icon-wishlist-sm"></i>
+												</i>
+												Wish List
+											</a>
+										</li>
+										<li>
+											<a href="#" title="">
+												<i class="icon-wrapper">
+													<i class="icon icon-orders-sm"></i>
+												</i>
+												Order History
+											</a>
+										</li>
+										<li>
+											<a href="#" title="">
+												<i class="icon-wrapper">
+													<i class="icon icon-itemorders-sm"></i>
+												</i>
+												Item order history
+											</a>
+										</li>
+										<li>
+											<a href="#" title="">
+												<i class="icon-wrapper">
+													<i class="icon icon-reward-sm"></i>
+												</i>
+												Reward Points
+											</a>
+										</li>
+										<li>
+											<a href="#" title="">
+												<i class="icon-wrapper">
+													<i class="icon icon-transactions-sm"></i>
+												</i>
+												Transactions
+											</a>
+										</li>
+										<li>
+											<a href="#" title="">
+												<i class="icon-wrapper">
+													<i class="icon icon-notifications-sm"></i>
+												</i>
+												Notification Settings
+											</a>
+										</li>
+										<li>
+											<a href="#" title="">
+												<i class="icon-wrapper">
+													<i class="icon icon-logout-sm"></i>
+												</i>
+												Loguot
+											</a>
+										</li>
+										
+									</ul>
 								</div>
-
-
+							</div>
 							<span class="cust">Cust #: 3</span>
 						</div>
 					</div>
@@ -986,7 +1011,113 @@
 			<a href="tel:+6567497481" class="tel">+65 67497481</a>
 
 			<div class="login">
-				<a href="#" class="login__link icon icon-user" data-toggle="modal" data-target="#loginModal"><span>My account</span></a>
+				<div class="dropdown">
+					<a class="icon icon-user dropdown-toggle usermenu" href="#" role="button" id="dropdownUserMenuLinkMob" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Pavel
+					</a>
+
+					<div class="dropdown-menu" aria-labelledby="dropdownUserMenuLinkMob">
+						<ul>
+							<li class="active">
+								<a href="#" title="">
+									<i class="icon-wrapper">
+										<i class="icon icon-myaccount-sm"></i>
+									</i>
+									My account
+								</a>
+							</li>
+							<li>
+								<a href="#" title="">
+									<i class="icon-wrapper">
+										<i class="icon icon-garage-sm"></i>
+									</i>
+									Garage
+								</a>
+							</li>
+							<li>
+								<a href="#" title="">
+									<i class="icon-wrapper">
+										<i class="icon icon-vehicle-sm"></i>
+									</i>
+									Vehicle requests
+								</a>
+							</li>
+							<li>
+								<a href="#" title="">
+									<i class="icon-wrapper">
+										<i class="icon icon-stock-sm"></i>
+									</i>
+									Stock requests
+								</a>
+							</li>
+							<li>
+								<a href="#" title="">
+									<i class="icon-wrapper">
+										<i class="icon icon-addressbook-sm"></i>
+									</i>
+									Address Books
+								</a>
+							</li>
+							<li>
+								<a href="#" title="">
+									<i class="icon-wrapper">
+										<i class="icon icon-wishlist-sm"></i>
+									</i>
+									Wish List
+								</a>
+							</li>
+							<li>
+								<a href="#" title="">
+									<i class="icon-wrapper">
+										<i class="icon icon-orders-sm"></i>
+									</i>
+									Order History
+								</a>
+							</li>
+							<li>
+								<a href="#" title="">
+									<i class="icon-wrapper">
+										<i class="icon icon-itemorders-sm"></i>
+									</i>
+									Item order history
+								</a>
+							</li>
+							<li>
+								<a href="#" title="">
+									<i class="icon-wrapper">
+										<i class="icon icon-reward-sm"></i>
+									</i>
+									Reward Points
+								</a>
+							</li>
+							<li>
+								<a href="#" title="">
+									<i class="icon-wrapper">
+										<i class="icon icon-transactions-sm"></i>
+									</i>
+									Transactions
+								</a>
+							</li>
+							<li>
+								<a href="#" title="">
+									<i class="icon-wrapper">
+										<i class="icon icon-notifications-sm"></i>
+									</i>
+									Notification Settings
+								</a>
+							</li>
+							<li>
+								<a href="#" title="">
+									<i class="icon-wrapper">
+										<i class="icon icon-logout-sm"></i>
+									</i>
+									Loguot
+								</a>
+							</li>
+							
+						</ul>
+					</div>
+				</div>
 			</div>
 
 			<!-- =compare -->

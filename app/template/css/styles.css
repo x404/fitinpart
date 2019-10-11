@@ -4382,6 +4382,9 @@ button {
 .sm-text {
   font-size: 1.3rem; }
 
+.dropdown-menu {
+  top: 0; }
+
 /* =top
 ---------------------------*/
 .top {
@@ -4459,7 +4462,6 @@ button {
     justify-content: center;
     position: relative;
     text-align: center;
-    width: 165px;
     width: 220px;
     background: url(../images/bg/login-bg.png) no-repeat; }
     .top .login__link {
@@ -4468,33 +4470,57 @@ button {
       .top .login__link:hover {
         color: #97feff;
         text-decoration: none; }
+    .top .login .icon:before {
+      top: -3px; }
     .top .login .cust {
       background-color: #c91537;
       border-radius: 3rem;
       color: #fff;
       height: 3rem;
-      margin-left: 2.5rem;
+      margin-left: 1rem;
       padding-left: 1.5rem;
-      padding-right: 2rem; }
-    .top .login .dropdown-menu {
-      border-radius: .5rem;
-      padding: 1.2rem 0;
-      width: 21rem; }
-      .top .login .dropdown-menu a {
-        align-items: center;
-        color: #393939;
-        display: flex;
-        padding: 5px 1.4rem; }
-        .top .login .dropdown-menu a:hover {
-          background-color: #0099ff;
-          color: #ffffff; }
-          .top .login .dropdown-menu a:hover .icon {
-            filter: invert(1) brightness(5); }
-      .top .login .dropdown-menu .icon-wrapper {
-        width: 34px; }
-      .top .login .dropdown-menu .icon {
-        margin-left: auto;
-        margin-right: auto; }
+      padding-right: 2rem;
+      white-space: nowrap; }
+    .top .login .usermenu {
+      min-height: 26px;
+      margin-top: 6px;
+      z-index: 1000; }
+
+.login .dropdown-menu {
+  background-color: transparent;
+  border-radius: .5rem;
+  box-shadow: none !important;
+  left: -8px;
+  padding-top: .5rem;
+  top: 0;
+  width: 21rem; }
+  .login .dropdown-menu ul {
+    background-color: #fff;
+    border-radius: .5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    padding: 1.2rem 0; }
+  .login .dropdown-menu li.active a, .login .dropdown-menu li.active span {
+    background-color: #0099ff;
+    color: #ffffff;
+    cursor: default; }
+    .login .dropdown-menu li.active a .icon, .login .dropdown-menu li.active span .icon {
+      filter: invert(1) brightness(5); }
+  .login .dropdown-menu a, .login .dropdown-menu span {
+    align-items: center;
+    font-size: 1.4rem;
+    color: #393939;
+    display: flex;
+    padding: .5rem 1.4rem .5rem 1.2rem; }
+    .login .dropdown-menu a:hover, .login .dropdown-menu span:hover {
+      background-color: #0099ff;
+      color: #ffffff; }
+      .login .dropdown-menu a:hover .icon, .login .dropdown-menu span:hover .icon {
+        filter: invert(1) brightness(5); }
+  .login .dropdown-menu .icon-wrapper {
+    width: 34px; }
+  .login .dropdown-menu .icon {
+    margin-left: auto;
+    margin-right: auto; }
 
 .top .country .title,
 .modal-menu .country .title {
@@ -10881,6 +10907,8 @@ aside .filter .slider {
   .top .login {
     margin-left: -1.5rem;
     margin-right: -2.5rem; }
+    .top .login .cust {
+      display: none; }
   .top__menu {
     width: 100%; }
     .top__menu li {
@@ -11047,18 +11075,28 @@ aside .filter .slider {
     flex-grow: 1;
     padding-left: 1.5rem;
     white-space: nowrap; }
-    .mob-header .login__link {
+    .mob-header .login__link,
+    .mob-header .login .usermenu {
+      align-items: center;
+      display: flex;
       font-size: 1.5rem;
       font-weight: 700;
-      min-height: 26px;
-      display: flex;
-      align-items: center;
-      line-height: 1.2; }
-      .mob-header .login__link:hover {
+      line-height: 1.2;
+      min-height: 26px; }
+      .mob-header .login__link:hover,
+      .mob-header .login .usermenu:hover {
         color: #000;
         text-decoration: none; }
-      .mob-header .login__link:before {
+      .mob-header .login__link:before,
+      .mob-header .login .usermenu:before {
         filter: grayscale(1) brightness(0.1); }
+    .mob-header .login .usermenu:after {
+      display: none; }
+    .mob-header .login .dropdown {
+      position: relative; }
+      .mob-header .login .dropdown-menu {
+        margin-top: 50px;
+        margin-left: -17px; }
   .mob-header .btn-search {
     background-color: #f3f3f3;
     border-radius: 50%;

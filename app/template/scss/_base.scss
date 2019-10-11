@@ -664,6 +664,12 @@ button{
 .sm-text{
 	font-size: 1.3rem;
 }
+
+
+.dropdown-menu{
+	// display: block !important;
+	top: 0;
+}
 /* =top
 ---------------------------*/
 .top{
@@ -788,7 +794,7 @@ button{
 		justify-content: center;
 		position: relative;
 		text-align: center;
-		width: 165px;
+		// width: 165px;
 		width: 220px;
 		background: url(../images/bg/login-bg.png) no-repeat;
 		&__link{
@@ -799,6 +805,11 @@ button{
 				text-decoration: none;
 			}
 		}
+		.icon{
+			&:before{
+				top: -3px;				
+			}
+		}
 
 		.cust{
 			@extend .flex-center;
@@ -806,21 +817,65 @@ button{
 			border-radius: 3rem;
 			color: #fff;
 			height: 3rem;
-			margin-left: 2.5rem;
+			margin-left: 1rem;
 			padding-left: 1.5rem;
 			padding-right: 2rem;
+			white-space: nowrap;
 		}
 
+		.usermenu{
+			min-height: 26px;
+			margin-top: 6px;
+			z-index: 1000;
+		}
+
+// .usermenu:hover + .dropdown-menu {
+//     // display: block;
+// }
+// .usermenu + .dropdown-toggle:active {
+//     /*Without this, clicking will make it sticky*/
+//     // pointer-events: none;
+// }
+
+
+	}
+}
+
+
+.login{
+
 		.dropdown-menu{
-			// display: block !important;
+			background-color: transparent;
 			border-radius: .5rem;
-			padding: 1.2rem 0;
+			box-shadow: none !important;
+			left: -8px;
+			padding-top: .5rem;
+			top: 0;
 			width: 21rem;
-			a{
+			ul{
+				background-color: #fff;
+				border-radius: .5rem;
+				box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+				padding: 1.2rem 0;
+			}
+			li{
+				&.active{
+					a, span{
+						background-color: $color9;
+						color: $color2;
+						cursor: default;
+						.icon{
+							filter: invert(1) brightness(5);
+						}						
+					}
+				}
+			}
+			a, span{
 				align-items: center;
+				font-size: 1.4rem;
 				color: #393939;
 				display: flex;
-				padding: 5px 1.4rem;
+				padding: .5rem 1.4rem .5rem 1.2rem;
 				&:hover{
 					background-color: $color9;
 					color: $color2;
@@ -836,10 +891,7 @@ button{
 				margin-left: auto;
 				margin-right: auto;
 			}
-		}
-	}
-
-
+		}	
 }
 
 .top,
