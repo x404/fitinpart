@@ -943,6 +943,20 @@ button{
 			overflow: hidden;
 			position: relative;
 			width: 320px;
+			.ps__rail-y{
+				background-color: #d6dde1;
+				display: block !important;
+				height: 225px !important;
+				opacity: .9 !important;
+			}
+			.ps__thumb-y{
+				height: 100px !important;
+			}
+
+			.ps__rail-x{
+				display: block !important;
+				bottom: -100px !important;
+			}
 		}
 		
 		.countries-list{

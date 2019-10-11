@@ -4567,6 +4567,19 @@ button {
   overflow: hidden;
   position: relative;
   width: 320px; }
+  .top .country .countries-wrapper .ps__rail-y,
+  .modal-menu .country .countries-wrapper .ps__rail-y {
+    background-color: #d6dde1;
+    display: block !important;
+    height: 225px !important;
+    opacity: .9 !important; }
+  .top .country .countries-wrapper .ps__thumb-y,
+  .modal-menu .country .countries-wrapper .ps__thumb-y {
+    height: 100px !important; }
+  .top .country .countries-wrapper .ps__rail-x,
+  .modal-menu .country .countries-wrapper .ps__rail-x {
+    display: block !important;
+    bottom: -100px !important; }
 
 .top .country .countries-list,
 .modal-menu .country .countries-list {

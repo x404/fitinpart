@@ -103,7 +103,7 @@ $('body')
 
 	// close dropdown of Country
 	$('.country .close').click(function() {
-	  $(this).parents('.dropdown').find('.dropdown-toggle').dropdown('toggle');
+		$(this).parents('.dropdown').find('.dropdown-toggle').dropdown('toggle');
 	});
 
 	// reinit scroll area after dropdown of Country
