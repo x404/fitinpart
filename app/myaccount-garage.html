@@ -1606,7 +1606,7 @@
 						<div class="dragndrop-text"><img src="/template/images/dragndrop.png" alt=""/> changing order using drag and drop</div>
 
 						<!-- =carslist -->
-						<div class="cars__list">
+						<div class="cars__list" id="carslist">
 							<div class="cars__item item-cars">
 								<div class="item-cars__pic">
 									<img src="/images/car-1.png" alt="TOYOTA Wish 2006" />
@@ -3121,6 +3121,7 @@
 <script src="/template/js/search-hd.js"></script>
 <!-- InstanceBeginEditable name="EditRegion4" -->
 <script src="/template/js/autosize.min.js"></script>
+<script src="/template/js/Sortable.min.js"></script>
 <script>
 	$(document).ready(function(){
 		$("#ordersstatmenu").multipleSelect({
@@ -3151,8 +3152,13 @@
 				}
 			});
 		});
-
 	});
+
+var el = document.getElementById('carslist');
+var sortable = Sortable.create(el,{
+	animation: 150,
+	ghostClass: 'blue-background-class'
+});
 </script>
 <!-- InstanceEndEditable -->
 </body>
