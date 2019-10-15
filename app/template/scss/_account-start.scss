@@ -490,15 +490,18 @@
 	.btn-more{
 		margin-top: 0;
 		.icon{
-			filter: grayscale(1) brightness(.5);
+			// filter: grayscale(1) brightness(.5);
+			filter: grayscale(1) brightness(1);
 			margin-right: 5px;
 			margin-top: -2px;
+			transition: .3s;
 		}
 		&:hover{
-			background-color: transparent;
-			color: $color9;
+			// background-color: transparent;
+			// color: $color9;
 			.icon{
-				filter: none;
+				// filter: none;
+				filter: grayscale(1) brightness(10);
 			}
 		}
 	}
@@ -915,7 +918,8 @@
 
 // =orders list
 .orders__list,
-.order-items__list{
+.order-items__list,
+.stockrequest__list{
 	color: #2b2b2b;
 	margin-top: 2.2rem;
 	.tr{
@@ -981,6 +985,7 @@
 		}
 	}
 }
+
 
 .orders__list{
 	.tr{
