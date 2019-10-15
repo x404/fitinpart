@@ -385,6 +385,16 @@ em strong
 	&-arrowleft{
 		@include sprite($icon-arrowleft)
 	}
+
+	&-plus{
+		@include sprite($icon-plus)
+	}
+
+	&-xls{
+		@include sprite($icon-xls)
+	}
+
+
 } 
 
 .w100{
@@ -490,6 +500,21 @@ em strong
 				}
 			}
 		}
+	}
+
+	&-darkgreen{
+		background-color: #148d2e;
+		color: $color2;
+		&-lighten{
+			&-hover{
+				&:hover{
+					background-color: #00c329;
+					color: $color1;
+					box-shadow: 0 5px 10px rgba(0, 113, 189, 0.25);
+				}
+			}
+		}
+
 	}
 	
 	&-red{
@@ -662,7 +687,6 @@ em strong
 			margin-right: 11px;
 		}
 	}
-
 }
 
 
