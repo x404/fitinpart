@@ -17,6 +17,7 @@ __Используемые в проекте js плагины__
 * Stylezed scroll by perfect scrollbar [https://github.com/mdbootstrap/perfect-scrollbar](https://github.com/mdbootstrap/perfect-scrollbar)
 * Multiple select [http://multiple-select.wenzhixin.net.cn](http://multiple-select.wenzhixin.net.cn)
 * Flex menu - menu with caret [https://github.com/352Media/flexMenu](https://github.com/352Media/flexMenu)
+* Autosize textara [http://www.jacklmoore.com/autosize/](http://www.jacklmoore.com/autosize/)
 
 * Стилизация скролов nicescroll[https://github.com/inuyaksa/jquery.nicescroll/blob/master/README.md](https://github.com/inuyaksa/jquery.nicescroll/blob/master/README.md)
 

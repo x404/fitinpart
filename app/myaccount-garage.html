@@ -1607,7 +1607,7 @@
 								<div class="item-cars__note">
 									Note
 									<div class="d-flex">
-										<textarea name="note" class="form-control" required></textarea>
+										<textarea name="note" class="form-control txta" required></textarea>
 										<img src="/template/images/edit.png" alt="" />
 									</div>
 								</div>
@@ -1636,7 +1636,7 @@
 								<div class="item-cars__note">
 									Note
 									<div class="d-flex">
-										<textarea name="note" class="form-control"></textarea>
+										<textarea name="note" class="form-control txta" required></textarea>
 										<img src="/template/images/edit.png" alt="" />
 									</div>
 								</div>
@@ -1665,7 +1665,7 @@
 								<div class="item-cars__note">
 									Note
 									<div class="d-flex">
-										<textarea name="note" class="form-control fill">sdfsdfsdfsd fsdfsdfsdfsdfsdfsdfs sdfsdfsdfsdfsdfsdf sdfsdfsdfsdfsdf </textarea>
+										<textarea name="note" class="form-control txta" required>sdfsdfsdfsd fsdfsdfsdfsdfsdfsdfs sdfsdfsdfsdfsdfsdf sdfsdfsdfsdfsdf </textarea>
 										<img src="/template/images/edit.png" alt="" />
 									</div>
 								</div>
@@ -1694,7 +1694,7 @@
 								<div class="item-cars__note">
 									Note
 									<div class="d-flex">
-										<textarea name="note" class="form-control"></textarea>
+										<textarea name="note" class="form-control txta" required></textarea>
 										<img src="/template/images/edit.png" alt="" />
 									</div>
 								</div>
@@ -1723,7 +1723,7 @@
 								<div class="item-cars__note">
 									Note
 									<div class="d-flex">
-										<textarea name="note" class="form-control"></textarea>
+										<textarea name="note" class="form-control txta" required></textarea>
 										<img src="/template/images/edit.png" alt="" />
 									</div>
 								</div>
@@ -1752,7 +1752,7 @@
 								<div class="item-cars__note">
 									Note
 									<div class="d-flex">
-										<textarea name="note" class="form-control fill">sdfsdfsdfsd fsdfsdfsdfsdfsdfsdfs sdfsdfsdfsdfsdfsdf sdfsdfsdfsdfsdf </textarea>
+										<textarea name="note" class="form-control txta" required>sdfsdfsdfsd fsdfsdfsdfsdfsdfsdfs sdfsdfsdfsdfsdfsdf sdfsdfsdfsdfsdf </textarea>
 										<img src="/template/images/edit.png" alt="" />
 									</div>
 								</div>
@@ -1781,7 +1781,7 @@
 								<div class="item-cars__note">
 									Note
 									<div class="d-flex">
-										<textarea name="note" class="form-control"></textarea>
+										<textarea name="note" class="form-control txta" required></textarea>
 										<img src="/template/images/edit.png" alt="" />
 									</div>
 								</div>
@@ -1810,7 +1810,7 @@
 								<div class="item-cars__note">
 									Note
 									<div class="d-flex">
-										<textarea name="note" class="form-control"></textarea>
+										<textarea name="note" class="form-control txta" required></textarea>
 										<img src="/template/images/edit.png" alt="" />
 									</div>
 								</div>
@@ -1839,7 +1839,7 @@
 								<div class="item-cars__note">
 									Note
 									<div class="d-flex">
-										<textarea name="note" class="form-control fill">sdfsdfsdfsd fsdfsdfsdfsdfsdfsdfs sdfsdfsdfsdfsdfsdf sdfsdfsdfsdfsdf </textarea>
+										<textarea name="note" class="form-control txta" required>sdfsdfsdfsd fsdfsdfsdfsdfsdfsdfs sdfsdfsdfsdfsdfsdf sdfsdfsdfsdfsdf </textarea>
 										<img src="/template/images/edit.png" alt="" />
 									</div>
 								</div>
@@ -3099,6 +3099,7 @@
 <script src="/template/js/search-moto.js"></script>
 <script src="/template/js/search-hd.js"></script>
 <!-- InstanceBeginEditable name="EditRegion4" -->
+<script src="/template/js/autosize.min.js"></script>
 <script>
 	$(document).ready(function(){
 		$("#ordersstatmenu").multipleSelect({
@@ -3112,6 +3113,9 @@
 				mobordersstatmenu.update();
 			}
 		});
+
+		autosize(document.querySelectorAll('.txta'));
+
 	});
 </script>
 <!-- InstanceEndEditable -->

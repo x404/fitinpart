@@ -46,25 +46,27 @@
 				}
 			}
 		}
-		textarea{
+		.txta{
 			background-color: #f5f7f8;
 			border-radius: 1rem;
 			border: none;
-			height: 3rem;
+			height: 30px;
 			overflow: hidden;
 			padding-top: .4rem;
 			resize: none;
 			width: 20rem;
 			padding-left: 0;
 			padding-right: 0;
+			line-height: 1.4;
 			&.fill{
-				background-color: transparent;
-				height: auto;
+				// background-color: transparent;
+				// height: auto;
 			}
 			&:valid{
-				// background-color: transparent;
+				background-color: transparent;
 			}
 		}
+
 
 		&__note{
 			font-style: italic;

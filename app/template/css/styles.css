@@ -11327,20 +11327,20 @@ aside .filter .slider {
       padding-left: 1.5rem; }
       .cars__list .item-cars .btn-search i {
         margin-right: .6rem; }
-    .cars__list .item-cars textarea {
+    .cars__list .item-cars .txta {
       background-color: #f5f7f8;
       border-radius: 1rem;
       border: none;
-      height: 3rem;
+      height: 30px;
       overflow: hidden;
       padding-top: .4rem;
       resize: none;
       width: 20rem;
       padding-left: 0;
-      padding-right: 0; }
-      .cars__list .item-cars textarea.fill {
-        background-color: transparent;
-        height: auto; }
+      padding-right: 0;
+      line-height: 1.4; }
+      .cars__list .item-cars .txta:valid {
+        background-color: transparent; }
     .cars__list .item-cars__note {
       font-style: italic;
       margin-top: -10px;
