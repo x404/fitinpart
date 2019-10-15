@@ -11292,6 +11292,75 @@ aside .filter .slider {
   .transactions__list .td-4 {
     width: 50%; } }
 
+.garagesearch {
+  background-color: #0672ba;
+  padding: 3.8rem 4rem; }
+
+.cars__list {
+  font-size: 1.4rem; }
+  .cars__list button {
+    padding: 0; }
+  .cars__list .item-cars {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 4rem; }
+    .cars__list .item-cars__desc {
+      margin-left: 3.8rem;
+      color: #3c3c3c;
+      flex-grow: 1; }
+      .cars__list .item-cars__desc p {
+        line-height: 1.4;
+        margin: .2rem 0; }
+    .cars__list .item-cars__title {
+      font-size: 1.5rem;
+      margin: 0 0 .5rem; }
+    .cars__list .item-cars__characteristics {
+      margin-top: .2rem; }
+    .cars__list .item-cars .btn line {
+      stroke: #c91537;
+      stroke-width: 4px; }
+    .cars__list .item-cars .btn-search {
+      margin-right: 2.5rem;
+      padding-right: 2.3rem;
+      padding-left: 1.5rem; }
+      .cars__list .item-cars .btn-search i {
+        margin-right: .6rem; }
+    .cars__list .item-cars textarea {
+      background-color: #f5f7f8;
+      border-radius: 1rem;
+      border: none;
+      height: 3rem;
+      overflow: hidden;
+      padding-top: .4rem;
+      resize: none;
+      width: 20rem;
+      padding-left: 0;
+      padding-right: 0; }
+      .cars__list .item-cars textarea.fill {
+        background-color: transparent;
+        height: auto; }
+    .cars__list .item-cars__note {
+      font-style: italic;
+      margin-top: -10px;
+      color: #3e3e3e; }
+      .cars__list .item-cars__note img {
+        display: block;
+        flex-shrink: 0;
+        height: 22px;
+        margin-left: .4rem;
+        margin-top: 4px;
+        vertical-align: top;
+        width: 22px; }
+    .cars__list .item-cars__manage {
+      margin-left: 6.5rem;
+      display: flex;
+      align-items: center; }
+
+.cars__item {
+  margin-top: 1rem; }
+
 /* =mobile-menu
 ---------------------------*/
 .show-sm,
