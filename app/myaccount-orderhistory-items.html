@@ -20,7 +20,7 @@
 <meta name="msapplication-config" content="/the_favicon/browserconfig.xml">
 <meta name="theme-color" content="#ffffff">
 <!-- InstanceBeginEditable name="doctitle" -->
-<title>My account - Pesonal Data</title>
+<title>Order history by items</title>
 <!-- InstanceEndEditable -->
 <link rel="stylesheet" href="/template/css/styles.min.css" />
 <link rel="stylesheet" href="/template/css/multiple-select.css" />
@@ -1374,27 +1374,26 @@
 
 				<div class="head d-flex justify-content-between">
 					<div class="left">
-						<h1>My Account</h1>
-						<a href="myaccount-start.html" class="btn btn-back btn-darkgray"><i class="icon icon-arrowleft"></i>Back</a>
+						<h1>Item order history</h1>
 					</div>
-
 					<div class="right">
 						<a href="#" class="logout d-flex align-items-center"><i class="icon icon-logout"></i>Logout</a>
 					</div>
 				</div>
+
 
 				<!-- =mobile account menu -->
 				<div class="mob-accountmenu d-md-none">
 					<button type="button" class="btn-accountmenu">My Account</button>
 					<div class="menu">
 						<ul>
-							<li class="current">
-								<span>
+							<li>
+								<a href="/myaccount.html">	
 									<i class="icon-wrapper">
 										<i class="icon icon-myaccount"></i>
 									</i>
 									My Account
-								</span>
+								</a>
 							</li>
 							<li>
 								<a href="#" title="">
@@ -1437,20 +1436,20 @@
 								</a>
 							</li>
 							<li>
-								<a href="/myaccount.html">
+								<a href="#" title="">
 									<i class="icon-wrapper">
 										<i class="icon icon-orders"></i>
 									</i>
 									Order History
 								</a>
 							</li>
-							<li>
-								<a href="#" title="">
+							<li class="current">
+								<span>
 									<i class="icon-wrapper">
 										<i class="icon icon-itemorders"></i>
 									</i>
 									Item order history
-								</a>
+								</span>
 							</li>
 							<li>
 								<a href="#" title="">
@@ -1486,13 +1485,13 @@
 					<!-- =aside -->
 					<aside class="menu">
 						 <ul>
-							<li class="current">
-								<span>
+							<li>
+								<a href="#" title="">
 									<i class="icon-wrapper">
 										<i class="icon icon-myaccount"></i>
 									</i>
 									My Account
-								</span>
+								</a>
 							</li>
 							<li>
 								<a href="#" title="">
@@ -1535,20 +1534,20 @@
 								</a>
 							</li>
 							<li>
-								<a href="myaccount-orderhistory.html">
+								<a href="#" title="">
 									<i class="icon-wrapper">
 										<i class="icon icon-orders"></i>
 									</i>
 									Order History
 								</a>
 							</li>
-							<li>
-								<a href="myaccount-orderhistory-items.html" title="">
+							<li class="current">
+								<span>
 									<i class="icon-wrapper">
 										<i class="icon icon-itemorders"></i>
 									</i>
 									Item order history
-								</a>
+								</span>
 							</li>
 							<li>
 								<a href="#" title="">
@@ -1583,108 +1582,382 @@
 					</aside>
 					<!-- =/aside -->
 					<div class="content">
-						<div class="row">
-							<div class="col-sm-5">
-								<div class="region">
-									<form action="#" method="post">
-										<fieldset>
-											<p class="subtitle">Your Personal Details</p>
 
-											<label for="name">Name <span class="asterisk">*</span></label>
-											<input name="name" id="name" type="text" class="form-control" value="" />
+						<!-- =filter orders -->
+						<div class="filter-orders">
+							<div class="d-flex justify-content-between">
+								
+							</div>
+						</div>
+						<!-- =/filter orders -->
 
-											<label for="your-">Last Name</label>
-											<input name="lastname" id="your-" type="text" class="form-control" value="" />
 
-											<label for="your-email">E-Mail <span class="asterisk">*</span></label>
-											<input name="email" id="your-email" type="email" class="form-control" value="" />
-
-											<label for="your-tel">Telephone*</label>
-											<input name="tel" id="your-tel" type="tel" class="form-control" value="" />
-
-											<label for="your-fax">Fax</label>
-											<input name="fax" id="your-fax" type="text" class="form-control" value="" />
-
-											<label for="your-company">Company</label>
-											<input name="company" id="your-company" type="text" class="form-control" value="" />
-
-											<button type="submit" class="btn btn-save btn-blue btn-blue-lighten-hover"><i class="icon icon-ok"></i>Save</button>
-										</fieldset>
-									</form>
+						<!-- =latest orders -->
+						<div class="order-items__list">
+							<div class="tr tr-head">
+								<div class="td td-1">Category</div>
+								<div class="td td-2">Type</div>
+								<div class="td td-3">Brand</div>
+								<div class="td td-4">Model</div>
+								<div class="td td-5">Last order ID</div>
+								<div class="td td-6">Order date</div>
+								<div class="td td-7">Ordered quantity</div>
+								<div class="td td-8">Stock quantity</div>
+								<div class="td td-9">Price</div>
+							</div>						
+						
+							<div class="tr tr-item">
+								<div class="inner">
+									<div class="td td-1" data-title="Category">Brakes</div>
+									<div class="td td-2" data-title="Type">TRANSMISSION FILTER</div>
+									<div class="td td-3" data-title="Brand"><strong>JS</strong></div>
+									<div class="td td-4" data-title="Model">
+										<a href="#" title=""><strong>JT306K</strong></a>
+									</div>
+									<div class="td td-5" data-title="Last order ID">#57163</div>
+									<div class="td td-6" data-title="Order date">23/06/2018</div>
+									<div class="td td-7" data-title="Ordered quantity">1</div>
+									<div class="td td-8" data-title="Stock quantity"><strong>50+</strong></div>
+									<div class="td td-9" data-title="Price">
+										<div class="current-price">SG$4590.00</div>
+										<div class="old-price">SG$4590.00</div>
+									</div>
+									<div class="td td-10" data-title="">
+										<div class="d-flex">
+											<div class="countmodule">
+												<button type="button" class="minus" aria-label="minus"></button>
+												<input type="text" value="100" class="form-control count-control" />
+												<button type="button" class="plus" aria-label="plus"></button>
+											</div>
+											<button type="button" class="btn-cart" data-toggle="modal" data-target="#addtocardModal1"><i class="icon icon-littlecart"></i></button>
+										</div>
+									</div>
+									
 								</div>
 							</div>
-							<div class="col-sm-5">
-								<div class="region">
-									<form action="#" method="post">
-										<fieldset>
-											<p class="subtitle">Change Your Password</p>
-											
-											<label for="psw">Password <span class="asterisk">*</span></label>
-											<input type="password" id="psw" name="psw" value="" class="form-control" />
-											
-											<label for="confirm-psw">Password Confirm <span class="asterisk">*</span></label>
-											<input type="password" id="confirm-psw" name="confirm-psw" value="" class="form-control" />
-
-											<button type="submit" class="btn btn-save btn-blue btn-blue-lighten-hover"><i class="icon icon-ok"></i>Save</button>
-										</fieldset>
-									</form>									
-								</div>
-								<div class="region">
-									<form action="#" method="post">
-										<fieldset>
-											<p class="subtitle">Notification Settings</p>
-
-											<div class="notify-settings">
-												<div class="option-item">
-													<p class="option-title">Newsletter</p>
-													<label class="checkbox">
-														<input type="checkbox" name="newsletter" value="" checked="checked">
-														<div class="checkbox__text"></div>
-													</label>
-												</div>
-												<div class="option-item">
-													<p class="option-title">New Order</p>
-													<label class="checkbox">
-														<input type="checkbox" name="neworder" value="" />
-														<div class="checkbox__text"></div>
-													</label>
-												</div>
-												<div class="option-item">
-													<p class="option-title">Order Status Updates</p>
-													<label class="checkbox">
-														<input type="checkbox" name="orderstatus" value="" checked="checked">
-														<div class="checkbox__text"></div>
-													</label>
-												</div>
-												<div class="option-item">
-													<p class="option-title">Stock Notificaiton</p>
-													<label class="checkbox">
-														<input type="checkbox" name="stocknotification" value="" />
-														<div class="checkbox__text"></div>
-													</label>
-												</div>
-												<div class="option-item">
-													<p class="option-title">Vehicle Request</p>
-													<label class="checkbox">
-														<input type="checkbox" name="vehicle-request" value="" checked="checked" />
-														<div class="checkbox__text"></div>
-													</label>
-												</div>
-												<div class="option-item">
-													<p class="option-title">Cross Request</p>
-													<label class="checkbox">
-														<input type="checkbox" name="cross-request" value="" />
-														<div class="checkbox__text"></div>
-													</label>
-												</div>
+							<div class="tr tr-item">
+								<div class="inner">
+									<div class="td td-1" data-title="Category">Engine Compartment</div>
+									<div class="td td-2" data-title="Type">RADIATOR CAP</div>
+									<div class="td td-3" data-title="Brand"><strong>JIKIU</strong></div>
+									<div class="td td-4" data-title="Model">
+										<a href="#" title=""><strong>TRC148</strong></a>
+									</div>
+									<div class="td td-5" data-title="Last order ID">#57163</div>
+									<div class="td td-6" data-title="Order date">23/06/2018</div>
+									<div class="td td-7" data-title="Ordered quantity">1</div>
+									<div class="td td-8" data-title="Stock quantity"><strong>50+</strong></div>
+									<div class="td td-9" data-title="Price">
+										<div class="current-price">SG$4590.00</div>
+										<div class="old-price">SG$4590.00</div>
+									</div>
+									<div class="td td-10" data-title="">
+										<div class="d-flex">
+											<div class="countmodule">
+												<button type="button" class="minus" aria-label="minus"></button>
+												<input type="text" value="100" class="form-control count-control" />
+												<button type="button" class="plus" aria-label="plus"></button>
 											</div>
-											
-											<button type="submit" class="btn btn-save btn-blue btn-blue-lighten-hover"><i class="icon icon-ok"></i>Save</button>
-										</fieldset>	
-									</form>
+											<button type="button" class="btn-cart" data-toggle="modal" data-target="#addtocardModal1"><i class="icon icon-littlecart"></i></button>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="tr tr-item">
+								<div class="inner">
+									<div class="td td-1" data-title="Category">Brakes</div>
+									<div class="td td-2" data-title="Type">TRANSMISSION FILTER</div>
+									<div class="td td-3" data-title="Brand"><strong>JS</strong></div>
+									<div class="td td-4" data-title="Model">
+										<a href="#" title=""><strong>JT306K</strong></a>
+									</div>
+									<div class="td td-5" data-title="Last order ID">#57163</div>
+									<div class="td td-6" data-title="Order date">23/06/2018</div>
+									<div class="td td-7" data-title="Ordered quantity">1</div>
+									<div class="td td-8" data-title="Stock quantity"><strong>50+</strong></div>
+									<div class="td td-9" data-title="Price">
+										<div class="current-price">SG$4590.00</div>
+										<div class="old-price">SG$4590.00</div>
+									</div>
+									<div class="td td-10" data-title="">
+										<div class="d-flex">
+											<div class="countmodule">
+												<button type="button" class="minus" aria-label="minus"></button>
+												<input type="text" value="100" class="form-control count-control" />
+												<button type="button" class="plus" aria-label="plus"></button>
+											</div>
+											<button type="button" class="btn-cart" data-toggle="modal" data-target="#addtocardModal1"><i class="icon icon-littlecart"></i></button>
+										</div>
+									</div>
+									
+								</div>
+							</div>
+							<div class="tr tr-item">
+								<div class="inner">
+									<div class="td td-1" data-title="Category">Engine Compartment</div>
+									<div class="td td-2" data-title="Type">RADIATOR CAP</div>
+									<div class="td td-3" data-title="Brand"><strong>JIKIU</strong></div>
+									<div class="td td-4" data-title="Model">
+										<a href="#" title=""><strong>TRC148</strong></a>
+									</div>
+									<div class="td td-5" data-title="Last order ID">#57163</div>
+									<div class="td td-6" data-title="Order date">23/06/2018</div>
+									<div class="td td-7" data-title="Ordered quantity">1</div>
+									<div class="td td-8" data-title="Stock quantity"><strong>50+</strong></div>
+									<div class="td td-9" data-title="Price">
+										<div class="current-price">SG$4590.00</div>
+										<div class="old-price">SG$4590.00</div>
+									</div>
+									<div class="td td-10" data-title="">
+										<div class="d-flex">
+											<div class="countmodule">
+												<button type="button" class="minus" aria-label="minus"></button>
+												<input type="text" value="100" class="form-control count-control" />
+												<button type="button" class="plus" aria-label="plus"></button>
+											</div>
+											<button type="button" class="btn-cart" data-toggle="modal" data-target="#addtocardModal1"><i class="icon icon-littlecart"></i></button>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="tr tr-item">
+								<div class="inner">
+									<div class="td td-1" data-title="Category">Brakes</div>
+									<div class="td td-2" data-title="Type">TRANSMISSION FILTER</div>
+									<div class="td td-3" data-title="Brand"><strong>JS</strong></div>
+									<div class="td td-4" data-title="Model">
+										<a href="#" title=""><strong>JT306K</strong></a>
+									</div>
+									<div class="td td-5" data-title="Last order ID">#57163</div>
+									<div class="td td-6" data-title="Order date">23/06/2018</div>
+									<div class="td td-7" data-title="Ordered quantity">1</div>
+									<div class="td td-8" data-title="Stock quantity"><strong>50+</strong></div>
+									<div class="td td-9" data-title="Price">
+										<div class="current-price">SG$4590.00</div>
+										<div class="old-price">SG$4590.00</div>
+									</div>
+									<div class="td td-10" data-title="">
+										<div class="d-flex">
+											<div class="countmodule">
+												<button type="button" class="minus" aria-label="minus"></button>
+												<input type="text" value="100" class="form-control count-control" />
+												<button type="button" class="plus" aria-label="plus"></button>
+											</div>
+											<button type="button" class="btn-cart" data-toggle="modal" data-target="#addtocardModal1"><i class="icon icon-littlecart"></i></button>
+										</div>
+									</div>
+									
+								</div>
+							</div>
+							<div class="tr tr-item">
+								<div class="inner">
+									<div class="td td-1" data-title="Category">Engine Compartment</div>
+									<div class="td td-2" data-title="Type">RADIATOR CAP</div>
+									<div class="td td-3" data-title="Brand"><strong>JIKIU</strong></div>
+									<div class="td td-4" data-title="Model">
+										<a href="#" title=""><strong>TRC148</strong></a>
+									</div>
+									<div class="td td-5" data-title="Last order ID">#57163</div>
+									<div class="td td-6" data-title="Order date">23/06/2018</div>
+									<div class="td td-7" data-title="Ordered quantity">1</div>
+									<div class="td td-8" data-title="Stock quantity"><strong>50+</strong></div>
+									<div class="td td-9" data-title="Price">
+										<div class="current-price">SG$4590.00</div>
+										<div class="old-price">SG$4590.00</div>
+									</div>
+									<div class="td td-10" data-title="">
+										<div class="d-flex">
+											<div class="countmodule">
+												<button type="button" class="minus" aria-label="minus"></button>
+												<input type="text" value="100" class="form-control count-control" />
+												<button type="button" class="plus" aria-label="plus"></button>
+											</div>
+											<button type="button" class="btn-cart" data-toggle="modal" data-target="#addtocardModal1"><i class="icon icon-littlecart"></i></button>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="tr tr-item">
+								<div class="inner">
+									<div class="td td-1" data-title="Category">Brakes</div>
+									<div class="td td-2" data-title="Type">TRANSMISSION FILTER</div>
+									<div class="td td-3" data-title="Brand"><strong>JS</strong></div>
+									<div class="td td-4" data-title="Model">
+										<a href="#" title=""><strong>JT306K</strong></a>
+									</div>
+									<div class="td td-5" data-title="Last order ID">#57163</div>
+									<div class="td td-6" data-title="Order date">23/06/2018</div>
+									<div class="td td-7" data-title="Ordered quantity">1</div>
+									<div class="td td-8" data-title="Stock quantity"><strong>50+</strong></div>
+									<div class="td td-9" data-title="Price">
+										<div class="current-price">SG$4590.00</div>
+										<div class="old-price">SG$4590.00</div>
+									</div>
+									<div class="td td-10" data-title="">
+										<div class="d-flex">
+											<div class="countmodule">
+												<button type="button" class="minus" aria-label="minus"></button>
+												<input type="text" value="100" class="form-control count-control" />
+												<button type="button" class="plus" aria-label="plus"></button>
+											</div>
+											<button type="button" class="btn-cart" data-toggle="modal" data-target="#addtocardModal1"><i class="icon icon-littlecart"></i></button>
+										</div>
+									</div>
+									
+								</div>
+							</div>
+							<div class="tr tr-item">
+								<div class="inner">
+									<div class="td td-1" data-title="Category">Engine Compartment</div>
+									<div class="td td-2" data-title="Type">RADIATOR CAP</div>
+									<div class="td td-3" data-title="Brand"><strong>JIKIU</strong></div>
+									<div class="td td-4" data-title="Model">
+										<a href="#" title=""><strong>TRC148</strong></a>
+									</div>
+									<div class="td td-5" data-title="Last order ID">#57163</div>
+									<div class="td td-6" data-title="Order date">23/06/2018</div>
+									<div class="td td-7" data-title="Ordered quantity">1</div>
+									<div class="td td-8" data-title="Stock quantity"><strong>50+</strong></div>
+									<div class="td td-9" data-title="Price">
+										<div class="current-price">SG$4590.00</div>
+										<div class="old-price">SG$4590.00</div>
+									</div>
+									<div class="td td-10" data-title="">
+										<div class="d-flex">
+											<div class="countmodule">
+												<button type="button" class="minus" aria-label="minus"></button>
+												<input type="text" value="100" class="form-control count-control" />
+												<button type="button" class="plus" aria-label="plus"></button>
+											</div>
+											<button type="button" class="btn-cart" data-toggle="modal" data-target="#addtocardModal1"><i class="icon icon-littlecart"></i></button>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="tr tr-item">
+								<div class="inner">
+									<div class="td td-1" data-title="Category">Brakes</div>
+									<div class="td td-2" data-title="Type">TRANSMISSION FILTER</div>
+									<div class="td td-3" data-title="Brand"><strong>JS</strong></div>
+									<div class="td td-4" data-title="Model">
+										<a href="#" title=""><strong>JT306K</strong></a>
+									</div>
+									<div class="td td-5" data-title="Last order ID">#57163</div>
+									<div class="td td-6" data-title="Order date">23/06/2018</div>
+									<div class="td td-7" data-title="Ordered quantity">1</div>
+									<div class="td td-8" data-title="Stock quantity"><strong>50+</strong></div>
+									<div class="td td-9" data-title="Price">
+										<div class="current-price">SG$4590.00</div>
+										<div class="old-price">SG$4590.00</div>
+									</div>
+									<div class="td td-10" data-title="">
+										<div class="d-flex">
+											<div class="countmodule">
+												<button type="button" class="minus" aria-label="minus"></button>
+												<input type="text" value="100" class="form-control count-control" />
+												<button type="button" class="plus" aria-label="plus"></button>
+											</div>
+											<button type="button" class="btn-cart" data-toggle="modal" data-target="#addtocardModal1"><i class="icon icon-littlecart"></i></button>
+										</div>
+									</div>
+									
+								</div>
+							</div>
+							<div class="tr tr-item">
+								<div class="inner">
+									<div class="td td-1" data-title="Category">Engine Compartment</div>
+									<div class="td td-2" data-title="Type">RADIATOR CAP</div>
+									<div class="td td-3" data-title="Brand"><strong>JIKIU</strong></div>
+									<div class="td td-4" data-title="Model">
+										<a href="#" title=""><strong>TRC148</strong></a>
+									</div>
+									<div class="td td-5" data-title="Last order ID">#57163</div>
+									<div class="td td-6" data-title="Order date">23/06/2018</div>
+									<div class="td td-7" data-title="Ordered quantity">1</div>
+									<div class="td td-8" data-title="Stock quantity"><strong>50+</strong></div>
+									<div class="td td-9" data-title="Price">
+										<div class="current-price">SG$4590.00</div>
+										<div class="old-price">SG$4590.00</div>
+									</div>
+									<div class="td td-10" data-title="">
+										<div class="d-flex">
+											<div class="countmodule">
+												<button type="button" class="minus" aria-label="minus"></button>
+												<input type="text" value="100" class="form-control count-control" />
+												<button type="button" class="plus" aria-label="plus"></button>
+											</div>
+											<button type="button" class="btn-cart" data-toggle="modal" data-target="#addtocardModal1"><i class="icon icon-littlecart"></i></button>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="tr tr-item">
+								<div class="inner">
+									<div class="td td-1" data-title="Category">Brakes</div>
+									<div class="td td-2" data-title="Type">TRANSMISSION FILTER</div>
+									<div class="td td-3" data-title="Brand"><strong>JS</strong></div>
+									<div class="td td-4" data-title="Model">
+										<a href="#" title=""><strong>JT306K</strong></a>
+									</div>
+									<div class="td td-5" data-title="Last order ID">#57163</div>
+									<div class="td td-6" data-title="Order date">23/06/2018</div>
+									<div class="td td-7" data-title="Ordered quantity">1</div>
+									<div class="td td-8" data-title="Stock quantity"><strong>50+</strong></div>
+									<div class="td td-9" data-title="Price">
+										<div class="current-price">SG$4590.00</div>
+										<div class="old-price">SG$4590.00</div>
+									</div>
+									<div class="td td-10" data-title="">
+										<div class="d-flex">
+											<div class="countmodule">
+												<button type="button" class="minus" aria-label="minus"></button>
+												<input type="text" value="100" class="form-control count-control" />
+												<button type="button" class="plus" aria-label="plus"></button>
+											</div>
+											<button type="button" class="btn-cart" data-toggle="modal" data-target="#addtocardModal1"><i class="icon icon-littlecart"></i></button>
+										</div>
+									</div>
+									
+								</div>
+							</div>
+							<div class="tr tr-item">
+								<div class="inner">
+									<div class="td td-1" data-title="Category">Engine Compartment</div>
+									<div class="td td-2" data-title="Type">RADIATOR CAP</div>
+									<div class="td td-3" data-title="Brand"><strong>JIKIU</strong></div>
+									<div class="td td-4" data-title="Model">
+										<a href="#" title=""><strong>TRC148</strong></a>
+									</div>
+									<div class="td td-5" data-title="Last order ID">#57163</div>
+									<div class="td td-6" data-title="Order date">23/06/2018</div>
+									<div class="td td-7" data-title="Ordered quantity">1</div>
+									<div class="td td-8" data-title="Stock quantity"><strong>50+</strong></div>
+									<div class="td td-9" data-title="Price">
+										<div class="current-price">SG$4590.00</div>
+										<div class="old-price">SG$4590.00</div>
+									</div>
+									<div class="td td-10" data-title="">
+										<div class="d-flex">
+											<div class="countmodule">
+												<button type="button" class="minus" aria-label="minus"></button>
+												<input type="text" value="100" class="form-control count-control" />
+												<button type="button" class="plus" aria-label="plus"></button>
+											</div>
+											<button type="button" class="btn-cart" data-toggle="modal" data-target="#addtocardModal1"><i class="icon icon-littlecart"></i></button>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
+						
+
+						<button type="button" class="btn-more btn-gray"><i class="icon icon-3lineblue"></i> Show more</button>
+						<!-- =/latest orders -->
 					</div>
 				</div>
 			</div>
@@ -2929,6 +3202,67 @@
 <script src="/template/js/search-moto.js"></script>
 <script src="/template/js/search-hd.js"></script>
 <!-- InstanceBeginEditable name="EditRegion4" -->
+
+<!-- =Add to cart -->
+<div class="modal fade" id="addtocardModal1" tabindex="-1" role="dialog" aria-labelledby="addtocardModalLabel1" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered" role="document">
+		<div class="modal-content modal-content-bg">
+			<div class="modal-header">
+				<h5 class="modal-title" id="addtocardModalLabel1">Add to cart</h5>
+				<button type="button" class="close a-rotate90" data-dismiss="modal" aria-label="Close">
+					<svg width="22" height="22">
+						<line x1="0" y1="0" x2="22" y2="22"/>
+						<line x1="22" y1="0" x2="0" y2="22"/>
+					</svg>
+				</button>
+			</div>
+			<div class="modal-body">
+				<div class="d-flex modal-cart">
+					<div class="product-pic">
+						<img src="/images/thumb-1.jpg" alt="" />
+					</div>
+					<div class="desc">
+						<h3 class="product-title">NiBK PN0202W</h3>
+
+						<div class="instock status-1">
+							In stock 300+
+							<div class="indicator">
+								<span class="unit"></span>
+								<span class="unit"></span>
+								<span class="unit"></span>
+								<span class="unit"></span>
+								<span class="unit"></span>
+							</div>
+						</div>
+						<p class="preorder-text">and 300+ Pre-Order 6 days</p>
+
+						<div class="d-flex count-price">
+							<div class="countmodule">
+								<button type="button" class="minus" aria-label="minus"></button>
+								<input type="text" value="100" class="form-control count-control" />
+								<button type="button" class="plus" aria-label="plus"></button>
+							</div>
+							<div class="price">SG$48.00</div>
+						</div>
+
+						<div class="remarks">
+							<p>Remarks</p>
+							<div class="d-flex">
+								<input type="text" class="form-control" value="" name="remarks" />
+								<i class="ok"></i>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal-footer d-flex">
+				<button type="button" class="btn btn-submit btn-blue btn-large btn-blue-lighten-hover box-shadow"><i class="icon icon-littlecart"></i>Add to cart</button>
+				<button type="button" class="btn-close btn btn-gray btn-large btn-blue-lighten-hover" data-dismiss="modal" aria-label="Close">Cancel</button>
+			</div>
+		</div>
+	</div>
+</div>
+
 <script>
 	$(document).ready(function(){
 		$("#ordersstatmenu").multipleSelect({
