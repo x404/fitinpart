@@ -11356,15 +11356,16 @@ aside .filter .slider {
   .cars__list button {
     padding: 0; }
   .cars__list .item-cars {
+    align-items: center;
     background-color: #fff;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 2rem 4rem; }
+    padding: 2rem 4rem;
+    transition: box-shadow .3s; }
     .cars__list .item-cars__desc {
-      margin-left: 3.8rem;
       color: #3c3c3c;
-      flex-grow: 1; }
+      flex-grow: 1;
+      margin-left: 3.8rem; }
       .cars__list .item-cars__desc p {
         line-height: 1.4;
         margin: .2rem 0; }
@@ -11376,6 +11377,8 @@ aside .filter .slider {
     .cars__list .item-cars .btn line {
       stroke: #c91537;
       stroke-width: 4px; }
+    .cars__list .item-cars .btn-del:hover line, .cars__list .item-cars .btn-del:focus line {
+      stroke: #ff2a52; }
     .cars__list .item-cars .btn-search {
       margin-right: 2.5rem;
       padding-right: 2.3rem;
@@ -11387,19 +11390,19 @@ aside .filter .slider {
       border-radius: 1rem;
       border: none;
       height: 30px;
+      line-height: 1.4;
       overflow: hidden;
-      padding-top: .4rem;
-      resize: none;
-      width: 20rem;
       padding-left: 0;
       padding-right: 0;
-      line-height: 1.4; }
+      padding-top: .4rem;
+      resize: none;
+      width: 20rem; }
       .cars__list .item-cars .txta:valid {
         background-color: transparent; }
     .cars__list .item-cars__note {
+      color: #3e3e3e;
       font-style: italic;
-      margin-top: -10px;
-      color: #3e3e3e; }
+      margin-top: -10px; }
       .cars__list .item-cars__note img {
         display: block;
         flex-shrink: 0;
@@ -11412,6 +11415,8 @@ aside .filter .slider {
       margin-left: 6.5rem;
       display: flex;
       align-items: center; }
+    .cars__list .item-cars:hover, .cars__list .item-cars.sortable-chosen {
+      box-shadow: 0 5px 20px rgba(0, 113, 189, 0.15); }
 
 .cars__item {
   margin-top: 1rem; }
