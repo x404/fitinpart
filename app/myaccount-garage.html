@@ -3135,7 +3135,22 @@
 			}
 		});
 
+		// autosize textarea
 		autosize(document.querySelectorAll('.txta'));
+
+
+		// search garage
+		$('.search-control').keyup(function(){
+			let $this = this;
+			
+			$.each($('.item-cars__title'), function() {
+				if($(this).text().toLowerCase().indexOf($($this).val().toLowerCase()) === -1) {
+					$(this).closest('.item-cars').hide();
+				} else {
+					$(this).closest('.item-cars').show();
+				}
+			});
+		});
 
 	});
 </script>
