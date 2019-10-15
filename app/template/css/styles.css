@@ -9765,6 +9765,10 @@ aside .filter .slider {
       .myaccount .plate-address .btn:hover {
         background-color: #c91537;
         border-color: #c91537; }
+  .myaccount .plate-currentbalance {
+    background: url(../images/bg/monets.png) no-repeat right bottom #0672ba;
+    margin-bottom: 2rem;
+    margin-top: 2.2rem; }
   .myaccount .plate .customer {
     background-color: #c91537;
     font-size: 1.5rem;
@@ -10030,6 +10034,10 @@ aside .filter .slider {
     .myaccount .ordersstat .btn .icon {
       display: block; } }
 
+@media (max-width: 380px) {
+  .myaccount .plate .balance__text {
+    font-size: 13px; } }
+
 .mob-accountmenu {
   background-color: #fff;
   margin-bottom: 20px; }
@@ -10166,18 +10174,21 @@ aside .filter .slider {
 
 .orders__list,
 .order-items__list,
-.stockrequest__list {
+.stockrequest__list,
+.transactions__list {
   color: #2b2b2b;
   margin-top: 2.2rem; }
   .orders__list .tr,
   .order-items__list .tr,
-  .stockrequest__list .tr {
+  .stockrequest__list .tr,
+  .transactions__list .tr {
     align-items: center;
     display: flex;
     font-size: 1.5rem; }
     .orders__list .tr-head,
     .order-items__list .tr-head,
-    .stockrequest__list .tr-head {
+    .stockrequest__list .tr-head,
+    .transactions__list .tr-head {
       background-color: #fff;
       border-bottom: 5px solid #0672ba;
       font-size: 1.4rem;
@@ -10185,24 +10196,28 @@ aside .filter .slider {
       min-height: 8.4rem; }
     .orders__list .tr-item,
     .order-items__list .tr-item,
-    .stockrequest__list .tr-item {
+    .stockrequest__list .tr-item,
+    .transactions__list .tr-item {
       background-color: #fff;
       display: block;
       margin-bottom: 1.2rem;
       transition: box-shadow .3s; }
       .orders__list .tr-item:last-child,
       .order-items__list .tr-item:last-child,
-      .stockrequest__list .tr-item:last-child {
+      .stockrequest__list .tr-item:last-child,
+      .transactions__list .tr-item:last-child {
         border-bottom: none; }
       .orders__list .tr-item:hover,
       .order-items__list .tr-item:hover,
-      .stockrequest__list .tr-item:hover {
+      .stockrequest__list .tr-item:hover,
+      .transactions__list .tr-item:hover {
         box-shadow: 0 5px 15px rgba(0, 153, 255, 0.5);
         position: relative;
         z-index: 10; }
       .orders__list .tr-item .inner,
       .order-items__list .tr-item .inner,
-      .stockrequest__list .tr-item .inner {
+      .stockrequest__list .tr-item .inner,
+      .transactions__list .tr-item .inner {
         align-items: center;
         display: flex;
         min-height: 8rem;
@@ -10211,11 +10226,13 @@ aside .filter .slider {
   @media (max-width: 1199px) {
     .orders__list .tr-head,
     .order-items__list .tr-head,
-    .stockrequest__list .tr-head {
+    .stockrequest__list .tr-head,
+    .transactions__list .tr-head {
       display: none; }
     .orders__list .tr-item .inner,
     .order-items__list .tr-item .inner,
-    .stockrequest__list .tr-item .inner {
+    .stockrequest__list .tr-item .inner,
+    .transactions__list .tr-item .inner {
       flex-wrap: wrap;
       padding-right: 9rem;
       padding-bottom: 1.5rem;
@@ -10223,14 +10240,16 @@ aside .filter .slider {
       position: relative; }
     .orders__list .tr-item .td,
     .order-items__list .tr-item .td,
-    .stockrequest__list .tr-item .td {
+    .stockrequest__list .tr-item .td,
+    .transactions__list .tr-item .td {
       flex-shrink: 0;
       margin-bottom: 2px;
       margin-top: .7rem;
       position: relative; }
       .orders__list .tr-item .td:before,
       .order-items__list .tr-item .td:before,
-      .stockrequest__list .tr-item .td:before {
+      .stockrequest__list .tr-item .td:before,
+      .transactions__list .tr-item .td:before {
         content: attr(data-title);
         color: #757575;
         display: block;
@@ -11228,6 +11247,50 @@ aside .filter .slider {
       width: 100%; }
   .stockrequest__list .tr-item .inner {
     padding: 1.5rem; } }
+
+.transactions__list .tr-head {
+  padding-left: 3rem;
+  padding-right: 2.3rem; }
+
+.transactions__list .td-1 {
+  width: 20%; }
+
+.transactions__list .td-2 {
+  width: 35%; }
+
+.transactions__list .td-3 {
+  width: 22%; }
+
+.transactions__list .td-4 {
+  width: 23%; }
+
+.transactions__list .tr-item {
+  margin-top: 1rem; }
+  .transactions__list .tr-item .inner {
+    flex-wrap: wrap;
+    padding: 3rem 2.3rem 3rem 3rem; }
+  .transactions__list .tr-item .minus,
+  .transactions__list .tr-item .plus {
+    font-weight: 700; }
+  .transactions__list .tr-item .minus {
+    color: #08bb5d; }
+  .transactions__list .tr-item .plus {
+    color: #c91537; }
+
+@media (max-width: 768px) {
+  .transactions__list .tr-item .inner {
+    padding-top: 12px;
+    padding-bottom: 12px; } }
+
+@media (max-width: 480px) {
+  .transactions__list .td-1 {
+    width: 50%; }
+  .transactions__list .td-2 {
+    width: 50%; }
+  .transactions__list .td-3 {
+    width: 50%; }
+  .transactions__list .td-4 {
+    width: 50%; } }
 
 /* =mobile-menu
 ---------------------------*/
