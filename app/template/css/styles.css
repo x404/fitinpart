@@ -9882,19 +9882,20 @@ aside .filter .slider {
     .myaccount .ordersstat__cell.active a .num,
     .myaccount .ordersstat__cell.active a .sign {
       color: #fff; }
-  .myaccount .ordersstat .btn {
-    border-radius: 5rem;
-    font-size: 1.7rem;
-    font-weight: 700;
-    height: 5rem;
-    line-height: 1;
-    margin: auto;
-    padding-left: 3.4rem;
-    padding-right: 4rem; }
-    .myaccount .ordersstat .btn .icon {
-      margin-right: 10px; }
-    .myaccount .ordersstat .btn:hover {
-      box-shadow: 0 5px 15px rgba(0, 153, 255, 0.5); }
+
+.myaccount .btn-quickorder {
+  border-radius: 5rem;
+  font-size: 1.7rem;
+  font-weight: 700;
+  height: 5rem;
+  line-height: 1;
+  margin: auto;
+  padding-left: 3.4rem;
+  padding-right: 4rem; }
+  .myaccount .btn-quickorder .icon {
+    margin-right: 10px; }
+  .myaccount .btn-quickorder:hover {
+    box-shadow: 0 5px 15px rgba(0, 153, 255, 0.5); }
 
 .myaccount .mob-ordersstatmenu {
   display: none; }
@@ -10893,6 +10894,62 @@ aside .filter .slider {
 
 .asterisk {
   color: #c91537; }
+
+.filter-orders {
+  background-color: #fff;
+  font-size: 1.5rem;
+  padding: 2.5rem 3rem; }
+  .filter-orders ul li {
+    margin: 0 !important;
+    padding-left: 0;
+    width: calc(100% - 27px) !important; }
+    .filter-orders ul li:before, .filter-orders ul li:after {
+      display: none !important; }
+    .filter-orders ul li span {
+      padding: 0 !important; }
+  .filter-orders .ms-parent {
+    margin-left: 1.5rem;
+    width: 305px !important; }
+    .filter-orders .ms-parent .listwrapper label {
+      padding-left: 15px; }
+  .filter-orders .left .item {
+    align-items: center;
+    display: flex;
+    margin-right: 2.4rem; }
+  @media (max-width: 1399px) {
+    .filter-orders .ms-parent {
+      width: 200px !important; } }
+  @media (max-width: 1199px) {
+    .filter-orders .ms-parent {
+      width: 240px !important; } }
+  @media (max-width: 991px) {
+    .filter-orders .item {
+      margin-bottom: 10px; }
+      .filter-orders .item:last-child {
+        margin-bottom: 0; }
+      .filter-orders .item__title {
+        width: 65px; }
+    .filter-orders .ms-parent {
+      width: 320px !important; } }
+  @media (max-width: 520px) {
+    .filter-orders {
+      padding: 1.5rem; }
+      .filter-orders .left {
+        width: 100%; }
+        .filter-orders .left .item {
+          margin-right: 0;
+          width: 100%; }
+      .filter-orders .ms-parent {
+        width: calc(100% - 75px) !important; } }
+  @media (max-width: 380px) {
+    .filter-orders .left .item {
+      display: block; }
+      .filter-orders .left .item__title {
+        font-size: 13px; }
+      .filter-orders .left .item .ms-parent {
+        margin-left: 0;
+        margin-top: 3px;
+        width: 100% !important; } }
 
 .order-items__list .tr .inner {
   padding-right: 0; }

@@ -1586,7 +1586,45 @@
 						<!-- =filter orders -->
 						<div class="filter-orders">
 							<div class="d-flex justify-content-between">
-								
+								<div class="left d-lg-flex">
+									<div class="item item-category">
+										<div class="item__title">Category</div>
+										<select name="category" id="category-select" multiple="multiple">
+											<option value="all parts" selected="selected">All parts</option>
+											<option value="brakes">Brakes</option>
+											<option value="engine-compartment">Engine Compartment</option>
+											<option value="engine-compartment">Engine Compartment</option>
+											<option value="engine-compartment">Engine Compartment</option>
+											<option value="engine-compartment">Engine Compartment</option>
+											<option value="engine-compartment">Engine Compartment</option>
+											<option value="engine-compartment">Engine Compartment</option>
+											<option value="engine-compartment">Engine Compartment</option>
+											<option value="engine-compartment">Engine Compartment</option>
+											<option value="engine-compartment">Engine Compartment</option>
+											<option value="engine-compartment">Engine Compartment</option>
+										</select>										
+									</div>
+
+									<div class="item item-type">
+										<div class="item__title">Type</div>
+										<select name="type" id="type-select" multiple="multiple">
+											<option value="TRANSMISSION FILTER">TRANSMISSION FILTER</option>
+											<option value="RADIATOR CAP">RADIATOR CAP</option>
+											<option value="RADIATOR CAP">RADIATOR CAP</option>
+											<option value="RADIATOR CAP">RADIATOR CAP</option>
+											<option value="RADIATOR CAP">RADIATOR CAP</option>
+											<option value="RADIATOR CAP">RADIATOR CAP</option>
+											<option value="RADIATOR CAP">RADIATOR CAP</option>
+											<option value="RADIATOR CAP">RADIATOR CAP</option>
+											<option value="RADIATOR CAP">RADIATOR CAP</option>
+											<option value="RADIATOR CAP">RADIATOR CAP</option>
+										</select>
+									</div>
+								</div>
+
+								<div class="right d-none d-xl-flex">
+									<button type="button" class="btn btn-quickorder btn-red btn-blue-lighten-hover" data-toggle="modal" data-target="#quickorderModal"><i class="icon icon-qtime"></i>Quick order</button>
+								</div>
 							</div>
 						</div>
 						<!-- =/filter orders -->
@@ -3265,17 +3303,38 @@
 
 <script>
 	$(document).ready(function(){
-		$("#ordersstatmenu").multipleSelect({
+		$("#category-select").multipleSelect({
 			single: true,
 			filter: false,
-			onClick: function(view) {
-				url = view.value;
-				window.location.href = url;
-			},
 			onOpen: function() {
-				mobordersstatmenu.update();
+				categorylist.update();
 			}
 		});
+
+		$("#type-select").multipleSelect({
+			single: true,
+			filter: false,
+			placeholder: '',
+			onOpen: function() {
+				typelist.update();
+			}
+		});
+
+		categorylist = new PerfectScrollbar('.item-category .listwrapper', {
+			wheelPropagation: true,
+			minScrollbarLength: 35,
+			maxScrollbarLength: 65,
+		});
+		categorylist.update();
+
+
+		typelist = new PerfectScrollbar('.item-type .listwrapper', {
+			wheelPropagation: true,
+			minScrollbarLength: 35,
+			maxScrollbarLength: 65,
+		});
+		typelist.update();
+
 	});
 </script>
 <!-- InstanceEndEditable -->

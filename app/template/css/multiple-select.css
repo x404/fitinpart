@@ -280,3 +280,11 @@ p.pink-color {
   display: none; }
 
 /*# sourceMappingURL=multiple-select.css.map */
+.listwrapper {
+  height: 250px;
+  position: relative;
+  z-index: 10;
+  overflow: hidden; }
+  .listwrapper ul {
+    height: auto !important;
+    max-height: none !important; }

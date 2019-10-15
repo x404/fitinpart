@@ -459,22 +459,28 @@
 		}
 
 		.btn{
-			border-radius: 5rem;
-			font-size: 1.7rem;
-			font-weight: 700;
-			height: 5rem;
-			line-height: 1;
-			margin: auto;
-			padding-left: 3.4rem;
-			padding-right: 4rem;
-			.icon{
-				margin-right: 10px;
-			}
-			&:hover{
-				box-shadow: 0 5px 15px rgba(0, 153, 255, 0.5);
-			}
+
 		}
 	}
+
+
+	.btn-quickorder{
+		border-radius: 5rem;
+		font-size: 1.7rem;
+		font-weight: 700;
+		height: 5rem;
+		line-height: 1;
+		margin: auto;
+		padding-left: 3.4rem;
+		padding-right: 4rem;
+		.icon{
+			margin-right: 10px;
+		}
+		&:hover{
+			box-shadow: 0 5px 15px rgba(0, 153, 255, 0.5);
+		}
+	}
+	
 
 	.mob-ordersstatmenu{
 		display: none;
