@@ -406,7 +406,7 @@
 											</a>
 										</li>
 										<li>
-											<a href="#" title="">
+											<a href="/stock-request.html" title="">
 												<i class="icon-wrapper">
 													<i class="icon icon-stock-sm"></i>
 												</i>
@@ -430,7 +430,7 @@
 											</a>
 										</li>
 										<li>
-											<a href="#" title="">
+											<a href="myaccount-orderhistory.html" title="">
 												<i class="icon-wrapper">
 													<i class="icon icon-orders-sm"></i>
 												</i>
@@ -1041,7 +1041,7 @@
 								</a>
 							</li>
 							<li>
-								<a href="#" title="">
+								<a href="/stock-request.html" title="">
 									<i class="icon-wrapper">
 										<i class="icon icon-stock-sm"></i>
 									</i>
@@ -1451,7 +1451,7 @@
 								</a>
 							</li>
 							<li>
-								<a href="#" title="">
+								<a href="myaccount-orderhistory.html" title="">
 									<i class="icon-wrapper">
 										<i class="icon icon-orders"></i>
 									</i>
@@ -1459,7 +1459,7 @@
 								</a>
 							</li>
 							<li>
-								<a href="#" title="">
+								<a href="myaccount-orderhistory-items.html" title="">
 									<i class="icon-wrapper">
 										<i class="icon icon-itemorders"></i>
 									</i>
