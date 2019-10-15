@@ -3887,7 +3887,7 @@ h3 {
 
 .neosans, .top__tel, .header .catalog-btn, .littlecart .cart-body .title, .littlecart .cart-body .cart-products .item-title, .littlecart .cart-body .cart-products .price, .search .vehicle-search .ms-parent .ms-drop:before, .main h1, .main .title, .searchbox__title, #homeslider .title, .visual__item, .homepage .advantages, .reviews header h1, .review-card__title, .homepage .about .subtitle, .modal-title, #loginModal .subtitle,
 #registerModal .subtitle, .modal-info .title, .smartsearch__header, .smartsearch__header .ms-choice, .main h2, .main h3, .main h4, .main h5, .main h6, .content blockquote, .lastnews .item-news__title,
-.news__list .item-news__title, .aboutus-page .intro__title, .aboutus-page .about__title, .aboutus-page .quote, .aboutus-page .advantages, .aboutus-page .item-products__title, .aboutus-page .brands__text, .title-md, aside .widget-title, .sortbox .sort-label, .item-products__title, .products__list .item-products .btn-tooltip, .products__list .item-products .tooltip-title, .modal-v2 .box__title, #addtocardModal1 .product-title, #addtocardModal1 .count-price .price, .comparison__body .product-title, .wiper-search .intro, .wiper-search .steps, .perfomance-page .intro .subtitle, .perfomance-page .list-title, .table-title, .logout, .myaccount aside ul, .myaccount aside .tel, .myaccount .plate__title, .myaccount .plate .statistic__field, .myaccount .ordersstat .num, .mob-accountmenu .btn-accountmenu, .mob-accountmenu .menu, .latest-orders header, .orders__list .tracking__title, .orders__list .orderinfo .print, .orders__list .orderinfo__title, .orders__list .subtitle, #quickorderModal .modal-body h2, #quickorderModal .modal-body ol li:before, .region .subtitle, .mob-header .btn-menu, .mob-header .tel {
+.news__list .item-news__title, .aboutus-page .intro__title, .aboutus-page .about__title, .aboutus-page .quote, .aboutus-page .advantages, .aboutus-page .item-products__title, .aboutus-page .brands__text, .title-md, aside .widget-title, .sortbox .sort-label, .item-products__title, .products__list .item-products .btn-tooltip, .products__list .item-products .tooltip-title, .modal-v2 .box__title, #addtocardModal1 .product-title, #addtocardModal1 .count-price .price, .comparison__body .product-title, .wiper-search .intro, .wiper-search .steps, .perfomance-page .intro .subtitle, .perfomance-page .list-title, .table-title, .logout, .myaccount aside ul, .myaccount aside .tel, .myaccount .plate__title, .myaccount .plate .statistic__field, .myaccount .ordersstat .num, .mob-accountmenu .btn-accountmenu, .mob-accountmenu .menu, .latest-orders header, .orders__list .tracking__title, .orders__list .orderinfo .print, .orders__list .orderinfo__title, .orders__list .subtitle, #quickorderModal .modal-body h2, #quickorderModal .modal-body ol li:before, .region .subtitle, .garagesearch .left .num, .mob-header .btn-menu, .mob-header .tel {
   font-family: 'Neo Sans Pro', Verdana, sans-serif; }
 
 strong,
@@ -11312,9 +11312,47 @@ aside .filter .slider {
 .garagesearch {
   background-color: #0672ba;
   padding: 3.8rem 4rem; }
+  .garagesearch .left {
+    color: #fff;
+    font-size: 1.7rem;
+    line-height: 1.4; }
+    .garagesearch .left .num {
+      line-height: 1.2;
+      font-weight: 700;
+      font-size: 2.4rem; }
+    .garagesearch .left .btn {
+      margin-left: 1rem; }
+  .garagesearch .center {
+    flex-grow: 1;
+    margin-right: 5.5rem;
+    margin-left: 5.5rem; }
+    .garagesearch .center .search-control {
+      background-color: #fff;
+      background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAATCAYAAAByUDbMAAAB7UlEQVQ4T6WUXSjfURjHvSdJk4hyodQu3JCIkP3twhDSJPeuhNuNiNIWdqPdrFhKrtS802xty8uduZFWQ8oMufBSboQ25fPVOXX6+f/9lVOfznOec37f85znPOcXGnK3JeDywXPIhAjYgUX4AX/8fHPrCvVM1DDugJwAH0joPXyAa+8aV6yFyX6INIt+02/AP0iDLIg2c4P0zV5BK/aCiVmIgr/QDZ/g3Nm91Pjzja+T/q0bncTiYB4KYR/q4Kf3CGacSD8JRXAKJfDLrpVYGXwxIeuoAwGErDsP45sJoodeOb5tElOocigqJf4oiFg489NQCd+hCq6s2DhGLSyDL4iQnX6H8Rq2QEc+sWITGC9hCZSDh7Q+FrXCNijXx1asF6MN9iAblNj7mlIzAzreAui4F1ZMgzlQETbBxyBiugBdWDwokHa7Xrs8Ad1Oromumn49gKDWToEPDk1Ua66Y7HITuqpf77ALPsOZWahiLgAVc7Hxqajr3U3d56Tb0S3ZtoqxCf8hDVT5Mc68cvsKhr2R2bF2UlQZ7o6OrUtS8isgHZTnRhjSGu9fQ74k0KXoWE9BRzyAFdDR9fhVDqrPZLg0giP+xNygYhmEgR6895fzDN8opID+LA3BxFxhf7byOAapsPtYMW0gwTfw9QbSWV/CQX8vogAAAABJRU5ErkJggg==");
+      background-position: right 16px center;
+      background-repeat: no-repeat;
+      border-radius: 4.5rem;
+      border: none;
+      font-size: 1.4rem;
+      height: 4.5rem;
+      padding-left: 1.6rem;
+      padding-right: 40px;
+      width: 100%; }
+  .garagesearch .btn:last-child {
+    margin-right: 0; }
+
+.dragndrop-text {
+  align-items: center;
+  color: #7c8b94;
+  display: flex;
+  font-size: 1.4rem;
+  margin-top: 1.5rem; }
+  .dragndrop-text img {
+    margin-right: 8px; }
 
 .cars__list {
-  font-size: 1.4rem; }
+  font-size: 1.4rem;
+  margin-top: 1.7rem; }
   .cars__list button {
     padding: 0; }
   .cars__list .item-cars {
@@ -11378,21 +11416,26 @@ aside .filter .slider {
 .cars__item {
   margin-top: 1rem; }
 
-.group-btn-garage .btn {
+.group-btn-garage .btn,
+.garagesearch .btn {
   border-radius: 4.5rem;
   color: #fff;
   font-size: 1.5rem;
   font-weight: 700;
   height: 4.5rem;
   margin-right: 1.4rem;
-  margin-top: 2.5rem;
   padding-left: 1.5rem;
   padding-right: 2rem;
   text-decoration: none; }
-  .group-btn-garage .btn:hover {
+  .group-btn-garage .btn:hover,
+  .garagesearch .btn:hover {
     box-shadow: 0 5px 10px rgba(0, 113, 189, 0.25); }
-  .group-btn-garage .btn .icon {
+  .group-btn-garage .btn .icon,
+  .garagesearch .btn .icon {
     margin-right: 1rem; }
+
+.group-btn-garage .btn {
+  margin-top: 2.8rem; }
 
 /* =mobile-menu
 ---------------------------*/
