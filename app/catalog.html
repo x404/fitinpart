@@ -1159,7 +1159,7 @@
 			<!-- =/breadcrumbs -->
 
 			<div class="row">
-				<aside class="col-xl-2 col-lg-3">
+				<aside class="col-xl-2 col-xlg-3 col-lg-3 col-md-3">
 					<div class="widget smartsearch">
 						<div class="inner">
 							<div class="smartsearch__header">
@@ -2020,60 +2020,62 @@
 						</form>
 					</div>
 				</aside>
-				<div class="col-xl-8 col-lg-7">
-					<h1>Brake pads</h1>
+				<div class="catalog-content col-xl-8 col-xlg-7 col-lg-7 col-md-7">
+					<div class="head-sortbox">
+						<h1>Brake pads</h1>
 
-					<!-- =sortbox -->
-					<div class="sortbox">
-						<ul class="d-flex">
-							<li class="sort-label">Sort by</li>
-							<li>
-								<!-- class="param-sort active sort-asc" -->
-								<a href="#" title="" class="param-sort">cost</a>
-								<button type="button" class="sort-reset">
-									<svg width="12" height="12">
-										<line x1="0" y1="0" x2="12" y2="12"/>
-										<line x1="12" y1="0" x2="0" y2="12"/>
-									</svg>
-								</button>
-							</li>
-							<li>
-								<a href="#" title="" class="param-sort">alphabetically</a>
-								<button type="button" class="sort-reset">
-									<svg width="12" height="12">
-										<line x1="0" y1="0" x2="12" y2="12"/>
-										<line x1="12" y1="0" x2="0" y2="12"/>
-									</svg>
-								</button>
-							</li>
-							<li>
-								<div class="custom-control custom-checkbox">
-									<input type="checkbox" class="custom-control-input" id="stock" name="stock">
-									<label class="custom-control-label" for="stock">Ex-stock only</label>
-								</div>
-							</li>
-						</ul>
-						<script>
-							[].forEach.call(document.querySelectorAll('.param-sort'),function(el,i){
-								el.addEventListener('click', function(e){
-									e.preventDefault();
-									if (this.classList.contains('active')){
-										this.classList.toggle('sort-asc');
-									} else {
-										this.classList.add('active');
-									}
-								})
-							});
-							[].forEach.call(document.querySelectorAll('.sortbox .sort-reset'),function(el,i){
-								el.addEventListener('click', function(e){
-									e.preventDefault();
-									this.previousElementSibling.classList.remove('active');
-									this.previousElementSibling.classList.remove('sort-asc');
-								})
-							});
-						</script>
+						<!-- =sortbox -->
+						<div class="sortbox">
+							<ul class="d-flex">
+								<li class="sort-label">Sort by</li>
+								<li>
+									<!-- class="param-sort active sort-asc" -->
+									<a href="#" title="" class="param-sort">cost</a>
+									<button type="button" class="sort-reset">
+										<svg width="12" height="12">
+											<line x1="0" y1="0" x2="12" y2="12"/>
+											<line x1="12" y1="0" x2="0" y2="12"/>
+										</svg>
+									</button>
+								</li>
+								<li>
+									<a href="#" title="" class="param-sort">alphabetically</a>
+									<button type="button" class="sort-reset">
+										<svg width="12" height="12">
+											<line x1="0" y1="0" x2="12" y2="12"/>
+											<line x1="12" y1="0" x2="0" y2="12"/>
+										</svg>
+									</button>
+								</li>
+								<li>
+									<div class="custom-control custom-checkbox">
+										<input type="checkbox" class="custom-control-input" id="stock" name="stock">
+										<label class="custom-control-label" for="stock">Ex-stock only</label>
+									</div>
+								</li>
+							</ul>
+							<script>
+								[].forEach.call(document.querySelectorAll('.param-sort'),function(el,i){
+									el.addEventListener('click', function(e){
+										e.preventDefault();
+										if (this.classList.contains('active')){
+											this.classList.toggle('sort-asc');
+										} else {
+											this.classList.add('active');
+										}
+									})
+								});
+								[].forEach.call(document.querySelectorAll('.sortbox .sort-reset'),function(el,i){
+									el.addEventListener('click', function(e){
+										e.preventDefault();
+										this.previousElementSibling.classList.remove('active');
+										this.previousElementSibling.classList.remove('sort-asc');
+									})
+								});
+							</script>
+						</div>
+						<!-- =/sortbox -->
 					</div>
-					<!-- =/sortbox -->
 
 					<!-- =products -->
 					<div class="products__list d-flex flex-wrap justify-content-around  d-lg-grid grid-lg-4">
