@@ -11644,7 +11644,7 @@ aside .filter .slider {
     padding-top: 4.3rem;
     padding-bottom: 1rem;
     position: relative;
-    width: 100%; }
+    width: 100% !important; }
     .addvehicle-page .plate-wherevin p {
       position: relative;
       z-index: 10; }
@@ -11680,6 +11680,77 @@ aside .filter .slider {
       position: absolute;
       top: 25px;
       width: 48px; }
+  @media (max-width: 1399px) {
+    .addvehicle-page .plate {
+      padding-left: 2rem;
+      padding-right: 2rem; }
+      .addvehicle-page .plate__title {
+        font-size: 2rem; }
+      .addvehicle-page .plate .veh-only {
+        font-size: 1.4rem;
+        margin-top: 1rem; }
+      .addvehicle-page .plate .vehicle-year, .addvehicle-page .plate .vehicle-body, .addvehicle-page .plate .vehicle-engine, .addvehicle-page .plate .vehicle-engineno {
+        width: 100%; }
+      .addvehicle-page .plate .btn-addvehicle {
+        height: 4.5rem;
+        border-radius: 4.5rem;
+        font-size: 1.7rem; }
+      .addvehicle-page .plate-wherevin {
+        min-height: 0;
+        padding-bottom: 4rem; }
+        .addvehicle-page .plate-wherevin .pic {
+          display: block;
+          position: static;
+          margin-top: 4rem; } }
+  @media (max-width: 1199px) {
+    .addvehicle-page .plate {
+      margin-bottom: 2rem;
+      width: calc(50% - 14px); }
+      .addvehicle-page .plate .placement {
+        font-size: 1.6rem;
+        line-height: 1.4;
+        top: 10px;
+        right: 10px; } }
+  @media (max-width: 991px) {
+    .addvehicle-page .plate {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem; }
+      .addvehicle-page .plate .row {
+        margin-left: 0;
+        margin-right: 0; }
+      .addvehicle-page .plate-wherevin {
+        margin-top: 0; }
+      .addvehicle-page .plate .placement {
+        padding-left: 65px;
+        padding-right: 15px;
+        width: 250px;
+        font-size: 14px; }
+        .addvehicle-page .plate .placement:before {
+          left: 7px; } }
+  @media (max-width: 576px) {
+    .addvehicle-page .plate {
+      min-height: 0;
+      width: 100%; }
+      .addvehicle-page .plate .placement {
+        position: relative;
+        right: auto;
+        width: 100%; }
+      .addvehicle-page .plate-wherevin {
+        padding-top: 20px; } }
+  @media (max-width: 480px) {
+    .addvehicle-page .plate {
+      padding-top: 18px;
+      padding-bottom: 20px; }
+      .addvehicle-page .plate__title {
+        font-size: 18px; }
+      .addvehicle-page .plate .btn-addvehicle {
+        border-radius: 42px;
+        font-size: 16px;
+        height: 42px;
+        min-width: 150px;
+        padding-left: 15px; }
+      .addvehicle-page .plate-wherevin p:not(.plate__title) {
+        font-size: 15px; } }
 
 /* =mobile-menu
 ---------------------------*/

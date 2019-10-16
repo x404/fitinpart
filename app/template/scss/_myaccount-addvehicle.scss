@@ -110,7 +110,7 @@
 			padding-top: 4.3rem;
 			padding-bottom: 1rem;
 			position: relative;
-			width: 100%;
+			width: 100% !important;
 			p{
 				position: relative;
 				z-index: 10;
@@ -154,6 +154,116 @@
 				position: absolute;
 				top: 25px;
 				width: 48px;
+			}
+		}
+
+		@media (max-width: 1399px){
+			padding-left: 2rem;
+			padding-right: 2rem;
+			&__title{
+				font-size: 2rem;
+			}
+
+			.veh-only{
+				font-size: 1.4rem;
+				margin-top: 1rem;
+			}
+
+			.vehicle{
+				&-year,
+				&-body,
+				&-engine,
+				&-engineno
+				{
+					width: 100%;
+				}
+			}
+
+			.btn{
+				&-addvehicle{
+					height: 4.5rem;
+					border-radius: 4.5rem;
+					font-size: 1.7rem;
+				}
+			}
+
+			&-wherevin{
+				min-height: 0;
+				padding-bottom: 4rem;
+				.pic{
+					display: block;
+					position: static;
+					margin-top: 4rem;
+				}
+			}
+		}
+
+		@media (max-width: 1199px){
+			margin-bottom: 2rem;
+			width: calc(50% - 14px);
+
+			.placement{
+				font-size: 1.6rem;
+				line-height: 1.4;
+				top: 10px;
+				right: 10px;
+			}
+		}
+
+		@media (max-width: 991px){
+			.row{
+				margin-left: 0;
+				margin-right: 0;
+			}
+			padding-left: 1.5rem;
+			padding-right: 1.5rem;
+
+			&-wherevin{
+				margin-top: 0;
+			}
+
+			.placement{
+				padding-left: 65px;
+				padding-right: 15px;
+				width: 250px;
+				font-size: 14px;
+				&:before{
+					left: 7px;
+				}
+			}
+		}
+
+		@media (max-width: 576px){
+			min-height: 0;
+			width: 100%;
+			.placement{
+				position: relative;
+				right: auto;
+				width: 100%;
+			}
+
+			&-wherevin{
+				padding-top: 20px;
+			}
+		}
+		
+		@media (max-width: 480px){
+			padding-top: 18px;
+			padding-bottom: 20px;
+			&__title{
+				font-size: 18px;
+			}
+
+			.btn-addvehicle{
+				border-radius: 42px;
+				font-size: 16px;
+				height: 42px;
+				min-width: 150px;
+				padding-left: 15px;
+			}
+
+			&-wherevin p:not(.plate__title){
+				font-size: 15px;
 			}
 		}
 	}
