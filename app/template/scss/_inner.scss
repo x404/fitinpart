@@ -61,6 +61,7 @@
 		.title{
 			color: #000;
 			font-size: 1.6rem;
+			white-space: nowrap;
 		}
 
 		.ms-parent{
@@ -135,7 +136,6 @@
 			}
 		}
 
-
 		.ms-choice{
 			margin-left: 16px;
 			& > span{
@@ -144,8 +144,8 @@
 		}
 	}
 
-	form{
-		
+	.listwrapper{
+		height: auto;
 	}
 
 	.btn-search{
@@ -159,12 +159,6 @@
 		margin-bottom: 1.2rem;
 	}
 
-	#vehicleplatenoForm,
-	#partnumForm
-	{
-
-	}
-
 	.control-item{
 		margin-top: 1rem;
 		label{
@@ -175,7 +169,6 @@
 			margin-left: 1.7rem;
 		}
 	}
-
 
 	.approximation_block{
 		margin-top: 1.5rem;
@@ -234,6 +227,13 @@
 		}
 	}
 
+	@media (max-width: 1450px){
+		&__header{
+			.title{
+				font-size: 1.6rem !important;
+			}
+		}
+	}
 }
 
 
