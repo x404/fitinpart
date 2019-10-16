@@ -11340,6 +11340,37 @@ aside .filter .slider {
       width: 100%; }
   .garagesearch .btn:last-child {
     margin-right: 0; }
+  @media (max-width: 1399px) {
+    .garagesearch-layout {
+      flex-wrap: wrap; }
+    .garagesearch .left {
+      order: 0; }
+    .garagesearch .right {
+      order: 1; }
+    .garagesearch .center {
+      order: 2;
+      margin-top: 2rem;
+      margin-left: 0;
+      margin-right: 0; } }
+  @media (max-width: 991px) {
+    .garagesearch {
+      padding: 2rem 2.5rem; }
+      .garagesearch .left,
+      .garagesearch .right {
+        width: 100%; }
+      .garagesearch .right .btn {
+        margin-top: 1.5rem; } }
+  @media (max-width: 450px) {
+    .garagesearch {
+      padding-left: 15px;
+      padding-right: 15px; }
+      .garagesearch .left,
+      .garagesearch .right {
+        display: block !important; }
+        .garagesearch .left .btn,
+        .garagesearch .right .btn {
+          margin-left: 0;
+          margin-top: 10px; } }
 
 .dragndrop-text {
   align-items: center;
@@ -11382,7 +11413,8 @@ aside .filter .slider {
     .cars__list .item-cars .btn-search {
       margin-right: 2.5rem;
       padding-right: 2.3rem;
-      padding-left: 1.5rem; }
+      padding-left: 1.5rem;
+      flex-shrink: 0; }
       .cars__list .item-cars .btn-search i {
         margin-right: .6rem; }
     .cars__list .item-cars .txta {
@@ -11417,6 +11449,69 @@ aside .filter .slider {
       align-items: center; }
     .cars__list .item-cars:hover, .cars__list .item-cars.sortable-chosen {
       box-shadow: 0 5px 20px rgba(0, 113, 189, 0.15); }
+    @media (max-width: 1399px) {
+      .cars__list .item-cars {
+        padding-left: 2.2rem;
+        padding-right: 2.2rem; }
+        .cars__list .item-cars__manage {
+          display: block;
+          margin-left: 2rem; }
+          .cars__list .item-cars__manage .btn-search {
+            margin-right: 0;
+            width: 100%;
+            white-space: nowrap;
+            padding: 0 1.5rem; }
+            .cars__list .item-cars__manage .btn-search .icon {
+              display: none; }
+          .cars__list .item-cars__manage .btn-del {
+            display: block;
+            margin: 1rem auto 0; }
+        .cars__list .item-cars__note {
+          margin-left: 1.5rem; } }
+    @media (max-width: 991px) {
+      .cars__list .item-cars__pic {
+        display: none; }
+      .cars__list .item-cars__desc {
+        margin-left: 0; } }
+    @media (max-width: 768px) {
+      .cars__list .item-cars {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem; }
+        .cars__list .item-cars__pic {
+          display: block; }
+        .cars__list .item-cars__desc {
+          margin-left: 1.5rem; } }
+    @media (max-width: 650px) {
+      .cars__list .item-cars {
+        position: relative; }
+        .cars__list .item-cars__pic {
+          display: none; }
+        .cars__list .item-cars__desc {
+          margin-left: 0; }
+        .cars__list .item-cars__note {
+          margin: 10px auto;
+          text-align: left;
+          position: relative;
+          right: -15px;
+          width: 230px; }
+        .cars__list .item-cars__manage {
+          margin-left: 0;
+          margin-top: 1.5rem; }
+          .cars__list .item-cars__manage .btn-search {
+            width: 200px; }
+          .cars__list .item-cars__manage .btn-del {
+            position: absolute;
+            right: 15px;
+            top: 5px; } }
+    @media (max-width: 600px) {
+      .cars__list .item-cars {
+        display: block !important;
+        text-align: center; }
+        .cars__list .item-cars__pic {
+          display: block;
+          text-align: center; }
+        .cars__list .item-cars__title {
+          margin-top: 10px; } }
 
 .cars__item {
   margin-top: 1rem; }
@@ -11441,6 +11536,24 @@ aside .filter .slider {
 
 .group-btn-garage .btn {
   margin-top: 2.8rem; }
+  .group-btn-garage .btn:last-child {
+    margin-right: 0; }
+  @media (max-width: 991px) {
+    .group-btn-garage .btn {
+      margin-top: 1.2rem; } }
+
+@media (max-width: 600px) {
+  .group-btn-garage {
+    justify-content: center; } }
+
+@media (max-width: 550px) {
+  .group-btn-garage {
+    align-items: center;
+    flex-direction: column; }
+    .group-btn-garage .btn {
+      margin-right: 0;
+      text-align: center;
+      width: 180px; } }
 
 /* =mobile-menu
 ---------------------------*/

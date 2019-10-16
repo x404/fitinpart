@@ -38,6 +38,51 @@
 	.btn:last-child{
 		margin-right: 0;
 	}
+
+	@media (max-width: 1399px){
+		&-layout{
+			flex-wrap: wrap;
+		}
+		.left{
+			order: 0;
+		}
+		.right{
+			order: 1;
+		}
+		.center{
+			order: 2;
+			margin-top: 2rem;
+			margin-left: 0;
+			margin-right: 0;
+		}
+	}
+
+	@media (max-width: 991px){
+		padding: 2rem 2.5rem;
+		.left,
+		.right{
+			width: 100%;
+		}
+
+		.right{
+			.btn{
+				margin-top: 1.5rem;
+			}
+		}
+	}
+
+	@media (max-width: 450px){
+		padding-left: 15px;
+		padding-right: 15px;
+		.left,
+		.right{
+			display: block !important;
+			.btn{
+				margin-left: 0;
+				margin-top: 10px;
+			}
+		}
+	}
 }
 
 .dragndrop-text{
@@ -99,6 +144,7 @@
 				margin-right: 2.5rem;
 				padding-right: 2.3rem;
 				padding-left: 1.5rem;
+				flex-shrink: 0;
 				i{
 					margin-right: .6rem;
 				}
@@ -148,6 +194,102 @@
 			box-shadow: 0 5px 20px rgba(0, 113, 189, 0.15);
 		}
 
+
+		@media (max-width: 1399px){
+			padding-left: 2.2rem;
+			padding-right: 2.2rem;
+			&__manage{
+				display: block;
+				margin-left: 2rem;
+
+				.btn{
+					&-search{
+						margin-right: 0;
+						width: 100%;
+						white-space: nowrap;
+						padding: 0 1.5rem; 
+						.icon{
+							display: none;
+						}
+					}
+					&-del{
+						display: block;
+						margin: 1rem auto 0;
+					}
+				}
+			}
+			&__note{
+				margin-left: 1.5rem;
+			}
+		}
+		
+		@media (max-width: 991px){
+			&__pic{
+				display: none;
+			}
+			&__desc{
+				margin-left: 0;
+			}
+		}
+		
+		@media (max-width: 768px){
+			padding-left: 1.5rem;
+			padding-right: 1.5rem;
+			&__pic{
+				display: block;
+			}
+			&__desc{
+				margin-left: 1.5rem;
+			}
+		}
+
+		@media (max-width: 650px){
+			position: relative;
+			&__pic{
+				display: none;
+			}
+			&__desc{
+				margin-left: 0;
+			}
+
+			&__note{
+				margin: 10px auto;
+				text-align: left;
+				position: relative;
+				right: -15px;
+				width: 230px;
+			}
+
+			&__manage{
+				margin-left: 0;
+				margin-top: 1.5rem;
+				.btn{
+					&-search{
+						width: 200px;
+					}
+					&-del{
+						position: absolute;
+						right: 15px;
+						top: 5px;
+					}
+				}
+			}
+		}
+
+		@media (max-width: 600px){
+			display: block !important;
+			text-align: center;
+
+			&__pic{
+				display: block;
+				text-align: center;
+			}
+
+			&__title{
+				margin-top: 10px;
+			}
+		}
+
 	}
 }
 
@@ -176,9 +318,26 @@
 		}
 	}
 }
-
 .group-btn-garage{
 	.btn{
 		margin-top: 2.8rem;
+		&:last-child{
+			margin-right: 0;
+		}
+		@media (max-width: 991px){
+			margin-top: 1.2rem;
+		}
+	}
+	@media (max-width: 600px){
+		justify-content: center;
+	}
+	@media (max-width: 550px){
+		align-items: center;
+		flex-direction: column;
+		.btn{
+			margin-right: 0;
+			text-align: center;
+			width: 180px;
+		}
 	}
 }
