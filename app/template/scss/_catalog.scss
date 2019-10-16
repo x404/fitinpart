@@ -1082,6 +1082,44 @@ aside{
 		padding-right: 3rem;
 		margin-right: .7rem;
 	}
+
+	@media (max-width: 580px){
+		.modal-dialog{
+			width: 90%
+		}
+		.modal-title{
+			font-size: 22px;
+		}
+	}
+	@media (max-width: 480px){
+		.modal-header,
+		.modal-body,
+		.modal-footer{
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+		.btn{
+			font-size: 16px;
+			padding-left: 20px;
+			padding-right: 20px;
+			height: 45px;
+			border-radius: 45px;
+		}
+	}
+	@media (max-width: 480px){
+		.btn{
+			margin-bottom: 10px;
+		}
+		.modal-content{
+			padding-bottom: 20px;
+		}
+	}
+
+	@media (max-width: 380px){
+		.modal-title{
+			font-size: 20px;
+		}
+	}
 }
 
 

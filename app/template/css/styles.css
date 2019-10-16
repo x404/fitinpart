@@ -8654,6 +8654,35 @@ aside .filter .slider {
   padding-right: 3rem;
   margin-right: .7rem; }
 
+@media (max-width: 580px) {
+  #notifyModal .modal-dialog {
+    width: 90%; }
+  #notifyModal .modal-title {
+    font-size: 22px; } }
+
+@media (max-width: 480px) {
+  #notifyModal .modal-header,
+  #notifyModal .modal-body,
+  #notifyModal .modal-footer {
+    padding-left: 15px;
+    padding-right: 15px; }
+  #notifyModal .btn {
+    font-size: 16px;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 45px;
+    border-radius: 45px; } }
+
+@media (max-width: 480px) {
+  #notifyModal .btn {
+    margin-bottom: 10px; }
+  #notifyModal .modal-content {
+    padding-bottom: 20px; } }
+
+@media (max-width: 380px) {
+  #notifyModal .modal-title {
+    font-size: 20px; } }
+
 #addtocardModal1 .modal-dialog {
   max-width: 440px; }
 
