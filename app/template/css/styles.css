@@ -3887,7 +3887,7 @@ h3 {
 
 .neosans, .top__tel, .header .catalog-btn, .littlecart .cart-body .title, .littlecart .cart-body .cart-products .item-title, .littlecart .cart-body .cart-products .price, .search .vehicle-search .ms-parent .ms-drop:before, .main h1, .main .title, .searchbox__title, #homeslider .title, .visual__item, .homepage .advantages, .reviews header h1, .review-card__title, .homepage .about .subtitle, .modal-title, #loginModal .subtitle,
 #registerModal .subtitle, .modal-info .title, .smartsearch__header, .smartsearch__header .ms-choice, .main h2, .main h3, .main h4, .main h5, .main h6, .content blockquote, .lastnews .item-news__title,
-.news__list .item-news__title, .aboutus-page .intro__title, .aboutus-page .about__title, .aboutus-page .quote, .aboutus-page .advantages, .aboutus-page .item-products__title, .aboutus-page .brands__text, .title-md, aside .widget-title, .sortbox .sort-label, .item-products__title, .products__list .item-products .btn-tooltip, .products__list .item-products .tooltip-title, .modal-v2 .box__title, #addtocardModal1 .product-title, #addtocardModal1 .count-price .price, .comparison__body .product-title, .wiper-search .intro, .wiper-search .steps, .perfomance-page .intro .subtitle, .perfomance-page .list-title, .table-title, .logout, .myaccount aside ul, .myaccount aside .tel, .myaccount .plate__title, .myaccount .plate .statistic__field, .myaccount .ordersstat .num, .mob-accountmenu .btn-accountmenu, .mob-accountmenu .menu, .latest-orders header, .orders__list .tracking__title, .orders__list .orderinfo .print, .orders__list .orderinfo__title, .orders__list .subtitle, #quickorderModal .modal-body h2, #quickorderModal .modal-body ol li:before, .region .subtitle, .garagesearch .left .num, .mob-header .btn-menu, .mob-header .tel {
+.news__list .item-news__title, .aboutus-page .intro__title, .aboutus-page .about__title, .aboutus-page .quote, .aboutus-page .advantages, .aboutus-page .item-products__title, .aboutus-page .brands__text, .title-md, aside .widget-title, .sortbox .sort-label, .item-products__title, .products__list .item-products .btn-tooltip, .products__list .item-products .tooltip-title, .modal-v2 .box__title, #addtocardModal1 .product-title, #addtocardModal1 .count-price .price, .comparison__body .product-title, .wiper-search .intro, .wiper-search .steps, .perfomance-page .intro .subtitle, .perfomance-page .list-title, .table-title, .logout, .myaccount aside ul, .myaccount aside .tel, .myaccount .plate__title, .myaccount .plate .statistic__field, .myaccount .ordersstat .num, .mob-accountmenu .btn-accountmenu, .mob-accountmenu .menu, .latest-orders header, .orders__list .tracking__title, .orders__list .orderinfo .print, .orders__list .orderinfo__title, .orders__list .subtitle, #quickorderModal .modal-body h2, #quickorderModal .modal-body ol li:before, .region .subtitle, .garagesearch .left .num, .addvehicle-page .plate__title, .mob-header .btn-menu, .mob-header .tel {
   font-family: 'Neo Sans Pro', Verdana, sans-serif; }
 
 strong,
@@ -3899,9 +3899,9 @@ strong,
   .tdn:hover {
     text-decoration: underline; }
 
-.tdu {
+.tdu, .addvehicle-page .plate .terms-conditions a {
   text-decoration: underline; }
-  .tdu:hover {
+  .tdu:hover, .addvehicle-page .plate .terms-conditions a:hover {
     text-decoration: none; }
 
 .before, .icon:before, .btn-view:before, .btn-google:before, .btn-facebook:before, .top__left:before, .top__menu li.flexMenu-viewMore > a:after, .countmodule .minus:before, .countmodule .plus:before, .countmodule .plus:after, .search .vehicle-search-str .vehicle-search-item:after, .promo .wrapper:before, .visual__item:before, .modal-content-bg:before, .modal-content-bg:after, .modal-content-rbg:after, .modal-info:after, .modal-menu:before, .modal-menu .catalog:before, .breadcrumbs ul li.B_homecrumb a:before, .content ul li:before, .aboutus-page .intro__title:before, .aboutus-page .advantages__text:after, .aboutus-page .ouroffice__pic:after, #fitinpart-carousel a:after, #fitinpart-carousel a:before, .bl-line:after,
@@ -3918,8 +3918,9 @@ strong,
   cursor: pointer; }
 
 .flex-center, .btn-middle, .btn-google, .btn-facebook, .btn-circle, .top .login .cust, .compare__count, .shop-cart__count, .littlecart .cart-body .btn-checkout, .littlecart .cart-body .btn-check, .searchbox__panel .checkbox__text:after, .searchbox .subtab-link,
-.smartsearch .subtab-link, .catalog a,
-.header .catalog__menu a, .reviews .btn-show, .checkbox__text:after, .aboutus-page .brands__item, .btn-cart, .products__list .item-products__pic, .products__list .item-products .btn-tooltip, .products__list .item-products .labels .label, #addtocardModal1 .modal-footer .btn, .comparison__column .btn-del, .myaccount aside ul li .icon-wrapper, .myaccount .plate-cars a, .myaccount .plate-items a {
+.smartsearch .subtab-link,
+.addvehicle-page .plate .subtab-link, .catalog a,
+.header .catalog__menu a, .reviews .btn-show, .checkbox__text:after, .aboutus-page .brands__item, .btn-cart, .products__list .item-products__pic, .products__list .item-products .btn-tooltip, .products__list .item-products .labels .label, #addtocardModal1 .modal-footer .btn, .comparison__column .btn-del, .myaccount aside ul li .icon-wrapper, .myaccount .plate-cars a, .myaccount .plate-items a, .addvehicle-page .plate .placement:before {
   display: flex;
   align-items: center;
   justify-content: center; }
@@ -5392,51 +5393,72 @@ button {
     margin: .4rem 0 0 4px; }
 
 .searchbox .subtab-item,
-.smartsearch .subtab-item {
+.smartsearch .subtab-item,
+.addvehicle-page .plate .subtab-item {
   font-size: 1.6rem;
-  font-weight: 700; }
+  font-weight: 700;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0; }
+  .searchbox .subtab-item:before,
+  .smartsearch .subtab-item:before,
+  .addvehicle-page .plate .subtab-item:before {
+    display: none; }
 
 .searchbox .subtab-link,
-.smartsearch .subtab-link {
+.smartsearch .subtab-link,
+.addvehicle-page .plate .subtab-link {
   border-radius: 3rem;
   border: 3px solid  #fff;
   height: 3.6rem;
   padding: 0 1.2rem; }
   .searchbox .subtab-link.active,
-  .smartsearch .subtab-link.active {
+  .smartsearch .subtab-link.active,
+  .addvehicle-page .plate .subtab-link.active {
     border-color: #0672ba; }
   .searchbox .subtab-link:hover,
-  .smartsearch .subtab-link:hover {
+  .smartsearch .subtab-link:hover,
+  .addvehicle-page .plate .subtab-link:hover {
     text-decoration: none; }
 
 .searchbox .subtab .separator,
-.smartsearch .subtab .separator {
+.smartsearch .subtab .separator,
+.addvehicle-page .plate .subtab .separator {
   border-left: 1px solid #d6d6d6;
   height: 24px;
   margin: 0 .9rem;
+  padding-left: 0;
   width: 1px; }
+  .searchbox .subtab .separator:before,
+  .smartsearch .subtab .separator:before,
+  .addvehicle-page .plate .subtab .separator:before {
+    display: none; }
 
 .searchbox .btn-search,
-.smartsearch .btn-search {
+.smartsearch .btn-search,
+.addvehicle-page .plate .btn-search {
   background-position: 13px center;
   background-repeat: no-repeat;
   box-shadow: 0 5px 15px rgba(0, 153, 255, 0.5);
   display: flex;
   font-weight: 700; }
   .searchbox .btn-search i,
-  .smartsearch .btn-search i {
+  .smartsearch .btn-search i,
+  .addvehicle-page .plate .btn-search i {
     font-style: normal;
     margin-right: .5rem; }
 
 .searchbox .btn-middle,
-.smartsearch .btn-middle {
+.smartsearch .btn-middle,
+.addvehicle-page .plate .btn-middle {
   border-radius: 4rem;
   font-size: 1.6rem;
   height: 4rem;
   padding: 0 1.9rem 0 1.3rem; }
 
 .searchbox .btn-big,
-.smartsearch .btn-big {
+.smartsearch .btn-big,
+.addvehicle-page .plate .btn-big {
   border-radius: 5rem;
   font-size: 1.8rem;
   height: 5rem;
@@ -11554,6 +11576,110 @@ aside .filter .slider {
       margin-right: 0;
       text-align: center;
       width: 180px; } }
+
+.addvehicle-page .plate {
+  background-color: #fff;
+  color: #000;
+  padding: 3rem 4rem 4rem;
+  width: calc(33.3% - 15px);
+  min-height: 58rem; }
+  .addvehicle-page .plate__title {
+    color: #000;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.17;
+    margin-bottom: 2rem; }
+  .addvehicle-page .plate form {
+    margin-top: 1rem; }
+  .addvehicle-page .plate li {
+    font-size: 1.4rem;
+    margin: 0;
+    padding-left: 0; }
+  .addvehicle-page .plate .listwrapper ul li {
+    width: calc(100% - 27px) !important; }
+  .addvehicle-page .plate .subtab {
+    margin: 0 0 .5rem; }
+  .addvehicle-page .plate .btn-addvehicle {
+    padding-left: 2rem;
+    margin-top: 1.5rem; }
+    .addvehicle-page .plate .btn-addvehicle .icon {
+      margin-right: 7px; }
+  .addvehicle-page .plate .row {
+    justify-content: space-between; }
+  .addvehicle-page .plate .vehicle-control {
+    margin-top: 1.5rem;
+    width: 100%; }
+    .addvehicle-page .plate .vehicle-control .ms-parent {
+      font-size: 1.5rem;
+      width: 100% !important; }
+      .addvehicle-page .plate .vehicle-control .ms-parent li {
+        margin: 0;
+        padding-left: 0; }
+  .addvehicle-page .plate .vehicle-year, .addvehicle-page .plate .vehicle-body, .addvehicle-page .plate .vehicle-engine, .addvehicle-page .plate .vehicle-engineno {
+    width: calc(50% - 7px); }
+  .addvehicle-page .plate .veh-only {
+    font-size: 1.5rem; }
+  .addvehicle-page .plate .ms-parent {
+    font-size: 1.4rem;
+    width: 100% !important; }
+  .addvehicle-page .plate .example {
+    color: #959a9d;
+    font-size: 1.3rem;
+    margin: .1rem 0 .5rem .5rem; }
+  .addvehicle-page .plate #vin_brand_select {
+    display: block; }
+  .addvehicle-page .plate .form-control {
+    font-size: 1.4rem; }
+  .addvehicle-page .plate .ownersid {
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+    width: 100% !important; }
+  .addvehicle-page .plate .terms-conditions {
+    font-size: 1.5rem;
+    margin: 1.7rem 0 0; }
+    .addvehicle-page .plate .terms-conditions a {
+      color: #0672ba; }
+  .addvehicle-page .plate-wherevin {
+    margin-top: 2rem;
+    padding-top: 4.3rem;
+    padding-bottom: 1rem;
+    position: relative;
+    width: 100%; }
+    .addvehicle-page .plate-wherevin p {
+      position: relative;
+      z-index: 10; }
+    .addvehicle-page .plate-wherevin p:not(.plate__title) {
+      color: #585c5f;
+      font-size: 2rem;
+      font-weight: 700;
+      line-height: 1; }
+    .addvehicle-page .plate-wherevin .plate__title {
+      margin-bottom: 1rem; }
+    .addvehicle-page .plate-wherevin .pic {
+      position: relative;
+      top: -60px; }
+  .addvehicle-page .plate .placement {
+    background-color: #eaecf0;
+    color: #c91537;
+    font-size: 1.7rem;
+    font-weight: 700;
+    line-height: 1.6;
+    padding: 2rem 4rem 2rem 8.8rem;
+    position: absolute;
+    right: 40px;
+    top: 48px;
+    width: 315px;
+    z-index: 15; }
+    .addvehicle-page .plate .placement:before {
+      background-color: #c91537;
+      border-radius: 50%;
+      color: #fff;
+      content: "?";
+      height: 48px;
+      left: 22px;
+      position: absolute;
+      top: 25px;
+      width: 48px; }
 
 /* =mobile-menu
 ---------------------------*/

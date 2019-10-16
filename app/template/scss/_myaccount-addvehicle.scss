@@ -1,0 +1,160 @@
+.addvehicle-page{
+	.plate{
+		background-color: #fff;
+		color: #000;
+		padding: 3rem 4rem 4rem;
+		width: calc(33.3% - 15px);
+		min-height: 58rem;
+		&__title{
+			@extend .neosans;
+			color: #000;
+			font-size: 3rem;
+			font-weight: 700;
+			line-height: 1.17;
+			margin-bottom: 2rem;
+		}
+		form{
+			margin-top: 1rem;
+		}
+
+		li{
+			font-size: 1.4rem;
+			margin: 0;
+			padding-left: 0;
+		}
+
+		.listwrapper{
+			ul li{
+				width: calc(100% - 27px)!important
+			}
+		}
+
+		.subtab{
+			margin: 0 0 .5rem;
+		}
+		.btn-addvehicle{
+			padding-left: 2rem;
+			margin-top: 1.5rem;
+			.icon{
+				margin-right: 7px;
+			}
+		}
+		
+		.row{
+			justify-content: space-between;
+		}
+		.vehicle{
+			&-control{
+				margin-top: 1.5rem;
+				width: 100%;
+				.ms-parent{
+					font-size: 1.5rem;
+					width: 100% !important;
+					li{
+						margin: 0;
+						padding-left: 0;
+					}
+				}
+			}
+			&-year,
+			&-body,
+			&-engine,
+			&-engineno
+			{
+				width: calc(50% - 7px);
+			}
+		}
+
+		.veh-only{
+			font-size: 1.5rem;
+		}
+
+		.ms-parent{
+			font-size: 1.4rem;
+			width: 100% !important;
+		}
+
+		.example{
+			color: $color34;
+			font-size: 1.3rem;
+			margin: .1rem 0 .5rem .5rem;
+		}
+
+		#vin_brand_select{
+			display: block;
+		}
+
+		.form-control{
+			font-size: 1.4rem;
+		}
+
+		.ownersid{
+			margin-top: 1.5rem;
+			margin-bottom: 2rem;
+			width: 100% !important;
+		}
+
+
+		.terms-conditions{
+			font-size: 1.5rem;
+			margin: 1.7rem 0 0;
+			a{
+				color: $color3;
+				@extend .tdu;
+			}
+		}
+
+		// plate 4
+		&-wherevin{
+			margin-top: 2rem;
+			padding-top: 4.3rem;
+			padding-bottom: 1rem;
+			position: relative;
+			width: 100%;
+			p{
+				position: relative;
+				z-index: 10;
+			}
+			p:not(.plate__title){
+				color: #585c5f;
+				font-size: 2rem;
+				font-weight: 700;
+				line-height: 1;
+			}
+
+			.plate__title{
+				margin-bottom: 1rem;
+			}
+			.pic{
+				position: relative;
+				top: -60px;
+			}
+		}
+
+		.placement{
+			background-color: #eaecf0;
+			color: $color10;
+			font-size: 1.7rem;
+			font-weight: 700;
+			line-height: 1.6;
+			padding: 2rem 4rem 2rem 8.8rem;
+			position: absolute;
+			right: 40px;
+			top: 48px;
+			width: 315px;
+			z-index: 15;
+			&:before{
+				@extend .flex-center;
+				background-color: $color10;
+				border-radius: 50%;
+				color: #fff;
+				content: "?";
+				height: 48px;
+				left: 22px;
+				position: absolute;
+				top: 25px;
+				width: 48px;
+			}
+		}
+	}
+}
