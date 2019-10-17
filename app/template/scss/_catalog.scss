@@ -835,9 +835,15 @@ aside{
 
 
 
-.wishlist-info
-{
+.wishlist-info{
+	color: #fff;
+	left: 50%;
+	margin-left: -160px;
+	margin-top: -75px;
 	overflow: visible;
+	position: fixed;
+	top: 50%;
+	width: 321px;
 	.close{
 		right: 20px;
 		top: 20px;
@@ -845,17 +851,6 @@ aside{
 			stroke: #fff;
 		}
 	}
-}
-
-.wishlist-info{
-	// height: 154px;
-	left: 50%;
-	margin-left: -160px;
-	margin-top: -75px;
-	position: fixed;
-	top: 50%;
-	color: #fff;
-	width: 321px;
 	.modal{
 		&-content{
 			background-image: url(../images/wish-bg.png);
@@ -863,9 +858,9 @@ aside{
 			background-position: right 13px bottom;
 			
 			box-shadow: 0 5px 20px rgba(0, 153, 255, 0.5);
-			padding: 2.4rem 3rem 2.5rem;
 			font-size: 1.7rem;
 			line-height: 1.47;
+			padding: 2.4rem 3rem 2.5rem;
 			a{
 				color: #fff;
 			}
@@ -892,6 +887,18 @@ aside{
 				background-color: #ba0642;
 			}
 		}		
+	}
+
+
+	@media (max-width: 450px){
+		left: 3%;
+		margin-left: 0;
+		width: 94%;
+		.modal-content{		
+			&:after{
+				display: none !important;
+			}
+		}
 	}
 }
 
@@ -948,6 +955,150 @@ aside{
 	.old-price{
 		font-size: 1.3rem;
 	}
+
+	@media (max-width: 991px){
+		.close{
+			background-color: transparent;
+			right: -3px !important;
+			top: -3px !important;
+			z-index: 100;
+			line{
+				stroke: $color10 !important;
+			}
+		}
+		.modal{
+			&-dialog{
+				margin-left: 0 !important;
+				margin-right: 0 !important;
+				left: 2%;
+				width: 96%;
+				max-width: 100%;
+			}
+		}
+	}
+
+
+	@media (max-width: 950px){
+		.products__strlist{
+			.item-products{
+				justify-content: flex-start;
+				&__right{
+					flex-grow: 1;
+					flex-wrap: wrap;
+					justify-content: flex-start;
+				}
+				&__body{
+					flex-grow: 1;
+				}
+
+				&__pic{
+					margin-right: 15px;
+				}
+				.instock{
+					display: flex;
+					margin: 15px 0;
+					width: 100%;
+					.preorder-text{
+						margin-left: 15px;
+					}
+				}
+
+				.price{
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+				}
+			}
+		}
+	}
+
+	@media (max-width: 550px){
+		.box__title{
+			font-size: 20px;
+		}
+		.products__strlist{
+			.item-products{
+				align-items: flex-start;
+
+				&__pic{
+					width: 80px;
+				}
+				&__body{
+					padding-right: 0;
+				}
+				.instock{
+					display: block;
+					padding-right: 0;
+					.preorder-text{
+						margin-left: 0;
+					}
+				}
+				.countmodule{
+					margin-bottom: 10px;
+					padding-right: 0;
+					width: 100%;
+				}
+
+				.btn-cart{
+					width: 38px;
+					height: 38px;
+					.icon{
+						transform: scale(.8)
+					}
+				}
+			}
+		}
+	}
+
+
+	@media (max-width: 450px){
+		.box{
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+		.products__strlist{
+			.item-products{
+				&__pic{
+					flex-shrink: 0;
+					width: 70px;
+					img{
+						max-width: 100%
+					}
+				}
+				&__title{
+					font-size: 14px;
+				}
+				.instock{
+					font-size: 14px;
+					.d-flex{
+						align-items: center;
+					}
+				}
+
+				.current-price{
+					font-size: 13px;
+				}
+				.old-price{
+					font-size: 12px;
+				}
+			}
+		}
+	}
+
+
+	@media (max-width: 380px){
+		.products__strlist{
+			.item-products{
+				&__title,
+				&__desc
+				{
+					font-size: 13px;
+				}
+			}
+		}	
+	}
+
+
 }
 
 .products__strlist{
@@ -958,19 +1109,21 @@ aside{
 		justify-content: space-between;
 		padding-top: 1.5rem;
 		padding-bottom: 2rem;
-
-		& > div{
-			padding-right: 3rem;
-			&:last-child{
-				padding-right: 0;
-			}
-		}
 		&__pic{
 			width: 13rem;
 		}
 
-		&__body{
-			// flex-grow: 1;
+		&__right{
+			display: flex;
+			flex-grow: 1;
+			justify-content: space-between;
+
+			& > div{
+				padding-right: 3rem;
+				&:last-child{
+					padding-right: 0;
+				}
+			}
 		}
 
 		&__desc{
@@ -1211,5 +1364,41 @@ aside{
 	.preorder-text{
 		font-size: 1.3rem;
 		margin-top: .3rem;
+	}
+
+	@media (max-width: 480px){
+		.product-pic{
+			margin-right: 15px;
+		}
+		.modal-dialog{
+			width: 96%;
+		}
+	}
+
+	@media (max-width: 380px){
+		.modal-footer{
+			padding-left: 2rem;
+			.btn{
+				border-radius: 45px;
+				height: 45px;
+			}
+		}
+	}
+
+	@media (max-width: 350px){
+		.modal-footer .btn{
+			border-radius: 40px;
+			height: 40px;
+			&-submit{
+				margin-right: 1rem;
+				min-width: 120px;
+				.icon{
+					display: none;
+				}
+			}
+			&-close{
+				min-width: 90px
+			}
+		}
 	}
 }
