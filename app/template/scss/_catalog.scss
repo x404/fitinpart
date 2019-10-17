@@ -1,4 +1,4 @@
-aside{
+.main aside{
 	.widget{
 		background-color: #fff;
 		margin-bottom: 2.5rem;
@@ -84,6 +84,53 @@ aside{
 			}
 		}
 	}
+
+	.btn{
+		&-filter{
+			@extend .flex-center;
+			@extend .neosans;
+			display: none;
+			background-color: #eaecf0;
+			color: $color42;
+			font-size: 16px;
+			font-weight: 700;
+			height: 55px;
+			width: 100%;
+			.icon{
+				margin-right: 8px;
+			}
+		}
+		&-hidefilter{
+			.icon{
+				transform: rotate(180deg)
+			}
+		}
+	}
+
+	@media (max-width: 950px){
+		.filter .inner{
+			justify-content: flex-start !important;
+			.btn:first-child(){
+				margin-right: 20px;
+			}
+		}
+
+		.filterForm{
+			display: none;
+		}
+
+		.filter:last-child(){
+			margin-bottom: 1rem;
+		}
+
+		.btn{
+			&-filter{
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+		}
+	}
 }
 
 .sortbox{
@@ -162,6 +209,17 @@ aside{
 		line{
 			stroke-width: 2px;
 			stroke: #c91537;
+		}
+	}
+
+	@media (max-width: 450px){
+		li{
+			margin-top: 5px;
+			&:last-child{
+				margin-left: 0;
+				margin-right: 0;
+				width: 100%;
+			}
 		}
 	}
 }

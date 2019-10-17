@@ -1944,6 +1944,7 @@
 						</div>
 					</div>
 					<div class="widget filter">
+						<button type="button" class="btn btn-filter btn-showfilter"><i class="icon icon-arrow-down-gray"></i> Show filter</button>
 						<form action="#" method="post" class="filterForm">
 							<fieldset>
 								<div class="filter__box filter-brand">
@@ -2016,6 +2017,7 @@
 										<button type="reset" class="btn btn-middle btn-gray btn-blue-lighten-hover">Clear</button>
 									</div>
 								</div>
+								<button type="button" class="btn btn-filter btn-hidefilter"><i class="icon icon-arrow-down-gray"></i> Hide filter</button>
 							</fieldset>
 						</form>
 					</div>
@@ -2026,7 +2028,7 @@
 
 						<!-- =sortbox -->
 						<div class="sortbox">
-							<ul class="d-flex">
+							<ul class="d-flex flex-wrap">
 								<li class="sort-label">Sort by</li>
 								<li>
 									<!-- class="param-sort active sort-asc" -->
@@ -4669,6 +4671,20 @@
 <script src="/template/js/wNumb.js"></script>
 <script src="/template/js/nouislider.js"></script>
 <script src="/template/js/nouiengine.js"></script>
+
+<script>
+	$(document).ready(function(){
+		$('.btn-showfilter').click(function(){
+			$('.filterForm').slideDown();
+			$(this).hide();
+		});
+
+		$('.btn-hidefilter').click(function(){
+			$('.filterForm').slideUp();
+			$('.btn-showfilter').show();
+		});		
+	})
+</script>
 <!-- InstanceEndEditable -->
 </body>
 <!-- InstanceEnd --></html>
