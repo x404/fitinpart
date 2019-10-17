@@ -8607,7 +8607,9 @@ aside .filter .slider {
   .modal-v2 .products__strlist .item-products {
     align-items: flex-start; }
     .modal-v2 .products__strlist .item-products__pic {
-      width: 80px; }
+      width: 170px; }
+      .modal-v2 .products__strlist .item-products__pic img {
+        max-width: 100%; }
     .modal-v2 .products__strlist .item-products__body {
       padding-right: 0; }
     .modal-v2 .products__strlist .item-products .instock {

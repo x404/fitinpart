@@ -1021,7 +1021,10 @@ aside{
 				align-items: flex-start;
 
 				&__pic{
-					width: 80px;
+					width: 170px;
+					img{
+						max-width: 100%;
+					}
 				}
 				&__body{
 					padding-right: 0;
