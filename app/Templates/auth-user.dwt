@@ -422,7 +422,7 @@
 											</a>
 										</li>
 										<li>
-											<a href="#" title="">
+											<a href="myaccount-wishlist.html" title="">
 												<i class="icon-wrapper">
 													<i class="icon icon-wishlist-sm"></i>
 												</i>
@@ -1057,7 +1057,7 @@
 								</a>
 							</li>
 							<li>
-								<a href="#" title="">
+								<a href="/myaccount-wishlist.html" title="">
 									<i class="icon-wrapper">
 										<i class="icon icon-wishlist-sm"></i>
 									</i>
@@ -1387,7 +1387,7 @@
 						<option value="">Vehicle requests</option>
 						<option value="">Stock requests</option>
 						<option value="">Address Books</option>
-						<option value="/wishlist.html">Wish List</option>
+						<option value="/myaccount-wishlist.html">Wish List</option>
 						<option value="/history.html">Order History</option>
 						<option value="">Item order history</option>
 						<option value="">Reward Points</option>
@@ -1443,7 +1443,7 @@
 								</a>
 							</li>
 							<li>
-								<a href="#" title="">
+								<a href="/myaccount-wishlist.html" title="">
 									<i class="icon-wrapper">
 										<i class="icon icon-wishlist"></i>
 									</i>
