@@ -394,6 +394,9 @@ em strong
 		@include sprite($icon-xls)
 	}
 
+	&-pencil-2{
+		@include sprite($icon-pencil-2)
+	}
 
 } 
 
@@ -471,6 +474,15 @@ em strong
 		&-hover{
 			&:hover{
 				background-color: $color36;
+			}
+		}
+	}
+
+	&-darkgray{
+		background-color: #778d9b;
+		color: #fff;
+		&-hover{
+			&:hover{
 			}
 		}
 	}
