@@ -9,9 +9,20 @@
 }
 
 .wishlist-page{
+	.products__strlist .item-products:last-child{
+		padding-bottom: 0;
+		margin-bottom: 1rem;
+	}
 	.item-products{
 		background-color: #fff;
+		border-bottom: none;
 		flex-wrap: wrap;
+		margin-bottom: 1rem;
+		padding-bottom: 0;
+		transition: box-shadow .3s;
+		&:hover{
+			box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+		}
 		&__layout{
 			display: flex;
 			justify-content: space-between;
@@ -121,6 +132,10 @@
 			}
 		}
 
+		&__right{
+			margin-left: 2rem;
+		}
+
 
 		&__layout,
 		.actions
@@ -171,6 +186,19 @@
 
 		.instock{
 			margin-top: 10px;
+		}
+	}
+
+	.other-products{
+		background-color: #eaecf0;
+		width: 100%;
+		padding-left: 2rem;
+		padding-right: 2rem;
+		.item-products{
+			&__layout{
+				border-top: 1px solid #c9d1d7;
+				padding: 1rem 0;
+			}
 		}
 	}
 }
