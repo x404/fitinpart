@@ -12072,43 +12072,64 @@ input.form-control.error {
       .addvehicle-page .plate-wherevin p:not(.plate__title) {
         font-size: 15px; } }
 
-.request__list {
+.requests__list {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
+  justify-content: space-between;
   margin-bottom: 1rem; }
-  .request__list .item-request {
+  .requests__list .request__item {
+    margin-bottom: 1rem;
+    width: calc(50% - 5px); }
+  .requests__list .item-request {
     background-color: #fff;
     font-size: 1.4rem;
-    width: calc(50% - 5px);
-    margin-bottom: 1rem;
     transition: box-shadow .3s; }
-    .request__list .item-request__body {
+    .requests__list .item-request__body {
       padding: 2.5rem 4rem; }
-    .request__list .item-request__row {
+    .requests__list .item-request__row {
       display: flex; }
-    .request__list .item-request__title {
+    .requests__list .item-request__title {
+      flex-shrink: 0;
       font-weight: 700;
       margin-right: 1.3rem;
       width: 8rem; }
-    .request__list .item-request .actions {
-      margin-top: 1.5rem; }
-      .request__list .item-request .actions .btn {
-        margin-right: 1rem;
-        white-space: nowrap; }
-        .request__list .item-request .actions .btn-edit {
-          min-width: 8rem; }
-          .request__list .item-request .actions .btn-edit .icon {
-            margin-right: .5rem; }
-        .request__list .item-request .actions .btn-search {
-          padding-left: 15px;
-          padding-right: 18px; }
-        .request__list .item-request .actions .btn:hover {
-          box-shadow: 0 5px 15px rgba(0, 153, 255, 0.5); }
-      .request__list .item-request .actions .icon {
-        margin-right: .7rem; }
-    .request__list .item-request:hover {
+    .requests__list .item-request .actions .btn {
+      margin-right: 1rem;
+      margin-top: 1.5rem;
+      white-space: nowrap; }
+      .requests__list .item-request .actions .btn-edit {
+        min-width: 8rem; }
+        .requests__list .item-request .actions .btn-edit .icon {
+          margin-right: .5rem; }
+      .requests__list .item-request .actions .btn-search {
+        padding-left: 15px;
+        padding-right: 18px; }
+      .requests__list .item-request .actions .btn:hover {
+        box-shadow: 0 5px 15px rgba(0, 153, 255, 0.5); }
+    .requests__list .item-request .actions .icon {
+      margin-right: .7rem; }
+    .requests__list .item-request:hover {
       box-shadow: 0 5px 20px rgba(0, 113, 189, 0.15); }
+    @media (max-width: 1199px) {
+      .requests__list .item-request__body {
+        padding-left: 2rem;
+        padding-right: 2rem; } }
+    @media (max-width: 575px) {
+      .requests__list .item-request {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%; }
+        .requests__list .item-request__row {
+          margin: 4px 0; }
+        .requests__list .item-request__title, .requests__list .item-request__field {
+          font-size: 13px; }
+        .requests__list .item-request .actions .btn {
+          font-size: 15px;
+          padding-left: 10px;
+          padding-right: 14px;
+          min-width: 8rem; }
+          .requests__list .item-request .actions .btn:last-child {
+            margin-right: 0; } }
 
 /* =mobile-menu
 ---------------------------*/
