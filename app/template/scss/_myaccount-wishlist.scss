@@ -31,6 +31,10 @@
 			width: 100%;
 		}
 
+		&__body{
+			width: 22rem;
+		}
+
 		&__title{
 			margin-top: 1rem;
 			a{
@@ -73,6 +77,11 @@
 			font-style: italic;
 			font-size: 1.4rem;
 			margin-top: 0;
+			img{
+				margin-left: .5rem;
+				margin-top: .3rem;
+				vertical-align: top;
+			}
 			.btn{
 				margin-left: .5rem;
 				&-ok{
@@ -130,6 +139,11 @@
 			line{
 				stroke: #c91537;
 				stroke-width: 4px;
+			}
+			&:hover{
+				line{
+					stroke: #ff0635;
+				}
 			}
 		}
 
@@ -293,7 +307,7 @@
 
 			.manage{
 				margin-top: 10px;
-				position: static;
+				position: s;
 			}
 		}
 

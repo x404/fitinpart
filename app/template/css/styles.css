@@ -12158,6 +12158,8 @@ input.form-control.error {
     padding-top: .5rem;
     padding-bottom: 1rem;
     width: 100%; }
+  .wishlist-page .item-products__body {
+    width: 22rem; }
   .wishlist-page .item-products__title {
     margin-top: 1rem; }
     .wishlist-page .item-products__title a {
@@ -12188,6 +12190,10 @@ input.form-control.error {
     font-style: italic;
     font-size: 1.4rem;
     margin-top: 0; }
+    .wishlist-page .item-products__note img {
+      margin-left: .5rem;
+      margin-top: .3rem;
+      vertical-align: top; }
     .wishlist-page .item-products__note .btn {
       margin-left: .5rem; }
       .wishlist-page .item-products__note .btn-ok {
@@ -12224,6 +12230,8 @@ input.form-control.error {
     .wishlist-page .item-products .btn-del line {
       stroke: #c91537;
       stroke-width: 4px; }
+    .wishlist-page .item-products .btn-del:hover line {
+      stroke: #ff0635; }
   .wishlist-page .item-products__right {
     margin-left: 2rem; }
   .wishlist-page .item-products__layout,
@@ -12326,7 +12334,7 @@ input.form-control.error {
       font-size: 14px; }
     .wishlist-page .item-products .manage {
       margin-top: 10px;
-      position: static; } }
+      position: s; } }
   @media (max-width: 480px) {
     .wishlist-page .item-products__right {
       display: block;
