@@ -133,19 +133,6 @@
 			box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
 		}
 
-		.btn-del{
-			height: 22px;
-			margin-top: 12px;
-			line{
-				stroke: #c91537;
-				stroke-width: 4px;
-			}
-			&:hover{
-				line{
-					stroke: #ff0635;
-				}
-			}
-		}
 
 		&__right{
 			margin-left: 2rem;
@@ -344,4 +331,24 @@
 			}
 		}
 	}
+}
+
+.item-products,
+.item-entry
+{
+
+		.btn-del{
+			height: 22px;
+			margin-top: 12px;
+			line{
+				stroke: #c91537;
+				stroke-width: 4px;
+				transition: stroke .3s;
+			}
+			&:hover{
+				line{
+					stroke: #ff0635;
+				}
+			}
+		}
 }
