@@ -398,6 +398,10 @@ em strong
 		@include sprite($icon-pencil-2)
 	}
 
+	&-arrow-down-white{
+		@include sprite($icon-arrow-down-white)
+	}	
+
 } 
 
 .w100{
