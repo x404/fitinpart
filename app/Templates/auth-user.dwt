@@ -414,7 +414,7 @@
 											</a>
 										</li>
 										<li>
-											<a href="#" title="">
+											<a href="/myaccount-addressbook.html" title="">
 												<i class="icon-wrapper">
 													<i class="icon icon-addressbook-sm"></i>
 												</i>
@@ -1049,7 +1049,7 @@
 								</a>
 							</li>
 							<li>
-								<a href="#" title="">
+								<a href="/myaccount-addressbook.html" title="">
 									<i class="icon-wrapper">
 										<i class="icon icon-addressbook-sm"></i>
 									</i>
@@ -1435,7 +1435,7 @@
 								</a>
 							</li>
 							<li>
-								<a href="#" title="">
+								<a href="/myaccount-addressbook.html" title="">
 									<i class="icon-wrapper">
 										<i class="icon icon-addressbook"></i>
 									</i>
