@@ -172,6 +172,12 @@
 					width: 20px;
 				}
 
+				&.active{
+					&:before{
+						transform: rotate(180deg)
+					}
+				}
+
 				&:hover{
 					&:before{
 						background-color: $color9;						
@@ -189,11 +195,12 @@
 		}
 	}
 
-	.other-products{
+	.other-products,
+	.alternative-products{
 		background-color: #eaecf0;
+		display: none;
+		padding: 0 2rem 1rem;
 		width: 100%;
-		padding-left: 2rem;
-		padding-right: 2rem;
 		.item-products{
 			&__layout{
 				border-top: 1px solid #c9d1d7;

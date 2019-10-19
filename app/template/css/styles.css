@@ -12254,6 +12254,8 @@ input.form-control.error {
         left: 0;
         top: 1px;
         width: 20px; }
+      .wishlist-page .item-products .actions .btn.active:before {
+        transform: rotate(180deg); }
       .wishlist-page .item-products .actions .btn:hover {
         color: #0099ff; }
         .wishlist-page .item-products .actions .btn:hover:before {
@@ -12263,12 +12265,14 @@ input.form-control.error {
   .wishlist-page .item-products .instock {
     margin-top: 10px; }
 
-.wishlist-page .other-products {
+.wishlist-page .other-products,
+.wishlist-page .alternative-products {
   background-color: #eaecf0;
-  width: 100%;
-  padding-left: 2rem;
-  padding-right: 2rem; }
-  .wishlist-page .other-products .item-products__layout {
+  display: none;
+  padding: 0 2rem 1rem;
+  width: 100%; }
+  .wishlist-page .other-products .item-products__layout,
+  .wishlist-page .alternative-products .item-products__layout {
     border-top: 1px solid #c9d1d7;
     padding: 1rem 0; }
 
