@@ -1,9 +1,8 @@
 .cart-page{
-	.content{
-		// margin-top: 2rem;
-	}
+	overflow: initial;
 
 	.cart-table{
+		margin-bottom: 4rem;
 		padding-right: 3.5rem;
 		.item-products{
 			padding-top: 0;
@@ -119,7 +118,77 @@
 			}
 		}
 	}
+
+	.calculate{
+		background-color: #fff;
+		padding: 2rem 4rem 5rem 2.5rem;
+		font-size: 1.5rem;
+		min-height: 33rem;
+
+		header{
+			margin-bottom: 2.5rem;
+		}
+		h1{
+			font-size: 2rem;
+			position: relative;
+			padding-left: 72px;
+			&:before{
+				@extend .before;
+				@include sprite($icon-car);
+				left: 0;
+				top: 0;
+			}			
+		}
+
+		.propdata{
+			color: $color19;
+			.icon{
+				margin-right: 10px;
+			}
+			&__item{
+				display: flex;
+				margin-left: 1.4rem;
+				b{
+					margin-right: .3rem;
+				}
+			}
+		}
+
+		.row{
+			margin-top: .7rem;
+			margin-bottom: .7rem;
+		}
+
+		ul li{
+			margin: 0;
+			padding-left: 0;
+			label{
+				margin-top: 0;
+			}
+		}
+
+		.placeholder{
+			color: #000;
+		}
+
+		.postcode{
+			width: 19rem;
+			@include placeholder(#000)
+		}
+
+		.region{
+			margin-bottom: 0;
+		}
+
+		.btn{
+			&-calc{
+				margin-top: 1.3rem;
+			}
+		}
+	}
 }
+
+
 
 .alert{
 	color: #fff;

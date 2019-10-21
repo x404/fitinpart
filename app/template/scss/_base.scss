@@ -411,6 +411,9 @@ em strong
 	&-info{
 		@include sprite($icon-info)
 	}
+	&-scales{
+		@include sprite($icon-scales)
+	}
 
 } 
 // #icon
