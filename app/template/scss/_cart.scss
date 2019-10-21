@@ -310,31 +310,13 @@
 					flex-basis: 40%;
 				}
 				
-				.row{
-					display: block;
-				}
+
 				.col-xl-4{
 					max-width: 300px;
 				}
 
-				.postcode,
-				.cities{
-					margin-top: 10px;
-				}
 
-				.salescard{
-					width: 100%;
-					&__item{
-						padding-left: 1.5rem;
-						padding-right: 1.5rem;
-					}
-					.btn-apply{
-						width: 80px;
-					}
-					.form-control{
-						width: calc(100% - 90px)
-					}
-				}
+
 			}
 	}
 
@@ -407,6 +389,31 @@
 			}
 		}
 
+		.calculate-wrapper{
+			.row{
+				display: block;
+			}
+
+			.postcode,
+			.cities{
+				margin-top: 10px;
+			}
+
+			.salescard{
+				width: 100%;
+				&__item{
+					padding-left: 1.5rem;
+					padding-right: 1.5rem;
+				}
+				.btn-apply{
+					width: 80px;
+				}
+				.form-control{
+					width: calc(100% - 90px)
+				}
+			}
+
+		}
 	}
 
 
@@ -424,7 +431,21 @@
 					width: 35%;
 				}
 			}
-		}		
+		}
+
+		.calculate-wrapper{
+			.salescard{
+				margin-top: 10px;
+			}
+
+			.salescard__item .title{
+				img{
+					display: none;
+				}
+			}
+		}
+
+
 	}
 
 
@@ -465,7 +486,16 @@
 					}
 				}
 			}
-		}		
+		}
+
+		.calculate-wrapper{
+			.salescard__item .title{
+				img{
+					display: block;
+				}
+			}
+		}
+
 	}
 
 	@media (max-width: 767px){
@@ -516,6 +546,10 @@
 					width: 150px; 
 				}
 			}
+		}
+
+		.summary{
+			margin-top: 22px;
 		}
 
 	}
