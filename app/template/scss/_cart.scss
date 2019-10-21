@@ -1,9 +1,15 @@
 .cart-page{
 	overflow: initial;
+	.content{
+		padding-top: 2rem;
+	}
+
+	.inner{
+		padding-right: 3.5rem;
+	}
 
 	.cart-table{
 		margin-bottom: 4rem;
-		padding-right: 3.5rem;
 		.item-products{
 			padding-top: 0;
 			padding-bottom: 0;
@@ -186,10 +192,58 @@
 			}
 		}
 	}
+
+	// =sales card
+	.salescard{
+		font-size: 1.5rem;
+		width: 32rem;
+		&__item{
+			color: #fff;
+			padding: 2rem 2.2rem 2.5rem;
+			min-height: 166px;
+			.title{
+				@extend .neosans;
+				display: flex;
+				align-items: center;
+				color: #fff;
+				font-size: 2rem;
+				font-weight: 700;
+				margin-bottom: 1rem;
+				img{
+					margin-right: 1.5rem;
+				}
+			}
+			.form{
+				margin-top: .8rem;
+			}
+			.form-control{
+				border-radius: 3rem;
+				height: 3rem;
+				width: 16rem;
+			}
+			.btn{
+				&-apply{
+					border-radius: 3rem;
+					font-size: 1.5rem;
+					text-align: center;				
+					width: 10.5rem;
+					font-weight: 700;
+					@extend .flex-center;
+				}
+			}
+			&-coupon{
+				background: url(../images/bg/coupon-bg.png) no-repeat #aa122f;
+				background-size: cover;
+			}
+			&-voucher{
+				background: url(../images/bg/voucher-bg.png) no-repeat #1263aa;
+				background-size: cover;
+			}
+		}
+	}
 }
 
-
-
+ 
 .alert{
 	color: #fff;
 	display: flex;

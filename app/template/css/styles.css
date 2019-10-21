@@ -3887,7 +3887,7 @@ h3 {
 
 .neosans, .top__tel, .header .catalog-btn, .littlecart .cart-body .title, .littlecart .cart-body .cart-products .item-title, .littlecart .cart-body .cart-products .price, .search .vehicle-search .ms-parent .ms-drop:before, .main h1, .main .title, .searchbox__title, #homeslider .title, .visual__item, .homepage .advantages, .reviews header h1, .review-card__title, .homepage .about .subtitle, .modal-title, #loginModal .subtitle,
 #registerModal .subtitle, .modal-info .title, .smartsearch__header, .smartsearch__header .ms-choice, .main h2, .main h3, .main h4, .main h5, .main h6, .content blockquote, .lastnews .item-news__title,
-.news__list .item-news__title, .aboutus-page .intro__title, .aboutus-page .about__title, .aboutus-page .quote, .aboutus-page .advantages, .aboutus-page .item-products__title, .aboutus-page .brands__text, .title-md, .main aside .widget-title, .main aside .btn-filter, .sortbox .sort-label, .item-products__title, .products__list .item-products .btn-tooltip, .products__list .item-products .tooltip-title, .modal-v2 .box__title, #addtocardModal1 .product-title, #addtocardModal1 .count-price .price, .cart-page .cart-table .cost, .comparison__body .product-title, .wiper-search .intro, .wiper-search .steps, .perfomance-page .intro .subtitle, .perfomance-page .list-title, .table-title, .logout, .myaccount aside ul, .myaccount aside .tel, .myaccount .plate__title, .myaccount .plate .statistic__field, .myaccount .ordersstat .num, .mob-accountmenu .btn-accountmenu, .mob-accountmenu .menu, .latest-orders header, .orders__list .tracking__title, .orders__list .orderinfo .print, .orders__list .orderinfo__title, .orders__list .subtitle, #quickorderModal .modal-body h2, #quickorderModal .modal-body ol li:before, .region .subtitle, .garagesearch .left .num, .addvehicle-page .plate__title, .wishlist-count, .address-entries__list .item-entry .num, .address-entries__list .item-entry .radio__text:after, .mob-header .btn-menu, .mob-header .tel {
+.news__list .item-news__title, .aboutus-page .intro__title, .aboutus-page .about__title, .aboutus-page .quote, .aboutus-page .advantages, .aboutus-page .item-products__title, .aboutus-page .brands__text, .title-md, .main aside .widget-title, .main aside .btn-filter, .sortbox .sort-label, .item-products__title, .products__list .item-products .btn-tooltip, .products__list .item-products .tooltip-title, .modal-v2 .box__title, #addtocardModal1 .product-title, #addtocardModal1 .count-price .price, .cart-page .cart-table .cost, .cart-page .salescard__item .title, .comparison__body .product-title, .wiper-search .intro, .wiper-search .steps, .perfomance-page .intro .subtitle, .perfomance-page .list-title, .table-title, .logout, .myaccount aside ul, .myaccount aside .tel, .myaccount .plate__title, .myaccount .plate .statistic__field, .myaccount .ordersstat .num, .mob-accountmenu .btn-accountmenu, .mob-accountmenu .menu, .latest-orders header, .orders__list .tracking__title, .orders__list .orderinfo .print, .orders__list .orderinfo__title, .orders__list .subtitle, #quickorderModal .modal-body h2, #quickorderModal .modal-body ol li:before, .region .subtitle, .garagesearch .left .num, .addvehicle-page .plate__title, .wishlist-count, .address-entries__list .item-entry .num, .address-entries__list .item-entry .radio__text:after, .mob-header .btn-menu, .mob-header .tel {
   font-family: 'Neo Sans Pro', Verdana, sans-serif; }
 
 strong,
@@ -3922,7 +3922,7 @@ strong,
 .flex-center, .btn-middle, .btn-google, .btn-facebook, .btn-circle, .top .login .cust, .compare__count, .shop-cart__count, .littlecart .cart-body .btn-checkout, .littlecart .cart-body .btn-check, .searchbox__panel .checkbox__text:after, .searchbox .subtab-link,
 .smartsearch .subtab-link,
 .addvehicle-page .plate .subtab-link, .catalog a,
-.header .catalog__menu a, .reviews .btn-show, .checkbox__text:after, .aboutus-page .brands__item, .main aside .btn-filter, .btn-cart, .products__list .item-products__pic, .products__list .item-products .btn-tooltip, .products__list .item-products .labels .label, #addtocardModal1 .modal-footer .btn, .cart-page .summary .btn, .comparison__column .btn-del, .myaccount aside ul li .icon-wrapper, .myaccount .plate-cars a, .myaccount .plate-items a, .addvehicle-page .plate .placement:before, .address-entries__list .item-entry .num {
+.header .catalog__menu a, .reviews .btn-show, .checkbox__text:after, .aboutus-page .brands__item, .main aside .btn-filter, .btn-cart, .products__list .item-products__pic, .products__list .item-products .btn-tooltip, .products__list .item-products .labels .label, #addtocardModal1 .modal-footer .btn, .cart-page .summary .btn, .cart-page .salescard__item .btn-apply, .comparison__column .btn-del, .myaccount aside ul li .icon-wrapper, .myaccount .plate-cars a, .myaccount .plate-items a, .addvehicle-page .plate .placement:before, .address-entries__list .item-entry .num {
   display: flex;
   align-items: center;
   justify-content: center; }
@@ -8951,9 +8951,12 @@ input.form-control.error {
 
 .cart-page {
   overflow: initial; }
-  .cart-page .cart-table {
-    margin-bottom: 4rem;
+  .cart-page .content {
+    padding-top: 2rem; }
+  .cart-page .inner {
     padding-right: 3.5rem; }
+  .cart-page .cart-table {
+    margin-bottom: 4rem; }
     .cart-page .cart-table .item-products {
       padding-top: 0;
       padding-bottom: 0; }
@@ -9083,6 +9086,40 @@ input.form-control.error {
       margin-bottom: 0; }
     .cart-page .calculate .btn-calc {
       margin-top: 1.3rem; }
+  .cart-page .salescard {
+    font-size: 1.5rem;
+    width: 32rem; }
+    .cart-page .salescard__item {
+      color: #fff;
+      padding: 2rem 2.2rem 2.5rem;
+      min-height: 166px; }
+      .cart-page .salescard__item .title {
+        display: flex;
+        align-items: center;
+        color: #fff;
+        font-size: 2rem;
+        font-weight: 700;
+        margin-bottom: 1rem; }
+        .cart-page .salescard__item .title img {
+          margin-right: 1.5rem; }
+      .cart-page .salescard__item .form {
+        margin-top: .8rem; }
+      .cart-page .salescard__item .form-control {
+        border-radius: 3rem;
+        height: 3rem;
+        width: 16rem; }
+      .cart-page .salescard__item .btn-apply {
+        border-radius: 3rem;
+        font-size: 1.5rem;
+        text-align: center;
+        width: 10.5rem;
+        font-weight: 700; }
+      .cart-page .salescard__item-coupon {
+        background: url(../images/bg/coupon-bg.png) no-repeat #aa122f;
+        background-size: cover; }
+      .cart-page .salescard__item-voucher {
+        background: url(../images/bg/voucher-bg.png) no-repeat #1263aa;
+        background-size: cover; }
 
 .alert {
   color: #fff;
