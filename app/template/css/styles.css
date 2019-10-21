@@ -8947,13 +8947,16 @@ input.form-control.error {
 .cart-page .cart-table {
   padding-right: 3.5rem; }
   .cart-page .cart-table .item-products {
+    padding-top: 0;
     padding-bottom: 0; }
     .cart-page .cart-table .item-products__pic {
       width: 10rem; }
     .cart-page .cart-table .item-products__layout {
       align-items: center;
       position: relative;
-      padding-right: 3rem; }
+      padding-right: 3rem;
+      padding-top: 1.8rem;
+      padding-bottom: 1.8rem; }
     .cart-page .cart-table .item-products__right {
       align-items: center;
       margin-left: 3rem; }

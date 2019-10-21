@@ -2894,10 +2894,14 @@
 <script src="/template/js/search-moto.js"></script>
 <script src="/template/js/search-hd.js"></script>
 <!-- InstanceBeginEditable name="EditRegion4" -->
+<script src="/template/js/autosize.min.js"></script>
 <script>
 	$(document).ready(function(){
+		// autosize textarea
+		autosize(document.querySelectorAll('.txta'));
+
 		$(document).on('click', '.alert .btn-close', function(){
-			$(this).closest('.alert').fadeOut()
+			$(this).closest('.alert').fadeOut();
 		})
 	});
 </script>
