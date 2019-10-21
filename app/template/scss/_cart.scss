@@ -1,0 +1,33 @@
+
+.cart-page{
+
+}
+
+.alert{
+	color: #fff;
+	display: flex;
+	padding: 1.4rem 0 1.7rem 1.6rem;
+	min-height: 5rem;
+	position: relative;
+	margin-top: 1rem;
+	&-primary{background-color: #c91537}
+	&-secondary{background-color: #bea416}
+	&-info{background-color: #0672ba}
+	&-success{background-color: #199922}
+
+	.icon{
+		margin-right: 1.4rem;
+	}
+
+	.btn-close{
+		margin-top: -6px;
+		padding: 0;
+		position: absolute;
+		right: 20px;
+		top: 50%;
+		line{
+			stroke: #fff;
+			stroke-width: 3px;
+		}
+	}
+}

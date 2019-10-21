@@ -402,7 +402,18 @@ em strong
 		@include sprite($icon-arrow-down-white)
 	}	
 
+	&-success{
+		@include sprite($icon-success)
+	}
+	&-attention{
+		@include sprite($icon-attention)
+	}
+	&-info{
+		@include sprite($icon-info)
+	}
+
 } 
+// #icon
 
 .w100{
 	width: 100%;
