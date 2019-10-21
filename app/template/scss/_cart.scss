@@ -15,6 +15,7 @@
 			padding-bottom: 0;
 
 			&__pic{
+				flex-shrink: 0;
 				width: 10rem;
 			}
 			&__layout{
@@ -29,12 +30,12 @@
 				margin-left: 3rem;
 			}
 			&__body{
-				margin-right: 8rem; 
-				width: 10rem;
+				margin-right: 6rem; 
+				width: 12rem;
 			}
 			&__note{
 				padding-right: 1.5rem;
-				width: 18rem;
+				width: 24rem;
 			}
 
 			.cost{
@@ -241,13 +242,403 @@
 			}
 		}
 	}
-}
 
+	@media (max-width: 1650px){
+		.cart-table{
+			.item-products{
+				&__layout{
+					padding-right: 2rem;
+				}
+				&__body{
+					margin-right: 2rem;
+				}
+
+				&__right{
+					justify-content: space-between;
+				}
+
+				.instock{
+					padding-right: 2rem;
+					width: 19rem;
+				}
+
+				.countmodule{
+					padding-right: 2rem;
+					width: 13rem;
+				}
+				.price{
+					padding-right: 2rem;
+				}
+
+				.cost{
+					padding-right: 2rem;
+				}
+			}
+		}
+	}
+
+	@media (max-width: 1500px){
+		.cart-table{
+			.item-products{
+				&__note{
+					// width: 19rem;
+				}
+			}
+		}
+	}
+
+	@media (min-width: 1199px) and (max-width: 1399px){
+		
+			.col-xl-8{
+				max-width: 70%;
+				flex-basis: 70%
+			}
+
+			.col-xl-2{
+				max-width: 30%;
+				flex-basis: 30%
+			}		
+
+			.calculate-wrapper{
+				.col-xl-7{
+					max-width: 60%;
+					flex-basis: 60%
+				}
+
+				.col-xl-3{
+					max-width: 40%;
+					flex-basis: 40%;
+				}
+				
+				.row{
+					display: block;
+				}
+				.col-xl-4{
+					max-width: 300px;
+				}
+
+				.postcode,
+				.cities{
+					margin-top: 10px;
+				}
+
+				.salescard{
+					width: 100%;
+					&__item{
+						padding-left: 1.5rem;
+						padding-right: 1.5rem;
+					}
+					.btn-apply{
+						width: 80px;
+					}
+					.form-control{
+						width: calc(100% - 90px)
+					}
+				}
+			}
+	}
+
+	@media (max-width: 1399px){
+		.cart-table{
+			.item-products{
+				&__layout{
+					padding-right: 150px;
+				}
+				&__pic{
+					align-self: flex-start;
+					margin-top: 1rem;
+				}
+				&__body{
+					margin-bottom: 0;
+					padding-right: 0;
+					width: calc(100% - 270px);
+				}
+
+				&__note{
+					align-items: center;
+					display: flex;
+					padding-right: 0;
+					.form-control{
+						margin-left: .7rem;
+					}
+					&-filled{
+						display: block;
+						.form-control{
+							margin-left: 0;
+						}
+					}
+				}
+
+				.instock{
+					justify-content: flex-start;
+					flex-direction: row;
+					margin-top: 2rem;
+					padding-right: 0;
+					width: 100%;
+					.preorder-text{
+						margin-left: 17px;
+					}
+				}
+
+				.manage{
+					position: absolute;
+					right: 19px;
+					top: 21px;
+				}
+			}
+		}
+
+		.calculate{
+			header{
+				.d-flex{
+					flex-direction: column;
+					align-items: flex-start !important;
+				}
+				.propdata{
+					margin-top: 1rem;
+					&__item{
+						margin-top: .5rem;
+						margin-left: 0;
+					}
+				}
+			}
+			.row{
+				flex-direction: column;
+			}
+		}
+
+	}
+
+
+	@media (max-width: 1199px){
+		.cart-table{
+			.item-products{
+				&__layout{
+					padding-right: 60px;
+				}
+				&__note{
+					padding-right: 0;
+					width: 23rem;
+				}
+				&__body{
+					width: 35%;
+				}
+			}
+		}		
+	}
+
+
+	@media (max-width: 991px){ // for 468
+		.inner{
+			padding-right: 0;
+		}
+		.cart-table{
+			.item-products{
+				&__pic{
+					align-self: flex-start
+				}
+				&__right{
+					justify-content: flex-start;
+				}
+
+				&__layout{
+					padding-right: 60px;
+				}
+				&__note{
+					margin-bottom: 0;
+					margin-top: 1.2rem;
+				}
+				&__body,
+				.countmodule{
+					padding-right: 0;
+					width: 100%;
+				}
+
+				.countmodule{
+					margin-bottom: 1rem;
+				}
+
+				.instock{
+					display: block;
+					.preorder-text{
+						margin-left: 0;
+					}
+				}
+			}
+		}		
+	}
+
+	@media (max-width: 767px){
+		.cart-table{
+			.item-products{
+				&__right{
+					display: flex;
+				}
+				&__layout{
+					padding-right: 120px;
+				}
+				&__body{
+					margin-bottom: 0;
+					padding-right: 0;
+					width: calc(100% - 270px);
+				}
+
+				&__note{
+					align-items: center;
+					display: flex;
+					margin-top: 0;
+					.form-control{
+						margin-left: .7rem;
+					}
+
+					&-filled{
+						display: block;
+						.form-control{
+							margin-left: 0;
+						}
+					}
+				}
+
+				.instock{
+					display: flex;
+					justify-content: flex-start;
+					flex-direction: row;
+					margin-top: 2rem;
+					padding-right: 0;
+					width: 100%;
+					.preorder-text{
+						margin-left: 17px;
+					}
+				}
+
+				.countmodule{
+					margin-bottom: 0;
+					width: 150px; 
+				}
+			}
+		}
+
+	}
+
+
+	@media (max-width: 700px){
+		.cart-table{
+			.item-products{
+				&__layout{
+					padding-right: 60px;
+				}
+				&__body{
+					width: 100%;
+				}
+				&__note{
+					margin-top: 10px;
+				}
+				.countmodule{
+					margin-bottom: 10px;
+					width: 100%;
+				}
+
+				.instock{
+					display: block;
+					.preorder-text{
+						margin-left: 0;
+					}
+				}
+				.txta{
+					width: 100%;
+				}
+			}
+		}
+	}
+
+
+	@media (max-width: 550px){
+		.cart-table{
+			.item-products{
+				.manage{
+					margin-top: 0;
+				}
+			}
+		}		
+	}
+
+	@media (max-width: 480px){
+		.cart-table{
+			.item-products{
+				&__right{
+					margin-left: 2rem;
+				}
+				&__title{
+					font-size: 1.4rem;
+				}
+			}
+		}
+	}
+
+	@media (max-width: 430px){
+		.cart-table{
+			.item-products{
+				.manage{
+					right: 13px;
+					top: 15px;
+					transform: scale(.8)
+				}
+				.txta{
+					height: 25px;
+					width: 110px;
+				}
+
+				&__layout{
+					display: flex;
+				}
+
+				&__pic{
+					width: 70px;
+				}
+
+				&__note{
+					.btn{
+						transform: scale(.8);
+						transform-origin: left top;
+					}
+				}
+
+				.instock{
+					font-size: 14px;
+					.preorder-text{
+						font-size: 12px;
+					}
+				}
+
+				.current-price,
+				.cost{
+					font-size: 13px;
+				}
+
+				.count-control{
+					font-size: 12px;
+				}
+
+			}
+		}
+	}
+
+	@media (max-width: 380px){
+		.cart-table{
+			.item-products{
+				&__layout{
+					padding-left: 15px;
+					padding-right: 15px;
+				}
+			}
+		}
+	}
+}
  
 .alert{
 	color: #fff;
 	display: flex;
-	padding: 1.4rem 0 1.7rem 1.6rem;
+	padding: 1.4rem 50px 1.7rem 1.6rem;
 	min-height: 5rem;
 	position: relative;
 	margin-top: 1rem;
@@ -258,6 +649,7 @@
 
 	.icon{
 		margin-right: 1.4rem;
+		flex-shrink: 0;
 	}
 
 	.btn-close{
@@ -270,5 +662,9 @@
 			stroke: #fff;
 			stroke-width: 3px;
 		}
+	}
+
+	@media (max-width: 550px){
+		font-size: 14px;
 	}
 }
