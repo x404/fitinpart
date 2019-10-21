@@ -132,10 +132,10 @@
 		font-size: 1.5rem;
 		min-height: 33rem;
 
-		header{
+		.head{
 			margin-bottom: 2.5rem;
 		}
-		h1{
+		.title{
 			font-size: 2rem;
 			position: relative;
 			padding-left: 72px;
@@ -184,6 +184,7 @@
 		}
 
 		.region{
+			background-color: transparent;
 			margin-bottom: 0;
 		}
 
@@ -314,9 +315,6 @@
 				.col-xl-4{
 					max-width: 300px;
 				}
-
-
-
 			}
 	}
 
@@ -371,17 +369,22 @@
 		}
 
 		.calculate{
-			header{
-				.d-flex{
-					flex-direction: column;
-					align-items: flex-start !important;
+			.head{
+				.propdata{
+					display: none !important;
 				}
 				.propdata{
-					margin-top: 1rem;
+				}
+			}
+
+			.toggle{
+				.propdata{
+					display: block !important;
+					margin-top: 0;
+					margin-bottom: 1rem;
 					&__item{
-						margin-top: .5rem;
-						margin-left: 0;
-					}
+						margin: .5rem 1rem 0 0;
+					} 
 				}
 			}
 			.row{
@@ -412,7 +415,6 @@
 					width: calc(100% - 90px)
 				}
 			}
-
 		}
 	}
 
@@ -434,9 +436,6 @@
 		}
 
 		.calculate-wrapper{
-			.salescard{
-				margin-top: 10px;
-			}
 
 			.salescard__item .title{
 				img{
@@ -448,6 +447,12 @@
 
 	}
 
+
+	@media (min-width: 992px){
+		.toggle{
+			display: block !important;
+		}
+	}
 
 	@media (max-width: 991px){ // for 468
 		.inner{
@@ -489,6 +494,9 @@
 		}
 
 		.calculate-wrapper{
+			.salescard{
+				margin-top: 10px;
+			}
 			.salescard__item .title{
 				img{
 					display: block;
@@ -496,6 +504,56 @@
 			}
 		}
 
+
+		.calculate{
+			.title{
+				padding: 20px 25px 15px 135px;
+				&:after{
+					background-color: #0a74bb;
+					background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAHCAYAAAA4R3wZAAAAcElEQVQoU2P8//+/EwMDwxwg7mBkZJwFpHECoNo0oGQFEKcwQjXuhapOx6UZqmkmVJ0zI4gBFMwEUtNwaUbTlAU0fDpYIz7N2DSB1MM1YtGcBTUT5hKwTTCLUDRi0QxTh6IJw0YkZ4NCrxHKr8cWYADdcjaGjxct/gAAAABJRU5ErkJggg==);
+					background-position: center;
+					background-repeat: no-repeat;
+					border-radius: 50%;
+					content: "";
+					display: block;
+					height: 30px;
+					left: 10px;
+					position: absolute;
+					top: 20px;
+					transition: transform .3s;
+					width: 30px;
+				}
+				&.open{
+					&:after{
+						transform: rotate(180deg);
+					}
+				}
+			}
+		}
+
+		.calculate{
+			background-color: #eaecf0;
+			min-height: 0;
+			padding: 0;
+			.head{
+				margin-bottom: 0;				
+			}
+			.title{
+				width: 100%;
+				&:before{
+					left: 61px;
+					top: 19px;
+				}
+
+
+			}
+			.toggle{
+				display: none;
+				padding-left: 10px;
+				padding-right: 10px;
+				padding-bottom: 20px;
+			}
+		}
 	}
 
 	@media (max-width: 767px){
@@ -551,7 +609,6 @@
 		.summary{
 			margin-top: 22px;
 		}
-
 	}
 
 

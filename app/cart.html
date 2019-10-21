@@ -1646,11 +1646,11 @@
 						<div class="row calculate-wrapper">
 							<div class="col-xl-7 col-lg-6">
 								<!-- =calculate --> 
-								<section class="calculate">
-									<header>
-										<div class="d-flex justify-content-between align-items-center">
-											<h1>Calculate shipping</h1>
-											<div class="propdata d-flex">
+								<div class="calculate">
+									<div class="head">
+										<div class="d-md-flex justify-content-between align-items-center">
+											<p class="title">Calculate shipping</p>
+											<div class="propdata d-lg-flex d-none">
 												<div class="propdata__item">
 													<i class="icon icon-scales"></i>
 													<b>Weight:</b> 13.60kg
@@ -1662,8 +1662,20 @@
 												</div>
 											</div>										
 										</div>
-									</header>
-									<div class="calculate__inner">
+									</div>
+									<div class="toggle">
+										<div class="propdata d-lg-none">
+											<div class="propdata__item">
+												<i class="icon icon-scales"></i>
+												<b>Weight:</b> 13.60kg
+											</div>
+
+											<div class="propdata__item">
+												<i class="icon icon-scales"></i>
+												<b>Volumetric:</b> 3.69kg
+											</div>
+										</div>
+
 										<p><strong>Enter your destination to get a shipping estimate.</strong></p>
 										<div class="row">
 											<div class="col-xl-4">
@@ -1778,7 +1790,7 @@
 										<button type="button" class="btn btn-calc btn-middle btn-blue btn-blue-lighten-hover">Calculate</button>
 										
 									</div>
-								</section>
+								</div>
 								<!-- =/calculate -->
 							</div>
 							<div class="col-xl-3 col-lg-4 d-flex justify-content-end">
@@ -3043,6 +3055,14 @@
 	$(document).ready(function(){
 		// autosize textarea
 		autosize(document.querySelectorAll('.txta'));
+
+		$('.calculate .title').click(function(){
+			let $this = $(this);
+			if ($(window).width() < 991){
+				$this.closest('.head').next('.toggle').slideToggle();
+				$this.toggleClass('open');				
+			};
+		})
 
 		$("#add-country").multipleSelect({
 			single: true,

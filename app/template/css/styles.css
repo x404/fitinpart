@@ -3906,7 +3906,7 @@ strong,
 
 .before, .icon:before, .btn-view:before, .btn-google:before, .btn-facebook:before, .top__left:before, .top__menu li.flexMenu-viewMore > a:after, .countmodule .minus:before, .countmodule .plus:before, .countmodule .plus:after, .search .vehicle-search-str .vehicle-search-item:after, .promo .wrapper:before, .visual__item:before, .modal-content-bg:before, .modal-content-bg:after, .modal-content-rbg:after, .modal-info:after, .modal-menu:before, .modal-menu .catalog:before, .breadcrumbs ul li.B_homecrumb a:before, .content ul li:before, .aboutus-page .intro__title:before, .aboutus-page .advantages__text:after, .aboutus-page .ouroffice__pic:after, #fitinpart-carousel a:after, #fitinpart-carousel a:before, .bl-line:after,
 .bc-line:after, .sortbox .param-sort:after, .products__list .item-products .additional__panel .item button:before, .label-tooltip:before,
-.tooltip-body:before, #notifyModal .settings-link:before, .cart-page .summary .option-item:after, .cart-page .calculate h1:before, .wiper-search .intro__body:after, .wiper-search .intro__body:before, .wiper-search .details .label:before, .perfomance-page .intro__body:after, .perfomance-page .intro__body:before, .perfomance-page .subtitle:before, .content-location .days:not(:last-child):after, .mob-accountmenu .btn-accountmenu:before, .orders__list .tracking__item:before, .orders__list .tracking__item:after, .notify-settings .option-item:after, .stockrequest__list .reqstatus:before, .wishlist-page .item-products__note .btn-ok:before,
+.tooltip-body:before, #notifyModal .settings-link:before, .cart-page .summary .option-item:after, .cart-page .calculate .title:before, .wiper-search .intro__body:after, .wiper-search .intro__body:before, .wiper-search .details .label:before, .perfomance-page .intro__body:after, .perfomance-page .intro__body:before, .perfomance-page .subtitle:before, .content-location .days:not(:last-child):after, .mob-accountmenu .btn-accountmenu:before, .orders__list .tracking__item:before, .orders__list .tracking__item:after, .notify-settings .option-item:after, .stockrequest__list .reqstatus:before, .wishlist-page .item-products__note .btn-ok:before,
 .cart-table .item-products__note .btn-ok:before, .wishlist-page .item-products .actions .btn:before,
 .cart-table .item-products .actions .btn:before {
   content: "";
@@ -9037,13 +9037,13 @@ input.form-control.error {
     padding: 2rem 4rem 5rem 2.5rem;
     font-size: 1.5rem;
     min-height: 33rem; }
-    .cart-page .calculate header {
+    .cart-page .calculate .head {
       margin-bottom: 2.5rem; }
-    .cart-page .calculate h1 {
+    .cart-page .calculate .title {
       font-size: 2rem;
       position: relative;
       padding-left: 72px; }
-      .cart-page .calculate h1:before {
+      .cart-page .calculate .title:before {
         background-image: url(../images/sprite.png);
         background-position: -43px 0px;
         width: 54px;
@@ -9084,6 +9084,7 @@ input.form-control.error {
       .cart-page .calculate .postcode:focus:-ms-input-placeholder {
         transition: line-height 0.5s ease; }
     .cart-page .calculate .region {
+      background-color: transparent;
       margin-bottom: 0; }
     .cart-page .calculate .btn-calc {
       margin-top: 1.3rem; }
@@ -9185,14 +9186,14 @@ input.form-control.error {
       position: absolute;
       right: 19px;
       top: 21px; }
-    .cart-page .calculate header .d-flex {
-      flex-direction: column;
-      align-items: flex-start !important; }
-    .cart-page .calculate header .propdata {
-      margin-top: 1rem; }
-      .cart-page .calculate header .propdata__item {
-        margin-top: .5rem;
-        margin-left: 0; }
+    .cart-page .calculate .head .propdata {
+      display: none !important; }
+    .cart-page .calculate .toggle .propdata {
+      display: block !important;
+      margin-top: 0;
+      margin-bottom: 1rem; }
+      .cart-page .calculate .toggle .propdata__item {
+        margin: .5rem 1rem 0 0; }
     .cart-page .calculate .row {
       flex-direction: column; }
     .cart-page .calculate-wrapper .row {
@@ -9217,10 +9218,11 @@ input.form-control.error {
       width: 23rem; }
     .cart-page .cart-table .item-products__body {
       width: 35%; }
-    .cart-page .calculate-wrapper .salescard {
-      margin-top: 10px; }
     .cart-page .calculate-wrapper .salescard__item .title img {
       display: none; } }
+  @media (min-width: 992px) {
+    .cart-page .toggle {
+      display: block !important; } }
   @media (max-width: 991px) {
     .cart-page .inner {
       padding-right: 0; }
@@ -9243,8 +9245,44 @@ input.form-control.error {
       display: block; }
       .cart-page .cart-table .item-products .instock .preorder-text {
         margin-left: 0; }
+    .cart-page .calculate-wrapper .salescard {
+      margin-top: 10px; }
     .cart-page .calculate-wrapper .salescard__item .title img {
-      display: block; } }
+      display: block; }
+    .cart-page .calculate .title {
+      padding: 20px 25px 15px 135px; }
+      .cart-page .calculate .title:after {
+        background-color: #0a74bb;
+        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAHCAYAAAA4R3wZAAAAcElEQVQoU2P8//+/EwMDwxwg7mBkZJwFpHECoNo0oGQFEKcwQjXuhapOx6UZqmkmVJ0zI4gBFMwEUtNwaUbTlAU0fDpYIz7N2DSB1MM1YtGcBTUT5hKwTTCLUDRi0QxTh6IJw0YkZ4NCrxHKr8cWYADdcjaGjxct/gAAAABJRU5ErkJggg==);
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 50%;
+        content: "";
+        display: block;
+        height: 30px;
+        left: 10px;
+        position: absolute;
+        top: 20px;
+        transition: transform .3s;
+        width: 30px; }
+      .cart-page .calculate .title.open:after {
+        transform: rotate(180deg); }
+    .cart-page .calculate {
+      background-color: #eaecf0;
+      min-height: 0;
+      padding: 0; }
+      .cart-page .calculate .head {
+        margin-bottom: 0; }
+      .cart-page .calculate .title {
+        width: 100%; }
+        .cart-page .calculate .title:before {
+          left: 61px;
+          top: 19px; }
+      .cart-page .calculate .toggle {
+        display: none;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 20px; } }
   @media (max-width: 767px) {
     .cart-page .cart-table .item-products__right {
       display: flex; }
