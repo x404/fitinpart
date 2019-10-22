@@ -27,6 +27,7 @@
 			}
 			&__right{
 				align-items: center;
+				// flex-wrap: nowrap;
 				margin-left: 3rem;
 			}
 			&__body{
@@ -282,7 +283,10 @@
 		.cart-table{
 			.item-products{
 				&__note{
-					// width: 19rem;
+					width: 19rem;
+				}
+				.price{
+					padding-right: 1rem;
 				}
 			}
 		}
@@ -505,7 +509,9 @@
 		}
 
 
-		.calculate{
+		.calculate,
+		.salescard
+		{
 			.title{
 				padding: 20px 25px 15px 135px;
 				&:after{
@@ -536,7 +542,7 @@
 			min-height: 0;
 			padding: 0;
 			.head{
-				margin-bottom: 0;				
+				margin-bottom: 0;
 			}
 			.title{
 				width: 100%;
@@ -544,14 +550,48 @@
 					left: 61px;
 					top: 19px;
 				}
-
-
 			}
+
+			.ms-parent{
+				width: 320px !important;
+			}
+		}
+
+		.calculate,
+		.salescard
+		{
 			.toggle{
 				display: none;
 				padding-left: 10px;
 				padding-right: 10px;
 				padding-bottom: 20px;
+			}
+			.head{
+				position: relative;
+			}
+		}
+
+		.salescard{
+			.form-control{
+				margin-right: 15px;
+				width: 250px !important;
+			}
+			&__item{
+				min-height: 0;
+				padding: 0 !important;
+				&-coupon{
+					.title{
+						padding-left: 58px;
+					}
+				}
+				&-voucher{
+					.title{
+						padding-left: 67px;
+						img{
+							margin-right: 22px;
+						}
+					}
+				}
 			}
 		}
 	}
@@ -712,6 +752,20 @@
 
 			}
 		}
+
+		.salescard .form-control{
+			width: calc(100%  - 100px) !important
+		}
+
+		.calculate{
+			.ms-parent{
+				width: 100% !important;
+			}
+		}
+
+		 .salescard__item .title{
+		 	font-size: 18px;
+		 }
 	}
 
 	@media (max-width: 380px){
@@ -724,6 +778,37 @@
 			}
 		}
 	}
+
+	@media (max-width: 350px){
+		.salescard__item .title{
+		 	font-size: 16px;
+		}
+
+		.cart-table .item-products{
+			&__layout{
+				padding-left: 10px;
+				padding-right: 10px;
+			}
+			&__note{
+				font-size: 12px;
+				width: 100%;
+			}
+			.txta{
+				width: 100%;
+			}
+
+			.price{
+				margin-right: 10px;
+				width: auto;
+			}
+
+			.cost{
+				padding-right: 0;
+			}
+		}
+
+	}
+
 }
  
 .alert{

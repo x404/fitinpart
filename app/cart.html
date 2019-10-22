@@ -1787,8 +1787,7 @@
 											</div>
 										</div>
 
-										<button type="button" class="btn btn-calc btn-middle btn-blue btn-blue-lighten-hover">Calculate</button>
-										
+										<button type="button" class="btn btn-calc btn-middle btn-blue btn-blue-lighten-hover">Calculate</button>		
 									</div>
 								</div>
 								<!-- =/calculate -->
@@ -1796,19 +1795,27 @@
 							<div class="col-xl-3 col-lg-4 d-flex justify-content-end">
 								<div class="salescard">
 									<div class="salescard__item salescard__item-coupon">
-										<p class="title"><img src="/template/images/coupon.png" alt="" />Use Coupon Code</p>
-										<p>Enter your coupon here</p>
-										<div class="form d-flex justify-content-between">
-											<input type="text" class="form-control" name="code" value="" />
-											<button type="button" class="btn btn-apply btn-blue btn-blue-lighten-hover">Apply</button>
+										<div class="head">
+											<p class="title"><img src="/template/images/coupon.png" alt="" />Use Coupon Code</p>
+										</div>
+										<div class="toggle">
+											<p>Enter your coupon here</p>
+											<div class="form d-flex justify-content-lg-between">
+												<input type="text" class="form-control" name="code" value="" />
+												<button type="button" class="btn btn-apply btn-blue btn-blue-lighten-hover">Apply</button>
+											</div>
 										</div>
 									</div>					
 									<div class="salescard__item salescard__item-voucher">
-										<p class="title"><img src="/template/images/gift.png" alt="" />Use Gift Voucher</p>
-										<p>Enter your coupon here</p>
-										<div class="form d-flex justify-content-between">
-											<input type="text" class="form-control" name="code" value="" />
-											<button type="button" class="btn btn-apply btn-blue btn-blue-lighten-hover">Apply</button>
+										<div class="head">
+											<p class="title"><img src="/template/images/gift.png" alt="" />Use Gift Voucher</p>
+										</div>
+										<div class="toggle">
+											<p>Enter your coupon here</p>
+											<div class="form d-flex justify-content-lg-between">
+												<input type="text" class="form-control" name="code" value="" />
+												<button type="button" class="btn btn-apply btn-blue btn-blue-lighten-hover">Apply</button>
+											</div>
 										</div>
 									</div>					
 								</div>
@@ -3056,7 +3063,7 @@
 		// autosize textarea
 		autosize(document.querySelectorAll('.txta'));
 
-		$('.calculate .title').click(function(){
+		$('.calculate .title,  .salescard .title').click(function(){
 			let $this = $(this);
 			if ($(window).width() < 991){
 				$this.closest('.head').next('.toggle').slideToggle();
