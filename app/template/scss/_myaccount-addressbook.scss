@@ -4,9 +4,8 @@
 
 	.item-entry{
 		background-color: #fff;
-		display: flex;
-		justify-content: space-between;
-		padding: 2rem;
+		// display: flex;
+		// justify-content: space-between;
 		transition: box-shadow .3s;
 		margin-bottom: 1rem;
 		&:last-child(){
@@ -14,6 +13,10 @@
 		}
 		&:hover{
 			box-shadow: 0 5px 15px rgba(0, 153, 255, 0.5);
+		}
+
+		&__body{
+			padding: 2rem;
 		}
 
 		.num{
@@ -62,6 +65,10 @@
 				&:hover{
 					box-shadow: 0 5px 10px rgba(0, 153, 255, 0.5);
 				}
+			}
+			&-save,
+			&-cancel{
+				padding: 0 2.5rem;
 			}
 		}
 
@@ -146,6 +153,7 @@
 
 
 .add-address,
+.edit-address,
 .calculate
 {
 	.ms-parent{
@@ -163,7 +171,9 @@
 }
 
 
-.add-address{
+.add-address,
+.edit-address
+{
 	background-color: #fff;
 	padding: 2.2rem 3rem 4rem;
 	h1{
@@ -243,5 +253,23 @@
 		.icon{
 			margin-right: .8rem;
 		}
+	}
+}
+
+
+.edit-address{
+	border-top: 1px solid #eaecf0;
+	h1{
+		margin-bottom: 1rem;
+	}
+
+	.btn{
+		border-radius: 5rem;
+		height: 5rem;
+		margin-right: 1.5rem;
+	}
+
+	.actions{
+		margin-top: 2.2rem;
 	}
 }

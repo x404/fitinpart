@@ -1583,31 +1583,37 @@
 						<!-- =address list -->
 						<div class="address-entries__list">
 							<div class="item-entry">
-								<div class="item-entry__num"><div class="num">1</div></div>
-									<div class="item-entry__text">
-										Pavel Kovalkov <br>
-										Singapore <br>
-										415934
+								<div class="item-entry__body d-flex justify-content-between">
+									<div class="item-entry__num"><div class="num">1</div></div>
+										<div class="item-entry__text">
+											Pavel Kovalkov <br>
+											Singapore <br>
+											415934
+										</div>
+										<div class="item-entry__right">
+
+										<label class="radio">
+											<input type="radio" name="setdefault" value="" />
+											<div class="radio__text"></div>
+										</label>
+
+
+										<button type="button" class="btn btn-edit btn-darkgray btn-blue-lighten-hover"><i class="icon icon-pencil-2"></i>Edit</button>
+										<button type="button" class="btn btn-del">
+											<svg width="22" height="22">
+												<line x1="0" y1="0" x2="22" y2="22"/>
+												<line x1="22" y1="0" x2="0" y2="22"/>
+											</svg>
+										</button>
 									</div>
-									<div class="item-entry__right">
-
-									<label class="radio">
-										<input type="radio" name="setdefault" value="" />
-										<div class="radio__text"></div>
-									</label>
-
-
-									<button type="button" class="btn btn-edit btn-darkgray btn-blue-lighten-hover"><i class="icon icon-pencil-2"></i>Edit</button>
-									<button type="button" class="btn btn-del">
-										<svg width="22" height="22">
-											<line x1="0" y1="0" x2="22" y2="22"/>
-											<line x1="22" y1="0" x2="0" y2="22"/>
-										</svg>
-									</button>
 								</div>
 							</div>
 							<div class="item-entry">
-								<div class="item-entry__num"><div class="num">2</div></div>
+								<!-- =entry body -->
+								<div class="item-entry__body d-flex justify-content-between">
+									<div class="item-entry__num">
+										<div class="num">2</div>
+									</div>
 									<div class="item-entry__text">
 										Ksenia Nekrassova <br>
 										Blk 11 Unit 47 <br>
@@ -1616,71 +1622,296 @@
 										KH
 									</div>
 									<div class="item-entry__right">
+										<label class="radio">
+											<input type="radio" name="setdefault" value="" />
+											<div class="radio__text"></div>
+										</label>
 
-									<label class="radio">
-										<input type="radio" name="setdefault" value="" />
-										<div class="radio__text"></div>
-									</label>
-
-
-									<button type="button" class="btn btn-edit btn-darkgray btn-blue-lighten-hover"><i class="icon icon-pencil-2"></i>Edit</button>
-									<button type="button" class="btn btn-del">
-										<svg width="22" height="22">
-											<line x1="0" y1="0" x2="22" y2="22"/>
-											<line x1="22" y1="0" x2="0" y2="22"/>
-										</svg>
-									</button>
-								</div>
-							</div>
-							<div class="item-entry">
-								<div class="item-entry__num"><div class="num">3</div></div>
-									<div class="item-entry__text">
-										Mr ZHAOFENGZHE <br>
-										[TN] HEBEI HAOTIAN FILTER <br>
-										ZONE, SOUTH OF LIJIANG STREET <br>
-										QINGHE <br>
-										054800 Hebei <br>
-										HB
+										<button type="button" class="btn btn-edit btn-darkgray btn-blue-lighten-hover"><i class="icon icon-pencil-2"></i>Edit</button>
+										<button type="button" class="btn btn-del">
+											<svg width="22" height="22">
+												<line x1="0" y1="0" x2="22" y2="22"/>
+												<line x1="22" y1="0" x2="0" y2="22"/>
+											</svg>
+										</button>
 									</div>
-									<div class="item-entry__right">
+								</div>
+								<!-- =/entry body -->
 
-									<label class="radio">
-										<input type="radio" name="setdefault" value="" checked="checked" />
-										<div class="radio__text"></div>
-									</label>
+								<!-- =edit -->
+								<section class="edit-address edit-address-2">
+									<div class="edit-address__layout">
+										<header>
+											<h1>Edit adress</h1>
+										</header>
+										<form action="#" method="post">
+											<fieldset>
+												<div class="row justify-content-between">
+													<div class="col-3">
+														<label for="edit-name-2">Name <span class="asterisk">*</span></label>
+														<input type="text" id="edit-name-2" name="name" class="form-control" value="" />
+													</div>
+													<div class="col-3">
+														<label for="edit-lastname-2">Last Name <span class="asterisk">*</span></label>
+														<input type="text" id="edit-lastname-2" name="lastname" class="form-control" value="" />
+													</div>
+													<div class="col-3">
+														<label for="edit-tel-2">Telephone <span class="asterisk">*</span></label>
+														<input type="tel" id="edit-tel-2" name="tel" class="form-control" value="" />
+													</div>
+												</div>
+												<div class="row">
+													<div class="col-3">
+														<label for="edit-company-2">Company</label>
+														<input type="text" id="edit-company-2" name="company" class="form-control" value="" />
+													</div>
+												</div>
+												<div class="postcode d-flex align-items-center">
+													<label for="edit-postcode-2">Post Code  <span class="asterisk">*</span></label>
+													<input type="text" id="edit-postcode-2" name="postcode" class="form-control" value="" />
+													<button type="button" class="btn btn-getadress btn-blue btn-blue-lighten-hover"><i class="icon icon-arrow-down-white"></i>Get adress</button>
+												</div>
+												<div class="row">
+													<div class="col-3">
+														<label for="">Country <span class="asterisk">*</span></label>
+														<select name="country" id="edit-country-2" class="countries" multiple="multiple">
+															<option value="Afghanistan">Afghanistan</option>
+															<option value="Åland">Åland</option>
+															<option value="Albania">Albania</option>
+															<option value="Algeria">Algeria</option>
+															<option value="American">American</option>
+															<option value="Andorra">Andorra</option>
+															<option value="Angola">Angola</option>
+															<option value="Anguilla">Anguilla</option>
+															<option value="Antarctica">Antarctica</option>
+															<option value="Antigua">Antigua</option>
+															<option value="Argentina">Argentina</option>
+															<option value="Armenia">Armenia</option>
+															<option value="Aruba">Aruba</option>
+															<option value="Australia">Australia</option>
+															<option value="Austria">Austria</option>
+															<option value="Azerbaijan">Azerbaijan</option>
+															<option value="Bahamas">Bahamas</option>
+															<option value="Bahrain">Bahrain</option>
+															<option value="Bangladesh">Bangladesh</option>
+															<option value="Barbados">Barbados</option>
+															<option value="Belarus">Belarus</option>
+															<option value="Belgium">Belgium</option>
+															<option value="Belize">Belize</option>
+															<option value="Benin">Benin</option>
+															<option value="Bermuda">Bermuda</option>
+															<option value="Bhutan">Bhutan</option>
+															<option value="Bolivia">Bolivia</option>
+															<option value="Bosnia">Bosnia</option>
+															<option value="Botswana">Botswana</option>
+															<option value="Bouvet">Bouvet</option>
+															<option value="Brazil">Brazil</option>
+															<option value="British">British</option>
+														</select>
+													</div>
+													<div class="col-3">
+														<label for="">Region / State</label>
+														<select name="region" id="edit-region-2" multiple="multiple" class="region">
+															<option value="Alabama">Alabama</option>
+															<option value="Alaska">Alaska</option>
+															<option value="America Samoa">America Samoa</option>
+															<option value="Arizona">Arizona</option>
+															<option value="Arkansas">Arkansas</option>
+															<option value="California">California</option>
+															<option value="Colorado">Colorado</option>
+															<option value="Connecticut">Connecticut</option>
+															<option value="Delaware">Delaware</option>
+															<option value="District of Columbia">District of Columbia</option>
+															<option value="Micronesia1">Micronesia1</option>
+															<option value="Florida">Florida</option>
+															<option value="Georgia">Georgia</option>
+															<option value="Guam">Guam</option>
+															<option value="Hawaii">Hawaii</option>
+															<option value="Idaho">Idaho</option>
+															<option value="Illinois">Illinois</option>
+															<option value="Indiana">Indiana</option>
+															<option value="Iowa">Iowa</option>
+															<option value="Kansas">Kansas</option>
+															<option value="Kentucky">Kentucky</option>
+															<option value="Louisiana">Louisiana</option>
+															<option value="Maine">Maine</option>
+															<option value="Islands1">Islands1</option>
+															<option value="Maryland">Maryland</option>
+															<option value="Massachusetts">Massachusetts</option>
+															<option value="Michigan">Michigan</option>
+															<option value="Minnesota">Minnesota</option>
+															<option value="Mississippi">Mississippi</option>
+															<option value="Missouri">Missouri</option>
+															<option value="Montana">Montana</option>
+															<option value="Nebraska">Nebraska</option>
+															<option value="Nevada">Nevada</option>
+														</select>		
+													</div>
+													<div class="col-3">
+														<label for="">City <span class="asterisk">*</span></label>
+														<select name="city" id="edit-city-2" multiple="multiple" class="cities">
+															<option value="Vestavia Hills">Vestavia Hills</option>
+															<option value="Homewood">Homewood</option>
+															<option value="Movico">Movico</option>
+															<option value="Hoover">Hoover</option>
+															<option value="Madison">Madison</option>
+															<option value="Brook Highland">Brook Highland</option>
+															<option value="Fort Rucker">Fort Rucker</option>
+															<option value="Trussville">Trussville</option>
+															<option value="Helena">Helena</option>
+															<option value="Highland Lakes">Highland Lakes</option>
+															<option value="Mountain Brook">Mountain Brook</option>
+															<option value="Sims Chapel">Sims Chapel</option>
+															<option value="Priceville">Priceville</option>
+															<option value="Bucks">Bucks</option>
+															<option value="Tibbie">Tibbie</option>
+															<option value="Meadowbrook">Meadowbrook</option>
+															<option value="Redland">Redland</option>
+															<option value="Whatley">Whatley</option>
+															<option value="Daphne">Daphne</option>
+															<option value="Hartselle">Hartselle</option>
+															<option value="Grayson Valley">Grayson Valley</option>
+															<option value="Indian Springs Village">Indian Springs Village</option>
+															<option value="Malcolm">Malcolm</option>
+															<option value="Delta">Delta</option>
+														</select>
+													</div>
+												</div>
+												<div class="row">
+													<div class="col">
+														<label for="edit-address-1">Address 1 <span class="asterisk">*</span></label>
+														<input type="text" id="edit-address-1" name="address-1" class="form-control" value="" />
+													</div>
+													<div class="col">
+														<label for="edit-address-2">Address 2</label>
+														<input type="text" id="edit-address-2" name="address-2" class="form-control" value="" />
+													</div>		
+												</div>
+												<div class="d-flex default-address">
+													Default Address
+													<label class="checkbox">
+														<input type="checkbox" name="default-address" value="">
+														<div class="checkbox__text"></div>
+													</label>
+												</div>
+												<div class="actions d-flex">
+													<button type="button" class="btn btn-save btn-blue btn-blue-lighten-hover">Save</button>
+													<button type="button" class="btn btn-cancel btn-gray btn-blue-lighten-hover">Cancel</button>
+												</div>
+											</fieldset>
+										</form>
+									</div>
+									<script>
+										$(document).ready(function(){
+											$("#edit-country-2").multipleSelect({
+												single: true,
+												filter: true,
+												onFilter: function(){
+													countries2.update();
+												},
+												onOpen: function() {
+													countries2.update();
+												}
+											});
+
+											$("#edit-region-2").multipleSelect({
+												single: true,
+												filter: true,
+												onFilter: function(){
+													region2.update();
+												},
+												onOpen: function() {
+													region2.update();
+												}
+											});
+
+											$("#edit-city-2").multipleSelect({
+												single: true,
+												filter: true,
+												onFilter: function(){
+													city2.update();
+												},
+												onOpen: function() {
+													city2.update();
+												}
+											});
 
 
-									<button type="button" class="btn btn-edit btn-darkgray btn-blue-lighten-hover"><i class="icon icon-pencil-2"></i>Edit</button>
-									<button type="button" class="btn btn-del">
-										<svg width="22" height="22">
-											<line x1="0" y1="0" x2="22" y2="22"/>
-											<line x1="22" y1="0" x2="0" y2="22"/>
-										</svg>
-									</button>
+											countries2 = new PerfectScrollbar('.edit-address-2 .countries .listwrapper', {
+												wheelPropagation: true,
+												minScrollbarLength: 100,
+												maxScrollbarLength: 100,
+											});
+
+											region2 = new PerfectScrollbar('.edit-address-2 .region .listwrapper', {
+												wheelPropagation: true,
+												minScrollbarLength: 100,
+												maxScrollbarLength: 100,
+											});
+
+											cities2 = new PerfectScrollbar('.edit-address-2 .cities .listwrapper', {
+												wheelPropagation: true,
+												minScrollbarLength: 100,
+												maxScrollbarLength: 100,
+											});
+										});
+									</script>
+								</section>
+								<!-- =/edit -->
+							</div>
+							<div class="item-entry">
+								<div class="item-entry__body d-flex justify-content-between">
+									<div class="item-entry__num"><div class="num">3</div></div>
+										<div class="item-entry__text">
+											Mr ZHAOFENGZHE <br>
+											[TN] HEBEI HAOTIAN FILTER <br>
+											ZONE, SOUTH OF LIJIANG STREET <br>
+											QINGHE <br>
+											054800 Hebei <br>
+											HB
+										</div>
+										<div class="item-entry__right">
+
+										<label class="radio">
+											<input type="radio" name="setdefault" value="" checked="checked" />
+											<div class="radio__text"></div>
+										</label>
+
+
+										<button type="button" class="btn btn-edit btn-darkgray btn-blue-lighten-hover"><i class="icon icon-pencil-2"></i>Edit</button>
+										<button type="button" class="btn btn-del">
+											<svg width="22" height="22">
+												<line x1="0" y1="0" x2="22" y2="22"/>
+												<line x1="22" y1="0" x2="0" y2="22"/>
+											</svg>
+										</button>
+									</div>
 								</div>
 							</div>
 							<div class="item-entry">
-								<div class="item-entry__num"><div class="num">4</div></div>
-									<div class="item-entry__text">
-										Pavel Kovalkov  <br>
-										Singapore <br>
-										629682
-									</div> 
-									<div class="item-entry__right">
+								<div class="item-entry__body d-flex justify-content-between">
+									<div class="item-entry__num"><div class="num">4</div></div>
+										<div class="item-entry__text">
+											Pavel Kovalkov  <br>
+											Singapore <br>
+											629682
+										</div> 
+										<div class="item-entry__right">
 
-									<label class="radio">
-										<input type="radio" name="setdefault" value=""  />
-										<div class="radio__text"></div>
-									</label>
+										<label class="radio">
+											<input type="radio" name="setdefault" value=""  />
+											<div class="radio__text"></div>
+										</label>
 
 
-									<button type="button" class="btn btn-edit btn-darkgray btn-blue-lighten-hover"><i class="icon icon-pencil-2"></i>Edit</button>
-									<button type="button" class="btn btn-del">
-										<svg width="22" height="22">
-											<line x1="0" y1="0" x2="22" y2="22"/>
-											<line x1="22" y1="0" x2="0" y2="22"/>
-										</svg>
-									</button>
+										<button type="button" class="btn btn-edit btn-darkgray btn-blue-lighten-hover"><i class="icon icon-pencil-2"></i>Edit</button>
+										<button type="button" class="btn btn-del">
+											<svg width="22" height="22">
+												<line x1="0" y1="0" x2="22" y2="22"/>
+												<line x1="22" y1="0" x2="0" y2="22"/>
+											</svg>
+										</button>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -3066,10 +3297,10 @@
 			single: true,
 			filter: true,
 			onFilter: function(){
-				// countries.update();
+				region.update();
 			},
 			onOpen: function() {
-				// countries.update();
+				region.update();
 			},
 			onClick: function(view) {
 			}
@@ -3079,10 +3310,10 @@
 			single: true,
 			filter: true,
 			onFilter: function(){
-				// countries.update();
+				cities.update();
 			},
 			onOpen: function() {
-				// countries.update();
+				cities.update();
 			},
 			onClick: function(view) {
 			}
@@ -3106,7 +3337,6 @@
 			minScrollbarLength: 100,
 			maxScrollbarLength: 100,
 		});
-
 	});
 </script>
 <!-- InstanceEndEditable -->

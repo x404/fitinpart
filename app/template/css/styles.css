@@ -12958,15 +12958,14 @@ input.form-control.error {
   padding: 3rem; }
   .address-entries__list .item-entry {
     background-color: #fff;
-    display: flex;
-    justify-content: space-between;
-    padding: 2rem;
     transition: box-shadow .3s;
     margin-bottom: 1rem; }
     .address-entries__list .item-entry:last-child {
       margin-bottom: 0; }
     .address-entries__list .item-entry:hover {
       box-shadow: 0 5px 15px rgba(0, 153, 255, 0.5); }
+    .address-entries__list .item-entry__body {
+      padding: 2rem; }
     .address-entries__list .item-entry .num {
       background-color: #0672ba;
       border-radius: 50%;
@@ -13004,6 +13003,8 @@ input.form-control.error {
           margin-right: 6px; }
         .address-entries__list .item-entry .btn-edit:hover {
           box-shadow: 0 5px 10px rgba(0, 153, 255, 0.5); }
+      .address-entries__list .item-entry .btn-save, .address-entries__list .item-entry .btn-cancel {
+        padding: 0 2.5rem; }
     .address-entries__list .item-entry .radio {
       position: relative; }
     .address-entries__list .item-entry .radio input {
@@ -13065,75 +13066,108 @@ input.form-control.error {
       width: 105px; }
 
 .add-address .ms-parent,
+.edit-address .ms-parent,
 .calculate .ms-parent {
   font-size: 1.5rem;
   width: 100% !important; }
   .add-address .ms-parent .listwrapper,
+  .edit-address .ms-parent .listwrapper,
   .calculate .ms-parent .listwrapper {
     height: 200px; }
     .add-address .ms-parent .listwrapper li,
+    .edit-address .ms-parent .listwrapper li,
     .calculate .ms-parent .listwrapper li {
       margin: 0;
       padding-left: 0;
       width: calc(100% - 30px); }
 
-.add-address {
+.add-address,
+.edit-address {
   background-color: #fff;
   padding: 2.2rem 3rem 4rem; }
-  .add-address h1 {
+  .add-address h1,
+  .edit-address h1 {
     font-size: 2.2rem;
     margin-bottom: 2.4rem; }
-  .add-address label {
+  .add-address label,
+  .edit-address label {
     font-size: 1.5rem; }
-  .add-address .form-control {
+  .add-address .form-control,
+  .edit-address .form-control {
     font-size: 1.5rem; }
-  .add-address .row {
+  .add-address .row,
+  .edit-address .row {
     margin-top: 1.4rem; }
-    .add-address .row .col-3 {
+    .add-address .row .col-3,
+    .edit-address .row .col-3 {
       max-width: 33%;
       flex-basis: 33%; }
-  .add-address .postcode {
+  .add-address .postcode,
+  .edit-address .postcode {
     background-color: #778d9b;
     color: #fff;
     margin: 2rem -3rem 0;
     padding: 3rem; }
-    .add-address .postcode .form-control {
+    .add-address .postcode .form-control,
+    .edit-address .postcode .form-control {
       margin-left: 1.3rem;
       margin-right: 1.5rem;
       width: 40rem; }
-    .add-address .postcode .btn-getadress {
+    .add-address .postcode .btn-getadress,
+    .edit-address .postcode .btn-getadress {
       height: 4rem;
       border-radius: 4rem;
       font-weight: 700;
       font-size: 1.5rem;
       padding-left: 1.3rem;
       padding-right: 2.4rem; }
-      .add-address .postcode .btn-getadress .icon {
+      .add-address .postcode .btn-getadress .icon,
+      .edit-address .postcode .btn-getadress .icon {
         margin-right: 1rem; }
-  .add-address select {
+  .add-address select,
+  .edit-address select {
     display: none; }
-  .add-address .default-address {
+  .add-address .default-address,
+  .edit-address .default-address {
     font-size: 1.5rem;
     margin-top: 2.3rem; }
-    .add-address .default-address .checkbox {
+    .add-address .default-address .checkbox,
+    .edit-address .default-address .checkbox {
       position: relative;
       top: -4px; }
-    .add-address .default-address .checkbox__text {
+    .add-address .default-address .checkbox__text,
+    .edit-address .default-address .checkbox__text {
       margin-left: 15px; }
-      .add-address .default-address .checkbox__text:after {
+      .add-address .default-address .checkbox__text:after,
+      .edit-address .default-address .checkbox__text:after {
         content: "NO";
         font-size: .8rem; }
-    .add-address .default-address .checkbox input:checked + .checkbox__text:before {
+    .add-address .default-address .checkbox input:checked + .checkbox__text:before,
+    .edit-address .default-address .checkbox input:checked + .checkbox__text:before {
       background-color: #35ba06; }
-    .add-address .default-address .checkbox input:checked + .checkbox__text:after {
+    .add-address .default-address .checkbox input:checked + .checkbox__text:after,
+    .edit-address .default-address .checkbox input:checked + .checkbox__text:after {
       content: "YES"; }
-  .add-address .btn-submit {
+  .add-address .btn-submit,
+  .edit-address .btn-submit {
     font-size: 1.5rem;
     margin-top: 2rem;
     padding-left: 2rem;
     padding-right: 2.7rem; }
-    .add-address .btn-submit .icon {
+    .add-address .btn-submit .icon,
+    .edit-address .btn-submit .icon {
       margin-right: .8rem; }
+
+.edit-address {
+  border-top: 1px solid #eaecf0; }
+  .edit-address h1 {
+    margin-bottom: 1rem; }
+  .edit-address .btn {
+    border-radius: 5rem;
+    height: 5rem;
+    margin-right: 1.5rem; }
+  .edit-address .actions {
+    margin-top: 2.2rem; }
 
 /* =mobile-menu
 ---------------------------*/
