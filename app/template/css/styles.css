@@ -13004,6 +13004,8 @@ input.form-control.error {
         .address-entries__list .item-entry .btn-edit:hover {
           box-shadow: 0 5px 10px rgba(0, 153, 255, 0.5); }
       .address-entries__list .item-entry .btn-save, .address-entries__list .item-entry .btn-cancel {
+        font-size: 1.5rem;
+        font-weight: 700;
         padding: 0 2.5rem; }
     .address-entries__list .item-entry .radio {
       position: relative; }
@@ -13064,6 +13066,66 @@ input.form-control.error {
       background-color: #eaecf0;
       border-color: #eaecf0;
       width: 105px; }
+    @media (max-width: 900px) {
+      .address-entries__list .item-entry {
+        position: relative; }
+        .address-entries__list .item-entry__body {
+          padding-right: 40px;
+          padding-left: 12px; }
+        .address-entries__list .item-entry__text {
+          font-size: 14px;
+          margin-left: 10px;
+          padding-right: 10px; }
+        .address-entries__list .item-entry .btn-del {
+          position: absolute;
+          right: 10px;
+          top: 10px; }
+        .address-entries__list .item-entry .btn-edit {
+          margin-left: 10px;
+          margin-right: 0; }
+        .address-entries__list .item-entry .edit-address {
+          padding-left: 15px;
+          padding-right: 15px; }
+          .address-entries__list .item-entry .edit-address .postcode {
+            margin-left: -15px;
+            margin-right: -15px; } }
+    @media (max-width: 600px) {
+      .address-entries__list .item-entry__body, .address-entries__list .item-entry__right {
+        flex-wrap: wrap; }
+      .address-entries__list .item-entry__right {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-right: 10px;
+        width: 140px; }
+        .address-entries__list .item-entry__right .btn {
+          margin-left: 0; }
+          .address-entries__list .item-entry__right .btn-edit {
+            margin: 10px auto 0 !important; }
+      .address-entries__list .item-entry__text {
+        width: calc(100% - 215px); } }
+    @media (max-width: 550px) {
+      .address-entries__list .item-entry__body {
+        padding-right: 10px; }
+      .address-entries__list .item-entry__right {
+        flex-direction: row;
+        margin-right: 0;
+        margin-top: 15px;
+        width: 100%;
+        justify-content: space-around; }
+        .address-entries__list .item-entry__right .btn-edit {
+          margin-top: 0 !important;
+          margin-left: 0 !important;
+          margin-right: 0 !important; } }
+  @media (max-width: 900px) {
+    .address-entries__list {
+      padding-left: 20px;
+      padding-right: 20px; } }
+  @media (max-width: 380px) {
+    .address-entries__list {
+      padding-left: 10px;
+      padding-right: 10px; } }
 
 .add-address .ms-parent,
 .edit-address .ms-parent,
@@ -13081,98 +13143,142 @@ input.form-control.error {
       padding-left: 0;
       width: calc(100% - 30px); }
 
-.add-address,
-.edit-address {
+.myaccount .add-address,
+.myaccount .edit-address {
   background-color: #fff;
   padding: 2.2rem 3rem 4rem; }
-  .add-address h1,
-  .edit-address h1 {
+  .myaccount .add-address h1,
+  .myaccount .edit-address h1 {
     font-size: 2.2rem;
     margin-bottom: 2.4rem; }
-  .add-address label,
-  .edit-address label {
+  .myaccount .add-address label,
+  .myaccount .edit-address label {
     font-size: 1.5rem; }
-  .add-address .form-control,
-  .edit-address .form-control {
+  .myaccount .add-address .form-control,
+  .myaccount .edit-address .form-control {
     font-size: 1.5rem; }
-  .add-address .row,
-  .edit-address .row {
+  .myaccount .add-address .row,
+  .myaccount .edit-address .row {
     margin-top: 1.4rem; }
-    .add-address .row .col-3,
-    .edit-address .row .col-3 {
+    @media (min-width: 992px) {
+      .myaccount .add-address .row .col-lg-3,
+      .myaccount .edit-address .row .col-lg-3 {
+        max-width: 33%;
+        flex-basis: 33%; } }
+    .myaccount .add-address .row .col-3,
+    .myaccount .edit-address .row .col-3 {
       max-width: 33%;
       flex-basis: 33%; }
-  .add-address .postcode,
-  .edit-address .postcode {
+    @media (max-width: 991px) {
+      .myaccount .add-address .row .ms-parent,
+      .myaccount .edit-address .row .ms-parent {
+        margin-bottom: 10px; } }
+    @media (max-width: 768px) {
+      .myaccount .add-address .row,
+      .myaccount .edit-address .row {
+        margin-top: 0; }
+        .myaccount .add-address .row .form-control,
+        .myaccount .edit-address .row .form-control {
+          margin-bottom: 10px; } }
+  .myaccount .add-address .postcode,
+  .myaccount .edit-address .postcode {
     background-color: #778d9b;
     color: #fff;
     margin: 2rem -3rem 0;
     padding: 3rem; }
-    .add-address .postcode .form-control,
-    .edit-address .postcode .form-control {
+    .myaccount .add-address .postcode .form-control,
+    .myaccount .edit-address .postcode .form-control {
       margin-left: 1.3rem;
       margin-right: 1.5rem;
       width: 40rem; }
-    .add-address .postcode .btn-getadress,
-    .edit-address .postcode .btn-getadress {
+    .myaccount .add-address .postcode .btn-getadress,
+    .myaccount .edit-address .postcode .btn-getadress {
       height: 4rem;
       border-radius: 4rem;
       font-weight: 700;
       font-size: 1.5rem;
+      margin-right: 0;
       padding-left: 1.3rem;
       padding-right: 2.4rem; }
-      .add-address .postcode .btn-getadress .icon,
-      .edit-address .postcode .btn-getadress .icon {
+      .myaccount .add-address .postcode .btn-getadress .icon,
+      .myaccount .edit-address .postcode .btn-getadress .icon {
         margin-right: 1rem; }
-  .add-address select,
-  .edit-address select {
+    @media (max-width: 768px) {
+      .myaccount .add-address .postcode,
+      .myaccount .edit-address .postcode {
+        margin-bottom: 20px; } }
+    @media (max-width: 500px) {
+      .myaccount .add-address .postcode,
+      .myaccount .edit-address .postcode {
+        flex-direction: column; }
+        .myaccount .add-address .postcode .form-control,
+        .myaccount .edit-address .postcode .form-control {
+          min-width: 230px;
+          width: 80% !important;
+          margin: 15px 0; } }
+  .myaccount .add-address select,
+  .myaccount .edit-address select {
     display: none; }
-  .add-address .region,
-  .edit-address .region {
+  .myaccount .add-address .region,
+  .myaccount .edit-address .region {
     margin-bottom: 0; }
-    .add-address .region li label,
-    .edit-address .region li label {
+    .myaccount .add-address .region li label,
+    .myaccount .edit-address .region li label {
       margin-top: 0; }
-  .add-address .default-address,
-  .edit-address .default-address {
+  .myaccount .add-address .default-address,
+  .myaccount .edit-address .default-address {
     font-size: 1.5rem;
     margin-top: 2.3rem; }
-    .add-address .default-address .checkbox,
-    .edit-address .default-address .checkbox {
+    .myaccount .add-address .default-address .checkbox,
+    .myaccount .edit-address .default-address .checkbox {
       position: relative;
       top: -4px; }
-    .add-address .default-address .checkbox__text,
-    .edit-address .default-address .checkbox__text {
+    .myaccount .add-address .default-address .checkbox__text,
+    .myaccount .edit-address .default-address .checkbox__text {
       margin-left: 15px; }
-      .add-address .default-address .checkbox__text:after,
-      .edit-address .default-address .checkbox__text:after {
+      .myaccount .add-address .default-address .checkbox__text:after,
+      .myaccount .edit-address .default-address .checkbox__text:after {
         content: "NO";
         font-size: .8rem; }
-    .add-address .default-address .checkbox input:checked + .checkbox__text:before,
-    .edit-address .default-address .checkbox input:checked + .checkbox__text:before {
+    .myaccount .add-address .default-address .checkbox input:checked + .checkbox__text:before,
+    .myaccount .edit-address .default-address .checkbox input:checked + .checkbox__text:before {
       background-color: #35ba06; }
-    .add-address .default-address .checkbox input:checked + .checkbox__text:after,
-    .edit-address .default-address .checkbox input:checked + .checkbox__text:after {
+    .myaccount .add-address .default-address .checkbox input:checked + .checkbox__text:after,
+    .myaccount .edit-address .default-address .checkbox input:checked + .checkbox__text:after {
       content: "YES"; }
-  .add-address .btn-submit,
-  .edit-address .btn-submit {
+  .myaccount .add-address .btn-submit,
+  .myaccount .edit-address .btn-submit {
     font-size: 1.5rem;
     margin-top: 2rem;
     padding-left: 2rem;
     padding-right: 2.7rem; }
-    .add-address .btn-submit .icon,
-    .edit-address .btn-submit .icon {
+    .myaccount .add-address .btn-submit .icon,
+    .myaccount .edit-address .btn-submit .icon {
       margin-right: .8rem; }
+  @media (max-width: 1199px) {
+    .myaccount .add-address .postcode .form-control,
+    .myaccount .edit-address .postcode .form-control {
+      width: calc(100%  - 250px); } }
+  @media (max-width: 380px) {
+    .myaccount .add-address,
+    .myaccount .edit-address {
+      padding-left: 10px;
+      padding-right: 10px; } }
+  @media (max-width: 380px) {
+    .myaccount .add-address .postcode,
+    .myaccount .edit-address .postcode {
+      margin-left: -10px;
+      margin-right: -10px; } }
 
-.edit-address {
+.myaccount .edit-address {
   border-top: 1px solid #eaecf0; }
-  .edit-address h1 {
+  .myaccount .edit-address h1 {
     margin-bottom: 1rem; }
-  .edit-address .btn {
+  .myaccount .edit-address .btn {
     border-radius: 5rem;
     height: 5rem;
     margin-right: 1.5rem; }
-  .edit-address .actions {
+  .myaccount .edit-address .actions {
     margin-top: 2.2rem; }
 
 /* =mobile-menu
