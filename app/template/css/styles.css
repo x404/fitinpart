@@ -13086,7 +13086,7 @@ input.form-control.error {
         .address-entries__list .item-entry .edit-address {
           padding-left: 15px;
           padding-right: 15px; }
-          .address-entries__list .item-entry .edit-address .postcode {
+          .address-entries__list .item-entry .edit-address .postcode-wrapper {
             margin-left: -15px;
             margin-right: -15px; } }
     @media (max-width: 600px) {
@@ -13180,19 +13180,19 @@ input.form-control.error {
         .myaccount .add-address .row .form-control,
         .myaccount .edit-address .row .form-control {
           margin-bottom: 10px; } }
-  .myaccount .add-address .postcode,
-  .myaccount .edit-address .postcode {
+  .myaccount .add-address .postcode-wrapper,
+  .myaccount .edit-address .postcode-wrapper {
     background-color: #778d9b;
     color: #fff;
     margin: 2rem -3rem 0;
     padding: 3rem; }
-    .myaccount .add-address .postcode .form-control,
-    .myaccount .edit-address .postcode .form-control {
+    .myaccount .add-address .postcode-wrapper .form-control,
+    .myaccount .edit-address .postcode-wrapper .form-control {
       margin-left: 1.3rem;
       margin-right: 1.5rem;
       width: 40rem; }
-    .myaccount .add-address .postcode .btn-getadress,
-    .myaccount .edit-address .postcode .btn-getadress {
+    .myaccount .add-address .postcode-wrapper .btn-getadress,
+    .myaccount .edit-address .postcode-wrapper .btn-getadress {
       height: 4rem;
       border-radius: 4rem;
       font-weight: 700;
@@ -13200,19 +13200,19 @@ input.form-control.error {
       margin-right: 0;
       padding-left: 1.3rem;
       padding-right: 2.4rem; }
-      .myaccount .add-address .postcode .btn-getadress .icon,
-      .myaccount .edit-address .postcode .btn-getadress .icon {
+      .myaccount .add-address .postcode-wrapper .btn-getadress .icon,
+      .myaccount .edit-address .postcode-wrapper .btn-getadress .icon {
         margin-right: 1rem; }
     @media (max-width: 768px) {
-      .myaccount .add-address .postcode,
-      .myaccount .edit-address .postcode {
+      .myaccount .add-address .postcode-wrapper,
+      .myaccount .edit-address .postcode-wrapper {
         margin-bottom: 20px; } }
     @media (max-width: 500px) {
-      .myaccount .add-address .postcode,
-      .myaccount .edit-address .postcode {
+      .myaccount .add-address .postcode-wrapper,
+      .myaccount .edit-address .postcode-wrapper {
         flex-direction: column; }
-        .myaccount .add-address .postcode .form-control,
-        .myaccount .edit-address .postcode .form-control {
+        .myaccount .add-address .postcode-wrapper .form-control,
+        .myaccount .edit-address .postcode-wrapper .form-control {
           min-width: 230px;
           width: 80% !important;
           margin: 15px 0; } }
@@ -13256,8 +13256,8 @@ input.form-control.error {
     .myaccount .edit-address .btn-submit .icon {
       margin-right: .8rem; }
   @media (max-width: 1199px) {
-    .myaccount .add-address .postcode .form-control,
-    .myaccount .edit-address .postcode .form-control {
+    .myaccount .add-address .postcode-wrapper .form-control,
+    .myaccount .edit-address .postcode-wrapper .form-control {
       width: calc(100%  - 250px); } }
   @media (max-width: 380px) {
     .myaccount .add-address,
@@ -13265,10 +13265,15 @@ input.form-control.error {
       padding-left: 10px;
       padding-right: 10px; } }
   @media (max-width: 380px) {
-    .myaccount .add-address .postcode,
-    .myaccount .edit-address .postcode {
+    .myaccount .add-address .postcode-wrapper,
+    .myaccount .edit-address .postcode-wrapper {
       margin-left: -10px;
-      margin-right: -10px; } }
+      margin-right: -10px; }
+    .myaccount .add-address .form-control,
+    .myaccount .add-address .ms-parent,
+    .myaccount .edit-address .form-control,
+    .myaccount .edit-address .ms-parent {
+      font-size: 14px; } }
 
 .myaccount .edit-address {
   border-top: 1px solid #eaecf0; }
