@@ -1586,7 +1586,7 @@
 								<div class="item-entry__body d-flex justify-content-between">
 									<div class="item-entry__num"><div class="num">1</div></div>
 										<div class="item-entry__text">
-											Pavel Kovalkov <br>
+											<span class="name">Pavel</span> <span class="lastname">Kovalkov</span> <br>
 											Singapore <br>
 											415934
 										</div>
@@ -1596,7 +1596,6 @@
 											<input type="radio" name="setdefault" value="" />
 											<div class="radio__text"></div>
 										</label>
-
 
 										<button type="button" class="btn btn-edit btn-darkgray btn-blue-lighten-hover"><i class="icon icon-pencil-2"></i>Edit</button>
 										<button type="button" class="btn btn-del">
@@ -1615,11 +1614,12 @@
 										<div class="num">2</div>
 									</div>
 									<div class="item-entry__text">
-										Ksenia Nekrassova <br>
-										Blk 11 Unit 47 <br>
-										KOMSOMOLSK-NA-AMURE <br>
-										681000 Khabarovsk <br>
+										<span class="name">Ksenia</span> <span class="lastname">Nekrassova</span> <br>
+										<span class="address-1">Blk 11 Unit 47</span> <br>
+										<span class="city">KOMSOMOLSK-NA-AMURE</span> <br>
+										<span class="postcode">681000</span> <span class="state">Khabarovsk</span> <br>
 										KH
+										<span class="country d-none">Russia</span>
 									</div>
 									<div class="item-entry__right">
 										<label class="radio">
@@ -1707,6 +1707,7 @@
 															<option value="Bouvet">Bouvet</option>
 															<option value="Brazil">Brazil</option>
 															<option value="British">British</option>
+															<option value="Russia">Russia</option>
 														</select>
 													</div>
 													<div class="col-3">
@@ -1744,6 +1745,7 @@
 															<option value="Missouri">Missouri</option>
 															<option value="Montana">Montana</option>
 															<option value="Nebraska">Nebraska</option>
+															<option value="Khabarovsk">Khabarovsk</option>
 															<option value="Nevada">Nevada</option>
 														</select>		
 													</div>
@@ -1773,6 +1775,7 @@
 															<option value="Grayson Valley">Grayson Valley</option>
 															<option value="Indian Springs Village">Indian Springs Village</option>
 															<option value="Malcolm">Malcolm</option>
+															<option value="KOMSOMOLSK-NA-AMURE">KOMSOMOLSK-NA-AMURE</option>
 															<option value="Delta">Delta</option>
 														</select>
 													</div>
@@ -1790,7 +1793,7 @@
 												<div class="d-flex default-address">
 													Default Address
 													<label class="checkbox">
-														<input type="checkbox" name="default-address" value="">
+														<input type="checkbox" name="default-address" id="checkbox-2" value="">
 														<div class="checkbox__text"></div>
 													</label>
 												</div>
@@ -3338,6 +3341,39 @@
 			maxScrollbarLength: 100,
 		});
 	});
+
+	$(document).on('click','.item-entry .btn-edit', function(e){
+		e.preventDefault();
+		let $this = $(this),
+			$item = $this.closest('.item-entry__body'),
+			$form = $this.closest('.item-entry').find('.edit-address'),
+
+			$name = $item.find('.name').text(),
+			$lastname = $item.find('.lastname').text(),
+			$tel = $item.find('.tel').text(),
+			$company = $item.find('.company').text(),
+			$postcode = $item.find('.postcode').text(),
+			$address1 = $item.find('.address-1').text(),
+			$address2 = $item.find('.address-2').text(),
+
+			$country = $item.find('.country').text(),
+			$region = $item.find('.state').text(),
+			$city = $item.find('.city').text();
+
+		$form.find('input[name="name"]').val($name);
+		$form.find('input[name="lastname"]').val($lastname);
+		$form.find('input[name="tel"]').val($tel);
+		$form.find('input[name="company"]').val($company);
+		$form.find('input[name="postcode"]').val($postcode);
+		$form.find('input[name="address-1"]').val($address1);
+		$form.find('input[name="address-2"]').val($address2);
+
+		$form.find('input[name="default-address"]').prop('checked', $item.find('input[name="setdefault"]').prop('checked'));
+
+		$form.find('select[name="country"]').multipleSelect('setSelects', [$country])
+		$form.find('select[name="region"]').multipleSelect('setSelects', [$region])
+		$form.find('select[name="city"]').multipleSelect('setSelects', [$city])
+	})
 </script>
 <!-- InstanceEndEditable -->
 </body>

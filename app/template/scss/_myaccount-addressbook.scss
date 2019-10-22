@@ -223,6 +223,15 @@
 		display: none;
 	}
 
+	.region{
+		margin-bottom: 0;
+		li{
+			label{
+				margin-top: 0;
+			}
+		}
+	}
+
 	.default-address{
 		font-size: 1.5rem;
 		margin-top: 2.3rem;

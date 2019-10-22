@@ -13127,6 +13127,12 @@ input.form-control.error {
   .add-address select,
   .edit-address select {
     display: none; }
+  .add-address .region,
+  .edit-address .region {
+    margin-bottom: 0; }
+    .add-address .region li label,
+    .edit-address .region li label {
+      margin-top: 0; }
   .add-address .default-address,
   .edit-address .default-address {
     font-size: 1.5rem;
