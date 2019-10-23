@@ -1380,38 +1380,54 @@
 			<!-- =body -->
 			<div class="card__body">
 				<div class="d-flex">
-
 					<div class="card__left">
 						<!-- =media -->
-						<div class="media"> 
-							<!-- =gallery -->
-							<div class="detail__gallery">
-								<div class="fotorama" 
-									data-nav="thumbs" 
-									data-thumbmargin="20" 
-									data-arrows="true"
-									data-allow-full-screen="true"
-									data-navwidth ="300"
-									data-thumbwidth="60"
-									data-thumbheight="60"
-									data-thumbborderwidth="3"
-								>
-									<a class="fancybox" href="images/card-1.jpg" title="" class="active"><img src="images/thumb-1.png" alt=""></a>
-									<a class="fancybox" href="images/1.jpg" title=""><img src="images/thumb-2.png" alt=""></a>
-									<a class="fancybox" href="images/pic3.jpg" title=""><img src="images/thumb-3.png" alt=""></a>
-									<a class="fancybox" href="images/card-1.jpg" title="" class="active"><img src="images/thumb-1.png" alt=""></a>
-									<a class="fancybox" href="images/1.jpg" title=""><img src="images/thumb-2.png" alt=""></a>
-									<a class="fancybox" href="images/pic3.jpg" title=""><img src="images/thumb-3.png" alt=""></a>
-									<a class="fancybox" href="images/card-1.jpg" title="" class="active"><img src="images/thumb-1.png" alt=""></a>
-									<a class="fancybox" href="images/1.jpg" title=""><img src="images/thumb-2.png" alt=""></a>
-									<a class="fancybox" href="images/pic3.jpg" title=""><img src="images/thumb-3.png" alt=""></a>
+						<div class="media">
+							<div class="d-flex">
+								<div class="media__left">
+									<div class="slider-nav">
+										<div><img src="images/thumb-1.png" alt="" /></div>
+										<div><img src="images/thumb-2.png" alt="" /></div>
+										<div><img src="images/thumb-3.png" alt="" /></div>
+										<div><img src="images/thumb-4.png" alt="" /></div>
+										<div><img src="images/thumb-1.png" alt="" /></div>
+										<div><img src="images/thumb-2.png" alt="" /></div>
+										<div><img src="images/thumb-3.png" alt="" /></div>
+										<div><img src="images/thumb-4.png" alt="" /></div>
+									</div>									
+								</div>
+								<div class="media__right">
+									<div class="slider-for">
+										<div>
+											<a data-fancybox="card-gallery" href="images/card-1.jpg"><img src="images/card-1.jpg" alt="" /></a>
+										</div>
+										<div>
+											<a data-fancybox="card-gallery" href="images/card-2.jpg"><img src="images/card-2.jpg" alt="" /></a>
+										</div>
+										<div>
+											<a data-fancybox="card-gallery" href="images/card-1.jpg"><img src="images/card-1.jpg" alt="" /></a>
+										</div>
+										<div>
+											<a data-fancybox="card-gallery" href="images/card-2.jpg"><img src="images/card-2.jpg" alt="" /></a>
+										</div>
+										<div>
+											<a data-fancybox="card-gallery" href="images/card-1.jpg"><img src="images/card-1.jpg" alt="" /></a>
+										</div>
+										<div>
+											<a data-fancybox="card-gallery" href="images/card-2.jpg"><img src="images/card-2.jpg" alt="" /></a>
+										</div>
+										<div>
+											<a data-fancybox="card-gallery" href="images/card-1.jpg"><img src="images/card-1.jpg" alt="" /></a>
+										</div>
+										<div>
+											<a data-fancybox="card-gallery" href="images/card-2.jpg"><img src="images/card-2.jpg" alt="" /></a>
+										</div>
+									</div>
 								</div>
 							</div>
 							<div class="label label-sale">Sale</div>
-							<!-- =/gallery -->
 						</div>
 						<!-- =/media -->
-
 
 						<!-- =trustpilot -->
 						<div class="trustpilot">
@@ -1427,11 +1443,8 @@
 						<!-- =/trustpilot -->					
 					</div>
 					<div class="card__center"></div>
-					<div class="card__right"></div>
-					
+					<div class="card__right"></div>					
 				</div>
-
-
 			</div>
 			<!-- =/body -->
 
@@ -2633,29 +2646,31 @@
 <script src="/template/js/search-moto.js"></script>
 <script src="/template/js/search-hd.js"></script>
 <!-- InstanceBeginEditable name="EditRegion4" -->
-<link  href="/template/css/fotorama.css" rel="stylesheet">
-<script src="/template/js/fotorama.js"></script>
+<link  href="/template/css/jquery.fancybox.min.css" rel="stylesheet">
+<script src="/template/js/jquery.fancybox.min.js"></script>
 <script>
 	$(document).ready(function(){
-		$('.fotorama').on('fotorama:fullscreenenter', function() {
-			$(this).data('fotorama').setOptions({fit: 'contain'});
-		});
+	 $('.slider-for').slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		arrows: false,
+		fade: true,
+		asNavFor: '.slider-nav'
+	});
+	$('.slider-nav').slick({
+		prevArrow:'<button class="slick-arrow slick-prev" aria-label="Previous" type="button"></button>',
+		nextArrow:'<button class="slick-arrow slick-next" aria-label="Next" type="button"></button>',
+		slidesToShow: 4,
+		slidesToScroll: 1,
+		asNavFor: '.slider-for',
+		arrows: true,
+		dots: false,
+		vertical: true,
+		focusOnSelect: true
+	});
 
-		$('.fotorama').on('fotorama:fullscreenexit', function() {
-			$(this).data('fotorama').setOptions({fit: 'cover'});
-		});
-	})
-
-	$(document).ready(function() {
-    var pw = $('.fotorama__nav--thumbs').innerWidth();
-    var cw = $('.fotorama__nav__shaft').innerWidth();
-    var offset = pw -cw;
-    var negOffset = (-1 * (pw -cw)) / 2;
-    var totalOffset = negOffset + 'px';
-    if (pw > cw) {
-      $('.fotorama__nav__shaft').css('transform', 'translate3d(' + totalOffset + ', 0, 0)');
-    }
 });
+
 </script>
 <!-- InstanceEndEditable -->
 </body>

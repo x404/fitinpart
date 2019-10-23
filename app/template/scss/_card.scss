@@ -1,9 +1,56 @@
 .inner .card-page{
 	background-color: #fff;
+	
+	// slider nav
+	.slider-nav{
+		& > div{
+			margin-top: 10px;
+			margin-bottom: 10px;
+		}
+		&.slick-initialized{
+			& > div{
+				margin-top: 0;
+				margin-bottom: 0;
+			}
+		}
+		.slick-slide{
+			border: 3px solid rgba(255,255,255,0);
+			cursor: pointer;
+			margin-bottom: 10px;
+			margin-top: 10px;
+			padding: 3px;
+		}
+
+		.slick{
+			&-current{
+				border-color: #0672ba;
+				border-radius: 5px;
+			}
+
+			&-arrow{
+				background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAICAYAAAAiJnXPAAAAvklEQVQoU2NkwAZCVzHzyfDxf3ry6SPD6rC/6EoY0QW4S/dLsDD+283A+F+L4T/jtT//mVy/dju+QFaHogmsgenvAaACdSD+CcTsQHzzzz9mB2SNcE1oGm4y/WUI+8fMsApqAIpGsCZ0DTCTcYmDNQmU77n6n4FBC5tTkDUCFV/70OmizcjQsIqN/7vwEwaG/y+ANrihexrJJbsYGBglPnK+lQHbJFN4jPPJkye/sAUvPNSA0SAjI8P2pN/qOwAtR2Q5rY+sSQAAAABJRU5ErkJggg==");
+				background-repeat: no-repeat;
+				height: 8px;
+				margin-left: 28px;
+				padding: 0;
+				position: relative;
+				width: 13px;
+			}
+			&-prev{
+				top: 5px;
+			}
+			&-next{
+				transform: rotate(180deg);
+				bottom: 5px;
+			}
+		}
+	}
+
 
 	// =trustpilot
 	.trustpilot{
 		background-color: #f5f7f8;
+		margin-top: 3rem;
 		padding: 3rem 4rem;
 		.stars{
 			margin-left: 1.8rem;
@@ -25,12 +72,6 @@
 			}
 		}
 	}
-
-	.fotorama{
-		&__nav{
-		}
-	}
-
 	// =/trustpilot
 }
 
@@ -48,6 +89,8 @@
 .card{
 	&__body{
 		margin-top: 2.7rem;
+
+		// =media
 		.media{
 			position: relative;
 			.label{
@@ -66,14 +109,19 @@
 					background-color: #ed0103;
 				}
 			}
-		}
 
-		.fotorama__arr {
-			@include sprite($icon-slider-arrow)
-			&--prev{
-				// transform: rotate(180deg) !important
+			&__left{
+				align-self: center;
+				flex-shrink: 0;
+				width: 66px;
+			}
+
+			&__right{
+				margin-left: 15px;
+				width: calc(100% - 75px)
 			}
 		}
+		//  =/media 
 	}
 	&__left{
 		max-width: 42%;

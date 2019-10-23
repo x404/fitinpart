@@ -8951,8 +8951,37 @@ input.form-control.error {
 
 .inner .card-page {
   background-color: #fff; }
+  .inner .card-page .slider-nav > div {
+    margin-top: 10px;
+    margin-bottom: 10px; }
+  .inner .card-page .slider-nav.slick-initialized > div {
+    margin-top: 0;
+    margin-bottom: 0; }
+  .inner .card-page .slider-nav .slick-slide {
+    border: 3px solid rgba(255, 255, 255, 0);
+    cursor: pointer;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 3px; }
+  .inner .card-page .slider-nav .slick-current {
+    border-color: #0672ba;
+    border-radius: 5px; }
+  .inner .card-page .slider-nav .slick-arrow {
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAICAYAAAAiJnXPAAAAvklEQVQoU2NkwAZCVzHzyfDxf3ry6SPD6rC/6EoY0QW4S/dLsDD+283A+F+L4T/jtT//mVy/dju+QFaHogmsgenvAaACdSD+CcTsQHzzzz9mB2SNcE1oGm4y/WUI+8fMsApqAIpGsCZ0DTCTcYmDNQmU77n6n4FBC5tTkDUCFV/70OmizcjQsIqN/7vwEwaG/y+ANrihexrJJbsYGBglPnK+lQHbJFN4jPPJkye/sAUvPNSA0SAjI8P2pN/qOwAtR2Q5rY+sSQAAAABJRU5ErkJggg==");
+    background-repeat: no-repeat;
+    height: 8px;
+    margin-left: 28px;
+    padding: 0;
+    position: relative;
+    width: 13px; }
+  .inner .card-page .slider-nav .slick-prev {
+    top: 5px; }
+  .inner .card-page .slider-nav .slick-next {
+    transform: rotate(180deg);
+    bottom: 5px; }
   .inner .card-page .trustpilot {
     background-color: #f5f7f8;
+    margin-top: 3rem;
     padding: 3rem 4rem; }
     .inner .card-page .trustpilot .stars {
       margin-left: 1.8rem; }
@@ -8992,11 +9021,13 @@ input.form-control.error {
       width: 50px; }
       .card__body .media .label-sale {
         background-color: #ed0103; }
-  .card__body .fotorama__arr {
-    background-image: url(../images/sprite.png);
-    background-position: -203px -146px;
-    width: 12px;
-    height: 21px; }
+    .card__body .media__left {
+      align-self: center;
+      flex-shrink: 0;
+      width: 66px; }
+    .card__body .media__right {
+      margin-left: 15px;
+      width: calc(100% - 75px); }
 
 .card__left {
   max-width: 42%;
