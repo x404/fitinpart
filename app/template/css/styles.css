@@ -8951,6 +8951,21 @@ input.form-control.error {
 
 .inner .card-page {
   background-color: #fff; }
+  .inner .card-page .trustpilot {
+    background-color: #f5f7f8;
+    padding: 3rem 4rem; }
+    .inner .card-page .trustpilot .stars {
+      margin-left: 1.8rem; }
+    .inner .card-page .trustpilot img {
+      vertical-align: top; }
+    .inner .card-page .trustpilot .rated {
+      font-size: 1.7rem;
+      line-height: 1.2;
+      margin-top: 1rem; }
+    .inner .card-page .trustpilot a:hover {
+      text-decoration: none; }
+      .inner .card-page .trustpilot a:hover u {
+        text-decoration: none; }
 
 .msg-searched {
   background-color: #ece2d0;
@@ -8959,6 +8974,13 @@ input.form-control.error {
   font-weight: 700;
   line-height: 1.2;
   padding: 1.7rem 0; }
+
+.card__body {
+  margin-top: 2.7rem; }
+
+.card__left {
+  max-width: 42%;
+  flex: 0 0 42%; }
 
 .cart-page {
   overflow: initial; }
