@@ -3887,7 +3887,7 @@ h3 {
 
 .neosans, .top__tel, .header .catalog-btn, .littlecart .cart-body .title, .littlecart .cart-body .cart-products .item-title, .littlecart .cart-body .cart-products .price, .search .vehicle-search .ms-parent .ms-drop:before, .main h1, .main .title, .searchbox__title, #homeslider .title, .visual__item, .homepage .advantages, .reviews header h1, .review-card__title, .homepage .about .subtitle, .modal-title, #loginModal .subtitle,
 #registerModal .subtitle, .modal-info .title, .smartsearch__header, .smartsearch__header .ms-choice, .main h2, .main h3, .main h4, .main h5, .main h6, .content blockquote, .lastnews .item-news__title,
-.news__list .item-news__title, .aboutus-page .intro__title, .aboutus-page .about__title, .aboutus-page .quote, .aboutus-page .advantages, .aboutus-page .item-products__title, .aboutus-page .brands__text, .title-md, .main aside .widget-title, .main aside .btn-filter, .sortbox .sort-label, .item-products__title, .products__list .item-products .btn-tooltip, .products__list .item-products .tooltip-title, .modal-v2 .box__title, #addtocardModal1 .product-title, #addtocardModal1 .count-price .price, .cart-page .cart-table .cost, .cart-page .salescard__item .title, .comparison__body .product-title, .wiper-search .intro, .wiper-search .steps, .perfomance-page .intro .subtitle, .perfomance-page .list-title, .table-title, .logout, .myaccount aside ul, .myaccount aside .tel, .myaccount .plate__title, .myaccount .plate .statistic__field, .myaccount .ordersstat .num, .mob-accountmenu .btn-accountmenu, .mob-accountmenu .menu, .latest-orders header, .orders__list .tracking__title, .orders__list .orderinfo .print, .orders__list .orderinfo__title, .orders__list .subtitle, #quickorderModal .modal-body h2, #quickorderModal .modal-body ol li:before, .region .subtitle, .garagesearch .left .num, .addvehicle-page .plate__title, .wishlist-count, .address-entries__list .item-entry .num, .address-entries__list .item-entry .radio__text:after, .mob-header .btn-menu, .mob-header .tel {
+.news__list .item-news__title, .aboutus-page .intro__title, .aboutus-page .about__title, .aboutus-page .quote, .aboutus-page .advantages, .aboutus-page .item-products__title, .aboutus-page .brands__text, .title-md, .main aside .widget-title, .main aside .btn-filter, .sortbox .sort-label, .item-products__title, .products__list .item-products .btn-tooltip, .products__list .item-products .tooltip-title, .modal-v2 .box__title, #addtocardModal1 .product-title, #addtocardModal1 .count-price .price, .msg-searched, .cart-page .cart-table .cost, .cart-page .salescard__item .title, .comparison__body .product-title, .wiper-search .intro, .wiper-search .steps, .perfomance-page .intro .subtitle, .perfomance-page .list-title, .table-title, .logout, .myaccount aside ul, .myaccount aside .tel, .myaccount .plate__title, .myaccount .plate .statistic__field, .myaccount .ordersstat .num, .mob-accountmenu .btn-accountmenu, .mob-accountmenu .menu, .latest-orders header, .orders__list .tracking__title, .orders__list .orderinfo .print, .orders__list .orderinfo__title, .orders__list .subtitle, #quickorderModal .modal-body h2, #quickorderModal .modal-body ol li:before, .region .subtitle, .garagesearch .left .num, .addvehicle-page .plate__title, .wishlist-count, .address-entries__list .item-entry .num, .address-entries__list .item-entry .radio__text:after, .mob-header .btn-menu, .mob-header .tel {
   font-family: 'Neo Sans Pro', Verdana, sans-serif; }
 
 strong,
@@ -8948,6 +8948,17 @@ input.form-control.error {
         display: none; }
     #addtocardModal1 .modal-footer .btn-close {
       min-width: 90px; } }
+
+.inner .card-page {
+  background-color: #fff; }
+
+.msg-searched {
+  background-color: #ece2d0;
+  color: #000;
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  padding: 1.7rem 0; }
 
 .cart-page {
   overflow: initial; }

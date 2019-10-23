@@ -1,0 +1,13 @@
+.inner .card-page{
+	background-color: #fff;
+}
+
+.msg-searched{
+	@extend .neosans;
+	background-color: #ece2d0;
+	color: #000;
+	font-size: 2.5rem;
+	font-weight: 700;
+	line-height: 1.2;
+	padding: 1.7rem 0;
+}
