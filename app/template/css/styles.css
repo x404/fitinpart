@@ -3906,7 +3906,7 @@ strong,
 
 .before, .icon:before, .btn-view:before, .btn-google:before, .btn-facebook:before, .top__left:before, .top__menu li.flexMenu-viewMore > a:after, .countmodule .minus:before, .countmodule .plus:before, .countmodule .plus:after, .search .vehicle-search-str .vehicle-search-item:after, .promo .wrapper:before, .visual__item:before, .modal-content-bg:before, .modal-content-bg:after, .modal-content-rbg:after, .modal-info:after, .modal-menu:before, .modal-menu .catalog:before, .breadcrumbs ul li.B_homecrumb a:before, .content ul li:before, .aboutus-page .intro__title:before, .aboutus-page .advantages__text:after, .aboutus-page .ouroffice__pic:after, #fitinpart-carousel a:after, #fitinpart-carousel a:before, .bl-line:after,
 .bc-line:after, .sortbox .param-sort:after, .products__list .item-products .additional__panel .item button:before, .label-tooltip:before,
-.tooltip-body:before, #notifyModal .settings-link:before, .cart-page .summary .option-item:after, .cart-page .calculate .title:before, .wiper-search .intro__body:after, .wiper-search .intro__body:before, .wiper-search .details .label:before, .perfomance-page .intro__body:after, .perfomance-page .intro__body:before, .perfomance-page .subtitle:before, .content-location .days:not(:last-child):after, .mob-accountmenu .btn-accountmenu:before, .orders__list .tracking__item:before, .orders__list .tracking__item:after, .notify-settings .option-item:after, .stockrequest__list .reqstatus:before, .wishlist-page .item-products__note .btn-ok:before,
+.tooltip-body:before, #notifyModal .settings-link:before, .inner .card-page .compare .btn.to-compare:before, .inner .card-page .compare .btn-compare-in:before, .cart-page .summary .option-item:after, .cart-page .calculate .title:before, .wiper-search .intro__body:after, .wiper-search .intro__body:before, .wiper-search .details .label:before, .perfomance-page .intro__body:after, .perfomance-page .intro__body:before, .perfomance-page .subtitle:before, .content-location .days:not(:last-child):after, .mob-accountmenu .btn-accountmenu:before, .orders__list .tracking__item:before, .orders__list .tracking__item:after, .notify-settings .option-item:after, .stockrequest__list .reqstatus:before, .wishlist-page .item-products__note .btn-ok:before,
 .cart-table .item-products__note .btn-ok:before, .wishlist-page .item-products .actions .btn:before,
 .cart-table .item-products .actions .btn:before {
   content: "";
@@ -3965,20 +3965,20 @@ strong,
       height: 18px; }
   .icon-littlecart {
     background-image: url(../images/sprite.png);
-    background-position: -27px -131px;
+    background-position: 0px -131px;
     width: 27px;
     height: 24px;
     transition: filter .3s; }
   .icon-cartblue {
     background-image: url(../images/sprite.png);
-    background-position: 0px -131px;
+    background-position: -27px -131px;
     width: 27px;
     height: 24px;
     margin-right: 9px;
     transition: filter .3s; }
   .icon-arrowright:before {
     background-image: url(../images/sprite.png);
-    background-position: -91px -178px;
+    background-position: -108px -178px;
     width: 18px;
     height: 13px;
     left: 20px;
@@ -3992,7 +3992,7 @@ strong,
     margin-right: 9px; }
   .icon-arrow-left-gray {
     background-image: url(../images/sprite.png);
-    background-position: -219px -55px;
+    background-position: -219px -68px;
     width: 12px;
     height: 10px; }
   .icon-slider-arrow:before {
@@ -4011,7 +4011,7 @@ strong,
     height: 21px; }
   .icon-slider-arrow-blue {
     background-image: url(../images/sprite.png);
-    background-position: -219px -77px;
+    background-position: -219px -90px;
     width: 8px;
     height: 13px; }
   .icon-camera {
@@ -4046,7 +4046,7 @@ strong,
   .icon-fax-gray {
     display: block;
     background-image: url(../images/sprite.png);
-    background-position: -28px -104px;
+    background-position: -151px -27px;
     width: 27px;
     height: 27px; }
   .icon-clock-gray {
@@ -4058,12 +4058,12 @@ strong,
   .icon-online-gray {
     display: block;
     background-image: url(../images/sprite.png);
-    background-position: -97px -30px;
+    background-position: -97px 0px;
     width: 30px;
     height: 30px; }
   .icon-search {
     background-image: url(../images/sprite.png);
-    background-position: -109px -104px;
+    background-position: -55px -104px;
     width: 27px;
     height: 27px;
     display: block;
@@ -4071,7 +4071,7 @@ strong,
     margin-right: auto; }
   .icon-search-middle {
     background-image: url(../images/sprite.png);
-    background-position: -21px -178px;
+    background-position: -38px -178px;
     width: 17px;
     height: 17px;
     display: block; }
@@ -4094,18 +4094,18 @@ strong,
     display: block; }
   .icon-arrow-down-gray {
     background-image: url(../images/sprite.png);
-    background-position: -219px -65px;
+    background-position: -219px -78px;
     width: 10px;
     height: 12px;
     display: block; }
   .icon-tofav {
     background-image: url(../images/sprite.png);
-    background-position: 0px -155px;
+    background-position: -26px -155px;
     width: 26px;
     height: 23px; }
   .icon-infav {
     background-image: url(../images/sprite.png);
-    background-position: -26px -155px;
+    background-position: 0px -155px;
     width: 26px;
     height: 23px; }
   .icon-letter {
@@ -4115,12 +4115,12 @@ strong,
     height: 14px; }
   .icon-badge-1-white {
     background-image: url(../images/sprite.png);
-    background-position: -219px -31px;
+    background-position: -219px -32px;
     width: 12px;
     height: 12px; }
   .icon-badge-2-white {
     background-image: url(../images/sprite.png);
-    background-position: -142px -178px;
+    background-position: -159px -178px;
     width: 13px;
     height: 11px; }
   .icon-badge-3-white {
@@ -4130,12 +4130,12 @@ strong,
     height: 14px; }
   .icon-badge-4-blue {
     background-image: url(../images/sprite.png);
-    background-position: -219px -19px;
+    background-position: -219px -44px;
     width: 12px;
     height: 12px; }
   .icon-badge-5-blue {
     background-image: url(../images/sprite.png);
-    background-position: -129px -178px;
+    background-position: -146px -178px;
     width: 13px;
     height: 11px; }
   .icon-good {
@@ -4170,7 +4170,7 @@ strong,
     height: 11px; }
   .icon-arrowleft {
     background-image: url(../images/sprite.png);
-    background-position: -219px -90px;
+    background-position: -219px -103px;
     width: 7px;
     height: 13px; }
   .icon-plus {
@@ -4205,7 +4205,7 @@ strong,
     height: 19px; }
   .icon-info {
     background-image: url(../images/sprite.png);
-    background-position: -178px -72px;
+    background-position: -178px -50px;
     width: 22px;
     height: 22px; }
   .icon-scales {
@@ -4304,7 +4304,7 @@ strong,
     position: relative; }
     .btn-view:before {
       background-image: url(../images/sprite.png);
-      background-position: -219px -43px;
+      background-position: -219px -56px;
       width: 11px;
       height: 12px;
       left: 10px;
@@ -4487,7 +4487,7 @@ button {
         padding-right: 17px; }
         .top__menu li.flexMenu-viewMore > a:after {
           background-image: url(../images/sprite.png);
-          background-position: -219px -103px;
+          background-position: -219px -116px;
           width: 10px;
           height: 7px;
           right: 0;
@@ -4695,7 +4695,7 @@ button {
 
 .dropdown-toggle:after {
   background-image: url(../images/sprite.png);
-  background-position: -219px -103px;
+  background-position: -219px -116px;
   width: 10px;
   height: 7px;
   border: none;
@@ -6992,7 +6992,7 @@ input.form-control.error {
           position: relative; }
           .breadcrumbs ul li.B_homecrumb a:before {
             background-image: url(../images/sprite.png);
-            background-position: -74px -178px;
+            background-position: -91px -178px;
             width: 17px;
             height: 14px;
             left: 0;
@@ -8071,7 +8071,7 @@ input.form-control.error {
     color: #0099ff; }
     .sortbox .param-sort:after {
       background-image: url(../images/sprite.png);
-      background-position: -219px -103px;
+      background-position: -219px -116px;
       width: 10px;
       height: 7px;
       right: 6px;
@@ -8200,13 +8200,13 @@ input.form-control.error {
       padding: 0; }
       .products__list .item-products .btn-fav-in {
         background-image: url(../images/sprite.png);
-        background-position: -26px -155px;
+        background-position: 0px -155px;
         width: 26px;
         height: 23px; }
     .products__list .item-products .to-fav,
     .products__list .item-products .to-fav-noauth {
       background-image: url(../images/sprite.png);
-      background-position: 0px -155px;
+      background-position: -26px -155px;
       width: 26px;
       height: 23px; }
     .products__list .item-products .btn-tooltip {
@@ -8556,7 +8556,8 @@ input.form-control.error {
   font-style: italic;
   font-size: 1.4rem; }
 
-.wishlist-info {
+.wishlist-info,
+.compare-info {
   color: #fff;
   left: 50%;
   margin-left: -160px;
@@ -8565,12 +8566,15 @@ input.form-control.error {
   position: fixed;
   top: 50%;
   width: 321px; }
-  .wishlist-info .close {
+  .wishlist-info .close,
+  .compare-info .close {
     right: 20px;
     top: 20px; }
-    .wishlist-info .close line {
+    .wishlist-info .close line,
+    .compare-info .close line {
       stroke: #fff; }
-  .wishlist-info .modal-content {
+  .wishlist-info .modal-content,
+  .compare-info .modal-content {
     background-image: url(../images/wish-bg.png);
     background-repeat: no-repeat;
     background-position: right 13px bottom;
@@ -8578,23 +8582,29 @@ input.form-control.error {
     font-size: 1.7rem;
     line-height: 1.47;
     padding: 2.4rem 3rem 2.5rem; }
-    .wishlist-info .modal-content a {
+    .wishlist-info .modal-content a,
+    .compare-info .modal-content a {
       color: #fff; }
-  .wishlist-info .modal-title {
+  .wishlist-info .modal-title,
+  .compare-info .modal-title {
     color: #fff;
     font-size: 2.5rem;
     font-weight: 700;
     margin-bottom: 1.6rem; }
-  .wishlist-info-success .modal-content {
+  .wishlist-info-success .modal-content,
+  .compare-info-success .modal-content {
     background-color: #0672ba; }
-  .wishlist-info-wrong .modal-content {
+  .wishlist-info-wrong .modal-content,
+  .compare-info-wrong .modal-content {
     background-color: #ba0642; }
   @media (max-width: 450px) {
-    .wishlist-info {
+    .wishlist-info,
+    .compare-info {
       left: 3%;
       margin-left: 0;
       width: 94%; }
-      .wishlist-info .modal-content:after {
+      .wishlist-info .modal-content:after,
+      .compare-info .modal-content:after {
         display: none !important; } }
 
 .show {
@@ -8995,6 +9005,55 @@ input.form-control.error {
       text-decoration: none; }
       .inner .card-page .trustpilot a:hover u {
         text-decoration: none; }
+  .inner .card-page .partnum-brand {
+    margin: 1rem 0; }
+    .inner .card-page .partnum-brand .part-num {
+      align-items: center;
+      background-color: #eceff1;
+      border-radius: 3.5rem;
+      color: #3f3f3f;
+      display: flex;
+      font-size: 1.7rem;
+      height: 3.5rem;
+      padding: 0 1.8rem 0 1.5rem; }
+      .inner .card-page .partnum-brand .part-num .num {
+        margin-left: .5rem; }
+    .inner .card-page .partnum-brand .brand {
+      color: #3f3f3f;
+      display: flex;
+      align-items: center;
+      font-size: 1.7rem;
+      margin-left: 1.6rem; }
+      .inner .card-page .partnum-brand .brand img {
+        margin-right: 1rem; }
+      .inner .card-page .partnum-brand .brand .name {
+        margin-left: .8rem; }
+  .inner .card-page .compare .btn {
+    color: #0672ba;
+    font-weight: 900; }
+    .inner .card-page .compare .btn:hover {
+      color: #0099ff; }
+      .inner .card-page .compare .btn:hover:before {
+        filter: brightness(1.3); }
+    .inner .card-page .compare .btn.to-compare, .inner .card-page .compare .btn-compare-in {
+      padding-left: 30px;
+      position: relative; }
+      .inner .card-page .compare .btn.to-compare:before, .inner .card-page .compare .btn-compare-in:before {
+        transition: filter .3s; }
+    .inner .card-page .compare .btn.to-compare:before {
+      background-image: url(../images/sprite.png);
+      background-position: -21px -178px;
+      width: 17px;
+      height: 19px;
+      left: 0;
+      top: 1px; }
+    .inner .card-page .compare .btn-compare-in:before {
+      background-image: url(../images/sprite.png);
+      background-position: -219px -19px;
+      width: 12px;
+      height: 13px;
+      left: 5px;
+      top: 5px; }
 
 .msg-searched {
   background-color: #ece2d0;
@@ -9030,8 +9089,16 @@ input.form-control.error {
       width: calc(100% - 75px); }
 
 .card__left {
-  max-width: 42%;
-  flex: 0 0 42%; }
+  max-width: 43%;
+  flex: 0 0 43%; }
+
+.card__center {
+  max-width: 38%;
+  flex: 0 0 38%;
+  padding-left: 5rem;
+  padding-right: 5rem; }
+  .card__center h1 {
+    font-size: 3rem; }
 
 .cart-page {
   overflow: initial; }
@@ -10386,13 +10453,13 @@ input.form-control.error {
 
 .icon-vehicle {
   background-image: url(../images/sprite.png);
-  background-position: -151px -27px;
+  background-position: -28px -104px;
   width: 27px;
   height: 27px; }
 
 .icon-stock {
   background-image: url(../images/sprite.png);
-  background-position: -55px -104px;
+  background-position: -109px -104px;
   width: 27px;
   height: 27px; }
 
@@ -10410,7 +10477,7 @@ input.form-control.error {
 
 .icon-orders {
   background-image: url(../images/sprite.png);
-  background-position: -27px -74px;
+  background-position: -89px -74px;
   width: 31px;
   height: 25px; }
 
@@ -10428,7 +10495,7 @@ input.form-control.error {
 
 .icon-transactions {
   background-image: url(../images/sprite.png);
-  background-position: -97px 0px;
+  background-position: -97px -30px;
   width: 30px;
   height: 30px; }
 
@@ -10440,7 +10507,7 @@ input.form-control.error {
 
 .icon-logout {
   background-image: url(../images/sprite.png);
-  background-position: -89px -74px;
+  background-position: -27px -74px;
   width: 31px;
   height: 25px; }
 
@@ -10452,7 +10519,7 @@ input.form-control.error {
 
 .icon-garage-sm {
   background-image: url(../images/sprite.png);
-  background-position: -109px -178px;
+  background-position: -126px -178px;
   width: 20px;
   height: 11px; }
 
@@ -10476,7 +10543,7 @@ input.form-control.error {
 
 .icon-wishlist-sm {
   background-image: url(../images/sprite.png);
-  background-position: -38px -178px;
+  background-position: -55px -178px;
   width: 18px;
   height: 16px; }
 
@@ -10518,7 +10585,7 @@ input.form-control.error {
 
 .icon-key {
   background-image: url(../images/sprite.png);
-  background-position: -178px -50px;
+  background-position: -178px -72px;
   width: 22px;
   height: 22px; }
 
@@ -10548,7 +10615,7 @@ input.form-control.error {
 
 .icon-arrow-middle-right {
   background-image: url(../images/sprite.png);
-  background-position: -56px -178px;
+  background-position: -73px -178px;
   width: 18px;
   height: 15px; }
 

@@ -616,6 +616,10 @@ $(document).on('click','.to-fav-noauth', function(e){
 	`;
 	$('body').append(msg);
 
+	var timerfav = window.setInterval(function(){
+		fadeoutWishlistInfo();
+		window.clearInterval(timerfav);
+	},4000);
 });
 
 // from wishlist
