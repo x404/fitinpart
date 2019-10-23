@@ -3922,7 +3922,7 @@ strong,
 .flex-center, .btn-middle, .btn-google, .btn-facebook, .btn-circle, .top .login .cust, .compare__count, .shop-cart__count, .littlecart .cart-body .btn-checkout, .littlecart .cart-body .btn-check, .searchbox__panel .checkbox__text:after, .searchbox .subtab-link,
 .smartsearch .subtab-link,
 .addvehicle-page .plate .subtab-link, .catalog a,
-.header .catalog__menu a, .reviews .btn-show, .checkbox__text:after, .aboutus-page .brands__item, .main aside .btn-filter, .btn-cart, .products__list .item-products__pic, .products__list .item-products .btn-tooltip, .products__list .item-products .labels .label, #addtocardModal1 .modal-footer .btn, .cart-page .summary .btn, .cart-page .salescard__item .btn-apply, .comparison__column .btn-del, .myaccount aside ul li .icon-wrapper, .myaccount .plate-cars a, .myaccount .plate-items a, .addvehicle-page .plate .placement:before, .address-entries__list .item-entry .num {
+.header .catalog__menu a, .reviews .btn-show, .checkbox__text:after, .aboutus-page .brands__item, .main aside .btn-filter, .btn-cart, .products__list .item-products__pic, .products__list .item-products .btn-tooltip, .products__list .item-products .labels .label, #addtocardModal1 .modal-footer .btn, .card__body .media .label, .cart-page .summary .btn, .cart-page .salescard__item .btn-apply, .comparison__column .btn-del, .myaccount aside ul li .icon-wrapper, .myaccount .plate-cars a, .myaccount .plate-items a, .addvehicle-page .plate .placement:before, .address-entries__list .item-entry .num {
   display: flex;
   align-items: center;
   justify-content: center; }
@@ -8977,6 +8977,26 @@ input.form-control.error {
 
 .card__body {
   margin-top: 2.7rem; }
+  .card__body .media {
+    position: relative; }
+    .card__body .media .label {
+      border-radius: 50%;
+      box-shadow: 2px 3px 5px rgba(237, 1, 3, 0.4);
+      color: #fff;
+      font-size: 1.5rem;
+      font-weight: 700;
+      height: 50px;
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 50px; }
+      .card__body .media .label-sale {
+        background-color: #ed0103; }
+  .card__body .fotorama__arr {
+    background-image: url(../images/sprite.png);
+    background-position: -203px -146px;
+    width: 12px;
+    height: 21px; }
 
 .card__left {
   max-width: 42%;

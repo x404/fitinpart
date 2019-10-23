@@ -1382,6 +1382,37 @@
 				<div class="d-flex">
 
 					<div class="card__left">
+						<!-- =media -->
+						<div class="media"> 
+							<!-- =gallery -->
+							<div class="detail__gallery">
+								<div class="fotorama" 
+									data-nav="thumbs" 
+									data-thumbmargin="20" 
+									data-arrows="true"
+									data-allow-full-screen="true"
+									data-navwidth ="300"
+									data-thumbwidth="60"
+									data-thumbheight="60"
+									data-thumbborderwidth="3"
+								>
+									<a class="fancybox" href="images/card-1.jpg" title="" class="active"><img src="images/thumb-1.png" alt=""></a>
+									<a class="fancybox" href="images/1.jpg" title=""><img src="images/thumb-2.png" alt=""></a>
+									<a class="fancybox" href="images/pic3.jpg" title=""><img src="images/thumb-3.png" alt=""></a>
+									<a class="fancybox" href="images/card-1.jpg" title="" class="active"><img src="images/thumb-1.png" alt=""></a>
+									<a class="fancybox" href="images/1.jpg" title=""><img src="images/thumb-2.png" alt=""></a>
+									<a class="fancybox" href="images/pic3.jpg" title=""><img src="images/thumb-3.png" alt=""></a>
+									<a class="fancybox" href="images/card-1.jpg" title="" class="active"><img src="images/thumb-1.png" alt=""></a>
+									<a class="fancybox" href="images/1.jpg" title=""><img src="images/thumb-2.png" alt=""></a>
+									<a class="fancybox" href="images/pic3.jpg" title=""><img src="images/thumb-3.png" alt=""></a>
+								</div>
+							</div>
+							<div class="label label-sale">Sale</div>
+							<!-- =/gallery -->
+						</div>
+						<!-- =/media -->
+
+
 						<!-- =trustpilot -->
 						<div class="trustpilot">
 							<div class="d-flex align-items-center">
@@ -2602,7 +2633,30 @@
 <script src="/template/js/search-moto.js"></script>
 <script src="/template/js/search-hd.js"></script>
 <!-- InstanceBeginEditable name="EditRegion4" -->
+<link  href="/template/css/fotorama.css" rel="stylesheet">
+<script src="/template/js/fotorama.js"></script>
+<script>
+	$(document).ready(function(){
+		$('.fotorama').on('fotorama:fullscreenenter', function() {
+			$(this).data('fotorama').setOptions({fit: 'contain'});
+		});
 
+		$('.fotorama').on('fotorama:fullscreenexit', function() {
+			$(this).data('fotorama').setOptions({fit: 'cover'});
+		});
+	})
+
+	$(document).ready(function() {
+    var pw = $('.fotorama__nav--thumbs').innerWidth();
+    var cw = $('.fotorama__nav__shaft').innerWidth();
+    var offset = pw -cw;
+    var negOffset = (-1 * (pw -cw)) / 2;
+    var totalOffset = negOffset + 'px';
+    if (pw > cw) {
+      $('.fotorama__nav__shaft').css('transform', 'translate3d(' + totalOffset + ', 0, 0)');
+    }
+});
+</script>
 <!-- InstanceEndEditable -->
 </body>
 <!-- InstanceEnd --></html>
