@@ -588,6 +588,11 @@ $(document).on('click','.to-fav', function(e){
 	`;
 	$('body').append(msg);
 	$this.removeClass('to-fav').addClass('btn-fav-in');
+	$this.find('.icon').removeClass('icon-tofav').addClass('icon-infav');
+
+	$this.find('span').text(function(i, text){
+		return text === "Add to wish list" ? "In wish list" : "Add to wish list";
+	});
 
 	var timerfav = window.setInterval(function(){
 		fadeoutWishlistInfo();
@@ -627,10 +632,15 @@ $(document).on('click','.btn-fav-in', function(e){
 	e.preventDefault();
 	var $this = $(this);
 	$this.removeClass('btn-fav-in').addClass('to-fav');
+	$this.find('.icon').removeClass('icon-infav').addClass('icon-tofav');
+
+	$this.find('span').text(function(i, text){
+		return text === "Add to wish list" ? "In wish list" : "Add to wish list";
+	});
 });
 
 
-[].forEach.call(document.querySelectorAll('.genmodal .close'),function(el,i){
+[].forEach.call(document.querySelectorAll('.genmodal .close'), function(el,i){
 	el.addEventListener('click', function(e){
 		document.querySelector('.genmodal.open').setAttribute('aria-hidden', 'true');
 		document.querySelector('.genmodal.open').classList.remove('open');
