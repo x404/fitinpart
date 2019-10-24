@@ -1,3 +1,15 @@
+.addvehicle-page .plate
+{
+	form{
+		margin-top: 1rem;
+	}	
+	.subtab{
+		margin: 0 0 .5rem;
+	}
+
+}
+
+
 .addvehicle-page{
 	.plate{
 		background-color: #fff;
@@ -13,9 +25,7 @@
 			line-height: 1.17;
 			margin-bottom: 2rem;
 		}
-		form{
-			margin-top: 1rem;
-		}
+
 
 		li{
 			font-size: 1.4rem;
@@ -29,9 +39,7 @@
 			}
 		}
 
-		.subtab{
-			margin: 0 0 .5rem;
-		}
+
 		.btn-addvehicle{
 			padding-left: 2rem;
 			margin-top: 1.5rem;

@@ -3886,7 +3886,9 @@ h3 {
   font-size: 1.6rem; }
 
 .neosans, .top__tel, .header .catalog-btn, .littlecart .cart-body .title, .littlecart .cart-body .cart-products .item-title, .littlecart .cart-body .cart-products .price, .search .vehicle-search .ms-parent .ms-drop:before, .main h1, .main .title, .searchbox__title, #homeslider .title, .visual__item, .homepage .advantages, .reviews header h1, .review-card__title, .homepage .about .subtitle, .modal-title, #loginModal .subtitle,
-#registerModal .subtitle, .modal-info .title, .smartsearch__header, .smartsearch__header .ms-choice, .main h2, .main h3, .main h4, .main h5, .main h6, .content blockquote, .lastnews .item-news__title,
+#registerModal .subtitle, .modal-info .title, .smartsearch__header,
+#changeVehicle__header, .smartsearch__header .ms-choice,
+#changeVehicle__header .ms-choice, .main h2, .main h3, .main h4, .main h5, .main h6, .content blockquote, .lastnews .item-news__title,
 .news__list .item-news__title, .aboutus-page .intro__title, .aboutus-page .about__title, .aboutus-page .quote, .aboutus-page .advantages, .aboutus-page .item-products__title, .aboutus-page .brands__text, .title-md, .main aside .widget-title, .main aside .btn-filter, .sortbox .sort-label, .item-products__title, .products__list .item-products .btn-tooltip, .products__list .item-products .tooltip-title, .modal-v2 .box__title, #addtocardModal1 .product-title, #addtocardModal1 .count-price .price, .inner .card-page .details__title, .msg-searched, .cart-page .cart-table .cost, .cart-page .salescard__item .title, .comparison__body .product-title, .wiper-search .intro, .wiper-search .steps, .perfomance-page .intro .subtitle, .perfomance-page .list-title, .table-title, .logout, .myaccount aside ul, .myaccount aside .tel, .myaccount .plate__title, .myaccount .plate .statistic__field, .myaccount .ordersstat .num, .mob-accountmenu .btn-accountmenu, .mob-accountmenu .menu, .latest-orders header, .orders__list .tracking__title, .orders__list .orderinfo .print, .orders__list .orderinfo__title, .orders__list .subtitle, #quickorderModal .modal-body h2, #quickorderModal .modal-body ol li:before, .region .subtitle, .garagesearch .left .num, .addvehicle-page .plate__title, .wishlist-count, .address-entries__list .item-entry .num, .address-entries__list .item-entry .radio__text:after, .mob-header .btn-menu, .mob-header .tel {
   font-family: 'Neo Sans Pro', Verdana, sans-serif; }
 
@@ -3921,7 +3923,8 @@ strong,
 
 .flex-center, .btn-middle, .btn-google, .btn-facebook, .btn-circle, .top .login .cust, .compare__count, .shop-cart__count, .littlecart .cart-body .btn-checkout, .littlecart .cart-body .btn-check, .searchbox__panel .checkbox__text:after, .searchbox .subtab-link,
 .smartsearch .subtab-link,
-.addvehicle-page .plate .subtab-link, .catalog a,
+.addvehicle-page .plate .subtab-link,
+#changeVehicle .subtab-link, .catalog a,
 .header .catalog__menu a, .reviews .btn-show, .checkbox__text:after, .aboutus-page .brands__item, .main aside .btn-filter, .btn-cart, .products__list .item-products__pic, .products__list .item-products .btn-tooltip, .products__list .item-products .labels .label, #addtocardModal1 .modal-footer .btn, .card__body .media .label, .cart-page .summary .btn, .cart-page .salescard__item .btn-apply, .comparison__column .btn-del, .myaccount aside ul li .icon-wrapper, .myaccount .plate-cars a, .myaccount .plate-items a, .addvehicle-page .plate .placement:before, .address-entries__list .item-entry .num {
   display: flex;
   align-items: center;
@@ -5462,7 +5465,8 @@ button {
 
 .searchbox .subtab-item,
 .smartsearch .subtab-item,
-.addvehicle-page .plate .subtab-item {
+.addvehicle-page .plate .subtab-item,
+#changeVehicle .subtab-item {
   font-size: 1.6rem;
   font-weight: 700;
   padding-left: 0;
@@ -5470,28 +5474,33 @@ button {
   margin-bottom: 0; }
   .searchbox .subtab-item:before,
   .smartsearch .subtab-item:before,
-  .addvehicle-page .plate .subtab-item:before {
+  .addvehicle-page .plate .subtab-item:before,
+  #changeVehicle .subtab-item:before {
     display: none; }
 
 .searchbox .subtab-link,
 .smartsearch .subtab-link,
-.addvehicle-page .plate .subtab-link {
+.addvehicle-page .plate .subtab-link,
+#changeVehicle .subtab-link {
   border-radius: 3rem;
   border: 3px solid  #fff;
   height: 3.6rem;
   padding: 0 1.2rem; }
   .searchbox .subtab-link.active,
   .smartsearch .subtab-link.active,
-  .addvehicle-page .plate .subtab-link.active {
+  .addvehicle-page .plate .subtab-link.active,
+  #changeVehicle .subtab-link.active {
     border-color: #0672ba; }
   .searchbox .subtab-link:hover,
   .smartsearch .subtab-link:hover,
-  .addvehicle-page .plate .subtab-link:hover {
+  .addvehicle-page .plate .subtab-link:hover,
+  #changeVehicle .subtab-link:hover {
     text-decoration: none; }
 
 .searchbox .subtab .separator,
 .smartsearch .subtab .separator,
-.addvehicle-page .plate .subtab .separator {
+.addvehicle-page .plate .subtab .separator,
+#changeVehicle .subtab .separator {
   border-left: 1px solid #d6d6d6;
   height: 24px;
   margin: 0 .9rem;
@@ -5499,12 +5508,14 @@ button {
   width: 1px; }
   .searchbox .subtab .separator:before,
   .smartsearch .subtab .separator:before,
-  .addvehicle-page .plate .subtab .separator:before {
+  .addvehicle-page .plate .subtab .separator:before,
+  #changeVehicle .subtab .separator:before {
     display: none; }
 
 .searchbox .btn-search,
 .smartsearch .btn-search,
-.addvehicle-page .plate .btn-search {
+.addvehicle-page .plate .btn-search,
+#changeVehicle .btn-search {
   background-position: 13px center;
   background-repeat: no-repeat;
   box-shadow: 0 5px 15px rgba(0, 153, 255, 0.5);
@@ -5512,13 +5523,15 @@ button {
   font-weight: 700; }
   .searchbox .btn-search i,
   .smartsearch .btn-search i,
-  .addvehicle-page .plate .btn-search i {
+  .addvehicle-page .plate .btn-search i,
+  #changeVehicle .btn-search i {
     font-style: normal;
     margin-right: .5rem; }
 
 .searchbox .btn-middle,
 .smartsearch .btn-middle,
-.addvehicle-page .plate .btn-middle {
+.addvehicle-page .plate .btn-middle,
+#changeVehicle .btn-middle {
   border-radius: 4rem;
   font-size: 1.6rem;
   height: 4rem;
@@ -5526,7 +5539,8 @@ button {
 
 .searchbox .btn-big,
 .smartsearch .btn-big,
-.addvehicle-page .plate .btn-big {
+.addvehicle-page .plate .btn-big,
+#changeVehicle .btn-big {
   border-radius: 5rem;
   font-size: 1.8rem;
   height: 5rem;
@@ -6849,17 +6863,21 @@ input.form-control.error {
 .modal .smartsearch {
   padding: 1.3rem 1.8rem 1.3rem 1.4rem; }
 
-.smartsearch__header {
+.smartsearch__header,
+#changeVehicle__header {
   align-items: center;
   display: flex; }
-  .smartsearch__header .title {
+  .smartsearch__header .title,
+  #changeVehicle__header .title {
     color: #000;
     font-size: 1.6rem;
     white-space: nowrap; }
-  .smartsearch__header .ms-parent {
+  .smartsearch__header .ms-parent,
+  #changeVehicle__header .ms-parent {
     font-size: 1.6rem;
     width: 180px !important; }
-  .smartsearch__header .ms-choice {
+  .smartsearch__header .ms-choice,
+  #changeVehicle__header .ms-choice {
     background: none;
     color: #0672ba;
     font-weight: 700;
@@ -6867,106 +6885,145 @@ input.form-control.error {
     padding-right: 15px;
     position: relative;
     width: auto !important; }
-    .smartsearch__header .ms-choice > span {
+    .smartsearch__header .ms-choice > span,
+    #changeVehicle__header .ms-choice > span {
       line-height: 1.8; }
-    .smartsearch__header .ms-choice > div {
+    .smartsearch__header .ms-choice > div,
+    #changeVehicle__header .ms-choice > div {
       background-color: transparent;
       height: 7px;
       right: 1px;
       top: 12px;
       width: 10px; }
-      .smartsearch__header .ms-choice > div:before {
+      .smartsearch__header .ms-choice > div:before,
+      #changeVehicle__header .ms-choice > div:before {
         transition: transform .3s; }
-      .smartsearch__header .ms-choice > div.open:before {
+      .smartsearch__header .ms-choice > div.open:before,
+      #changeVehicle__header .ms-choice > div.open:before {
         transform: rotate(-180deg); }
-    .smartsearch__header .ms-choice:hover, .smartsearch__header .ms-choice:focus {
+    .smartsearch__header .ms-choice:hover, .smartsearch__header .ms-choice:focus,
+    #changeVehicle__header .ms-choice:hover,
+    #changeVehicle__header .ms-choice:focus {
       background-color: transparent;
       box-shadow: none !important; }
-      .smartsearch__header .ms-choice:hover > span, .smartsearch__header .ms-choice:focus > span {
+      .smartsearch__header .ms-choice:hover > span, .smartsearch__header .ms-choice:focus > span,
+      #changeVehicle__header .ms-choice:hover > span,
+      #changeVehicle__header .ms-choice:focus > span {
         color: #0099ff; }
-      .smartsearch__header .ms-choice:hover div, .smartsearch__header .ms-choice:focus div {
+      .smartsearch__header .ms-choice:hover div, .smartsearch__header .ms-choice:focus div,
+      #changeVehicle__header .ms-choice:hover div,
+      #changeVehicle__header .ms-choice:focus div {
         background-color: transparent; }
-        .smartsearch__header .ms-choice:hover div:before, .smartsearch__header .ms-choice:focus div:before {
+        .smartsearch__header .ms-choice:hover div:before, .smartsearch__header .ms-choice:focus div:before,
+        #changeVehicle__header .ms-choice:hover div:before,
+        #changeVehicle__header .ms-choice:focus div:before {
           filter: none; }
-  .smartsearch__header .ms-drop {
+  .smartsearch__header .ms-drop,
+  #changeVehicle__header .ms-drop {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
     border-radius: 0 0 12px 12px;
     padding: 5px 0 0;
     width: 160px; }
-    .smartsearch__header .ms-drop ul > li.hide-radio:before, .smartsearch__header .ms-drop ul > li.hide-radio:after {
+    .smartsearch__header .ms-drop ul > li.hide-radio:before, .smartsearch__header .ms-drop ul > li.hide-radio:after,
+    #changeVehicle__header .ms-drop ul > li.hide-radio:before,
+    #changeVehicle__header .ms-drop ul > li.hide-radio:after {
       display: none; }
-    .smartsearch__header .ms-drop ul > li.hide-radio.selected {
+    .smartsearch__header .ms-drop ul > li.hide-radio.selected,
+    #changeVehicle__header .ms-drop ul > li.hide-radio.selected {
       background-color: #0672ba;
       color: #ffffff; }
-    .smartsearch__header .ms-drop ul > li span {
+    .smartsearch__header .ms-drop ul > li span,
+    #changeVehicle__header .ms-drop ul > li span {
       padding-left: 1.2rem;
       padding-right: 1.2rem; }
-  .smartsearch__header .ms-choice {
+  .smartsearch__header .ms-choice,
+  #changeVehicle__header .ms-choice {
     margin-left: 16px; }
-    .smartsearch__header .ms-choice > span {
+    .smartsearch__header .ms-choice > span,
+    #changeVehicle__header .ms-choice > span {
       padding-left: 0; }
 
-.smartsearch .listwrapper {
+.smartsearch .listwrapper,
+#changeVehicle .listwrapper {
   height: auto; }
 
-.smartsearch .btn-search {
+.smartsearch .btn-search,
+#changeVehicle .btn-search {
   align-items: center;
   font-size: 1.6rem;
   margin-top: 1.3rem; }
 
-.smartsearch .switch {
+.smartsearch .switch,
+#changeVehicle .switch {
   margin-top: .5rem;
   margin-bottom: 1.2rem; }
 
-.smartsearch .control-item {
+.smartsearch .control-item,
+#changeVehicle .control-item {
   margin-top: 1rem; }
-  .smartsearch .control-item label {
+  .smartsearch .control-item label,
+  #changeVehicle .control-item label {
     white-space: nowrap; }
-  .smartsearch .control-item .form-control {
+  .smartsearch .control-item .form-control,
+  #changeVehicle .control-item .form-control {
     flex-grow: 1;
     margin-left: 1.7rem; }
 
-.smartsearch .approximation_block {
+.smartsearch .approximation_block,
+#changeVehicle .approximation_block {
   margin-top: 1.5rem;
   margin-bottom: 2.5rem; }
 
-.smartsearch .subtype-list {
+.smartsearch .subtype-list,
+#changeVehicle .subtype-list {
   justify-content: space-between; }
 
-.smartsearch .spec_fields .subtype-item {
+.smartsearch .spec_fields .subtype-item,
+#changeVehicle .spec_fields .subtype-item {
   margin-right: 0;
   margin-top: 1rem;
   width: 48%; }
 
-.smartsearch .spec_fields .form-control {
+.smartsearch .spec_fields .form-control,
+#changeVehicle .spec_fields .form-control {
   margin-left: 0;
   width: 100%; }
 
-.smartsearch .type_id_wrapper .ms-parent {
+.smartsearch .type_id_wrapper .ms-parent,
+#changeVehicle .type_id_wrapper .ms-parent {
   width: 100% !important; }
 
-.smartsearch .ms-drop.bottom {
+.smartsearch .ms-drop.bottom,
+#changeVehicle .ms-drop.bottom {
   left: 15px;
   top: 100%;
   padding-top: 0; }
-  .smartsearch .ms-drop.bottom ul {
+  .smartsearch .ms-drop.bottom ul,
+  #changeVehicle .ms-drop.bottom ul {
     padding: 0; }
 
-.smartsearch .vehicle-control {
+.smartsearch .vehicle-control,
+#changeVehicle .vehicle-control {
   margin-bottom: 1.5rem;
   width: 100%; }
-  .smartsearch .vehicle-control .ms-drop.bottom {
+  .smartsearch .vehicle-control .ms-drop.bottom,
+  #changeVehicle .vehicle-control .ms-drop.bottom {
     left: 0; }
 
-.smartsearch .ms-search {
+.smartsearch .ms-search,
+#changeVehicle .ms-search {
   margin: 1.5rem 0;
   padding-right: 25px; }
 
-.smartsearch .ms-parent.year, .smartsearch .ms-parent.engine, .smartsearch .ms-parent.engineno {
+.smartsearch .ms-parent.year, .smartsearch .ms-parent.engine, .smartsearch .ms-parent.engineno,
+#changeVehicle .ms-parent.year,
+#changeVehicle .ms-parent.engine,
+#changeVehicle .ms-parent.engineno {
   width: 150px !important; }
 
 @media (max-width: 1450px) {
-  .smartsearch__header .title {
+  .smartsearch__header .title,
+  #changeVehicle__header .title {
     font-size: 1.6rem !important; } }
 
 .checkbox input {
@@ -9175,6 +9232,32 @@ input.form-control.error {
   padding-right: 5rem; }
   .card__center h1 {
     font-size: 3rem; }
+
+#changeVehicle .smartsearchForm {
+  display: block;
+  margin-top: 1.1rem; }
+  #changeVehicle .smartsearchForm .switch {
+    margin-bottom: 1.7rem; }
+  #changeVehicle .smartsearchForm .btn-search {
+    border-radius: 5rem;
+    height: 5rem;
+    margin-top: 2rem;
+    width: 13rem; }
+
+#changeVehicle .modal-dialog {
+  max-width: 340px; }
+
+#changeVehicle .modal-header {
+  padding-top: 2.5rem;
+  padding-left: 3.4rem;
+  padding-bottom: 0; }
+
+#changeVehicle .modal-title {
+  font-size: 2.5rem; }
+
+#changeVehicle .modal-body {
+  padding-left: 3.8rem;
+  padding-right: 2.8rem; }
 
 .cart-page {
   overflow: initial; }
@@ -12653,6 +12736,12 @@ input.form-control.error {
       text-align: center;
       width: 180px; } }
 
+.addvehicle-page .plate form {
+  margin-top: 1rem; }
+
+.addvehicle-page .plate .subtab {
+  margin: 0 0 .5rem; }
+
 .addvehicle-page .plate {
   background-color: #fff;
   color: #000;
@@ -12665,16 +12754,12 @@ input.form-control.error {
     font-weight: 700;
     line-height: 1.17;
     margin-bottom: 2rem; }
-  .addvehicle-page .plate form {
-    margin-top: 1rem; }
   .addvehicle-page .plate li {
     font-size: 1.4rem;
     margin: 0;
     padding-left: 0; }
   .addvehicle-page .plate .listwrapper ul li {
     width: calc(100% - 27px) !important; }
-  .addvehicle-page .plate .subtab {
-    margin: 0 0 .5rem; }
   .addvehicle-page .plate .btn-addvehicle {
     padding-left: 2rem;
     margin-top: 1.5rem; }

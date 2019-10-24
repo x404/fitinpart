@@ -264,3 +264,39 @@
 		}
 	}
 }
+
+
+#changeVehicle{
+	.smartsearchForm{
+		display: block;
+		margin-top: 1.1rem;
+		.switch{
+			margin-bottom: 1.7rem;
+		}
+
+		.btn-search{
+			border-radius: 5rem;
+			height: 5rem;
+			margin-top: 2rem;
+			width: 13rem;
+		}
+	}
+
+	.modal{
+		&-dialog{
+			max-width: 340px;
+		}
+		&-header{
+			padding-top: 2.5rem;
+			padding-left: 3.4rem;
+			padding-bottom: 0;
+		}
+		&-title{
+			font-size: 2.5rem;
+		}
+		&-body{
+			padding-left: 3.8rem;
+			padding-right: 2.8rem;
+		}
+	}
+}
