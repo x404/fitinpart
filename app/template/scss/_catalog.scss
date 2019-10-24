@@ -1341,7 +1341,9 @@
 }
 
 
-#addtocardModal1{
+#addtocardModal1,
+#successAddtocardModal
+{
 	.modal{
 		&-dialog{
 			max-width: 440px;

@@ -267,10 +267,10 @@
 	}
 
 	&__center{
-		max-width: 38%;
-		flex: 0 0 38%;
+		max-width: 36%;
+		flex: 1 0 36%;
 		padding-left: 5rem;
-		padding-right: 5rem;
+		padding-right: 4rem;
 		h1{
 			font-size: 3rem;
 
@@ -279,8 +279,9 @@
 
 	&__right{
 		.buy{
-			box-shadow: 0 5px 20px rgba(0, 153, 255, 0.5);
-			width: 32rem;
+			box-shadow: 0 5px 20 px rgba(0, 153, 255, 0.5);
+			min-width: 32rem;
+			width: 100%;
 			&__inner{
 				padding: 2.8rem 2rem 2.3rem;
 			}
@@ -350,12 +351,23 @@
 				.icon{
 					margin-right: 8px;
 					filter: invert(1);
+					transition: .3s;
+				}
+				&:hover{
+					.icon{
+						transform: translateX(-5px)
+					}
+				}
+
+				&.incart{
+					background-color: #003355;
 				}
 			}
 			&-fav{
 				color: $color3;
 				display: flex;
 				margin-left: 2.1rem;
+				white-space: nowrap;
 				.icon{
 					margin-right: 9px;
 				}
@@ -476,3 +488,33 @@
 }
 
 
+
+
+#successAddtocardModal{
+	.modal-header{
+		padding-bottom: 0;
+	}
+
+	.calc{
+		color: #393939;
+		font-size: 1.4rem;
+		margin-top: .8rem;
+	}
+	.msg{
+		font-size: 1.7rem;
+	}
+	.price{
+		@extend .neosans;
+		color: #000;
+		font-weight: 700;
+		font-size: 1.5rem;
+	}
+
+	.modal-cart{
+		margin-top: 1.5rem;
+	}
+
+	.modal-content{
+		padding-bottom: 2rem;
+	}
+}

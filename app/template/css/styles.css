@@ -3889,7 +3889,9 @@ h3 {
 #registerModal .subtitle, .modal-info .title, .smartsearch__header,
 #changeVehicle__header, .smartsearch__header .ms-choice,
 #changeVehicle__header .ms-choice, .main h2, .main h3, .main h4, .main h5, .main h6, .content blockquote, .lastnews .item-news__title,
-.news__list .item-news__title, .aboutus-page .intro__title, .aboutus-page .about__title, .aboutus-page .quote, .aboutus-page .advantages, .aboutus-page .item-products__title, .aboutus-page .brands__text, .title-md, .main aside .widget-title, .main aside .btn-filter, .sortbox .sort-label, .item-products__title, .products__list .item-products .btn-tooltip, .products__list .item-products .tooltip-title, .modal-v2 .box__title, #addtocardModal1 .product-title, #addtocardModal1 .count-price .price, .inner .card-page .details__title, .msg-searched, .specifications .specification__title, .cart-page .cart-table .cost, .cart-page .salescard__item .title, .comparison__body .product-title, .wiper-search .intro, .wiper-search .steps, .perfomance-page .intro .subtitle, .perfomance-page .list-title, .table-title, .logout, .myaccount aside ul, .myaccount aside .tel, .myaccount .plate__title, .myaccount .plate .statistic__field, .myaccount .ordersstat .num, .mob-accountmenu .btn-accountmenu, .mob-accountmenu .menu, .latest-orders header, .orders__list .tracking__title, .orders__list .orderinfo .print, .orders__list .orderinfo__title, .orders__list .subtitle, #quickorderModal .modal-body h2, #quickorderModal .modal-body ol li:before, .region .subtitle, .garagesearch .left .num, .addvehicle-page .plate__title, .wishlist-count, .address-entries__list .item-entry .num, .address-entries__list .item-entry .radio__text:after, .mob-header .btn-menu, .mob-header .tel {
+.news__list .item-news__title, .aboutus-page .intro__title, .aboutus-page .about__title, .aboutus-page .quote, .aboutus-page .advantages, .aboutus-page .item-products__title, .aboutus-page .brands__text, .title-md, .main aside .widget-title, .main aside .btn-filter, .sortbox .sort-label, .item-products__title, .products__list .item-products .btn-tooltip, .products__list .item-products .tooltip-title, .modal-v2 .box__title, #addtocardModal1 .product-title,
+#successAddtocardModal .product-title, #addtocardModal1 .count-price .price,
+#successAddtocardModal .count-price .price, .inner .card-page .details__title, .msg-searched, .specifications .specification__title, #successAddtocardModal .price, .cart-page .cart-table .cost, .cart-page .salescard__item .title, .comparison__body .product-title, .wiper-search .intro, .wiper-search .steps, .perfomance-page .intro .subtitle, .perfomance-page .list-title, .table-title, .logout, .myaccount aside ul, .myaccount aside .tel, .myaccount .plate__title, .myaccount .plate .statistic__field, .myaccount .ordersstat .num, .mob-accountmenu .btn-accountmenu, .mob-accountmenu .menu, .latest-orders header, .orders__list .tracking__title, .orders__list .orderinfo .print, .orders__list .orderinfo__title, .orders__list .subtitle, #quickorderModal .modal-body h2, #quickorderModal .modal-body ol li:before, .region .subtitle, .garagesearch .left .num, .addvehicle-page .plate__title, .wishlist-count, .address-entries__list .item-entry .num, .address-entries__list .item-entry .radio__text:after, .mob-header .btn-menu, .mob-header .tel {
   font-family: 'Neo Sans Pro', Verdana, sans-serif; }
 
 strong,
@@ -3925,7 +3927,8 @@ strong,
 .smartsearch .subtab-link,
 .addvehicle-page .plate .subtab-link,
 #changeVehicle .subtab-link, .catalog a,
-.header .catalog__menu a, .reviews .btn-show, .checkbox__text:after, .aboutus-page .brands__item, .main aside .btn-filter, .btn-cart, .products__list .item-products__pic, .products__list .item-products .btn-tooltip, .products__list .item-products .labels .label, #addtocardModal1 .modal-footer .btn, .card__body .media .label, .card__right .btn-addtocart, .cart-page .summary .btn, .cart-page .salescard__item .btn-apply, .comparison__column .btn-del, .myaccount aside ul li .icon-wrapper, .myaccount .plate-cars a, .myaccount .plate-items a, .addvehicle-page .plate .placement:before, .address-entries__list .item-entry .num {
+.header .catalog__menu a, .reviews .btn-show, .checkbox__text:after, .aboutus-page .brands__item, .main aside .btn-filter, .btn-cart, .products__list .item-products__pic, .products__list .item-products .btn-tooltip, .products__list .item-products .labels .label, #addtocardModal1 .modal-footer .btn,
+#successAddtocardModal .modal-footer .btn, .card__body .media .label, .card__right .btn-addtocart, .cart-page .summary .btn, .cart-page .salescard__item .btn-apply, .comparison__column .btn-del, .myaccount aside ul li .icon-wrapper, .myaccount .plate-cars a, .myaccount .plate-items a, .addvehicle-page .plate .placement:before, .address-entries__list .item-entry .num {
   display: flex;
   align-items: center;
   justify-content: center; }
@@ -8963,66 +8966,84 @@ input.form-control.error {
   #notifyModal .modal-title {
     font-size: 20px; } }
 
-#addtocardModal1 .modal-dialog {
+#addtocardModal1 .modal-dialog,
+#successAddtocardModal .modal-dialog {
   max-width: 440px; }
 
-#addtocardModal1 .modal-header {
+#addtocardModal1 .modal-header,
+#successAddtocardModal .modal-header {
   padding-top: 3rem; }
 
-#addtocardModal1 .modal-body {
+#addtocardModal1 .modal-body,
+#successAddtocardModal .modal-body {
   padding-bottom: 1rem; }
 
-#addtocardModal1 .modal-content {
+#addtocardModal1 .modal-content,
+#successAddtocardModal .modal-content {
   padding-bottom: 3.5rem; }
 
-#addtocardModal1 .modal-footer {
+#addtocardModal1 .modal-footer,
+#successAddtocardModal .modal-footer {
   background-color: transparent;
   padding: 0 0 0 3rem;
   justify-content: flex-start; }
-  #addtocardModal1 .modal-footer .btn {
+  #addtocardModal1 .modal-footer .btn,
+  #successAddtocardModal .modal-footer .btn {
     font-size: 1.6rem; }
-    #addtocardModal1 .modal-footer .btn .icon {
+    #addtocardModal1 .modal-footer .btn .icon,
+    #successAddtocardModal .modal-footer .btn .icon {
       filter: invert(1);
       margin-right: .8rem; }
-    #addtocardModal1 .modal-footer .btn-submit {
+    #addtocardModal1 .modal-footer .btn-submit,
+    #successAddtocardModal .modal-footer .btn-submit {
       margin-right: 1.7rem; }
-    #addtocardModal1 .modal-footer .btn-close {
+    #addtocardModal1 .modal-footer .btn-close,
+    #successAddtocardModal .modal-footer .btn-close {
       min-width: 110px; }
 
-#addtocardModal1 .product-pic {
+#addtocardModal1 .product-pic,
+#successAddtocardModal .product-pic {
   max-width: 10rem;
   margin-right: 3.2rem; }
 
-#addtocardModal1 .product-title {
+#addtocardModal1 .product-title,
+#successAddtocardModal .product-title {
   color: #000;
   font-size: 1.5rem;
   font-weight: 700;
   margin-bottom: 1.2rem; }
 
-#addtocardModal1 .count-price {
+#addtocardModal1 .count-price,
+#successAddtocardModal .count-price {
   align-items: center;
   display: flex;
   margin-top: 1.2rem; }
-  #addtocardModal1 .count-price .price {
+  #addtocardModal1 .count-price .price,
+  #successAddtocardModal .count-price .price {
     color: #000;
     font-size: 1.5rem;
     font-weight: 700;
     margin-left: 2.5rem; }
 
-#addtocardModal1 .desc {
+#addtocardModal1 .desc,
+#successAddtocardModal .desc {
   flex-grow: 1; }
 
-#addtocardModal1 .remarks {
+#addtocardModal1 .remarks,
+#successAddtocardModal .remarks {
   color: #6c7173;
   margin-top: 1.6rem; }
-  #addtocardModal1 .remarks p {
+  #addtocardModal1 .remarks p,
+  #successAddtocardModal .remarks p {
     font-style: italic; }
-  #addtocardModal1 .remarks .form-control {
+  #addtocardModal1 .remarks .form-control,
+  #successAddtocardModal .remarks .form-control {
     border-radius: 30px;
     height: 30px;
     margin-right: 1.1rem;
     width: 162px; }
-  #addtocardModal1 .remarks .ok {
+  #addtocardModal1 .remarks .ok,
+  #successAddtocardModal .remarks .ok {
     background-color: #778d9b;
     background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAANCAYAAABLjFUnAAAA3ElEQVQ4T2NkoAD8///fGKh9KRALAXEoI7lmQQ3aBTUIZEwrWYZhMegd0DATsGFASRsgJcrIyLiekEtxGOQG1HuWEWrQYaghC4CCibgMxGcQSA/IMD8gvRHJgH1AA53RDSRkENgwqDfnA+kEJAPuAA1UhfGJMQhuGNTAPUAa2UV7gQa6EGsQimFQA28DaRUkF24Gsq2Roh8Ua+DAxhauGEkD6JK9QIVOWBTjNQjDZUhhhB6GIIOcgS66gC/p4Ey0QBeWADVWA/EbIA4lZBBOlyG5kBloyF98rkGWAwDHv2DpQksQ8gAAAABJRU5ErkJggg==");
     background-position: 49% center;
@@ -9031,33 +9052,42 @@ input.form-control.error {
     height: 30px;
     width: 30px; }
 
-#addtocardModal1 .preorder-text {
+#addtocardModal1 .preorder-text,
+#successAddtocardModal .preorder-text {
   font-size: 1.3rem;
   margin-top: .3rem; }
 
 @media (max-width: 480px) {
-  #addtocardModal1 .product-pic {
+  #addtocardModal1 .product-pic,
+  #successAddtocardModal .product-pic {
     margin-right: 15px; }
-  #addtocardModal1 .modal-dialog {
+  #addtocardModal1 .modal-dialog,
+  #successAddtocardModal .modal-dialog {
     width: 96%; } }
 
 @media (max-width: 380px) {
-  #addtocardModal1 .modal-footer {
+  #addtocardModal1 .modal-footer,
+  #successAddtocardModal .modal-footer {
     padding-left: 2rem; }
-    #addtocardModal1 .modal-footer .btn {
+    #addtocardModal1 .modal-footer .btn,
+    #successAddtocardModal .modal-footer .btn {
       border-radius: 45px;
       height: 45px; } }
 
 @media (max-width: 350px) {
-  #addtocardModal1 .modal-footer .btn {
+  #addtocardModal1 .modal-footer .btn,
+  #successAddtocardModal .modal-footer .btn {
     border-radius: 40px;
     height: 40px; }
-    #addtocardModal1 .modal-footer .btn-submit {
+    #addtocardModal1 .modal-footer .btn-submit,
+    #successAddtocardModal .modal-footer .btn-submit {
       margin-right: 1rem;
       min-width: 120px; }
-      #addtocardModal1 .modal-footer .btn-submit .icon {
+      #addtocardModal1 .modal-footer .btn-submit .icon,
+      #successAddtocardModal .modal-footer .btn-submit .icon {
         display: none; }
-    #addtocardModal1 .modal-footer .btn-close {
+    #addtocardModal1 .modal-footer .btn-close,
+    #successAddtocardModal .modal-footer .btn-close {
       min-width: 90px; } }
 
 .inner .card-page {
@@ -9239,16 +9269,17 @@ input.form-control.error {
   flex: 0 0 43%; }
 
 .card__center {
-  max-width: 38%;
-  flex: 0 0 38%;
+  max-width: 36%;
+  flex: 1 0 36%;
   padding-left: 5rem;
-  padding-right: 5rem; }
+  padding-right: 4rem; }
   .card__center h1 {
     font-size: 3rem; }
 
 .card__right .buy {
-  box-shadow: 0 5px 20px rgba(0, 153, 255, 0.5);
-  width: 32rem; }
+  box-shadow: 0 5px 20 px rgba(0, 153, 255, 0.5);
+  min-width: 32rem;
+  width: 100%; }
   .card__right .buy__inner {
     padding: 2.8rem 2rem 2.3rem; }
 
@@ -9304,12 +9335,18 @@ input.form-control.error {
   width: 100%; }
   .card__right .btn-addtocart .icon {
     margin-right: 8px;
-    filter: invert(1); }
+    filter: invert(1);
+    transition: .3s; }
+  .card__right .btn-addtocart:hover .icon {
+    transform: translateX(-5px); }
+  .card__right .btn-addtocart.incart {
+    background-color: #003355; }
 
 .card__right .btn-fav {
   color: #0672ba;
   display: flex;
-  margin-left: 2.1rem; }
+  margin-left: 2.1rem;
+  white-space: nowrap; }
   .card__right .btn-fav .icon {
     margin-right: 9px; }
 
@@ -9389,6 +9426,28 @@ input.form-control.error {
       color: #0099ff; }
       .specifications .btn-show:hover .icon {
         filter: brightness(1.2); }
+
+#successAddtocardModal .modal-header {
+  padding-bottom: 0; }
+
+#successAddtocardModal .calc {
+  color: #393939;
+  font-size: 1.4rem;
+  margin-top: .8rem; }
+
+#successAddtocardModal .msg {
+  font-size: 1.7rem; }
+
+#successAddtocardModal .price {
+  color: #000;
+  font-weight: 700;
+  font-size: 1.5rem; }
+
+#successAddtocardModal .modal-cart {
+  margin-top: 1.5rem; }
+
+#successAddtocardModal .modal-content {
+  padding-bottom: 2rem; }
 
 .cart-page {
   overflow: initial; }

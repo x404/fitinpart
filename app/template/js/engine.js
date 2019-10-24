@@ -93,7 +93,16 @@ $('body')
 			countEl = $this.closest('.countmodule').find('.count-control'),
 			cnt = parseInt(countEl.val()) - 1;
 
-		countEl.val((cnt <= 0) ? cnt = 0 : cnt) ;
+		countEl.val((cnt <= 1) ? cnt = 1 : cnt) ;
+	});
+
+
+
+	$('.countmodule .count-control').on('keyup', function(e){
+		e.preventDefault();
+		let $this = $(this),
+			cnt = parseInt($this.val());
+		(cnt <= 1) ? $this.val(1) : '';
 	});
 
 

@@ -598,3 +598,57 @@ $(document).on('click','.specifications .btn-show', function(e){
 	});
 	$this.find('.icon').toggleClass('icon-rotate180')
 })
+
+
+
+// Add to cart btn
+$(document).on('click','.buy .btn-addtocart', function(e){
+	e.preventDefault();
+	var $this = $(this);
+	$this.addClass('incart').find('span').text('In cart')
+})
+
+
+$('#successAddtocardModal').on('show.bs.modal', function (e) {
+	let $this = $(e.relatedTarget);
+	$('#successAddtocardModal .product-title').text($this.data('title'))
+	$('#successAddtocardModal .count').text(document.querySelector('#count').value);
+	$('#successAddtocardModal .price').text('SG$' + $price);
+})
+
+
+$('#successAddtocardModal').on('shown.bs.modal', function (e) {
+	var timerfav = window.setInterval(function(){
+		$('#successAddtocardModal').modal('hide');
+		window.clearInterval(timerfav);
+	},40000);
+})
+
+$(document).on('change keyup paste','.buy .count-control', function(){
+	changeCount();
+});
+
+$(document).on('click','.buy .countmodule .minus, .buy .countmodule .plus', function(e){
+	changeCount();
+})
+
+
+function changeCount(){
+	let $count = document.querySelector('.buy .count-control').value;
+
+	if ($count >= 100) {
+		$price = $price100;
+	} else {
+		if ($count >= 20) {
+			$price = $price20;
+		} else{
+			if ($count >= 10) {
+				$price = $price10;
+			}  else{
+				$price = $price1
+			}
+		}
+	}
+
+	document.querySelector('.buy .btn-addtocart').dataset.price = $price 
+}
