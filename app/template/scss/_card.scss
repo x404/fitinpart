@@ -298,5 +298,15 @@
 			padding-left: 3.8rem;
 			padding-right: 2.8rem;
 		}
+		@media (max-width: 380px){
+			&-dialog{
+				max-width: 92%
+			}
+			&-header,
+			&-body{
+				padding-left: 2rem;
+				padding-right: 2rem;
+			}
+		}
 	}
 }
