@@ -71,3 +71,9 @@ $(document).on('click','.btn-compare-in', function(e){
 	$this.removeClass('btn-compare-in').addClass('to-compare');
 });
 // #COMPARE SCRIPT
+
+$(document).on('click','.jump-vehicles', function(e){
+	elementClick = $(this).data('target');
+	destination = $(elementClick).offset().top;
+	$("body,html").animate({scrollTop: destination }, 800);	
+});
