@@ -19,7 +19,8 @@ $(document).ready(function(){
 	});
 
 
-	// change vehicle
+
+	// CAR
 	$("#change_brand_select").multipleSelect({
 		single: true,
 		filter: true,
@@ -45,8 +46,6 @@ $(document).ready(function(){
 		}
 	});
 
-
-	// modal
 	$("#change_class_select").multipleSelect({
 		filter: true,
 		single: true,
@@ -165,19 +164,11 @@ $(document).ready(function(){
 
 
 
-	// smartsearch
-	// var change_typelist = new PerfectScrollbar('#mobSearch .listwrapper', {
-	// 	wheelPropagation: true,
-	// 	minScrollbarLength: 100,
-	// 	maxScrollbarLength: 100,
-	// });
-
 	var change_brandlist = new PerfectScrollbar('#change_car .brand .listwrapper', {
 		wheelPropagation: true,
 		minScrollbarLength: 100,
 		maxScrollbarLength: 100,
 	});
-
 	var change_classlist = new PerfectScrollbar('#change_car .class .listwrapper', {
 		wheelPropagation: true,
 		minScrollbarLength: 100,
@@ -208,6 +199,188 @@ $(document).ready(function(){
 		minScrollbarLength: 100,
 		maxScrollbarLength: 100,
 	});
+	// #CAR
+
+
+
+	// MOTO
+	$("#change_brand_select2").multipleSelect({
+		single: true,
+		filter: true,
+		placeholder : 'Maker',
+		noMatchesFound:$('#chk_app_search_sg_only').is(':checked')?'No matches found<br>To show all brands Turn <strong>OFF</strong> Common SG Veh':'No matches found',
+		onFilter: function(){
+			change_brandlist2.update();
+		},
+		onOpen: function() {
+			console.log("open brand select");
+			change_brandlist2.update();
+		},
+
+		onClick: function(view) {
+		//Unset the all selection values
+		   $("#change_class_select2, #change_model_select2, "
+				 + "#change_year_select2,#change_body_select2, #change_engine_select2, #change_engineno_select2").multipleSelect("uncheckAll");
+
+		   ChangeSwitchEnabledAppsearchFields2();
+		   //Get class and model
+		   // getClass(0, 0, 0);
+		   // getModel(0, 0, 0, 0);
+		}
+	});
+
+	$("#change_class_select2").multipleSelect({
+		filter: true,
+		single: true,
+		placeholder : 'Class',
+		// noMatchesFound:$('#chk_app_search_sg_only').is(':checked')?'No matches found<br>To show all classes Turn <strong>OFF</strong> Common SG Veh':'No matches found',
+		onFilter: function(){
+			change_classlist2.update();
+		},
+		onOpen: function() {
+			change_classlist2.update();
+		},
+		onClick: function(view) {
+			$(" #change_model_select2, #change_year_select2, #change_body_select2, #change_engine_select2, #change_engineno_select2").multipleSelect("uncheckAll");
+			ChangeSwitchEnabledAppsearchFields2();
+			// getModel(0,0,0,0);
+		}
+	});
+
+	$("#change_model_select2").multipleSelect({
+		filter: true,//($( window ).width()>800),
+		multiple: true,
+		multipleWidth: 228,
+		selectAll:false,
+		maxHeight:($( window ).width()<800)?100:250,
+		// noMatchesFound:$('#chk_app_search_sg_only').is(':checked')?'No matches found<br>To show all models Turn <strong>OFF</strong> Common SG Veh':'No matches found',
+		placeholder : 'Model',
+		textTemplate: function ($el) {
+			var txt=$el.html();
+			var opt=txt.replace(/\[/,'<i class="ms_aliases">[').replace(/\]/,']</i>');
+			return opt;
+		},
+		onFilter: function(){
+			change_modellist2.update();
+		},
+		onOpen: function() {
+			change_modellist2.update();
+		},
+		onClick: function() {
+			$("#change_year_select2, #change_body_select2, #change_engine_select2, #change_engineno_select2").multipleSelect("uncheckAll");
+
+		ChangeSwitchEnabledAppsearchFields2();
+		// getYears(false);
+		}
+	});
+
+	$("#change_year_select2").multipleSelect({
+		filter: true,
+		single: true,
+		placeholder : 'Year',
+		noMatchesFound:$('#chk_app_search_sg_only').is(':checked')?'No matches found<br>To show all years Turn <strong>OFF</strong> Common SG Veh':'No matches found',
+		onFilter: function(){
+			change_yearlist2.update();
+		},
+		onOpen: function() {
+			change_yearlist2.update();
+		},
+		onClick: function(view) {
+			// if(view.value!=AppSearchCurrentParams.years) {
+			// 	getBody(false);
+			// }
+		}
+	});
+
+	$("#change_body_select2").multipleSelect({
+		filter: true,
+		single: true,
+		placeholder : 'Body',
+		noMatchesFound:$('#chk_app_search_sg_only').is(':checked')?'No matches found<br>To show all bodies Turn <strong>OFF</strong> Common SG Veh':'No matches found',
+		onFilter: function(){
+			change_bodylist2.update();
+		},
+		onOpen: function() {
+			change_bodylist2.update();
+		},
+		onClick: function(view) {
+			// if(view.value!=AppSearchCurrentParams.body) {
+				//  getEngine(false);
+			// }
+		}
+	});
+
+	$("#change_engine_select2").multipleSelect({
+		filter: true,
+		single: true,
+		placeholder : 'Engine',
+		noMatchesFound:$('#chk_app_search_sg_only').is(':checked')?'No matches found<br>To show all engines Turn <strong>OFF</strong> Common SG Veh':'No matches found',
+		onFilter: function(){
+			change_enginelist2.update();
+		},
+		onOpen: function() {
+			change_enginelist2.update();
+		},
+		onClick: function(view) {
+		// 	if(view.value!=AppSearchCurrentParams.engine) {
+		// 	   getEngineNo(false);
+		// 	}
+		}
+	});
+
+	$("#change_engineno_select2").multipleSelect({
+		filter: true,
+		single: true,
+		placeholder : 'EngineNo',
+		noMatchesFound:$('#chk_app_search_sg_only').is(':checked')?'No matches found<br>To show all numbers Turn <strong>OFF</strong> Common SG Veh':'No matches found',
+		onFilter: function(){
+			change_enginenolist2.update();
+		},
+		onOpen: function() {
+			change_enginenolist2.update();
+		},
+		onClick: function(view) {
+			// if(view.value!=AppSearchCurrentParams.engineno) {
+			// }
+		}
+	});
+
+	var change_brandlist2 = new PerfectScrollbar('#change_moto .brand .listwrapper', {
+		wheelPropagation: true,
+		minScrollbarLength: 100,
+		maxScrollbarLength: 100,
+	});
+	var change_classlist2 = new PerfectScrollbar('#change_moto .class .listwrapper', {
+		wheelPropagation: true,
+		minScrollbarLength: 100,
+		maxScrollbarLength: 100,
+	});
+	var change_modellist2 = new PerfectScrollbar('#change_moto .model .listwrapper', {
+		wheelPropagation: true,
+		minScrollbarLength: 100,
+		maxScrollbarLength: 100,
+	});
+	var change_yearlist2 = new PerfectScrollbar('#change_moto .year .listwrapper', {
+		wheelPropagation: true,
+		minScrollbarLength: 100,
+		maxScrollbarLength: 100,
+	});
+	var change_bodylist2 = new PerfectScrollbar('#change_moto .body .listwrapper', {
+		wheelPropagation: true,
+		minScrollbarLength: 100,
+		maxScrollbarLength: 100,
+	});
+	var change_enginelist2 = new PerfectScrollbar('#change_moto .engine .listwrapper', {
+		wheelPropagation: true,
+		minScrollbarLength: 100,
+		maxScrollbarLength: 100,
+	});
+	var change_enginenolist2 = new PerfectScrollbar('#change_moto .engineno .listwrapper', {
+		wheelPropagation: true,
+		minScrollbarLength: 100,
+		maxScrollbarLength: 100,
+	});
+	// #MOTO
 
 });
 
@@ -279,5 +452,18 @@ function ChangeSwitchEnabledAppsearchFields(){
 	}
 	if($('select#change_model_select :selected').val()>0) {
 		$("#change_year_select,#change_body_select, #change_engine_select, #change_engineno_select").not(':focus').multipleSelect("enable");
+	}
+}
+
+
+
+function ChangeSwitchEnabledAppsearchFields2(){
+	$("#change_model_select2, #change_year_select2, #change_body_select2, #change_engine_select2, #change_engineno_select2").not(':focus').multipleSelect("disable");
+	if($('select#change_brand_select2 :selected').val()>0) {
+		$("#change_model_select2").not(':focus').multipleSelect("enable");
+		$("#change_class_select2").not(':focus').multipleSelect("enable");
+	}
+	if($('select#change_model_select2 :selected').val()>0) {
+		$("#change_year_select2,#change_body_select2, #change_engine_select2, #change_engineno_select2").not(':focus').multipleSelect("enable");
 	}
 }
