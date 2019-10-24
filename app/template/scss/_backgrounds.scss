@@ -33,6 +33,12 @@
 	.bg-1{
 		background-image: url(../images/bg/bg-1.webp);
 	}
+
+	.inner .card-page{
+		.details{
+			background-image: url(../images/bg/car2.webp);
+		}
+	}
 }
 
 
@@ -104,4 +110,13 @@
 	background-position: top center;
 	background-repeat: no-repeat;
 	background-size: cover;	
+}
+
+
+.inner .card-page{
+	.details{
+		background-image: url(../images/bg/car2.jpg);
+		background-position: center top 10px;
+		background-repeat: no-repeat;
+	}
 }

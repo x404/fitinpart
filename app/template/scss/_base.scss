@@ -415,6 +415,30 @@ em strong
 		@include sprite($icon-scales)
 	}
 
+	&-okgreen{
+		@include sprite($icon-ok-green);
+		margin-right: 8px;
+	}
+
+	&-stop{
+		@include sprite($icon-stop);
+		margin-right: 8px;
+	}
+
+	&-change{
+		@include sprite($icon-change);
+		margin-right: 8px;
+	}
+
+	&-3dots{
+		@include sprite($icon-3dots);
+		margin-right: 8px;
+	}
+
+	&-4dots-square{
+		@include sprite($icon-4dots-square);
+		margin-right: 8px;
+	}
 } 
 // #icon
 
