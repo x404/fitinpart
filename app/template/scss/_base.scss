@@ -448,6 +448,11 @@ em strong
 	&-rotate180{
 		transform: rotate(180deg)
 	}
+
+	&-car2{
+		@include sprite($icon-car2);
+		margin-right: 8px;
+	}
 } 
 // #icon
 

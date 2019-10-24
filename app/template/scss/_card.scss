@@ -195,6 +195,19 @@
 						filter: brightness(1.3);
 					}			
 				}
+
+				&-choose{
+					.icon{
+						filter: brightness(.7);
+						transition: filter .3s;
+					}
+					&:hover{
+						color: $color9;
+						.icon{
+							filter: brightness(1);
+						}			
+					}
+				}
 			}
 		}
 	}
