@@ -3889,7 +3889,7 @@ h3 {
 #registerModal .subtitle, .modal-info .title, .smartsearch__header,
 #changeVehicle__header, .smartsearch__header .ms-choice,
 #changeVehicle__header .ms-choice, .main h2, .main h3, .main h4, .main h5, .main h6, .content blockquote, .lastnews .item-news__title,
-.news__list .item-news__title, .aboutus-page .intro__title, .aboutus-page .about__title, .aboutus-page .quote, .aboutus-page .advantages, .aboutus-page .item-products__title, .aboutus-page .brands__text, .title-md, .main aside .widget-title, .main aside .btn-filter, .sortbox .sort-label, .item-products__title, .products__list .item-products .btn-tooltip, .products__list .item-products .tooltip-title, .modal-v2 .box__title, #addtocardModal1 .product-title, #addtocardModal1 .count-price .price, .inner .card-page .details__title, .msg-searched, .cart-page .cart-table .cost, .cart-page .salescard__item .title, .comparison__body .product-title, .wiper-search .intro, .wiper-search .steps, .perfomance-page .intro .subtitle, .perfomance-page .list-title, .table-title, .logout, .myaccount aside ul, .myaccount aside .tel, .myaccount .plate__title, .myaccount .plate .statistic__field, .myaccount .ordersstat .num, .mob-accountmenu .btn-accountmenu, .mob-accountmenu .menu, .latest-orders header, .orders__list .tracking__title, .orders__list .orderinfo .print, .orders__list .orderinfo__title, .orders__list .subtitle, #quickorderModal .modal-body h2, #quickorderModal .modal-body ol li:before, .region .subtitle, .garagesearch .left .num, .addvehicle-page .plate__title, .wishlist-count, .address-entries__list .item-entry .num, .address-entries__list .item-entry .radio__text:after, .mob-header .btn-menu, .mob-header .tel {
+.news__list .item-news__title, .aboutus-page .intro__title, .aboutus-page .about__title, .aboutus-page .quote, .aboutus-page .advantages, .aboutus-page .item-products__title, .aboutus-page .brands__text, .title-md, .main aside .widget-title, .main aside .btn-filter, .sortbox .sort-label, .item-products__title, .products__list .item-products .btn-tooltip, .products__list .item-products .tooltip-title, .modal-v2 .box__title, #addtocardModal1 .product-title, #addtocardModal1 .count-price .price, .inner .card-page .details__title, .msg-searched, .specifications .specification__title, .cart-page .cart-table .cost, .cart-page .salescard__item .title, .comparison__body .product-title, .wiper-search .intro, .wiper-search .steps, .perfomance-page .intro .subtitle, .perfomance-page .list-title, .table-title, .logout, .myaccount aside ul, .myaccount aside .tel, .myaccount .plate__title, .myaccount .plate .statistic__field, .myaccount .ordersstat .num, .mob-accountmenu .btn-accountmenu, .mob-accountmenu .menu, .latest-orders header, .orders__list .tracking__title, .orders__list .orderinfo .print, .orders__list .orderinfo__title, .orders__list .subtitle, #quickorderModal .modal-body h2, #quickorderModal .modal-body ol li:before, .region .subtitle, .garagesearch .left .num, .addvehicle-page .plate__title, .wishlist-count, .address-entries__list .item-entry .num, .address-entries__list .item-entry .radio__text:after, .mob-header .btn-menu, .mob-header .tel {
   font-family: 'Neo Sans Pro', Verdana, sans-serif; }
 
 strong,
@@ -3908,7 +3908,7 @@ strong,
 
 .before, .icon:before, .btn-view:before, .btn-google:before, .btn-facebook:before, .top__left:before, .top__menu li.flexMenu-viewMore > a:after, .countmodule .minus:before, .countmodule .plus:before, .countmodule .plus:after, .search .vehicle-search-str .vehicle-search-item:after, .promo .wrapper:before, .visual__item:before, .modal-content-bg:before, .modal-content-bg:after, .modal-content-rbg:after, .modal-info:after, .modal-menu:before, .modal-menu .catalog:before, .breadcrumbs ul li.B_homecrumb a:before, .content ul li:before, .aboutus-page .intro__title:before, .aboutus-page .advantages__text:after, .aboutus-page .ouroffice__pic:after, #fitinpart-carousel a:after, #fitinpart-carousel a:before, .bl-line:after,
 .bc-line:after, .sortbox .param-sort:after, .products__list .item-products .additional__panel .item button:before, .label-tooltip:before,
-.tooltip-body:before, #notifyModal .settings-link:before, .inner .card-page .compare .btn.to-compare:before, .inner .card-page .compare .btn-compare-in:before, .cart-page .summary .option-item:after, .cart-page .calculate .title:before, .wiper-search .intro__body:after, .wiper-search .intro__body:before, .wiper-search .details .label:before, .perfomance-page .intro__body:after, .perfomance-page .intro__body:before, .perfomance-page .subtitle:before, .content-location .days:not(:last-child):after, .mob-accountmenu .btn-accountmenu:before, .orders__list .tracking__item:before, .orders__list .tracking__item:after, .notify-settings .option-item:after, .stockrequest__list .reqstatus:before, .wishlist-page .item-products__note .btn-ok:before,
+.tooltip-body:before, #notifyModal .settings-link:before, .inner .card-page .compare .btn.to-compare:before, .inner .card-page .compare .btn-compare-in:before, .specifications .item-specification__title:after, .cart-page .summary .option-item:after, .cart-page .calculate .title:before, .wiper-search .intro__body:after, .wiper-search .intro__body:before, .wiper-search .details .label:before, .perfomance-page .intro__body:after, .perfomance-page .intro__body:before, .perfomance-page .subtitle:before, .content-location .days:not(:last-child):after, .mob-accountmenu .btn-accountmenu:before, .orders__list .tracking__item:before, .orders__list .tracking__item:after, .notify-settings .option-item:after, .stockrequest__list .reqstatus:before, .wishlist-page .item-products__note .btn-ok:before,
 .cart-table .item-products__note .btn-ok:before, .wishlist-page .item-products .actions .btn:before,
 .cart-table .item-products .actions .btn:before {
   content: "";
@@ -3941,7 +3941,7 @@ strong,
     padding-left: 30px; }
     .icon-tel:before {
       background-image: url(../images/sprite.png);
-      background-position: -203px -25px;
+      background-position: -203px 0px;
       width: 16px;
       height: 25px;
       top: -3px;
@@ -3963,7 +3963,7 @@ strong,
     padding-left: 64px; }
     .icon-9dotted:before {
       background-image: url(../images/sprite.png);
-      background-position: -158px -155px;
+      background-position: -140px -155px;
       width: 18px;
       height: 18px; }
   .icon-littlecart {
@@ -4014,7 +4014,7 @@ strong,
     height: 21px; }
   .icon-slider-arrow-blue {
     background-image: url(../images/sprite.png);
-    background-position: -219px -143px;
+    background-position: -219px -155px;
     width: 8px;
     height: 13px; }
   .icon-camera {
@@ -4029,7 +4029,7 @@ strong,
     padding-top: .5rem; }
     .icon-balloon:before {
       background-image: url(../images/sprite.png);
-      background-position: -127px 0px;
+      background-position: -127px -32px;
       width: 24px;
       height: 32px;
       left: 0;
@@ -4037,25 +4037,25 @@ strong,
   .icon-balloon-gray {
     display: block;
     background-image: url(../images/sprite.png);
-    background-position: -127px -32px;
+    background-position: -127px 0px;
     width: 24px;
     height: 32px; }
   .icon-tel-gray {
     display: block;
     background-image: url(../images/sprite.png);
-    background-position: -203px 0px;
+    background-position: -203px -25px;
     width: 16px;
     height: 25px; }
   .icon-fax-gray {
     display: block;
     background-image: url(../images/sprite.png);
-    background-position: -28px -104px;
+    background-position: -151px 0px;
     width: 27px;
     height: 27px; }
   .icon-clock-gray {
     display: block;
     background-image: url(../images/sprite.png);
-    background-position: -82px -104px;
+    background-position: -55px -104px;
     width: 27px;
     height: 27px; }
   .icon-online-gray {
@@ -4066,7 +4066,7 @@ strong,
     height: 30px; }
   .icon-search {
     background-image: url(../images/sprite.png);
-    background-position: -151px 0px;
+    background-position: -28px -104px;
     width: 27px;
     height: 27px;
     display: block;
@@ -4080,7 +4080,7 @@ strong,
     display: block; }
   .icon-search-big {
     background-image: url(../images/sprite.png);
-    background-position: -55px -104px;
+    background-position: -109px -104px;
     width: 27px;
     height: 27px; }
   .icon-zoom {
@@ -4103,12 +4103,12 @@ strong,
     display: block; }
   .icon-tofav {
     background-image: url(../images/sprite.png);
-    background-position: -26px -155px;
+    background-position: 0px -155px;
     width: 26px;
     height: 23px; }
   .icon-infav {
     background-image: url(../images/sprite.png);
-    background-position: 0px -155px;
+    background-position: -26px -155px;
     width: 26px;
     height: 23px; }
   .icon-letter {
@@ -4123,12 +4123,12 @@ strong,
     height: 12px; }
   .icon-badge-2-white {
     background-image: url(../images/sprite.png);
-    background-position: -219px -87px;
+    background-position: -219px -98px;
     width: 13px;
     height: 11px; }
   .icon-badge-3-white {
     background-image: url(../images/sprite.png);
-    background-position: -61px -200px;
+    background-position: -47px -200px;
     width: 14px;
     height: 14px; }
   .icon-badge-4-blue {
@@ -4138,17 +4138,17 @@ strong,
     height: 12px; }
   .icon-badge-5-blue {
     background-image: url(../images/sprite.png);
-    background-position: -219px -98px;
+    background-position: -219px -87px;
     width: 13px;
     height: 11px; }
   .icon-good {
     background-image: url(../images/sprite.png);
-    background-position: -100px -155px;
+    background-position: -120px -155px;
     width: 20px;
     height: 20px; }
   .icon-bad {
     background-image: url(../images/sprite.png);
-    background-position: -120px -155px;
+    background-position: -80px -155px;
     width: 20px;
     height: 20px; }
   .icon-clock-blue {
@@ -4173,7 +4173,7 @@ strong,
     height: 11px; }
   .icon-arrowleft {
     background-image: url(../images/sprite.png);
-    background-position: -219px -156px;
+    background-position: -219px -168px;
     width: 7px;
     height: 13px; }
   .icon-plus {
@@ -4193,12 +4193,12 @@ strong,
     height: 19px; }
   .icon-arrow-down-white {
     background-image: url(../images/sprite.png);
-    background-position: -219px -169px;
+    background-position: -219px -181px;
     width: 13px;
     height: 7px; }
   .icon-success {
     background-image: url(../images/sprite.png);
-    background-position: -178px -72px;
+    background-position: -178px -116px;
     width: 22px;
     height: 22px; }
   .icon-attention {
@@ -4208,7 +4208,7 @@ strong,
     height: 19px; }
   .icon-info {
     background-image: url(../images/sprite.png);
-    background-position: -178px -116px;
+    background-position: -178px -72px;
     width: 22px;
     height: 22px; }
   .icon-scales {
@@ -4218,13 +4218,13 @@ strong,
     height: 19px; }
   .icon-okgreen {
     background-image: url(../images/sprite.png);
-    background-position: -127px -94px;
+    background-position: -57px -33px;
     width: 14px;
     height: 10px;
     margin-right: 8px; }
   .icon-stop {
     background-image: url(../images/sprite.png);
-    background-position: -80px -155px;
+    background-position: -100px -155px;
     width: 20px;
     height: 20px;
     margin-right: 8px; }
@@ -4242,10 +4242,18 @@ strong,
     margin-right: 8px; }
   .icon-4dots-square {
     background-image: url(../images/sprite.png);
-    background-position: -47px -200px;
+    background-position: -61px -200px;
     width: 14px;
     height: 14px;
     margin-right: 8px; }
+  .icon-arrow-down-blue {
+    background-image: url(../images/sprite.png);
+    background-position: -219px -143px;
+    width: 10px;
+    height: 12px;
+    margin-right: 8px; }
+  .icon-rotate180 {
+    transform: rotate(180deg); }
 
 .w100 {
   width: 100%; }
@@ -4520,7 +4528,7 @@ button {
         padding-right: 17px; }
         .top__menu li.flexMenu-viewMore > a:after {
           background-image: url(../images/sprite.png);
-          background-position: -219px -176px;
+          background-position: -219px -188px;
           width: 10px;
           height: 7px;
           right: 0;
@@ -4728,7 +4736,7 @@ button {
 
 .dropdown-toggle:after {
   background-image: url(../images/sprite.png);
-  background-position: -219px -176px;
+  background-position: -219px -188px;
   width: 10px;
   height: 7px;
   border: none;
@@ -8168,7 +8176,7 @@ input.form-control.error {
     color: #0099ff; }
     .sortbox .param-sort:after {
       background-image: url(../images/sprite.png);
-      background-position: -219px -176px;
+      background-position: -219px -188px;
       width: 10px;
       height: 7px;
       right: 6px;
@@ -8297,13 +8305,13 @@ input.form-control.error {
       padding: 0; }
       .products__list .item-products .btn-fav-in {
         background-image: url(../images/sprite.png);
-        background-position: 0px -155px;
+        background-position: -26px -155px;
         width: 26px;
         height: 23px; }
     .products__list .item-products .to-fav,
     .products__list .item-products .to-fav-noauth {
       background-image: url(../images/sprite.png);
-      background-position: -26px -155px;
+      background-position: 0px -155px;
       width: 26px;
       height: 23px; }
     .products__list .item-products .btn-tooltip {
@@ -9267,6 +9275,50 @@ input.form-control.error {
   #changeVehicle .modal-header, #changeVehicle .modal-body {
     padding-left: 2rem;
     padding-right: 2rem; } }
+
+.specifications {
+  margin-top: 2rem; }
+  .specifications .specification__title {
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 1.7rem; }
+  .specifications .item-specification {
+    color: #3f3f3f;
+    font-size: 1.5rem; }
+    .specifications .item-specification__row {
+      margin-top: .85rem;
+      display: flex; }
+    .specifications .item-specification__title {
+      flex-shrink: 0;
+      position: relative;
+      width: 19rem;
+      z-index: 1; }
+      .specifications .item-specification__title:after {
+        border-top: 1px solid #e7eaeb;
+        left: 0;
+        top: 10px;
+        width: 100%;
+        z-index: 1; }
+      .specifications .item-specification__title span {
+        background-color: #fff;
+        padding-right: 8px;
+        position: relative;
+        z-index: 2; }
+    .specifications .item-specification__value {
+      font-weight: 700;
+      flex-grow: 1;
+      padding-left: 8px; }
+  .specifications .other-specification {
+    display: none; }
+  .specifications .btn-show {
+    color: #0672ba;
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-top: .8rem; }
+    .specifications .btn-show:hover {
+      color: #0099ff; }
+      .specifications .btn-show:hover .icon {
+        filter: brightness(1.2); }
 
 .cart-page {
   overflow: initial; }
@@ -10627,7 +10679,7 @@ input.form-control.error {
 
 .icon-stock {
   background-image: url(../images/sprite.png);
-  background-position: -109px -104px;
+  background-position: -82px -104px;
   width: 27px;
   height: 27px; }
 
@@ -10645,7 +10697,7 @@ input.form-control.error {
 
 .icon-orders {
   background-image: url(../images/sprite.png);
-  background-position: -89px -74px;
+  background-position: -27px -74px;
   width: 31px;
   height: 25px; }
 
@@ -10675,7 +10727,7 @@ input.form-control.error {
 
 .icon-logout {
   background-image: url(../images/sprite.png);
-  background-position: -27px -74px;
+  background-position: -89px -74px;
   width: 31px;
   height: 25px; }
 
@@ -10705,7 +10757,7 @@ input.form-control.error {
 
 .icon-addressbook-sm {
   background-image: url(../images/sprite.png);
-  background-position: -219px 0px;
+  background-position: -136px -104px;
   width: 13px;
   height: 18px; }
 
@@ -10717,7 +10769,7 @@ input.form-control.error {
 
 .icon-orders-sm {
   background-image: url(../images/sprite.png);
-  background-position: -76px -178px;
+  background-position: -94px -178px;
   width: 18px;
   height: 15px; }
 
@@ -10729,13 +10781,13 @@ input.form-control.error {
 
 .icon-reward-sm {
   background-image: url(../images/sprite.png);
-  background-position: -136px -104px;
+  background-position: -219px 0px;
   width: 13px;
   height: 18px; }
 
 .icon-transactions-sm {
   background-image: url(../images/sprite.png);
-  background-position: -140px -155px;
+  background-position: -158px -155px;
   width: 18px;
   height: 18px; }
 
@@ -10753,19 +10805,19 @@ input.form-control.error {
 
 .icon-key {
   background-image: url(../images/sprite.png);
-  background-position: -178px -94px;
+  background-position: -178px -50px;
   width: 22px;
   height: 22px; }
 
 .icon-pencil {
   background-image: url(../images/sprite.png);
-  background-position: -178px -50px;
+  background-position: -178px -94px;
   width: 22px;
   height: 22px; }
 
 .icon-3line {
   background-image: url(../images/sprite.png);
-  background-position: -57px -33px;
+  background-position: -127px -94px;
   width: 14px;
   height: 10px; }
 
@@ -10783,7 +10835,7 @@ input.form-control.error {
 
 .icon-arrow-middle-right {
   background-image: url(../images/sprite.png);
-  background-position: -94px -178px;
+  background-position: -76px -178px;
   width: 18px;
   height: 15px; }
 

@@ -492,6 +492,44 @@ $(document).ready(function(){
 
 });
 
+
+function ChangeSwitchEnabledAppsearchFields(){
+	$("#change_model_select, #change_year_select, #change_body_select, #change_engine_select, #change_engineno_select").not(':focus').multipleSelect("disable");
+	if($('select#change_brand_select :selected').val()>0) {
+		$("#change_model_select").not(':focus').multipleSelect("enable");
+		$("#change_class_select").not(':focus').multipleSelect("enable");
+	}
+	if($('select#change_model_select :selected').val()>0) {
+		$("#change_year_select,#change_body_select, #change_engine_select, #change_engineno_select").not(':focus').multipleSelect("enable");
+	}
+}
+
+
+
+function ChangeSwitchEnabledAppsearchFields2(){
+	$("#change_model_select2, #change_year_select2, #change_body_select2, #change_engine_select2, #change_engineno_select2").not(':focus').multipleSelect("disable");
+	if($('select#change_brand_select2 :selected').val()>0) {
+		$("#change_model_select2").not(':focus').multipleSelect("enable");
+		$("#change_class_select2").not(':focus').multipleSelect("enable");
+	}
+	if($('select#change_model_select2 :selected').val()>0) {
+		$("#change_year_select2,#change_body_select2, #change_engine_select2, #change_engineno_select2").not(':focus').multipleSelect("enable");
+	}
+}
+
+function ChangeSwitchEnabledAppsearchFields3(){
+	$("#change_model_select3, #change_engine_select3").not(':focus').multipleSelect("disable");
+	if($('select#change_brand_select3 :selected').val()>0) {
+		$("#change_model_select3").not(':focus').multipleSelect("enable");
+		$("#change_class_select3").not(':focus').multipleSelect("enable");
+	}
+	if($('select#change_model_select3 :selected').val()>0) {
+		$("#change_engine_select3").not(':focus').multipleSelect("enable");
+	}
+}
+
+
+
 // COMPARE SCRIPT
 function fadeoutCompareInfo(){
 	$('.compare-info').fadeOut('normal',function(){
@@ -551,38 +589,12 @@ $(document).on('click','.jump-vehicles', function(e){
 	$("body,html").animate({scrollTop: destination }, 800);	
 });
 
-
-function ChangeSwitchEnabledAppsearchFields(){
-	$("#change_model_select, #change_year_select, #change_body_select, #change_engine_select, #change_engineno_select").not(':focus').multipleSelect("disable");
-	if($('select#change_brand_select :selected').val()>0) {
-		$("#change_model_select").not(':focus').multipleSelect("enable");
-		$("#change_class_select").not(':focus').multipleSelect("enable");
-	}
-	if($('select#change_model_select :selected').val()>0) {
-		$("#change_year_select,#change_body_select, #change_engine_select, #change_engineno_select").not(':focus').multipleSelect("enable");
-	}
-}
-
-
-
-function ChangeSwitchEnabledAppsearchFields2(){
-	$("#change_model_select2, #change_year_select2, #change_body_select2, #change_engine_select2, #change_engineno_select2").not(':focus').multipleSelect("disable");
-	if($('select#change_brand_select2 :selected').val()>0) {
-		$("#change_model_select2").not(':focus').multipleSelect("enable");
-		$("#change_class_select2").not(':focus').multipleSelect("enable");
-	}
-	if($('select#change_model_select2 :selected').val()>0) {
-		$("#change_year_select2,#change_body_select2, #change_engine_select2, #change_engineno_select2").not(':focus').multipleSelect("enable");
-	}
-}
-
-	function ChangeSwitchEnabledAppsearchFields3(){
-		$("#change_model_select3, #change_engine_select3").not(':focus').multipleSelect("disable");
-		if($('select#change_brand_select3 :selected').val()>0) {
-			$("#change_model_select3").not(':focus').multipleSelect("enable");
-			$("#change_class_select3").not(':focus').multipleSelect("enable");
-		}
-		if($('select#change_model_select3 :selected').val()>0) {
-			$("#change_engine_select3").not(':focus').multipleSelect("enable");
-		}
-	}
+$(document).on('click','.specifications .btn-show', function(e){
+	e.preventDefault();
+	var $this = $(this);
+	$('.other-specification').slideToggle();
+	$this.find('span').text(function(i, text){
+		return text === "Show full specifications" ? "Hide full specifications" : "Show full specifications";
+	});
+	$this.find('.icon').toggleClass('icon-rotate180')
+})

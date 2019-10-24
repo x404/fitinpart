@@ -439,6 +439,15 @@ em strong
 		@include sprite($icon-4dots-square);
 		margin-right: 8px;
 	}
+
+	&-arrow-down-blue{
+		@include sprite($icon-arrow-down-blue);
+		margin-right: 8px;
+	}
+
+	&-rotate180{
+		transform: rotate(180deg)
+	}
 } 
 // #icon
 
