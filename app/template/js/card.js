@@ -382,6 +382,114 @@ $(document).ready(function(){
 	});
 	// #MOTO
 
+
+	// =HD
+	$("#change_brand_select3").multipleSelect({
+		single: true,
+		filter: true,
+		placeholder : 'Maker',
+		noMatchesFound:$('#chk_app_search_sg_only').is(':checked')?'No matches found<br>To show all brands Turn <strong>OFF</strong> Common SG Veh':'No matches found',
+		onFilter: function(){
+			change_brandlist3.update();
+		},
+		onOpen: function() {
+			change_brandlist3.update();
+		},
+
+		onClick: function(view) {
+		//Unset the all selection values
+		   $("#change_class_select3, #change_model_select3, #change_engine_select3").multipleSelect("uncheckAll");
+
+		   ChangeSwitchEnabledAppsearchFields3();
+		   //Get class and model
+		   // getClass(0, 0, 0);
+		   // getModel(0, 0, 0, 0);
+		}
+	});
+
+	$("#change_class_select3").multipleSelect({
+		filter: true,
+		single: true,
+		placeholder : 'Class',
+		// noMatchesFound:$('#chk_app_search_sg_only').is(':checked')?'No matches found<br>To show all classes Turn <strong>OFF</strong> Common SG Veh':'No matches found',
+		onFilter: function(){
+			change_classlist3.update();
+		},
+		onOpen: function() {
+			change_classlist3.update();
+		},
+		onClick: function(view) {
+			$(" #change_model_select3, #change_engine_select3").multipleSelect("uncheckAll");
+			ChangeSwitchEnabledAppsearchFields3();
+			// getModel(0,0,0,0);
+		}
+	});
+
+	$("#change_model_select3").multipleSelect({
+		filter: true,//($( window ).width()>800),
+		multiple: true,
+		multipleWidth: 228,
+		selectAll:false,
+		maxHeight:($( window ).width()<800)?100:250,
+		// noMatchesFound:$('#chk_app_search_sg_only').is(':checked')?'No matches found<br>To show all models Turn <strong>OFF</strong> Common SG Veh':'No matches found',
+		placeholder : 'Model',
+		textTemplate: function ($el) {
+			var txt=$el.html();
+			var opt=txt.replace(/\[/,'<i class="ms_aliases">[').replace(/\]/,']</i>');
+			return opt;
+		},
+		onFilter: function(){
+			change_modellist3.update();
+		},
+		onOpen: function() {
+			change_modellist3.update();
+		},
+		onClick: function() {
+			$("#change_engine_select3").multipleSelect("uncheckAll");
+
+		ChangeSwitchEnabledAppsearchFields3();
+		// getYears(false);
+		}
+	});
+
+	$("#change_engine_select3").multipleSelect({
+		filter: true,
+		single: true,
+		placeholder : 'Engine',
+		noMatchesFound:$('#chk_app_search_sg_only').is(':checked')?'No matches found<br>To show all engines Turn <strong>OFF</strong> Common SG Veh':'No matches found',
+		onFilter: function(){
+			change_enginelist3.update();
+		},
+		onOpen: function() {
+			change_enginelist3.update();
+		},
+		onClick: function(view) {
+		// 	if(view.value!=AppSearchCurrentParams.engine) {
+		// 	   getEngineNo(false);
+		// 	}
+		}
+	});
+
+
+	var change_brandlist3 = new PerfectScrollbar('#change_hd .brand .listwrapper', {
+		wheelPropagation: true,
+		minScrollbarLength: 100,
+		maxScrollbarLength: 100,
+	});
+
+	var change_modellist3 = new PerfectScrollbar('#change_hd .model .listwrapper', {
+		wheelPropagation: true,
+		minScrollbarLength: 100,
+		maxScrollbarLength: 100,
+	});
+
+	var change_enginelist3 = new PerfectScrollbar('#change_hd .engine .listwrapper', {
+		wheelPropagation: true,
+		minScrollbarLength: 100,
+		maxScrollbarLength: 100,
+	});
+	// #HD
+
 });
 
 // COMPARE SCRIPT
@@ -467,3 +575,14 @@ function ChangeSwitchEnabledAppsearchFields2(){
 		$("#change_year_select2,#change_body_select2, #change_engine_select2, #change_engineno_select2").not(':focus').multipleSelect("enable");
 	}
 }
+
+	function ChangeSwitchEnabledAppsearchFields3(){
+		$("#change_model_select3, #change_engine_select3").not(':focus').multipleSelect("disable");
+		if($('select#change_brand_select3 :selected').val()>0) {
+			$("#change_model_select3").not(':focus').multipleSelect("enable");
+			$("#change_class_select3").not(':focus').multipleSelect("enable");
+		}
+		if($('select#change_model_select3 :selected').val()>0) {
+			$("#change_engine_select3").not(':focus').multipleSelect("enable");
+		}
+	}

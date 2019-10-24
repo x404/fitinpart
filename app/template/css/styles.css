@@ -7005,7 +7005,9 @@ input.form-control.error {
 .smartsearch .vehicle-control,
 #changeVehicle .vehicle-control {
   margin-bottom: 1.5rem;
-  width: 100%; }
+  width: 100%;
+  max-width: 100%;
+  flex-basis: 100%; }
   .smartsearch .vehicle-control .ms-drop.bottom,
   #changeVehicle .vehicle-control .ms-drop.bottom {
     left: 0; }

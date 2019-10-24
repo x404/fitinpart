@@ -211,6 +211,8 @@
 	.vehicle-control{
 		margin-bottom: 1.5rem;
 		width: 100%;
+		max-width: 100%;
+		flex-basis: 100%;
 		.ms-drop.bottom{
 			left: 0;
 		}
