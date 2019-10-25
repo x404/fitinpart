@@ -3891,7 +3891,7 @@ h3 {
 #changeVehicle__header .ms-choice, .main h2, .main h3, .main h4, .main h5, .main h6, .content blockquote, .lastnews .item-news__title,
 .news__list .item-news__title, .aboutus-page .intro__title, .aboutus-page .about__title, .aboutus-page .quote, .aboutus-page .advantages, .aboutus-page .item-products__title, .aboutus-page .brands__text, .title-md, .main aside .widget-title, .main aside .btn-filter, .sortbox .sort-label, .item-products__title, .products__list .item-products .btn-tooltip, .products__list .item-products .tooltip-title, .modal-v2 .box__title, #addtocardModal1 .product-title,
 #successAddtocardModal .product-title, #addtocardModal1 .count-price .price,
-#successAddtocardModal .count-price .price, .inner .card-page .details__title, .msg-searched, .specifications .specification__title, #successAddtocardModal .price, .cart-page .cart-table .cost, .cart-page .salescard__item .title, .comparison__body .product-title, .wiper-search .intro, .wiper-search .steps, .perfomance-page .intro .subtitle, .perfomance-page .list-title, .table-title, .logout, .myaccount aside ul, .myaccount aside .tel, .myaccount .plate__title, .myaccount .plate .statistic__field, .myaccount .ordersstat .num, .mob-accountmenu .btn-accountmenu, .mob-accountmenu .menu, .latest-orders header, .orders__list .tracking__title, .orders__list .orderinfo .print, .orders__list .orderinfo__title, .orders__list .subtitle, #quickorderModal .modal-body h2, #quickorderModal .modal-body ol li:before, .region .subtitle, .garagesearch .left .num, .addvehicle-page .plate__title, .wishlist-count, .address-entries__list .item-entry .num, .address-entries__list .item-entry .radio__text:after, .mob-header .btn-menu, .mob-header .tel {
+#successAddtocardModal .count-price .price, .inner .card-page .details__title, .inner .card-page .item-stock__title, .msg-searched, .specifications .specification__title, #successAddtocardModal .price, .cart-page .cart-table .cost, .cart-page .salescard__item .title, .comparison__body .product-title, .wiper-search .intro, .wiper-search .steps, .perfomance-page .intro .subtitle, .perfomance-page .list-title, .table-title, .logout, .myaccount aside ul, .myaccount aside .tel, .myaccount .plate__title, .myaccount .plate .statistic__field, .myaccount .ordersstat .num, .mob-accountmenu .btn-accountmenu, .mob-accountmenu .menu, .latest-orders header, .orders__list .tracking__title, .orders__list .orderinfo .print, .orders__list .orderinfo__title, .orders__list .subtitle, #quickorderModal .modal-body h2, #quickorderModal .modal-body ol li:before, .region .subtitle, .garagesearch .left .num, .addvehicle-page .plate__title, .wishlist-count, .address-entries__list .item-entry .num, .address-entries__list .item-entry .radio__text:after, .mob-header .btn-menu, .mob-header .tel {
   font-family: 'Neo Sans Pro', Verdana, sans-serif; }
 
 strong,
@@ -9230,11 +9230,48 @@ input.form-control.error {
           color: #0099ff; }
           .inner .card-page .details .actions .btn-choose:hover .icon {
             filter: brightness(1); }
+  .inner .card-page .stock {
+    margin-top: 2.5rem; }
+    .inner .card-page .stock__title {
+      color: #199922;
+      font-size: 2rem;
+      font-weight: 700; }
+    .inner .card-page .stock-text {
+      font-size: 1.6rem;
+      font-weight: 700;
+      margin-top: .3rem; }
+  .inner .card-page .stock__list {
+    margin-top: .5rem; }
+  .inner .card-page .item-stock {
+    background-color: #f5f7f8;
+    display: flex;
+    margin-top: 2px;
+    padding: 1.2rem 2rem 1.2rem 1.5rem; }
+    .inner .card-page .item-stock__left {
+      flex-grow: 1; }
+    .inner .card-page .item-stock__right {
+      flex-shrink: 0;
+      width: 55px; }
+    .inner .card-page .item-stock__title {
+      font-size: 1.5rem;
+      font-weight: 700; }
+    .inner .card-page .item-stock__text {
+      color: #464646;
+      line-height: 1.54;
+      margin-top: .5rem;
+      font-size: 1.3rem;
+      padding-right: 4.5rem; }
+    .inner .card-page .item-stock .instock {
+      display: block;
+      margin-top: .5rem;
+      text-align: center; }
+      .inner .card-page .item-stock .instock .indicator {
+        margin-left: 0; }
   .inner .card-page .delivery {
     border-top: 1px solid #f0f0f0;
-    padding-top: 1.6rem;
     line-height: 1.7;
-    margin-top: 2rem;
+    margin-top: 1.4rem;
+    padding-top: 1.6rem;
     padding-left: 72px;
     position: relative; }
     .inner .card-page .delivery:before {
@@ -9293,7 +9330,7 @@ input.form-control.error {
     font-size: 3rem; }
 
 .card__right .buy {
-  box-shadow: 0 5px 20 px rgba(0, 153, 255, 0.5);
+  box-shadow: 0 5px 20px rgba(0, 153, 255, 0.5);
   min-width: 32rem;
   width: 100%; }
   .card__right .buy__inner {
