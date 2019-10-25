@@ -9293,9 +9293,11 @@ input.form-control.error {
     font-size: 1.5rem;
     padding: 3rem 0 2rem; }
     .inner .card-page .description h2 {
+      font-family: 'Proxima Nova', sans-serif;
       font-size: 3rem;
       margin-top: 0; }
     .inner .card-page .description h3 {
+      font-family: 'Proxima Nova', sans-serif;
       font-size: 2.5rem;
       margin-top: 1rem; }
     .inner .card-page .description li {
@@ -9379,6 +9381,88 @@ input.form-control.error {
         min-height: 5rem; }
       .inner .card-page .assembly__list .tr-item .td-1, .inner .card-page .assembly__list .tr-item .td-2, .inner .card-page .assembly__list .tr-item .td-3 {
         font-size: 1.5rem; }
+  .inner .card-page .cars__list {
+    border-top: 10px solid #e4e7e9;
+    font-size: 1.5rem;
+    padding: 5.7rem 0 0; }
+    .inner .card-page .cars__list .title {
+      font-family: 'Proxima Nova', sans-serif;
+      font-size: 3rem; }
+    .inner .card-page .cars__list .vehicle {
+      padding-right: 5.5rem; }
+      .inner .card-page .cars__list .vehicle .title {
+        margin-bottom: 1.3rem; }
+  .inner .card-page .item-vehicle {
+    background-color: #fff;
+    cursor: pointer;
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-top: .5rem;
+    transition: box-shadow .3s; }
+    .inner .card-page .item-vehicle:hover {
+      box-shadow: 0 5px 10px rgba(0, 113, 189, 0.15); }
+    .inner .card-page .item-vehicle__row {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      padding: 1.5rem; }
+      .inner .card-page .item-vehicle__row .arrow {
+        background-color: #0a74bb;
+        background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAHCAYAAAA4R3wZAAAAcElEQVQoU2P8//+/EwMDwxwg7mBkZJwFpHECoNo0oGQFEKcwQjXuhapOx6UZqmkmVJ0zI4gBFMwEUtNwaUbTlAU0fDpYIz7N2DSB1MM1YtGcBTUT5hKwTTCLUDRi0QxTh6IJw0YkZ4NCrxHKr8cWYADdcjaGjxct/gAAAABJRU5ErkJggg==");
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 50%;
+        height: 30px;
+        width: 30px;
+        transition: transform .3s; }
+      .inner .card-page .item-vehicle__row .td {
+        margin-right: 2rem; }
+        .inner .card-page .item-vehicle__row .td:last-child {
+          margin-right: 0; }
+        .inner .card-page .item-vehicle__row .td-1 {
+          width: 20px; }
+        .inner .card-page .item-vehicle__row .td-2 {
+          width: 30%; }
+        .inner .card-page .item-vehicle__row .td-3 {
+          flex-grow: 1; }
+        .inner .card-page .item-vehicle__row .td-4 {
+          width: 40px; }
+      .inner .card-page .item-vehicle__row.open .arrow {
+        transform: rotate(180deg);
+        background-color: #778d9b; }
+  .inner .card-page .orders__list {
+    background-color: #eaecf0;
+    display: none;
+    font-size: 1.4rem;
+    margin-top: 0;
+    padding: 2rem; }
+    .inner .card-page .orders__list .tr {
+      color: #535353; }
+      .inner .card-page .orders__list .tr-head {
+        min-height: 52px; }
+      .inner .card-page .orders__list .tr-item {
+        margin-top: .9rem;
+        margin-bottom: 0; }
+        .inner .card-page .orders__list .tr-item .inner {
+          min-height: 51px;
+          padding-right: 0; }
+        .inner .card-page .orders__list .tr-item .td {
+          font-size: 1.4rem;
+          font-weight: normal !important; }
+      .inner .card-page .orders__list .tr .td {
+        padding-left: 2.3rem; }
+        .inner .card-page .orders__list .tr .td-1 {
+          width: 22%; }
+        .inner .card-page .orders__list .tr .td-2 {
+          width: 17%; }
+        .inner .card-page .orders__list .tr .td-3 {
+          width: 12%; }
+        .inner .card-page .orders__list .tr .td-4 {
+          width: 12%; }
+        .inner .card-page .orders__list .tr .td-5 {
+          width: 13%; }
+        .inner .card-page .orders__list .tr .td-6 {
+          width: 24%; }
 
 .msg-searched {
   background-color: #ece2d0;

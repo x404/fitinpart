@@ -19,6 +19,11 @@ $(document).ready(function(){
 	});
 
 
+	$('.item-vehicle__row').click(function(e){
+		e.preventDefault();
+		$(this).toggleClass('open').next('.orders__list').slideToggle()
+	})
+
 
 
 	$('#otherbrand-carousel').slick({
