@@ -3910,7 +3910,7 @@ strong,
 
 .before, .icon:before, .btn-view:before, .btn-google:before, .btn-facebook:before, .top__left:before, .top__menu li.flexMenu-viewMore > a:after, .countmodule .minus:before, .countmodule .plus:before, .countmodule .plus:after, .search .vehicle-search-str .vehicle-search-item:after, .promo .wrapper:before, .visual__item:before, .modal-content-bg:before, .modal-content-bg:after, .modal-content-rbg:after, .modal-info:after, .modal-menu:before, .modal-menu .catalog:before, .breadcrumbs ul li.B_homecrumb a:before, .content ul li:before, .aboutus-page .intro__title:before, .aboutus-page .advantages__text:after, .aboutus-page .ouroffice__pic:after, #fitinpart-carousel a:after, #fitinpart-carousel a:before, .bl-line:after,
 .bc-line:after, .sortbox .param-sort:after, .products__list .item-products .additional__panel .item button:before, .label-tooltip:before,
-.tooltip-body:before, #notifyModal .settings-link:before, .inner .card-page .compare .btn.to-compare:before, .inner .card-page .compare .btn-compare-in:before, .card__right .item-wholesale__row:after, .specifications .item-specification__title:after, .cart-page .summary .option-item:after, .cart-page .calculate .title:before, .wiper-search .intro__body:after, .wiper-search .intro__body:before, .wiper-search .details .label:before, .perfomance-page .intro__body:after, .perfomance-page .intro__body:before, .perfomance-page .subtitle:before, .content-location .days:not(:last-child):after, .mob-accountmenu .btn-accountmenu:before, .orders__list .tracking__item:before, .orders__list .tracking__item:after, .notify-settings .option-item:after, .stockrequest__list .reqstatus:before, .wishlist-page .item-products__note .btn-ok:before,
+.tooltip-body:before, #notifyModal .settings-link:before, .inner .card-page .compare .btn.to-compare:before, .inner .card-page .compare .btn-compare-in:before, .inner .card-page .delivery:before, .card__right .item-wholesale__row:after, .specifications .item-specification__title:after, .cart-page .summary .option-item:after, .cart-page .calculate .title:before, .wiper-search .intro__body:after, .wiper-search .intro__body:before, .wiper-search .details .label:before, .perfomance-page .intro__body:after, .perfomance-page .intro__body:before, .perfomance-page .subtitle:before, .content-location .days:not(:last-child):after, .mob-accountmenu .btn-accountmenu:before, .orders__list .tracking__item:before, .orders__list .tracking__item:after, .notify-settings .option-item:after, .stockrequest__list .reqstatus:before, .wishlist-page .item-products__note .btn-ok:before,
 .cart-table .item-products__note .btn-ok:before, .wishlist-page .item-products .actions .btn:before,
 .cart-table .item-products .actions .btn:before {
   content: "";
@@ -9230,6 +9230,22 @@ input.form-control.error {
           color: #0099ff; }
           .inner .card-page .details .actions .btn-choose:hover .icon {
             filter: brightness(1); }
+  .inner .card-page .delivery {
+    border-top: 1px solid #f0f0f0;
+    padding-top: 1.6rem;
+    line-height: 1.7;
+    margin-top: 2rem;
+    padding-left: 72px;
+    position: relative; }
+    .inner .card-page .delivery:before {
+      background-image: url(../images/sprite.png);
+      background-position: -43px 0px;
+      width: 54px;
+      height: 33px;
+      left: 0;
+      top: 2.5rem; }
+    .inner .card-page .delivery strong {
+      color: #0672ba; }
 
 .msg-searched {
   background-color: #ece2d0;
