@@ -9597,7 +9597,13 @@ input.form-control.error {
   margin-top: 1.5rem; }
 
 #successAddtocardModal .modal-content {
+  min-height: 275px;
   padding-bottom: 2rem; }
+  #successAddtocardModal .modal-content:after {
+    background-image: url("../images/bg/3-triangle-middle.png");
+    width: 118px;
+    height: 272px;
+    right: -118px; }
 
 .cart-page {
   overflow: initial; }

@@ -748,6 +748,13 @@
 	}
 
 	.modal-content{
+		min-height: 275px;
 		padding-bottom: 2rem;
+		&:after{
+			background-image: url('../images/bg/3-triangle-middle.png');
+			width: 118px;
+			height: 272px;
+			right: -118px;
+		}
 	}
 }
