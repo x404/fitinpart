@@ -20,6 +20,166 @@ $(document).ready(function(){
 
 
 
+
+	$('#otherbrand-carousel').slick({
+		prevArrow:'<button class="slick-arrow slick-arrow-round-blue slick-prev" aria-label="Previous" type="button"><i class=" icon icon-slider-arrow-blue"></i></button>',
+		nextArrow:'<button class="slick-arrow slick-arrow-round-blue slick-next" aria-label="Next" type="button"><i class=" icon icon-slider-arrow-blue"></i></button>',
+		dots: false,
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		autoplay: false,
+		arrows : true,
+		appendArrows : $('#other-brands .arrows'),
+		responsive: [
+			{
+				breakpoint: 1400,
+				settings: {
+					slidesToShow: 3,
+					slidesToScroll: 1
+				}
+			},
+			{
+				breakpoint: 992,
+				settings: {
+					slidesToShow: 4,
+					slidesToScroll: 1
+				}
+			},
+			{
+				breakpoint: 960,
+				settings: {
+					slidesToShow: 3,
+					slidesToScroll: 1
+				}
+			},
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 1
+				}
+			},
+			{
+				breakpoint: 560,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 1
+				}
+			},
+			{
+				breakpoint: 450,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					centerMode: true,
+					centerPadding: '80px'
+				}
+			},
+			{
+				breakpoint: 400,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					centerMode: true,
+					centerPadding: '50px'
+				}
+			},
+			{
+				breakpoint: 350,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					centerMode: true,
+					centerPadding: '35px'
+				}
+			}
+		]
+	});
+
+	$('#alternative-carousel').slick({
+		prevArrow:'<button class="slick-arrow slick-arrow-round-blue slick-prev" aria-label="Previous" type="button"><i class=" icon icon-slider-arrow-blue"></i></button>',
+		nextArrow:'<button class="slick-arrow slick-arrow-round-blue slick-next" aria-label="Next" type="button"><i class=" icon icon-slider-arrow-blue"></i></button>',
+		dots: false,
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		autoplay: false,
+		arrows : true,
+		appendArrows : $('#alternative-product .arrows'),
+		responsive: [
+			{
+				breakpoint: 1400,
+				settings: {
+					slidesToShow: 3,
+					slidesToScroll: 1
+				}
+			},
+			{
+				breakpoint: 992,
+				settings: {
+					slidesToShow: 4,
+					slidesToScroll: 1
+				}
+			},
+			{
+				breakpoint: 960,
+				settings: {
+					slidesToShow: 3,
+					slidesToScroll: 1
+				}
+			},
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 1
+				}
+			},
+			{
+				breakpoint: 560,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 1
+				}
+			},
+			{
+				breakpoint: 450,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					centerMode: true,
+					centerPadding: '80px'
+				}
+			},
+			{
+				breakpoint: 400,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					centerMode: true,
+					centerPadding: '50px'
+				}
+			},
+			{
+				breakpoint: 350,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					centerMode: true,
+					centerPadding: '35px'
+				}
+			}
+		]
+	});
+
+
+	$('#otherbrand-brands-tab').on('shown.bs.tab', function (e) {
+		$('#alternative-carousel').slick('reinit');
+	});
+
+	$('#alternative-product-tab').on('shown.bs.tab', function (e) {
+		$('#alternative-carousel').slick('reinit');
+	});
+
 	// CAR
 	$("#change_brand_select").multipleSelect({
 		single: true,
@@ -489,6 +649,7 @@ $(document).ready(function(){
 		maxScrollbarLength: 100,
 	});
 	// #HD
+
 
 });
 

@@ -3891,7 +3891,7 @@ h3 {
 #changeVehicle__header .ms-choice, .main h2, .main h3, .main h4, .main h5, .main h6, .content blockquote, .lastnews .item-news__title,
 .news__list .item-news__title, .aboutus-page .intro__title, .aboutus-page .about__title, .aboutus-page .quote, .aboutus-page .advantages, .aboutus-page .item-products__title, .aboutus-page .brands__text, .title-md, .main aside .widget-title, .main aside .btn-filter, .sortbox .sort-label, .item-products__title, .products__list .item-products .btn-tooltip, .products__list .item-products .tooltip-title, .modal-v2 .box__title, #addtocardModal1 .product-title,
 #successAddtocardModal .product-title, #addtocardModal1 .count-price .price,
-#successAddtocardModal .count-price .price, .inner .card-page .details__title, .inner .card-page .item-stock__title, .inner .card-page .assemblies .nav-title, .msg-searched, .specifications .specification__title, #successAddtocardModal .price, .cart-page .cart-table .cost, .cart-page .salescard__item .title, .comparison__body .product-title, .wiper-search .intro, .wiper-search .steps, .perfomance-page .intro .subtitle, .perfomance-page .list-title, .table-title, .logout, .myaccount aside ul, .myaccount aside .tel, .myaccount .plate__title, .myaccount .plate .statistic__field, .myaccount .ordersstat .num, .mob-accountmenu .btn-accountmenu, .mob-accountmenu .menu, .latest-orders header, .orders__list .tracking__title, .orders__list .orderinfo .print, .orders__list .orderinfo__title, .orders__list .subtitle, #quickorderModal .modal-body h2, #quickorderModal .modal-body ol li:before, .region .subtitle, .garagesearch .left .num, .addvehicle-page .plate__title, .wishlist-count, .address-entries__list .item-entry .num, .address-entries__list .item-entry .radio__text:after, .mob-header .btn-menu, .mob-header .tel {
+#successAddtocardModal .count-price .price, .inner .card-page .details__title, .inner .card-page .item-stock__title, .inner .card-page .assembly-brands .nav-title, .msg-searched, .specifications .specification__title, #successAddtocardModal .price, .cart-page .cart-table .cost, .cart-page .salescard__item .title, .comparison__body .product-title, .wiper-search .intro, .wiper-search .steps, .perfomance-page .intro .subtitle, .perfomance-page .list-title, .table-title, .logout, .myaccount aside ul, .myaccount aside .tel, .myaccount .plate__title, .myaccount .plate .statistic__field, .myaccount .ordersstat .num, .mob-accountmenu .btn-accountmenu, .mob-accountmenu .menu, .latest-orders header, .orders__list .tracking__title, .orders__list .orderinfo .print, .orders__list .orderinfo__title, .orders__list .subtitle, #quickorderModal .modal-body h2, #quickorderModal .modal-body ol li:before, .region .subtitle, .garagesearch .left .num, .addvehicle-page .plate__title, .wishlist-count, .address-entries__list .item-entry .num, .address-entries__list .item-entry .radio__text:after, .mob-header .btn-menu, .mob-header .tel {
   font-family: 'Neo Sans Pro', Verdana, sans-serif; }
 
 strong,
@@ -9092,7 +9092,8 @@ input.form-control.error {
 
 .inner .card-page {
   background-color: #fff;
-  padding-bottom: 0; }
+  padding-bottom: 0;
+  overflow: auto; }
   .inner .card-page .slider-nav > div {
     margin-top: 10px;
     margin-bottom: 10px; }
@@ -9299,26 +9300,53 @@ input.form-control.error {
       margin-top: 1rem; }
     .inner .card-page .description li {
       margin: 1.7rem 0; }
+  .inner .card-page .assembly-brands .nav-title {
+    font-weight: 700;
+    font-size: 2.5rem; }
+    .inner .card-page .assembly-brands .nav-title a {
+      color: #8f9fa7;
+      text-decoration: none; }
+      .inner .card-page .assembly-brands .nav-title a.active {
+        color: #000; }
+      .inner .card-page .assembly-brands .nav-title a:not(.active):hover {
+        color: #0099ff; }
+    .inner .card-page .assembly-brands .nav-title li {
+      padding-left: 0;
+      margin: 1rem 0; }
+      .inner .card-page .assembly-brands .nav-title li:before {
+        display: none; }
+      .inner .card-page .assembly-brands .nav-title li.separator {
+        border-left: 2px solid #abb8c0;
+        padding: 0;
+        margin-left: 2rem;
+        margin-right: 2rem; }
+  .inner .card-page .assembly-brands .products__list {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: -15px; }
+  .inner .card-page .assembly-brands .item-products {
+    width: 305px; }
+    .inner .card-page .assembly-brands .item-products__title a {
+      color: #000;
+      text-decoration: none; }
+  .inner .card-page .assembly-brands .item-products {
+    height: 455px; }
+  .inner .card-page .assembly-brands #other-brands,
+  .inner .card-page .assembly-brands #alternative-product {
+    position: relative; }
+  .inner .card-page .assembly-brands .slick-slide {
+    padding: 15px 0; }
+  .inner .card-page .assembly-brands .arrows {
+    position: absolute;
+    top: -15px;
+    right: 35px; }
+  .inner .card-page .assembly-brands .slick-prev {
+    left: -40px; }
+  .inner .card-page .assembly-brands .slick-next {
+    transform: rotate(180deg); }
   .inner .card-page .assemblies {
-    padding-bottom: 4rem; }
-    .inner .card-page .assemblies .nav-title {
-      font-weight: 700;
-      font-size: 2.5rem; }
-      .inner .card-page .assemblies .nav-title a {
-        color: #8f9fa7;
-        text-decoration: none; }
-        .inner .card-page .assemblies .nav-title a.active {
-          color: #000; }
-      .inner .card-page .assemblies .nav-title li {
-        padding-left: 0;
-        margin: 1rem 0; }
-        .inner .card-page .assemblies .nav-title li:before {
-          display: none; }
-        .inner .card-page .assemblies .nav-title li.separator {
-          border-left: 2px solid #abb8c0;
-          padding: 0;
-          margin-left: 2rem;
-          margin-right: 2rem; }
+    padding-bottom: 4rem;
+    padding-right: 3rem; }
   .inner .card-page .assembly__list {
     margin-top: .8rem; }
     .inner .card-page .assembly__list .tr .td {

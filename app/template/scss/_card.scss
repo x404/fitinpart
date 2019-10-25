@@ -1,7 +1,7 @@
 .inner .card-page{
 	background-color: #fff;
 	padding-bottom: 0;
-	
+	overflow: auto;
 	// slider nav
 	.slider-nav{
 		& > div{
@@ -313,9 +313,7 @@
 	}
 
 
-	// assemblies
-	.assemblies{
-		padding-bottom: 4rem;
+	.assembly-brands{
 		.nav-title{
 			@extend .neosans;
 			font-weight: 700;
@@ -325,6 +323,9 @@
 				text-decoration: none;
 				&.active{
 					color: #000;
+				}
+				&:not(.active):hover{
+					color: $color9;
 				}
 			}
 			li{
@@ -341,6 +342,55 @@
 				}
 			}
 		}
+
+		.products__list {
+			margin-left: 0;
+			margin-right: 0;
+			margin-top: -15px;
+		}
+		.item-products{
+			width: 305px;
+			&__title{
+				a{
+					color: #000;
+					text-decoration: none;
+				}
+			}
+		}
+
+		.item-products{
+			height: 455px;
+		}
+
+		#other-brands,
+		#alternative-product{
+			position: relative;
+		}
+
+		.slick-slide{
+			padding: 15px 0;
+		}
+
+		.arrows{
+			position: absolute;
+			top: -15px;
+			right: 35px;
+		}
+		.slick{
+			&-prev{
+				left: -40px;
+			}
+			&-next{
+				transform: rotate(180deg)
+			}
+		}
+	}
+
+	// assemblies
+	.assemblies{
+		padding-bottom: 4rem;
+		padding-right: 3rem;
+
 	}
 
 	.assembly__list{
@@ -671,8 +721,6 @@
 		}
 	}
 }
-
-
 
 
 #successAddtocardModal{
