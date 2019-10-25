@@ -311,6 +311,90 @@
 			margin: 1.7rem 0;
 		}
 	}
+
+
+	// assemblies
+	.assemblies{
+		padding-bottom: 4rem;
+		.nav-title{
+			@extend .neosans;
+			font-weight: 700;
+			font-size: 2.5rem;
+			a{
+				color: #8f9fa7;
+				text-decoration: none;
+				&.active{
+					color: #000;
+				}
+			}
+			li{
+				padding-left: 0;
+				margin: 1rem 0;
+				&:before{
+					display: none;
+				}
+				&.separator{
+					border-left: 2px solid #abb8c0;
+					padding: 0;
+					margin-left: 2rem;
+					margin-right: 2rem;
+				}
+			}
+		}
+	}
+
+	.assembly__list{
+		margin-top: .8rem;
+		.tr{
+			.td{
+				padding-left: 1.5rem;
+				padding-right: 1rem;
+				flex-shrink: 0;
+				&-1{
+					width: 25%;
+				}
+				&-2{
+					width: 25%;
+				}
+				&-3{
+					width: 50%;
+				}
+
+			}
+			&-head{
+				color: #000;
+				font-size: 1.6rem;
+				min-height: 5.5rem;
+			}
+
+			&-item{
+				background-color: transparent;
+				font-size: 1.5rem;
+				margin-bottom: 0;
+				transition: background-color .3s;
+				&:hover{
+					background-color: #fff;
+					box-shadow: none;
+				}
+				a{
+					text-decoration: none;
+					&:hover{
+						color: $color9;
+					}
+				}
+				.inner{
+					min-height: 5rem;
+				}
+				.td{
+					&-1,
+					&-2,
+					&-3{
+						font-size: 1.5rem;
+					}
+				}
+			}
+		}
+	}
 }
 
 .msg-searched{
