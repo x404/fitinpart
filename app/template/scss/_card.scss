@@ -466,6 +466,8 @@
 		}
 	}
 
+
+
 	.item-vehicle{
 		background-color: #fff;
 		cursor: pointer;
@@ -500,7 +502,7 @@
 				}
 
 				&-1{
-					width: 20px;
+					width: 32px;
 				}
 				&-2{
 					width: 30%
@@ -522,6 +524,7 @@
 		}
 	}
 
+	// =orders list
 	.orders__list{
 		background-color: #eaecf0;
 		display: none;
@@ -557,6 +560,45 @@
 			}
 		}
 	}
+	// =orders list
+
+
+	// =oenumbers__list
+	.oenumbers{
+		.title{
+			margin-bottom: 1.3rem;
+		}		
+	}
+	.oenumbers__list{
+		margin-top: 0;
+
+		font-size: 1.5rem;
+
+		.tr{
+			&-head{
+				font-size: 1.6rem;
+				min-height: 51px;
+			}
+			&-item{
+				background-color: transparent;
+				margin-bottom: 0;
+				transition: background-color .3s;
+				.inner{
+					min-height: 51px;
+				}
+				&:hover{
+					background-color: #fff;
+					box-shadow: none;
+				}
+			}
+		}
+
+		.td{
+			padding-left: 2rem;
+			width: 50%;
+		}
+	}
+
 }
 
 .msg-searched{

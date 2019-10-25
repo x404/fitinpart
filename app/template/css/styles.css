@@ -9420,7 +9420,7 @@ input.form-control.error {
         .inner .card-page .item-vehicle__row .td:last-child {
           margin-right: 0; }
         .inner .card-page .item-vehicle__row .td-1 {
-          width: 20px; }
+          width: 32px; }
         .inner .card-page .item-vehicle__row .td-2 {
           width: 30%; }
         .inner .card-page .item-vehicle__row .td-3 {
@@ -9463,6 +9463,26 @@ input.form-control.error {
           width: 13%; }
         .inner .card-page .orders__list .tr .td-6 {
           width: 24%; }
+  .inner .card-page .oenumbers .title {
+    margin-bottom: 1.3rem; }
+  .inner .card-page .oenumbers__list {
+    margin-top: 0;
+    font-size: 1.5rem; }
+    .inner .card-page .oenumbers__list .tr-head {
+      font-size: 1.6rem;
+      min-height: 51px; }
+    .inner .card-page .oenumbers__list .tr-item {
+      background-color: transparent;
+      margin-bottom: 0;
+      transition: background-color .3s; }
+      .inner .card-page .oenumbers__list .tr-item .inner {
+        min-height: 51px; }
+      .inner .card-page .oenumbers__list .tr-item:hover {
+        background-color: #fff;
+        box-shadow: none; }
+    .inner .card-page .oenumbers__list .td {
+      padding-left: 2rem;
+      width: 50%; }
 
 .msg-searched {
   background-color: #ece2d0;
@@ -11804,14 +11824,16 @@ input.form-control.error {
 .order-items__list,
 .stockrequest__list,
 .transactions__list,
-.assembly__list {
+.assembly__list,
+.oenumbers__list {
   color: #2b2b2b;
   margin-top: 2.2rem; }
   .orders__list .tr,
   .order-items__list .tr,
   .stockrequest__list .tr,
   .transactions__list .tr,
-  .assembly__list .tr {
+  .assembly__list .tr,
+  .oenumbers__list .tr {
     align-items: center;
     display: flex;
     font-size: 1.5rem; }
@@ -11819,7 +11841,8 @@ input.form-control.error {
     .order-items__list .tr-head,
     .stockrequest__list .tr-head,
     .transactions__list .tr-head,
-    .assembly__list .tr-head {
+    .assembly__list .tr-head,
+    .oenumbers__list .tr-head {
       background-color: #fff;
       border-bottom: 5px solid #0672ba;
       font-size: 1.4rem;
@@ -11829,7 +11852,8 @@ input.form-control.error {
     .order-items__list .tr-item,
     .stockrequest__list .tr-item,
     .transactions__list .tr-item,
-    .assembly__list .tr-item {
+    .assembly__list .tr-item,
+    .oenumbers__list .tr-item {
       background-color: #fff;
       display: block;
       margin-bottom: 1.2rem;
@@ -11838,13 +11862,15 @@ input.form-control.error {
       .order-items__list .tr-item:last-child,
       .stockrequest__list .tr-item:last-child,
       .transactions__list .tr-item:last-child,
-      .assembly__list .tr-item:last-child {
+      .assembly__list .tr-item:last-child,
+      .oenumbers__list .tr-item:last-child {
         border-bottom: none; }
       .orders__list .tr-item:hover,
       .order-items__list .tr-item:hover,
       .stockrequest__list .tr-item:hover,
       .transactions__list .tr-item:hover,
-      .assembly__list .tr-item:hover {
+      .assembly__list .tr-item:hover,
+      .oenumbers__list .tr-item:hover {
         box-shadow: 0 5px 15px rgba(0, 153, 255, 0.5);
         position: relative;
         z-index: 10; }
@@ -11852,7 +11878,8 @@ input.form-control.error {
       .order-items__list .tr-item .inner,
       .stockrequest__list .tr-item .inner,
       .transactions__list .tr-item .inner,
-      .assembly__list .tr-item .inner {
+      .assembly__list .tr-item .inner,
+      .oenumbers__list .tr-item .inner {
         align-items: center;
         display: flex;
         min-height: 8rem;
@@ -11863,13 +11890,15 @@ input.form-control.error {
     .order-items__list .tr-head,
     .stockrequest__list .tr-head,
     .transactions__list .tr-head,
-    .assembly__list .tr-head {
+    .assembly__list .tr-head,
+    .oenumbers__list .tr-head {
       display: none; }
     .orders__list .tr-item .inner,
     .order-items__list .tr-item .inner,
     .stockrequest__list .tr-item .inner,
     .transactions__list .tr-item .inner,
-    .assembly__list .tr-item .inner {
+    .assembly__list .tr-item .inner,
+    .oenumbers__list .tr-item .inner {
       flex-wrap: wrap;
       padding-right: 9rem;
       padding-bottom: 1.5rem;
@@ -11879,7 +11908,8 @@ input.form-control.error {
     .order-items__list .tr-item .td,
     .stockrequest__list .tr-item .td,
     .transactions__list .tr-item .td,
-    .assembly__list .tr-item .td {
+    .assembly__list .tr-item .td,
+    .oenumbers__list .tr-item .td {
       flex-shrink: 0;
       margin-bottom: 2px;
       margin-top: .7rem;
@@ -11888,7 +11918,8 @@ input.form-control.error {
       .order-items__list .tr-item .td:before,
       .stockrequest__list .tr-item .td:before,
       .transactions__list .tr-item .td:before,
-      .assembly__list .tr-item .td:before {
+      .assembly__list .tr-item .td:before,
+      .oenumbers__list .tr-item .td:before {
         content: attr(data-title);
         color: #757575;
         display: block;
