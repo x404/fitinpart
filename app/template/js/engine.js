@@ -670,7 +670,16 @@ $(document).on('click','.btn-fav-in', function(e){
 // user menu
 $(document).on('click','.btn-accountmenu', function(e){
 	$(this).toggleClass('open').next().slideToggle()
-})
+});
+
+
+
+[].forEach.call(document.querySelectorAll('.item-products .btn-cart'), function(el,i){
+	el.addEventListener('click', function(e){
+		this.classList.add('incart')
+	})
+});
+
 
 
 // popup on homepage
