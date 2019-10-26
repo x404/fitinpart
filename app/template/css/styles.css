@@ -9483,6 +9483,39 @@ input.form-control.error {
     .inner .card-page .oenumbers__list .td {
       padding-left: 2rem;
       width: 50%; }
+  @media (max-width: 1500px) {
+    .inner .card-page .card__left {
+      max-width: 35%;
+      flex-basis: 35%; }
+      .inner .card-page .card__left .slick-slider {
+        max-width: 400px; } }
+  @media (max-width: 1450px) {
+    .inner .card-page .card__center h1 {
+      font-size: 3rem; } }
+  @media (max-width: 1399px) {
+    .inner .card-page .card__left {
+      max-width: 32%;
+      flex-basis: 32%; }
+      .inner .card-page .card__left .slick-slider {
+        max-width: 300px; }
+    .inner .card-page .card__center {
+      padding-left: 3rem;
+      padding-right: 3rem; }
+    .inner .card-page .partnum-brand .part-num,
+    .inner .card-page .partnum-brand .brand {
+      font-size: 1.5rem; } }
+  @media (max-width: 1199px) {
+    .inner .card-page .card__left {
+      max-width: 32%;
+      flex-basis: 32%; }
+      .inner .card-page .card__left .slick-slider {
+        max-width: 220px; }
+    .inner .card-page .card__center h1 {
+      font-size: 2.6rem; }
+    .inner .card-page .partnum-brand .brand {
+      margin-left: 0;
+      margin-top: 1rem;
+      width: 100%; } }
 
 .msg-searched {
   background-color: #ece2d0;
@@ -9516,93 +9549,89 @@ input.form-control.error {
       width: 66px; }
     .card__body .media__right {
       margin-left: 15px;
-      width: calc(100% - 75px); }
+      width: calc(100% - 75px);
+      display: flex;
+      align-items: center; }
+      .card__body .media__right .slick-slider {
+        max-width: 600px; }
 
 .card__left {
   max-width: 43%;
   flex: 0 0 43%; }
 
 .card__center {
-  max-width: 36%;
-  flex: 1 0 36%;
+  flex-grow: 1;
   padding-left: 5rem;
   padding-right: 4rem; }
   .card__center h1 {
     font-size: 3rem; }
 
-.card__right .buy {
-  box-shadow: 0 5px 20px rgba(0, 153, 255, 0.5);
-  min-width: 32rem;
-  width: 100%; }
-  .card__right .buy__inner {
-    padding: 2.8rem 2rem 2.3rem; }
-
-.card__right .current-price {
-  font-size: 2.2rem;
-  line-height: 1.2; }
-
-.card__right .old-price {
-  line-height: 1.5;
-  font-size: 1.7rem;
-  margin-left: 1.2rem; }
-
-.card__right .wholesale {
-  margin-top: .6rem;
-  margin-bottom: 1.5rem; }
-  .card__right .wholesale__title {
-    color: #000;
-    font-size: 1.7rem;
-    font-weight: 700; }
-
-.card__right .item-wholesale__row {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: .3rem;
-  position: relative; }
-  .card__right .item-wholesale__row:after {
-    border-top: 1px solid #e5e7e7;
-    left: 0;
-    top: 12px;
+.card__right {
+  width: 32rem; }
+  .card__right .buy {
+    box-shadow: 0 5px 20px rgba(0, 153, 255, 0.5);
+    min-width: 32rem;
     width: 100%; }
-
-.card__right .item-wholesale__title span {
-  background-color: #fff;
-  padding-right: 8px;
-  position: relative;
-  z-index: 2; }
-
-.card__right .item-wholesale__value {
-  background-color: #fff;
-  color: #c91537;
-  font-weight: 700;
-  padding-left: 8px;
-  position: relative;
-  z-index: 2; }
-
-.card__right .countmodule {
-  margin-left: .8rem; }
-
-.card__right .btn-addtocart {
-  font-size: 1.8rem;
-  font-weight: 700;
-  height: 6rem;
-  width: 100%; }
-  .card__right .btn-addtocart .icon {
-    margin-right: 8px;
-    filter: invert(1);
-    transition: .3s; }
-  .card__right .btn-addtocart:hover .icon {
-    transform: translateX(-5px); }
-  .card__right .btn-addtocart.incart {
-    background-color: #003355; }
-
-.card__right .btn-fav {
-  color: #0672ba;
-  display: flex;
-  margin-left: 2.1rem;
-  white-space: nowrap; }
-  .card__right .btn-fav .icon {
-    margin-right: 9px; }
+    .card__right .buy__inner {
+      padding: 2.8rem 2rem 2.3rem; }
+  .card__right .current-price {
+    font-size: 2.2rem;
+    line-height: 1.2; }
+  .card__right .old-price {
+    line-height: 1.5;
+    font-size: 1.7rem;
+    margin-left: 1.2rem; }
+  .card__right .wholesale {
+    margin-top: .6rem;
+    margin-bottom: 1.5rem; }
+    .card__right .wholesale__title {
+      color: #000;
+      font-size: 1.7rem;
+      font-weight: 700; }
+  .card__right .item-wholesale__row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: .3rem;
+    position: relative; }
+    .card__right .item-wholesale__row:after {
+      border-top: 1px solid #e5e7e7;
+      left: 0;
+      top: 12px;
+      width: 100%; }
+  .card__right .item-wholesale__title span {
+    background-color: #fff;
+    padding-right: 8px;
+    position: relative;
+    z-index: 2; }
+  .card__right .item-wholesale__value {
+    background-color: #fff;
+    color: #c91537;
+    font-weight: 700;
+    padding-left: 8px;
+    position: relative;
+    z-index: 2; }
+  .card__right .countmodule {
+    margin-left: .8rem; }
+  .card__right .btn-addtocart {
+    font-size: 1.8rem;
+    font-weight: 700;
+    height: 6rem;
+    width: 100%; }
+    .card__right .btn-addtocart .icon {
+      margin-right: 8px;
+      filter: invert(1);
+      transition: .3s; }
+    .card__right .btn-addtocart:hover .icon {
+      transform: translateX(-5px); }
+    .card__right .btn-addtocart.incart {
+      background-color: #003355; }
+  .card__right .btn-fav {
+    color: #0672ba;
+    display: flex;
+    margin-left: 2.1rem;
+    white-space: nowrap; }
+    .card__right .btn-fav .icon {
+      margin-right: 9px; }
 
 #changeVehicle .smartsearchForm {
   display: block;
@@ -9708,6 +9737,11 @@ input.form-control.error {
     width: 118px;
     height: 272px;
     right: -118px; }
+
+@media (max-width: 1550px) {
+  .cars__list,
+  .assembly-brands {
+    display: none !important; } }
 
 .cart-page {
   overflow: initial; }

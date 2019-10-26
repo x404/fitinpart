@@ -145,6 +145,7 @@
 		}
 	}
 
+
 	.details{
 		background-color: #f5f7f8;
 		padding: 2rem 1.8rem 1.5rem;
@@ -392,7 +393,6 @@
 	.assemblies{
 		padding-bottom: 4rem;
 		padding-right: 3rem;
-
 	}
 
 	.assembly__list{
@@ -525,6 +525,7 @@
 	}
 
 	// =orders list
+
 	.orders__list{
 		background-color: #eaecf0;
 		display: none;
@@ -599,6 +600,70 @@
 		}
 	}
 
+
+	@media (max-width: 1500px){
+		.card__left{
+			max-width: 35%;
+			flex-basis: 35%;
+			.slick-slider{
+				max-width: 400px
+			}
+		}
+	}
+	@media (max-width: 1450px){
+		.card__center{
+			h1{
+				font-size: 3rem;
+			}
+		}
+	}
+
+	@media (max-width: 1399px){
+		.card{
+			&__left{
+				max-width: 32%;
+				flex-basis: 32%;
+				.slick-slider{
+					max-width: 300px
+				}
+			}
+			&__center{
+				padding-left: 3rem;
+				padding-right: 3rem;
+			}
+		}
+
+		.partnum-brand{
+			.part-num,
+			.brand
+			{
+				font-size: 1.5rem;
+			}
+		}
+	}
+
+	@media (max-width: 1199px){
+		.card{
+			&__left{
+				max-width: 32%;
+				flex-basis: 32%;
+				.slick-slider{
+					max-width: 220px
+				}
+			}
+			&__center{
+				h1{
+					font-size: 2.6rem;
+				}
+			}
+		}
+
+		.partnum-brand .brand{
+			margin-left: 0;
+			margin-top: 1rem;
+			width: 100%;
+		}
+	}
 }
 
 .msg-searched{
@@ -645,7 +710,12 @@
 
 			&__right{
 				margin-left: 15px;
-				width: calc(100% - 75px)
+				width: calc(100% - 75px);
+				display: flex;
+				align-items: center;
+				.slick-slider{
+					max-width: 600px
+				}
 			}
 		}
 		//  =/media 
@@ -656,8 +726,9 @@
 	}
 
 	&__center{
-		max-width: 36%;
-		flex: 1 0 36%;
+		// max-width: 36%;
+		// flex: 0 1 36%;
+		flex-grow: 1;
 		padding-left: 5rem;
 		padding-right: 4rem;
 		h1{
@@ -667,6 +738,7 @@
 	}
 
 	&__right{
+		width: 32rem;
 		.buy{
 			box-shadow: 0 5px 20px rgba(0, 153, 255, 0.5);
 			min-width: 32rem;
@@ -910,5 +982,12 @@
 			height: 272px;
 			right: -118px;
 		}
+	}
+}
+
+@media (max-width: 1550px){
+	.cars__list,
+	.assembly-brands{
+		display: none !important;
 	}
 }
