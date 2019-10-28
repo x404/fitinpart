@@ -1118,8 +1118,6 @@
 			}
 		}
 
-
-
 		.item-products{
 			&__title,
 			.current-price
@@ -1211,6 +1209,10 @@
 			white-space: nowrap;
 		}
 
+		.assembly-brands .item-products{
+			width: 210px;
+		}
+		
 		.assembly__list{
 			width: 100%;
 			overflow-x: auto;
@@ -1287,6 +1289,19 @@
 				min-height: 40px;
 				padding-bottom: 10px;
 				padding-top: 7px;				
+			}
+		}
+	}
+
+
+	@media (max-width: 350px){
+
+		.products__list .item-products{
+			.current-price{
+				font-size: 15px;
+			}
+			.old-price{
+				font-size: 13px;
 			}
 		}
 	}

@@ -9797,6 +9797,8 @@ input.form-control.error {
         margin-left: 0; }
     .inner .card-page #other-brands-tab {
       white-space: nowrap; }
+    .inner .card-page .assembly-brands .item-products {
+      width: 210px; }
     .inner .card-page .assembly__list {
       width: 100%;
       overflow-x: auto; }
@@ -9838,6 +9840,11 @@ input.form-control.error {
         min-height: 40px;
         padding-bottom: 10px;
         padding-top: 7px; } }
+  @media (max-width: 350px) {
+    .inner .card-page .products__list .item-products .current-price {
+      font-size: 15px; }
+    .inner .card-page .products__list .item-products .old-price {
+      font-size: 13px; } }
 
 .msg-searched {
   background-color: #ece2d0;
