@@ -1086,7 +1086,44 @@
 		}
 	}
 
-	
+
+	@media (max-width: 576px){
+		.msg-searched{
+			font-size: 17px;
+		}
+		h1{
+			font-size: 24px;
+			text-align: center;
+		}
+
+		.assembly__list .tr-item{
+			.td{
+				font-size: 14px;
+			}
+		}
+
+		.item-products{
+			&__title,
+			.current-price
+			{
+				font-size: 15px;
+			}
+			.old-price{
+				font-size: 13px;
+			}
+			&__desc{
+				font-size: 13px;
+			}
+
+			.instock{
+				font-size: 14px;
+			}
+		}
+		.preorder-text{
+			font-size: 12px;
+		}
+	}
+
 
 }
 

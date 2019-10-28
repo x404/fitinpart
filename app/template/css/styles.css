@@ -9734,6 +9734,25 @@ input.form-control.error {
       flex-direction: column; }
       .inner .card-page .trustpilot .rated {
         margin-top: 10px; } }
+  @media (max-width: 576px) {
+    .inner .card-page .msg-searched {
+      font-size: 17px; }
+    .inner .card-page h1 {
+      font-size: 24px;
+      text-align: center; }
+    .inner .card-page .assembly__list .tr-item .td {
+      font-size: 14px; }
+    .inner .card-page .item-products__title,
+    .inner .card-page .item-products .current-price {
+      font-size: 15px; }
+    .inner .card-page .item-products .old-price {
+      font-size: 13px; }
+    .inner .card-page .item-products__desc {
+      font-size: 13px; }
+    .inner .card-page .item-products .instock {
+      font-size: 14px; }
+    .inner .card-page .preorder-text {
+      font-size: 12px; } }
 
 .msg-searched {
   background-color: #ece2d0;
