@@ -9094,25 +9094,25 @@ input.form-control.error {
   background-color: #fff;
   padding-bottom: 0;
   overflow: auto; }
-  .inner .card-page .slider-nav > div {
+  .inner .card-page #slider-nav > div {
     margin-top: 10px;
     margin-bottom: 10px; }
-  .inner .card-page .slider-nav.slick-initialized > div {
+  .inner .card-page #slider-nav.slick-initialized > div {
     margin-top: 0;
     margin-bottom: 0; }
-  .inner .card-page .slider-nav .slick-slide {
+  .inner .card-page #slider-nav .slick-slide {
     border: 3px solid rgba(255, 255, 255, 0);
     cursor: pointer;
     margin-bottom: 10px;
     margin-top: 10px;
     padding: 3px; }
-    .inner .card-page .slider-nav .slick-slide img {
+    .inner .card-page #slider-nav .slick-slide img {
       margin-left: auto;
       margin-right: auto; }
-  .inner .card-page .slider-nav .slick-current {
+  .inner .card-page #slider-nav .slick-current {
     border-color: #0672ba;
     border-radius: 5px; }
-  .inner .card-page .slider-nav .slick-arrow {
+  .inner .card-page #slider-nav .slick-arrow {
     background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAICAYAAAAiJnXPAAAAvklEQVQoU2NkwAZCVzHzyfDxf3ry6SPD6rC/6EoY0QW4S/dLsDD+283A+F+L4T/jtT//mVy/dju+QFaHogmsgenvAaACdSD+CcTsQHzzzz9mB2SNcE1oGm4y/WUI+8fMsApqAIpGsCZ0DTCTcYmDNQmU77n6n4FBC5tTkDUCFV/70OmizcjQsIqN/7vwEwaG/y+ANrihexrJJbsYGBglPnK+lQHbJFN4jPPJkye/sAUvPNSA0SAjI8P2pN/qOwAtR2Q5rY+sSQAAAABJRU5ErkJggg==");
     background-repeat: no-repeat;
     height: 8px;
@@ -9120,9 +9120,9 @@ input.form-control.error {
     padding: 0;
     position: relative;
     width: 13px; }
-  .inner .card-page .slider-nav .slick-prev {
+  .inner .card-page #slider-nav .slick-prev {
     top: 5px; }
-  .inner .card-page .slider-nav .slick-next {
+  .inner .card-page #slider-nav .slick-next {
     transform: rotate(180deg);
     bottom: 5px; }
   .inner .card-page .trustpilot {
@@ -9574,11 +9574,11 @@ input.form-control.error {
         margin-left: 0;
         margin-top: 1rem;
         width: 100%; }
-    .inner .card-page .slider-nav {
+    .inner .card-page #slider-nav {
       position: relative;
       padding-left: 18px;
       padding-right: 18px; }
-      .inner .card-page .slider-nav .slick-arrow {
+      .inner .card-page #slider-nav .slick-arrow {
         background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAANCAYAAACUwi84AAAAjklEQVQoU2NkwAUaVrExNIT9YkSX5y7dL8HK9HfvfwZGUd5fnPIoCkCSLEx/DwA1qQPx5Y/33hnCFaBJ3vzzj9nha7fjC7ACXJIgOUaG0FXM/IrCFxgY/+sA+XCdMLcx8hXuEGJkY3kNFPjN9JfB7H2PyyVkhxM2gbAboObh9QXMTrzhgKwIZ0iiBDs0LgCFXVvKbLdiMAAAAABJRU5ErkJggg==");
         height: 13px;
         margin-top: -6px;
@@ -9587,9 +9587,9 @@ input.form-control.error {
         width: 8px;
         z-index: 10;
         margin-left: 0; }
-      .inner .card-page .slider-nav .slick-prev {
+      .inner .card-page #slider-nav .slick-prev {
         left: 0; }
-      .inner .card-page .slider-nav .slick-next {
+      .inner .card-page #slider-nav .slick-next {
         right: 0;
         transform: rotate(180deg); }
     .inner .card-page .compare {
@@ -9623,6 +9623,48 @@ input.form-control.error {
       margin-bottom: 1rem; }
     .inner .card-page .assembly-brands .item-products {
       width: 280px; } }
+  @media (max-width: 991px) {
+    .inner .card-page .trustpilot .trustpilotlogo {
+      width: 150px; }
+    .inner .card-page .trustpilot .rated {
+      font-size: 1.5rem; }
+    .inner .card-page .trustpilot .stars {
+      width: 160px; } }
+  @media (max-width: 768px) {
+    .inner .card-page .content {
+      padding-bottom: 2rem; }
+    .inner .card-page h1 {
+      font-size: 2.6rem; }
+    .inner .card-page .msg-searched {
+      font-size: 2rem; }
+    .inner .card-page .assembly-brands .item-products {
+      width: 230px; }
+    .inner .card-page .details__title {
+      font-size: 1.8rem; }
+    .inner .card-page .details .car {
+      font-size: 1.4rem; }
+    .inner .card-page .specifications {
+      font-size: 1.4rem; }
+      .inner .card-page .specifications .specification__title {
+        font-size: 1.8rem; }
+      .inner .card-page .specifications .btn-show {
+        font-size: 1.4rem; }
+    .inner .card-page .stock__title {
+      font-size: 1.8rem; }
+    .inner .card-page .delivery {
+      font-size: 1.4rem; }
+    .inner .card-page .card__body {
+      padding-bottom: 100px; }
+    .inner .card-page .assembly-brands .nav-title {
+      font-size: 2rem; }
+    .inner .card-page .description {
+      font-size: 1.4rem; }
+      .inner .card-page .description h2 {
+        font-size: 2.5rem; }
+      .inner .card-page .description h3 {
+        font-size: 2rem; }
+    .inner .card-page .cars__list .title {
+      font-size: 2.5rem; } }
 
 .msg-searched {
   background-color: #ece2d0;

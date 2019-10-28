@@ -3,7 +3,7 @@
 	padding-bottom: 0;
 	overflow: auto;
 	// slider nav
-	.slider-nav{
+	#slider-nav{
 		& > div{
 			margin-top: 10px;
 			margin-bottom: 10px;
@@ -773,7 +773,7 @@
 				}
 			}
 		}
-		.slider-nav{
+		#slider-nav{
 			position: relative;
 			padding-left: 18px;
 			padding-right: 18px;
@@ -859,6 +859,89 @@
 				width: 280px;
 			}
 		}
+	}
+
+	@media (max-width: 991px){
+		.trustpilot{
+			.trustpilotlogo{
+				width: 150px;	
+			}
+			.rated{
+				font-size: 1.5rem;
+			}
+			.stars{
+				width: 160px;
+			}
+		}
+	}
+
+
+	@media (max-width: 768px){
+		.content{
+			padding-bottom: 2rem;
+		}
+		h1{
+			font-size: 2.6rem;
+		}
+		.msg-searched{
+			font-size: 2rem;
+		}
+		.assembly-brands{
+			.item-products{
+				width: 230px;
+			}
+		}
+
+		.details{
+			&__title{
+				font-size: 1.8rem;
+			}
+			.car{
+				font-size: 1.4rem;
+			}
+		}
+
+		.specifications{
+			font-size: 1.4rem;
+			.specification__title{
+				font-size: 1.8rem;
+			}
+			.btn-show{
+				font-size: 1.4rem;
+			}
+		}
+
+		.stock__title{
+			font-size: 1.8rem;
+		}
+
+		.delivery{
+			font-size: 1.4rem;
+		}
+
+		.card__body{
+			padding-bottom: 100px;
+		}
+
+		.assembly-brands .nav-title{
+			font-size: 2rem;
+		}
+
+
+		.description{
+			font-size: 1.4rem;
+			h2{
+				font-size: 2.5rem;
+			}
+			h3{
+				font-size: 2rem;
+			}
+		}
+
+		.cars__list .title{
+			font-size: 2.5rem;
+		}
+
 	}
 }
 

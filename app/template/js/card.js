@@ -1,17 +1,17 @@
 $(document).ready(function(){
-	$('.slider-for').slick({
+	$('#slider-for').slick({
 		slidesToShow: 1,
 		slidesToScroll: 1,
 		arrows: false,
 		fade: true,
-		asNavFor: '.slider-nav'
+		asNavFor: '#slider-nav'
 	});
-	$('.slider-nav').slick({
+	$('#slider-nav').slick({
 		prevArrow:'<button class="slick-arrow slick-prev" aria-label="Previous" type="button"></button>',
 		nextArrow:'<button class="slick-arrow slick-next" aria-label="Next" type="button"></button>',
 		slidesToShow: 4,
 		slidesToScroll: 1,
-		asNavFor: '.slider-for',
+		asNavFor: '#slider-for',
 		arrows: true,
 		dots: false,
 		vertical: true,
@@ -22,6 +22,13 @@ $(document).ready(function(){
 				settings: {
 					vertical: false,
 					slidesToShow: 5
+				}
+			},
+			{
+				breakpoint: 780,
+				settings: {
+					vertical: false,
+					slidesToShow: 4
 				}
 			}
 		]
@@ -46,30 +53,9 @@ $(document).ready(function(){
 		appendArrows : $('#other-brands .arrows'),
 		responsive: [
 			{
-				breakpoint: 1400,
-				settings: {
-					slidesToShow: 3,
-					slidesToScroll: 1
-				}
-			},
-			{
-				breakpoint: 992,
-				settings: {
-					slidesToShow: 4,
-					slidesToScroll: 1
-				}
-			},
-			{
-				breakpoint: 960,
-				settings: {
-					slidesToShow: 3,
-					slidesToScroll: 1
-				}
-			},
-			{
 				breakpoint: 768,
 				settings: {
-					slidesToShow: 2,
+					slidesToShow: 3,
 					slidesToScroll: 1
 				}
 			},
@@ -121,30 +107,9 @@ $(document).ready(function(){
 		appendArrows : $('#alternative-product .arrows'),
 		responsive: [
 			{
-				breakpoint: 1400,
-				settings: {
-					slidesToShow: 3,
-					slidesToScroll: 1
-				}
-			},
-			{
-				breakpoint: 992,
-				settings: {
-					slidesToShow: 4,
-					slidesToScroll: 1
-				}
-			},
-			{
-				breakpoint: 960,
-				settings: {
-					slidesToShow: 3,
-					slidesToScroll: 1
-				}
-			},
-			{
 				breakpoint: 768,
 				settings: {
-					slidesToShow: 2,
+					slidesToShow: 3,
 					slidesToScroll: 1
 				}
 			},
@@ -191,8 +156,10 @@ $(document).ready(function(){
 	});
 
 	$('#alternative-product-tab').on('shown.bs.tab', function (e) {
+		console.log('#alternative-product-tab shown')
 		$('#alternative-carousel').slick('reinit');
 	});
+
 
 	// CAR
 	$("#change_brand_select").multipleSelect({
