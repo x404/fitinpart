@@ -15,7 +15,16 @@ $(document).ready(function(){
 		arrows: true,
 		dots: false,
 		vertical: true,
-		focusOnSelect: true
+		focusOnSelect: true,
+		responsive: [
+			{
+				breakpoint: 1199,
+				settings: {
+					vertical: false,
+					slidesToShow: 5
+				}
+			}
+		]
 	});
 
 

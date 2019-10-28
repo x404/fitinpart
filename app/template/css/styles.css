@@ -9106,6 +9106,9 @@ input.form-control.error {
     margin-bottom: 10px;
     margin-top: 10px;
     padding: 3px; }
+    .inner .card-page .slider-nav .slick-slide img {
+      margin-left: auto;
+      margin-right: auto; }
   .inner .card-page .slider-nav .slick-current {
     border-color: #0672ba;
     border-radius: 5px; }
@@ -9232,6 +9235,9 @@ input.form-control.error {
           color: #0099ff; }
           .inner .card-page .details .actions .btn-choose:hover .icon {
             filter: brightness(1); }
+  .inner .card-page .left-center {
+    display: flex;
+    flex-grow: 1; }
   .inner .card-page .stock {
     margin-top: 2.5rem; }
     .inner .card-page .stock__title {
@@ -9363,6 +9369,7 @@ input.form-control.error {
         width: 50%; }
     .inner .card-page .assembly__list .tr-head {
       color: #000;
+      display: flex !important;
       font-size: 1.6rem;
       min-height: 5.5rem; }
     .inner .card-page .assembly__list .tr-item {
@@ -9378,7 +9385,8 @@ input.form-control.error {
         .inner .card-page .assembly__list .tr-item a:hover {
           color: #0099ff; }
       .inner .card-page .assembly__list .tr-item .inner {
-        min-height: 5rem; }
+        min-height: 5rem;
+        padding-right: 0; }
       .inner .card-page .assembly__list .tr-item .td-1, .inner .card-page .assembly__list .tr-item .td-2, .inner .card-page .assembly__list .tr-item .td-3 {
         font-size: 1.5rem; }
   .inner .card-page .cars__list {
@@ -9476,46 +9484,145 @@ input.form-control.error {
       margin-bottom: 0;
       transition: background-color .3s; }
       .inner .card-page .oenumbers__list .tr-item .inner {
-        min-height: 51px; }
+        min-height: 51px;
+        padding-right: 0; }
       .inner .card-page .oenumbers__list .tr-item:hover {
         background-color: #fff;
         box-shadow: none; }
     .inner .card-page .oenumbers__list .td {
       padding-left: 2rem;
       width: 50%; }
+  @media (max-width: 1600px) {
+    .inner .card-page .assembly-brands .item-products {
+      width: 270px; } }
   @media (max-width: 1500px) {
     .inner .card-page .card__left {
-      max-width: 35%;
-      flex-basis: 35%; }
+      max-width: 50%;
+      flex-basis: 50%; }
       .inner .card-page .card__left .slick-slider {
         max-width: 400px; } }
   @media (max-width: 1450px) {
     .inner .card-page .card__center h1 {
       font-size: 3rem; } }
   @media (max-width: 1399px) {
-    .inner .card-page .card__left {
-      max-width: 32%;
-      flex-basis: 32%; }
-      .inner .card-page .card__left .slick-slider {
-        max-width: 300px; }
+    .inner .card-page .card__left .slick-slider {
+      max-width: 300px; }
     .inner .card-page .card__center {
       padding-left: 3rem;
       padding-right: 3rem; }
     .inner .card-page .partnum-brand .part-num,
     .inner .card-page .partnum-brand .brand {
-      font-size: 1.5rem; } }
+      font-size: 1.5rem; }
+    .inner .card-page .orders__list .tr .td {
+      padding-left: 1.3rem; }
+    .inner .card-page .oenumbers__list .td {
+      padding-left: 1.5rem; }
+    .inner .card-page .assemblies {
+      padding-right: 1.5rem; }
+    .inner .card-page .assembly-brands .nav-title {
+      font-size: 2.2rem; }
+    .inner .card-page .assembly-brands .item-products {
+      width: 210px; }
+    .inner .card-page .products__list .item-products__pic img {
+      max-width: 92%;
+      margin-left: auto;
+      margin-right: auto; }
+    .inner .card-page .products__list .btn-cart {
+      height: 38px;
+      width: 38px; }
+      .inner .card-page .products__list .btn-cart .icon {
+        transform: scale(0.8); }
+    .inner .card-page .products__list .item-products__body {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem; }
+    .inner .card-page .products__list .item-products__bottom {
+      margin-left: 1.5rem;
+      margin-right: 1.5rem; }
+    .inner .card-page .products__list .item-products .current-price {
+      font-size: 1.7rem; }
+    .inner .card-page .products__list .btn-fav {
+      margin-right: 1rem; } }
   @media (max-width: 1199px) {
+    .inner .card-page h1 {
+      font-size: 3rem; }
+    .inner .card-page .msg-searched {
+      font-size: 2.2rem;
+      margin-bottom: 2rem; }
+    .inner .card-page .left-center {
+      flex-direction: column;
+      padding-right: 20px;
+      width: calc(100% - 320px); }
+      .inner .card-page .left-center .card__left {
+        flex-basis: auto; }
     .inner .card-page .card__left {
-      max-width: 32%;
-      flex-basis: 32%; }
+      max-width: 100%;
+      flex-basis: 100%; }
       .inner .card-page .card__left .slick-slider {
-        max-width: 220px; }
-    .inner .card-page .card__center h1 {
-      font-size: 2.6rem; }
-    .inner .card-page .partnum-brand .brand {
-      margin-left: 0;
-      margin-top: 1rem;
-      width: 100%; } }
+        max-width: 100%; }
+    .inner .card-page .card__center {
+      padding-left: 0;
+      padding-right: 0; }
+      .inner .card-page .card__center h1 {
+        font-size: 2.6rem; }
+    .inner .card-page .card__body {
+      margin-bottom: 2.8rem;
+      position: relative;
+      padding-bottom: 120px; }
+      .inner .card-page .card__body .media__right {
+        width: 100%; }
+      .inner .card-page .card__body .partnum-brand .brand {
+        margin-left: 0;
+        margin-top: 1rem;
+        width: 100%; }
+    .inner .card-page .slider-nav {
+      position: relative;
+      padding-left: 18px;
+      padding-right: 18px; }
+      .inner .card-page .slider-nav .slick-arrow {
+        background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAANCAYAAACUwi84AAAAjklEQVQoU2NkwAUaVrExNIT9YkSX5y7dL8HK9HfvfwZGUd5fnPIoCkCSLEx/DwA1qQPx5Y/33hnCFaBJ3vzzj9nha7fjC7ACXJIgOUaG0FXM/IrCFxgY/+sA+XCdMLcx8hXuEGJkY3kNFPjN9JfB7H2PyyVkhxM2gbAboObh9QXMTrzhgKwIZ0iiBDs0LgCFXVvKbLdiMAAAAABJRU5ErkJggg==");
+        height: 13px;
+        margin-top: -6px;
+        position: absolute;
+        top: 50%;
+        width: 8px;
+        z-index: 10;
+        margin-left: 0; }
+      .inner .card-page .slider-nav .slick-prev {
+        left: 0; }
+      .inner .card-page .slider-nav .slick-next {
+        right: 0;
+        transform: rotate(180deg); }
+    .inner .card-page .compare {
+      margin-left: 2rem; }
+    .inner .card-page .trustpilot {
+      align-items: center;
+      display: flex;
+      padding: 2rem; }
+      .inner .card-page .trustpilot .rated {
+        font-size: 1.6rem;
+        margin-left: 3.5rem;
+        margin-top: 0; }
+    .inner .card-page .trustpilot {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%; }
+    .inner .card-page .cars__list {
+      padding-top: 2rem; }
+      .inner .card-page .cars__list .vehicle {
+        padding-right: 0; }
+      .inner .card-page .cars__list .oenumbers {
+        margin-top: 4rem; }
+      .inner .card-page .cars__list .tr-head {
+        display: flex; }
+      .inner .card-page .cars__list .title {
+        font-size: 2.8rem; }
+    .inner .card-page .content {
+      padding-top: 2rem; }
+    .inner .card-page .products .nav {
+      margin-bottom: 1rem; }
+    .inner .card-page .assembly-brands .item-products {
+      width: 280px; } }
 
 .msg-searched {
   background-color: #ece2d0;
@@ -9543,21 +9650,21 @@ input.form-control.error {
       width: 50px; }
       .card__body .media .label-sale {
         background-color: #ed0103; }
-    .card__body .media__left {
+    .card__body .media__right {
       align-self: center;
       flex-shrink: 0;
       width: 66px; }
-    .card__body .media__right {
+    .card__body .media__left {
       margin-left: 15px;
       width: calc(100% - 75px);
       display: flex;
       align-items: center; }
-      .card__body .media__right .slick-slider {
+      .card__body .media__left .slick-slider {
         max-width: 600px; }
 
 .card__left {
-  max-width: 43%;
-  flex: 0 0 43%; }
+  max-width: 55%;
+  flex: 0 0 55%; }
 
 .card__center {
   flex-grow: 1;
@@ -9737,11 +9844,6 @@ input.form-control.error {
     width: 118px;
     height: 272px;
     right: -118px; }
-
-@media (max-width: 1550px) {
-  .cars__list,
-  .assembly-brands {
-    display: none !important; } }
 
 .cart-page {
   overflow: initial; }

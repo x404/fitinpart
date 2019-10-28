@@ -20,6 +20,10 @@
 			margin-bottom: 10px;
 			margin-top: 10px;
 			padding: 3px;
+			img{
+				margin-left: auto;
+				margin-right: auto;
+			}
 		}
 
 		.slick{
@@ -96,7 +100,6 @@
 			align-items: center;
 			font-size: 1.7rem;
 			margin-left: 1.6rem;
-
 			img{
 				margin-right: 1rem;
 			}
@@ -212,6 +215,11 @@
 				}
 			}
 		}
+	}
+
+	.left-center{
+		display: flex;
+		flex-grow: 1;
 	}
 
 
@@ -415,6 +423,7 @@
 			}
 			&-head{
 				color: #000;
+				display: flex !important;
 				font-size: 1.6rem;
 				min-height: 5.5rem;
 			}
@@ -436,6 +445,7 @@
 				}
 				.inner{
 					min-height: 5rem;
+					padding-right: 0;
 				}
 				.td{
 					&-1,
@@ -586,6 +596,7 @@
 				transition: background-color .3s;
 				.inner{
 					min-height: 51px;
+					padding-right: 0;
 				}
 				&:hover{
 					background-color: #fff;
@@ -601,10 +612,16 @@
 	}
 
 
+	@media (max-width: 1600px){
+		.assembly-brands .item-products{
+			width: 270px;
+		}
+	}
+
 	@media (max-width: 1500px){
 		.card__left{
-			max-width: 35%;
-			flex-basis: 35%;
+			max-width: 50%;
+			flex-basis: 50%;
 			.slick-slider{
 				max-width: 400px
 			}
@@ -621,8 +638,6 @@
 	@media (max-width: 1399px){
 		.card{
 			&__left{
-				max-width: 32%;
-				flex-basis: 32%;
 				.slick-slider{
 					max-width: 300px
 				}
@@ -640,28 +655,209 @@
 				font-size: 1.5rem;
 			}
 		}
+
+
+
+		// =cars__list
+		.cars__list{
+			
+		}
+		.orders__list .tr .td{
+			padding-left: 1.3rem;
+		}
+		// =/cars__list
+
+
+		.oenumbers__list{
+			.td{
+				padding-left: 1.5rem;
+			}
+		}
+
+
+		.assemblies {
+			padding-right: 1.5rem;
+		}
+		.assembly-brands{
+			.nav-title{
+				font-size: 2.2rem;
+			}
+			.item-products{
+				width: 210px;
+			}
+		}
+		.products__list{
+			.item-products__pic img{
+				max-width: 92%;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			.btn-cart{
+				height: 38px;
+				width: 38px;
+				.icon{
+					transform: scale(.8);
+				}
+			}
+
+			.item-products{
+				&__body{
+					padding-left: 1.5rem;
+					padding-right: 1.5rem;
+				}
+				&__bottom
+				{
+					margin-left: 1.5rem;
+					margin-right: 1.5rem;
+				}
+
+				.current-price{
+					font-size: 1.7rem;
+				}
+			}
+
+			.btn-fav{
+				margin-right: 1rem;
+			}
+		}
 	}
 
+
+
 	@media (max-width: 1199px){
+		h1{
+			font-size: 3rem;
+		}
+		.msg-searched{
+			font-size: 2.2rem;
+			margin-bottom: 2rem;
+		}
+		.left-center{
+			flex-direction: column;
+			padding-right: 20px;
+			width: calc(100% - 320px);
+			.card__left{
+				flex-basis: auto;
+			}
+		}
 		.card{
 			&__left{
-				max-width: 32%;
-				flex-basis: 32%;
+				max-width: 100%;
+				flex-basis: 100%;
 				.slick-slider{
-					max-width: 220px
+					max-width: 100%
 				}
 			}
 			&__center{
+				padding-left: 0;
+				padding-right: 0;
 				h1{
 					font-size: 2.6rem;
 				}
 			}
+
+			&__body{
+				margin-bottom: 2.8rem;
+				position: relative;
+				padding-bottom: 120px;
+				.media{
+					&__right{
+						width: 100%;
+					}
+				}
+
+				.partnum-brand .brand{
+					margin-left: 0;
+					margin-top: 1rem;
+					width: 100%;
+				}
+			}
+		}
+		.slider-nav{
+			position: relative;
+			padding-left: 18px;
+			padding-right: 18px;
+			.slick{
+				&-arrow{
+					background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAANCAYAAACUwi84AAAAjklEQVQoU2NkwAUaVrExNIT9YkSX5y7dL8HK9HfvfwZGUd5fnPIoCkCSLEx/DwA1qQPx5Y/33hnCFaBJ3vzzj9nha7fjC7ACXJIgOUaG0FXM/IrCFxgY/+sA+XCdMLcx8hXuEGJkY3kNFPjN9JfB7H2PyyVkhxM2gbAboObh9QXMTrzhgKwIZ0iiBDs0LgCFXVvKbLdiMAAAAABJRU5ErkJggg==');
+					height: 13px;
+					margin-top: -6px;
+					position: absolute;
+					top: 50%;
+					width: 8px;
+					z-index: 10;
+					margin-left: 0;
+
+				}
+				&-prev{
+					left: 0;
+				}
+				&-next{
+					right: 0;
+					transform: rotate(180deg);
+				}
+			}
 		}
 
-		.partnum-brand .brand{
-			margin-left: 0;
-			margin-top: 1rem;
+		.compare{
+			margin-left: 2rem;
+		}
+
+
+		.trustpilot{
+			align-items: center;
+			display: flex;
+			padding: 2rem;
+			.rated{
+				font-size: 1.6rem;
+				margin-left: 3.5rem;
+				margin-top: 0;
+			}
+		}
+
+		.trustpilot{
+			position: absolute;
+			left: 0;
+			bottom: 0;
 			width: 100%;
+		}
+
+
+		// =cars__list
+		.cars__list{
+			padding-top: 2rem;
+			.vehicle{
+				padding-right: 0;
+			}
+
+			.oenumbers {
+				margin-top: 4rem;
+			}
+
+			.tr-head{
+				display: flex;
+			}
+
+			.title{
+				font-size: 2.8rem;
+			}
+		}
+		// =/cars__list
+
+		.content{
+			padding-top: 2rem;
+		}
+
+		.products{
+			.nav{
+				margin-bottom: 1rem;
+			}
+		}
+
+		.assembly-brands{
+			.item-products{
+				width: 280px;
+			}
 		}
 	}
 }
@@ -702,13 +898,13 @@
 				}
 			}
 
-			&__left{
+			&__right{
 				align-self: center;
 				flex-shrink: 0;
 				width: 66px;
 			}
 
-			&__right{
+			&__left{
 				margin-left: 15px;
 				width: calc(100% - 75px);
 				display: flex;
@@ -721,8 +917,8 @@
 		//  =/media 
 	}
 	&__left{
-		max-width: 43%;
-		flex: 0 0 43%;
+		max-width: 55%;
+		flex: 0 0 55%;
 	}
 
 	&__center{
@@ -986,8 +1182,6 @@
 }
 
 @media (max-width: 1550px){
-	.cars__list,
 	.assembly-brands{
-		display: none !important;
 	}
 }
