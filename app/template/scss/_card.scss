@@ -291,14 +291,12 @@
 		padding-top: 1.6rem;
 		padding-left: 72px;
 		position: relative;
+		min-height: 55px;
 		&:before{
 			@extend .before;
 			@include sprite($icon-car);
 			left: 0;
 			top: 2.5rem;
-		}
-		div{
-			min-height: 55px;
 		}
 		strong{
 			color: $color3;
@@ -1018,9 +1016,7 @@
 			justify-content: center;
 		}
 
-		.delivery div{
-			display: flex;
-			align-items: center;
+		.delivery{
 		}
 
 		.assemblies{
@@ -1065,6 +1061,32 @@
 			font-size: 1.3rem;
 		}
 	}
+
+	
+	@media (max-width: 700px){
+		.orders__list{
+			width: 100%;
+			overflow-x: auto;
+			.tr{
+				width: 680px;				
+			}
+		}
+
+		.card{
+			&__body{
+				padding-bottom: 130px;
+			}
+		}
+
+		.trustpilot{
+			flex-direction: column;
+			.rated{
+				margin-top: 10px;
+			}
+		}
+	}
+
+	
 
 }
 

@@ -9283,7 +9283,8 @@ input.form-control.error {
     margin-top: 1.4rem;
     padding-top: 1.6rem;
     padding-left: 72px;
-    position: relative; }
+    position: relative;
+    min-height: 55px; }
     .inner .card-page .delivery:before {
       background-image: url(../images/sprite.png);
       background-position: -43px 0px;
@@ -9291,8 +9292,6 @@ input.form-control.error {
       height: 33px;
       left: 0;
       top: 2.5rem; }
-    .inner .card-page .delivery div {
-      min-height: 55px; }
     .inner .card-page .delivery strong {
       color: #0672ba; }
   .inner .card-page .content {
@@ -9701,9 +9700,6 @@ input.form-control.error {
         text-align: center; }
     .inner .card-page .count-wish {
       justify-content: center; }
-    .inner .card-page .delivery div {
-      display: flex;
-      align-items: center; }
     .inner .card-page .assemblies {
       padding-right: 0; }
     .inner .card-page .assembly-brands .nav-title {
@@ -9726,6 +9722,18 @@ input.form-control.error {
       text-align: center; }
     .inner .card-page .orders__list .tr-item .td {
       font-size: 1.3rem; } }
+  @media (max-width: 700px) {
+    .inner .card-page .orders__list {
+      width: 100%;
+      overflow-x: auto; }
+      .inner .card-page .orders__list .tr {
+        width: 680px; }
+    .inner .card-page .card__body {
+      padding-bottom: 130px; }
+    .inner .card-page .trustpilot {
+      flex-direction: column; }
+      .inner .card-page .trustpilot .rated {
+        margin-top: 10px; } }
 
 .msg-searched {
   background-color: #ece2d0;
