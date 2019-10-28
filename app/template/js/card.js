@@ -30,6 +30,13 @@ $(document).ready(function(){
 					vertical: false,
 					slidesToShow: 4
 				}
+			},
+			{
+				breakpoint: 380,
+				settings: {
+					vertical: false,
+					slidesToShow: 3
+				}
 			}
 		]
 	});

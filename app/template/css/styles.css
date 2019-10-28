@@ -9672,6 +9672,7 @@ input.form-control.error {
     .inner .card-page .card__body-layout {
       display: block; }
     .inner .card-page .left-center {
+      padding-right: 0;
       width: 100%; }
       .inner .card-page .left-center .card__left {
         margin-left: auto;
@@ -9742,6 +9743,14 @@ input.form-control.error {
       text-align: center; }
     .inner .card-page .assembly__list .tr-item .td {
       font-size: 14px; }
+    .inner .card-page .media__left {
+      margin-left: 0; }
+    .inner .card-page .buy {
+      min-width: 0; }
+    .inner .card-page .partnum-brand {
+      justify-content: center; }
+      .inner .card-page .partnum-brand .compare {
+        margin-top: 7px; }
     .inner .card-page .item-products__title,
     .inner .card-page .item-products .current-price {
       font-size: 15px; }
@@ -9753,6 +9762,82 @@ input.form-control.error {
       font-size: 14px; }
     .inner .card-page .preorder-text {
       font-size: 12px; } }
+  @media (max-width: 380px) {
+    .inner .card-page .msg-searched {
+      font-size: 15px; }
+    .inner .card-page h1 {
+      font-size: 22px; }
+    .inner .card-page .left-center .card__left {
+      width: 100%; }
+    .inner .card-page .partnum-brand .compare {
+      margin-left: 0; }
+    .inner .card-page .partnum-brand > div {
+      margin-bottom: 10px; }
+    .inner .card-page .item-specification__title {
+      width: 120px; }
+    .inner .card-page .buy .current-price {
+      font-size: 20px; }
+    .inner .card-page .buy .old-price {
+      font-size: 15px; }
+    .inner .card-page .buy .wholesale {
+      font-size: 14px; }
+      .inner .card-page .buy .wholesale__title {
+        font-size: 15px; }
+    .inner .card-page .buy .btn-fav {
+      font-size: 14px; }
+    .inner .card-page .buy .btn-addtocart {
+      font-size: 16px; }
+    .inner .card-page .delivery {
+      line-height: 1.3; }
+    .inner .card-page .trustpilot {
+      padding-left: 15px;
+      padding-right: 15px; }
+      .inner .card-page .trustpilot .rated {
+        font-size: 14px;
+        margin-left: 0; }
+    .inner .card-page #other-brands-tab {
+      white-space: nowrap; }
+    .inner .card-page .assembly__list {
+      width: 100%;
+      overflow-x: auto; }
+      .inner .card-page .assembly__list .tr {
+        width: 500px; }
+        .inner .card-page .assembly__list .tr .td-1 {
+          width: 20%; }
+    .inner .card-page .assembly-brands .nav-title {
+      font-size: 18px; }
+    .inner .card-page .assembly-brands .nav-title li.separator {
+      margin-left: 8px;
+      margin-right: 8px; }
+    .inner .card-page .assembly__list .td {
+      font-size: 14px !important; }
+    .inner .card-page .description h2 {
+      font-size: 22px;
+      margin-bottom: 8px; }
+    .inner .card-page .description h3 {
+      font-size: 18px;
+      margin-top: 0; }
+    .inner .card-page .item-vehicle {
+      font-size: 14px; }
+      .inner .card-page .item-vehicle__row .td-2 {
+        flex-grow: 1; }
+      .inner .card-page .item-vehicle__row .td-3 {
+        display: none; }
+    .inner .card-page .cars__list .title {
+      font-size: 22px; }
+    .inner .card-page .oenumbers__list .td {
+      font-size: 14px; }
+    .inner .card-page .oenumbers__list .tr-item .inner {
+      min-height: 40px;
+      padding-top: 5px;
+      padding-bottom: 5px; }
+    .inner .card-page .orders__list {
+      padding-left: 12px;
+      padding-right: 12px; }
+      .inner .card-page .orders__list .inner {
+        min-height: 40px;
+        padding-bottom: 10px;
+        padding-top: 7px; } }
 
 .msg-searched {
   background-color: #ece2d0;
