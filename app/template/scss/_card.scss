@@ -222,6 +222,10 @@
 		flex-grow: 1;
 	}
 
+	.card__body-layout{
+		display: flex;
+	}
+
 
 	// stock
 	.stock{
@@ -282,6 +286,8 @@
 		border-top: 1px solid #f0f0f0;
 		line-height: 1.7;
 		margin-top: 1.4rem;
+		
+
 		padding-top: 1.6rem;
 		padding-left: 72px;
 		position: relative;
@@ -290,6 +296,9 @@
 			@include sprite($icon-car);
 			left: 0;
 			top: 2.5rem;
+		}
+		div{
+			min-height: 55px;
 		}
 		strong{
 			color: $color3;
@@ -941,8 +950,122 @@
 		.cars__list .title{
 			font-size: 2.5rem;
 		}
-
 	}
+
+
+	@media (max-width: 730px){
+		.card__body-layout{
+			display: block;
+		}
+
+		.left-center{
+			width: 100%;
+			.card{
+				&__left{
+					margin-left: auto;
+					margin-right: auto;
+					width: 340px;
+				}
+			}
+		}
+
+		.card{
+			&__body{
+				.media__left{
+					width: 100%;
+				}
+			}
+
+			&__right{
+				width: 100%;
+			}
+		}
+
+		.specifications{
+			.specification{
+				&__title{
+					text-align: center;
+				}
+			}
+			.item-specification{
+				&__title{
+					flex-grow: 1;
+				}
+				&__value{
+					text-align: right;
+					flex-grow: 0;
+				}
+			}
+
+			.btn-show{
+				align-items: center;
+				display: flex;
+				margin: 1rem auto 3rem;
+			}
+		}
+
+		.buy{
+			width: 100%;
+			.price{
+				justify-content: center;
+			}
+			.wholesale__title{
+				text-align: center;
+			}
+		}
+
+		.count-wish{
+			justify-content: center;
+		}
+
+		.delivery div{
+			display: flex;
+			align-items: center;
+		}
+
+		.assemblies{
+			padding-right: 0;
+		}
+
+		.assembly-brands{
+			.nav-title{
+				justify-content: center;
+			}
+			.arrows{
+				display: flex;
+				justify-content: center;
+				position: static;
+				margin: 10px 0 17px;
+				.slick-arrow{
+					margin: 0 5px;
+					position: static;
+				}
+			}
+
+			.item-products{
+				margin-left: auto;
+				margin-right: auto;
+			}
+		}
+
+		.description{
+			h2, h3{
+				text-align: center;
+			}
+		}
+
+		.vehicle,
+		.oenumbers{
+			.title{
+				text-align: center;
+			}
+		}
+
+		.orders__list .tr-item .td{
+			font-size: 1.3rem;
+		}
+	}
+
 }
 
 .msg-searched{
