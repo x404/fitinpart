@@ -468,6 +468,11 @@ em strong
 		@include sprite($icon-delete-2);
 		margin-right: 6px;
 	}
+
+	&-delete-3{
+		@include sprite($icon-delete-3);
+		margin-right: 6px;
+	}
 } 
 // #icon
 
