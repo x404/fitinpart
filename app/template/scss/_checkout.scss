@@ -127,6 +127,13 @@
 		}
 
 		&-3{
+
+
+		}
+
+		
+		&-3,
+		&-4{
 			.item-method{
 				&__title{
 					color: #000;
@@ -151,7 +158,6 @@
 					}
 				}
 			}
-
 
 			.radio{
 				cursor: pointer;
@@ -207,10 +213,10 @@
 					font-size: 1.5rem;
 					margin-top: .2rem;
 				}
-			}
+			}			
 		}
 
-		
+
 		&-4{
 			.information{
 				background-color: #778d9b;
@@ -243,6 +249,29 @@
 			.tooltip-label-circle{
 				background-color: $color3 !important;
 			}
+
+			.checkout__body .row{
+				margin-top: .8rem;
+			}
+
+
+			.item-method{
+				margin-top: 2rem;
+				.title{
+					font-family: "Proxima Nova";
+					font-size: 1.8rem;
+				}
+				.logos{
+					img{
+						margin-right: 1rem;
+						&:last-child(){
+							margin-right: 0;
+						}
+					}
+				}
+			}
+
+
 		}
 	}
 
