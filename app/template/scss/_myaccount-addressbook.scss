@@ -243,7 +243,8 @@
 
 .add-address,
 .edit-address,
-.calculate
+.calculate,
+.checkout .checkout__body
 {
 	.ms-parent{
 		font-size: 1.5rem;
@@ -258,6 +259,49 @@
 		}
 	}
 }
+
+
+.myaccount .add-address,
+.myaccount .edit-address,
+.checkout .checkout__body
+{
+	.row{
+		margin-top: 1.4rem;
+		@media (min-width: 992px){
+			.col-lg-3{
+				max-width: 33.3333%;
+				flex-basis: 33.3333%;
+			}				
+		}
+		.col-3{
+			max-width: 33.3333%;
+			flex-basis: 33.3333%;
+		}
+
+		@media (max-width: 991px){
+			.ms-parent{
+				margin-bottom: 10px;
+			}
+		}
+		@media (max-width: 768px){
+			margin-top: 0;
+			.form-control{
+				margin-bottom: 10px;
+			}
+		}
+	}
+
+
+	.region{
+		margin-bottom: 0;
+		li{
+			label{
+				margin-top: 0;
+			}
+		}
+	}
+}
+
 
 
 .myaccount{
@@ -276,32 +320,6 @@
 
 		.form-control{
 			font-size: 1.5rem;
-		}
-
-		.row{
-			margin-top: 1.4rem;
-			@media (min-width: 992px){
-				.col-lg-3{
-					max-width: 33%;
-					flex-basis: 33%;
-				}				
-			}
-			.col-3{
-				max-width: 33%;
-				flex-basis: 33%;
-			}
-
-			@media (max-width: 991px){
-				.ms-parent{
-					margin-bottom: 10px;
-				}
-			}
-			@media (max-width: 768px){
-				margin-top: 0;
-				.form-control{
-					margin-bottom: 10px;
-				}
-			}
 		}
 
 		.postcode-wrapper{
@@ -344,14 +362,6 @@
 			display: none;
 		}
 
-		.region{
-			margin-bottom: 0;
-			li{
-				label{
-					margin-top: 0;
-				}
-			}
-		}
 
 		.default-address{
 			font-size: 1.5rem;

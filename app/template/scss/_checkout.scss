@@ -20,14 +20,19 @@
 			font-size: 2.2rem;
 		}
 		.actions{
-			margin-left: 3rem;
+			align-items: center;
+			display: flex;
+			margin-left: .8rem;
 			.btn{
 				border-radius: 3rem;
-				font-size: 1.4rem;				
+				font-size: 1.4rem;	
 				height: 3rem;
-				margin-left: 1.2rem;
-				padding-right: 2rem;
+				margin-left: 1rem;
 				padding-left: 1.3rem;
+				padding-right: 1.8rem;
+				&:hover{
+					box-shadow: 0 5px 15px rgba(0, 153, 255, 0.5);
+				}
 			}
 		}
 	}
@@ -47,6 +52,89 @@
 				background-color: #fff;
 				padding: 2rem 3rem 3.5rem;
 			}
+
+			.row{
+				// margin-top: 2.5rem;
+			}
+
+			.address{
+				border-bottom: 1px solid #e7e8e8;
+				padding-bottom: 1.8rem;
+				&__select{
+					margin-left: -13px;
+				}
+			}
+			.btn-addaddress{
+				border-radius: 4.4rem;
+				border: 2px solid $color3;
+				font-size: 1.5rem;
+				font-weight: 700;
+				height: 4.4rem;
+				line-height: 1.2;
+				margin-left: 4rem;
+				padding: 0 1.1rem 0 40px;
+			}
+
+
+
+			.radio{
+				position: relative;
+				input {
+					opacity: 0;
+					position: absolute;
+					z-index: -1;
+				}
+			}
+
+			.radio__text {
+				cursor: pointer;
+				height: 40px;
+				position: relative;
+				display: flex;
+				align-items: center;
+				padding-left: 43px;
+				padding-right: 13px;
+				border: 2px solid rgba(255,255,255,0);
+				&:hover{
+					&:before{
+						background-color: #0099ff;
+					}
+				}
+			}
+			.radio__text:before {
+				transition: background-color .3s;
+				z-index: 10;
+				content: '';
+				height: 20px;
+				width: 20px;
+				left: 10px;
+				top: 8px;
+				position: absolute;
+				transition: .2s;
+				background-color: #e8e8e8;
+				border-radius: 50%;
+			}
+			.radio input:checked + .radio__text{
+				border: 2px solid #0672ba;
+				border-radius: 44px;
+				font-weight: 700;
+			}
+
+			.radio input:checked + .radio__text:hover:before {
+				background-color: transparent;
+			}
+
+			.radio input:checked + .radio__text:before {
+				border: 6px solid #0672ba;
+				background-color: transparent;
+			}
+
+		}
+	}
+
+	.checkout__body{
+		.row{
+			margin-top: 1.9rem;
 		}
 	}
 }

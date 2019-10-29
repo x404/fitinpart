@@ -455,6 +455,12 @@ em strong
 	}
 
 
+	&-pencil-3{
+		@include sprite($icon-pencil-3);
+		margin-right: 8px;
+	}
+
+
 } 
 // #icon
 
