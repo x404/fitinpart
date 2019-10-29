@@ -3891,7 +3891,7 @@ h3 {
 #changeVehicle__header .ms-choice, .main h2, .main h3, .main h4, .main h5, .main h6, .content blockquote, .lastnews .item-news__title,
 .news__list .item-news__title, .aboutus-page .intro__title, .aboutus-page .about__title, .aboutus-page .quote, .aboutus-page .advantages, .aboutus-page .item-products__title, .aboutus-page .brands__text, .title-md, .main aside .widget-title, .main aside .btn-filter, .sortbox .sort-label, .item-products__title, .products__list .item-products .btn-tooltip, .products__list .item-products .tooltip-title, .modal-v2 .box__title, #addtocardModal1 .product-title,
 #successAddtocardModal .product-title, #addtocardModal1 .count-price .price,
-#successAddtocardModal .count-price .price, .inner .card-page .details__title, .inner .card-page .item-stock__title, .inner .card-page .assembly-brands .nav-title, .msg-searched, .specifications .specification__title, #successAddtocardModal .price, .cart-page .cart-table .cost, .cart-page .salescard__item .title, .comparison__body .product-title, .wiper-search .intro, .wiper-search .steps, .perfomance-page .intro .subtitle, .perfomance-page .list-title, .table-title, .logout, .myaccount aside ul, .myaccount aside .tel, .myaccount .plate__title, .myaccount .plate .statistic__field, .myaccount .ordersstat .num, .mob-accountmenu .btn-accountmenu, .mob-accountmenu .menu, .latest-orders header, .orders__list .tracking__title, .orders__list .orderinfo .print, .orders__list .orderinfo__title, .orders__list .subtitle, #quickorderModal .modal-body h2, #quickorderModal .modal-body ol li:before, .region .subtitle, .garagesearch .left .num, .addvehicle-page .plate__title, .wishlist-count, .address-entries__list .item-entry .num, .address-entries__list .item-entry .radio__text:after, .checkout__head .num, .mob-header .btn-menu, .mob-header .tel {
+#successAddtocardModal .count-price .price, .inner .card-page .details__title, .inner .card-page .item-stock__title, .inner .card-page .assembly-brands .nav-title, .msg-searched, .specifications .specification__title, #successAddtocardModal .price, .cart-page .cart-table .cost, .cart-page .salescard__item .title, .comparison__body .product-title, .wiper-search .intro, .wiper-search .steps, .perfomance-page .intro .subtitle, .perfomance-page .list-title, .table-title, .logout, .myaccount aside ul, .myaccount aside .tel, .myaccount .plate__title, .myaccount .plate .statistic__field, .myaccount .ordersstat .num, .mob-accountmenu .btn-accountmenu, .mob-accountmenu .menu, .latest-orders header, .orders__list .tracking__title, .orders__list .orderinfo .print, .orders__list .orderinfo__title, .orders__list .subtitle, #quickorderModal .modal-body h2, #quickorderModal .modal-body ol li:before, .region .subtitle, .garagesearch .left .num, .addvehicle-page .plate__title, .wishlist-count, .address-entries__list .item-entry .num, .address-entries__list .item-entry .radio__text:after, .checkout__head .num, .checkout__step-3 .radio__text .price, .mob-header .btn-menu, .mob-header .tel {
   font-family: 'Neo Sans Pro', Verdana, sans-serif; }
 
 strong,
@@ -3912,7 +3912,7 @@ strong,
 .bc-line:after, .sortbox .param-sort:after, .products__list .item-products .additional__panel .item button:before, .label-tooltip:before,
 .tooltip-body:before, #notifyModal .settings-link:before, .inner .card-page .compare .btn.to-compare:before, .inner .card-page .compare .btn-compare-in:before, .inner .card-page .delivery:before, .card__right .item-wholesale__row:after, .specifications .item-specification__title:after, .cart-page .summary .option-item:after, .cart-page .calculate .title:before, .wiper-search .intro__body:after, .wiper-search .intro__body:before, .wiper-search .details .label:before, .perfomance-page .intro__body:after, .perfomance-page .intro__body:before, .perfomance-page .subtitle:before, .content-location .days:not(:last-child):after, .mob-accountmenu .btn-accountmenu:before, .orders__list .tracking__item:before, .orders__list .tracking__item:after, .notify-settings .option-item:after, .stockrequest__list .reqstatus:before, .wishlist-page .item-products__note .btn-ok:before,
 .cart-table .item-products__note .btn-ok:before, .wishlist-page .item-products .actions .btn:before,
-.cart-table .item-products .actions .btn:before {
+.cart-table .item-products .actions .btn:before, .checkout__step-3 .radio__text:before {
   content: "";
   display: block;
   position: absolute; }
@@ -14538,6 +14538,58 @@ input.form-control.error {
       background-color: transparent; }
   .checkout__step-2 .actions {
     margin-left: 3rem; }
+  .checkout__step-3 .item-method__title {
+    color: #000;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: .5rem; }
+  .checkout__step-3 .item-method input {
+    display: none; }
+  .checkout__step-3 .item-method .row {
+    margin-top: 0;
+    margin-bottom: 2.5rem; }
+    .checkout__step-3 .item-method .row:last-child {
+      margin-bottom: 1rem; }
+  .checkout__step-3 .radio {
+    cursor: pointer;
+    display: block;
+    margin-bottom: 0; }
+    .checkout__step-3 .radio input:checked + .radio__text {
+      border-bottom-color: #0672ba;
+      box-shadow: 0 5px 15px rgba(0, 153, 255, 0.5); }
+      .checkout__step-3 .radio input:checked + .radio__text:before {
+        background-color: transparent;
+        border: 6px solid #0672ba; }
+  .checkout__step-3 .radio__text {
+    background-color: #fff;
+    border-bottom: 5px solid #fff;
+    padding: 2rem 1rem 2rem 5rem;
+    position: relative;
+    transition: box-shadow .3s;
+    width: 100%; }
+    .checkout__step-3 .radio__text:before {
+      transition: background-color  .3s;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background-color: #e8e8e8;
+      left: 20px;
+      top: 22px; }
+    .checkout__step-3 .radio__text:hover {
+      box-shadow: 0 5px 15px rgba(0, 153, 255, 0.5); }
+      .checkout__step-3 .radio__text:hover:before {
+        background-color: #0099ff; }
+    .checkout__step-3 .radio__text .title {
+      font-size: 1.8rem;
+      font-weight: 700;
+      font-family: "Proxima Nova"; }
+    .checkout__step-3 .radio__text .estimated {
+      color: #3c3c3c;
+      margin-top: .2rem; }
+    .checkout__step-3 .radio__text .price {
+      font-weight: 700;
+      font-size: 1.5rem;
+      margin-top: .2rem; }
 
 .checkout .newaddress-form {
   display: none;
@@ -14545,7 +14597,7 @@ input.form-control.error {
   margin-top: 1.8rem;
   padding-bottom: 1.5rem; }
 
-.checkout .checkout__body .row {
+.checkout .checkout__body .newaddress-form .row {
   margin-top: 1.9rem; }
 
 /* =mobile-menu

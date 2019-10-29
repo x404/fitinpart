@@ -125,6 +125,84 @@
 				margin-left: 3rem;
 			}
 		}
+
+		&-3{
+			.item-method{
+				&__title{
+					color: #000;
+					font-size: 2rem;
+					font-weight: 700;
+					margin-bottom: .5rem;
+				}
+				input{
+					display: none;
+				}
+				.row{
+					margin-top: 0;
+					margin-bottom: 2.5rem;
+					&:last-child(){
+						margin-bottom: 1rem;
+					}
+				}
+			}
+
+
+			.radio{
+				cursor: pointer;
+				display: block;
+				margin-bottom: 0;
+
+				input:checked + .radio__text{
+					border-bottom-color: $color3;
+					box-shadow: 0 5px 15px rgba(0, 153, 255, 0.5);
+					&:before{
+						background-color: transparent;
+						border: 6px solid $color3;
+					}
+				}
+			}
+
+			.radio__text{
+				background-color: #fff;
+				border-bottom: 5px solid #fff;
+				padding: 2rem 1rem 2rem 5rem;
+				position: relative;
+				transition: box-shadow .3s;
+				width: 100%;
+				&:before{
+					transition: background-color  .3s;
+					@extend .before;
+					width: 20px;
+					height: 20px;
+					border-radius: 50%;
+					background-color: #e8e8e8;
+					left: 20px;
+					top: 22px;
+				}
+
+				&:hover{
+					box-shadow: 0 5px 15px rgba(0, 153, 255, 0.5);
+					&:before{
+						background-color: $color9
+					}
+				}
+				.title{
+					font-size: 1.8rem;
+					font-weight: 700;
+					font-family: "Proxima Nova";
+				}
+				.estimated{
+					color: #3c3c3c;
+					margin-top: .2rem;
+				}
+				.price{
+					@extend .neosans;
+					font-weight: 700;
+					font-size: 1.5rem;
+					margin-top: .2rem;
+				}
+			}
+		}
 	}
 
 	.newaddress-form{
@@ -135,7 +213,7 @@
 	}
 
 	.checkout__body{
-		.row{
+		.newaddress-form .row{
 			margin-top: 1.9rem;
 		}
 	}
