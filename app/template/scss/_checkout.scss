@@ -271,6 +271,66 @@
 				}
 			}
 
+			.creditcard{
+				background-color: #fff;
+				margin-top: 2rem;
+				padding: 3rem;
+
+				&__head{
+					border-bottom: 1px solid #e3e3e3;
+					padding-bottom: 1.8rem;
+					.title{
+						font-size: 2rem;
+						font-family: "Proxima Nova";
+						margin-right: 1.8rem;
+					}
+					.logo{
+						margin-right: 1.5rem;
+					}
+					img{
+						display: block;
+					}
+
+					.btn-del{
+						color: $color10;
+						font-size: 15px;
+						font-weight: 700;
+						line-height: 1;
+						margin-left: 1.5rem;
+					}
+				}
+
+				.cell{
+					margin-right: 4rem;
+					margin-top: 1.3rem;
+					padding-right: 0;
+					padding-left: 0;
+					&:last-child{
+						margin-right: 0;
+					}
+					label{
+						margin-bottom: .3rem;
+					}
+					&-cardnumber{
+						width: 280px;
+					}
+					&-cardexpiry{
+						width: 140px;
+						.form-control{
+							width: 14rem;
+						}
+					}
+					&-cvv{
+						width: 175px;
+						.form-control{
+							width: 7rem;
+						}
+					}
+					&-cardtype{
+						flex-grow: 1;
+					}		
+				}
+			}
 
 		}
 	}
@@ -305,9 +365,33 @@
 		padding-bottom: 1.5rem;
 	}
 
+	.listcard-select{
+		width: 31rem;
+	}
+
+	.btn-del{
+
+	}
 	.checkout__body{
 		.newaddress-form .row{
 			margin-top: 1.9rem;
 		}
+	}
+
+
+	.agree-control{
+		margin-top: 3rem;
+	}
+
+	.btn-submit{
+		border-radius: 7rem;
+		font-size: 1.8rem;
+		font-weight: 700;
+		height: 7rem;
+		justify-content: center;
+		margin-top: 2.5rem;
+		text-align: center;
+		width: 100%;
+
 	}
 }

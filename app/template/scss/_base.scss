@@ -464,6 +464,10 @@ em strong
 		@include sprite($icon-star);
 	}
 
+	&-delete-2{
+		@include sprite($icon-delete-2);
+		margin-right: 6px;
+	}
 } 
 // #icon
 

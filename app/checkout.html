@@ -1734,8 +1734,61 @@
 								</div>
 							</div>
 							<!-- =/payments methods -->
+
+
+							<!-- =creditcard -->
+							<div class="creditcard">
+								<div class="creditcard__head d-flex align-items-center">
+									<div class="title">Pay With a Credit Card</div>
+									<div class="logo">
+										<img src="/template/images/visa.png" alt="Visa" />
+									</div>
+
+									<div class="listcard-wrapper d-flex">
+										<div class="listcard-select">
+											<select name="listcard" id="listcard" class="listcard" multiple="multiple">
+												<option value="1">VISA ending in 2305 (12/19)</option>
+												<option value="2">VISA ending in 2405 (12/19)</option>
+												<option value="3">VISA ending in 2505 (12/19)</option>
+												<option value="4">VISA ending in 2605 (12/19)</option>
+											</select>
+										</div>
+									</div>
+								</div>
+								<div class="creditcard__body d-flex">
+									<div class="cell cell-cardnumber">
+										<label for="cardnumber">Card Number:</label>
+										<input type="text" id="cardnumber" name="cardnumber" class="form-control" value="" />
+									</div>
+									<div class="cell cell-cardexpiry">
+										<label for="cardexpiry">Card Expiry (MM/YY):</label>
+										<input type="text" id="cardexpiry" name="cardexpiry" class="form-control" value="" placeholder="MM/YY" />
+									</div>
+									<div class="cell cell-cvv">
+										<label for="cvv">Card Security Code (CVV):</label>
+										<input type="text" id="cvv" name="cvv" class="form-control" value="" />
+									</div>
+									<div class="cell cell-cardtype">
+										<label>Card Type:</label>
+										<div class="logos">
+											<img src="/template/images/visa.png" alt="Visa" />
+											<img src="/template/images/mc.png" alt="Master Card" />
+											<img src="/template/images/discover.png" alt="Discover" />
+											<img src="/template/images/ae.png" alt="American Express" />
+										</div>
+									</div>
+								</div>
+							</div>							
+							<!-- =/creditcard -->
 						</div>						
 					</div>
+
+
+					<div class="agree-control custom-control custom-checkbox">
+						<input type="checkbox" class="custom-control-input" name="agree" id="agree" checked="checked">
+						<label class="custom-control-label" for="agree">I agree to Terms & Conditions *</label>
+					</div>
+					<button type="submit" class="btn btn-submit btn-blue btn-blue-lighten-hover box-shadow">Confirm order</button>
 
 				</div>
 				<div class="col-xl-3">
@@ -2982,6 +3035,17 @@
 			onClick: function(view) {
 			}
 		});
+
+		$("#listcard").multipleSelect({
+			single: true,
+			filter: false,
+			onClick: function() {
+				const $del_html = '<button type="button" class="btn btn-del"><i class="icon icon-delete-2"></i>Delete this card</button>';
+				$('.listcard-wrapper .btn-del').remove();
+				$('.listcard-wrapper').append($del_html);
+			}
+		});
+
 
 
 		countries = new PerfectScrollbar('.checkout__body .countries .listwrapper', {
