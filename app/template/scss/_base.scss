@@ -460,6 +460,9 @@ em strong
 		margin-right: 8px;
 	}
 
+	&-star{
+		@include sprite($icon-star);
+	}
 
 } 
 // #icon

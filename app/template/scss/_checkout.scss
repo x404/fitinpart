@@ -130,9 +130,15 @@
 			.item-method{
 				&__title{
 					color: #000;
+					display: flex;
+					align-items: center;
 					font-size: 2rem;
 					font-weight: 700;
 					margin-bottom: .5rem;
+				}
+				.icon{
+					position: relative;
+					top: 2px;
 				}
 				input{
 					display: none;
@@ -202,6 +208,29 @@
 					margin-top: .2rem;
 				}
 			}
+		}
+	}
+
+	.tooltip-label{
+		margin-left: .5rem;
+		font-weight: 700;
+
+		color: #fff;
+		font-size: 1.5rem;
+		padding: 0;
+
+		&-circle{
+			background-color: #778d9b;
+			border-radius: 50%;		
+			height: 20px;
+			width: 20px;
+			&:hover{
+				background-color: $color9
+			}
+		}
+
+		.tooltip-body{
+			font-weight: normal;
 		}
 	}
 

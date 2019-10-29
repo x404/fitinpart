@@ -3966,7 +3966,7 @@ strong,
     padding-left: 64px; }
     .icon-9dotted:before {
       background-image: url(../images/sprite.png);
-      background-position: -39px -178px;
+      background-position: -75px -178px;
       width: 18px;
       height: 18px; }
   .icon-littlecart {
@@ -3984,7 +3984,7 @@ strong,
     transition: filter .3s; }
   .icon-arrowright:before {
     background-image: url(../images/sprite.png);
-    background-position: -167px -178px;
+    background-position: -185px -178px;
     width: 18px;
     height: 13px;
     left: 20px;
@@ -3992,7 +3992,7 @@ strong,
     top: 50%; }
   .icon-arrowright2 {
     background-image: url(../images/sprite.png);
-    background-position: -158px -155px;
+    background-position: -160px -155px;
     width: 22px;
     height: 15px;
     margin-right: 9px; }
@@ -4022,7 +4022,7 @@ strong,
     height: 13px; }
   .icon-camera {
     background-image: url(../images/sprite.png);
-    background-position: -94px -178px;
+    background-position: -112px -178px;
     width: 20px;
     height: 16px;
     margin: 0 auto; }
@@ -4032,7 +4032,7 @@ strong,
     padding-top: .5rem; }
     .icon-balloon:before {
       background-image: url(../images/sprite.png);
-      background-position: -127px 0px;
+      background-position: -127px -32px;
       width: 24px;
       height: 32px;
       left: 0;
@@ -4040,7 +4040,7 @@ strong,
   .icon-balloon-gray {
     display: block;
     background-image: url(../images/sprite.png);
-    background-position: -127px -32px;
+    background-position: -127px 0px;
     width: 24px;
     height: 32px; }
   .icon-tel-gray {
@@ -4058,18 +4058,18 @@ strong,
   .icon-clock-gray {
     display: block;
     background-image: url(../images/sprite.png);
-    background-position: -28px -104px;
+    background-position: -55px -104px;
     width: 27px;
     height: 27px; }
   .icon-online-gray {
     display: block;
     background-image: url(../images/sprite.png);
-    background-position: -97px -30px;
+    background-position: -97px 0px;
     width: 30px;
     height: 30px; }
   .icon-search {
     background-image: url(../images/sprite.png);
-    background-position: -55px -104px;
+    background-position: -28px -104px;
     width: 27px;
     height: 27px;
     display: block;
@@ -4106,12 +4106,12 @@ strong,
     display: block; }
   .icon-tofav {
     background-image: url(../images/sprite.png);
-    background-position: 0px -155px;
+    background-position: -26px -155px;
     width: 26px;
     height: 23px; }
   .icon-infav {
     background-image: url(../images/sprite.png);
-    background-position: -26px -155px;
+    background-position: 0px -155px;
     width: 26px;
     height: 23px; }
   .icon-letter {
@@ -4146,12 +4146,12 @@ strong,
     height: 11px; }
   .icon-good {
     background-image: url(../images/sprite.png);
-    background-position: -120px -155px;
+    background-position: -100px -155px;
     width: 20px;
     height: 20px; }
   .icon-bad {
     background-image: url(../images/sprite.png);
-    background-position: -100px -155px;
+    background-position: -120px -155px;
     width: 20px;
     height: 20px; }
   .icon-clock-blue {
@@ -4161,7 +4161,7 @@ strong,
     height: 43px; }
   .icon-list-blue {
     background-image: url(../images/sprite.png);
-    background-position: -58px -74px;
+    background-position: -89px -74px;
     width: 31px;
     height: 25px; }
   .icon-back-blue {
@@ -4201,7 +4201,7 @@ strong,
     height: 7px; }
   .icon-success {
     background-image: url(../images/sprite.png);
-    background-position: -178px -116px;
+    background-position: -178px -50px;
     width: 22px;
     height: 22px; }
   .icon-attention {
@@ -4211,7 +4211,7 @@ strong,
     height: 19px; }
   .icon-info {
     background-image: url(../images/sprite.png);
-    background-position: -178px -72px;
+    background-position: -178px -116px;
     width: 22px;
     height: 22px; }
   .icon-scales {
@@ -4259,7 +4259,7 @@ strong,
     transform: rotate(180deg); }
   .icon-car2 {
     background-image: url(../images/sprite.png);
-    background-position: -88px -131px;
+    background-position: -54px -131px;
     width: 34px;
     height: 19px;
     margin-right: 8px; }
@@ -4269,6 +4269,11 @@ strong,
     width: 18px;
     height: 18px;
     margin-right: 8px; }
+  .icon-star {
+    background-image: url(../images/sprite.png);
+    background-position: -140px -155px;
+    width: 20px;
+    height: 18px; }
 
 .w100 {
   width: 100%; }
@@ -7112,7 +7117,7 @@ input.form-control.error {
           position: relative; }
           .breadcrumbs ul li.B_homecrumb a:before {
             background-image: url(../images/sprite.png);
-            background-position: -150px -178px;
+            background-position: -168px -178px;
             width: 17px;
             height: 14px;
             left: 0;
@@ -11420,19 +11425,19 @@ input.form-control.error {
 
 .icon-garage {
   background-image: url(../images/sprite.png);
-  background-position: -54px -131px;
+  background-position: -88px -131px;
   width: 34px;
   height: 19px; }
 
 .icon-vehicle {
   background-image: url(../images/sprite.png);
-  background-position: -151px 0px;
+  background-position: -82px -104px;
   width: 27px;
   height: 27px; }
 
 .icon-stock {
   background-image: url(../images/sprite.png);
-  background-position: -82px -104px;
+  background-position: -151px 0px;
   width: 27px;
   height: 27px; }
 
@@ -11450,7 +11455,7 @@ input.form-control.error {
 
 .icon-orders {
   background-image: url(../images/sprite.png);
-  background-position: -89px -74px;
+  background-position: -27px -74px;
   width: 31px;
   height: 25px; }
 
@@ -11468,7 +11473,7 @@ input.form-control.error {
 
 .icon-transactions {
   background-image: url(../images/sprite.png);
-  background-position: -97px 0px;
+  background-position: -97px -30px;
   width: 30px;
   height: 30px; }
 
@@ -11480,13 +11485,13 @@ input.form-control.error {
 
 .icon-logout {
   background-image: url(../images/sprite.png);
-  background-position: -27px -74px;
+  background-position: -58px -74px;
   width: 31px;
   height: 25px; }
 
 .icon-myaccount-sm {
   background-image: url(../images/sprite.png);
-  background-position: -140px -155px;
+  background-position: -21px -178px;
   width: 18px;
   height: 19px; }
 
@@ -11510,37 +11515,37 @@ input.form-control.error {
 
 .icon-addressbook-sm {
   background-image: url(../images/sprite.png);
-  background-position: -136px -104px;
+  background-position: -163px -131px;
   width: 13px;
   height: 18px; }
 
 .icon-wishlist-sm {
   background-image: url(../images/sprite.png);
-  background-position: -114px -178px;
+  background-position: -132px -178px;
   width: 18px;
   height: 16px; }
 
 .icon-orders-sm {
   background-image: url(../images/sprite.png);
-  background-position: -180px -155px;
+  background-position: -150px -178px;
   width: 18px;
   height: 15px; }
 
 .icon-itemorders-sm {
   background-image: url(../images/sprite.png);
-  background-position: -75px -178px;
+  background-position: -93px -178px;
   width: 19px;
   height: 17px; }
 
 .icon-reward-sm {
   background-image: url(../images/sprite.png);
-  background-position: -163px -131px;
+  background-position: -136px -104px;
   width: 13px;
   height: 18px; }
 
 .icon-transactions-sm {
   background-image: url(../images/sprite.png);
-  background-position: -21px -178px;
+  background-position: -39px -178px;
   width: 18px;
   height: 18px; }
 
@@ -11558,13 +11563,13 @@ input.form-control.error {
 
 .icon-key {
   background-image: url(../images/sprite.png);
-  background-position: -178px -94px;
+  background-position: -178px -72px;
   width: 22px;
   height: 22px; }
 
 .icon-pencil {
   background-image: url(../images/sprite.png);
-  background-position: -178px -50px;
+  background-position: -178px -94px;
   width: 22px;
   height: 22px; }
 
@@ -11588,7 +11593,7 @@ input.form-control.error {
 
 .icon-arrow-middle-right {
   background-image: url(../images/sprite.png);
-  background-position: -132px -178px;
+  background-position: -182px -155px;
   width: 18px;
   height: 15px; }
 
@@ -14540,9 +14545,14 @@ input.form-control.error {
     margin-left: 3rem; }
   .checkout__step-3 .item-method__title {
     color: #000;
+    display: flex;
+    align-items: center;
     font-size: 2rem;
     font-weight: 700;
     margin-bottom: .5rem; }
+  .checkout__step-3 .item-method .icon {
+    position: relative;
+    top: 2px; }
   .checkout__step-3 .item-method input {
     display: none; }
   .checkout__step-3 .item-method .row {
@@ -14590,6 +14600,22 @@ input.form-control.error {
       font-weight: 700;
       font-size: 1.5rem;
       margin-top: .2rem; }
+
+.checkout .tooltip-label {
+  margin-left: .5rem;
+  font-weight: 700;
+  color: #fff;
+  font-size: 1.5rem;
+  padding: 0; }
+  .checkout .tooltip-label-circle {
+    background-color: #778d9b;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px; }
+    .checkout .tooltip-label-circle:hover {
+      background-color: #0099ff; }
+  .checkout .tooltip-label .tooltip-body {
+    font-weight: normal; }
 
 .checkout .newaddress-form {
   display: none;
