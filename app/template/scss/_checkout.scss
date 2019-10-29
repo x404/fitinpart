@@ -209,6 +209,41 @@
 				}
 			}
 		}
+
+		
+		&-4{
+			.information{
+				background-color: #778d9b;
+				color: #fff;
+				padding: 3.5rem 3rem;
+				&__label{
+					font-size: 1.5rem;
+				}
+				&__value{
+					font-size: 2.5rem;
+					font-weight: 700;
+					line-height: 1.2;
+				}
+
+				.tooltip-label {
+					margin-left: 1rem;
+				}
+			}
+			.cell{
+				margin-right: .6rem;
+				padding: .8rem 1.8rem;
+				&-active{
+					background-color: #c91537;
+					.information__value{
+						font-size: 3rem;
+					}
+				}
+			}
+
+			.tooltip-label-circle{
+				background-color: $color3 !important;
+			}
+		}
 	}
 
 	.tooltip-label{
@@ -225,7 +260,7 @@
 			height: 20px;
 			width: 20px;
 			&:hover{
-				background-color: $color9
+				background-color: $color9 !important
 			}
 		}
 

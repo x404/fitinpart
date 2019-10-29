@@ -14600,6 +14600,27 @@ input.form-control.error {
       font-weight: 700;
       font-size: 1.5rem;
       margin-top: .2rem; }
+  .checkout__step-4 .information {
+    background-color: #778d9b;
+    color: #fff;
+    padding: 3.5rem 3rem; }
+    .checkout__step-4 .information__label {
+      font-size: 1.5rem; }
+    .checkout__step-4 .information__value {
+      font-size: 2.5rem;
+      font-weight: 700;
+      line-height: 1.2; }
+    .checkout__step-4 .information .tooltip-label {
+      margin-left: 1rem; }
+  .checkout__step-4 .cell {
+    margin-right: .6rem;
+    padding: .8rem 1.8rem; }
+    .checkout__step-4 .cell-active {
+      background-color: #c91537; }
+      .checkout__step-4 .cell-active .information__value {
+        font-size: 3rem; }
+  .checkout__step-4 .tooltip-label-circle {
+    background-color: #0672ba !important; }
 
 .checkout .tooltip-label {
   margin-left: .5rem;
@@ -14613,7 +14634,7 @@ input.form-control.error {
     height: 20px;
     width: 20px; }
     .checkout .tooltip-label-circle:hover {
-      background-color: #0099ff; }
+      background-color: #0099ff !important; }
   .checkout .tooltip-label .tooltip-body {
     font-weight: normal; }
 
