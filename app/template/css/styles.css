@@ -14479,60 +14479,65 @@ input.form-control.error {
 
 .checkout__step {
   border-bottom: 1px solid #dadada;
-  padding-bottom: 3rem;
+  padding-bottom: 1.6rem;
   padding-top: 3rem; }
-  .checkout__step-1 .inner {
-    background-color: #fff;
-    padding: 2rem 3rem; }
-  .checkout__step-1 .address__select {
-    margin-left: -13px; }
-  .checkout__step-1 .btn-addaddress {
-    border-radius: 4.4rem;
-    border: 2px solid #0672ba;
-    font-size: 1.5rem;
-    font-weight: 700;
-    height: 4.4rem;
-    line-height: 1.2;
-    margin-left: 4rem;
-    padding: 0 1.1rem 0 40px; }
-  .checkout__step-1 .radio {
-    position: relative; }
-    .checkout__step-1 .radio input {
-      opacity: 0;
+  .checkout__step-1 {
+    border-bottom: none;
+    padding-bottom: 0; }
+    .checkout__step-1 .inner {
+      background-color: #fff;
+      padding: 2rem 3rem; }
+    .checkout__step-1 .address__select {
+      margin-left: -13px; }
+    .checkout__step-1 .btn-addaddress {
+      border-radius: 4.4rem;
+      border: 2px solid #0672ba;
+      font-size: 1.5rem;
+      font-weight: 700;
+      height: 4.4rem;
+      line-height: 1.2;
+      margin-left: 4rem;
+      padding: 0 1.1rem 0 40px; }
+    .checkout__step-1 .radio {
+      position: relative; }
+      .checkout__step-1 .radio input {
+        opacity: 0;
+        position: absolute;
+        z-index: -1; }
+    .checkout__step-1 .radio__text {
+      cursor: pointer;
+      height: 40px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      padding-left: 43px;
+      padding-right: 13px;
+      border: 2px solid rgba(255, 255, 255, 0); }
+      .checkout__step-1 .radio__text:hover:before {
+        background-color: #0099ff; }
+    .checkout__step-1 .radio__text:before {
+      transition: background-color .3s;
+      z-index: 10;
+      content: '';
+      height: 20px;
+      width: 20px;
+      left: 10px;
+      top: 8px;
       position: absolute;
-      z-index: -1; }
-  .checkout__step-1 .radio__text {
-    cursor: pointer;
-    height: 40px;
-    position: relative;
-    display: flex;
-    align-items: center;
-    padding-left: 43px;
-    padding-right: 13px;
-    border: 2px solid rgba(255, 255, 255, 0); }
-    .checkout__step-1 .radio__text:hover:before {
-      background-color: #0099ff; }
-  .checkout__step-1 .radio__text:before {
-    transition: background-color .3s;
-    z-index: 10;
-    content: '';
-    height: 20px;
-    width: 20px;
-    left: 10px;
-    top: 8px;
-    position: absolute;
-    transition: .2s;
-    background-color: #e8e8e8;
-    border-radius: 50%; }
-  .checkout__step-1 .radio input:checked + .radio__text {
-    border: 2px solid #0672ba;
-    border-radius: 44px;
-    font-weight: 700; }
-  .checkout__step-1 .radio input:checked + .radio__text:hover:before {
-    background-color: transparent; }
-  .checkout__step-1 .radio input:checked + .radio__text:before {
-    border: 6px solid #0672ba;
-    background-color: transparent; }
+      transition: .2s;
+      background-color: #e8e8e8;
+      border-radius: 50%; }
+    .checkout__step-1 .radio input:checked + .radio__text {
+      border: 2px solid #0672ba;
+      border-radius: 44px;
+      font-weight: 700; }
+    .checkout__step-1 .radio input:checked + .radio__text:hover:before {
+      background-color: transparent; }
+    .checkout__step-1 .radio input:checked + .radio__text:before {
+      border: 6px solid #0672ba;
+      background-color: transparent; }
+  .checkout__step-2 .actions {
+    margin-left: 3rem; }
 
 .checkout .newaddress-form {
   display: none;

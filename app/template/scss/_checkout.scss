@@ -39,17 +39,15 @@
 
 	&__step{
 		border-bottom: 1px solid #dadada;
-		padding-bottom: 3rem;
+		padding-bottom: 1.6rem;
 		padding-top: 3rem;
 
 		&-1{
+			border-bottom: none;
+			padding-bottom: 0;
 			.inner{
 				background-color: #fff;
 				padding: 2rem 3rem;
-			}
-
-			.row{
-				// margin-top: 2.5rem;
 			}
 
 			.address{
@@ -67,8 +65,6 @@
 				margin-left: 4rem;
 				padding: 0 1.1rem 0 40px;
 			}
-
-
 
 			.radio{
 				position: relative;
@@ -122,6 +118,12 @@
 				background-color: transparent;
 			}
 
+		}
+
+		&-2{
+			.actions{
+				margin-left: 3rem;
+			}
 		}
 	}
 
