@@ -14483,12 +14483,9 @@ input.form-control.error {
   padding-top: 3rem; }
   .checkout__step-1 .inner {
     background-color: #fff;
-    padding: 2rem 3rem 3.5rem; }
-  .checkout__step-1 .address {
-    border-bottom: 1px solid #e7e8e8;
-    padding-bottom: 1.8rem; }
-    .checkout__step-1 .address__select {
-      margin-left: -13px; }
+    padding: 2rem 3rem; }
+  .checkout__step-1 .address__select {
+    margin-left: -13px; }
   .checkout__step-1 .btn-addaddress {
     border-radius: 4.4rem;
     border: 2px solid #0672ba;
@@ -14536,6 +14533,12 @@ input.form-control.error {
   .checkout__step-1 .radio input:checked + .radio__text:before {
     border: 6px solid #0672ba;
     background-color: transparent; }
+
+.checkout .newaddress-form {
+  display: none;
+  border-top: 1px solid #e7e8e8;
+  margin-top: 1.8rem;
+  padding-bottom: 1.5rem; }
 
 .checkout .checkout__body .row {
   margin-top: 1.9rem; }

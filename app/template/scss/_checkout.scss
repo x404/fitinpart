@@ -37,11 +37,6 @@
 		}
 	}
 
-	&__body{
-
-	}
-
-
 	&__step{
 		border-bottom: 1px solid #dadada;
 		padding-bottom: 3rem;
@@ -50,7 +45,7 @@
 		&-1{
 			.inner{
 				background-color: #fff;
-				padding: 2rem 3rem 3.5rem;
+				padding: 2rem 3rem;
 			}
 
 			.row{
@@ -58,8 +53,6 @@
 			}
 
 			.address{
-				border-bottom: 1px solid #e7e8e8;
-				padding-bottom: 1.8rem;
 				&__select{
 					margin-left: -13px;
 				}
@@ -130,6 +123,13 @@
 			}
 
 		}
+	}
+
+	.newaddress-form{
+		display: none;
+		border-top: 1px solid #e7e8e8;
+		margin-top: 1.8rem;
+		padding-bottom: 1.5rem;
 	}
 
 	.checkout__body{
