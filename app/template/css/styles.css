@@ -14490,8 +14490,7 @@ input.form-control.error {
 
 .checkout__step {
   border-bottom: 1px solid #dadada;
-  padding-bottom: 1.6rem;
-  padding-top: 3rem; }
+  padding: 3rem 0 1.8rem; }
   .checkout__step-1 {
     border-bottom: none;
     padding-bottom: 0; }
@@ -14641,7 +14640,7 @@ input.form-control.error {
   .checkout__step-4 .creditcard {
     background-color: #fff;
     margin-top: 2rem;
-    padding: 3rem; }
+    padding: 1.8rem 3rem; }
     .checkout__step-4 .creditcard__head {
       border-bottom: 1px solid #e3e3e3;
       padding-bottom: 1.8rem; }
@@ -14680,6 +14679,8 @@ input.form-control.error {
           width: 7rem; }
       .checkout__step-4 .creditcard .cell-cardtype {
         flex-grow: 1; }
+    .checkout__step-4 .creditcard .savecard-control {
+      margin-top: .8rem; }
 
 .checkout .tooltip-label {
   margin-left: .5rem;
@@ -14713,12 +14714,12 @@ input.form-control.error {
   margin-top: 3rem; }
 
 .checkout .btn-submit {
-  border-radius: 7rem;
+  border-radius: 6rem;
   font-size: 1.8rem;
   font-weight: 700;
-  height: 7rem;
+  height: 6rem;
   justify-content: center;
-  margin-top: 2.5rem;
+  margin-top: 2rem;
   text-align: center;
   width: 100%; }
 

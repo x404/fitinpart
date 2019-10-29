@@ -39,8 +39,7 @@
 
 	&__step{
 		border-bottom: 1px solid #dadada;
-		padding-bottom: 1.6rem;
-		padding-top: 3rem;
+		padding: 3rem 0 1.8rem;
 
 		&-1{
 			border-bottom: none;
@@ -274,7 +273,7 @@
 			.creditcard{
 				background-color: #fff;
 				margin-top: 2rem;
-				padding: 3rem;
+				padding: 1.8rem 3rem;
 
 				&__head{
 					border-bottom: 1px solid #e3e3e3;
@@ -330,6 +329,10 @@
 						flex-grow: 1;
 					}		
 				}
+
+				.savecard-control{
+					margin-top: .8rem;
+				}
 			}
 
 		}
@@ -384,12 +387,12 @@
 	}
 
 	.btn-submit{
-		border-radius: 7rem;
+		border-radius: 6rem;
 		font-size: 1.8rem;
 		font-weight: 700;
-		height: 7rem;
+		height: 6rem;
 		justify-content: center;
-		margin-top: 2.5rem;
+		margin-top: 2rem;
 		text-align: center;
 		width: 100%;
 

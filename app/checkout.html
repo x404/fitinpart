@@ -1758,15 +1758,15 @@
 								<div class="creditcard__body d-flex">
 									<div class="cell cell-cardnumber">
 										<label for="cardnumber">Card Number:</label>
-										<input type="text" id="cardnumber" name="cardnumber" class="form-control" value="" />
+										<input type="text" id="cardnumber" name="cardnumber" class="form-control" placeholder="●●●● ●●●● ●●●● ●●●●" value=""  />
 									</div>
 									<div class="cell cell-cardexpiry">
 										<label for="cardexpiry">Card Expiry (MM/YY):</label>
-										<input type="text" id="cardexpiry" name="cardexpiry" class="form-control" value="" placeholder="MM/YY" />
+										<input type="tel" id="cardexpiry" name="cardexpiry" class="form-control" value="" placeholder="MM/YY" />
 									</div>
 									<div class="cell cell-cvv">
 										<label for="cvv">Card Security Code (CVV):</label>
-										<input type="text" id="cvv" name="cvv" class="form-control" value="" />
+										<input type="text" id="cvv" name="cvv" class="form-control text-center" value="" placeholder="●●●" />
 									</div>
 									<div class="cell cell-cardtype">
 										<label>Card Type:</label>
@@ -1777,6 +1777,10 @@
 											<img src="/template/images/ae.png" alt="American Express" />
 										</div>
 									</div>
+								</div>
+								<div class="savecard-control custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" name="savecard" id="savecard" checked="checked">
+									<label class="custom-control-label" for="savecard">Save your card</label>
 								</div>
 							</div>							
 							<!-- =/creditcard -->
@@ -2994,9 +2998,16 @@
 <script src="/template/js/search-moto.js"></script>
 <script src="/template/js/search-hd.js"></script>
 <!-- InstanceBeginEditable name="EditRegion4" -->
+<script src="/template/js/jquery.inputmask.min.js" data-autoinit="true"></script>
 <script>
 	$(document).ready(function(){
-		$("#add-country").multipleSelect({
+		// masked credit card form
+		$('#cardnumber').inputmask('9999 9999 9999 9999', {"placeholder": ""});
+		$('#cardexpiry').inputmask({alias: 'datetime', inputFormat: 'mm/yy'});
+		$('#cvv').inputmask('999', {"placeholder": ""});
+
+
+		$('#add-country').multipleSelect({
 			single: true,
 			filter: true,
 			onFilter: function(){
@@ -3010,7 +3021,7 @@
 			}
 		});
 
-		$("#add-region").multipleSelect({
+		$('#add-region').multipleSelect({
 			single: true,
 			filter: true,
 			onFilter: function(){
@@ -3023,7 +3034,7 @@
 			}
 		});
 
-		$("#add-city").multipleSelect({
+		$('#add-city').multipleSelect({
 			single: true,
 			filter: true,
 			onFilter: function(){
@@ -3036,7 +3047,7 @@
 			}
 		});
 
-		$("#listcard").multipleSelect({
+		$('#listcard').multipleSelect({
 			single: true,
 			filter: false,
 			onClick: function() {

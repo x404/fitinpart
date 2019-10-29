@@ -19,6 +19,7 @@ __Используемые в проекте js плагины__
 * Flex menu - menu with caret [https://github.com/352Media/flexMenu](https://github.com/352Media/flexMenu)
 * Autosize textara [http://www.jacklmoore.com/autosize/](http://www.jacklmoore.com/autosize/)
 * Sortable plugin [https://github.com/SortableJS/Sortable](https://github.com/SortableJS/Sortable)
+* Masked plugin for input on checkout page [https://github.com/RobinHerbots/Inputmask](https://github.com/RobinHerbots/Inputmask)
 
 * Стилизация скролов nicescroll[https://github.com/inuyaksa/jquery.nicescroll/blob/master/README.md](https://github.com/inuyaksa/jquery.nicescroll/blob/master/README.md)
 
