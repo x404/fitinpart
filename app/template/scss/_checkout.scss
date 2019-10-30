@@ -25,7 +25,7 @@
 		}
 		.title{
 			line-height: 1.2;
-			font-size: 2.2rem;
+			font-size: 2.2rem !important;
 		}
 		.actions{
 			align-items: center;
@@ -241,6 +241,15 @@
 				.tooltip-label {
 					margin-left: 1rem;
 				}
+
+				@media (max-width: 1500px){
+					padding-left: 2rem;
+					padding-right: 2rem;
+					.cell{
+						padding-left: 1.3rem;
+						padding-right: 1.3rem;
+					}
+				}
 			}
 			.cell{
 				margin-right: .6rem;
@@ -325,11 +334,12 @@
 						width: 140px;
 						.form-control{
 							text-transform: uppercase;
-							width: 14rem;
+						width: 14rem;
 						}
 					}
 					&-cvv{
 						width: 175px;
+						flex-shrink: 0;
 						.form-control{
 							width: 7rem;
 						}
@@ -341,6 +351,17 @@
 
 				.savecard-control{
 					margin-top: .8rem;
+				}
+
+				@media (max-width: 1550px){
+					.cell{
+						margin-right: 2.9rem;
+					}
+				}
+				@media (max-width: 1500px){
+					.cell-cardtype{
+						flex-grow: 0;
+					}
 				}
 			}
 

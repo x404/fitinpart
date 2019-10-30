@@ -14485,7 +14485,7 @@ input.form-control.error {
     width: 52px; }
   .checkout__head .title {
     line-height: 1.2;
-    font-size: 2.2rem; }
+    font-size: 2.2rem !important; }
   .checkout__head .actions {
     align-items: center;
     display: flex;
@@ -14629,6 +14629,13 @@ input.form-control.error {
       line-height: 1.2; }
     .checkout__step-4 .information .tooltip-label {
       margin-left: 1rem; }
+    @media (max-width: 1500px) {
+      .checkout__step-4 .information {
+        padding-left: 2rem;
+        padding-right: 2rem; }
+        .checkout__step-4 .information .cell {
+          padding-left: 1.3rem;
+          padding-right: 1.3rem; } }
   .checkout__step-4 .cell {
     margin-right: .6rem;
     padding: .8rem 1.8rem; }
@@ -14687,13 +14694,20 @@ input.form-control.error {
           text-transform: uppercase;
           width: 14rem; }
       .checkout__step-4 .creditcard .cell-cvv {
-        width: 175px; }
+        width: 175px;
+        flex-shrink: 0; }
         .checkout__step-4 .creditcard .cell-cvv .form-control {
           width: 7rem; }
       .checkout__step-4 .creditcard .cell-cardtype {
         flex-grow: 1; }
     .checkout__step-4 .creditcard .savecard-control {
       margin-top: .8rem; }
+    @media (max-width: 1550px) {
+      .checkout__step-4 .creditcard .cell {
+        margin-right: 2.9rem; } }
+    @media (max-width: 1500px) {
+      .checkout__step-4 .creditcard .cell-cardtype {
+        flex-grow: 0; } }
 
 .checkout .tooltip-label {
   margin-left: .5rem;
