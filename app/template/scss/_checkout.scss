@@ -495,5 +495,78 @@
 			}
 		}
 
+		.calculation{
+			$color: #28292d;
+			background-color: $color;
+			color: #fff;
+			padding: 2.2rem 2rem 1.4rem;
+			button{
+				color: #fff;
+			}
+			.code{
+				&__row{
+					margin-bottom: 2rem;
+					label{
+						flex-shrink: 0;
+						width: 15rem;
+						padding-right: 1.6rem;
+					}
+					.form-control{
+						height: 3rem;
+						flex-grow: 1;
+						background-color: #fff;
+					}
+					.btn-ok{
+						border-radius: 3rem;
+						font-weight: 700;
+						flex-shrink: 0;
+						margin-left: 1rem;
+						text-align: center;
+						width: 5.5rem;
+						height: 3rem;
+						border-radius: 3rem;
+						justify-content: center;
+					}
+				}
+			}
+
+
+			&__row{
+				display: flex;
+				font-size: 1.6rem;
+				font-weight: 700;
+				justify-content: space-between;
+				margin-top: 2.5rem;
+				margin-bottom: -.8rem;
+				position: relative;
+				&:after{
+					@extend .before;
+					border-top: 1px solid #4d4d4d;
+					left: 0;
+					top: 12px;
+					width: 100%;
+					z-index: 1;
+				}
+			}
+			&__title{
+				background-color: $color;
+				padding-right: 1rem;
+				position: relative;
+				z-index: 10;
+			}
+			&__value{
+				background-color: $color;
+				padding-left: 1rem;
+				position: relative;
+				z-index: 10;
+			}
+
+			.total{
+				color: $color10;
+				font-size: 2.2rem;
+				font-weight: 700;
+				margin-top: 2.3rem;
+			}
+		}
 	}
 }
