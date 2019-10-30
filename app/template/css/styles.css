@@ -14924,6 +14924,26 @@ input.form-control.error {
   .checkout .shopping-cart .item-cart .unitprice {
     margin-top: 1rem; } }
 
+@media (max-width: 991px) {
+  .checkout__left {
+    padding-right: 0;
+    width: 100%; }
+  .checkout__right {
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px; }
+  .checkout .shopping-cart .item-cart__title {
+    width: 10.5rem; }
+  .checkout .shopping-cart .item-cart__count,
+  .checkout .shopping-cart .item-cart .total {
+    margin-top: 0; }
+  .checkout .shopping-cart .item-cart__count {
+    width: 11.5rem; }
+  .checkout .shopping-cart .item-cart .total {
+    width: auto; }
+  .checkout .shopping-cart .item-cart .unitprice {
+    margin-top: -15px; } }
+
 /* =mobile-menu
 ---------------------------*/
 .show-sm,
