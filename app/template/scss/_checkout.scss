@@ -247,6 +247,7 @@
 					.cell{
 						padding-left: 1.3rem;
 						padding-right: 1.3rem;
+
 					}
 				}
 
@@ -254,6 +255,9 @@
 			.cell{
 				margin-right: .6rem;
 				padding: .8rem 1.8rem;
+				&:last-child(){
+					margin-right: 0;
+				}
 				&-active{
 					background-color: #c91537;
 					.information__value{
@@ -682,7 +686,6 @@
 			}
 		}
 
-
 		.checkout__step-4 .information{
 			padding-top: 2.5rem;
 			padding-bottom: 2.5rem;
@@ -693,7 +696,6 @@
 				font-size: 2.2rem;
 			}
 		}
-
 
 		.shopping-cart{
 			.item-cart{
@@ -755,5 +757,22 @@
 				}
 			}
 		}
+	}
+
+	@media (max-width: 850px){
+		.checkout__step-4 .information{
+			padding-top: 20px;
+			padding-bottom: 20px;
+			.cell{
+				padding-left: 10px;
+				padding-right: 10px;
+			}
+			&__label{
+				font-size: 14px;
+			}
+			&__value{
+				font-size: 20px;
+			}
+		}		
 	}
 }

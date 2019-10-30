@@ -14642,6 +14642,8 @@ input.form-control.error {
   .checkout__step-4 .cell {
     margin-right: .6rem;
     padding: .8rem 1.8rem; }
+    .checkout__step-4 .cell:last-child {
+      margin-right: 0; }
     .checkout__step-4 .cell-active {
       background-color: #c91537; }
       .checkout__step-4 .cell-active .information__value {
@@ -14943,6 +14945,18 @@ input.form-control.error {
     width: auto; }
   .checkout .shopping-cart .item-cart .unitprice {
     margin-top: -15px; } }
+
+@media (max-width: 850px) {
+  .checkout .checkout__step-4 .information {
+    padding-top: 20px;
+    padding-bottom: 20px; }
+    .checkout .checkout__step-4 .information .cell {
+      padding-left: 10px;
+      padding-right: 10px; }
+    .checkout .checkout__step-4 .information__label {
+      font-size: 14px; }
+    .checkout .checkout__step-4 .information__value {
+      font-size: 20px; } }
 
 /* =mobile-menu
 ---------------------------*/
