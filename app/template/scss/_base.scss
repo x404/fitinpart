@@ -472,6 +472,11 @@ em strong
 	&-delete-3{
 		@include sprite($icon-delete-3);
 	}
+
+	&-car-3{
+		@include sprite($icon-car-3);
+		margin-right: 1rem;
+	}
 } 
 // #icon
 

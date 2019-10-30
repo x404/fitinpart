@@ -1,0 +1,30 @@
+.searchresults-page{
+	.car-plate{
+		background-color: #fff;
+		padding: 2rem 4rem;
+		margin-top: .8rem;
+		.car{
+			&__pic{
+				margin-right: 3.8rem;
+			}
+			&__desc{
+				margin-right: 2.2rem;
+			}
+			&__title{
+				@extend .neosans;
+				color: $color53;
+				font-size: 1.5rem;
+				font-weight: 700;
+			}
+			&__text{
+				margin-top: .5rem;
+			}
+		}
+
+		.btn{
+			font-size: 1.5rem;
+			padding-right: 2.5rem;
+			padding-left: 1.8rem;
+		}
+	}
+}
