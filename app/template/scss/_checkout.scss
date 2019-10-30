@@ -10,6 +10,7 @@
 	&__head{
 		align-items: center;
 		display: flex;
+		flex-wrap: wrap;
 		margin-bottom: 1.4rem;
 		.num{
 			@extend .flex-center;
@@ -80,6 +81,9 @@
 					position: absolute;
 					z-index: -1;
 				}
+				&-newaddress{
+					white-space: nowrap;
+				}
 			}
 
 			.radio__text {
@@ -87,9 +91,9 @@
 				height: 40px;
 				position: relative;
 				display: flex;
+				line-height: 1.2;
 				align-items: center;
-				padding-left: 43px;
-				padding-right: 13px;
+				padding: 6px 13px 6px 43px;
 				border: 2px solid rgba(255,255,255,0);
 				&:hover{
 					&:before{
@@ -131,11 +135,6 @@
 			.actions{
 				margin-left: 3rem;
 			}
-		}
-
-		&-3{
-
-
 		}
 
 		
@@ -250,6 +249,7 @@
 						padding-right: 1.3rem;
 					}
 				}
+
 			}
 			.cell{
 				margin-right: .6rem;
@@ -266,8 +266,13 @@
 				background-color: $color3 !important;
 			}
 
-			.checkout__body .row{
-				margin-top: .8rem;
+			.checkout__body{
+				.row{
+					margin-top: .8rem;
+				}
+				.ms-parent .listwrapper{
+					height: auto;
+				}
 			}
 
 
@@ -365,6 +370,20 @@
 				}
 			}
 
+
+			@media (min-width: 1400px){
+				.item-method{
+					max-width: 33.3333%;
+					flex-basis: 33.3333%;
+				}
+			}
+			@media (max-width: 1399px){
+				.item-method{
+					.title{
+						font-size: 1.6rem;
+					}
+				}
+			}
 		}
 	}
 
@@ -396,10 +415,30 @@
 		border-top: 1px solid #e7e8e8;
 		margin-top: 1.8rem;
 		padding-bottom: 1.5rem;
+
+		.cell{
+			margin-bottom: 1.9rem;
+		}
+
+		.row:last-child(){
+			margin-top: 0 !important;
+		}
+
+		@media (min-width: 1400px){
+			.cell{
+				max-width: 33%;
+				flex-basis: 33%;
+			}
+		}
 	}
 
-	.listcard-select{
-		width: 31rem;
+	.listcard{
+		&-wrapper{
+			flex-grow: 1;
+		}
+		&-select{
+			width: 31rem;
+		}
 	}
 
 	.btn-del{
@@ -477,6 +516,7 @@
 				line-height: 1.2;
 				padding-right: 2rem;
 				width: 10.5rem;
+				// min-height: 3rem;
 			}
 
 			&__count{
@@ -486,8 +526,10 @@
 			}
 
 			.total{
+				line-height: 1.2;
 				.price{
 					color: #000;
+					margin-top: .3rem;
 				}
 			}
 
@@ -587,6 +629,91 @@
 				font-size: 2.2rem;
 				font-weight: 700;
 				margin-top: 2.3rem;
+			}
+		}
+	}
+
+	@media (max-width: 1399px){
+		&__left{
+			width: 60%;
+		}
+
+		&__right{
+			width: 40%;
+		}
+
+
+		.creditcard__head{
+		}
+
+		.listcard{
+			&-select{
+				width: 26rem
+			}
+		}
+	}
+
+	@media (max-width: 1199px){
+		.checkout__step-1 .checkout__head{
+			.actions{
+				margin-left: 5.5rem;
+				margin-top: 1rem;
+			}
+		}
+
+		.listcard{
+			&-wrapper{
+				margin-top: 1rem;
+			}
+		}
+
+		.checkout__step{
+			&-3,
+			&-4{
+				.radio__text{
+					padding-left: 4rem;
+					&:before{
+						left: 12px;
+					}
+					.title{
+						font-size: 1.6rem;
+					}
+				}
+			}
+		}
+
+
+		.checkout__step-4 .information{
+			padding-top: 2.5rem;
+			padding-bottom: 2.5rem;
+			&__label{
+				font-size: 1.4rem;
+			}
+			&__value{
+				font-size: 2.2rem;
+			}
+		}
+
+
+		.shopping-cart{
+			.item-cart{
+				.d-flex{
+					flex-wrap: wrap;
+				}
+				&__title{
+					width: 50%;
+				}
+
+				&__count,
+				.total{
+					margin-top: 1.5rem;
+					width: 50%;
+				}
+
+				.unitprice{
+					margin-top: 1rem;
+				}
+
 			}
 		}
 	}

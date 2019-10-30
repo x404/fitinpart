@@ -14473,6 +14473,7 @@ input.form-control.error {
 .checkout__head {
   align-items: center;
   display: flex;
+  flex-wrap: wrap;
   margin-bottom: 1.4rem; }
   .checkout__head .num {
     background-color: #0672ba;
@@ -14526,14 +14527,16 @@ input.form-control.error {
         opacity: 0;
         position: absolute;
         z-index: -1; }
+      .checkout__step-1 .radio-newaddress {
+        white-space: nowrap; }
     .checkout__step-1 .radio__text {
       cursor: pointer;
       height: 40px;
       position: relative;
       display: flex;
+      line-height: 1.2;
       align-items: center;
-      padding-left: 43px;
-      padding-right: 13px;
+      padding: 6px 13px 6px 43px;
       border: 2px solid rgba(255, 255, 255, 0); }
       .checkout__step-1 .radio__text:hover:before {
         background-color: #0099ff; }
@@ -14647,6 +14650,8 @@ input.form-control.error {
     background-color: #0672ba !important; }
   .checkout__step-4 .checkout__body .row {
     margin-top: .8rem; }
+  .checkout__step-4 .checkout__body .ms-parent .listwrapper {
+    height: auto; }
   .checkout__step-4 .item-method {
     margin-top: 2rem; }
     .checkout__step-4 .item-method .title {
@@ -14708,6 +14713,13 @@ input.form-control.error {
     @media (max-width: 1500px) {
       .checkout__step-4 .creditcard .cell-cardtype {
         flex-grow: 0; } }
+  @media (min-width: 1400px) {
+    .checkout__step-4 .item-method {
+      max-width: 33.3333%;
+      flex-basis: 33.3333%; } }
+  @media (max-width: 1399px) {
+    .checkout__step-4 .item-method .title {
+      font-size: 1.6rem; } }
 
 .checkout .tooltip-label {
   margin-left: .5rem;
@@ -14730,6 +14742,17 @@ input.form-control.error {
   border-top: 1px solid #e7e8e8;
   margin-top: 1.8rem;
   padding-bottom: 1.5rem; }
+  .checkout .newaddress-form .cell {
+    margin-bottom: 1.9rem; }
+  .checkout .newaddress-form .row:last-child {
+    margin-top: 0 !important; }
+  @media (min-width: 1400px) {
+    .checkout .newaddress-form .cell {
+      max-width: 33%;
+      flex-basis: 33%; } }
+
+.checkout .listcard-wrapper {
+  flex-grow: 1; }
 
 .checkout .listcard-select {
   width: 31rem; }
@@ -14787,8 +14810,11 @@ input.form-control.error {
     line-height: 1.2;
     padding-right: 2rem;
     width: 11.5rem; }
-  .checkout .shopping-cart .item-cart .total .price {
-    color: #000; }
+  .checkout .shopping-cart .item-cart .total {
+    line-height: 1.2; }
+    .checkout .shopping-cart .item-cart .total .price {
+      color: #000;
+      margin-top: .3rem; }
   .checkout .shopping-cart .item-cart .btn-del {
     padding: 0;
     position: absolute;
@@ -14859,6 +14885,44 @@ input.form-control.error {
     font-size: 2.2rem;
     font-weight: 700;
     margin-top: 2.3rem; }
+
+@media (max-width: 1399px) {
+  .checkout__left {
+    width: 60%; }
+  .checkout__right {
+    width: 40%; }
+  .checkout .listcard-select {
+    width: 26rem; } }
+
+@media (max-width: 1199px) {
+  .checkout .checkout__step-1 .checkout__head .actions {
+    margin-left: 5.5rem;
+    margin-top: 1rem; }
+  .checkout .listcard-wrapper {
+    margin-top: 1rem; }
+  .checkout .checkout__step-3 .radio__text, .checkout .checkout__step-4 .radio__text {
+    padding-left: 4rem; }
+    .checkout .checkout__step-3 .radio__text:before, .checkout .checkout__step-4 .radio__text:before {
+      left: 12px; }
+    .checkout .checkout__step-3 .radio__text .title, .checkout .checkout__step-4 .radio__text .title {
+      font-size: 1.6rem; }
+  .checkout .checkout__step-4 .information {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem; }
+    .checkout .checkout__step-4 .information__label {
+      font-size: 1.4rem; }
+    .checkout .checkout__step-4 .information__value {
+      font-size: 2.2rem; }
+  .checkout .shopping-cart .item-cart .d-flex {
+    flex-wrap: wrap; }
+  .checkout .shopping-cart .item-cart__title {
+    width: 50%; }
+  .checkout .shopping-cart .item-cart__count,
+  .checkout .shopping-cart .item-cart .total {
+    margin-top: 1.5rem;
+    width: 50%; }
+  .checkout .shopping-cart .item-cart .unitprice {
+    margin-top: 1rem; } }
 
 /* =mobile-menu
 ---------------------------*/
