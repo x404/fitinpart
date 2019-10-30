@@ -28,4 +28,52 @@
 			padding-left: 1.8rem;
 		}
 	}
+
+	.servicepack{
+		&__list{
+			margin-top: 2.5rem;
+		}
+
+		color: #fff;
+		padding: 2.5rem 3rem;
+		transition: background-color .3s;
+		background-repeat: no-repeat;
+
+		&__pretitle{
+			font-size: 1.4rem;
+			font-weight: 700;
+			span{
+				background-color: #000;
+				padding: .5rem 1.1rem;
+				border-radius: 2.5rem;
+			}
+		}
+		&__title{
+			font-weight: 700;
+			font-size: 2.5rem;
+			margin-top: 1rem;
+			@extend .neosans;
+		}
+		&-oil{
+			background-color: #0672ba;
+			background-image: url(../images/bg/oil.png);
+			background-position: right 30px top 14px;
+			&:hover{
+				background-color: #0099ff
+			}
+		}
+
+		.btn-makesp{
+			background-color: $color10;
+			border-radius: 4rem;
+			color: #fff;
+			font-weight: 700;
+			height: 4rem;
+			margin-top: 1rem;
+			padding: 0 2rem;
+			&:hover{
+				background-color: #ff1944;
+			}
+		}
+	}
 }
