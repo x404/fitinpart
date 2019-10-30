@@ -716,4 +716,5 @@ class InfoPopup{
 }
 
 let modalinfo = new InfoPopup('.modal-success');
+let modalitsmycar = new InfoPopup('.modal-itsmycar');
 

@@ -6738,8 +6738,12 @@ button {
       stroke-width: 4px;
       stroke: #fff; }
 
-.modal-success {
+.modal-success, .modal-itsmycar {
   color: #fff; }
+
+.modal-itsmycar {
+  min-height: 155px;
+  padding-bottom: 3rem; }
 
 label.error {
   display: none !important; }
@@ -11436,6 +11440,7 @@ input.form-control.error {
 
 .searchresults-page .car-plate {
   background-color: #fff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
   padding: 2rem 4rem;
   margin-top: .8rem; }
   .searchresults-page .car-plate .car__pic {

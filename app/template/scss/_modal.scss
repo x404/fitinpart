@@ -489,8 +489,13 @@
 			}
 		}
 	}
-	&-success{
+	&-success,
+	&-itsmycar{
 		color: #fff
+	}
+	&-itsmycar{
+		min-height: 155px;
+		padding-bottom: 3rem;
 	}
 }
 
