@@ -4284,8 +4284,7 @@ strong,
     background-image: url(../images/sprite.png);
     background-position: -231px -167px;
     width: 11px;
-    height: 11px;
-    margin-right: 6px; }
+    height: 11px; }
 
 .w100 {
   width: 100%; }
@@ -14464,6 +14463,13 @@ input.form-control.error {
   .myaccount .edit-address .actions {
     margin-top: 2.2rem; }
 
+.checkout__left {
+  padding-right: 3.5rem;
+  width: 68%; }
+
+.checkout__right {
+  width: 32%; }
+
 .checkout__head {
   align-items: center;
   display: flex;
@@ -14678,6 +14684,7 @@ input.form-control.error {
       .checkout__step-4 .creditcard .cell-cardexpiry {
         width: 140px; }
         .checkout__step-4 .creditcard .cell-cardexpiry .form-control {
+          text-transform: uppercase;
           width: 14rem; }
       .checkout__step-4 .creditcard .cell-cvv {
         width: 175px; }
@@ -14750,18 +14757,38 @@ input.form-control.error {
   background-color: #fff;
   color: #535353;
   font-size: 1.3rem;
-  padding: 2rem 2.2rem;
+  margin-bottom: .2rem;
+  padding: 2rem 2.2rem 1.6rem;
   position: relative; }
-  .checkout .shopping-cart .item-cart .inner {
-    display: flex; }
+  .checkout .shopping-cart .item-cart .countmodule {
+    height: 3rem;
+    padding-right: 2rem; }
   .checkout .shopping-cart .item-cart__title {
     font-size: 1.4rem;
-    font-weight: 700; }
+    font-weight: 700;
+    line-height: 1.2;
+    padding-right: 2rem;
+    width: 10.5rem; }
+  .checkout .shopping-cart .item-cart__count {
+    line-height: 1.2;
+    padding-right: 2rem;
+    width: 11.5rem; }
+  .checkout .shopping-cart .item-cart .total .price {
+    color: #000; }
   .checkout .shopping-cart .item-cart .btn-del {
     padding: 0;
     position: absolute;
     top: 20px;
     right: 16px; }
+    .checkout .shopping-cart .item-cart .btn-del .icon {
+      transition: transform .3s; }
+    .checkout .shopping-cart .item-cart .btn-del:hover .icon {
+      transform: rotate(90deg); }
+  .checkout .shopping-cart .item-cart .unitprice {
+    margin-top: -18px; }
+  .checkout .shopping-cart .item-cart .remark {
+    font-style: italic;
+    margin-top: .5rem; }
 
 /* =mobile-menu
 ---------------------------*/

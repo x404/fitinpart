@@ -1,4 +1,12 @@
 .checkout{
+	&__left{
+		padding-right: 3.5rem;
+		width: 68%;
+	}
+
+	&__right{
+		width: 32%;
+	}
 	&__head{
 		align-items: center;
 		display: flex;
@@ -316,6 +324,7 @@
 					&-cardexpiry{
 						width: 140px;
 						.form-control{
+							text-transform: uppercase;
 							width: 14rem;
 						}
 					}
@@ -429,15 +438,36 @@
 			background-color: #fff;
 			color: #535353;
 			font-size: 1.3rem;
-			padding: 2rem 2.2rem;
+			margin-bottom: .2rem;
+			padding: 2rem 2.2rem 1.6rem;
 			position: relative;
 			.inner{
-				display: flex;
+				// display: flex;
+			}
+
+			.countmodule{
+				height: 3rem;
+				padding-right: 2rem;
 			}
 
 			&__title{
 				font-size: 1.4rem;
 				font-weight: 700;
+				line-height: 1.2;
+				padding-right: 2rem;
+				width: 10.5rem;
+			}
+
+			&__count{
+				line-height: 1.2;
+				padding-right: 2rem;
+				width: 11.5rem;
+			}
+
+			.total{
+				.price{
+					color: #000;
+				}
 			}
 
 			.btn-del{
@@ -445,6 +475,23 @@
 				position: absolute;
 				top: 20px;
 				right: 16px;
+				.icon{
+					transition: transform .3s;
+				}
+				&:hover{
+					.icon{
+						transform: rotate(90deg)
+					}
+				}
+			}
+
+			.unitprice{
+				margin-top: -18px;
+			}
+
+			.remark{
+				font-style: italic;
+				margin-top: .5rem;
 			}
 		}
 
