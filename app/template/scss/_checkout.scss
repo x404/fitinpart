@@ -775,4 +775,39 @@
 			}
 		}		
 	}
+
+	@media (max-width: 767px){
+		.checkout__head .title{
+			font-size: 2rem !important;
+		}
+
+		.newaddress-form{
+			.row .cell{
+				max-width: 50%;
+				flex-basis: 50%;
+			}
+		}
+
+		.checkout__step-4 .information .cell{
+			width: 30%;
+		}
+
+		.checkout__step-3 .item-method__title, .checkout__step-4 .item-method__title{
+			font-size: 1.7rem;
+		}
+
+
+		.checkout__step-1{
+			.address__select{
+				flex-direction: column;
+				label{
+					margin-bottom: 1rem;
+				}
+			}
+
+			.inner{
+				padding-bottom: 1rem;
+			}
+		}
+	}
 }

@@ -14958,6 +14958,23 @@ input.form-control.error {
     .checkout .checkout__step-4 .information__value {
       font-size: 20px; } }
 
+@media (max-width: 767px) {
+  .checkout .checkout__head .title {
+    font-size: 2rem !important; }
+  .checkout .newaddress-form .row .cell {
+    max-width: 50%;
+    flex-basis: 50%; }
+  .checkout .checkout__step-4 .information .cell {
+    width: 30%; }
+  .checkout .checkout__step-3 .item-method__title, .checkout .checkout__step-4 .item-method__title {
+    font-size: 1.7rem; }
+  .checkout .checkout__step-1 .address__select {
+    flex-direction: column; }
+    .checkout .checkout__step-1 .address__select label {
+      margin-bottom: 1rem; }
+  .checkout .checkout__step-1 .inner {
+    padding-bottom: 1rem; } }
+
 /* =mobile-menu
 ---------------------------*/
 .show-sm,
