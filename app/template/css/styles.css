@@ -11631,9 +11631,6 @@ input.form-control.error {
       color: #414141; }
       .searchresults-page .filter-sort .param-sort.active {
         color: #fff; }
-    .searchresults-page .filter-sort .sortbox li {
-      margin-right: 5px;
-      margin-left: 0; }
     .searchresults-page .filter-sort .sortbox .custom-control {
       margin-left: 2.3rem; }
   .searchresults-page .products__list {
@@ -11645,7 +11642,7 @@ input.form-control.error {
       border-radius: 3px; }
   .searchresults-page .searchresult-plate {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
-    padding: 2.3rem 3rem 3.4rem;
+    padding: 2.3rem 3rem 2.5rem;
     margin-top: 1.2rem;
     margin-bottom: 3rem; }
     .searchresults-page .searchresult-plate .title {
@@ -11659,7 +11656,8 @@ input.form-control.error {
       padding-right: 2.4rem; }
     .searchresults-page .searchresult-plate .search-other {
       font-weight: 700;
-      margin-top: .7rem; }
+      margin-top: .7rem;
+      margin-bottom: 1rem; }
 
 .icon-myaccount {
   background-image: url(../images/sprite.png);

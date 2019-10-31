@@ -286,8 +286,8 @@
 
 		.sortbox{
 			li{
-				margin-right: 5px;
-				margin-left: 0;
+				// margin-right: 5px;
+				// margin-left: 0;
 			}
 			.custom-control{
 				margin-left: 2.3rem;
@@ -311,7 +311,7 @@
 
 	.searchresult-plate{
 		box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
-		padding: 2.3rem 3rem 3.4rem;
+		padding: 2.3rem 3rem 2.5rem;
 		margin-top: 1.2rem;
 		margin-bottom: 3rem;
 		.title{
@@ -330,6 +330,7 @@
 		.search-other{
 			font-weight: 700;	
 			margin-top: .7rem;
+			margin-bottom: 1rem;
 		}
 	}
 }
