@@ -11636,6 +11636,9 @@ input.form-control.error {
   margin-left: 0;
   margin-right: 0;
   grid-column-gap: 20px; }
+  .searchresults-page .products__list .item-products.inpack {
+    border: 3px solid #199922;
+    border-radius: 3px; }
 
 .icon-myaccount {
   background-image: url(../images/sprite.png);
