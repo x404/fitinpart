@@ -1,4 +1,5 @@
 .searchresults-page{
+	overflow: auto;
 	.car-plate{
 		background-color: #fff;
 		box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
@@ -304,6 +305,31 @@
 				border: 3px solid #199922;
 				border-radius: 3px;
 			}
+		}
+	}
+
+
+	.searchresult-plate{
+		box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+		padding: 2.3rem 3rem 3.4rem;
+		margin-top: 1.2rem;
+		margin-bottom: 3rem;
+		.title{
+			@extend .neosans;
+			color: $color10;
+			font-weight: 500;
+			font-size: 2.5rem;
+		}
+		.btn{
+			font-size: 1.5rem;
+			margin-left: .8rem;	
+			padding-left: 2.4rem;
+			padding-right: 2.4rem;
+		}
+
+		.search-other{
+			font-weight: 700;	
+			margin-top: .7rem;
 		}
 	}
 }

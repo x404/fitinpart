@@ -3891,7 +3891,7 @@ h3 {
 #changeVehicle__header .ms-choice, .main h2, .main h3, .main h4, .main h5, .main h6, .content blockquote, .lastnews .item-news__title,
 .news__list .item-news__title, .aboutus-page .intro__title, .aboutus-page .about__title, .aboutus-page .quote, .aboutus-page .advantages, .aboutus-page .item-products__title, .aboutus-page .brands__text, .title-md, .main aside .widget-title, .main aside .btn-filter, .sortbox .sort-label, .item-products__title, .products__list .item-products .btn-tooltip, .products__list .item-products .tooltip-title, .modal-v2 .box__title, #addtocardModal1 .product-title,
 #successAddtocardModal .product-title, #addtocardModal1 .count-price .price,
-#successAddtocardModal .count-price .price, .inner .card-page .details__title, .inner .card-page .item-stock__title, .inner .card-page .assembly-brands .nav-title, .msg-searched, .specifications .specification__title, #successAddtocardModal .price, .cart-page .cart-table .cost, .cart-page .salescard__item .title, .comparison__body .product-title, .wiper-search .intro, .wiper-search .steps, .perfomance-page .intro .subtitle, .perfomance-page .list-title, .table-title, .searchresults-page .car-plate .car__title, .searchresults-page .servicepack__title, .logout, .myaccount aside ul, .myaccount aside .tel, .myaccount .plate__title, .myaccount .plate .statistic__field, .myaccount .ordersstat .num, .mob-accountmenu .btn-accountmenu, .mob-accountmenu .menu, .latest-orders header, .orders__list .tracking__title, .orders__list .orderinfo .print, .orders__list .orderinfo__title, .orders__list .subtitle, #quickorderModal .modal-body h2, #quickorderModal .modal-body ol li:before, .region .subtitle, .garagesearch .left .num, .addvehicle-page .plate__title, .wishlist-count, .address-entries__list .item-entry .num, .address-entries__list .item-entry .radio__text:after, .checkout__head .num, .checkout__step-3 .radio__text .price, .checkout__step-4 .radio__text .price, .mob-header .btn-menu, .mob-header .tel {
+#successAddtocardModal .count-price .price, .inner .card-page .details__title, .inner .card-page .item-stock__title, .inner .card-page .assembly-brands .nav-title, .msg-searched, .specifications .specification__title, #successAddtocardModal .price, .cart-page .cart-table .cost, .cart-page .salescard__item .title, .comparison__body .product-title, .wiper-search .intro, .wiper-search .steps, .perfomance-page .intro .subtitle, .perfomance-page .list-title, .table-title, .searchresults-page .car-plate .car__title, .searchresults-page .servicepack__title, .searchresults-page .searchresult-plate .title, .logout, .myaccount aside ul, .myaccount aside .tel, .myaccount .plate__title, .myaccount .plate .statistic__field, .myaccount .ordersstat .num, .mob-accountmenu .btn-accountmenu, .mob-accountmenu .menu, .latest-orders header, .orders__list .tracking__title, .orders__list .orderinfo .print, .orders__list .orderinfo__title, .orders__list .subtitle, #quickorderModal .modal-body h2, #quickorderModal .modal-body ol li:before, .region .subtitle, .garagesearch .left .num, .addvehicle-page .plate__title, .wishlist-count, .address-entries__list .item-entry .num, .address-entries__list .item-entry .radio__text:after, .checkout__head .num, .checkout__step-3 .radio__text .price, .checkout__step-4 .radio__text .price, .mob-header .btn-menu, .mob-header .tel {
   font-family: 'Neo Sans Pro', Verdana, sans-serif; }
 
 strong,
@@ -8434,6 +8434,11 @@ input.form-control.error {
             opacity: 1;
             z-index: 10;
             transform: translateY(0); }
+        .products__list .item-products .labels .label-equivalent {
+          background-color: #0cbc60;
+          padding-left: 1.2rem;
+          padding-right: 1.2rem;
+          width: auto; }
     .products__list .item-products .additional__panel {
       background: #eaecf0;
       box-shadow: 0 5px 20px rgba(0, 113, 189, 0.15);
@@ -11444,201 +11449,217 @@ input.form-control.error {
   .thankyou-page .methods__cell {
     width: 280px; } }
 
-.searchresults-page .car-plate {
-  background-color: #fff;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
-  padding: 2rem 4rem;
-  margin-top: .8rem; }
-  .searchresults-page .car-plate .car__pic {
-    margin-right: 3.8rem; }
-  .searchresults-page .car-plate .car__desc {
-    margin-right: 2.2rem; }
-  .searchresults-page .car-plate .car__title {
-    color: #3c3c3c;
-    font-size: 1.5rem;
-    font-weight: 700; }
-  .searchresults-page .car-plate .car__text {
-    margin-top: .5rem; }
-  .searchresults-page .car-plate .btn {
-    font-size: 1.5rem;
-    padding-right: 2.5rem;
-    padding-left: 1.8rem; }
-
-.searchresults-page .servicepack {
-  position: relative;
-  color: #fff;
-  padding: 2.5rem 3rem 2.8rem;
-  transition: background-color .3s;
-  background-repeat: no-repeat; }
-  .searchresults-page .servicepack__list {
-    margin-top: 2.5rem; }
-  .searchresults-page .servicepack__pretitle {
-    font-size: 1.4rem;
-    font-weight: 700; }
-    .searchresults-page .servicepack__pretitle span {
-      background-color: #000;
-      padding: .5rem 1.1rem;
-      border-radius: 2.5rem; }
-  .searchresults-page .servicepack__title {
-    font-weight: 700;
-    font-size: 2.5rem;
-    margin-top: 1rem; }
-  .searchresults-page .servicepack-oil {
-    background-color: #0672ba;
-    background-image: url(../images/bg/oil.png);
-    background-position: right 30px top 14px; }
-    .searchresults-page .servicepack-oil:hover {
-      background-color: #0099ff; }
-    .searchresults-page .servicepack-oil .consist__title {
-      width: 14rem; }
-  .searchresults-page .servicepack-brakes {
-    background-color: #28292d;
-    background-image: url(../images/bg/brakes.png);
-    background-position: right 30px top 10px; }
-    .searchresults-page .servicepack-brakes:hover {
-      background-color: #0099ff; }
-    .searchresults-page .servicepack-brakes .consist__title {
-      width: 13rem; }
-    .searchresults-page .servicepack-brakes .consist__row-position .consist__field {
-      opacity: 1 !important; }
-      .searchresults-page .servicepack-brakes .consist__row-position .consist__field.active a, .searchresults-page .servicepack-brakes .consist__row-position .consist__field.active span {
-        align-items: center;
-        background-color: #fff;
-        border-radius: 3rem;
-        color: #030303;
-        cursor: default;
-        display: flex;
-        font-weight: 700;
-        height: 3rem;
-        padding-left: 1rem;
-        padding-right: 1rem;
-        text-decoration: none; }
-    .searchresults-page .servicepack-brakes .consist__field {
-      width: 21.5rem; }
-      .searchresults-page .servicepack-brakes .consist__field a {
-        color: #14a1ff;
-        font-weight: 700;
-        text-decoration: underline; }
-        .searchresults-page .servicepack-brakes .consist__field a:hover {
-          color: #00ff54;
-          text-decoration: none; }
-      .searchresults-page .servicepack-brakes .consist__field:not(.active) {
-        opacity: .3; }
-        .searchresults-page .servicepack-brakes .consist__field:not(.active) .btn {
-          cursor: default; }
-  .searchresults-page .servicepack .btn-makesp {
-    background-color: #c91537;
-    border-radius: 4rem;
-    color: #fff;
-    font-weight: 700;
-    height: 4rem;
-    margin-top: 1rem;
-    padding: 0 2rem; }
-    .searchresults-page .servicepack .btn-makesp:hover {
-      background-color: #ff1944; }
-  .searchresults-page .servicepack .consist {
-    display: none;
-    margin-bottom: -1.5rem; }
-    .searchresults-page .servicepack .consist__head {
-      align-items: center;
-      display: flex;
-      margin-top: 1rem; }
-      .searchresults-page .servicepack .consist__head .total {
-        font-size: 1.7rem;
-        font-weight: 700; }
-      .searchresults-page .servicepack .consist__head .btn-addtocart {
-        border-radius: 4rem;
-        font-weight: 700;
-        height: 4rem;
-        margin-left: 1.4rem;
-        padding-left: 1.2rem;
-        padding-right: 2rem; }
-        .searchresults-page .servicepack .consist__head .btn-addtocart:hover {
-          background-color: #ff1944; }
-    .searchresults-page .servicepack .consist__body {
-      margin-top: 1.8rem; }
-    .searchresults-page .servicepack .consist__row {
-      align-items: center;
-      border-top: 1px solid rgba(255, 255, 255, 0.2);
-      display: flex;
+.searchresults-page {
+  overflow: auto; }
+  .searchresults-page .car-plate {
+    background-color: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    padding: 2rem 4rem;
+    margin-top: .8rem; }
+    .searchresults-page .car-plate .car__pic {
+      margin-right: 3.8rem; }
+    .searchresults-page .car-plate .car__desc {
+      margin-right: 2.2rem; }
+    .searchresults-page .car-plate .car__title {
+      color: #3c3c3c;
       font-size: 1.5rem;
-      padding: 1.35rem 0; }
-    .searchresults-page .servicepack .consist__title {
       font-weight: 700; }
-    .searchresults-page .servicepack .consist__field {
-      display: flex;
-      align-items: center; }
-      .searchresults-page .servicepack .consist__field-notavaible {
-        color: #83abc6;
-        font-weight: 700; }
-    .searchresults-page .servicepack .consist .btn-addtopack {
-      background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAAAX0lEQVQ4T2NkwAGY/ge3/GdgzGdk+D/lH+PaSmzKGHFpZvwf8h8m959xDVZ1I1IzNFSrcQUczgBl+N/KCAzVz0AFPKRqBqr/wgi0uR0YnxWkagbGf8eIjCqapG1ichUACKtDCpaQavEAAAAASUVORK5CYII=");
-      background-repeat: no-repeat;
-      background-position: left 2px;
+    .searchresults-page .car-plate .car__text {
+      margin-top: .5rem; }
+    .searchresults-page .car-plate .btn {
+      font-size: 1.5rem;
+      padding-right: 2.5rem;
+      padding-left: 1.8rem; }
+  .searchresults-page .servicepack {
+    position: relative;
+    color: #fff;
+    padding: 2.5rem 3rem 2.8rem;
+    transition: background-color .3s;
+    background-repeat: no-repeat; }
+    .searchresults-page .servicepack__list {
+      margin-top: 2.5rem; }
+    .searchresults-page .servicepack__pretitle {
+      font-size: 1.4rem;
+      font-weight: 700; }
+      .searchresults-page .servicepack__pretitle span {
+        background-color: #000;
+        padding: .5rem 1.1rem;
+        border-radius: 2.5rem; }
+    .searchresults-page .servicepack__title {
+      font-weight: 700;
+      font-size: 2.5rem;
+      margin-top: 1rem; }
+    .searchresults-page .servicepack-oil {
+      background-color: #0672ba;
+      background-image: url(../images/bg/oil.png);
+      background-position: right 30px top 14px; }
+      .searchresults-page .servicepack-oil:hover {
+        background-color: #0099ff; }
+      .searchresults-page .servicepack-oil .consist__title {
+        width: 14rem; }
+    .searchresults-page .servicepack-brakes {
+      background-color: #28292d;
+      background-image: url(../images/bg/brakes.png);
+      background-position: right 30px top 10px; }
+      .searchresults-page .servicepack-brakes:hover {
+        background-color: #0099ff; }
+      .searchresults-page .servicepack-brakes .consist__title {
+        width: 13rem; }
+      .searchresults-page .servicepack-brakes .consist__row-position .consist__field {
+        opacity: 1 !important; }
+        .searchresults-page .servicepack-brakes .consist__row-position .consist__field.active a, .searchresults-page .servicepack-brakes .consist__row-position .consist__field.active span {
+          align-items: center;
+          background-color: #fff;
+          border-radius: 3rem;
+          color: #030303;
+          cursor: default;
+          display: flex;
+          font-weight: 700;
+          height: 3rem;
+          padding-left: 1rem;
+          padding-right: 1rem;
+          text-decoration: none; }
+      .searchresults-page .servicepack-brakes .consist__field {
+        width: 21.5rem; }
+        .searchresults-page .servicepack-brakes .consist__field a {
+          color: #14a1ff;
+          font-weight: 700;
+          text-decoration: underline; }
+          .searchresults-page .servicepack-brakes .consist__field a:hover {
+            color: #00ff54;
+            text-decoration: none; }
+        .searchresults-page .servicepack-brakes .consist__field:not(.active) {
+          opacity: .3; }
+          .searchresults-page .servicepack-brakes .consist__field:not(.active) .btn {
+            cursor: default; }
+    .searchresults-page .servicepack .btn-makesp {
+      background-color: #c91537;
+      border-radius: 4rem;
       color: #fff;
       font-weight: 700;
-      line-height: 1.2;
-      padding-left: 19px;
-      filter: grayscale(1) brightness(5); }
-      .searchresults-page .servicepack .consist .btn-addtopack:hover {
-        color: #00ff54;
-        filter: none; }
-    .searchresults-page .servicepack .consist .btn-close {
-      background-color: #fff;
-      border-radius: 50%;
       height: 4rem;
-      padding: 0;
-      position: absolute;
-      right: 15px;
-      top: 17px;
-      width: 4rem; }
-      .searchresults-page .servicepack .consist .btn-close line {
-        stroke: #c91537;
-        stroke-width: 3px; }
-    .searchresults-page .servicepack .consist .btn-delete {
-      background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAALCAYAAABLcGxfAAABIklEQVQoU2VRS1bCQBDsCj5l646w8DIkK2+guAK/IM8FeAeNC59/n7ISvAThOoQjoE/TVCcTRTPJZDLVVTPd1VA/bAu0JSLvmMW3XEtD68EpwR1RDKG18IKCcwIpgR7mk/tVBeMdxm+IeYxfQre2N+VrscfNNcFvzhMk8YuJ1A/2uTxwVig6k7XqG4rTtBYcC+SOe/BpZ7jKa/ZV6WIePxr0I8jiuSjiXHeCT5IHBbkkcGmMuO66m8dMr7la098b/PCI90QkVB1pwSQGSCZPhei3hpxsNVRIsmItSSueRqBbiJxLH03mai4p3w6S6XOeXuOQZLPZjKBLGyOwKRFpfYKpgf+blzUtP8xj/Ao85YD/LUE6xmxqDSoNrTd6oh6NSIdLKwxtTevvkYEAAAAASUVORK5CYII=");
-      background-position: left top;
-      background-repeat: no-repeat;
-      filter: grayscale(1) brightness(5);
-      height: 11px;
-      margin-left: 1.2rem;
-      width: 12px; }
-      .searchresults-page .servicepack .consist .btn-delete:hover {
+      margin-top: 1rem;
+      padding: 0 2rem; }
+      .searchresults-page .servicepack .btn-makesp:hover {
+        background-color: #ff1944; }
+    .searchresults-page .servicepack .consist {
+      display: none;
+      margin-bottom: -1.5rem; }
+      .searchresults-page .servicepack .consist__head {
+        align-items: center;
+        display: flex;
+        margin-top: 1rem; }
+        .searchresults-page .servicepack .consist__head .total {
+          font-size: 1.7rem;
+          font-weight: 700; }
+        .searchresults-page .servicepack .consist__head .btn-addtocart {
+          border-radius: 4rem;
+          font-weight: 700;
+          height: 4rem;
+          margin-left: 1.4rem;
+          padding-left: 1.2rem;
+          padding-right: 2rem; }
+          .searchresults-page .servicepack .consist__head .btn-addtocart:hover {
+            background-color: #ff1944; }
+      .searchresults-page .servicepack .consist__body {
+        margin-top: 1.8rem; }
+      .searchresults-page .servicepack .consist__row {
+        align-items: center;
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+        display: flex;
+        font-size: 1.5rem;
+        padding: 1.35rem 0; }
+      .searchresults-page .servicepack .consist__title {
+        font-weight: 700; }
+      .searchresults-page .servicepack .consist__field {
+        display: flex;
+        align-items: center; }
+        .searchresults-page .servicepack .consist__field-notavaible {
+          color: #83abc6;
+          font-weight: 700; }
+      .searchresults-page .servicepack .consist .btn-addtopack {
+        background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAAAX0lEQVQ4T2NkwAGY/ge3/GdgzGdk+D/lH+PaSmzKGHFpZvwf8h8m959xDVZ1I1IzNFSrcQUczgBl+N/KCAzVz0AFPKRqBqr/wgi0uR0YnxWkagbGf8eIjCqapG1ichUACKtDCpaQavEAAAAASUVORK5CYII=");
+        background-repeat: no-repeat;
+        background-position: left 2px;
+        color: #fff;
+        font-weight: 700;
+        line-height: 1.2;
+        padding-left: 19px;
+        filter: grayscale(1) brightness(5); }
+        .searchresults-page .servicepack .consist .btn-addtopack:hover {
+          color: #00ff54;
+          filter: none; }
+      .searchresults-page .servicepack .consist .btn-close {
+        background-color: #fff;
+        border-radius: 50%;
+        height: 4rem;
+        padding: 0;
+        position: absolute;
+        right: 15px;
+        top: 17px;
+        width: 4rem; }
+        .searchresults-page .servicepack .consist .btn-close line {
+          stroke: #c91537;
+          stroke-width: 3px; }
+      .searchresults-page .servicepack .consist .btn-delete {
+        background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAALCAYAAABLcGxfAAABIklEQVQoU2VRS1bCQBDsCj5l646w8DIkK2+guAK/IM8FeAeNC59/n7ISvAThOoQjoE/TVCcTRTPJZDLVVTPd1VA/bAu0JSLvmMW3XEtD68EpwR1RDKG18IKCcwIpgR7mk/tVBeMdxm+IeYxfQre2N+VrscfNNcFvzhMk8YuJ1A/2uTxwVig6k7XqG4rTtBYcC+SOe/BpZ7jKa/ZV6WIePxr0I8jiuSjiXHeCT5IHBbkkcGmMuO66m8dMr7la098b/PCI90QkVB1pwSQGSCZPhei3hpxsNVRIsmItSSueRqBbiJxLH03mai4p3w6S6XOeXuOQZLPZjKBLGyOwKRFpfYKpgf+blzUtP8xj/Ao85YD/LUE6xmxqDSoNrTd6oh6NSIdLKwxtTevvkYEAAAAASUVORK5CYII=");
+        background-position: left top;
+        background-repeat: no-repeat;
+        filter: grayscale(1) brightness(5);
+        height: 11px;
+        margin-left: 1.2rem;
+        width: 12px; }
+        .searchresults-page .servicepack .consist .btn-delete:hover {
+          filter: none; }
+  .searchresults-page .filter-sort {
+    margin: 3rem 0; }
+    .searchresults-page .filter-sort .category {
+      font-weight: 700;
+      margin-right: 3rem; }
+    .searchresults-page .filter-sort .ms-parent {
+      margin-left: 1rem;
+      width: 31rem !important; }
+    .searchresults-page .filter-sort .ms-choice {
+      background-color: #fff; }
+      .searchresults-page .filter-sort .ms-choice > div {
+        background-color: #f3f3f3; }
+      .searchresults-page .filter-sort .ms-choice > span {
+        font-size: 1.4rem; }
+      .searchresults-page .filter-sort .ms-choice:hover > div:before {
         filter: none; }
-
-.searchresults-page .filter-sort {
-  margin: 3rem 0; }
-  .searchresults-page .filter-sort .category {
-    font-weight: 700;
-    margin-right: 3rem; }
-  .searchresults-page .filter-sort .ms-parent {
-    margin-left: 1rem;
-    width: 31rem !important; }
-  .searchresults-page .filter-sort .ms-choice {
-    background-color: #fff; }
-    .searchresults-page .filter-sort .ms-choice > div {
-      background-color: #f3f3f3; }
-    .searchresults-page .filter-sort .ms-choice > span {
-      font-size: 1.4rem; }
-    .searchresults-page .filter-sort .ms-choice:hover > div:before {
-      filter: none; }
-  .searchresults-page .filter-sort .param-sort {
-    color: #414141; }
-    .searchresults-page .filter-sort .param-sort.active {
-      color: #fff; }
-  .searchresults-page .filter-sort .sortbox li {
-    margin-right: 5px;
-    margin-left: 0; }
-  .searchresults-page .filter-sort .sortbox .custom-control {
-    margin-left: 2.3rem; }
-
-.searchresults-page .products__list {
-  margin-left: 0;
-  margin-right: 0;
-  grid-column-gap: 20px; }
-  .searchresults-page .products__list .item-products.inpack {
-    border: 3px solid #199922;
-    border-radius: 3px; }
+    .searchresults-page .filter-sort .param-sort {
+      color: #414141; }
+      .searchresults-page .filter-sort .param-sort.active {
+        color: #fff; }
+    .searchresults-page .filter-sort .sortbox li {
+      margin-right: 5px;
+      margin-left: 0; }
+    .searchresults-page .filter-sort .sortbox .custom-control {
+      margin-left: 2.3rem; }
+  .searchresults-page .products__list {
+    margin-left: 0;
+    margin-right: 0;
+    grid-column-gap: 20px; }
+    .searchresults-page .products__list .item-products.inpack {
+      border: 3px solid #199922;
+      border-radius: 3px; }
+  .searchresults-page .searchresult-plate {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    padding: 2.3rem 3rem 3.4rem;
+    margin-top: 1.2rem;
+    margin-bottom: 3rem; }
+    .searchresults-page .searchresult-plate .title {
+      color: #c91537;
+      font-weight: 500;
+      font-size: 2.5rem; }
+    .searchresults-page .searchresult-plate .btn {
+      font-size: 1.5rem;
+      margin-left: .8rem;
+      padding-left: 2.4rem;
+      padding-right: 2.4rem; }
+    .searchresults-page .searchresult-plate .search-other {
+      font-weight: 700;
+      margin-top: .7rem; }
 
 .icon-myaccount {
   background-image: url(../images/sprite.png);
