@@ -520,3 +520,45 @@ input.form-control.error{
 		top: 10px;
 	}
 }
+
+
+#helpvehicle2{
+	.modal-dialog{
+		max-width: 710px;
+		width: 96%;
+		font-size: 1.5rem;
+	}
+	.modal-header{
+		padding-bottom: 1rem;
+	}
+	.vin{
+		background-color: $color10;
+		color: #fff;
+		font-weight: 700;
+		font-size: 2rem;
+		padding: 2.2rem 2rem;
+		line-height: 1.2;
+	}
+
+	.description{
+		font-size: 1.7rem;
+		margin-top: 1rem;
+	}
+
+	.subtitle{
+		@extend .neosans;
+		margin-top: 2rem;
+		font-weight: 700;
+		font-size: 2.2rem;
+	}
+
+	.form-control{
+		border-radius: 1rem;
+		height: 11rem;
+		margin-top: .5rem;
+	}
+
+	.message{
+		margin-top: 3.5rem;
+	}
+}

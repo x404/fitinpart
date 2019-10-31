@@ -2506,8 +2506,8 @@
 									<div class="car__text">HONDA Crossroad 2008 1.8L R18A RT1</div>
 								</div>
 
-								<button type="button" class="btn btn-togarage btn-middle btn-blue btn-blue-lighten-hover box-shadow">Outdated? Update here</button>
-								<button type="button" class="btn btn-togarage btn-middle btn-blue btn-blue-lighten-hover box-shadow">Other Help</button>
+								<button type="button" class="btn btn-middle btn-blue btn-blue-lighten-hover box-shadow">Outdated? Update here</button>
+								<button type="button" class="btn btn-middle btn-blue btn-blue-lighten-hover box-shadow" data-toggle="modal" data-target="#helpvehicle2">Other Help</button>
 							</div>
 						</div>
 						<!-- =/car plate -->
@@ -4995,6 +4995,55 @@
 </div>
 <!-- =/success its my car -->
 
+
+
+<!-- =help on this vehicle2 -->
+<div class="modal fade" id="helpvehicle2" tabindex="-1" role="dialog" aria-labelledby="helpVehicle2Label" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered" role="document">
+		<div class="modal-content modal-content-bg">
+			<div class="modal-header">
+				<h5 class="modal-title" id="helpVehicle2Label">Help on this vehicle</h5>
+				<button type="button" class="close a-rotate90" data-dismiss="modal" aria-label="Close">
+					<svg width="22" height="22">
+						<line x1="0" y1="0" x2="22" y2="22"/>
+						<line x1="22" y1="0" x2="0" y2="22"/>
+					</svg>
+				</button>
+			</div>
+			<div class="modal-body">
+				<form action="#" method="post">
+					<div class="vin">VIN: JHMCU26609C213298</div>
+					<div class="description">
+						Description : HONDA Accord 2.4L K24 CU2
+					</div>
+					<div class="options">
+						<input type="radio" name="option" value="" />Incorrect vehicle
+						<input type="radio" name="option" value="" />Incorrect parts
+						<input type="radio" name="option" value="" />Add more Parts
+					</div>
+
+					<p class="subtitle">Which Parts? <span class="asterisk">*</span></p>
+					<p>Check box selection will assign your message to the most suitable specialist</p>
+					<div class="options">
+						Filter
+						Brakes
+						Chassis and hydraulics
+						Other
+
+					</div>
+
+					<div class="message">
+						<label for="vehiclemsg2">Message <span class="asterisk">*</span></label>
+						<textarea name="vehiclemsg" id="vehiclemsg2" class="form-control"></textarea>
+					</div>
+
+					<button type="submit" class="btn btn-submit btn-large btn-blue btn-blue-lighten-hover box-shadow"><i class="icon icon-arrowright2"></i>Send</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- =/help on this vehicle2 -->
 
 <!-- InstanceEndEditable -->
 

@@ -3886,7 +3886,7 @@ h3 {
   font-size: 1.6rem; }
 
 .neosans, .top__tel, .header .catalog-btn, .littlecart .cart-body .title, .littlecart .cart-body .cart-products .item-title, .littlecart .cart-body .cart-products .price, .search .vehicle-search .ms-parent .ms-drop:before, .main h1, .main .title, .searchbox__title, #homeslider .title, .visual__item, .homepage .advantages, .reviews header h1, .review-card__title, .homepage .about .subtitle, .modal-title, #loginModal .subtitle,
-#registerModal .subtitle, .modal-info .title, .smartsearch__header,
+#registerModal .subtitle, .modal-info .title, #helpvehicle2 .subtitle, .smartsearch__header,
 #changeVehicle__header, .smartsearch__header .ms-choice,
 #changeVehicle__header .ms-choice, .main h2, .main h3, .main h4, .main h5, .main h6, .content blockquote, .lastnews .item-news__title,
 .news__list .item-news__title, .aboutus-page .intro__title, .aboutus-page .about__title, .aboutus-page .quote, .aboutus-page .advantages, .aboutus-page .item-products__title, .aboutus-page .brands__text, .title-md, .main aside .widget-title, .main aside .btn-filter, .sortbox .sort-label, .item-products__title, .products__list .item-products .btn-tooltip, .products__list .item-products .tooltip-title, .modal-v2 .box__title, #addtocardModal1 .product-title,
@@ -6763,6 +6763,39 @@ input.form-control.error {
 #mobSearch .close {
   right: 10px;
   top: 10px; }
+
+#helpvehicle2 .modal-dialog {
+  max-width: 710px;
+  width: 96%;
+  font-size: 1.5rem; }
+
+#helpvehicle2 .modal-header {
+  padding-bottom: 1rem; }
+
+#helpvehicle2 .vin {
+  background-color: #c91537;
+  color: #fff;
+  font-weight: 700;
+  font-size: 2rem;
+  padding: 2.2rem 2rem;
+  line-height: 1.2; }
+
+#helpvehicle2 .description {
+  font-size: 1.7rem;
+  margin-top: 1rem; }
+
+#helpvehicle2 .subtitle {
+  margin-top: 2rem;
+  font-weight: 700;
+  font-size: 2.2rem; }
+
+#helpvehicle2 .form-control {
+  border-radius: 1rem;
+  height: 11rem;
+  margin-top: .5rem; }
+
+#helpvehicle2 .message {
+  margin-top: 3.5rem; }
 
 .modal-menu {
   background-color: #0672ba;
