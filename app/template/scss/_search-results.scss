@@ -35,7 +35,7 @@
 		}
 
 		color: #fff;
-		padding: 2.5rem 3rem;
+		padding: 2.5rem 3rem 2.8rem;
 		transition: background-color .3s;
 		background-repeat: no-repeat;
 
@@ -58,6 +58,15 @@
 			background-color: #0672ba;
 			background-image: url(../images/bg/oil.png);
 			background-position: right 30px top 14px;
+			&:hover{
+				background-color: #0099ff
+			}
+		}
+
+		&-brakes{
+			background-color: #28292d;
+			background-image: url(../images/bg/brakes.png);
+			background-position: right 30px top 10px;
 			&:hover{
 				background-color: #0099ff
 			}

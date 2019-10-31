@@ -11460,7 +11460,7 @@ input.form-control.error {
 
 .searchresults-page .servicepack {
   color: #fff;
-  padding: 2.5rem 3rem;
+  padding: 2.5rem 3rem 2.8rem;
   transition: background-color .3s;
   background-repeat: no-repeat; }
   .searchresults-page .servicepack__list {
@@ -11481,6 +11481,12 @@ input.form-control.error {
     background-image: url(../images/bg/oil.png);
     background-position: right 30px top 14px; }
     .searchresults-page .servicepack-oil:hover {
+      background-color: #0099ff; }
+  .searchresults-page .servicepack-brakes {
+    background-color: #28292d;
+    background-image: url(../images/bg/brakes.png);
+    background-position: right 30px top 10px; }
+    .searchresults-page .servicepack-brakes:hover {
       background-color: #0099ff; }
   .searchresults-page .servicepack .btn-makesp {
     background-color: #c91537;
