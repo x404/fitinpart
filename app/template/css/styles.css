@@ -11469,7 +11469,10 @@ input.form-control.error {
     .searchresults-page .car-plate .btn {
       font-size: 1.5rem;
       padding-right: 2.5rem;
-      padding-left: 1.8rem; }
+      padding-left: 1.8rem;
+      margin-right: .7rem; }
+      .searchresults-page .car-plate .btn:last-child {
+        margin-right: 0; }
   .searchresults-page .servicepack {
     position: relative;
     color: #fff;
@@ -14525,18 +14528,21 @@ input.form-control.error {
 .add-address .ms-parent,
 .edit-address .ms-parent,
 .calculate .ms-parent,
-.checkout .checkout__body .ms-parent {
+.checkout .checkout__body .ms-parent,
+.searchresults-page .ms-parent {
   font-size: 1.5rem;
   width: 100% !important; }
   .add-address .ms-parent .listwrapper,
   .edit-address .ms-parent .listwrapper,
   .calculate .ms-parent .listwrapper,
-  .checkout .checkout__body .ms-parent .listwrapper {
+  .checkout .checkout__body .ms-parent .listwrapper,
+  .searchresults-page .ms-parent .listwrapper {
     height: 200px; }
     .add-address .ms-parent .listwrapper li,
     .edit-address .ms-parent .listwrapper li,
     .calculate .ms-parent .listwrapper li,
-    .checkout .checkout__body .ms-parent .listwrapper li {
+    .checkout .checkout__body .ms-parent .listwrapper li,
+    .searchresults-page .ms-parent .listwrapper li {
       margin: 0;
       padding-left: 0;
       width: calc(100% - 30px); }
