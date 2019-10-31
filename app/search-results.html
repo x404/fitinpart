@@ -2051,6 +2051,73 @@
 									<div class="servicepack__pretitle"><span>Service package</span></div>
 									<div class="servicepack__title">Oil and filter change</div>
 									<button type="button" class="btn btn-makesp">Click here to make a service pack</button>
+									<div class="consist">
+										<div class="consist__head">
+											<div class="total">
+												In total: SG$63.66
+											</div>
+											<button type="button" class="btn btn-addtocart btn-red"><i class="icon icon-cart-white"></i>Add to cart</button>
+										</div>
+										<div class="consist__body">
+											<div class="consist__row">
+												<div class="consist__title">
+													Oil
+												</div>
+												<div class="consist__field">
+													5w30 SN/CF F/S 4L 
+													<button type="button" class="btn btn-delete" aria-label="Delete position"></button>
+												</div>
+											</div>
+											<div class="consist__row">
+												<div class="consist__title">
+													Oil filter
+												</div>
+												<div class="consist__field">
+													TOYOTA 90915-YZZD2 
+													<button type="button" class="btn btn-delete" aria-label="Delete position"></button>
+												</div>
+											</div>
+											<div class="consist__row">
+												<div class="consist__title">
+													Air filter
+												</div>
+												<div class="consist__field">
+													JS A0571 
+													<button type="button" class="btn btn-delete" aria-label="Delete position"></button>
+												</div>
+											</div>
+											<div class="consist__row">
+												<div class="consist__title">
+													Cabin filter
+												</div>
+												<div class="consist__field">
+													<button type="button" class="btn btn-addtopack btn-inline">Add to pack</button>
+												</div>
+											</div>
+											<div class="consist__row">
+												<div class="consist__title">
+													Wipers
+												</div>
+												<div class="consist__field">
+													<button type="button" class="btn btn-addtopack btn-inline">Add to pack</button>
+												</div>
+											</div>
+											<div class="consist__row">
+												<div class="consist__title">
+													Spark plug
+												</div>
+												<div class="consist__field consist__field-notavaible">
+													! Not available
+												</div>
+											</div>
+										</div>
+										<button type="button" class="btn btn-close a-rotate90" aria-label="close">
+											<svg width="16" height="16">
+												<line x1="0" y1="0" x2="16" y2="16"/>
+												<line x1="16" y1="0" x2="0" y2="16"/>
+											</svg>
+										</button>
+									</div>
 								</div>
 							</div>
 							<div class="col-lg-5">
@@ -3341,9 +3408,30 @@
 
 <script>
 	$(document).ready(function(){
-		$('.btn-togarage').click(function(){
+		$('.btn-togarage').click(function(e){
+			e.preventDefault();
 			modalitsmycar.open();
-		})
+		});
+	});
+
+	$(document).on('click','.consist .btn-delete', function(e){
+		e.preventDefault();
+		$(this).closest('.consist__field').html('<button type="button" class="btn btn-addtopack btn-inline">Add to pack</button>')
+	});
+
+	$(document).on('click','.btn-makesp', function(e){
+		e.preventDefault();
+		let $this = $(this);
+		$this.next('.consist').slideDown();
+		$this.hide();
+	});
+
+	$(document).on('click','.consist .btn-close', function(e){
+		e.preventDefault();
+		let $this = $(this);
+		$this.closest('.consist').slideUp('normal',function(){
+			$this.closest('.servicepack').find('.btn-makesp').show();
+		});
 	})
 </script>
 <!-- InstanceEndEditable -->

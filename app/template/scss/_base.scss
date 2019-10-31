@@ -221,6 +221,11 @@ em strong
 		transition: filter .3s;
 	}
 
+	&-cart-white{
+		@include sprite($icon-cart-white);
+		margin-right: 9px;
+	}
+
 
 	&-arrowright{
 		&:before{
