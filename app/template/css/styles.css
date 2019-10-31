@@ -11632,6 +11632,11 @@ input.form-control.error {
   .searchresults-page .filter-sort .sortbox .custom-control {
     margin-left: 2.3rem; }
 
+.searchresults-page .products__list {
+  margin-left: 0;
+  margin-right: 0;
+  grid-column-gap: 20px; }
+
 .icon-myaccount {
   background-image: url(../images/sprite.png);
   background-position: 0px -43px;
