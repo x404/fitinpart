@@ -11606,6 +11606,32 @@ input.form-control.error {
       .searchresults-page .servicepack .consist .btn-delete:hover {
         filter: none; }
 
+.searchresults-page .filter-sort {
+  margin: 3rem 0; }
+  .searchresults-page .filter-sort .category {
+    font-weight: 700;
+    margin-right: 3rem; }
+  .searchresults-page .filter-sort .ms-parent {
+    margin-left: 1rem;
+    width: 31rem !important; }
+  .searchresults-page .filter-sort .ms-choice {
+    background-color: #fff; }
+    .searchresults-page .filter-sort .ms-choice > div {
+      background-color: #f3f3f3; }
+    .searchresults-page .filter-sort .ms-choice > span {
+      font-size: 1.4rem; }
+    .searchresults-page .filter-sort .ms-choice:hover > div:before {
+      filter: none; }
+  .searchresults-page .filter-sort .param-sort {
+    color: #414141; }
+    .searchresults-page .filter-sort .param-sort.active {
+      color: #fff; }
+  .searchresults-page .filter-sort .sortbox li {
+    margin-right: 5px;
+    margin-left: 0; }
+  .searchresults-page .filter-sort .sortbox .custom-control {
+    margin-left: 2.3rem; }
+
 .icon-myaccount {
   background-image: url(../images/sprite.png);
   background-position: 0px -43px;

@@ -2205,57 +2205,81 @@
 						</div>
 						<!-- =/service pack -->	
 
-						<!-- =sortbox -->
-						<div class="sortbox">
-							<ul class="d-flex flex-wrap">
-								<li class="sort-label">Sort by</li>
-								<li>
-									<!-- class="param-sort active sort-asc" -->
-									<a href="#" title="" class="param-sort">cost</a>
-									<button type="button" class="sort-reset">
-										<svg width="12" height="12">
-											<line x1="0" y1="0" x2="12" y2="12"/>
-											<line x1="12" y1="0" x2="0" y2="12"/>
-										</svg>
-									</button>
-								</li>
-								<li>
-									<a href="#" title="" class="param-sort">alphabetically</a>
-									<button type="button" class="sort-reset">
-										<svg width="12" height="12">
-											<line x1="0" y1="0" x2="12" y2="12"/>
-											<line x1="12" y1="0" x2="0" y2="12"/>
-										</svg>
-									</button>
-								</li>
-								<li>
-									<div class="custom-control custom-checkbox">
-										<input type="checkbox" class="custom-control-input" id="stock" name="stock">
-										<label class="custom-control-label" for="stock">Ex-stock only</label>
-									</div>
-								</li>
-							</ul>
-							<script>
-								[].forEach.call(document.querySelectorAll('.param-sort'),function(el,i){
-									el.addEventListener('click', function(e){
-										e.preventDefault();
-										if (this.classList.contains('active')){
-											this.classList.toggle('sort-asc');
-										} else {
-											this.classList.add('active');
-										}
-									})
-								});
-								[].forEach.call(document.querySelectorAll('.sortbox .sort-reset'),function(el,i){
-									el.addEventListener('click', function(e){
-										e.preventDefault();
-										this.previousElementSibling.classList.remove('active');
-										this.previousElementSibling.classList.remove('sort-asc');
-									})
-								});
-							</script>
+
+						<!-- =filter-sort -->
+						<div class="filter-sort d-flex">
+							<div class="category d-flex align-items-center">
+								Chose category
+								<select name="category" id="category-select" multiple="multiple">
+									<option value="all parts" selected="selected">All parts</option>
+									<option value="brakes">Brakes</option>
+									<option value="engine-compartment">Engine Compartment</option>
+									<option value="engine-compartment">Engine Compartment</option>
+									<option value="engine-compartment">Engine Compartment</option>
+									<option value="engine-compartment">Engine Compartment</option>
+									<option value="engine-compartment">Engine Compartment</option>
+									<option value="engine-compartment">Engine Compartment</option>
+									<option value="engine-compartment">Engine Compartment</option>
+									<option value="engine-compartment">Engine Compartment</option>
+									<option value="engine-compartment">Engine Compartment</option>
+									<option value="engine-compartment">Engine Compartment</option>
+								</select>	
+								
+							</div>
+
+							<!-- =sortbox -->
+							<div class="sortbox">
+								<ul class="d-flex flex-wrap">
+									<li class="sort-label">Sort by</li>
+									<li>
+										<!-- class="param-sort active sort-asc" -->
+										<a href="#" title="" class="param-sort">cost</a>
+										<button type="button" class="sort-reset">
+											<svg width="12" height="12">
+												<line x1="0" y1="0" x2="12" y2="12"/>
+												<line x1="12" y1="0" x2="0" y2="12"/>
+											</svg>
+										</button>
+									</li>
+									<li>
+										<a href="#" title="" class="param-sort">alphabetically</a>
+										<button type="button" class="sort-reset">
+											<svg width="12" height="12">
+												<line x1="0" y1="0" x2="12" y2="12"/>
+												<line x1="12" y1="0" x2="0" y2="12"/>
+											</svg>
+										</button>
+									</li>
+									<li>
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="stock" name="stock">
+											<label class="custom-control-label" for="stock">Ex-stock only</label>
+										</div>
+									</li>
+								</ul>
+								<script>
+									[].forEach.call(document.querySelectorAll('.param-sort'),function(el,i){
+										el.addEventListener('click', function(e){
+											e.preventDefault();
+											if (this.classList.contains('active')){
+												this.classList.toggle('sort-asc');
+											} else {
+												this.classList.add('active');
+											}
+										})
+									});
+									[].forEach.call(document.querySelectorAll('.sortbox .sort-reset'),function(el,i){
+										el.addEventListener('click', function(e){
+											e.preventDefault();
+											this.previousElementSibling.classList.remove('active');
+											this.previousElementSibling.classList.remove('sort-asc');
+										})
+									});
+								</script>
+							</div>
+							<!-- =/sortbox -->
 						</div>
-						<!-- =/sortbox -->
+						<!-- =/filter-sort -->
 
 
 						<button type="button" class="btn-more btn-gray">Show more <i class="icon icon-arrow-down-gray"></i></button>
@@ -3487,6 +3511,22 @@
 			e.preventDefault();
 			modalitsmycar.open();
 		});
+
+		$("#category-select").multipleSelect({
+			single: true,
+			filter: false,
+			onOpen: function() {
+				categorylist.update();
+			}
+		});
+
+		categorylist = new PerfectScrollbar('.filter .listwrapper', {
+			wheelPropagation: true,
+			minScrollbarLength: 35,
+			maxScrollbarLength: 65,
+		});
+		categorylist.update();
+
 	});
 
 	$(document).on('click','.consist .btn-delete', function(e){

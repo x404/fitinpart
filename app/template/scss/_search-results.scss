@@ -246,4 +246,51 @@
 			}
 		}
 	}
+
+
+	// filter
+	.filter-sort{
+		margin: 3rem 0;
+		.category{
+			font-weight: 700;
+			margin-right: 3rem;
+		}
+		.ms-parent{
+			margin-left: 1rem;
+			width: 31rem !important;
+		}
+		.ms-choice{
+			background-color: #fff;
+			& > div{
+				background-color: #f3f3f3;
+			}
+
+			& > span{
+				font-size: 1.4rem;
+			}
+
+			&:hover{
+				& > div:before{
+					filter: none;
+				}
+			}
+		}
+
+		.param-sort{
+			color: #414141;
+			&.active{
+				color: #fff;
+			}
+		}
+
+		.sortbox{
+			li{
+				margin-right: 5px;
+				margin-left: 0;
+			}
+			.custom-control{
+				margin-left: 2.3rem;
+			}
+		}
+	}
 }
