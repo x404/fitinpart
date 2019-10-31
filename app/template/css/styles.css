@@ -11497,6 +11497,35 @@ input.form-control.error {
     background-position: right 30px top 10px; }
     .searchresults-page .servicepack-brakes:hover {
       background-color: #0099ff; }
+    .searchresults-page .servicepack-brakes .consist__title {
+      width: 13rem; }
+    .searchresults-page .servicepack-brakes .consist__row-position .consist__field {
+      opacity: 1 !important; }
+      .searchresults-page .servicepack-brakes .consist__row-position .consist__field.active a, .searchresults-page .servicepack-brakes .consist__row-position .consist__field.active span {
+        align-items: center;
+        background-color: #fff;
+        border-radius: 3rem;
+        color: #030303;
+        cursor: default;
+        display: flex;
+        font-weight: 700;
+        height: 3rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        text-decoration: none; }
+    .searchresults-page .servicepack-brakes .consist__field {
+      width: 21.5rem; }
+      .searchresults-page .servicepack-brakes .consist__field a {
+        color: #14a1ff;
+        font-weight: 700;
+        text-decoration: underline; }
+        .searchresults-page .servicepack-brakes .consist__field a:hover {
+          color: #00ff54;
+          text-decoration: none; }
+      .searchresults-page .servicepack-brakes .consist__field:not(.active) {
+        opacity: .3; }
+        .searchresults-page .servicepack-brakes .consist__field:not(.active) .btn {
+          cursor: default; }
   .searchresults-page .servicepack .btn-makesp {
     background-color: #c91537;
     border-radius: 4rem;

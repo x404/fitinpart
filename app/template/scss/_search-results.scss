@@ -66,7 +66,7 @@
 			.consist{
 				&__title{
 					width: 14rem;
-				}				
+				}
 			}
 		}
 
@@ -77,6 +77,62 @@
 			&:hover{
 				background-color: #0099ff
 			}
+
+			.consist{
+				&__title{
+					width: 13rem;
+				}
+
+				&__row{
+					&-position{
+						.consist{
+							&__field{
+								opacity: 1 !important;
+								&.active{
+									a, span{
+										align-items: center;
+										background-color: #fff;
+										border-radius: 3rem;
+										color: #030303;
+										cursor: default;
+										display: flex;
+										font-weight: 700;
+										height: 3rem;
+										padding-left: 1rem;
+										padding-right: 1rem;
+										text-decoration: none;
+									}
+								}
+							}
+						}
+					}
+				}
+
+				&__field{
+					width: 21.5rem;
+					a{
+						color: #14a1ff;
+						font-weight: 700;
+						text-decoration: underline;
+						&:hover{
+							color: #00ff54;
+							text-decoration: none;
+						}
+					}
+
+					&:not(.active){
+						opacity: .3;
+						.btn{
+							cursor: default;
+						}
+					}
+
+					&.active{
+
+					}
+				}
+			}
+
 		}
 
 		.btn-makesp{
