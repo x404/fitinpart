@@ -348,44 +348,4 @@
 		padding: 0;
 		width: 20px;
 	}
-
-}
-
-
-
-.file-upload{
-	display: inline-block;
-	label{
-		display: flex;
-	}
-	span{
-		@extend .flex-center;
-		background-color: #778d9b;
-		border-radius: 3.5rem;
-		color: #fff	;
-		cursor: pointer;
-		height: 3.5rem;
-		padding-left: 1.2rem;
-		padding-right: 2rem;
-		transition: background-color .3s;
-		&:hover{
-			background-color: #586e7b;
-		}
-	}
-	input[type="file"]{
-		display: none;
-	}
-
-	.file-name{
-		color: #585858;
-		display: flex;
-		align-items: center;
-		font-style: italic;
-		margin-top: 0.5rem;
-		margin-bottom: .9rem;
-	}
-
-	.icon-delete{
-		@include sprite($icon-delete)
-	}
 }
