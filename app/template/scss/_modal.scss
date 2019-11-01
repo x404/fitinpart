@@ -529,20 +529,20 @@ input.form-control.error{
 		font-size: 1.5rem;
 	}
 	.modal-header{
-		padding-bottom: 1rem;
+		padding-bottom: .5rem;
 	}
 	.vin{
 		background-color: $color10;
 		color: #fff;
 		font-weight: 700;
 		font-size: 2rem;
-		padding: 2.2rem 2rem;
+		padding: 2.4rem 2rem 1.6rem;
 		line-height: 1.2;
 	}
 
 	.description{
 		font-size: 1.7rem;
-		margin-top: 1rem;
+		margin-top: .8rem;
 	}
 
 	.subtitle{
@@ -560,5 +560,63 @@ input.form-control.error{
 
 	.message{
 		margin-top: 3.5rem;
+	}
+
+
+	.options{
+		margin-top: .6rem;
+	}
+
+	.radio{
+		position: relative;
+		input {
+			opacity: 0;
+			position: absolute;
+			z-index: -1;
+		}
+		&-newaddress{
+			white-space: nowrap;
+		}
+	}
+
+	.radio__text {
+		cursor: pointer;
+		height: 40px;
+		position: relative;
+		display: flex;
+		line-height: 1.2;
+		align-items: center;
+		padding: 6px 10px 6px 43px;
+		border: 2px solid rgba(255,255,255,0);
+		&:hover{
+			&:before{
+				background-color: #0099ff;
+			}
+		}
+	}
+	.radio__text:before {
+		transition: background-color .3s;
+		z-index: 10;
+		content: '';
+		height: 20px;
+		width: 20px;
+		left: 10px;
+		top: 8px;
+		position: absolute;
+		transition: .2s;
+		background-color: #e8e8e8;
+		border-radius: 50%;
+	}
+	.radio input:checked + .radio__text{
+		font-weight: 700;
+	}
+
+	.radio input:checked + .radio__text:hover:before {
+		background-color: transparent;
+	}
+
+	.radio input:checked + .radio__text:before {
+		border: 6px solid #0672ba;
+		background-color: transparent;
 	}
 }
