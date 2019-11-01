@@ -3886,7 +3886,7 @@ h3 {
   font-size: 1.6rem; }
 
 .neosans, .top__tel, .header .catalog-btn, .littlecart .cart-body .title, .littlecart .cart-body .cart-products .item-title, .littlecart .cart-body .cart-products .price, .search .vehicle-search .ms-parent .ms-drop:before, .main h1, .main .title, .searchbox__title, #homeslider .title, .visual__item, .homepage .advantages, .reviews header h1, .review-card__title, .homepage .about .subtitle, .modal-title, #loginModal .subtitle,
-#registerModal .subtitle, .modal-info .title, .modal-helpvehicle .subtitle, .modal-helpvehicle .variant__num, .smartsearch__header,
+#registerModal .subtitle, .modal-info .title, .modal-helpvehicle .subtitle, .modal-helpvehicle .variant__num, #submitpartnumber .step__num, .smartsearch__header,
 #changeVehicle__header, .smartsearch__header .ms-choice,
 #changeVehicle__header .ms-choice, .main h2, .main h3, .main h4, .main h5, .main h6, .content blockquote, .lastnews .item-news__title,
 .news__list .item-news__title, .aboutus-page .intro__title, .aboutus-page .about__title, .aboutus-page .quote, .aboutus-page .advantages, .aboutus-page .item-products__title, .aboutus-page .brands__text, .title-md, .main aside .widget-title, .main aside .btn-filter, .sortbox .sort-label, .item-products__title, .products__list .item-products .btn-tooltip, .products__list .item-products .tooltip-title, .modal-v2 .box__title, #addtocardModal1 .product-title,
@@ -3927,7 +3927,7 @@ strong,
 .smartsearch .subtab-link,
 .addvehicle-page .plate .subtab-link,
 #changeVehicle .subtab-link, .catalog a,
-.header .catalog__menu a, .reviews .btn-show, .modal-helpvehicle .variant__num, .checkbox__text:after, .aboutus-page .brands__item, .main aside .btn-filter, .btn-cart, .products__list .item-products__pic, .products__list .item-products .btn-tooltip, .products__list .item-products .labels .label, #addtocardModal1 .modal-footer .btn,
+.header .catalog__menu a, .reviews .btn-show, .modal-helpvehicle .variant__num, #submitpartnumber .step__num, .checkbox__text:after, .aboutus-page .brands__item, .main aside .btn-filter, .btn-cart, .products__list .item-products__pic, .products__list .item-products .btn-tooltip, .products__list .item-products .labels .label, #addtocardModal1 .modal-footer .btn,
 #successAddtocardModal .modal-footer .btn, .card__body .media .label, .card__right .btn-addtocart, .cart-page .summary .btn, .cart-page .salescard__item .btn-apply, .comparison__column .btn-del, .searchresults-page .servicepack .consist .btn-close, .searchresults-page .icon-question, .myaccount aside ul li .icon-wrapper, .myaccount .plate-cars a, .myaccount .plate-items a, .addvehicle-page .plate .placement:before, .address-entries__list .item-entry .num, .checkout__head .num {
   display: flex;
   align-items: center;
@@ -6898,6 +6898,49 @@ input.form-control.error {
   .modal-helpvehicle .btn-submit {
     margin-left: auto;
     margin-right: auto; } }
+
+#submitpartnumber .modal-dialog {
+  max-width: 715px;
+  font-size: 1.5rem;
+  width: 96%; }
+  @media (max-width: 991px) {
+    #submitpartnumber .modal-dialog {
+      left: 2%; } }
+
+#submitpartnumber .modal-header {
+  padding-bottom: 2rem; }
+
+#submitpartnumber textarea.form-control {
+  border-radius: 2rem;
+  height: 11rem;
+  margin-top: .5rem; }
+
+#submitpartnumber .step {
+  margin-bottom: 3rem; }
+  #submitpartnumber .step__num {
+    background-color: #0672ba;
+    border-radius: 50%;
+    color: #fff;
+    flex-shrink: 0;
+    font-size: 2.5rem;
+    font-weight: 700;
+    height: 52px;
+    width: 52px; }
+  #submitpartnumber .step__inner {
+    flex-grow: 1;
+    margin-left: 2.5rem;
+    margin-top: -.5rem; }
+
+#submitpartnumber .ms-parent {
+  width: 350px !important; }
+
+#submitpartnumber .custom-control {
+  font-weight: 700;
+  margin-right: 2.5rem; }
+
+#submitpartnumber .aftermarket-wrapper {
+  line-height: 1.4;
+  margin-left: 1.8rem; }
 
 .modal-menu {
   background-color: #0672ba;

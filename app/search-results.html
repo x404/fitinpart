@@ -2994,7 +2994,7 @@
 							<div class="title">1 Result found for PN1472 and 1 Equivalent</div>
 							<div class="search-other d-flex align-items-center">
 								Searching for something else?
-								<button type="button" class="btn btn-middle btn-blue btn-blue-lighten-hover box-shadow">Submit part number to R&D</button>
+								<button type="button" class="btn btn-middle btn-blue btn-blue-lighten-hover box-shadow" data-toggle="modal" data-target="#submitpartnumber">Submit part number to R&D</button>
 							</div>
 						</div>
 						<!-- =/searchresult plate -->
@@ -5238,13 +5238,11 @@
 						<div class="variant__inner">
 							<p class="subtitle">If LTA update does not work you can message us to check vehicle.</p>
 							<div class="message">
-								<label for="vehiclemsg2">Message <span class="asterisk">*</span></label>
-								<textarea name="vehiclemsg" id="vehiclemsg2" class="form-control"></textarea>
+								<label for="vehiclemsg1">Message <span class="asterisk">*</span></label>
+								<textarea name="vehiclemsg" id="vehiclemsg1" class="form-control"></textarea>
 							</div>
 						</div>
 					</div>
-
-
 
 					<button type="submit" class="btn btn-submit btn-large btn-blue btn-blue-lighten-hover box-shadow"><i class="icon icon-arrowright2"></i>Send</button>
 				</form>
@@ -5322,6 +5320,96 @@
 	</div>
 </div>
 <!-- =/help on this vehicle2 -->
+
+
+<!-- =submit part number -->
+<div class="modal fade" id="submitpartnumber" tabindex="-1" role="dialog" aria-labelledby="submitPartNumberLabel" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered" role="document">
+		<div class="modal-content modal-content-bg">
+			<div class="modal-header">
+				<h5 class="modal-title" id="submitPartNumberLabel">Launch a search</h5>
+				<button type="button" class="close a-rotate90" data-dismiss="modal" aria-label="Close">
+					<svg width="22" height="22">
+						<line x1="0" y1="0" x2="22" y2="22"/>
+						<line x1="22" y1="0" x2="0" y2="22"/>
+					</svg>
+				</button>
+			</div>
+			<div class="modal-body">
+				<form action="#" method="post">
+					<fieldset>
+						<div class="step d-flex">
+							<p class="step__num">1</p>
+							<div class="step__inner">
+								<label for="parttype">Part type (ex. Brake Pad, Air Filter,Brake Disc) <span class="asterisk">*</span></label>
+								<input type="text" id="parttype" class="form-control" value="" name="parttype" />
+							</div>
+						</div>
+						<div class="step d-flex">
+							<p class="step__num">2</p>
+							<div class="step__inner">
+								<label for="partnumber">Part number <span class="asterisk">*</span></label>
+								<input type="text" id="partnumber" class="form-control" value="" name="partnumber" />
+							</div>
+						</div>
+						<div class="step d-flex">
+							<p class="step__num">3</p>
+							<div class="step__inner">
+
+								<div class="d-flex align-items-center">
+									<div class="custom-control custom-checkbox">
+										<input type="checkbox" name="parts" class="custom-control-input" id="oemno" checked="checked">
+										<label class="custom-control-label" for="oemno">This is an OEM No</label>
+									</div>
+									or
+									<div class="aftermarket-wrapper">
+										<div>Aftermarket</div>
+
+								<select name="aftermarket" id="aftermarket-select" multiple="multiple">
+									<option value="all parts" selected="selected">All</option>
+									<option value="brakes">Brakes</option>
+									<option value="engine-compartment">Engine Compartment</option>
+									<option value="engine-compartment">Engine Compartment</option>
+									<option value="engine-compartment">Engine Compartment</option>
+									<option value="engine-compartment">Engine Compartment</option>
+									<option value="engine-compartment">Engine Compartment</option>
+									<option value="engine-compartment">Engine Compartment</option>
+									<option value="engine-compartment">Engine Compartment</option>
+									<option value="engine-compartment">Engine Compartment</option>
+									<option value="engine-compartment">Engine Compartment</option>
+									<option value="engine-compartment">Engine Compartment</option>
+								</select>	
+
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="step d-flex">
+							<p class="step__num">4</p>
+							<div class="step__inner">
+								<div class="message">
+									<label for="comment">Comment: (optional)</label>
+									<textarea name="comment" id="comment" class="form-control"></textarea>
+								</div>
+							</div>
+						</div>
+						<div class="step d-flex">
+							<p class="step__num">5</p>
+							<div class="step__inner">
+								<label for="parttype">Photo: (optional)</label>
+								<input type="file" />
+							</div>
+						</div>
+
+						<button type="submit" class="btn btn-submit btn-large btn-blue btn-blue-lighten-hover box-shadow"><i class="icon icon-arrowright2"></i>Send</button>
+					</fieldset>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- =/submit part number -->
+
 
 <!-- InstanceEndEditable -->
 
@@ -5403,6 +5491,24 @@
 			maxScrollbarLength: 65,
 		});
 		categorylist2.update();
+
+
+		// aftermarket
+		$("#aftermarket-select").multipleSelect({
+			single: true,
+			filter: false,
+			onOpen: function() {
+				aftermarket.update();
+			}
+		});
+
+		aftermarket = new PerfectScrollbar('.aftermarket-wrapper .listwrapper', {
+			wheelPropagation: true,
+			minScrollbarLength: 35,
+			maxScrollbarLength: 65,
+		});
+		aftermarket.update();
+
 	});
 
 	$(document).on('click','.consist .btn-delete', function(e){
