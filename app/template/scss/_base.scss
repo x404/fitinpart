@@ -173,6 +173,7 @@ em strong
 .icon{
 	display: block;
 	padding: 0;
+	font-style: normal;
 	position: relative; 
 	&:before{
 		@extend .before;

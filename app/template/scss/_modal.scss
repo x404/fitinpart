@@ -522,7 +522,7 @@ input.form-control.error{
 }
 
 
-#helpvehicle2{
+.modal-helpvehicle{
 	.modal-dialog{
 		max-width: 710px;
 		font-size: 1.5rem;
@@ -551,6 +551,7 @@ input.form-control.error{
 
 	.subtitle{
 		@extend .neosans;
+		color: #000;
 		margin: 2.4rem 0 0.5rem;
 		font-weight: 700;
 		font-size: 2.2rem;
@@ -590,14 +591,14 @@ input.form-control.error{
 	}
 
 	.radio__text {
-		cursor: pointer;
-		height: 30px;
-		position: relative;
-		display: flex;
-		line-height: 1.2;
 		align-items: center;
-		padding: 0 10px 0 33px;
 		border: 2px solid rgba(255,255,255,0);
+		cursor: pointer;
+		display: flex;
+		height: 30px;
+		line-height: 1.2;
+		padding: 0 10px 0 33px;
+		position: relative;
 		&:hover{
 			&:before{
 				background-color: #0099ff;
@@ -605,17 +606,17 @@ input.form-control.error{
 		}
 	}
 	.radio__text:before {
-		transition: background-color .3s;
-		z-index: 10;
-		content: '';
-		height: 20px;
-		width: 20px;
-		left: 0;
-		top: 3px;
-		position: absolute;
-		transition: .2s;
 		background-color: #e8e8e8;
 		border-radius: 50%;
+		content: '';
+		height: 20px;
+		left: 0;
+		position: absolute;
+		top: 3px;
+		transition: .2s;
+		transition: background-color .3s;
+		width: 20px;
+		z-index: 10;
 	}
 	.radio input:checked + .radio__text{
 		font-weight: 700;
@@ -626,8 +627,42 @@ input.form-control.error{
 	}
 
 	.radio input:checked + .radio__text:before {
-		border: 6px solid #0672ba;
 		background-color: transparent;
+		border: 6px solid #0672ba;
+	}
+
+	.btn-update{
+		padding-left: 1.8rem;
+		padding-right: 1.8rem;
+		margin-bottom: 1.2rem;
+	}
+
+
+	.variant{
+		margin-top: 2.5rem;
+		&__num{
+			@extend .flex-center;
+			@extend .neosans;
+			background-color: $color3;
+			border-radius: 50%;
+			color: #fff;
+			flex-shrink: 0;
+			font-size: 2.5rem;
+			font-weight: 700;
+			height: 52px;
+			width: 52px;
+		}
+		&__inner{
+			flex-grow: 1;
+			margin-left: 1.6rem;
+		}
+		.subtitle{
+			margin-top: .8rem;
+		}
+
+		.message{
+			margin-top: 1rem;
+		}
 	}
 
 
