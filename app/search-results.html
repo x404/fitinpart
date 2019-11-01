@@ -5033,12 +5033,23 @@
 
 					<p class="subtitle">Which Parts? <span class="asterisk">*</span></p>
 					<p>Check box selection will assign your message to the most suitable specialist</p>
-					<div class="options">
-						Filter
-						Brakes
-						Chassis and hydraulics
-						Other
-
+					<div class="options d-flex flex-wrap">
+						<div class="custom-control custom-checkbox">
+							<input type="checkbox" name="parts" class="custom-control-input" id="part1">
+							<label class="custom-control-label" for="part1">Filter</label>
+						</div>
+						<div class="custom-control custom-checkbox">
+							<input type="checkbox" name="parts" class="custom-control-input" id="part2" checked="checked">
+							<label class="custom-control-label" for="part2">Brakes</label>
+						</div>
+						<div class="custom-control custom-checkbox">
+							<input type="checkbox" name="parts" class="custom-control-input" id="part3">
+							<label class="custom-control-label" for="part3">Chassis and hydraulics</label>
+						</div>
+						<div class="custom-control custom-checkbox">
+							<input type="checkbox" name="parts" class="custom-control-input" id="part4">
+							<label class="custom-control-label" for="part4">Other</label>
+						</div>
 					</div>
 
 					<div class="message">

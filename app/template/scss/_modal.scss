@@ -547,24 +547,28 @@ input.form-control.error{
 
 	.subtitle{
 		@extend .neosans;
-		margin-top: 2rem;
+		margin: 2.4rem 0 0.5rem;
 		font-weight: 700;
 		font-size: 2.2rem;
 	}
 
 	.form-control{
-		border-radius: 1rem;
+		border-radius: 2rem;
 		height: 11rem;
 		margin-top: .5rem;
 	}
 
 	.message{
-		margin-top: 3.5rem;
+		margin-top: 3rem;
 	}
 
 
 	.options{
-		margin-top: .6rem;
+		margin-top: 1.3rem;
+	}
+
+	.custom-checkbox{
+		margin-right: 3rem;
 	}
 
 	.radio{
@@ -581,12 +585,12 @@ input.form-control.error{
 
 	.radio__text {
 		cursor: pointer;
-		height: 40px;
+		height: 30px;
 		position: relative;
 		display: flex;
 		line-height: 1.2;
 		align-items: center;
-		padding: 6px 10px 6px 43px;
+		padding: 0 10px 0 33px;
 		border: 2px solid rgba(255,255,255,0);
 		&:hover{
 			&:before{
@@ -600,8 +604,8 @@ input.form-control.error{
 		content: '';
 		height: 20px;
 		width: 20px;
-		left: 10px;
-		top: 8px;
+		left: 0;
+		top: 3px;
 		position: absolute;
 		transition: .2s;
 		background-color: #e8e8e8;
