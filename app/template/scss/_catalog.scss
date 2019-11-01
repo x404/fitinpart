@@ -523,7 +523,8 @@
 					button{
 						&:before{
 							background-color: #fff;
-							background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAHCAYAAAAxrNxjAAAAbUlEQVQoU2NkYGDgBGIJIL4PxNiAIlDwBSOQWArEUUCcDsSz0FfkzgXgZSGEyEM+BKkBWDFMEkkoBKQSBTCCehqQYxASZBAJZQDwdphBdMcwFYEUgDrJCEB/ZOhQ3oysEKdaEGncdZiyIBgCjGREZelM6mwAAAABJRU5ErkJggg==");
+							// background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAHCAYAAAAxrNxjAAAAbUlEQVQoU2NkYGDgBGIJIL4PxNiAIlDwBSOQWArEUUCcDsSz0FfkzgXgZSGEyEM+BKkBWDFMEkkoBKQSBTCCehqQYxASZBAJZQDwdphBdMcwFYEUgDrJCEB/ZOhQ3oysEKdaEGncdZiyIBgCjGREZelM6mwAAAABJRU5ErkJggg==");
+							background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAHCAYAAAAxrNxjAAAAbUlEQVQoU2NkYGDgBGIJIL4PxNiAIlDwBSOQWArEUUCcDsSz0FSmAfkzgXgZSGEyEM+BKkBWDFMEkkoBKQSBTCCehqQYxASZBAJZQDwdphBdMcwFYEUgDrJCEB/ZOhQ3oysEKdaEGncdZiyIBgCjGREZelM6mwAAAABJRU5ErkJggg==');
 						}
 						.icon{
 							filter: grayscale(1) brightness(5);
