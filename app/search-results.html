@@ -2065,8 +2065,9 @@
 													Oil
 												</div>
 												<div class="consist__field">
-													5w30 SN/CF F/S 4L 
-													<button type="button" class="btn btn-delete" aria-label="Delete position"></button>
+													<button type="button" class="btn btn-addtopack btn-inline" data-parent-cat="211">Add to pack</button>
+													<!-- 5w30 SN/CF F/S 4L  -->
+													<!-- <button type="button" class="btn btn-delete" aria-label="Delete position"></button> -->
 												</div>
 											</div>
 											<div class="consist__row">
@@ -2074,8 +2075,10 @@
 													Oil filter
 												</div>
 												<div class="consist__field">
-													TOYOTA 90915-YZZD2 
-													<button type="button" class="btn btn-delete" aria-label="Delete position"></button>
+													<button type="button" class="btn btn-addtopack btn-inline" data-parent-cat="210">Add to pack</button>
+
+													<!-- TOYOTA 90915-YZZD2  -->
+													<!-- <button type="button" class="btn btn-delete" aria-label="Delete position"></button> -->
 												</div>
 											</div>
 											<div class="consist__row">
@@ -2214,16 +2217,16 @@
 								<select name="category" id="category-select" multiple="multiple">
 									<option value="all parts" selected="selected">All parts</option>
 									<option value="brakes">Brakes</option>
-									<option value="engine-compartment">Engine Compartment</option>
-									<option value="engine-compartment">Engine Compartment</option>
-									<option value="engine-compartment">Engine Compartment</option>
-									<option value="engine-compartment">Engine Compartment</option>
-									<option value="engine-compartment">Engine Compartment</option>
-									<option value="engine-compartment">Engine Compartment</option>
-									<option value="engine-compartment">Engine Compartment</option>
-									<option value="engine-compartment">Engine Compartment</option>
-									<option value="engine-compartment">Engine Compartment</option>
-									<option value="engine-compartment">Engine Compartment</option>
+									<option value="1">Engine Compartment</option>
+									<option value="2">Engine Compartment</option>
+									<option value="3">Engine Compartment</option>
+									<option value="4">Engine Compartment</option>
+									<option value="5">Engine Compartment</option>
+									<option value="6">Engine Compartment</option>
+									<option value="7">Engine Compartment</option>
+									<option value="8">Engine Compartment</option>
+									<option value="9">Engine Compartment</option>
+									<option value="10">Engine Compartment</option>
 								</select>	
 								
 							</div>
@@ -2328,7 +2331,7 @@
 							</div>
 
 							<!-- 2 -->
-							<div class="products__item item-products">
+							<div class="products__item item-products" data-svc_pattern_value="211">
 								<div class="item-products__pic">
 									<a href="#" title="">
 										<img src="/images/product-2.jpg" alt="" />
@@ -2366,7 +2369,7 @@
 							</div>
 
 							<!-- 3 -->
-							<div class="products__item item-products">
+							<div class="products__item item-products" data-svc_pattern_value="211">
 								<div class="labels">
 									<button type="button" class="label">
 										<i class="icon icon-badge-1-white"></i>3
@@ -2453,7 +2456,7 @@
 							</div>
 
 							<!-- 4 -->
-							<div class="products__item item-products">
+							<div class="products__item item-products" data-svc_pattern_value="210">
 								<div class="item-products__pic">
 									<a href="#" title="">
 										<img src="/images/product-1.jpg" alt="" />
@@ -2713,16 +2716,16 @@
 								<select name="category" id="category-select2" multiple="multiple">
 									<option value="all parts" selected="selected">All parts</option>
 									<option value="brakes">Brakes</option>
-									<option value="engine-compartment">Engine Compartment</option>
-									<option value="engine-compartment">Engine Compartment</option>
-									<option value="engine-compartment">Engine Compartment</option>
-									<option value="engine-compartment">Engine Compartment</option>
-									<option value="engine-compartment">Engine Compartment</option>
-									<option value="engine-compartment">Engine Compartment</option>
-									<option value="engine-compartment">Engine Compartment</option>
-									<option value="engine-compartment">Engine Compartment</option>
-									<option value="engine-compartment">Engine Compartment</option>
-									<option value="engine-compartment">Engine Compartment</option>
+									<option value="1">Engine Compartment</option>
+									<option value="2">Engine Compartment</option>
+									<option value="3">Engine Compartment</option>
+									<option value="4">Engine Compartment</option>
+									<option value="5">Engine Compartment</option>
+									<option value="6">Engine Compartment</option>
+									<option value="7">Engine Compartment</option>
+									<option value="8">Engine Compartment</option>
+									<option value="9">Engine Compartment</option>
+									<option value="10">Engine Compartment</option>
 								</select>	
 								
 							</div>
@@ -5518,6 +5521,8 @@
 
 	});
 
+
+	// show service package
 	$(document).on('click','.consist .btn-delete', function(e){
 		e.preventDefault();
 		$(this).closest('.consist__field').html('<button type="button" class="btn btn-addtopack btn-inline">Add to pack</button>')
@@ -5526,7 +5531,9 @@
 	$(document).on('click','.btn-makesp', function(e){
 		e.preventDefault();
 		let $this = $(this);
-		$this.next('.consist').slideDown();
+		$this.next('.consist').slideDown('normal', function(){
+			$(this).addClass('open')
+		});
 		$this.hide();
 	});
 
@@ -5535,6 +5542,7 @@
 		let $this = $(this);
 		$this.closest('.consist').slideUp('normal',function(){
 			$this.closest('.servicepack').find('.btn-makesp').show();
+			$(this).removeClass('open');
 		});
 	});
 
@@ -5550,7 +5558,27 @@
 		let $this = $(this);
 		$('#attachmodal').val('');
 		$('.file-upload').find('.file-name').html('');
-	})
+	});
+
+
+	// =service pack
+	$(document).on('click','.btn-addtopack', function(e){
+		e.preventDefault();
+		let $this = $(this),
+			$parentcat = $this.data('parent-cat');
+
+		$('.products__list .item-products.active').removeClass('active');
+		
+
+		$('.products__list .item-products[data-svc_pattern_value=' + $parentcat + ']').addClass('active');
+        let first_el=$('.products__list .item-products.active').first();
+        if(first_el.length) {
+            $('html, body').animate({
+                scrollTop: first_el.offset().top - 20
+            }, 300);
+        }
+
+	});
 
 </script>
 <!-- InstanceEndEditable -->
