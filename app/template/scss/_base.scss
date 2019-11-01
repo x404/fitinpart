@@ -483,6 +483,12 @@ em strong
 		@include sprite($icon-car-3);
 		margin-right: 1rem;
 	}
+
+
+	&-attach{
+		@include sprite($icon-attach);
+		margin-right: .8rem;
+	}	
 } 
 // #icon
 

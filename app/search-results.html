@@ -5397,7 +5397,14 @@
 							<p class="step__num">5</p>
 							<div class="step__inner">
 								<label for="parttype">Photo: (optional)</label>
-								<input type="file" />
+
+								<div class="file-upload icon-attach-white">
+									<div class="file-name"></div>
+									<label for="attachmodal">
+										<input type="file" name="file" id="attachmodal" class="attach" onchange="getFileName(this);">
+										<span><i class="icon icon-attach"></i>Choose file</span>
+									</label>
+								</div>
 							</div>
 						</div>
 
@@ -5529,7 +5536,22 @@
 		$this.closest('.consist').slideUp('normal',function(){
 			$this.closest('.servicepack').find('.btn-makesp').show();
 		});
+	});
+
+	function getFileName(el){
+		var file = el.value;
+		file = file.replace(/\\/g, "/").split ('/').pop();
+		console.warn(file);
+		$(el).closest('.file-upload').find('.file-name').html(file + '<button type="button" class="file-reset"><i class="icon icon-delete"></i></button>');
+	}
+
+	$(document).on('click','.file-reset', function(e){
+		e.preventDefault();
+		let $this = $(this);
+		$('#attachmodal').val('');
+		$('.file-upload').find('.file-name').html('');
 	})
+
 </script>
 <!-- InstanceEndEditable -->
 </body>
