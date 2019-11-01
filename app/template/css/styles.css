@@ -6766,8 +6766,11 @@ input.form-control.error {
 
 #helpvehicle2 .modal-dialog {
   max-width: 710px;
-  width: 96%;
-  font-size: 1.5rem; }
+  font-size: 1.5rem;
+  width: 96%; }
+  @media (max-width: 991px) {
+    #helpvehicle2 .modal-dialog {
+      left: 2%; } }
 
 #helpvehicle2 .modal-header {
   padding-bottom: .5rem; }
@@ -6798,13 +6801,15 @@ input.form-control.error {
   margin-top: 3rem; }
 
 #helpvehicle2 .options {
-  margin-top: 1.3rem; }
+  margin-top: 1rem; }
 
 #helpvehicle2 .custom-checkbox {
-  margin-right: 3rem; }
+  margin-right: 3rem;
+  margin-top: .5rem; }
 
 #helpvehicle2 .radio {
-  position: relative; }
+  position: relative;
+  margin-top: .5rem; }
   #helpvehicle2 .radio input {
     opacity: 0;
     position: absolute;
@@ -6846,6 +6851,27 @@ input.form-control.error {
 #helpvehicle2 .radio input:checked + .radio__text:before {
   border: 6px solid #0672ba;
   background-color: transparent; }
+
+@media (max-width: 480px) {
+  #helpvehicle2 .vin {
+    font-size: 18px;
+    padding-top: 20px;
+    padding-bottom: 12px; }
+  #helpvehicle2 .subtitle {
+    font-size: 20px; } }
+
+@media (max-width: 380px) {
+  #helpvehicle2 .vin {
+    font-size: 16px;
+    padding-top: 18px;
+    padding-bottom: 10px; }
+  #helpvehicle2 .description {
+    font-size: 15px; }
+  #helpvehicle2 .subtitle {
+    font-size: 20px; }
+  #helpvehicle2 .btn-submit {
+    margin-left: auto;
+    margin-right: auto; } }
 
 .modal-menu {
   background-color: #0672ba;

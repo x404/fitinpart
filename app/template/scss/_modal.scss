@@ -525,8 +525,12 @@ input.form-control.error{
 #helpvehicle2{
 	.modal-dialog{
 		max-width: 710px;
-		width: 96%;
 		font-size: 1.5rem;
+		width: 96%;
+
+		@media (max-width: 991px){
+			left: 2%;
+		}
 	}
 	.modal-header{
 		padding-bottom: .5rem;
@@ -564,15 +568,17 @@ input.form-control.error{
 
 
 	.options{
-		margin-top: 1.3rem;
+		margin-top: 1rem;
 	}
 
 	.custom-checkbox{
 		margin-right: 3rem;
+		margin-top: .5rem;
 	}
 
 	.radio{
 		position: relative;
+		margin-top: .5rem;
 		input {
 			opacity: 0;
 			position: absolute;
@@ -622,5 +628,35 @@ input.form-control.error{
 	.radio input:checked + .radio__text:before {
 		border: 6px solid #0672ba;
 		background-color: transparent;
+	}
+
+
+	@media (max-width: 480px){
+		.vin{
+			font-size: 18px;
+			padding-top: 20px;
+			padding-bottom: 12px;
+		}
+		.subtitle{
+			font-size: 20px;
+		}
+	}
+
+	@media (max-width: 380px){
+		.vin{
+			font-size: 16px;
+			padding-top: 18px;
+			padding-bottom: 10px;
+		}
+		.description{
+			font-size: 15px;
+		}
+		.subtitle{
+			font-size: 20px;
+		}
+		.btn-submit{
+			margin-left: auto;
+			margin-right: auto;
+		}
 	}
 }
