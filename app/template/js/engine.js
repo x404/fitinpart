@@ -544,6 +544,13 @@ $('body')
 		e.preventDefault();
 		$(this).closest('.tr-item').toggleClass('showfull')
 	});
+
+
+	$('#addtocardModal1').on('show.bs.modal', function (e) {
+		let $this = $(e.relatedTarget);
+		$('#addtocardModal1 .product-title').text($this.data('title'))
+	})
+
 });
 
 
