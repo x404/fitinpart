@@ -576,7 +576,9 @@
 	}
 }
 
-.catalog-page{
+.catalog-page,
+.searchresults-page
+{
 	.products__list{
 		grid-column-gap: 20px;
 		margin-left: 0;
