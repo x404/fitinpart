@@ -400,6 +400,13 @@
 
 
 
+	@media (max-width: 920px){
+		.step-3 .radio-item{
+			width: 48%;
+		}
+	}
+
+
 	@media (max-width: 767px){
 		.intro{
 			font-size: 1.5rem;
@@ -471,7 +478,23 @@
 	}
 
 
+	@media (max-width: 768px){
+		.step-1 .radio-item{
+			flex-grow: 0;
+			width: 32%;
+			img{
+				max-width: 75%;
+			}
+		}
+	}
+
 	@media (max-width: 575px){
+		.step-1 .radio-item{
+			width: 285px;
+			img{
+				max-width: 100%;
+			}
+		}
 		.step-3 .radio-item{
 			margin-left: auto;
 			margin-right: auto;
@@ -483,6 +506,13 @@
 				margin-left: auto;
 				margin-right: auto;
 			}
+		}
+	}
+
+	@media (max-width: 320px){
+		.btn-show{
+			display: block;
+			text-align: center;
 		}
 	}
 }
