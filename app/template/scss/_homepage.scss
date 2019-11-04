@@ -219,7 +219,8 @@
 	}
 
 	.form-control{
-		width: 41rem;
+		max-width: 41rem;
+		flex-grow: 1;
 	}
 
 	

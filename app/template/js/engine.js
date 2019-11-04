@@ -207,29 +207,29 @@ $('body')
 	$('#homeslider').slickAnimation();
 
 
-	if (document.body.clientWidth > 991){
-		$('#catalog-carousel').slick({
-			prevArrow:'<button class="slick-arrow slick-prev icon icon-slider-arrow" aria-label="Previous" type="button"></button>',
-			nextArrow:'<button class="slick-arrow slick-next icon icon-slider-arrow" aria-label="Next" type="button"></button>',
-			dots: false,
-			slidesToShow: 8,
-			slidesToScroll: 1,
-			autoplay: false,
-			autoplaySpeed: 5000,
-			arrows : true,
-			infinite: false,
-			responsive: [
-				{
-					breakpoint: 992,
-					settings: {
-						arrows : false,
-						slidesToShow: 8
-					}
-				}
-			]
-		});	
+	// if (document.body.clientWidth > 991){
+	// 	$('#catalog-carousel').slick({
+	// 		prevArrow:'<button class="slick-arrow slick-prev icon icon-slider-arrow" aria-label="Previous" type="button"></button>',
+	// 		nextArrow:'<button class="slick-arrow slick-next icon icon-slider-arrow" aria-label="Next" type="button"></button>',
+	// 		dots: false,
+	// 		slidesToShow: 8,
+	// 		slidesToScroll: 1,
+	// 		autoplay: false,
+	// 		autoplaySpeed: 5000,
+	// 		arrows : true,
+	// 		infinite: false,
+	// 		responsive: [
+	// 			{
+	// 				breakpoint: 992,
+	// 				settings: {
+	// 					arrows : false,
+	// 					slidesToShow: 8
+	// 				}
+	// 			}
+	// 		]
+	// 	});	
 
-	}
+	// }
 
 	$('#lastnews-carousel').slick({
 		dots: false,

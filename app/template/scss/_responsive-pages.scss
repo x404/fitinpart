@@ -600,6 +600,11 @@
 		}
 	}
 
+
+	.searchbox__layout{
+		display: block !important;
+	}
+
 	.searchbox .d-grid{
 		display: block;
 	}
@@ -791,6 +796,36 @@
 	}
 
 	// #/575
+
+	.lastnews{
+		.item-news{
+			&__title{
+				font-size: 1.5rem;
+			}
+			&__text{
+				font-size: 1.3rem;
+			}
+			&__date{
+				font-size: 1.2rem;
+			}
+
+			&__desc
+			{
+				padding: 1.5rem 1.4rem;
+			}
+		}
+	}
+
+	.review-card{
+		&__body
+		{
+			font-size: 1.3rem;
+		}
+
+		&__title{
+			padding-top: 1.5rem;
+		}
+	}
 }
 
 

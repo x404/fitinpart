@@ -5495,7 +5495,8 @@ button {
   .searchbox .tab-content {
     margin-top: 2.1rem; }
   .searchbox .form-control {
-    width: 41rem; }
+    max-width: 41rem;
+    flex-grow: 1; }
   .searchbox .searchbox__panel-vehicle .row {
     margin-right: -16px; }
   .searchbox .vehicle-control {
@@ -16546,6 +16547,8 @@ input.form-control.error {
       text-indent: -9999em; }
     #homeslider .slick-dots .slick-active button {
       background-color: #fff; }
+  .searchbox__layout {
+    display: block !important; }
   .searchbox .d-grid {
     display: block; }
   #catalog-carousel:not(.slick-initialized) {
@@ -16636,7 +16639,19 @@ input.form-control.error {
   #searchbysizeModal #spec_fields_id .row {
     margin-top: 0; }
     #searchbysizeModal #spec_fields_id .row > div {
-      margin-top: 2rem; } }
+      margin-top: 2rem; }
+  .lastnews .item-news__title {
+    font-size: 1.5rem; }
+  .lastnews .item-news__text {
+    font-size: 1.3rem; }
+  .lastnews .item-news__date {
+    font-size: 1.2rem; }
+  .lastnews .item-news__desc {
+    padding: 1.5rem 1.4rem; }
+  .review-card__body {
+    font-size: 1.3rem; }
+  .review-card__title {
+    padding-top: 1.5rem; } }
 
 @media (max-width: 520px) {
   .lastnews {
