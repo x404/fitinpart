@@ -16012,8 +16012,12 @@ input.form-control.error {
 
 @media (max-width: 1024px) {
   .top .login {
-    margin-right: -15px;
-    padding-left: 25px;
+    margin-right: -37px;
+    padding-left: 25px; } }
+
+@media (max-width: 1020px) {
+  .top .login {
+    margin-right: -40px;
     width: 180px; } }
 
 @media (max-width: 991px) {
@@ -16709,6 +16713,13 @@ input.form-control.error {
   .homepage .advantages {
     font-size: 15px; } }
 
+@media (max-width: 450px) {
+  #lastnews-carousel {
+    margin-left: -15px;
+    margin-right: -15px; }
+  .lastnews .news__item {
+    width: 240px; } }
+
 @media (max-width: 420px) {
   #homeslider {
     text-align: center; }
@@ -16780,6 +16791,8 @@ input.form-control.error {
       padding-right: 20px; }
   #lastnews-carousel {
     max-height: 320px; }
+  .lastnews .news__item {
+    width: 210px; }
   .advantage__pic {
     margin-right: 5px; } }
 

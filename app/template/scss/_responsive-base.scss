@@ -146,11 +146,20 @@
 
 @media (max-width: 1024px){
 	.top .login{
-		margin-right: -15px;
+		margin-right: -37px;
 		padding-left: 25px;
-		width: 180px;
 	}
 }
+
+
+@media (max-width: 1020px){
+	.top .login{
+		margin-right: -40px;
+		width: 180px;
+	}
+
+}
+
 
 @media (max-width: 991px){
 	.top .login{
