@@ -7732,7 +7732,18 @@ input.form-control.error {
     margin-top: 1.5rem; }
   .news .news__item {
     margin-left: auto;
+    margin-right: auto; }
+  .news .btn-more {
+    max-width: 290px;
+    margin-left: auto;
     margin-right: auto; } }
+
+@media (max-width: 320px) {
+  .news .btn-more {
+    display: block;
+    text-align: center; }
+    .news .btn-more .icon {
+      display: none; } }
 
 .lastnews .item-news__link,
 .news__list .item-news__link {
@@ -15935,7 +15946,17 @@ input.form-control.error {
   .searchbox__panel-partnum, .searchbox__panel-vin {
     width: 50%; }
   .homepage .advantages-layout {
-    height: 140px; } }
+    height: 140px; }
+  .d-md-grid {
+    display: flex !important; }
+  .news__list .news-grid {
+    margin-left: -15px;
+    margin-right: -15px; }
+  .news__list .news__item {
+    margin-bottom: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
+    width: 373px; } }
 
 @media (max-width: 1399px) {
   .header .catalog__wrapper .catalog-btn {

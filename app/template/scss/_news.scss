@@ -51,6 +51,7 @@
 		}
 	}
 
+
 	@media (max-width: 575px){
 		header{
 			padding-bottom: 2rem;
@@ -64,8 +65,22 @@
 				margin-right: auto; 
 			}
 		}
+		.btn-more{
+			max-width: 290px;
+			margin-left: auto;
+			margin-right: auto;
+		}
 	}
 
+	@media (max-width: 320px){
+		.btn-more{
+			display: block;
+			text-align: center;
+			.icon{
+				display: none;
+			}
+		}
+	}
 }
 
 .lastnews,
