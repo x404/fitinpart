@@ -455,30 +455,15 @@ $('body')
 			{
 				breakpoint: 1400,
 				settings: {
-					slidesToShow: 2,
-					slidesToScroll: 1,
-					centerMode: true
-				}
-			},
-			{
-				breakpoint: 992,
-				settings: {
-					slidesToShow: 2,
+					slidesToShow: 3,
 					slidesToScroll: 1
 				}
 			},
 			{
-				breakpoint: 768,
+				breakpoint: 1200,
 				settings: {
 					slidesToShow: 2,
-					slidesToScroll: 1,
-				}
-			},
-			{
-				breakpoint: 500,
-				settings: {
-					slidesToShow: 2,
-					slidesToScroll: 1,
+					slidesToScroll: 1
 				}
 			}
 		]

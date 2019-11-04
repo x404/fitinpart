@@ -10923,6 +10923,13 @@ input.form-control.error {
   line-height: 2.35;
   margin-bottom: 1.2rem; }
 
+.comparison__body {
+  overflow: hidden;
+  width: 100%; }
+
+.comparison .right {
+  display: block; }
+
 .comparison__column-first .comparison__cell {
   font-weight: 700; }
 
@@ -10946,12 +10953,16 @@ input.form-control.error {
   padding: 0;
   position: absolute;
   right: 8px;
+  text-align: center;
   top: 11px;
   transition: background-color .3s;
   width: 40px; }
   .comparison__column .btn-del line {
     stroke: #fff;
     stroke-width: 3px; }
+  .comparison__column .btn-del svg {
+    margin-left: auto;
+    margin-right: auto; }
   .comparison__column .btn-del:hover {
     background-color: #ff1b46; }
 
@@ -10959,13 +10970,12 @@ input.form-control.error {
   color: #000;
   font-style: 1.5rem; }
   .comparison__cell-first {
+    height: 450px;
     padding-top: 0; }
   .comparison__cell:first-child {
     border-top: none;
     padding-bottom: 0;
     height: 475px; }
-  .comparison__cell-first {
-    height: 450px; }
 
 .comparison-arrow {
   position: absolute;
@@ -11054,13 +11064,23 @@ input.form-control.error {
   font-size: 1.5rem;
   text-decoration: line-through; }
 
+@media (max-width: 1399px) {
+  .comparison__body .comparison__column {
+    width: 285px; } }
+
+@media (max-width: 900px) {
+  .comparison__body .comparison__column {
+    width: 250px; } }
+
 @media (max-width: 767px) {
   .comparison__layout {
     overflow-y: hidden;
     width: 100%;
     border: 1px solid #dddddd; }
     .comparison__layout .row {
-      width: 1000px; } }
+      width: 1000px; }
+  .comparison__body .comparison__column {
+    width: 285px; } }
 
 @media (max-width: 576px) {
   .comparison__layout .row {
@@ -11076,6 +11096,15 @@ input.form-control.error {
     width: 305px; }
   .comparison__column-head .comparison__cell {
     padding-left: 5px; } }
+
+@media (max-width: 320px) {
+  .comparison__layout .btn-tocart {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center; }
+    .comparison__layout .btn-tocart .icon {
+      display: none; } }
 
 .wiper-search.main {
   background-color: #fff; }

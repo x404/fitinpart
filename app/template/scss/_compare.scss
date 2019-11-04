@@ -6,6 +6,15 @@
 		margin-bottom: 1.2rem;
 	}
 
+	&__body{
+		overflow: hidden;
+		width: 100%;
+	}
+
+	.right{
+		display: block;
+	}
+
 	&__column{
 		&-first{
 			.comparison{
@@ -42,12 +51,17 @@
 			padding: 0;
 			position: absolute;
 			right: 8px;
+			text-align: center;
 			top: 11px;
 			transition: background-color .3s;
 			width: 40px;
 			line{
 				stroke: #fff;
 				stroke-width: 3px;				
+			}
+			svg{
+				margin-left: auto;
+				margin-right: auto;
 			}
 
 			&:hover{
@@ -61,16 +75,13 @@
 		font-style: 1.5rem;
 
 		&-first{
+			height: 450px;	
 			padding-top: 0;
 		}
 		&:first-child{
 			border-top: none;
 			padding-bottom: 0;
 			height: 475px;
-		}
-
-		&-first{
-			height: 450px;	
 		}
 	}
 
@@ -194,6 +205,18 @@
 }
 
 
+@media (max-width: 1399px){
+	.comparison__body .comparison__column{
+		width: 285px;
+	}
+}
+
+@media (max-width: 900px){
+	.comparison__body .comparison__column{
+		width: 250px;
+	}
+}
+
 @media (max-width: 767px){
 	.comparison__layout{
 		overflow-y: hidden;
@@ -202,6 +225,10 @@
 		.row{
 			width: 1000px;
 		}
+	}
+
+	.comparison__body .comparison__column{
+		width: 285px;
 	}
 }
 
@@ -226,5 +253,18 @@
 	.comparison__column-head .comparison__cell{
 		padding-left: 5px;
 	}
+}
 
+@media (max-width: 320px){
+	.comparison__layout{
+		.btn-tocart{
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			text-align: center;
+			.icon{
+				display: none;
+			}
+		}
+	}
 }
