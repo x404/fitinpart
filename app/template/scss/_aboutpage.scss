@@ -50,8 +50,8 @@
 			margin: 3rem 0 .6rem;
 		}
 		&__title{
-			color: #000;
 			@extend .neosans;
+			color: #000;
 			font-size: 2.2rem;
 			font-weight: 500;
 			line-height: 1.36;
@@ -163,6 +163,72 @@
 			grid-column-gap: 0;
 			grid-row-gap: 0;
 			margin-top: 4.5rem;
+			.item-products{
+				width: 100%;
+
+				&:nth-child(-n+4){
+					border-top-width: 2px;
+				}
+				&:nth-child(n+5){
+					border-bottom-width: 2px;
+				}
+
+				&:first-child(),
+				&:nth-child(5)
+				{
+					border-left-width: 2px;
+				}
+
+				&:last-child(),
+				&:nth-child(4)
+				{
+					border-right-width: 2px;
+				}
+
+				@media (max-width: 991px){
+					margin-left: 0;
+					margin-right: 0;
+				}
+				@media (max-width: 768px){
+					border-width: 0;
+					border-left-width: 0;
+					border-right-width: 0;
+					border-bottom-width: 0;
+					border-top-width: 0;
+
+					width: 33%;
+
+					border: 2px solid #e4e6ea !important;
+					margin-bottom: -2px;
+					margin-right: -2px;
+				}
+			}
+
+			@media (max-width: 576px){
+				.products__list{
+					margin-left: 0;
+					margin-right: 0;
+				}
+				.item-products{
+					width: 50%;
+				}
+			}
+			@media (max-width: 350px){
+				display: block !important;
+				.item-products{
+					margin-bottom: 5px;
+					margin-left: auto;
+					margin-right: auto;
+					padding-left: 15px;
+					padding-right: 15px;
+					width: 100%;
+					&__pic{
+						height: auto;
+						padding-top: 10px;
+						padding-bottom: 15px;
+					}
+				}
+			}
 		}
 
 		&__item{
@@ -318,6 +384,8 @@
 	.fitinpart{
 		margin-bottom: 2.5rem;
 	}
+
+
 }
 
 #fitinpart-carousel{
@@ -434,6 +502,7 @@
 		&:after{
 			width: 70px;
 			height: 4px;
+
 		}
 	}
 }
@@ -442,6 +511,9 @@
 	&:after{
 		left: 50%;
 		margin-left: -50px;
+		@media (max-width: 767px){
+			margin-left: -35px;	
+		}
 	}
 }
 
@@ -515,6 +587,11 @@
 			.text{
 				padding-right: 0;
 			}
+		}
+
+		.products__list{
+			margin-left: 0;
+			margin-right: 0;
 		}
 	}
 
@@ -628,6 +705,9 @@
 
 		.ourservice{
 			padding-bottom: 40px;
+			.text{
+				padding-left: 2.4rem;
+			}
 		}
 
 		.warranty{
@@ -767,6 +847,13 @@
 			font-size: 15px;
 		}
 
+
+		.brands,
+		.products__list{
+			margin-left: 0;
+			margin-right: 0;
+		}
+
 		.products__item{
 			height: auto;
 			padding-bottom: 40px;			
@@ -796,13 +883,12 @@
 
 		.products{
 			&__list{
-				display: block !important;
+				margin-left: 0;
+				margin-right: 0;
 			}
 			&__item{
-				margin-left: auto;
-				margin-right: auto;
-				margin-bottom: 10px;
-				width: 90%;
+				margin-left: 0;
+				margin-right: 0;
 			}
 		}
 
