@@ -457,6 +457,12 @@
 		&-next{
 			margin-left: 740px;
 		}
+
+		&-dots{
+			button{
+				padding: 0;
+			}
+		}
 	}
 
 	[data-animation-in] {

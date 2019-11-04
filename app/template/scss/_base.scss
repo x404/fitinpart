@@ -535,6 +535,13 @@ em strong
 	&:hover{
 		text-decoration: none;
 	}
+
+	&-inner{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+	}
 	&-large{
 		$h: 5rem; 
 		border-radius: $h;
