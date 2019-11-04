@@ -5840,7 +5840,8 @@ button {
 
 .advantage__item {
   display: flex;
-  align-items: center; }
+  align-items: center;
+  width: 25%; }
 
 .advantage__pic {
   background-color: #0672ba;
@@ -15916,6 +15917,18 @@ input.form-control.error {
 ::-ms-clear {
   display: none; }
 
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .main-grid {
+    display: block !important; }
+  .searchbox__layout {
+    flex-wrap: wrap; }
+  .searchbox__panel-vehicle {
+    width: 100%; }
+  .searchbox__panel-partnum, .searchbox__panel-vin {
+    width: 50%; }
+  .homepage .advantages-layout {
+    height: 140px; } }
+
 @media (max-width: 1399px) {
   .header .catalog__wrapper .catalog-btn {
     padding-left: 0;
@@ -16595,7 +16608,9 @@ input.form-control.error {
     padding-left: 40px;
     padding-right: 40px; }
   #searchbysizeModal #spec_fields_id label {
-    margin-right: 1.2rem; } }
+    margin-right: 1.2rem; }
+  .advantage__item {
+    width: 50%; } }
 
 @media (max-width: 650px) {
   .searchbox .vehicle-maker, .searchbox .vehicle-class, .searchbox .vehicle-model, .searchbox .vehicle-body {
@@ -16672,23 +16687,27 @@ input.form-control.error {
 @media (max-width: 500px) {
   #catalog-carousel:not(.slick-initialized) > div {
     flex-basis: 50%; }
+  .homepage .advantages {
+    padding: 25px 0; }
   .advantages {
-    font-size: 1.5rem; } }
+    font-size: 15px; } }
 
 @media (max-width: 480px) {
   .searchbox__panel-vehicle .nav-top {
     display: block !important; }
   .searchbox__panel-vehicle .veh-only {
-    margin-top: 1rem; }
+    margin-top: 10px; }
   .searchbox__title {
-    font-size: 2rem; }
+    font-size: 20px; }
   .main .title,
   .main h1 {
-    font-size: 2.6rem; }
+    font-size: 26px; }
   .modal-title {
-    font-size: 2.4rem; }
+    font-size: 24px; }
   .lastnews {
-    padding-bottom: 2.7rem; } }
+    padding-bottom: 27px; }
+  .homepage .advantages {
+    font-size: 15px; } }
 
 @media (max-width: 420px) {
   #homeslider {
@@ -16701,12 +16720,12 @@ input.form-control.error {
     #homeslider .left {
       width: 100%; }
   .review-card__title {
-    font-size: 1.5rem; }
+    font-size: 15px; }
   .reviews__body {
-    margin-top: 2rem; }
+    margin-top: 20px; }
   .searchbox__panel {
-    padding-left: 1.5rem;
-    padding-right: 1.2rem; }
+    padding-left: 15px;
+    padding-right: 12px; }
   .searchbox .vehicle-maker, .searchbox .vehicle-class, .searchbox .vehicle-model, .searchbox .vehicle-body {
     width: 100%; }
   .searchbox .vehicle-year, .searchbox .vehicle-engine, .searchbox .vehicle-engineno {
@@ -16726,20 +16745,20 @@ input.form-control.error {
   .ms-parent.year {
     width: 100% !important; }
   .catalog {
-    padding-bottom: 2rem; }
+    padding-bottom: 20px; }
   #catalog-carousel:not(.slick-initialized) a .pic {
-    margin-right: .7rem; }
+    margin-right: 7px; }
   #catalog-carousel {
     padding-left: 0;
     padding-right: 0; }
   .visual__item {
     height: 90px;
-    padding-left: 1.8rem; }
+    padding-left: 18px; }
     .visual__item:before {
       border-right-width: 60px;
       border-top-width: 60px; }
     .visual__item-1 {
-      margin-bottom: 3.5rem; }
+      margin-bottom: 35px; }
   .visual img {
     max-height: 107px; }
   .reviews header .title .stars {
@@ -16749,18 +16768,20 @@ input.form-control.error {
     padding-left: 1.5rem;
     padding-right: 1.5rem; }
   .about {
-    padding-top: 2.2rem; }
+    padding-top: 22px; }
     .about .title {
-      margin-top: 2.8rem; }
+      margin-top: 28px; }
   .brands {
-    margin-left: 2rem;
-    margin-right: 2rem;
-    padding: 3rem 0; }
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 30px 0; }
     .brands #brands-carousel {
       padding-left: 20px;
       padding-right: 20px; }
   #lastnews-carousel {
-    max-height: 320px; } }
+    max-height: 320px; }
+  .advantage__pic {
+    margin-right: 5px; } }
 
 @media (max-width: 350px) {
   #searchbysizeModal .subtype-item {

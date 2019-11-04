@@ -643,12 +643,13 @@
 			width: 100%;
 		}
 	}
-
 }
+
 .advantage{
 	&__item{
 		display: flex;
 		align-items: center;
+		width: 25%; 
 	}
 	&__pic{
 		background-color: $color3;

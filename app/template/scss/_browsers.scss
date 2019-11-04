@@ -17,4 +17,25 @@ _::-webkit-full-page-media, _:future, :root .selector {
 
 //ie11
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+	.main-grid{
+		display: block !important;
+	}	
+
+	.searchbox__layout{
+		flex-wrap: wrap;
+	}
+	.searchbox__panel{
+		&-vehicle{
+			width: 100%;
+		}
+		&-partnum,
+		&-vin
+		{
+			width: 50%;
+		}
+	}
+
+	.homepage .advantages-layout{
+		height: 140px;
+	}
 }
