@@ -16065,7 +16065,12 @@ input.form-control.error {
   .wiper-search .intro__body {
     height: 240px; }
   .perfomance-page .intro__body {
-    height: 440px; } }
+    height: 440px; }
+  .aboutus-page .products__list {
+    display: flex !important; }
+    .aboutus-page .products__list .item-products {
+      height: 300px;
+      width: 300px; } }
 
 @media (max-width: 1399px) {
   .header .catalog__wrapper .catalog-btn {

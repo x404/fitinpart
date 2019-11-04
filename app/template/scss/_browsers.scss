@@ -63,4 +63,15 @@ _::-webkit-full-page-media, _:future, :root .selector {
 	.perfomance-page .intro__body{
 		height: 440px;
 	}
+
+	// about
+	.aboutus-page{
+		.products__list{
+			display: flex !important;
+			.item-products{
+				height: 300px;
+				width: 300px;
+			}
+		}
+	}
 }
