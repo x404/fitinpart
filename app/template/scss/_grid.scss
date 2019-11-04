@@ -49,6 +49,17 @@
 }
 
 
+@media (min-width: 1200px) and (max-width: 1399px){
+	.col-xlg-3{
+		flex: 0 0 30%;
+		min-width: 30%
+	}
+	.col-xlg-7{
+		flex: 0 0 70%;
+		min-width: 70%;
+	}
+}
+
 @each $breakpoint in map-keys($grid-breakpoints) {
   @include media-breakpoint-up($breakpoint) {
     $infix: breakpoint-infix($breakpoint, $grid-breakpoints);

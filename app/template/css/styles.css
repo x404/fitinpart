@@ -3622,6 +3622,14 @@ a.text-dark:hover, a.text-dark:focus {
   .container {
     max-width: 1600px; } }
 
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .col-xlg-3 {
+    flex: 0 0 30%;
+    min-width: 30%; }
+  .col-xlg-7 {
+    flex: 0 0 70%;
+    min-width: 70%; } }
+
 .d-grid {
   display: grid !important; }
 
@@ -11730,33 +11738,35 @@ input.form-control.error {
     .content-location {
       padding-left: 1.5rem; }
       .content-location .cell {
-        width: 100%;
-        margin-right: 0; }
+        margin-right: 0;
+        width: 100%; }
       .content-location .days {
         flex-shrink: 0;
         margin-right: 0;
         margin-top: 1.5rem;
         margin-bottom: 0;
-        width: 100%;
-        padding-right: 0; }
+        padding-right: 0;
+        width: 100%; }
         .content-location .days:after {
-          display: none !important; } }
+          display: none !important; }
+      .content-location h2 {
+        margin-top: .5rem; } }
 
-.form-mailus {
+.main .form-mailus {
   padding-top: 2.8rem; }
-  .form-mailus .title {
+  .main .form-mailus .title {
     font-size: 2.5rem; }
-  .form-mailus label {
+  .main .form-mailus label {
     font-size: 1.5rem;
     margin-top: 1.5rem; }
-  .form-mailus .form-control {
+  .main .form-mailus .form-control {
     background-color: #ffffff;
     margin-top: .3rem; }
-  .form-mailus .captcha {
+  .main .form-mailus .captcha {
     margin-top: 1rem; }
-    .form-mailus .captcha img {
+    .main .form-mailus .captcha img {
       max-width: 100%; }
-  .form-mailus .btn-submit {
+  .main .form-mailus .btn-submit {
     box-shadow: 0 5px 15px rgba(0, 153, 255, 0.5);
     margin-top: 2.2rem;
     text-align: center !important;
@@ -11764,17 +11774,20 @@ input.form-control.error {
     display: block;
     min-width: 0;
     padding: 0; }
-  .form-mailus textarea.form-control {
+  .main .form-mailus textarea.form-control {
     height: 13rem;
     border-radius: 15px; }
+  @media (max-width: 1450px) {
+    .main .form-mailus .title {
+      font-size: 2.5rem; } }
   @media (max-width: 1199px) {
-    .form-mailus {
+    .main .form-mailus {
       padding-top: 0;
-      max-width: 320px;
+      max-width: 450px;
       margin-bottom: 2rem;
       margin-left: auto;
       margin-right: auto; }
-      .form-mailus .title {
+      .main .form-mailus .title {
         font-size: 2.4rem !important; } }
 
 .thankyou-page .order-info {
