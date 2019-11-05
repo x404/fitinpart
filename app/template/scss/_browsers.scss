@@ -103,4 +103,25 @@ _::-webkit-full-page-media, _:future, :root .selector {
 			width: 32%;
 		}
 	}
+
+	// card
+	#slider-nav{
+		display: block !important;
+	}
+
+	.card__body .media__left{
+		display: block !important;
+		overflow: hidden;
+	}
+
+	.card__center{
+		width: 570px;
+	}
+
+
+	.inner .card-page .assembly__list .tr .td,
+	.inner .card-page .assembly__list .tr-item .inner{
+		padding-top: 12px;
+	}
+
 }

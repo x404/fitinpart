@@ -157,16 +157,6 @@ $(document).ready(function(){
 		]
 	});
 
-
-// $('a[role="tab"]').on('shown.bs.tab', function (e) {
-//   var targetHref = $(e.target).attr("href");
-//   var $activatedTabContent = $(targetHref);
-//   var targetHeight = $activatedTabContent.height();
-//   $('a[role="tab"]').outerHeight('auto');
-//   $(this).height(targetHeight);
-// });
-
-
 	$('#otherbrand-brands-tab').on('shown.bs.tab', function (e) {
 		$('#otherbrand-carousel').slick('refresh');
 	});
@@ -646,8 +636,6 @@ $(document).ready(function(){
 		maxScrollbarLength: 100,
 	});
 	// #HD
-
-
 });
 
 
