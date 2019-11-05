@@ -131,4 +131,34 @@ _::-webkit-full-page-media, _:future, :root .selector {
 		padding-top: 12px;
 	}
 
+
+	// myaccount
+	.myaccount{
+		.grid-information{
+			flex-wrap: wrap;
+			display: flex !important;
+		}
+		.plate{
+			&-user,
+			&-balance{
+				width: 100%;
+			}
+			&-cars{
+				margin-right: 15px;
+			}
+			&-cars,
+			&-items{
+				margin-top: 10px;
+				margin-bottom: 10px;
+				width: calc(50% - 8px);
+			}
+		}
+	}
+
+	.assembly__list .tr-head, .oenumbers__list .tr-head, .order-items__list .tr-head, .orders__list .tr-head, .stockrequest__list .tr-head, .transactions__list .tr-head,
+	.latest-orders .orders__list .tr-item
+	{
+		padding-top: 30px;
+	}
+
 }

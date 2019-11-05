@@ -16263,7 +16263,21 @@ _::-webkit-:-webkit-full-screen:host:not(:root:root), .mob-header {
     width: 570px; }
   .inner .card-page .assembly__list .tr .td,
   .inner .card-page .assembly__list .tr-item .inner {
-    padding-top: 12px; } }
+    padding-top: 12px; }
+  .myaccount .grid-information {
+    flex-wrap: wrap;
+    display: flex !important; }
+  .myaccount .plate-user, .myaccount .plate-balance {
+    width: 100%; }
+  .myaccount .plate-cars {
+    margin-right: 15px; }
+  .myaccount .plate-cars, .myaccount .plate-items {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: calc(50% - 8px); }
+  .assembly__list .tr-head, .oenumbers__list .tr-head, .order-items__list .tr-head, .orders__list .tr-head, .stockrequest__list .tr-head, .transactions__list .tr-head,
+  .latest-orders .orders__list .tr-item {
+    padding-top: 30px; } }
 
 @media (max-width: 1399px) {
   .header .catalog__wrapper .catalog-btn {
