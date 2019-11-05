@@ -16155,7 +16155,10 @@ _::-webkit-:-webkit-full-screen:host:not(:root:root), .mob-header {
     .aboutus-page .products__list .item-products {
       height: 300px;
       width: 300px; }
-  .icon-littlecart {
+  .products__list .item-products {
+    margin-bottom: 15px; }
+  .main .icon-littlecart,
+  .modal .icon-littlecart {
     background-image: url(../images/ie/cart-white.png) !important;
     background-position: left top; } }
 

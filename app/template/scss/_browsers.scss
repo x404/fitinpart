@@ -82,10 +82,16 @@ _::-webkit-full-page-media, _:future, :root .selector {
 		}
 	}
 
-	// catalog
-	.icon-littlecart{
-		background-image: url(../images/ie/cart-white.png) !important;
-		background-position: left top;
+	.products__list .item-products{
+		margin-bottom: 15px;
+	}
 
+	// catalog
+	.main,
+	.modal{
+		.icon-littlecart{
+			background-image: url(../images/ie/cart-white.png) !important;
+			background-position: left top;
+		}
 	}
 }
