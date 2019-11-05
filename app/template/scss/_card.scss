@@ -348,7 +348,7 @@
 			}
 			li{
 				padding-left: 0;
-				margin: 1rem 0;
+				margin: 1rem 0 0;
 				&:before{
 					display: none;
 				}
@@ -364,7 +364,7 @@
 		.products__list {
 			margin-left: 0;
 			margin-right: 0;
-			margin-top: -15px;
+			margin-top: 0;
 		}
 		.item-products{
 			width: 305px;
@@ -881,6 +881,23 @@
 			}
 		}
 	}
+	
+	@media (max-width: 900px){
+		.assembly-brands{
+			.item-products{
+				width: 260px;
+			}
+		}
+	}
+
+
+	@media (max-width: 820px){
+		.assembly-brands{
+			.item-products{
+				width: 245px;
+			}
+		}
+	}
 
 
 	@media (max-width: 768px){
@@ -947,6 +964,10 @@
 
 		.cars__list .title{
 			font-size: 2.5rem;
+		}
+
+		.products .nav{
+			padding-left: 8px;
 		}
 	}
 
@@ -1024,7 +1045,18 @@
 			padding-right: 0;
 		}
 
+
+
+		.others{
+			padding-left: 0;
+			padding-right: 0;
+		}
+
 		.assembly-brands{
+			margin-left: -15px;
+			margin-right: -15px;
+
+			.pr
 			.nav-title{
 				justify-content: center;
 			}
@@ -1032,7 +1064,7 @@
 				display: flex;
 				justify-content: center;
 				position: static;
-				margin: 10px 0 17px;
+				margin: 0 0 17px;
 				.slick-arrow{
 					margin: 0 5px;
 					position: static;
@@ -1139,6 +1171,8 @@
 			font-size: 12px;
 		}
 	}
+
+
 
 
 	@media (max-width: 380px){
@@ -1453,10 +1487,12 @@
 				@extend .flex-center;
 				.icon{
 					margin-right: 8px;
-					filter: invert(1);
 					transition: .3s;
 				}
-				&:hover{
+				&:hover,
+				&:focus,
+				&:active
+				{
 					.icon{
 						transform: translateX(-5px)
 					}
@@ -1465,10 +1501,19 @@
 				&.incart{
 					background-color: #003355;
 				}
+
+				@media (max-width: 320px){
+					display: block;
+					text-align: center;
+					.icon{
+						display: none;
+					}
+				}
 			}
 			&-fav{
 				color: $color3;
 				display: flex;
+				align-items: center;
 				margin-left: 2.1rem;
 				white-space: nowrap;
 				.icon{
@@ -1633,3 +1678,19 @@
 }
 
 
+
+
+
+/* Based on https://github.com/kenwheeler/slick/issues/187#issuecomment-59123524 */
+/* bootstrap hack: fix content width inside hidden tabs */
+.tab-content > .tab-pane,
+.pill-content > .pill-pane {
+    display: block;    /* undo display:none          */
+    height: 0;         /* height:0 is also invisible */
+    // overflow: hidden;  /* no-overflow                */
+}
+.tab-content > .active,
+.pill-content > .active {
+    height: auto;      /* let the content decide it  */
+}
+/* bootstrap hack end */

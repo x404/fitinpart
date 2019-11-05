@@ -74,7 +74,7 @@ $(document).ready(function(){
 				}
 			},
 			{
-				breakpoint: 450,
+				breakpoint: 500,
 				settings: {
 					slidesToShow: 1,
 					slidesToScroll: 1,
@@ -128,7 +128,7 @@ $(document).ready(function(){
 				}
 			},
 			{
-				breakpoint: 450,
+				breakpoint: 500,
 				settings: {
 					slidesToShow: 1,
 					slidesToScroll: 1,
@@ -158,13 +158,22 @@ $(document).ready(function(){
 	});
 
 
+// $('a[role="tab"]').on('shown.bs.tab', function (e) {
+//   var targetHref = $(e.target).attr("href");
+//   var $activatedTabContent = $(targetHref);
+//   var targetHeight = $activatedTabContent.height();
+//   $('a[role="tab"]').outerHeight('auto');
+//   $(this).height(targetHeight);
+// });
+
+
 	$('#otherbrand-brands-tab').on('shown.bs.tab', function (e) {
-		$('#alternative-carousel').slick('reinit');
+		$('#otherbrand-carousel').slick('refresh');
 	});
 
+
 	$('#alternative-product-tab').on('shown.bs.tab', function (e) {
-		console.log('#alternative-product-tab shown')
-		$('#alternative-carousel').slick('reinit');
+		$('#alternative-carousel').slick('refresh');
 	});
 
 
