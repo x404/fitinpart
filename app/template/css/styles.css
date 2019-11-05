@@ -10569,7 +10569,8 @@ input.form-control.error {
       .cart-page .cart-table .item-products .cost {
         margin-top: 0; }
       .cart-page .cart-table .item-products .btn-del {
-        margin-top: 0; }
+        margin-top: 0;
+        padding: 0; }
       .cart-page .cart-table .item-products .txta {
         width: 13rem; }
     .cart-page .cart-table .cost {
@@ -10999,6 +11000,16 @@ input.form-control.error {
       width: auto; }
     .cart-page .cart-table .item-products .cost {
       padding-right: 0; } }
+  @media (max-width: 320px) {
+    .cart-page .salescard__item .btn-apply,
+    .cart-page .calculate .btn-calc,
+    .cart-page .summary .btn {
+      display: block;
+      text-align: center; }
+      .cart-page .salescard__item .btn-apply .icon,
+      .cart-page .calculate .btn-calc .icon,
+      .cart-page .summary .btn .icon {
+        display: none; } }
 
 .alert {
   color: #fff;
