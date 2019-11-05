@@ -424,7 +424,12 @@
 			line-height: 1;
 			padding: .6rem 1rem;
 			transition: .3s;
-			border-radius: 2rem
+			border-radius: 2rem;
+
+			@media (max-width: 1024px){
+				padding-left: 8px;
+				padding-right: 8px;
+			}
 		}
 		.input_approximation{
 			&:checked + label{
