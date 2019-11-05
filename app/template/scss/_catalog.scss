@@ -86,18 +86,27 @@
 	}
 
 	.btn{
+		width: 47%;
 		&-filter{
 			@extend .flex-center;
 			@extend .neosans;
 			display: none;
 			background-color: #eaecf0;
 			color: $color42;
-			font-size: 16px;
+			font-size: 16px; 
 			font-weight: 700;
 			height: 55px;
 			width: 100%;
 			.icon{
 				margin-right: 8px;
+			}
+
+			@media (max-width: 350px){
+				display: block !important;
+				text-align: center;
+				.icon{
+					display: none;
+				}
 			}
 		}
 		&-hidefilter{
@@ -124,10 +133,12 @@
 		}
 
 		.btn{
+			width: auto;
 			&-filter{
 				display: flex;
 				align-items: center;
 				justify-content: center;
+				width: 100%;
 			}
 		}
 	}
@@ -222,6 +233,11 @@
 			}
 		}
 	}
+	@media (max-width: 350px){
+		li{
+			margin-right: 10px;
+		}
+	}
 }
 
 
@@ -253,6 +269,7 @@
 		box-shadow: 0 5px 15px rgba(0, 153, 255, 0.5);
 		height: 50px;
 		padding: 0;
+		text-align: center;
 		transition: background-color .3s;
 		width: 50px;
 		.icon{
@@ -269,6 +286,13 @@
 			// cursor: default;
 			&:hover{
 				background-color: #778d9b;
+			}
+		}
+
+		@media (max-width: 320px){
+			display: block;
+			.icon{
+				margin-left: 4px;
 			}
 		}
 	}
@@ -383,17 +407,15 @@
 		}
 
 
-
-
 		.btn-tooltip{
-			@extend .neosans;
+			// @extend .neosans;
 			@extend .flex-center;
+			// display: block;
 			background-color: #778d9b;
 			border-radius: 50%;
 			color: #fff;
 			font-weight: 700;
 			height: 20px;
-			line-height: 1;
 			padding: 0;
 			position: relative;
 			text-align: center;
@@ -403,12 +425,18 @@
 			&:hover{
 				background-color: #0099ff;
 			}
+
+			@media (max-width: 320px){
+				display: block;
+			}
 		}
 		.tooltip{
 			margin-left: 1rem;
 			position: relative;
-			top: 2px;
+			// top: 2px;
 			width: 20px;
+			display: flex;
+			align-items: center;
 			&:hover{
 				.tooltip__layout{
 					opacity: 1;
@@ -496,6 +524,20 @@
 					padding-left: 1.2rem;
 					padding-right: 1.2rem;
 					width: auto;
+				}
+
+				@media (max-width: 320px){
+				}
+
+				.labels{
+					display: block;
+					.label{
+						display: inline-block;
+						padding-top: 10px;
+					}
+					.icon{ 
+						display: inline-block;
+					}
 				}
 			}
 		}
@@ -607,10 +649,11 @@
 			grid-template-columns: repeat(3,1fr);
 			.products{
 				&__item{
-					margin-left: 10px;
-					margin-right: 10px;
+					margin-left: 5px;
+					margin-right: 5px;
 					margin-bottom: 20px;
-					width: 300px;
+					// width: 300px;
+					width: 250px;
 				}
 			}
 		}
@@ -676,9 +719,6 @@
 		aside .filter .param_control{
 			width: 100px;
 		}
-		.products__list .products__item{
-			width: 250px;
-		}
 
 		.btn-cart,
 		.btn-notify{
@@ -701,6 +741,10 @@
 			max-width: 100%;
 			flex: 0 0 100%;
 			order: 1;
+		}
+
+		.catalog-content{
+			order: 2;
 		}
 
 		.head-sortbox{
@@ -742,6 +786,14 @@
 		}
 	}
 
+	@media (max-width: 768px){
+		.products__list{
+			.item-products{
+				width: 320px;
+			}			
+		}
+	}
+
 	@media (max-width: 550px){
 		.products__list .products__item{
 			width: 215px;
@@ -768,9 +820,7 @@
 		.preorder-text{
 			font-size: 1.2rem;
 		}
-	}
 
-	@media (max-width: 550px){
 		.products__list .products__item,
 		.btn-more{
 			width: 290px;
@@ -779,6 +829,26 @@
 			margin: 0 auto;
 		}
 	}
+
+	@media (max-width: 320px){
+		aside{
+			.action{
+				.btn{
+					display: block;
+					text-align: center;
+				}
+			}
+		}
+		.btn-notify{
+			display: block;
+			text-align: center;
+			.icon{
+				margin-left: auto;
+				margin-right: auto;
+			}
+		}
+	}
+
 }
 
 

@@ -4,7 +4,14 @@
 
 
 // safari
-_::-webkit-:host:not(:root:root), .header{
+_::-webkit-:-webkit-full-screen:host:not(:root:root), .mob-header{
+	display: none !important;
+}
+
+.safari{
+	.ms-choice > div:before{
+		margin-top: -6px;
+	}
 }
 
 

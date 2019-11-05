@@ -3897,7 +3897,7 @@ h3 {
 #registerModal .subtitle, .modal-info .title, .modal-helpvehicle .subtitle, .modal-helpvehicle .variant__num, #submitpartnumber .step__num, .smartsearch__header,
 #changeVehicle__header, .smartsearch__header .ms-choice,
 #changeVehicle__header .ms-choice, .main h2, .main h3, .main h4, .main h5, .main h6, .content blockquote, .lastnews .item-news__title,
-.news__list .item-news__title, .aboutus-page .intro__title, .aboutus-page .about__title, .aboutus-page .quote, .aboutus-page .advantages, .aboutus-page .item-products__title, .aboutus-page .brands__text, .title-md, .main aside .widget-title, .main aside .btn-filter, .sortbox .sort-label, .item-products__title, .products__list .item-products .btn-tooltip, .products__list .item-products .tooltip-title, .modal-v2 .box__title, #addtocardModal1 .product-title,
+.news__list .item-news__title, .aboutus-page .intro__title, .aboutus-page .about__title, .aboutus-page .quote, .aboutus-page .advantages, .aboutus-page .item-products__title, .aboutus-page .brands__text, .title-md, .main aside .widget-title, .main aside .btn-filter, .sortbox .sort-label, .item-products__title, .products__list .item-products .tooltip-title, .modal-v2 .box__title, #addtocardModal1 .product-title,
 #successAddtocardModal .product-title, #addtocardModal1 .count-price .price,
 #successAddtocardModal .count-price .price, .inner .card-page .details__title, .inner .card-page .item-stock__title, .inner .card-page .assembly-brands .nav-title, .msg-searched, .specifications .specification__title, #successAddtocardModal .price, .cart-page .cart-table .cost, .cart-page .salescard__item .title, .comparison__body .product-title, .wiper-search .intro, .wiper-search .steps, .perfomance-page .intro .subtitle, .perfomance-page .list-title, .table-title, .searchresults-page .car-plate .car__title, .searchresults-page .servicepack__title, .searchresults-page .searchresult-plate .title, .logout, .myaccount aside ul, .myaccount aside .tel, .myaccount .plate__title, .myaccount .plate .statistic__field, .myaccount .ordersstat .num, .mob-accountmenu .btn-accountmenu, .mob-accountmenu .menu, .latest-orders header, .orders__list .tracking__title, .orders__list .orderinfo .print, .orders__list .orderinfo__title, .orders__list .subtitle, #quickorderModal .modal-body h2, #quickorderModal .modal-body ol li:before, .region .subtitle, .garagesearch .left .num, .addvehicle-page .plate__title, .wishlist-count, .address-entries__list .item-entry .num, .address-entries__list .item-entry .radio__text:after, .checkout__head .num, .checkout__step-3 .radio__text .price, .checkout__step-4 .radio__text .price, .mob-header .btn-menu, .mob-header .tel {
   font-family: 'Neo Sans Pro', Verdana, sans-serif; }
@@ -7211,7 +7211,7 @@ input.form-control.error {
       background-color: transparent;
       height: 7px;
       right: 1px;
-      top: 12px;
+      top: 11px;
       width: 10px; }
       .smartsearch__header .ms-choice > div:before,
       #changeVehicle__header .ms-choice > div:before {
@@ -8497,19 +8497,26 @@ input.form-control.error {
     color: #b7bbbe;
     margin-top: 2rem; }
 
-.main aside .btn-filter {
-  display: none;
-  background-color: #eaecf0;
-  color: #687075;
-  font-size: 16px;
-  font-weight: 700;
-  height: 55px;
-  width: 100%; }
-  .main aside .btn-filter .icon {
-    margin-right: 8px; }
-
-.main aside .btn-hidefilter .icon {
-  transform: rotate(180deg); }
+.main aside .btn {
+  width: 47%; }
+  .main aside .btn-filter {
+    display: none;
+    background-color: #eaecf0;
+    color: #687075;
+    font-size: 16px;
+    font-weight: 700;
+    height: 55px;
+    width: 100%; }
+    .main aside .btn-filter .icon {
+      margin-right: 8px; }
+    @media (max-width: 350px) {
+      .main aside .btn-filter {
+        display: block !important;
+        text-align: center; }
+        .main aside .btn-filter .icon {
+          display: none; } }
+  .main aside .btn-hidefilter .icon {
+    transform: rotate(180deg); }
 
 @media (max-width: 950px) {
   .main aside .filter .inner {
@@ -8520,10 +8527,13 @@ input.form-control.error {
     display: none; }
   .main aside .filter:last-child {
     margin-bottom: 1rem; }
-  .main aside .btn-filter {
-    display: flex;
-    align-items: center;
-    justify-content: center; } }
+  .main aside .btn {
+    width: auto; }
+    .main aside .btn-filter {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%; } }
 
 .sortbox {
   color: #4c4c4c;
@@ -8590,6 +8600,9 @@ input.form-control.error {
         margin-left: 0;
         margin-right: 0;
         width: 100%; } }
+  @media (max-width: 350px) {
+    .sortbox li {
+      margin-right: 10px; } }
 
 .item-products__desc {
   color: #41484b;
@@ -8611,6 +8624,7 @@ input.form-control.error {
   box-shadow: 0 5px 15px rgba(0, 153, 255, 0.5);
   height: 50px;
   padding: 0;
+  text-align: center;
   transition: background-color .3s;
   width: 50px; }
   .btn-cart .icon {
@@ -8624,6 +8638,11 @@ input.form-control.error {
     box-shadow: none; }
     .btn-cart.incart:hover {
       background-color: #778d9b; }
+  @media (max-width: 320px) {
+    .btn-cart {
+      display: block; }
+      .btn-cart .icon {
+        margin-left: 4px; } }
 
 .products__list .btn-fav {
   margin-right: 1.6rem;
@@ -8687,7 +8706,6 @@ input.form-control.error {
       color: #fff;
       font-weight: 700;
       height: 20px;
-      line-height: 1;
       padding: 0;
       position: relative;
       text-align: center;
@@ -8696,11 +8714,15 @@ input.form-control.error {
       z-index: 100; }
       .products__list .item-products .btn-tooltip:hover {
         background-color: #0099ff; }
+      @media (max-width: 320px) {
+        .products__list .item-products .btn-tooltip {
+          display: block; } }
     .products__list .item-products .tooltip {
       margin-left: 1rem;
       position: relative;
-      top: 2px;
-      width: 20px; }
+      width: 20px;
+      display: flex;
+      align-items: center; }
       .products__list .item-products .tooltip:hover .tooltip__layout {
         opacity: 1;
         transform: translateY(0);
@@ -8769,6 +8791,13 @@ input.form-control.error {
           padding-left: 1.2rem;
           padding-right: 1.2rem;
           width: auto; }
+        .products__list .item-products .labels .label .labels {
+          display: block; }
+          .products__list .item-products .labels .label .labels .label {
+            display: inline-block;
+            padding-top: 10px; }
+          .products__list .item-products .labels .label .labels .icon {
+            display: inline-block; }
     .products__list .item-products .additional__panel {
       background: #eaecf0;
       box-shadow: 0 5px 20px rgba(0, 113, 189, 0.15);
@@ -8851,10 +8880,10 @@ input.form-control.error {
       grid-template-columns: repeat(3, 1fr); }
       .catalog-page .products__list .products__item,
       .searchresults-page .products__list .products__item {
-        margin-left: 10px;
-        margin-right: 10px;
+        margin-left: 5px;
+        margin-right: 5px;
         margin-bottom: 20px;
-        width: 300px; } }
+        width: 250px; } }
   @media (max-width: 768px) {
     .catalog-page .products__list .products__item,
     .searchresults-page .products__list .products__item {
@@ -8898,9 +8927,6 @@ input.form-control.error {
   .catalog-page aside .filter .param_control,
   .searchresults-page aside .filter .param_control {
     width: 100px; }
-  .catalog-page .products__list .products__item,
-  .searchresults-page .products__list .products__item {
-    width: 250px; }
   .catalog-page .btn-cart,
   .catalog-page .btn-notify,
   .searchresults-page .btn-cart,
@@ -8923,6 +8949,9 @@ input.form-control.error {
     max-width: 100%;
     flex: 0 0 100%;
     order: 1; }
+  .catalog-page .catalog-content,
+  .searchresults-page .catalog-content {
+    order: 2; }
   .catalog-page .head-sortbox,
   .searchresults-page .head-sortbox {
     order: 0;
@@ -8953,6 +8982,11 @@ input.form-control.error {
   .searchresults-page .current-price {
     font-size: 1.7rem; } }
 
+@media (max-width: 768px) {
+  .catalog-page .products__list .item-products,
+  .searchresults-page .products__list .item-products {
+    width: 320px; } }
+
 @media (max-width: 550px) {
   .catalog-page .products__list .products__item,
   .searchresults-page .products__list .products__item {
@@ -8974,9 +9008,7 @@ input.form-control.error {
     font-size: 1.4rem; }
   .catalog-page .preorder-text,
   .searchresults-page .preorder-text {
-    font-size: 1.2rem; } }
-
-@media (max-width: 550px) {
+    font-size: 1.2rem; }
   .catalog-page .products__list .products__item,
   .catalog-page .btn-more,
   .searchresults-page .products__list .products__item,
@@ -8985,6 +9017,20 @@ input.form-control.error {
   .catalog-page .btn-more,
   .searchresults-page .btn-more {
     margin: 0 auto; } }
+
+@media (max-width: 320px) {
+  .catalog-page aside .action .btn,
+  .searchresults-page aside .action .btn {
+    display: block;
+    text-align: center; }
+  .catalog-page .btn-notify,
+  .searchresults-page .btn-notify {
+    display: block;
+    text-align: center; }
+    .catalog-page .btn-notify .icon,
+    .searchresults-page .btn-notify .icon {
+      margin-left: auto;
+      margin-right: auto; } }
 
 .tooltip-label {
   position: relative; }
@@ -16057,6 +16103,12 @@ input.form-control.error {
 
 ::-ms-clear {
   display: none; }
+
+_::-webkit-:-webkit-full-screen:host:not(:root:root), .mob-header {
+  display: none !important; }
+
+.safari .ms-choice > div:before {
+  margin-top: -6px; }
 
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
   .main-grid {
