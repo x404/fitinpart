@@ -111,4 +111,14 @@
 			width: 280px;
 		}
 	}
+	@media (max-width: 420px){
+		.order-info{
+			display: block !important;
+			.order-num{
+				display: inline-block;
+				margin-bottom: 15px;
+				width: 150px;
+			}
+		}
+	}
 }

@@ -11940,6 +11940,14 @@ input.form-control.error {
   .thankyou-page .methods__cell {
     width: 280px; } }
 
+@media (max-width: 420px) {
+  .thankyou-page .order-info {
+    display: block !important; }
+    .thankyou-page .order-info .order-num {
+      display: inline-block;
+      margin-bottom: 15px;
+      width: 150px; } }
+
 .searchresults-page {
   overflow: auto; }
   .searchresults-page .car-plate {
