@@ -92,8 +92,13 @@
 		}
 	}
 
+	@media (max-width: 1024px){
+		padding-right: 3rem;
+	}
+
 	@media (max-width: 575px){
 		padding-left: 1.5rem;
+		padding-right: 1.5rem;
 		.cell{
 			margin-right: 0;
 			width: 100%;
