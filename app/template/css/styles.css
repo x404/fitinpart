@@ -15626,6 +15626,8 @@ input.form-control.error {
         flex-grow: 1; }
     .checkout__step-4 .creditcard .savecard-control {
       margin-top: .8rem; }
+    .checkout__step-4 .creditcard .ms-no-results {
+      padding-left: 1.5rem !important; }
     @media (max-width: 1550px) {
       .checkout__step-4 .creditcard .cell {
         margin-right: 2.9rem; } }
@@ -15894,7 +15896,11 @@ input.form-control.error {
 
 @media (max-width: 650px) {
   .checkout .checkout__step-4 .information .cell {
-    width: 48%; } }
+    width: 48%; }
+  .checkout .btn-submit,
+  .checkout .btn-ok {
+    display: block;
+    text-align: center; } }
 
 @media (max-width: 576px) {
   .checkout .checkout__step-3 .radio,
@@ -15907,7 +15913,11 @@ input.form-control.error {
 
 @media (max-width: 550px) {
   .checkout .checkout__right {
-    width: 96%; } }
+    width: 96%; }
+  .checkout .listcard-wrapper {
+    display: block !important; }
+    .checkout .listcard-wrapper .btn-del {
+      margin-top: 10px; } }
 
 @media (max-width: 530px) {
   .checkout .shopping-cart .item-cart .d-flex {
@@ -15934,9 +15944,10 @@ input.form-control.error {
   .checkout .shopping-cart .code__row {
     flex-wrap: wrap; }
     .checkout .shopping-cart .code__row .form-control {
-      margin: 8px 0; }
+      margin: 8px 0;
+      width: calc(100% - 65px); }
     .checkout .shopping-cart .code__row .btn-ok {
-      margin-left: 0 !important; }
+      margin-left: 10px !important; }
   .checkout .checkout__head .num {
     height: 34px;
     font-size: 16px;

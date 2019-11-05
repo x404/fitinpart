@@ -362,6 +362,10 @@
 					margin-top: .8rem;
 				}
 
+				.ms-no-results{
+					padding-left: 1.5rem !important;
+				}
+
 				@media (max-width: 1550px){
 					.cell{
 						margin-right: 2.9rem;
@@ -814,8 +818,14 @@
 	@media (max-width: 650px){
 		.checkout__step-4 .information .cell{
 			width: 48%;
-		}		
+		}
+		.btn-submit,
+		.btn-ok{
+			display: block;
+			text-align: center;
+		}
 	}
+
 
 	@media (max-width: 576px){
 		.checkout__step-3,
@@ -835,6 +845,14 @@
 	@media (max-width: 550px){
 		.checkout__right{
 			width: 96%;
+		}
+
+		.listcard-wrapper{
+			display: block !important;
+
+			.btn-del{
+				margin-top: 10px;
+			}
 		}
 	}
 
@@ -885,9 +903,10 @@
 					flex-wrap: wrap;
 					.form-control{
 						margin: 8px 0;
+						width: calc(100% - 65px);
 					}
 					.btn-ok{
-						margin-left: 0 !important;
+						margin-left: 10px !important;
 					}
 				}
 			}
@@ -992,4 +1011,7 @@
 			padding-right: 15px;
 		}
 	}
+
+
+
 }
