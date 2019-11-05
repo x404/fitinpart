@@ -265,6 +265,11 @@
 		    grid-column: 3 / 4;
 		    grid-row: 1 / 3;
 		    font-size: 1.5rem;
+
+		    .plate__title{
+				display: flex;
+				align-items: center;
+		    }
 		}
 		&-address{
 			background: url(../images/bg/address.png) no-repeat left bottom #778d9b;
@@ -325,6 +330,15 @@
 			}
 		}
 
+		@media (max-width: 1399px){
+			.status{
+				flex-grow: 0;
+			}
+			.right{
+				flex-grow: 1;
+			}
+		}
+
 		h3{
 			color: currentColor;
 			font-size: 1.8rem;
@@ -357,15 +371,22 @@
 				background-color: #0672ba;
 				border-radius: 50%;
 				color: #fff;
+				display: block;
 				font-size: 1.5rem;
 				height: 2rem;
 				margin-left: 8px;
+				padding: 0;
 				width: 2rem;
+				text-align: center;
+				flex-shrink: 0;
 				&:hover{
 					background-color: #0099ff;
 					.tooltip-body{
 						transform: translateY(-5px);
 					}
+				}
+				@media (max-width: 320px){
+					padding-top: 2px;
 				}
 			}
 			&-body{
@@ -661,6 +682,24 @@
 		}
 	}
 
+	@media (max-width: 600px){
+		.plate{
+			.right{
+				flex-grow: 0
+			}
+		}
+
+		.plate-user__inner{
+			.status{
+				flex-grow: 1;
+				width: 100%;
+				margin-top: 10px;
+				margin-bottom: 10px;
+			}
+		}
+	}
+
+
 	@media (max-width: 576px){
 		.content{
 			padding-top: 0;
@@ -713,8 +752,18 @@
 			font-size: 13px;
 		}
 	}
-}
 
+	@media (max-width: 320px){
+		.btn-more{
+			display: block;
+			text-align: center;
+			.icon{
+				display: none;
+			}
+		}
+	}
+}
+// #myaccount
 
 .mob-accountmenu{
 	background-color: #fff;
@@ -1047,7 +1096,6 @@
 		}
 
 		&-item{
-
 			.td{
 				&-1,
 				&-2,
@@ -1069,6 +1117,8 @@
 			button{
 				text-align: left;
 			}
+
+					
 			.tracknum{
 				color: $color3;
 				font-size: 1.5rem;
@@ -1100,13 +1150,12 @@
 				img{
 					display: none;
 				}
-
 			}
 		}
 
 		&.showfull{
 			.moreinfo{
-				max-height: 1500px;
+				max-height: 5000px;
 				padding-bottom: 2rem;
 			}
 			.view{

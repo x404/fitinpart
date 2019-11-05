@@ -12,6 +12,13 @@ _::-webkit-:-webkit-full-screen:host:not(:root:root), .mob-header{
 	.ms-choice > div:before{
 		margin-top: -6px;
 	}
+
+	.search .dropdown .ms-choice>div{
+		margin-top: 0;
+		&.open{
+			margin-top: -3px;
+		}
+	}
 }
 
 

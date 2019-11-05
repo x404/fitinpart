@@ -737,7 +737,8 @@ em strong
 			margin-right: 3px;
 			transition: .3s;
 		}
-		&:hover{
+		&:hover,
+		&:focus{
 			box-shadow: 0 5px 15px rgba(0, 153, 255, 0.5);
 			.icon{
 				filter: brightness(5);
@@ -1035,7 +1036,8 @@ button{
 				color: #393939;
 				display: flex;
 				padding: .5rem 1.4rem .5rem 1.2rem;
-				&:hover{
+				&:hover,
+				&:focus{
 					background-color: $color9;
 					color: $color2;
 					.icon{
@@ -1414,7 +1416,8 @@ button{
 
 .littlecart{
 	position: relative;
-	&:hover{
+	&:hover,
+	&:focus{
 		.shop-cart{
 			background-color: $color9;
 			color: $color2;
