@@ -3206,6 +3206,7 @@
 <!-- InstanceBeginEditable name="EditRegion4" -->
 <script src="/template/js/jquery.inputmask.min.js" data-autoinit="true"></script>
 <script>
+	var $listcard = $('#listcard');
 	$(document).ready(function(){
 		// masked credit card form
 		$('#cardnumber').inputmask('9999 9999 9999 9999', {"placeholder": ""});
@@ -3253,17 +3254,17 @@
 			}
 		});
 
-		$('#listcard').multipleSelect({
+
+		
+		$listcard.multipleSelect({
 			single: true,
 			filter: false,
-			onClick: function() {
-				const $del_html = '<button type="button" class="btn btn-del"><i class="icon icon-delete-2"></i>Delete this card</button>';
+			onClick: function(e) {
+				const $del_html = '<button type="button" class="btn btn-del" data-value="'+ e.value + '"><i class="icon icon-delete-2"></i>Delete this card</button>';
 				$('.listcard-wrapper .btn-del').remove();
 				$('.listcard-wrapper').append($del_html);
 			}
 		});
-
-
 
 		countries = new PerfectScrollbar('.checkout__body .countries .listwrapper', {
 			wheelPropagation: true,
@@ -3286,6 +3287,24 @@
 
 	$(document).on('click','input[name="setaddress"]', function(e){
 		($(this).val() == 'newaddress') ?  $('.newaddress-form').slideDown() :  $('.newaddress-form').slideUp()
+	});
+
+	// remove card from list
+	$(document).on('click','.creditcard .btn-del', function(e){
+		e.preventDefault();
+		$listcard.find('option[value=' + $(this).data('value') + ']').remove();
+
+		$listcard.multipleSelect('destroy');
+		$listcard.multipleSelect({
+			single: true,
+			filter: false,
+			onClick: function(e) {
+				const $del_html = '<button type="button" class="btn btn-del" data-value="'+ e.value + '"><i class="icon icon-delete-2"></i>Delete this card</button>';
+				$('.listcard-wrapper .btn-del').remove();
+				$('.listcard-wrapper').append($del_html);
+			}
+		});
+		$('.listcard-wrapper .btn-del').remove();
 	});
 
 </script>
