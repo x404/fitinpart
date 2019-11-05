@@ -16168,7 +16168,11 @@ _::-webkit-:-webkit-full-screen:host:not(:root:root), .mob-header {
   .main .icon-littlecart,
   .modal .icon-littlecart {
     background-image: url(../images/ie/cart-white.png) !important;
-    background-position: left top; } }
+    background-position: left top; }
+  .methods__wrapper {
+    display: flex !important; }
+    .methods__wrapper .methods__cell {
+      width: 32%; } }
 
 @media (max-width: 1399px) {
   .header .catalog__wrapper .catalog-btn {
