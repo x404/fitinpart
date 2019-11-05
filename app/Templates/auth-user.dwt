@@ -1003,7 +1003,7 @@
 			<button type="button" class="extra-toggle btn-menu icon icon-9dotted" aria-label="Show / hide menu" data-popup="modal" data-target="#modal-menu"><span>Menu</span></button>
 
 			<div class="logo">
-				<img src="/template/images/logo-md.jpg" alt="FitinPart" />
+				<a href="/" title=""><img src="/template/images/logo-md.jpg" alt="FitinPart" /></a>
 			</div>
 
 			<a href="tel:+6567497481" class="tel">+65 67497481</a>
@@ -1015,9 +1015,10 @@
 					</a>
 
 					<div class="dropdown-menu" aria-labelledby="dropdownUserMenuLinkMob">
+						<!-- TemplateBeginEditable name="EditRegion7" -->
 						<ul>
 							<li class="active">
-								<a href="#" title="">
+								<a href="myaccount-start.html" title="">
 									<i class="icon-wrapper">
 										<i class="icon icon-myaccount-sm"></i>
 									</i>
@@ -1065,7 +1066,7 @@
 								</a>
 							</li>
 							<li>
-								<a href="#" title="">
+								<a href="myaccount-orderhistory.html" title="">
 									<i class="icon-wrapper">
 										<i class="icon icon-orders-sm"></i>
 									</i>
@@ -1073,7 +1074,7 @@
 								</a>
 							</li>
 							<li>
-								<a href="#" title="">
+								<a href="myaccount-orderhistory-items.html" title="">
 									<i class="icon-wrapper">
 										<i class="icon icon-itemorders-sm"></i>
 									</i>
@@ -1112,8 +1113,9 @@
 									Loguot
 								</a>
 							</li>
-							
+
 						</ul>
+						<!-- TemplateEndEditable -->
 					</div>
 				</div>
 			</div>
