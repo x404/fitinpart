@@ -275,6 +275,16 @@
 		}
 	}
 
+	.smartsearch{
+		.ms-parent{
+			.listwrapper{
+				height: auto;
+				li{
+					width: 100%;
+				}
+			}
+		}
+	}
 
 	// filter
 	.filter-sort{
@@ -453,6 +463,16 @@
 		 }
 	}
 
+	@media (max-width: 768px){
+		.products__list .item-products{
+			min-width: 240px;
+			&__body{
+				padding-left: 15px;
+				padding-right: 15px;
+			}
+		}
+	}
+
 	@media (max-width: 767px){
 		.products__list{
 			justify-content: space-around;
@@ -581,6 +601,17 @@
 			}
 			&__title{
 				font-size: 22px;
+			}
+		}
+	}
+
+
+	@media (max-width: 320px){
+		.btn-more{
+			display: block;
+			text-align: center;
+			.icon{
+				display: none;
 			}
 		}
 	}

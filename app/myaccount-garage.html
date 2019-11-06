@@ -3127,18 +3127,6 @@
 <script src="/template/js/Sortable.min.js"></script>
 <script>
 	$(document).ready(function(){
-		$("#ordersstatmenu").multipleSelect({
-			single: true,
-			filter: false,
-			onClick: function(view) {
-				url = view.value;
-				window.location.href = url;
-			},
-			onOpen: function() {
-				mobordersstatmenu.update();
-			}
-		});
-
 		// autosize textarea
 		autosize(document.querySelectorAll('.txta'));
 

@@ -12167,6 +12167,10 @@ input.form-control.error {
         width: 12px; }
         .searchresults-page .servicepack .consist .btn-delete:hover {
           filter: none; }
+  .searchresults-page .smartsearch .ms-parent .listwrapper {
+    height: auto; }
+    .searchresults-page .smartsearch .ms-parent .listwrapper li {
+      width: 100%; }
   .searchresults-page .filter-sort {
     display: flex;
     margin: 3rem 0; }
@@ -12273,6 +12277,12 @@ input.form-control.error {
     .searchresults-page .products__list .item-products {
       width: 30%;
       min-width: 250px; } }
+  @media (max-width: 768px) {
+    .searchresults-page .products__list .item-products {
+      min-width: 240px; }
+      .searchresults-page .products__list .item-products__body {
+        padding-left: 15px;
+        padding-right: 15px; } }
   @media (max-width: 767px) {
     .searchresults-page .products__list {
       justify-content: space-around; } }
@@ -12343,6 +12353,12 @@ input.form-control.error {
         font-size: 15px; }
     .searchresults-page .servicepack__title {
       font-size: 22px; } }
+  @media (max-width: 320px) {
+    .searchresults-page .btn-more {
+      display: block;
+      text-align: center; }
+      .searchresults-page .btn-more .icon {
+        display: none; } }
 
 .icon-myaccount {
   background-image: url(../images/sprite.png);

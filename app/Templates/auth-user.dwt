@@ -2703,18 +2703,7 @@
 <script src="/template/js/search-moto.js"></script>
 <script src="/template/js/search-hd.js"></script>
 <!-- TemplateBeginEditable name="EditRegion4" -->
-<script>
-	$(document).ready(function(){
-		$("#ordersstatmenu").multipleSelect({
-			single: true,
-			filter: false,
-			onClick: function(view) {
-				url = view.value;
-				window.location.href = url;
-			}
-		});
-	});
-</script>
+
 <!-- TemplateEndEditable -->
 </body>
 </html>
