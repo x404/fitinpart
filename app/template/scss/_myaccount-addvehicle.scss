@@ -1,21 +1,13 @@
-.addvehicle-page .plate
-{
-	form{
-		margin-top: 1rem;
-	}	
-	.subtab{
-		margin: 0 0 .5rem;
-	}
-}
-
-
 .addvehicle-page{
+	.content{
+		width: calc(100% - 230px);
+	}
 	.plate{
 		background-color: #fff;
 		color: #000;
+		min-height: 58rem;
 		padding: 3rem 4rem 4rem;
 		width: calc(33.3% - 15px);
-		min-height: 58rem;
 		&__title{
 			@extend .neosans;
 			color: #000;
@@ -25,6 +17,12 @@
 			margin-bottom: 2rem;
 		}
 
+		form{
+			margin-top: 1rem;
+		}	
+		.subtab{
+			margin: 0 0 .5rem;
+		}
 
 		li{
 			font-size: 1.4rem;

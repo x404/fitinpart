@@ -14572,24 +14572,25 @@ input.form-control.error {
       text-align: center;
       width: 180px; } }
 
-.addvehicle-page .plate form {
-  margin-top: 1rem; }
-
-.addvehicle-page .plate .subtab {
-  margin: 0 0 .5rem; }
+.addvehicle-page .content {
+  width: calc(100% - 230px); }
 
 .addvehicle-page .plate {
   background-color: #fff;
   color: #000;
+  min-height: 58rem;
   padding: 3rem 4rem 4rem;
-  width: calc(33.3% - 15px);
-  min-height: 58rem; }
+  width: calc(33.3% - 15px); }
   .addvehicle-page .plate__title {
     color: #000;
     font-size: 3rem;
     font-weight: 700;
     line-height: 1.17;
     margin-bottom: 2rem; }
+  .addvehicle-page .plate form {
+    margin-top: 1rem; }
+  .addvehicle-page .plate .subtab {
+    margin: 0 0 .5rem; }
   .addvehicle-page .plate li {
     font-size: 1.4rem;
     margin: 0;
