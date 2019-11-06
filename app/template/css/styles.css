@@ -13900,6 +13900,8 @@ input.form-control.error {
   margin-top: 1rem; }
   .notify-settings .option-item:after {
     border-top: 1px solid #e5e5e5;
+    left: 0;
+    top: 16px;
     width: 100%; }
 
 .notify-settings .option-title {
@@ -16369,7 +16371,9 @@ _::-webkit-:-webkit-full-screen:host:not(:root:root), .mob-header {
   .requests__list .item-request {
     width: 50%; }
   .assembly__list .tr-item .inner, .oenumbers__list .tr-item .inner, .order-items__list .tr-item .inner, .orders__list .tr-item .inner, .stockrequest__list .tr-item .inner, .transactions__list .tr-item .inner {
-    padding-top: 15px; } }
+    padding-top: 15px; }
+  .notify-settings .option-item:after {
+    display: none; } }
 
 @media (max-width: 1399px) {
   .header .catalog__wrapper .catalog-btn {

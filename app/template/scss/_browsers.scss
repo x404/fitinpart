@@ -184,4 +184,8 @@ _::-webkit-full-page-media, _:future, :root .selector {
 	.assembly__list .tr-item .inner, .oenumbers__list .tr-item .inner, .order-items__list .tr-item .inner, .orders__list .tr-item .inner, .stockrequest__list .tr-item .inner, .transactions__list .tr-item .inner{
 		padding-top: 15px;
 	}
+
+	.notify-settings .option-item:after{
+		display: none;
+	}
 }

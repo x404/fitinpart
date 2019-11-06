@@ -2158,6 +2158,8 @@
 			&:after{
 				@extend .before;
 				border-top: 1px solid #e5e5e5;
+				left: 0;
+				top: 16px;
 				width: 100%;
 			}
 		}
@@ -2178,8 +2180,6 @@
 			box-shadow: none;
 		}
 	}
-
-
 }
 
 .asterisk{
