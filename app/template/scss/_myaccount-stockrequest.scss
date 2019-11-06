@@ -77,7 +77,22 @@
 		}
 	}
 
+	@media (max-width: 1399px){
+		.tr-head,
+		.tr-item .inner
+		{
+			padding-left: 1.5rem;
+			padding-right: 1.5rem;
+			font-size: 1.4rem;
+		}
+	}
+
+
 	@media (max-width: 1199px){
+		.tr-item .inner{
+			font-size: 1.5rem;
+			padding-top: 1.5rem;
+		}
 		.td{
 			&-1{width: 33.3%}
 			&-2{width: 33.3%}

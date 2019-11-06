@@ -14207,7 +14207,17 @@ input.form-control.error {
     margin-left: -37px;
     padding-left: 37px; }
 
+@media (max-width: 1399px) {
+  .stockrequest__list .tr-head,
+  .stockrequest__list .tr-item .inner {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    font-size: 1.4rem; } }
+
 @media (max-width: 1199px) {
+  .stockrequest__list .tr-item .inner {
+    font-size: 1.5rem;
+    padding-top: 1.5rem; }
   .stockrequest__list .td-1 {
     width: 33.3%; }
   .stockrequest__list .td-2 {
