@@ -4821,6 +4821,9 @@ button {
   position: relative; }
   .header .logo {
     margin-right: 3.4rem; }
+    .header .logo a {
+      position: relative;
+      z-index: 1; }
   .header .catalog__wrapper {
     cursor: pointer; }
     .header .catalog__wrapper:hover .catalog-btn {

@@ -1204,6 +1204,10 @@ button{
 
 	.logo{
 		margin-right: 3.4rem;
+		a{
+			position: relative;
+			z-index: 1;
+		}
 	}
 
 	.catalog__wrapper{
