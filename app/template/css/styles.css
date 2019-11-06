@@ -14718,12 +14718,13 @@ input.form-control.error {
       .addvehicle-page .plate-wherevin {
         margin-top: 0; }
       .addvehicle-page .plate .placement {
-        padding-left: 65px;
-        padding-right: 15px;
-        width: 250px;
-        font-size: 14px; }
+        font-size: 14px;
+        padding: 10px 15px 10px 65px;
+        width: 240px;
+        top: 5px; }
         .addvehicle-page .plate .placement:before {
-          left: 7px; } }
+          left: 7px;
+          top: 15px; } }
   @media (max-width: 576px) {
     .addvehicle-page .plate {
       min-height: 0;

@@ -6,7 +6,6 @@
 	.subtab{
 		margin: 0 0 .5rem;
 	}
-
 }
 
 
@@ -219,24 +218,25 @@
 		}
 
 		@media (max-width: 991px){
+			padding-left: 1.5rem;
+			padding-right: 1.5rem;
 			.row{
 				margin-left: 0;
 				margin-right: 0;
 			}
-			padding-left: 1.5rem;
-			padding-right: 1.5rem;
 
 			&-wherevin{
 				margin-top: 0;
 			}
 
 			.placement{
-				padding-left: 65px;
-				padding-right: 15px;
-				width: 250px;
 				font-size: 14px;
+				padding: 10px 15px 10px 65px;
+				width: 240px;
+				top: 5px;
 				&:before{
 					left: 7px;
+					top: 15px;
 				}
 			}
 		}
