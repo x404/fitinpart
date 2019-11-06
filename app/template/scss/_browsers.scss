@@ -27,6 +27,17 @@ _::-webkit-:-webkit-full-screen:host:not(:root:root), .mob-header{
 	.address-entries__list .item-entry .num{
 		padding-top: 5px;
 	}
+
+	.myaccount .plate .tooltip-label{
+		padding-top: 2px;
+	}
+
+
+	.myaccount .plate .tooltip-label{
+		position: relative;
+		top: -3px;
+	}
+
 }
 
 
