@@ -29,6 +29,7 @@
 		flex-wrap: wrap;
 		margin-bottom: 1rem;
 		padding-bottom: 0;
+		position: relative;
 		transition: box-shadow .3s;
 		&:hover{
 			box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
@@ -38,6 +39,7 @@
 			justify-content: space-between;
 			padding-top: .5rem;
 			padding-bottom: 1rem;
+			position: relative;
 			width: 100%;
 		}
 
@@ -217,12 +219,27 @@
 			&__note{
 				width: 30%;
 			}
+
 			.price{
 				width: 115px;
 			}
 			.instock{
 				margin-right: 0;
 				width: 30%;
+			}
+
+			.btn-del{
+				padding: 0;
+				position: absolute;
+				right: 15px;
+				top: -10px;
+			}
+			.alternative-products,
+			.other-products{
+				.btn-del{
+					top: 0;
+					right: 0;
+				}
 			}
 		}
 
@@ -253,6 +270,9 @@
 
 
 		@media (max-width: 950px){
+			.btn-del{
+				position: static;
+			}
 			&__layout{
 				position: relative;
 			}
@@ -298,8 +318,8 @@
 			}
 
 			.manage{
-				margin-top: 10px;
-				position: s;
+				margin-top: 15px;
+				position: static;
 			}
 		}
 
@@ -319,6 +339,15 @@
 			}
 			&__pic{
 				width: auto;
+			}
+		}
+		
+		@media (max-width: 320px){
+			.btn-cart{
+				text-align: center;
+				.icon{
+					margin-left: 10px;
+				}
 			}
 		}
 	}	

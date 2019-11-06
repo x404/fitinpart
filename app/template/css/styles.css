@@ -14837,6 +14837,7 @@ input.form-control.error {
   flex-wrap: wrap;
   margin-bottom: 1rem;
   padding-bottom: 0;
+  position: relative;
   transition: box-shadow .3s; }
   .wishlist-page .item-products:hover,
   .cart-table .item-products:hover {
@@ -14847,6 +14848,7 @@ input.form-control.error {
     justify-content: space-between;
     padding-top: .5rem;
     padding-bottom: 1rem;
+    position: relative;
     width: 100%; }
   .wishlist-page .item-products__title,
   .cart-table .item-products__title {
@@ -15004,7 +15006,19 @@ input.form-control.error {
     .wishlist-page .item-products .instock,
     .cart-table .item-products .instock {
       margin-right: 0;
-      width: 30%; } }
+      width: 30%; }
+    .wishlist-page .item-products .btn-del,
+    .cart-table .item-products .btn-del {
+      padding: 0;
+      position: absolute;
+      right: 15px;
+      top: -10px; }
+    .wishlist-page .item-products .alternative-products .btn-del,
+    .wishlist-page .item-products .other-products .btn-del,
+    .cart-table .item-products .alternative-products .btn-del,
+    .cart-table .item-products .other-products .btn-del {
+      top: 0;
+      right: 0; } }
   @media (max-width: 1199px) {
     .wishlist-page .item-products__body,
     .cart-table .item-products__body {
@@ -15027,6 +15041,9 @@ input.form-control.error {
       .cart-table .item-products .instock .preorder-text {
         margin-left: .8rem; } }
   @media (max-width: 950px) {
+    .wishlist-page .item-products .btn-del,
+    .cart-table .item-products .btn-del {
+      position: static; }
     .wishlist-page .item-products__layout,
     .cart-table .item-products__layout {
       position: relative; }
@@ -15064,8 +15081,8 @@ input.form-control.error {
       font-size: 14px; }
     .wishlist-page .item-products .manage,
     .cart-table .item-products .manage {
-      margin-top: 10px;
-      position: s; } }
+      margin-top: 15px;
+      position: static; } }
   @media (max-width: 480px) {
     .wishlist-page .item-products__right,
     .cart-table .item-products__right {
@@ -15081,6 +15098,13 @@ input.form-control.error {
     .wishlist-page .item-products__pic,
     .cart-table .item-products__pic {
       width: auto; } }
+  @media (max-width: 320px) {
+    .wishlist-page .item-products .btn-cart,
+    .cart-table .item-products .btn-cart {
+      text-align: center; }
+      .wishlist-page .item-products .btn-cart .icon,
+      .cart-table .item-products .btn-cart .icon {
+        margin-left: 10px; } }
 
 .wishlist-page .products__strlist .item-products:last-child {
   padding-bottom: 0;
