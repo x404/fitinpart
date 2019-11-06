@@ -1595,6 +1595,7 @@
 
 								<div class="center">
 									<input type="text" placeholder="Search garage..." class="search-control" />
+									<button type="button" class="btn-search" aria-label="search garage"></button>
 								</div>
 
 								<div class="right">
@@ -3143,17 +3144,24 @@
 
 
 		// search garage
-		$('.search-control').keyup(function(){
-			let $this = this;
-			
-			$.each($('.item-cars__title'), function() {
-				if($(this).text().toLowerCase().indexOf($($this).val().toLowerCase()) === -1) {
-					$(this).closest('.item-cars').hide();
-				} else {
-					$(this).closest('.item-cars').show();
-				}
-			});
+		$('.search-control').on('keyup', function(){
+			SwitchItemCars()
 		});
+
+		$('.btn-search').on('click', function(){
+			SwitchItemCars()
+		});
+
+		function SwitchItemCars(){
+			$.each($('.item-cars__title'), function() {
+				if($(this).text().toLowerCase().indexOf($('.search-control').val().toLowerCase()) === -1) {
+					$(this).closest('.item-cars').addClass('hide');
+				} else {
+					$(this).closest('.item-cars').removeClass('hide');
+				}
+			});			
+		}
+
 	});
 
 var el = document.getElementById('carslist');
