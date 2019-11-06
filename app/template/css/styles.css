@@ -14572,9 +14572,6 @@ input.form-control.error {
       text-align: center;
       width: 180px; } }
 
-.addvehicle-page .content {
-  width: calc(100% - 230px); }
-
 .addvehicle-page .plate {
   background-color: #fff;
   color: #000;
@@ -16317,9 +16314,13 @@ _::-webkit-:-webkit-full-screen:host:not(:root:root), .mob-header {
     margin-top: 10px;
     margin-bottom: 10px;
     width: calc(50% - 8px); }
+  .myaccount .content {
+    width: calc(100% - 230px); }
   .assembly__list .tr-head, .oenumbers__list .tr-head, .order-items__list .tr-head, .orders__list .tr-head, .stockrequest__list .tr-head, .transactions__list .tr-head,
   .latest-orders .orders__list .tr-item {
-    padding-top: 30px; } }
+    padding-top: 30px; }
+  .requests__list .item-request {
+    width: 50%; } }
 
 @media (max-width: 1399px) {
   .header .catalog__wrapper .catalog-btn {

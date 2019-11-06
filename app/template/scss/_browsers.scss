@@ -155,10 +155,21 @@ _::-webkit-full-page-media, _:future, :root .selector {
 		}
 	}
 
+	.myaccount{
+		.content{
+			width: calc(100% - 230px);
+		}
+	}
+
 	.assembly__list .tr-head, .oenumbers__list .tr-head, .order-items__list .tr-head, .orders__list .tr-head, .stockrequest__list .tr-head, .transactions__list .tr-head,
 	.latest-orders .orders__list .tr-item
 	{
 		padding-top: 30px;
+	}
+
+	// vehicle requests
+	.requests__list .item-request{
+		width: 50%;
 	}
 
 }
