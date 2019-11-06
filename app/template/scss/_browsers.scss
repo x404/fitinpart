@@ -19,6 +19,14 @@ _::-webkit-:-webkit-full-screen:host:not(:root:root), .mob-header{
 			margin-top: -3px;
 		}
 	}
+	
+	.address-entries__list .item-entry .radio__text:after{
+		padding-top: 4px;
+	}
+
+	.address-entries__list .item-entry .num{
+		padding-top: 5px;
+	}
 }
 
 

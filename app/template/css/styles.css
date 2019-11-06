@@ -15155,6 +15155,9 @@ input.form-control.error {
       font-weight: 700;
       height: 52px;
       width: 52px; }
+      @media (max-width: 1024px) {
+        .address-entries__list .item-entry .num {
+          padding-top: 5px; } }
     .address-entries__list .item-entry__text {
       flex-grow: 1;
       font-size: 1.5rem;
@@ -15419,9 +15422,6 @@ input.form-control.error {
           min-width: 230px;
           width: 80% !important;
           margin: 15px 0; } }
-  .myaccount .add-address select,
-  .myaccount .edit-address select {
-    display: none; }
   .myaccount .add-address .default-address,
   .myaccount .edit-address .default-address {
     font-size: 1.5rem;
@@ -16286,6 +16286,12 @@ _::-webkit-:-webkit-full-screen:host:not(:root:root), .mob-header {
   margin-top: 0; }
   .safari .search .dropdown .ms-choice > div.open {
     margin-top: -3px; }
+
+.safari .address-entries__list .item-entry .radio__text:after {
+  padding-top: 4px; }
+
+.safari .address-entries__list .item-entry .num {
+  padding-top: 5px; }
 
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
   .main-grid {
