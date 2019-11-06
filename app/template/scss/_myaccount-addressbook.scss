@@ -230,6 +230,16 @@
 				}
 			}
 		}
+		@media (max-width: 320px){
+			&__right .btn-edit{
+				display: block;
+				.icon{
+					display: inline-block;
+					vertical-align: top;
+					margin-top: 1px;
+				}
+			}
+		}
 
 	}
 	// #item-entry

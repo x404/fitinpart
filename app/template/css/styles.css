@@ -15302,6 +15302,13 @@ input.form-control.error {
           margin-top: 0 !important;
           margin-left: 0 !important;
           margin-right: 0 !important; } }
+    @media (max-width: 320px) {
+      .address-entries__list .item-entry__right .btn-edit {
+        display: block; }
+        .address-entries__list .item-entry__right .btn-edit .icon {
+          display: inline-block;
+          vertical-align: top;
+          margin-top: 1px; } }
   @media (max-width: 900px) {
     .address-entries__list {
       padding-left: 20px;
