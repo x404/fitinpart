@@ -14302,12 +14302,10 @@ input.form-control.error {
   .garagesearch .center {
     flex-grow: 1;
     margin-right: 5.5rem;
-    margin-left: 5.5rem; }
+    margin-left: 5.5rem;
+    position: relative; }
     .garagesearch .center .search-control {
       background-color: #fff;
-      background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAATCAYAAAByUDbMAAAB7UlEQVQ4T6WUXSjfURjHvSdJk4hyodQu3JCIkP3twhDSJPeuhNuNiNIWdqPdrFhKrtS802xty8uduZFWQ8oMufBSboQ25fPVOXX6+f/9lVOfznOec37f85znPOcXGnK3JeDywXPIhAjYgUX4AX/8fHPrCvVM1DDugJwAH0joPXyAa+8aV6yFyX6INIt+02/AP0iDLIg2c4P0zV5BK/aCiVmIgr/QDZ/g3Nm91Pjzja+T/q0bncTiYB4KYR/q4Kf3CGacSD8JRXAKJfDLrpVYGXwxIeuoAwGErDsP45sJoodeOb5tElOocigqJf4oiFg489NQCd+hCq6s2DhGLSyDL4iQnX6H8Rq2QEc+sWITGC9hCZSDh7Q+FrXCNijXx1asF6MN9iAblNj7mlIzAzreAui4F1ZMgzlQETbBxyBiugBdWDwokHa7Xrs8Ad1Oromumn49gKDWToEPDk1Ua66Y7HITuqpf77ALPsOZWahiLgAVc7Hxqajr3U3d56Tb0S3ZtoqxCf8hDVT5Mc68cvsKhr2R2bF2UlQZ7o6OrUtS8isgHZTnRhjSGu9fQ74k0KXoWE9BRzyAFdDR9fhVDqrPZLg0giP+xNygYhmEgR6895fzDN8opID+LA3BxFxhf7byOAapsPtYMW0gwTfw9QbSWV/CQX8vogAAAABJRU5ErkJggg==");
-      background-position: right 16px center;
-      background-repeat: no-repeat;
       border-radius: 4.5rem;
       border: none;
       font-size: 1.4rem;
@@ -14315,6 +14313,17 @@ input.form-control.error {
       padding-left: 1.6rem;
       padding-right: 40px;
       width: 100%; }
+    .garagesearch .center .btn-search {
+      background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAATCAYAAAByUDbMAAAB7UlEQVQ4T6WUXSjfURjHvSdJk4hyodQu3JCIkP3twhDSJPeuhNuNiNIWdqPdrFhKrtS802xty8uduZFWQ8oMufBSboQ25fPVOXX6+f/9lVOfznOec37f85znPOcXGnK3JeDywXPIhAjYgUX4AX/8fHPrCvVM1DDugJwAH0joPXyAa+8aV6yFyX6INIt+02/AP0iDLIg2c4P0zV5BK/aCiVmIgr/QDZ/g3Nm91Pjzja+T/q0bncTiYB4KYR/q4Kf3CGacSD8JRXAKJfDLrpVYGXwxIeuoAwGErDsP45sJoodeOb5tElOocigqJf4oiFg489NQCd+hCq6s2DhGLSyDL4iQnX6H8Rq2QEc+sWITGC9hCZSDh7Q+FrXCNijXx1asF6MN9iAblNj7mlIzAzreAui4F1ZMgzlQETbBxyBiugBdWDwokHa7Xrs8Ad1Oromumn49gKDWToEPDk1Ua66Y7HITuqpf77ALPsOZWahiLgAVc7Hxqajr3U3d56Tb0S3ZtoqxCf8hDVT5Mc68cvsKhr2R2bF2UlQZ7o6OrUtS8isgHZTnRhjSGu9fQ74k0KXoWE9BRzyAFdDR9fhVDqrPZLg0giP+xNygYhmEgR6895fzDN8opID+LA3BxFxhf7byOAapsPtYMW0gwTfw9QbSWV/CQX8vogAAAABJRU5ErkJggg==");
+      background-position: center;
+      background-repeat: no-repeat;
+      position: absolute;
+      padding: 0;
+      right: 0;
+      top: 0;
+      height: 45px;
+      width: 45px;
+      z-index: 100; }
   .garagesearch .btn:last-child {
     margin-right: 0; }
   @media (max-width: 1399px) {
@@ -14429,20 +14438,24 @@ input.form-control.error {
     @media (max-width: 1399px) {
       .cars__list .item-cars {
         padding-left: 2.2rem;
-        padding-right: 2.2rem; }
+        padding-right: 2.2rem;
+        position: relative; }
         .cars__list .item-cars__manage {
           display: block;
           margin-left: 2rem; }
           .cars__list .item-cars__manage .btn-search {
             margin-right: 0;
-            width: 100%;
+            padding: 0 1.5rem;
             white-space: nowrap;
-            padding: 0 1.5rem; }
+            width: 100%; }
             .cars__list .item-cars__manage .btn-search .icon {
               display: none; }
           .cars__list .item-cars__manage .btn-del {
             display: block;
-            margin: 1rem auto 0; }
+            margin: 1rem auto 0;
+            position: absolute;
+            right: 10px;
+            top: 0; }
         .cars__list .item-cars__note {
           margin-left: 1.5rem; } }
     @media (max-width: 991px) {
@@ -14475,6 +14488,10 @@ input.form-control.error {
           margin-left: 0;
           margin-top: 1.5rem; }
           .cars__list .item-cars__manage .btn-search {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
             width: 200px; }
           .cars__list .item-cars__manage .btn-del {
             position: absolute;
@@ -14489,9 +14506,27 @@ input.form-control.error {
           text-align: center; }
         .cars__list .item-cars__title {
           margin-top: 10px; } }
+    @media (max-width: 480px) {
+      .cars__list .item-cars {
+        padding-left: 10px;
+        padding-right: 30px; }
+        .cars__list .item-cars__note {
+          width: 100%; }
+        .cars__list .item-cars .txta {
+          width: calc(100% - 40px); } }
+  @media (max-width: 768px) {
+    .cars__list {
+      padding-left: 15px;
+      padding-right: 40px; } }
+  @media (max-width: 480px) {
+    .cars__list {
+      padding-left: 5px;
+      padding-right: 30px; } }
 
 .cars__item {
   margin-top: 1rem; }
+  .cars__item.hide {
+    display: none !important; }
 
 .group-btn-garage .btn,
 .garagesearch .btn {
@@ -14528,6 +14563,8 @@ input.form-control.error {
     align-items: center;
     flex-direction: column; }
     .group-btn-garage .btn {
+      display: flex;
+      justify-content: center;
       margin-right: 0;
       text-align: center;
       width: 180px; } }
