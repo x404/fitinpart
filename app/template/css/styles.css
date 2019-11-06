@@ -16367,7 +16367,9 @@ _::-webkit-:-webkit-full-screen:host:not(:root:root), .mob-header {
   .latest-orders .orders__list .tr-item {
     padding-top: 30px; }
   .requests__list .item-request {
-    width: 50%; } }
+    width: 50%; }
+  .assembly__list .tr-item .inner, .oenumbers__list .tr-item .inner, .order-items__list .tr-item .inner, .orders__list .tr-item .inner, .stockrequest__list .tr-item .inner, .transactions__list .tr-item .inner {
+    padding-top: 15px; } }
 
 @media (max-width: 1399px) {
   .header .catalog__wrapper .catalog-btn {
