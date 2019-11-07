@@ -348,6 +348,25 @@
 				border-color: #199922;
 				border-radius: 5px;
 			}
+
+			.btn{
+				&-delfrompack{
+					@extend .flex-center;
+					background-color: #c91537;
+					border-radius: 50%;
+					box-shadow: 0 5px 15px rgba(255, 0, 0, 0.5);
+					height: 5rem;
+					width: 5rem;
+					transition: background-color .3s;
+					&:hover{
+						background-color: #ff0f3d;
+					}
+				}
+			}
+
+			.hide{
+				display: none;
+			}
 			@media (max-width: 1600px){
 				width: 100%;				
 			}

@@ -2052,7 +2052,7 @@
 									<div class="servicepack__pretitle"><span>Service package</span></div>
 									<div class="servicepack__title">Oil and filter change</div>
 									<button type="button" class="btn btn-makesp">Click here to make a service pack</button>
-									<div class="consist">
+									<div class="consist open">
 										<div class="consist__head">
 											<div class="total">
 												In total: SG$63.66
@@ -2087,7 +2087,7 @@
 												</div>
 												<div class="consist__field">
 													JS A0571 
-													<button type="button" class="btn btn-delete" aria-label="Delete position"></button>
+													<button type="button" class="btn btn-delete" aria-label="Delete position" data-parent-cat="210"></button>
 												</div>
 											</div>
 											<div class="consist__row">
@@ -2288,15 +2288,15 @@
 
 						<div class="products__list d-flex flex-wrap d-lg-grid grid-lg-4">
 							<!-- 1 -->
-							<div class="products__item item-products inpack">
+							<div class="products__item item-products inpack" data-svc_pattern_value="210">
 								<div class="item-products__pic">
 									<a href="#" title="">
 										<img src="/images/product-1.jpg" alt="" />
 									</a>
 								</div>
 								<div class="item-products__body">
-									<div class="item-products__desc"><strong>Brake pads</strong>, Front Axle Brake</div>
-									<div class="item-products__title"><a href="#" title="">NiBK PN0202W</a></div>
+									<div class="item-products__desc"><strong>Air filter</strong>, Front Axle Brake</div>
+									<div class="item-products__title"><a href="#" title="">JS A0571</a></div>
 									<div class="item-products__subtitle">
 										<p>Replacement for PN8807</p>
 										<p>Geo:SG</p>
@@ -2324,7 +2324,9 @@
 										</div>
 										<div class="fav-cart">
 											<button type="button" class="btn-fav to-fav" data-title="NiBK PN0202W"><i class="icon icon-tofav"></i></button>
-											<button type="button" class="btn-cart" data-toggle="modal" data-target="#addtocardModal1"><i class="icon icon-cart-white"></i></button>
+											<button type="button" class="btn-cart hide" data-toggle="modal" data-target="#addtocardModal1"><i class="icon icon-cart-white"></i></button>
+
+											<button type="button" class="btn-delfrompack"><i class="icon icon-del-white"></i></button>
 										</div>
 									</div>
 								</div>
@@ -5464,6 +5466,7 @@
 <script src="/template/js/wNumb.js"></script>
 <script src="/template/js/nouislider.js"></script>
 <script src="/template/js/nouiengine.js"></script>
+<script src="/template/js/servicepack.js"></script>
 
 <script>
 	$(document).ready(function(){
@@ -5532,36 +5535,10 @@
 		$('.btn-hidefilter').click(function(){
 			$('.filterForm').slideUp();
 			$('.btn-showfilter').show();
-		});	
-
-
-	});
-
-
-	// show service package
-	$(document).on('click','.consist .btn-delete', function(e){
-		e.preventDefault();
-		$(this).closest('.consist__field').html('<button type="button" class="btn btn-addtopack btn-inline">Add to pack</button>')
-	});
-
-	$(document).on('click','.btn-makesp', function(e){
-		e.preventDefault();
-		let $this = $(this);
-		$this.next('.consist').slideDown('normal', function(){
-			$(this).addClass('open')
-		});
-		$this.hide();
-	});
-
-	$(document).on('click','.consist .btn-close', function(e){
-		e.preventDefault();
-		let $this = $(this);
-		$this.closest('.consist').slideUp('normal',function(){
-			$this.closest('.servicepack').find('.btn-makesp').show();
-			$(this).removeClass('open');
 		});
 	});
 
+	// in modal "Submit part number to R&D"
 	function getFileName(el){
 		var file = el.value;
 		file = file.replace(/\\/g, "/").split ('/').pop();
@@ -5574,26 +5551,6 @@
 		let $this = $(this);
 		$('#attachmodal').val('');
 		$('.file-upload').find('.file-name').html('');
-	});
-
-
-	// =service pack
-	$(document).on('click','.btn-addtopack', function(e){
-		e.preventDefault();
-		let $this = $(this),
-			$parentcat = $this.data('parent-cat');
-
-		$('.products__list .item-products.active').removeClass('active');
-		
-
-		$('.products__list .item-products[data-svc_pattern_value=' + $parentcat + ']').addClass('active');
-        let first_el=$('.products__list .item-products.active').first();
-        if(first_el.length) {
-            $('html, body').animate({
-                scrollTop: first_el.offset().top - 20
-            }, 300);
-        }
-
 	});
 
 </script>

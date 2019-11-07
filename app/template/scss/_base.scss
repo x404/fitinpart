@@ -488,6 +488,11 @@ em strong
 	&-attach{
 		@include sprite($icon-attach);
 		margin-right: .8rem;
+	}
+
+
+	&-del-white{
+		@include sprite($icon-del-white);
 	}	
 } 
 // #icon
