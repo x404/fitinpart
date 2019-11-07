@@ -36,7 +36,7 @@ $(document).ready(function(){
 	})
 
 	function delItemFromPack(parentcat){
-		let $currentPack = $('.products__list .item-products.inpack');
+		let $currentPack = $('.products__list .item-products.inpack[data-svc_pattern_value=' + parentcat + ']');
 
 		// return "add to pack" button in box package
 		$('.servicepack .consist__field[data-parent-cat="' + parentcat + '"]').html('<button type="button" class="btn btn-addtopack btn-inline">Add to pack</button>');
@@ -79,13 +79,13 @@ $(document).ready(function(){
 
 
 	// add to pack from list products
-	$(document).on('click','.item-products.active .btn-addtopack', function(e){
+	$(document).on('click','.item-products .btn-addtopack', function(e){
 		e.preventDefault();
 		let $this = $(this),
 			$itemproducts = $this.closest('.item-products'),
 			$title = $this.data('title'),
 			$currentcat = $itemproducts.data('svc_pattern_value'),
-			$oldItem = $('.item-products.inpack');
+			$oldItem = $('.item-products.inpack[data-svc_pattern_value=' + $currentcat + ']');
 
 		// remove border from active product
 		$oldItem.removeClass('inpack');
@@ -100,6 +100,6 @@ $(document).ready(function(){
 		$itemproducts.find('.btn-delfrompack').removeClass('hide');
 
 		// update title
-		$('[data-parent-cat=' + $currentcat + ']').html($title + '<button type="button" class="btn btn-delete" aria-label="Delete position"></button>')
+		$('.consist__field[data-parent-cat=' + $currentcat + ']').html($title + '<button type="button" class="btn btn-delete" aria-label="Delete position"></button>')
 	});
 });

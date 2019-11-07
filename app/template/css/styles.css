@@ -12388,6 +12388,9 @@ input.form-control.error {
       .searchresults-page .btn-more .icon {
         display: none; } }
 
+div[disabled] {
+  pointer-events: none; }
+
 .icon-myaccount {
   background-image: url(../images/sprite.png);
   background-position: 0px -43px;
