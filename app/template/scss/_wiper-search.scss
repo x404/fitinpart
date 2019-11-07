@@ -18,6 +18,13 @@
 			padding-left: 16rem;
 			padding-right: 480px;
 			position: relative;
+
+			@media (max-width: 576px) {
+				background-position: 250px center;
+			}
+			@media (max-width: 420px) {
+				background-position: 200px center;
+			}
 			&:after{
 				@extend .before;
 				background: url(../images/wipers/wiper.png) no-repeat right bottom;

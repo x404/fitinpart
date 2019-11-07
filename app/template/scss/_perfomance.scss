@@ -20,7 +20,7 @@
 		}
 
 		&__body{
-			background: url(../images/bg/perfomance-bg.jpg) no-repeat right top;
+			background: url(../images/bg/perfomance-bg.png) no-repeat right top;
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
@@ -28,6 +28,9 @@
 			padding-left: 16rem;
 			padding-right: 480px;
 			position: relative;
+			@media (max-width: 991px) {
+				background-position: 250px center;
+			}
 			&:after{
 				@extend .before;
 				background: url(../images/break-2.png) no-repeat right bottom ;

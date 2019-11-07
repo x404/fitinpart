@@ -11296,6 +11296,12 @@ input.form-control.error {
     padding-left: 16rem;
     padding-right: 480px;
     position: relative; }
+    @media (max-width: 576px) {
+      .wiper-search .intro__body {
+        background-position: 250px center; } }
+    @media (max-width: 420px) {
+      .wiper-search .intro__body {
+        background-position: 200px center; } }
     .wiper-search .intro__body:after {
       background: url(../images/wipers/wiper.png) no-repeat right bottom;
       bottom: 0;
@@ -11654,7 +11660,7 @@ input.form-control.error {
     font-size: 3rem;
     font-weight: 500; }
   .perfomance-page .intro__body {
-    background: url(../images/bg/perfomance-bg.jpg) no-repeat right top;
+    background: url(../images/bg/perfomance-bg.png) no-repeat right top;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -11662,6 +11668,9 @@ input.form-control.error {
     padding-left: 16rem;
     padding-right: 480px;
     position: relative; }
+    @media (max-width: 991px) {
+      .perfomance-page .intro__body {
+        background-position: 250px center; } }
     .perfomance-page .intro__body:after {
       background: url(../images/break-2.png) no-repeat right bottom;
       bottom: -35px;
