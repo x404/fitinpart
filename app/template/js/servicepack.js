@@ -56,14 +56,15 @@ $(document).ready(function(){
 	$(document).on('click','.servicepack .btn-addtopack', function(e){
 		e.preventDefault();
 		let $this = $(this),
-			$parentcat = $this.parent().data('parent-cat');
+			$parentcat = $this.parent().data('parent-cat'),
+			$servicepack = $this.closest('.servicepack-component');
 
-		$('.products__list .item-products.active').removeClass('active');
+		$servicepack.find('.products__list .item-products.active').removeClass('active');
 
 		// activated products
-		$('.item-products').addClass('hide');
-		$('.products__list .item-products[data-svc_pattern_value=' + $parentcat + ']').addClass('active').removeClass('hide');
-		let first_el = $('.products__list .item-products.active').first();
+		$servicepack.find('.item-products').addClass('hide');
+		$servicepack.find('.products__list .item-products[data-svc_pattern_value=' + $parentcat + ']').addClass('active').removeClass('hide');
+		let first_el = $servicepack.find('.products__list .item-products.active').first();
 		if(first_el.length) {
 			$('html, body').animate({
 				scrollTop: first_el.offset().top - 20
@@ -71,10 +72,10 @@ $(document).ready(function(){
 		};
 
 		//  hide buttons "to cart"
-		$('.item-products.active').find('.btn-cart, .btn-notify').addClass('hide');
+		$servicepack.find('.item-products.active').find('.btn-cart, .btn-notify').addClass('hide');
 
 		// show button "to package"
-		$('.item-products.active .btn-addtopack').removeClass('hide');
+		$servicepack.find('.item-products.active .btn-addtopack').removeClass('hide');
 	});
 
 
@@ -82,10 +83,11 @@ $(document).ready(function(){
 	$(document).on('click','.item-products .btn-addtopack', function(e){
 		e.preventDefault();
 		let $this = $(this),
+			$servicepack = $this.closest('.servicepack-component'),
 			$itemproducts = $this.closest('.item-products'),
 			$title = $this.data('title'),
 			$currentcat = $itemproducts.data('svc_pattern_value'),
-			$oldItem = $('.item-products.inpack[data-svc_pattern_value=' + $currentcat + ']');
+			$oldItem = $servicepack.find('.item-products.inpack[data-svc_pattern_value=' + $currentcat + ']');
 
 		// remove border from active product
 		$oldItem.removeClass('inpack');
@@ -100,6 +102,6 @@ $(document).ready(function(){
 		$itemproducts.find('.btn-delfrompack').removeClass('hide');
 
 		// update title
-		$('.consist__field[data-parent-cat=' + $currentcat + ']').html($title + '<button type="button" class="btn btn-delete" aria-label="Delete position"></button>')
+		$servicepack.find('.consist__field[data-parent-cat=' + $currentcat + ']').html($title + '<button type="button" class="btn btn-delete" aria-label="Delete position"></button>')
 	});
 });
