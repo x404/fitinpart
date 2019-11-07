@@ -493,7 +493,10 @@ em strong
 
 	&-del-white{
 		@include sprite($icon-del-white);
-	}	
+	}
+	&-plus-white{
+		@include sprite($icon-plus-white);
+	}
 } 
 // #icon
 
