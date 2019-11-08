@@ -21,7 +21,6 @@ var gulp 		= require('gulp'),
 
 var config = {
 	templateDir : 'app/template',
-	templateDirModx: '../www/template',
 	destDir : 'dist',
 	templateDestDir : 'dist/template',
 	libsDir : 'app/libs'
@@ -85,10 +84,8 @@ gulp.task('compress', function(){
 				config.templateDir + '/js/util.js',
 				config.templateDir + '/js/tab.js', 
 				config.templateDir + '/js/modal.js', 
-				// config.templateDir + '/js/collapse.js',
 				config.templateDir + '/js/popper.min.js',
 				config.templateDir + '/js/dropdown.js'
-				// config.templateDir + '/js/jquery.fancybox.min.js'
 			]),
 			concat('libs.min.js'), // Собираем их в кучу в новом файле libs.min.js
 			uglify(), // Сжимае JS файл
@@ -249,28 +246,52 @@ gulp.task('build', ['clean', 'img', 'scss', 'compress'], function(){
 		config.templateDir + '/css/styles.css',
 		config.templateDir + '/css/styles.min.css',
 		config.templateDir + '/css/jquery.fancybox.min.css',
-		config.templateDir + '/css/tiny.css'
+		config.templateDir + '/css/animate.min.css',
+		config.templateDir + '/css/multiple-select.css',
+		config.templateDir + '/css/nouislider.css',
+		config.templateDir + '/css/perfect-scrollbar.css'
 	])
 	.pipe(gulp.dest(config.templateDestDir + '/css'));
 
 
 	var buildJs = gulp.src([ // move js to production
+		config.templateDir + '/js/jquery.min.js',
 		config.templateDir + '/js/libs.min.js',
 		config.templateDir + '/js/slick.min.js',
-		config.templateDir + '/js/engine.js'
+		config.templateDir + '/js/slick-animation.min.js',
+		config.templateDir + '/js/perfect-scrollbar.min.js',
+		config.templateDir + '/js/flexmenu.min.js',
+		config.templateDir + '/js/engine.js',
+		config.templateDir + '/js/search.js',
+		config.templateDir + '/js/search-vehicle.js',
+		config.templateDir + '/js/search-moto.js',
+		config.templateDir + '/js/search-hd.js',
+		config.templateDir + '/js/servicepack.js',
+		config.templateDir + '/js/wNumb.js',
+		config.templateDir + '/js/nouislider.min.js',
+		config.templateDir + '/js/nouiengine.js',
+		config.templateDir + '/js/autosize.min.js',
+		config.templateDir + '/js/card.js',
+		config.templateDir + '/js/multiple-select.min.js',
+		config.templateDir + '/js/jquery.fancybox.min.js',
+		config.templateDir + '/js/Sortable.min.js',
+		config.templateDir + '/js/jquery.inputmask.min.js'
 	])
 	.pipe(gulp.dest(config.templateDestDir + '/js'));
 
 
+	var buildJs2 = gulp.src(config.templateDir + '/js/locale/**/*').pipe(gulp.dest(config.templateDestDir + '/js/locale'));
 
-
-	// var buildFavicon = gulp.src('app/the_favicon/*.*').pipe(gulp.dest(config.destDir + '/the_favicon'));
-
+	var buildFavicon = gulp.src('app/the_favicon/*.*').pipe(gulp.dest(config.destDir + '/the_favicon'));
+	var buildFaviconIco = gulp.src('app/the_favicon/favicon.ico').pipe(gulp.dest(config.destDir));
 	var buildHtml = gulp.src('app/*.html').pipe(gulp.dest(config.destDir + '/'));
 	var buildHtaccess = gulp.src('app/.htaccess').pipe(gulp.dest(config.destDir));
 	var buildrobots = gulp.src('app/robots.txt').pipe(gulp.dest(config.destDir));
 	var buildProjectTmpImages = gulp.src('app/images/**/*').pipe(gulp.dest(config.destDir + '/images'));
-	// var buildTmp = gulp.src('app/tmp/*').pipe(gulp.dest(config.destDir + '/tmp'));
+	// var buildProjectImages = gulp.src('app/template/images/**/*').pipe(gulp.dest(config.templateDestDir + '/images'));
+	
+	var buildMultipleSelect = gulp.src('app/template/css/multiple-select.png').pipe(gulp.dest(config.templateDestDir + '/css'));
+
 	var buildFonts = gulp.src(config.templateDir + '/fonts/**/*').pipe(gulp.dest(config.templateDestDir + '/fonts')); // Переносим шрифты в продакшен
 	var buildOutdate = gulp.src('app/outdatedbrowser/**/*').pipe(gulp.dest(config.destDir + '/outdatedbrowser'));
 });
