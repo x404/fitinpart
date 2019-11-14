@@ -8818,42 +8818,34 @@ input.form-control.error {
       background: #eaecf0;
       box-shadow: 0 5px 20px rgba(0, 113, 189, 0.15);
       left: 0;
+      opacity: 0;
       position: absolute;
       top: 100%;
       width: 100%;
-      opacity: 0;
       z-index: -1;
-      padding: .6rem 0;
       transition: background-color .3s; }
-      .products__list .item-products .additional__panel:hover {
-        background-color: #0099ff;
-        color: #fff; }
-        .products__list .item-products .additional__panel:hover .item button,
-        .products__list .item-products .additional__panel:hover .item .count {
-          color: #fff !important; }
-        .products__list .item-products .additional__panel:hover .item button:before {
-          background-color: #fff;
-          background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAHCAYAAAAxrNxjAAAAbUlEQVQoU2NkYGDgBGIJIL4PxNiAIlDwBSOQWArEUUCcDsSz0FSmAfkzgXgZSGEyEM+BKkBWDFMEkkoBKQSBTCCehqQYxASZBAJZQDwdphBdMcwFYEUgDrJCEB/ZOhQ3oysEKdaEGncdZiyIBgCjGREZelM6mwAAAABJRU5ErkJggg=="); }
-        .products__list .item-products .additional__panel:hover .item button .icon {
-          filter: grayscale(1) brightness(5); }
       .products__list .item-products .additional__panel .item {
         align-items: center;
-        border-bottom: 1px solid #c9d1d7;
         display: flex;
         font-size: 1.5rem;
-        margin-left: 21px;
+        padding-left: 21px;
         min-height: 40px;
-        width: calc(100% - 42px); }
+        width: 100%; }
         .products__list .item-products .additional__panel .item:last-child {
           border-bottom: none; }
+          .products__list .item-products .additional__panel .item:last-child button {
+            border-bottom: none !important; }
         .products__list .item-products .additional__panel .item button {
+          border-bottom: 1px solid #c9d1d7;
           display: flex;
           align-items: center;
           color: #0672ba;
+          height: 4rem;
           font-weight: 700;
           transition: .3s;
           position: relative;
-          padding-left: 30px; }
+          padding-left: 30px;
+          width: 100%; }
           .products__list .item-products .additional__panel .item button .icon {
             margin-right: 5px; }
           .products__list .item-products .additional__panel .item button:before {
@@ -8861,7 +8853,7 @@ input.form-control.error {
             border-radius: 50%;
             height: 20px;
             left: 0;
-            top: 2px;
+            top: 10px;
             width: 20px;
             background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAHCAYAAAAxrNxjAAAAeUlEQVQoU2P8//8/JwMDgwQjI+N9II0BgPKKQMEXjEDGUiAjCojTgYpnIasEyqUB+TOBeBlIYTKQMQeqAK4YSRFIKoURRAIFM4HUNJhiKA0yCQSygDZNByvEohgmDFYE4sAVQhXD3ATiorgZRSFUsSbYBEbG68geAwAFYC8Qs5IYcwAAAABJRU5ErkJggg==");
             background-repeat: no-repeat;
@@ -8869,6 +8861,19 @@ input.form-control.error {
         .products__list .item-products .additional__panel .item .count {
           color: #c91537;
           margin-left: 5px; }
+        .products__list .item-products .additional__panel .item:hover {
+          background-color: #0099ff;
+          color: #fff; }
+          .products__list .item-products .additional__panel .item:hover button,
+          .products__list .item-products .additional__panel .item:hover .count {
+            color: #fff !important; }
+          .products__list .item-products .additional__panel .item:hover button {
+            border-bottom-color: #0099ff; }
+            .products__list .item-products .additional__panel .item:hover button:before {
+              background-color: #fff;
+              background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAHCAYAAAAxrNxjAAAAbUlEQVQoU2NkYGDgBGIJIL4PxNiAIlDwBSOQWArEUUCcDsSz0FSmAfkzgXgZSGEyEM+BKkBWDFMEkkoBKQSBTCCehqQYxASZBAJZQDwdphBdMcwFYEUgDrJCEB/ZOhQ3oysEKdaEGncdZiyIBgCjGREZelM6mwAAAABJRU5ErkJggg=="); }
+            .products__list .item-products .additional__panel .item:hover button .icon {
+              filter: grayscale(1) brightness(5); }
 
 .catalog-page .products__list,
 .searchresults-page .products__list {

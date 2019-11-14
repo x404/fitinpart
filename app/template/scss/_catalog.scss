@@ -547,51 +547,37 @@
 			background: #eaecf0;
 			box-shadow: 0 5px 20px rgba(0, 113, 189, 0.15);
 			left: 0;
+			opacity: 0;
 			position: absolute;
 			top: 100%;
 			width: 100%;
-			opacity: 0;
 			z-index: -1;
-			padding: .6rem 0;
 			transition: background-color .3s;
-			&:hover{
-				background-color: $color9;
-				color: #fff;
-				.item{
-					button,
-					.count{
-						color: #fff !important;					
-					}
-					button{
-						&:before{
-							background-color: #fff;
-							background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAHCAYAAAAxrNxjAAAAbUlEQVQoU2NkYGDgBGIJIL4PxNiAIlDwBSOQWArEUUCcDsSz0FSmAfkzgXgZSGEyEM+BKkBWDFMEkkoBKQSBTCCehqQYxASZBAJZQDwdphBdMcwFYEUgDrJCEB/ZOhQ3oysEKdaEGncdZiyIBgCjGREZelM6mwAAAABJRU5ErkJggg==');
-						}
-						.icon{
-							filter: grayscale(1) brightness(5);
-						}
-					}
-				}
-			}
 			.item{
 				align-items: center;
-				border-bottom: 1px solid #c9d1d7;
 				display: flex;
 				font-size: 1.5rem;
-				margin-left: 21px;
+				padding-left: 21px;
 				min-height: 40px;
-				width: calc(100% - 42px);
+				width: 100%;
 				&:last-child{
 					border-bottom: none;
+					button{
+						border-bottom: none !important;
+					}
 				}
 				button{
+					border-bottom: 1px solid #c9d1d7;
 					display: flex;
 					align-items: center;
-					color: $color3;			
+					color: $color3;
+					height: 4rem;
 					font-weight: 700;
 					transition: .3s;
 					position: relative;
 					padding-left: 30px;
+					width: 100%;
+
 					.icon{
 						margin-right: 5px;
 					}
@@ -602,7 +588,7 @@
 						border-radius: 50%;
 						height: 20px;
 						left: 0;
-						top: 2px;
+						top: 10px;
 						width: 20px;
 						background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAHCAYAAAAxrNxjAAAAeUlEQVQoU2P8//8/JwMDgwQjI+N9II0BgPKKQMEXjEDGUiAjCojTgYpnIasEyqUB+TOBeBlIYTKQMQeqAK4YSRFIKoURRAIFM4HUNJhiKA0yCQSygDZNByvEohgmDFYE4sAVQhXD3ATiorgZRSFUsSbYBEbG68geAwAFYC8Qs5IYcwAAAABJRU5ErkJggg==");
 						background-repeat: no-repeat;
@@ -612,6 +598,24 @@
 				.count{
 					color: $color10;
 					margin-left: 5px;
+				}
+				&:hover{
+					background-color: $color9;
+					color: #fff;
+					button,
+					.count{
+						color: #fff !important;					
+					}
+					button{
+						border-bottom-color: $color9;
+						&:before{
+							background-color: #fff;
+							background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAHCAYAAAAxrNxjAAAAbUlEQVQoU2NkYGDgBGIJIL4PxNiAIlDwBSOQWArEUUCcDsSz0FSmAfkzgXgZSGEyEM+BKkBWDFMEkkoBKQSBTCCehqQYxASZBAJZQDwdphBdMcwFYEUgDrJCEB/ZOhQ3oysEKdaEGncdZiyIBgCjGREZelM6mwAAAABJRU5ErkJggg==');
+						}
+						.icon{
+							filter: grayscale(1) brightness(5);
+						}
+					}					
 				}
 			}
 		}
