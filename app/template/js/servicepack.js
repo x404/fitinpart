@@ -5,7 +5,7 @@ $(document).ready(function(){
 		e.preventDefault();
 		let $this = $(this);
 		$this.next('.consist').slideDown('normal', function(){
-			$(this).addClass('open')
+			$(this).closest('.servicepack').addClass('open')
 		});
 		$this.hide();
 	});
@@ -16,7 +16,7 @@ $(document).ready(function(){
 		let $this = $(this);
 		$this.closest('.consist').slideUp('normal',function(){
 			$this.closest('.servicepack').find('.btn-makesp').show();
-			$(this).removeClass('open');
+			$(this).closest('.servicepack').removeClass('open');
 		});
 	});
 

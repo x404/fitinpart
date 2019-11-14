@@ -12040,15 +12040,13 @@ input.form-control.error {
         margin-right: 0; }
   .searchresults-page .servicepack {
     position: relative;
+    background-repeat: no-repeat;
     color: #fff;
     padding: 2.5rem 3rem 2.8rem;
-    transition: background-color .3s;
-    background-repeat: no-repeat; }
+    transition: background-color .3s; }
     .searchresults-page .servicepack__list {
       display: flex;
-      margin-top: 2.5rem;
-      margin-left: -8px;
-      margin-right: -8px; }
+      margin: 2.5rem -8px 0; }
     .searchresults-page .servicepack__col {
       padding-left: 8px;
       padding-right: 8px;
@@ -12057,9 +12055,9 @@ input.form-control.error {
       font-size: 1.4rem;
       font-weight: 700; }
       .searchresults-page .servicepack__pretitle span {
+        border-radius: 2.5rem;
         background-color: #000;
-        padding: .5rem 1.1rem;
-        border-radius: 2.5rem; }
+        padding: .5rem 1.1rem; }
     .searchresults-page .servicepack__title {
       font-weight: 700;
       font-size: 2.5rem;
@@ -12068,7 +12066,7 @@ input.form-control.error {
       background-color: #0672ba;
       background-image: url(../images/bg/oil.png);
       background-position: right 30px top 14px; }
-      .searchresults-page .servicepack-oil:hover {
+      .searchresults-page .servicepack-oil:not(.open):hover {
         background-color: #0099ff; }
       .searchresults-page .servicepack-oil .consist__title {
         width: 14rem; }
@@ -12078,7 +12076,7 @@ input.form-control.error {
       background-color: #28292d;
       background-image: url(../images/bg/brakes.png);
       background-position: right 30px top 10px; }
-      .searchresults-page .servicepack-brakes:hover {
+      .searchresults-page .servicepack-brakes:not(.open):hover {
         background-color: #0099ff; }
       .searchresults-page .servicepack-brakes .consist__title {
         flex-shrink: 0;
@@ -12123,8 +12121,6 @@ input.form-control.error {
     .searchresults-page .servicepack .consist {
       display: none;
       margin-bottom: -1.5rem; }
-      .searchresults-page .servicepack .consist.open {
-        display: block; }
       .searchresults-page .servicepack .consist__head {
         align-items: center;
         display: flex;
@@ -12192,6 +12188,8 @@ input.form-control.error {
         width: 12px; }
         .searchresults-page .servicepack .consist .btn-delete:hover {
           filter: none; }
+    .searchresults-page .servicepack.open .consist {
+      display: block; }
   .searchresults-page .smartsearch .ms-parent .listwrapper {
     height: auto; }
     .searchresults-page .smartsearch .ms-parent .listwrapper li {
