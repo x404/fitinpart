@@ -115,21 +115,27 @@ $('body')
 	});
 
 	// close dropdown of Country
-	$('.country .close').click(function() {
+	$('.top .country .close').click(function() {
 		$(this).parents('.dropdown').find('.dropdown-toggle').dropdown('toggle');
 	});
 
 	// reinit scroll area after dropdown of Country
-	$('.country .dropdown').on('shown.bs.dropdown', function () {
+	$('.top .country .dropdown').on('shown.bs.dropdown', function () {
 		ps.update();
 	});
 
 
+	// reinit scroll area after dropdown of mobCountry
+	$('.modal-menu .country .dropdown').on('shown.bs.dropdown', function () {
+		psmod.update();
+	});
+
+
 	// filter country in list
-	$('#search-country').keyup(function(){
+	$('#search-country').on('keyup', function(){
 		let $this = this;
 		
-		$.each($('.country .dropdown-item'), function() {
+		$.each($('.top .country .dropdown-item'), function() {
 			if($(this).text().toLowerCase().indexOf($($this).val().toLowerCase()) === -1) {
 				$(this).hide();
 			} else {
@@ -139,14 +145,45 @@ $('body')
 		ps.update();
 	});
 
+
+
+	// filter country in mobile list
+	$('#search-country-mob').on('keyup', function(){
+		let $this = this;
+		
+		$.each($('.modal-menu .country .dropdown-item'), function() {
+			if($(this).text().toLowerCase().indexOf($($this).val().toLowerCase()) === -1) {
+				$(this).hide();
+			} else {
+				$(this).show();
+			}
+		});
+		psmod.update();
+	});
+
+	$('.close-mob-country').on('click', function(e){
+		e.preventDefault();
+		$(this).parents('.dropdown').find('.dropdown-toggle').dropdown('toggle');
+	});
+
+
 	// init scrollbar of countries
-	const ps = new PerfectScrollbar('.countries-wrapper', {
+	const ps = new PerfectScrollbar('.top .countries-wrapper', {
 		wheelPropagation: true,
 		minScrollbarLength: 100,
 		maxScrollbarLength: 100,
 	});
 
 	ps.update();
+
+
+	const psmod = new PerfectScrollbar('.modal-menu .countries-wrapper', {
+		wheelPropagation: true,
+		minScrollbarLength: 100,
+		maxScrollbarLength: 100,
+	});
+
+	psmod.update();
 
 
 
