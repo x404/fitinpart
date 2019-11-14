@@ -348,6 +348,26 @@ $(document).ready(function(){
 	};
 
 
+
+	var brandlist3 = new PerfectScrollbar('#hd .brand .listwrapper', {
+		wheelPropagation: true,
+		minScrollbarLength: 100,
+		maxScrollbarLength: 100,
+	});
+
+	var modellist3 = new PerfectScrollbar('#hd .model .listwrapper', {
+		wheelPropagation: true,
+		minScrollbarLength: 100,
+		maxScrollbarLength: 100,
+	});
+
+	var enginelist3 = new PerfectScrollbar('#hd .engine .listwrapper', {
+		wheelPropagation: true,
+		minScrollbarLength: 100,
+		maxScrollbarLength: 100,
+	});
+
+
 	var sm_brandlist3 = new PerfectScrollbar('#sm_hd .brand .listwrapper', {
 		wheelPropagation: true,
 		minScrollbarLength: 100,
