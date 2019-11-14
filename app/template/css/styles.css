@@ -5461,7 +5461,7 @@ button {
     padding: 0 0 13px; }
     .searchbox .ms-drop .ms-search {
       padding-top: 20px; }
-  .searchbox .tab-content > .tab-pane {
+  .searchbox #vin-tabContent > .tab-pane {
     overflow: hidden; }
   .searchbox__panel {
     background-color: #fff;
