@@ -50,7 +50,8 @@
 		border-bottom: 1px solid #dadada;
 		padding: 3rem 0 1.8rem;
 
-		&-1{
+		&-1,
+		&-2{
 			border-bottom: none;
 			padding-bottom: 0;
 			.inner{
@@ -131,9 +132,26 @@
 
 		}
 
+
+		&-1{
+			.newaddress-form{
+				border-top: 1px solid #e7e8e8;
+			}
+		}
+
 		&-2{
+			.billingaddress-form{
+				margin-top: 0 !important;
+			}
+			.checkout__body{
+				margin-top: 1.8rem;
+			}
 			.actions{
 				margin-left: 3rem;
+			}
+
+			.inner{
+				padding-bottom: 4.5rem;
 			}
 		}
 
@@ -418,8 +436,10 @@
 		}
 	}
 
-	.newaddress-form{
-		border-top: 1px solid #e7e8e8;
+	.newaddress-form,
+	.billingaddress-form
+	{
+
 		display: none;
 		margin-top: 1.8rem;
 		padding-bottom: 1.5rem;
@@ -509,9 +529,6 @@
 			margin-bottom: .2rem;
 			padding: 2rem 2.2rem 1.6rem;
 			position: relative;
-			.inner{
-				// display: flex;
-			}
 
 			.countmodule{
 				height: 3rem;
@@ -784,7 +801,9 @@
 			font-size: 2rem !important;
 		}
 
-		.newaddress-form{
+		.newaddress-form,
+		.billingaddress-form
+		{
 			.row .cell{
 				max-width: 50%;
 				flex-basis: 50%;
@@ -800,7 +819,9 @@
 		}
 
 
-		.checkout__step-1{
+		.checkout__step-1,
+		.checkout__step-2
+		{
 			.address__select{
 				flex-direction: column;
 				label{
@@ -878,11 +899,15 @@
 			}
 		}
 
-		.newaddress-form .row{
-			display: block;
-			.cell{
-				max-width: 100%;
-				margin-bottom: 5px;
+		.newaddress-form,
+		.billingaddress-form
+		{
+			.row{
+				display: block;
+				.cell{
+					max-width: 100%;
+					margin-bottom: 5px;
+				}
 			}
 		}
 	}
@@ -1006,12 +1031,12 @@
 			}
 		}
 
-		.checkout__step-1 .inner{
-			padding-left: 15px;
-			padding-right: 15px;
+		.checkout__step-1,
+		.checkout__step-2{
+			.inner{
+				padding-left: 15px;
+				padding-right: 15px;
+			}
 		}
 	}
-
-
-
 }
