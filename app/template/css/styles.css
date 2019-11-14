@@ -15768,6 +15768,7 @@ div[disabled] {
         margin-right: 0; }
   .checkout__step-4 .creditcard {
     background-color: #fff;
+    display: none;
     margin-top: 2rem;
     padding: 1.8rem 3rem; }
     .checkout__step-4 .creditcard__head {
