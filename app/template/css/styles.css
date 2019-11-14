@@ -9203,7 +9203,8 @@ input.form-control.error {
   height: 40px;
   right: -18px;
   top: -18px;
-  width: 40px; }
+  width: 40px;
+  z-index: 999; }
   .modal-v2 .close svg {
     margin: auto; }
     .modal-v2 .close svg line {
