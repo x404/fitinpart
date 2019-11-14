@@ -5439,9 +5439,12 @@ button {
     padding: 0 0 13px; }
     .searchbox .ms-drop .ms-search {
       padding-top: 20px; }
+  .searchbox .tab-content > .tab-pane {
+    overflow: hidden; }
   .searchbox__panel {
     background-color: #fff;
-    padding: 3rem 2.5rem; }
+    padding: 3rem 2.5rem;
+    position: relative; }
     .searchbox__panel .checkbox input {
       position: absolute;
       z-index: -1;

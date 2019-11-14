@@ -99,10 +99,16 @@
 		}
 	}
 
+	.tab-content>.tab-pane{
+		overflow: hidden;
+	}
+
 
 	 &__panel{
 		background-color: #fff;
 		padding: 3rem 2.5rem;
+		position: relative;
+
 
 		.checkbox input {
 			position: absolute;
