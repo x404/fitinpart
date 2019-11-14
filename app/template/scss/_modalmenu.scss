@@ -1,34 +1,34 @@
 .modal-menu{
 	background-color: $color3;
-	position: absolute;
-	left: 0;
-	top: 0;
-	right: 0;
 	color: #fff;
-	z-index: -1;
-	transform: translateY(-100%);
+	left: 0;
 	opacity: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	transform: translateY(-100%);
 	transition: .5s;
+	z-index: -1;
 	&.open{
-		transform: translateY(0);
 		opacity: 1;
+		transform: translateY(0);
 		z-index: 200;
 	}
 	&:before{
 		@extend .before;
-		width: 0;
-		height: 0;
-		border-top: 260px solid rgba(0,152,255,.5); 
 		border-right: 260px solid transparent;	
+		border-top: 260px solid rgba(0,152,255,.5); 
+		height: 0;
+		width: 0;
 	}
 	a{
 		color: currentColor;
 	}
 
 	.inner{
+		padding-top: 15px;
 		position: relative;
 		z-index: 201;
-		padding-top: 15px;
 	}
 
 	.tel{

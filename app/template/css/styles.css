@@ -4765,7 +4765,9 @@ button {
   width: calc(100% - 32px); }
 
 .top .country .close,
-.modal-menu .country .close {
+.top .country .close-mob-country,
+.modal-menu .country .close,
+.modal-menu .country .close-mob-country {
   background: none;
   border: none;
   cursor: pointer;
@@ -4775,21 +4777,31 @@ button {
   right: 9px;
   top: 13px; }
   .top .country .close line,
-  .modal-menu .country .close line {
+  .top .country .close-mob-country line,
+  .modal-menu .country .close line,
+  .modal-menu .country .close-mob-country line {
     stroke: #8f8f8f;
     stroke-width: 3px; }
   .top .country .close svg,
-  .modal-menu .country .close svg {
+  .top .country .close-mob-country svg,
+  .modal-menu .country .close svg,
+  .modal-menu .country .close-mob-country svg {
     display: block; }
+
+.top .country .close-mob-country,
+.modal-menu .country .close-mob-country {
+  height: 25px;
+  width: 25px;
+  right: 0; }
 
 .top .dropdown-menu,
 .modal-menu .dropdown-menu {
-  transform: translate3d(0px, 20px, 0px) !important;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
   border-radius: .5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
   font-size: 1.4rem;
+  margin-top: .9rem;
   padding: .7rem 0;
-  margin-top: .9rem; }
+  transform: translate3d(0px, 20px, 0px) !important; }
   .top .dropdown-menu .dropdown-item,
   .modal-menu .dropdown-menu .dropdown-item {
     align-items: center;
@@ -4806,6 +4818,13 @@ button {
   .modal-menu .dropdown-menu img {
     margin-right: .8rem;
     vertical-align: top; }
+
+.modal-menu button.close {
+  display: block;
+  height: 40px;
+  width: 40px;
+  right: 0;
+  top: 0; }
 
 .dropdown-toggle:after {
   background-image: url(../images/sprite.png);
@@ -7049,30 +7068,30 @@ input.form-control.error {
 
 .modal-menu {
   background-color: #0672ba;
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
   color: #fff;
-  z-index: -1;
-  transform: translateY(-100%);
+  left: 0;
   opacity: 0;
-  transition: .5s; }
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: translateY(-100%);
+  transition: .5s;
+  z-index: -1; }
   .modal-menu.open {
-    transform: translateY(0);
     opacity: 1;
+    transform: translateY(0);
     z-index: 200; }
   .modal-menu:before {
-    width: 0;
-    height: 0;
+    border-right: 260px solid transparent;
     border-top: 260px solid rgba(0, 152, 255, 0.5);
-    border-right: 260px solid transparent; }
+    height: 0;
+    width: 0; }
   .modal-menu a {
     color: currentColor; }
   .modal-menu .inner {
+    padding-top: 15px;
     position: relative;
-    z-index: 201;
-    padding-top: 15px; }
+    z-index: 201; }
   .modal-menu .tel {
     font-size: 1.5rem;
     font-weight: 700;
