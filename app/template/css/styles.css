@@ -5324,6 +5324,9 @@ button {
 .upcase {
   text-transform: uppercase; }
 
+.ps__thumb-y {
+  cursor: pointer; }
+
 @font-face {
   font-family: "Proxima Nova";
   src: url("../fonts/ProximaNova-Regular/proxima_nova_regular.woff2") format("woff2"), url("../fonts/ProximaNova-Regular/proxima_nova_regular.woff") format("woff");
