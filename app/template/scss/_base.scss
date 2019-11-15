@@ -1011,56 +1011,55 @@ button{
 
 
 .login{
-
-		.dropdown-menu{
-			background-color: transparent;
+	.dropdown-menu{
+		background-color: transparent;
+		border-radius: .5rem;
+		box-shadow: none !important;
+		left: -8px;
+		padding-top: .5rem;
+		top: 0;
+		width: 21rem;
+		ul{
+			background-color: #fff;
 			border-radius: .5rem;
-			box-shadow: none !important;
-			left: -8px;
-			padding-top: .5rem;
-			top: 0;
-			width: 21rem;
-			ul{
-				background-color: #fff;
-				border-radius: .5rem;
-				box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
-				padding: 1.2rem 0;
-			}
-			li{
-				&.active{
-					a, span{
-						background-color: $color9;
-						color: $color2;
-						cursor: default;
-						.icon{
-							filter: invert(1) brightness(5);
-						}						
-					}
-				}
-			}
-			a, span{
-				align-items: center;
-				font-size: 1.4rem;
-				color: #393939;
-				display: flex;
-				padding: .5rem 1.4rem .5rem 1.2rem;
-				&:hover,
-				&:focus{
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+			padding: 1.2rem 0;
+		}
+		li{
+			&.active{
+				a, span{
 					background-color: $color9;
 					color: $color2;
+					cursor: default;
 					.icon{
 						filter: invert(1) brightness(5);
-					}
+					}						
 				}
 			}
-			.icon-wrapper{
-				width: 34px;
+		}
+		a, span{
+			align-items: center;
+			font-size: 1.4rem;
+			color: #393939;
+			display: flex;
+			padding: .5rem 1.4rem .5rem 1.2rem;
+			&:hover,
+			&:focus{
+				background-color: $color9;
+				color: $color2;
+				.icon{
+					filter: invert(1) brightness(5);
+				}
 			}
-			.icon{
-				margin-left: auto;
-				margin-right: auto;
-			}
-		}	
+		}
+		.icon-wrapper{
+			width: 34px;
+		}
+		.icon{
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}	
 }
 
 .top,

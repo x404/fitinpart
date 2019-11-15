@@ -50,6 +50,14 @@
 	}
 }
 
+
+#mobSearch{
+	.smartsearch__body{
+		.listwrapper{
+			max-height: 250px;
+		}		
+	}
+}
 .smartsearch,
 #changeVehicle
 {

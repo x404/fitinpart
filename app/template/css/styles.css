@@ -7223,6 +7223,9 @@ input.form-control.error {
 .modal .smartsearch {
   padding: 1.3rem 1.8rem 1.3rem 1.4rem; }
 
+#mobSearch .smartsearch__body .listwrapper {
+  max-height: 250px; }
+
 .smartsearch__header,
 #changeVehicle__header {
   align-items: center;
