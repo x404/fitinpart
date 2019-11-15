@@ -1,3 +1,10 @@
+@media (min-width: 941px){
+	#modal-menu,
+	#mobSearch{
+		display: none !important;
+	}
+}
+
 @media (max-width: 1399px){
 	.header{
 		.catalog__wrapper .catalog-btn{

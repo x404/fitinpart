@@ -16498,6 +16498,11 @@ _::-webkit-:-webkit-full-screen:host:not(:root:root), .mob-header {
   .notify-settings .option-item:after {
     display: none; } }
 
+@media (min-width: 941px) {
+  #modal-menu,
+  #mobSearch {
+    display: none !important; } }
+
 @media (max-width: 1399px) {
   .header .catalog__wrapper .catalog-btn {
     padding-left: 0;
