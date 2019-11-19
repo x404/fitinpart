@@ -48,6 +48,17 @@ gulp.task('css-libs', ['scss'],  function(){
 })
 
 
+gulp.task('cssmin', function(){
+	return gulp.src([
+			config.templateDir + '/css/animate.css',
+		]) // Выбираем файл для минификации
+		.pipe(cleancss())  // Сжимаем
+		.pipe(rename({suffix: '.min'}))  // Добавляем суффикс .min
+		.pipe(gulp.dest(config.templateDir + '/css')) // Выгружаем в папку app/css
+		.pipe(browserSync.reload({stream: true})) // Обновляем CSS на странице при изменении
+})
+
+
 // обработка scss
 // gulp.task('scss', function(){
 // 	return gulp.src(config.templateDir + '/scss/**/*.scss') // Берем источник
