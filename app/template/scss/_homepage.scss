@@ -220,6 +220,26 @@
 		line-height: .83;
 	}
 
+	&__body{
+		margin-top: 1.3rem;
+		.form-control::placeholder{
+			color: $color34;
+			font-size: 1.3rem;
+		}
+	}
+
+	&__buttons{
+		margin-top: 1rem;
+		.btn{
+			&-search{
+				margin-left: 0.5rem !important;
+			}
+			&-file{
+				margin-left: 0.8rem !important;
+			}
+		}
+	}
+
 	.tab-content{
 		margin-top: 2.1rem;
 	}

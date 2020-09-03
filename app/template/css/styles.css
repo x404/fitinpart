@@ -5543,6 +5543,17 @@ button {
     font-size: 3rem;
     font-weight: 700;
     line-height: .83; }
+  .searchbox__body {
+    margin-top: 1.3rem; }
+    .searchbox__body .form-control::placeholder {
+      color: #959a9d;
+      font-size: 1.3rem; }
+  .searchbox__buttons {
+    margin-top: 1rem; }
+    .searchbox__buttons .btn-search {
+      margin-left: 0.5rem  !important; }
+    .searchbox__buttons .btn-file {
+      margin-left: 0.8rem !important; }
   .searchbox .tab-content {
     margin-top: 2.1rem; }
   .searchbox .form-control {
@@ -6390,7 +6401,10 @@ button {
   background-image: url(../images/bg/part-num-bg.webp); }
 
 .webp .searchbox__panel-vin {
-  background-image: url(../images/bg/vin-bg.webp); }
+  background-image: url(../images/bg/vin-bg2.webp); }
+
+.webp .searchbox__panel-vehicleno {
+  background-image: url(../images/bg/vehicleno-bg.webp); }
 
 .webp .intro-command-bg {
   background-image: url(../images/bg/command-bg.webp); }
@@ -6436,7 +6450,10 @@ button {
   background-image: url(../images/bg/part-num-bg.jpg); }
 
 .searchbox__panel-vin {
-  background-image: url(../images/bg/vin-bg.jpg); }
+  background-image: url(../images/bg/vin-bg2.jpg); }
+
+.searchbox__panel-vehicleno {
+  background-image: url(../images/bg/vehicleno-bg.jpg); }
 
 .intro-command-bg {
   background-image: url(../images/bg/command-bg.jpg);
