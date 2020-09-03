@@ -213,6 +213,10 @@
 			.form-control{
 				padding: 0 10px;
 			}
+
+			.searchbox__title{
+				white-space: nowrap;
+			}
 		}
 
 
@@ -238,6 +242,7 @@
 		font-size: 3rem;
 		font-weight: 700;
 		line-height: .83;
+
 	}
 
 	&__body{
