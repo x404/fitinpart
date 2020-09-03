@@ -1866,6 +1866,9 @@
 										<button type="button" class="btn-file d-none d-lg-block" onclick="$('#id_search_vin_img').click();"><i class="icon icon-camera"></i></button>
 									</div>
 								</form>
+								<form class="FrmVinSearchImage" style="display: none;" action="https://www.fitinpart.sg/index.php?route=tool/imgrecognize/ocr_vin">
+									<input type="file" id="id_search_vin_img" name="vin_img" accept="image/*" capture="camera" hidden="">
+								</form>
 							</div>
 						</div>
 						<div class="searchbox__panel searchbox__panel-vehicleno">
@@ -1877,6 +1880,9 @@
 										<button type="submit" class="btn btn-search btn-middle btn-blue btn-blue-lighten-hover" aria-label="Search"><i class="icon icon-search-middle"></i><span>Search</span></button>
 										<button type="button" class="btn-file d-none d-lg-block" onclick="$('#id_search_vehicleno_img').click();"><i class="icon icon-camera"></i></button>
 									</div>
+								</form>
+								<form class="FrmVinSearchImage" style="display: none;" action="https://www.fitinpart.sg/index.php?route=tool/imgrecognize/ocr_vin">
+									<input type="file" id="id_search_vehicleno_img" name="vin_vehicleno_img" accept="image/*" capture="camera" hidden="">
 								</form>
 							</div>
 						</div>
