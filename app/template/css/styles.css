@@ -5527,6 +5527,18 @@ button {
         margin-top: -12px; }
     .searchbox__panel-partnum .btn, .searchbox__panel-vin .btn {
       margin-left: 1.8rem; }
+    .searchbox__panel-vin, .searchbox__panel-vehicleno {
+      width: 100%; }
+      @media (max-width: 1199px) {
+        .searchbox__panel-vin, .searchbox__panel-vehicleno {
+          padding-left: 1.6rem;
+          padding-right: 1.2rem; } }
+      @media (min-width: 576px) {
+        .searchbox__panel-vin, .searchbox__panel-vehicleno {
+          flex-shrink: 0;
+          width: 50%; } }
+      .searchbox__panel-vin .form-control, .searchbox__panel-vehicleno .form-control {
+        padding: 0 10px; }
     .searchbox__panel-partnum {
       border-bottom: 1px solid #e8e8e8;
       grid-column-start: 2;
@@ -5551,7 +5563,7 @@ button {
   .searchbox__buttons {
     margin-top: 1rem; }
     .searchbox__buttons .btn-search {
-      margin-left: 0.5rem  !important; }
+      margin-left: 0.5rem !important; }
     .searchbox__buttons .btn-file {
       margin-left: 0.8rem !important; }
   .searchbox .tab-content {
@@ -17332,18 +17344,15 @@ _::-webkit-:-webkit-full-screen:host:not(:root:root), .mob-header {
     width: 100%; }
   .searchbox .vehicle-year, .searchbox .vehicle-engine, .searchbox .vehicle-engineno {
     width: 50%; }
-  .searchbox .searchbox__panel-partnum .btn-search,
-  .searchbox .searchbox__panel-vin .btn-search {
+  .searchbox .searchbox__panel-partnum .btn-search {
     flex-shrink: 0;
     margin-left: 1.2rem;
     padding: 0;
     min-width: 0;
     width: 4rem; }
-    .searchbox .searchbox__panel-partnum .btn-search .icon,
-    .searchbox .searchbox__panel-vin .btn-search .icon {
+    .searchbox .searchbox__panel-partnum .btn-search .icon {
       margin: auto; }
-    .searchbox .searchbox__panel-partnum .btn-search span,
-    .searchbox .searchbox__panel-vin .btn-search span {
+    .searchbox .searchbox__panel-partnum .btn-search span {
       display: none !important; }
   .ms-parent.year {
     width: 100% !important; }

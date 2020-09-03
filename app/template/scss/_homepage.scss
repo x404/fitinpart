@@ -189,12 +189,32 @@
 				margin-top: -12px;
 			}
 		}
+
+
 		&-partnum,
 		&-vin{
 			.btn{
 				margin-left: 1.8rem;
 			}
 		}
+
+		&-vin,
+		&-vehicleno
+		{
+			width: 100%;
+			@media (max-width: 1199px){
+				padding-left: 1.6rem;
+				padding-right: 1.2rem;
+			}
+			@media (min-width: 576px){
+				flex-shrink: 0;
+				width: 50%;
+			}
+			.form-control{
+				padding: 0 10px;
+			}
+		}
+
 
 		&-partnum{
 			border-bottom: 1px solid #e8e8e8;
