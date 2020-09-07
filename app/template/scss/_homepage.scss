@@ -189,12 +189,39 @@
 				margin-top: -12px;
 			}
 		}
+
+
 		&-partnum,
 		&-vin{
 			.btn{
 				margin-left: 1.8rem;
 			}
 		}
+
+		&-vin2,
+		&-vehicleno
+		{
+			width: 100%;
+			@media (max-width: 1199px){
+				padding-left: 1.6rem;
+				padding-right: 1.2rem;
+			}
+			@media (max-width: 768px){
+				background-size: contain;
+			}
+			@media (min-width: 576px){
+				flex-shrink: 0;
+				width: 50%;
+			}
+			.form-control{
+				padding: 0 10px;
+			}
+
+			.searchbox__title{
+				white-space: nowrap;
+			}
+		}
+
 
 		&-partnum{
 			border-bottom: 1px solid #e8e8e8;
@@ -218,6 +245,30 @@
 		font-size: 3rem;
 		font-weight: 700;
 		line-height: .83;
+
+	}
+
+	&__body{
+		margin-top: 1.3rem;
+		.form-control::placeholder{
+			color: $color34;
+			font-size: 1.3rem;
+		}
+		.form-control:focus::placeholder{
+			color: rgba(255,255,255,0);
+		}
+	}
+
+	&__buttons{
+		margin-top: 1rem;
+		.btn{
+			&-search{
+				margin-left: 0.5rem !important;
+			}
+			&-file{
+				margin-left: 0.8rem !important;
+			}
+		}
 	}
 
 	.tab-content{
