@@ -5731,7 +5731,9 @@ button {
     padding-left: 130px;
     text-align: center; }
     #homeslider .right img {
-      max-width: 100%; }
+      max-width: 100%;
+      margin-left: auto;
+      margin-right: auto; }
   #homeslider .title {
     font-size: 5rem;
     font-weight: 700;
