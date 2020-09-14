@@ -5783,6 +5783,9 @@ button {
 #homeslider [data-animation-in] {
   opacity: 0; }
 
+#homeslider .highlight {
+  color: #c91537; }
+
 /* =catalog
 ---------------------------*/
 .catalog {
