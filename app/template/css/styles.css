@@ -5710,13 +5710,13 @@ button {
 #homeslider {
   max-width: 2500px; }
   #homeslider .layout {
-    height: 350px;
+    height: 370px;
     max-width: 1280px;
     margin: 0 auto; }
   #homeslider .item {
     background-size: cover;
     background-repeat: no-repeat;
-    height: 430px; }
+    height: 450px; }
   #homeslider .text-color-white {
     color: #ffffff; }
     #homeslider .text-color-white .title {
