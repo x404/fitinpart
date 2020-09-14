@@ -490,11 +490,12 @@
 			opacity: 0.5;
 			padding: 0;
 			position: absolute;
-			top: 50%;
-			transition: .3s;
+			top: calc((100% - 80px)/2);
 			transition: .3s;
 			width: 60px;
 			z-index: 50;
+
+
 			&:hover{
 				background-color: $color2;
 				opacity: 1;
