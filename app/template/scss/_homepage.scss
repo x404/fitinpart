@@ -431,7 +431,7 @@
 #homeslider{
 	@extend .slick-init;
 	.layout{
-		height: 430px;
+		height: 350px;
 		max-width: 1280px;
 		margin: 0 auto;
 	}
@@ -439,6 +439,7 @@
 	.item{
 		background-size: cover;
 		background-repeat: no-repeat;
+		height: 430px;
 	}
 
 	.text-color-white{
