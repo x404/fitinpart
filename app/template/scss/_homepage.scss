@@ -537,9 +537,9 @@
 
 #homeslider{
 	@extend .slick-init;
-	max-width: 2500px;
+	// max-width: 2500px;
 	.layout{
-		height: 370px;
+		height: 370px; 
 		max-width: 1280px;
 		margin: 0 auto;
 	}
