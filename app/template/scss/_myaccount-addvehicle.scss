@@ -1,3 +1,4 @@
+
 .addvehicle-page{
 	.plate{
 		background-color: #fff;
@@ -16,7 +17,12 @@
 
 		form{
 			margin-top: 1rem;
-		}	
+		}
+		.searchbox__panel-vehicle{
+			background-image: none;
+			border: none;
+			padding: 0;
+		}
 		.subtab{
 			margin: 0 0 .5rem;
 		}
@@ -36,6 +42,7 @@
 
 		.btn-addvehicle{
 			padding-left: 2rem;
+			padding-right: 1rem;
 			margin-top: 1.5rem;
 			.icon{
 				margin-right: 7px;
@@ -269,5 +276,33 @@
 				font-size: 15px;
 			}
 		}
+	}
+}
+
+.add-veh-request-page{
+  .flex-wrap .plate:last-child{
+      flex: 1 0 auto;
+      margin-left: 30px;
+  }
+	.veh-request-comment{
+		margin: 2rem 0;
+		background-color: #f5f7f8;
+		border-radius: 1rem;
+		border: none;
+		height: 4rem;
+		padding: .4rem 15px;
+		line-height: 1.4;
+		overflow: hidden;
+		resize: none;
+	}
+	.btn-file{
+    position: relative;
+		background-color: rgb(119, 141, 155);
+		border-radius: 50%;
+		box-shadow: rgba(0, 153, 255, 0.5) 0 5px 15px;
+		height: 4rem;
+		margin-left: 2rem;
+		width: 4rem;
+		flex-shrink: 0;
 	}
 }

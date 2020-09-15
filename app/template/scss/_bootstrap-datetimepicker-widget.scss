@@ -1,0 +1,43 @@
+.bootstrap-datetimepicker-widget{
+  &.dropdown-menu{
+    background: #fff;
+    color: #212529;
+    width: auto !important;
+    border: 1px solid #ccc;
+  }
+  ul li {
+    margin: 0;
+    padding: 0;
+    position: static;
+    &:before{
+      display: none;
+    }
+  }
+
+  .datepicker, .picker-switch, .timepicker-picker{
+
+    table tr, table tr:first-child {
+      th, td {
+        padding: .5rem 1rem;
+        background: none;
+        border: none;
+        font-size: 1rem;
+
+      }
+    }
+  }
+  .picker-switch, .timepicker-picker {
+    & a{
+      font-size: 17px;
+      &:hover{
+        color: #09f;
+      }
+    }
+  }
+  .timepicker-picker{
+    .btn{
+      text-decoration: none;
+    }
+  }
+
+}

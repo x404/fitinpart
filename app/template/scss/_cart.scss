@@ -120,6 +120,12 @@
 			font-weight: 700;
 			height: 6rem;
 			width: 100%;
+			background-color: #0672ba;
+			color: #fff;
+			text-decoration: none;
+			&:hover{
+				text-decoration: none;
+			}
 			.icon{
 				margin-left: -10px;
 			}
@@ -828,7 +834,7 @@
 	padding: 1.4rem 50px 1.7rem 1.6rem;
 	min-height: 5rem;
 	position: relative;
-	margin-top: 1rem;
+	margin: 1rem 0;
 	&-primary{background-color: #c91537}
 	&-secondary{background-color: #bea416}
 	&-info{background-color: #0672ba}

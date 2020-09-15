@@ -34,7 +34,67 @@
 	&-qtime{@include sprite($icon-qtime);}
 	&-arrow-middle-right{@include sprite($icon-arrow-middle-right);}
 	&-arrow-middle-down{@include sprite($icon-arrow-middle-down);}
-} 
+}
+.radio-item {
+
+	.radio {
+		opacity: 0;
+		position: absolute;
+		z-index: -1;
+	}
+
+	label {
+		display: flex;
+		align-items: center;
+		transition: .3s;
+		padding-left: 30px;
+		position: relative;
+		cursor: pointer;
+	}
+
+	.radio-circle{
+		& + label {
+			&:after{
+				background: #fff;
+				border-radius: 50%;
+				content: '';
+				height: 8px;
+				left: 6px;
+				opacity: 0;
+				position: absolute;
+
+				transition: .2s;
+				width: 8px;
+			}
+			&:before{
+				background: #e8e8e8;
+				border-radius: 50%;
+				content: '';
+				height: 20px;
+				left: 0;
+				position: absolute;
+				transition: background-color .3s;
+				width: 20px;
+			}
+			&:hover{
+				&:before{
+					background-color: #0099ff;
+				}
+			}
+		}
+		&:checked + label{
+			&:after{
+				opacity: 1;
+			}
+		}
+		&:checked + label:before,
+		&:focus + label:before {
+			background: #0672ba
+		}
+	}
+
+}
+
 
 .logout{
 	@extend .neosans;
@@ -290,6 +350,12 @@
 				}
 			}
 		}
+		&-address-grid{
+			grid-column: 3/4;
+			grid-row: 1/3;
+			font-size: 1.5rem;
+			margin-top: 0;
+		}
 
 		&-currentbalance{
 			background: url(../images/bg/monets.png) no-repeat right bottom #0672ba;
@@ -399,7 +465,7 @@
 		.balance{
 			margin-bottom: .5rem;
 			&__rail{
-				background: #fff;
+				background: #ccc;
 				border-radius: 3rem;
 				height: 3rem;
 				position: relative;
@@ -429,13 +495,14 @@
 		background-color: #fff;
 		margin-top: 2rem;
 		padding-left: 2.5rem;
-		a{
+
+		&__link{
 			align-items: center;
 			display: flex;
 			flex-direction: column;
 			border-bottom: 5px solid rgba(255,255,255,0);
 			height: 100%;
-			padding: 2rem 2.5rem 1.8rem 2.5rem;
+			padding: 2rem 2rem 1.8rem 2rem;
 			text-decoration: none;
 			&:hover{
 				background-color: #eaecf0;
@@ -459,6 +526,8 @@
 			color: #333;
 			font-size: 1.5rem;
 			text-align: center;
+			max-width: 90px;
+			white-space: pre-line;
 		}
 
 		&__cell{
@@ -501,11 +570,16 @@
 		margin: auto;
 		padding-left: 3.4rem;
 		padding-right: 4rem;
+		background-color: #c91537;
+		color: #fff;
+		text-decoration: none;
 		.icon{
 			margin-right: 10px;
 		}
 		&:hover{
 			box-shadow: 0 5px 15px rgba(0, 153, 255, 0.5);
+			background-color: #09f;
+			color: #fff;
 		}
 	}
 	
@@ -544,7 +618,7 @@
 			}
 		}
 	
-		.ordersstat a{
+		.ordersstat .ordersstat__link{
 			padding-left: 1.5rem;
 			padding-right: 1.5rem;
 		}
@@ -572,7 +646,7 @@
 
 		.ordersstat{
 			padding-left: 0;
-			a{
+			&__link{
 				padding: 1.2rem .5rem;
 			}
 			.num{
@@ -602,7 +676,7 @@
 		}
 		.ordersstat{
 			padding-left: 0;
-			a{
+			&__link{
 				padding: 1.2rem .3rem;
 			}
 			.num{
@@ -1872,7 +1946,7 @@
 			background-color: #fff;
 			color: #323232;
 			min-height: 7rem;
-
+			padding-right: 0;
 			.td{
 				&-1{
 					font-weight: normal;
@@ -1899,8 +1973,16 @@
 			}
 		}
 		.td{
-			padding-left: 2.2rem;
-			&-1{
+      padding: 0;
+      margin: 0 auto;
+      flex: 1 1 calc(100%/11);
+      text-align: center;
+			//padding-left: 2.2rem;
+			&--small{
+        flex: 0 1 calc(100%/11/2);
+      }
+
+      &-1{
 				font-size: 1.3rem;
 				width: 16.5%;
 			}
@@ -1927,8 +2009,7 @@
 
 			}
 
-			&-9{
-				flex-grow: 1;
+			&:last-child{
 				text-align: right;
 				display: flex;
 				justify-content: flex-end;
@@ -2026,7 +2107,19 @@
 
 }
 // =products list
- 
+
+.masked-file-input{
+	position: absolute;
+	opacity: 0;
+	z-index: 10;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+}
 
  
 #quickorderModal{
@@ -2060,12 +2153,11 @@
 				margin-right: 2.3rem;
 				padding-right: 3rem;
 				padding-left: 2rem;
+				position: relative;
 				.icon{
 					margin-right: 12px;
 				}
-
 			}
-
 			ol{
 				color: #393939;
 				list-style: none;
@@ -2132,6 +2224,15 @@
 			}
 		}
 	}
+}
+
+#quickorderModal.no-bg{
+	.modal{
+		&-content{
+			background-image: none;
+		}
+	}
+
 }
 
 .region{

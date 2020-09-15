@@ -40,8 +40,27 @@
 		display: block;
 	}
 }
-.smartsearchForm{
+.smartsearchForm, .smartsearchform-wrapper{
 	margin-top: .8rem;	
+}
+
+
+.searchForm {
+	.full-btn {
+		display: none;
+	}
+	.short-btn{
+		display: block;
+	}
+}
+
+.smartsearchform-wrapper{
+	.full-btn{
+		display: flex;
+	}
+	.short-btn{
+		display: none;
+	}
 }
 
 .modal{
@@ -516,7 +535,8 @@
 	table{
 		color: #3f3f3f;
 		width: 100%;
-		th{
+		border: none;
+		tr:first-child td, th{
 			background-color: $color2;
 			border-bottom: 5px solid $color3;
 			font-size: 1.6rem;
@@ -527,6 +547,7 @@
 		td{
 			font-size: 1.5rem;
 			padding: 1.3rem 2rem;
+			border: none;
 			strong{
 				color: #000;
 			}

@@ -31,8 +31,78 @@
 		padding-bottom: 0;
 		position: relative;
 		transition: box-shadow .3s;
+		padding: 1rem 0;
 		&:hover{
 			box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+		}
+		&__bottom {
+			width: 30%;
+		}
+		&__cart-btn {
+			height: 30px;
+			width: 30px;
+			box-shadow: 0 2px 4px rgba(0,153,255,.5);
+			.icon{
+				margin: auto 2px auto 0;
+			}
+		}
+		&__reliability{
+			font-size: 9px;
+		}
+		&__quote{
+			height: 35px;
+			align-items: center;
+		}
+		&__quote-wh-code{
+			text-transform: uppercase;
+			font-family: 'Neo Sans Pro',Verdana,sans-serif;
+			font-size: 12px;
+			padding-top: 4px;
+			font-weight: 500;
+			flex: 1 0 15%;
+		}
+		&__quote-instock{
+			margin-top: 0 !important;
+			flex: 1 0 10%;
+			justify-content: center;
+			.indicator{
+				width: 37px;
+				height: 18px;
+			}
+			.unit{
+				height: 10px;
+				width: 5px;
+			}
+		}
+
+		&__quote-supply-time{
+			flex: 1 0 10%;
+			font-family: 'Neo Sans Pro',Verdana,sans-serif;
+			font-size: 12px;
+			padding-top: 4px;
+			font-weight: 500;
+			text-align: center;
+		}
+		&__right{
+			flex: 1 0 45%;
+			display: flex;
+
+		}
+		&__quote-price{
+			margin: 0 auto;
+			padding-right: 0 !important;
+			.current-price{
+				font-size: 1.4rem;
+				padding-top: 5px;
+			}
+		}
+		&__header{
+			font-family: 'Proxima Nova',sans-serif;
+			font-size: 12px;
+			font-weight: bold;
+			text-transform: none;
+			color: #212529;
+			padding: 0;
 		}
 		&__layout{
 			display: flex;
@@ -73,9 +143,7 @@
 			padding-top: .4rem;
 			resize: none;
 
-			&:valid{
-				background-color: transparent;
-			}
+
 		}
 
 
@@ -113,18 +181,15 @@
 
 
 		.price{
-			margin-top: 10px;
+			//margin-top: 10px;
 		}
-		.current-price{
-			font-size: 1.5rem;
-		}
-
 		.old-price{
 			font-size: 1.2rem;
 		}
 
 		.manage{
 			display: flex;
+			align-items: center;
 		}
 
 		.countmodule{
@@ -133,6 +198,7 @@
 		}
 		.btn-del{
 			align-items: flex-start;
+			margin: 0;
 		}
 
 		.btn-cart{
@@ -200,7 +266,6 @@
 		}
 
 		.instock{
-			height: 60px;
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
@@ -351,6 +416,11 @@
 			}
 		}
 	}	
+}
+
+
+.cart-table .txta:valid{
+	background-color: transparent;
 }
 
 .wishlist-page{

@@ -253,6 +253,11 @@
 		.d-grid{
 			grid-template-rows: auto;
 		}
+		&__layout{
+			/*display: flex !important;*/
+			flex-wrap: wrap;
+			flex-direction: row;
+		}
 		&__panel{
 			&-vehicle{
 				border-right: none;
@@ -261,18 +266,22 @@
 				grid-row-start: 1;
 				grid-row-end: 1;
 				min-height: 0;
+				flex: 1 1 100%;
+				order:5;
 			}
 			&-partnum{
 				grid-column-start: 1;
 				grid-column-end: 2;
 				grid-row-start: 2;
-				grid-row-end: 2;			
+				grid-row-end: 2;
+				flex: 0 1 50%;
 			}
 			&-vin{
 				grid-column-start: 2;
 				grid-column-end: 3;
 				grid-row-start: 2;
-				grid-row-end: 2;			
+				grid-row-end: 2;
+				flex: 0 1 50%;
 			}
 
 			&-partnum,
@@ -605,6 +614,17 @@
 		display: block !important;
 	}
 
+	.searchbox__panel{
+		&-vehicle{
+			flex: 0 1 100%;
+		}
+		&-partnum{
+			flex: 0 1 100%;
+		}
+		&-vin{
+			flex: 0 1 100%;
+		}
+	}
 	.searchbox .d-grid{
 		display: block;
 	}
@@ -737,7 +757,26 @@
 				width: 100%;
 			}
 		}
+
+
+		// centering for iphone 5
+		// .btn-submit{
+		// 	display: block;
+		// 	margin-left: auto;
+		// 	margin-right: auto;
+		// 	text-align: center;
+		// 	width: 160px;
+		// 	*{
+		// 		display: inline-block;
+		// 	}
+		// 	.icon{
+		// 		top: 2px;
+		// 	}
+		// }
 	}
+
+
+
 }
 
 

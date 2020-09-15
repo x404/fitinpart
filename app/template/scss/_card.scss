@@ -1,3 +1,56 @@
+.reliability{
+	font-size: 10px;
+	color: $color9;
+	line-height: 1;
+	position: relative;
+	top: -4px;
+	i{
+		opacity: 0.3;
+	}
+
+	&-1 {
+		i:nth-child(-n+1) {
+			opacity: 1;
+			color:$color_red_star;
+		}
+
+	}
+	&-2 {
+		i:nth-child(-n+2) {
+			opacity: 1;
+			color:$color_red_star;
+		}
+
+	}
+	&-3 {
+		i:nth-child(-n+3) {
+			opacity: 1;
+			color:$color_yellow_star;
+		}
+
+	}
+	&-4 {
+		i:nth-child(-n+4) {
+			opacity: 1;
+			color:$color_green_star;
+		}
+
+	}
+	&-5 {
+		i:nth-child(-n+5) {
+			opacity: 1;
+			color:$color_green_star;
+		}
+
+
+	}
+	.star-text{
+		font-size: 1.2em;
+		color: $color9;
+		text-align: center;
+	}
+}
+
 .inner .card-page{
 	background-color: #fff;
 	padding-bottom: 0;
@@ -51,7 +104,24 @@
 		}
 	}
 
-
+	.trustpilot-widget{
+		position: relative;
+		overflow: hidden;
+		height: 100px;
+		width: 100%;
+		background: #f5f7f8;
+		margin-top: 3rem;
+		iframe{
+			position: absolute !important;
+			display: block;
+			height: 170px;
+			width: 100%;
+			top: 0;
+			right: 0;
+			left: 0;
+			z-index: 25;
+		}
+	}
 	// =trustpilot
 	.trustpilot{
 		background-color: #f5f7f8;
@@ -240,6 +310,17 @@
 			font-weight: 700;
 			margin-top: .3rem;
 		}
+		&__title-info{
+			color: #ccc;
+			font-size: 20px;
+			line-height: 1;
+			vertical-align: middle;
+			margin-left: 5px;
+			cursor: pointer;
+			&:hover{
+				color:inherit
+			}
+		}
 	}
 	.stock__list{
 		margin-top: .5rem;
@@ -249,35 +330,82 @@
 		background-color: #f5f7f8;
 		display: flex;
 		margin-top: 2px;
-		padding: 1.2rem 2rem 1.2rem 1.5rem;
+		padding: 0.8rem;
+		justify-content: space-between;
+		align-items: center;
 		&__left{
-			flex-grow: 1
+			flex: 0 0 50%;
 		}
 		&__right{
-			flex-shrink: 0;
-			width: 55px;
+			flex: 1 0 45%;
+			display: flex;
+			align-items: center;
+		}
+
+		&__divider{
+			height: 50px;
+			position: relative;
+			&:after{
+				width: 3px;
+				background: #fff;
+				position: absolute;
+				top: -0.8rem;
+				bottom: -0.8rem;
+				content: "";
+			}
 		}
 		&__title{
 			@extend .neosans;
 			font-size: 1.5rem;
 			font-weight: 700;
+			flex: 1 0 15%;
+		}
+		&__price{
+				color: #000;
+				font-family: "Neo Sans Pro";
+				font-size: 1.6rem;
+				font-weight: 700;
+				line-height: 1.2;
+				margin: 0 auto;
+		}
+		&__supply-time{
+
+			font-family: 'Proxima Nova', sans-serif;
+			font-size: 1.6rem;
+			flex: 1 0 10%;
+			text-align: center;
+		}
+		.btn-cart{
+			margin-left: auto;
 		}
 		&__text{
+			flex: 1 0 10%;
 			color: $color38;
 			line-height: 1.54;
-			margin-top: .5rem;
 			font-size: 1.3rem;
-			padding-right: 4.5rem;
-		}
-
-		.instock{
-			display: block;
-			margin-top: .5rem;
-			text-align: center;
-			.indicator{
-				margin-left: 0;
+			display: flex;
+			align-content: center;
+			justify-content: center;
+			& .instock{
+				display: flex;
+				margin-right: 0;
+				.indicator{
+					margin-left: 0;
+					margin-right: 5px;
+					display: inline-block;
+				}
 			}
 		}
+
+		&__header{
+			font-weight: bold;
+			font-size: 1.6rem;
+			line-height: 1.5;
+			font-family: 'Proxima Nova',sans-serif;
+			text-align: center;
+		}
+
+
 	}
 	
 
@@ -514,7 +642,7 @@
 
 			.td{
 				margin-right: 2rem;
-				&:last-child(){
+				&:last-child{
 					margin-right: 0;
 				}
 
@@ -615,6 +743,9 @@
 		.td{
 			padding-left: 2rem;
 			width: 50%;
+			& a, & a:hover {
+				text-decoration: none;
+			}
 		}
 	}
 
@@ -1217,9 +1348,6 @@
 				}
 			}
 
-			.btn-fav{
-				font-size: 14px;
-			}
 			.btn-addtocart{
 				font-size: 16px;
 			}
@@ -1411,10 +1539,21 @@
 			font-size: 3rem;
 
 		}
+
 	}
 
 	&__right{
+		min-width: 32rem;
 		width: 32rem;
+		.btn-notify {
+			width: 100%;
+			&:hover{
+				color: #fff;
+			}
+			.icon{
+				margin-right: 10px;
+			}
+		}
 		.buy{
 			box-shadow: 0 5px 20px rgba(0, 153, 255, 0.5);
 			min-width: 32rem;
@@ -1677,7 +1816,17 @@
 	}
 }
 
-
+.compare .btn-fav{
+	font-size: 14px;
+	color: #0672ba;
+	display: flex;
+	align-items: center;
+	margin-left: 2.1rem;
+	white-space: nowrap;
+	.icon{
+		margin-right: 10px;
+	}
+}
 
 
 
@@ -1694,3 +1843,10 @@
     height: auto;      /* let the content decide it  */
 }
 /* bootstrap hack end */
+
+#car-tabContent >.tab-pane{
+  display: none;
+}
+#car-tabContent >.active{
+  display: block;
+}
