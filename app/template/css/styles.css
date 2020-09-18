@@ -17672,8 +17672,6 @@ _::-webkit-:-webkit-full-screen:host:not(:root:root), .mob-header {
     font-size: 1.4rem; } }
 
 @media (max-width: 1500px) {
-  #homeslider .slick-arrow {
-    margin-top: -30px; }
   #homeslider .slick-prev {
     margin-left: -705px; }
   #homeslider .slick-next {
@@ -17686,8 +17684,6 @@ _::-webkit-:-webkit-full-screen:host:not(:root:root), .mob-header {
     max-width: 1000px; }
   #homeslider .title {
     font-size: 4rem; }
-  #homeslider .slick-arrow {
-    margin-top: -40px; }
   #homeslider .slick-prev {
     margin-left: -680px; }
   #homeslider .slick-next {
@@ -17759,17 +17755,17 @@ _::-webkit-:-webkit-full-screen:host:not(:root:root), .mob-header {
 
 @media (max-width: 1199px) {
   #homeslider .layout {
-    height: 375px;
+    height: 307px;
     max-width: 850px; }
+  #homeslider .item {
+    height: 360px; }
   #homeslider .left {
     width: 45%; }
   #homeslider .title {
-    font-size: 3.5rem;
-    margin-top: -5.5rem; }
+    font-size: 3.5rem; }
   #homeslider .text {
     font-size: 1.6rem; }
   #homeslider .slick-arrow {
-    margin-top: -40px;
     height: 40px;
     width: 40px; }
     #homeslider .slick-arrow:before {
@@ -17852,7 +17848,7 @@ _::-webkit-:-webkit-full-screen:host:not(:root:root), .mob-header {
   .container {
     max-width: 100%; }
   #homeslider .layout {
-    height: 320px;
+    height: 100%;
     max-width: 605px; }
   #homeslider .title {
     font-size: 3.2rem;
@@ -17860,7 +17856,7 @@ _::-webkit-:-webkit-full-screen:host:not(:root:root), .mob-header {
   #homeslider .right {
     padding-left: 20px; }
   #homeslider .slick-arrow {
-    margin-top: -40px; }
+    top: calc((100% - 40px)/ 2); }
   #homeslider .slick-prev {
     margin-left: 0;
     left: 15px; }
@@ -17961,10 +17957,11 @@ _::-webkit-:-webkit-full-screen:host:not(:root:root), .mob-header {
 
 @media (max-width: 720px) {
   #homeslider .layout {
-    height: 230px;
     max-width: 100%;
     padding-left: 3.2rem;
     padding-right: 3.2rem; }
+  #homeslider .item {
+    height: 300px; }
   #homeslider .left {
     width: 50%; }
   #homeslider .text {
@@ -18158,6 +18155,8 @@ _::-webkit-:-webkit-full-screen:host:not(:root:root), .mob-header {
       height: auto;
       padding-top: 30px;
       padding-bottom: 65px; }
+    #homeslider .item {
+      height: auto; }
     #homeslider .left {
       width: 100%; }
   .review-card__title {

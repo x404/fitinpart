@@ -27,9 +27,6 @@
 @media (max-width: 1500px){
 	#homeslider{
 		.slick{
-			&-arrow{
-				margin-top: -30px;
-			}
 			&-prev{
 				margin-left: -705px;
 			}
@@ -55,9 +52,6 @@
 			font-size: 4rem;
 		}
 		.slick{
-			&-arrow{
-				margin-top: -40px;
-			}
 			&-prev{
 				margin-left: -680px;
 			}
@@ -211,22 +205,25 @@
 @media (max-width: 1199px){
 	#homeslider{
 		.layout{
-			height: 375px;
+			height: 307px;
 			max-width: 850px;
 		}
+
+		.item{
+			height: 360px
+		}
+
 		.left{
 			width: 45%;
 		}
 		.title{
 			font-size: 3.5rem;
-			margin-top: -5.5rem;
 		}
 		.text{
 			font-size: 1.6rem;
 		}
 		.slick{
 			&-arrow{
-				margin-top: -40px;
 				height: 40px;
 				width: 40px;
 				&:before{
@@ -379,7 +376,7 @@
 	}
 	#homeslider{
 		.layout{
-			height: 320px;
+			height: 100%;
 			max-width: 605px;
 		}
 		.title{
@@ -391,7 +388,7 @@
 		}
 		.slick{
 			&-arrow{
-				margin-top: -40px;
+				top: calc((100% - 40px)/ 2);
 			}
 			&-prev{
 				margin-left: 0;
@@ -568,10 +565,13 @@
 @media (max-width: 720px){
 	#homeslider{
 		.layout{
-			height: 230px;
 			max-width: 100%;
 			padding-left: 3.2rem;
 			padding-right: 3.2rem;
+		}
+
+		.item{
+			height: 300px;
 		}
 		.left{
 			width: 50%;
@@ -775,8 +775,6 @@
 		// }
 	}
 
-
-
 }
 
 
@@ -973,6 +971,9 @@
 			height: auto;
 			padding-top: 30px;
 			padding-bottom: 65px;
+		}
+		.item{
+			height: auto;
 		}
 		.left{
 			width: 100%;
